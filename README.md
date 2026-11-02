@@ -36,6 +36,6 @@ Os workflows agendados correm no ramo predefinido. `contents: write` permite atu
 
 Catálogo simples em HTML/CSS/JavaScript, sem build: imagens, ligações diretas às fontes, pesquisa e filtros por consola, modo, género, jogadores e estado. Permite ordenar por nome, lançamento e nota dos críticos. Arte de jogos com ligação ao fornecedor: Wikipedia, Steam ou Nintendo. As notas são lidas diretamente do GitHub, com cópia de segurança na publicação.
 
-**Já joguei** e **Não me interessa** retiram o jogo da vista predefinida **Por descobrir**, em ambas as consolas. O filtro Estado permite rever e restaurar escolhas. Estas preferências ficam em `localStorage` neste navegador, sem partilha entre dispositivos ou pessoas. Não são publicadas no GitHub.
+**Quero Jogar**, **Já joguei** e **Não me interessa** retiram o jogo da vista predefinida **Por descobrir**, em ambas as consolas. O filtro Estado inclui a lista **Quero Jogar**, além de Já jogados e Sem interesse, e permite rever e restaurar escolhas. É possível passar um jogo de Quero Jogar para Já jogado ou Sem interesse. Estas preferências ficam em `localStorage` neste navegador, sem partilha entre dispositivos ou pessoas. Não são publicadas no GitHub.
 
 O site é **público**, por pedido do proprietário. O catálogo GitHub também é público e não contém dados pessoais.
