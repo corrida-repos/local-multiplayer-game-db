@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:43:04.697162+00:00",
+  "updated": "2026-11-02T17:43:38.570954+00:00",
   "version": 2,
   "coverage": {
     "total": 2542,
-    "attempted": 982,
-    "ready": 628,
-    "missing_image": 1616,
-    "missing_store": 1664,
-    "missing_rating": 1860,
+    "attempted": 992,
+    "ready": 632,
+    "missing_image": 1607,
+    "missing_store": 1656,
+    "missing_rating": 1856,
     "full_attempted": 0
   },
   "games": {
@@ -24624,21 +24624,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:43:23.810747+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/in-extremis-dx-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:43:25.033784+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000053179/3560b4800106ec03391eaf0f4005d45015810c85dd7e7ff7624c247b72f195ef",
+        "source": "https://www.nintendo.com/us/store/products/in-extremis-dx-switch/",
+        "checked": "2026-11-02T17:43:25.033935+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:43:23.810747+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:13411": {
@@ -70612,24 +70629,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 90.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 90.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/ikaruga",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 82,
+              "url": "https://www.nintendolife.com/games/switch-eshop/ikaruga",
+              "platform": "Nintendo Switch",
+              "weight": 9.055385138137417,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:43:06.963567+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/ikaruga-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:43:11.896637+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000003962/7f29f0e1bfbf9e2193717bae2af2508ef8637bde7480ccb703818c3b53d33003",
+        "source": "https://www.nintendo.com/us/store/products/ikaruga-switch/",
+        "checked": "2026-11-02T17:43:11.896853+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:43:06.963567+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:4792": {
       "title": "JYDGE",
@@ -76888,21 +76939,34 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:43:26.704375+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
         "rating": false
+      },
+      "image": {
+        "url": "https://images.nintendolife.com//1280x720.jpg",
+        "source": "https://www.nintendolife.com/games/switch-eshop/infected_shelter",
+        "checked": "2026-11-02T17:43:32.154138+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:43:26.704375+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:5712": {
@@ -79831,21 +79895,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:43:06.963067+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-IKARI-III-THE-RESCUE-1749622.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:43:11.648111+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ArcadeArchivesIkariIiiTheRescue_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-IKARI-III-THE-RESCUE-1749622.html",
+        "checked": "2026-11-02T17:43:11.648111+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:43:06.963067+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:6379": {
@@ -79855,21 +79937,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:43:06.963215+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-IKARI-WARRIORS-1526371.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:43:12.770476+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ArcadeArchivesIkariWarriors_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-IKARI-WARRIORS-1526371.html",
+        "checked": "2026-11-02T17:43:12.770476+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:43:06.963215+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:6377": {
@@ -79879,21 +79979,30 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:43:06.963464+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:43:06.963464+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:6154": {
@@ -82027,21 +82136,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:43:16.459218+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-Ikki-1381104.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:43:17.838495+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ArcadeArchivesIkki_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-Ikki-1381104.html",
+        "checked": "2026-11-02T17:43:17.838495+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:43:16.459218+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:6977": {
@@ -82049,23 +82176,49 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/arcade_archives_in_the_hunt?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:43:24.072522+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-IN-THE-HUNT-1687226.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:43:26.331529+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ArcadeArchivesInTheHunt_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-IN-THE-HUNT-1687226.html",
+        "checked": "2026-11-02T17:43:26.331529+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:43:24.072522+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:7282": {
@@ -91061,24 +91214,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 68.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 68.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=in-celebration-of-violence-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:43:18.097503+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/in-celebration-of-violence-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:43:21.662203+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000030792/de977014c605ac1dd1cf383b9aa33b6ef0da827962781dbc259ce2e5162f42bb",
+        "source": "https://www.nintendo.com/us/store/products/in-celebration-of-violence-switch/",
+        "checked": "2026-11-02T17:43:21.662463+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:43:18.097503+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:8051": {
       "title": "JYDGE",
@@ -97299,23 +97475,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Pure Nintendo",
+              "score": 60,
+              "url": "https://purenintendo.com/review-infernal-radiation-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:43:28.124466+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/infernal-radiation-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:43:29.361632+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000040081/c4d83e1471093db951693628467cdd81aecf067ba0162aaea6b48dcb4d7004e7",
+        "source": "https://www.nintendo.com/us/store/products/infernal-radiation-switch/",
+        "checked": "2026-11-02T17:43:29.361753+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:43:28.124466+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:9115": {
