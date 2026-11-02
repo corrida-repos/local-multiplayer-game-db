@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T21:04:20.630849+00:00",
+  "updated": "2026-11-02T21:05:05.597655+00:00",
   "version": 4,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 144,
     "missing_store": 256,
     "missing_rating": 611,
-    "full_attempted": 912
+    "full_attempted": 922
   },
   "games": {
     "PS5:13238": {
@@ -11378,39 +11378,87 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 81.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/cassette-beasts",
+              "name": "Gamereactor UK",
+              "score": 80,
+              "url": "https://www.gamereactor.eu/cassette-beasts-1273053/",
+              "date": "2023-06-15",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 83,
+              "url": "https://gaming-age.com/2023/05/cassette-beasts-review-for-pc-switch-xbox/",
+              "date": "2023-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 84.00000000000001,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cassette-beasts-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/cassette-beasts",
+              "date": "2023-05-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PCMag",
+              "score": 80,
+              "url": "https://www.pcmag.com/reviews/cassette-beasts",
+              "date": "2023-06-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 80,
+              "url": "https://toucharcade.com/2023/08/28/two-point-campus-medical-school-dlc-review-switch-cassette-beasts-patch-performance/",
+              "date": "2023-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
-          "score": 7.8,
+          "score": 8.0,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.8,
-              "scale": 10.0,
-              "count": 40,
-              "url": "https://www.nintendolife.com/games/switch-eshop/cassette_beasts",
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 13,
+              "url": "https://www.metacritic.com/game/cassette-beasts/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 6.324555320336759,
-              "normalized": 7.800000000000001
+              "weight": 3.605551275463989,
+              "normalized": 8.0
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:01:52.699805+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:45.871864+00:00"
       },
       "requirements": {
         "image": true,
@@ -11429,7 +11477,11 @@
       },
       "basics_attempted": "2026-11-02T17:01:52.699805+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:04:48.153859+00:00"
     },
     "PS5:13012": {
       "title": "Cassiodora",
@@ -11464,15 +11516,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.5,
-              "count": 22,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.5,
               "scale": 5,
-              "source": "PSN",
+              "count": 22,
               "url": "https://store.playstation.com/pt-pt/product/EP1302-PPSA06079_00-4536488058411927",
-              "checked": "2026-11-02T17:01:53.742983+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 4.69041575982343,
               "normalized": 7.0
             }
@@ -11480,7 +11529,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:01:52.700013+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:33.752956+00:00"
       },
       "requirements": {
         "image": true,
@@ -11518,7 +11574,10 @@
       },
       "basics_attempted": "2026-11-02T17:01:52.700013+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:04:34.720526+00:00"
     },
     "Switch:13010": {
       "title": "Cassiodora",
@@ -11584,6 +11643,7 @@
               "name": "Nintendo Life",
               "score": 80,
               "url": "https://www.nintendolife.com/reviews/switch-eshop/castle-of-shikigami-2",
+              "date": "2023-04-22",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -11591,6 +11651,7 @@
               "name": "Video Chums",
               "score": 80,
               "url": "https://videochums.com/article/resurrected-shoot-em-ups-on-nintendo-switch#castle-of-shikigami2",
+              "date": "2024-01-14",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -11605,7 +11666,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:06:59.794491+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:38.123940+00:00"
       },
       "requirements": {
         "image": true,
@@ -11614,7 +11683,11 @@
       },
       "basics_attempted": "2026-11-02T20:06:59.794491+00:00",
       "version": 4,
-      "errors": {},
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "image": {
         "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/1x1_NSwitchDS_CastleOfShikigami2_image500w.jpg",
         "source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Castle-of-Shikigami2-2365061.html",
@@ -11625,14 +11698,15 @@
         "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Castle-of-Shikigami2-2365061.html",
         "label": "Abrir na Nintendo eShop",
         "checked": "2026-11-02T20:06:59.993407+00:00"
-      }
+      },
+      "full_attempted": "2026-11-02T21:04:40.553562+00:00"
     },
     "Switch:10886": {
       "title": "Castle on the Coast",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 67.0,
+          "score": 67.5,
           "scale": 100,
           "sources": [
             {
@@ -11642,10 +11716,17 @@
               "date": "2022-01-18",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 68.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=castle-on-the-coast-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -11654,7 +11735,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:01:53.751284+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:49.168773+00:00"
       },
       "requirements": {
         "image": true,
@@ -11673,41 +11762,228 @@
       },
       "basics_attempted": "2026-11-02T17:01:53.751284+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:04:51.142351+00:00"
     },
     "PS5:14400": {
       "title": "Cat Quest III",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.4,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Checkpoint Gaming",
+              "score": 85,
+              "url": "https://checkpointgaming.net/reviews/2024/08/cat-quest-iii-review-a-pirates-life-furrr-me/",
+              "date": "2024-08-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 79,
+              "url": "https://www.games.ch/cat-quest-3/test/review-lh7g/",
+              "date": "2024-08-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 95,
+              "url": "https://www.gamegrin.com/reviews/cat-quest-iii-review/",
+              "date": "2024-08-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2024/08/cat-quest-3-review/",
+              "date": "2024-08-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 70,
+              "url": "https://www.gameblog.fr/jeu-video/jeux/tests/cat-quest-3-test-ps5-2024-608497",
+              "date": "2024-09-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.no",
+              "score": 70,
+              "url": "https://www.gamer.no/artikler/og-der-fikk-2024-endelig-et-skikkelig-piratspill/517677",
+              "date": "2024-08-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 85,
+              "url": "https://www.gamingnexus.com/Article/14076/Cat-Quest-III/",
+              "date": "2024-08-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 70,
+              "url": "https://hardcoregamer.com/review-cat-quest-iii/",
+              "date": "2024-08-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Movies Games and Tech",
+              "score": 90,
+              "url": "https://moviesgamesandtech.com/2024/08/08/review-cat-quest-ii/",
+              "date": "2024-08-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 80,
+              "url": "https://noisypixel.net/cat-quest-3-review/",
+              "date": "2024-08-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 75,
+              "url": "https://psxbrasil.com.br/analise/cat-quest-iii-review/",
+              "date": "2024-08-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 90,
+              "url": "https://www.psu.com/reviews/cat-quest-3-ps5-review/",
+              "date": "2024-08-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket-lint",
+              "score": 80,
+              "url": "https://www.pocket-lint.com/cat-quest-3-review/",
+              "date": "2024-08-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 80,
+              "url": "https://press-start.com.au/reviews/ps5-reviews/2024/08/07/cat-quest-3-review-its-a-purr-ates-life-for-me/",
+              "date": "2024-08-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "https://www.pushsquare.com/reviews/ps5/cat-quest-3",
+              "date": "2024-08-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 90,
+              "url": "https://screenrant.com/cat-quest-3-review/",
+              "date": "2024-08-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 79,
+              "url": "https://www.spaziogames.it/articoli/cat-quest-iii-recensione",
+              "date": "2024-08-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 80,
+              "url": "https://www.thesixthaxis.com/2024/08/06/cat-quest-3-review/",
+              "date": "2024-08-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 90,
+              "url": "https://twinfinite.net/reviews/cat-quest-3-review/",
+              "date": "2024-08-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 80,
+              "url": "https://vandal.elespanol.com/analisis/ps5/cat-quest-iii/167124#p-89",
+              "date": "2024-08-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/silly-indie-games-part-3#cat-quest-iii",
+              "date": "2024-08-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 21
         },
         "user": {
-          "score": 9.24,
+          "score": 8.84,
           "scale": 10,
           "sources": [
             {
-              "score": 4.62,
-              "count": 6094,
-              "scope": "PSN · PS4/PS5",
+              "name": "Metacritic users",
+              "score": 7.7,
+              "scale": 10,
+              "count": 123,
+              "url": "https://www.metacritic.com/game/cat-quest-iii/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 11.090536506409418,
+              "normalized": 7.7
+            },
+            {
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.62,
               "scale": 5,
-              "source": "PSN",
+              "count": 6094,
               "url": "https://store.playstation.com/pt-pt/product/EP7579-PPSA15064_00-CQ300000000PS5EU",
-              "checked": "2026-11-02T17:01:57.195892+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 31.622776601683793,
               "normalized": 9.24
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:01:56.075951+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 21,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:48.015256+00:00"
       },
       "requirements": {
         "image": true,
@@ -11745,46 +12021,117 @@
       },
       "basics_attempted": "2026-11-02T17:01:56.075951+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {},
+      "trailer": {
+        "id": "Gmiv5RY2a-U",
+        "title": "Cat Quest III - Release Date Trailer | PS5 & PS4 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/cat-quest-iii/"
+      },
+      "full_attempted": "2026-11-02T21:04:49.457382+00:00"
     },
     "Switch:14398": {
       "title": "Cat Quest III",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 85.6,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/cat-quest-iii",
+              "name": "GamersRD",
+              "score": 75,
+              "url": "https://gamersrd.com/cat-quest-iii-review/",
+              "date": "2024-08-08",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Brasil",
+              "score": 80,
+              "url": "https://br.ign.com/cat-quest-iii/127913/review/cat-quest-iii-tem-o-mapa-dos-sonhos-de-todo-fa-de-piratas-e-gatos-review",
+              "date": "2024-08-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 90.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cat-quest-iii-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/cat-quest-iii",
+              "date": "2024-08-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 95,
+              "url": "https://www.nintendoworldreport.com/review/68052/cat-quest-iii-switch-review",
+              "date": "2024-08-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 85,
+              "url": "https://purenintendo.com/review-cat-quest-iii-nintendo-switch/",
+              "date": "2024-09-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 80,
+              "url": "https://www.thegamer.com/cat-quest-3-review-purr-times-the-charm/",
+              "date": "2024-08-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 90,
+              "url": "https://toucharcade.com/2024/08/13/natsumon-20th-century-summer-kid-switch-review-cat-quest-3-eshop/",
+              "date": "2024-08-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 8
         },
         "user": {
-          "score": 8.1,
+          "score": 8.2,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 8.1,
-              "scale": 10.0,
-              "count": 73,
-              "url": "https://www.nintendolife.com/games/nintendo-switch/cat_quest_iii",
+              "name": "Metacritic users",
+              "score": 8.2,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/cat-quest-iii/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 8.54400374531753,
-              "normalized": 8.1
+              "weight": 2.449489742783178,
+              "normalized": 8.2
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:01:57.210978+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:50.275021+00:00"
       },
       "requirements": {
         "image": true,
@@ -11803,7 +12150,16 @@
       },
       "basics_attempted": "2026-11-02T17:01:57.210978+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed"
+      },
+      "trailer": {
+        "id": "Gmiv5RY2a-U",
+        "title": "Cat Quest III - Release Date Trailer | PS5 & PS4 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/cat-quest-iii/"
+      },
+      "full_attempted": "2026-11-02T21:04:52.418995+00:00"
     },
     "PS5:10620": {
       "title": "Catty & Batty: The Spirit Guide",
@@ -125387,39 +125743,80 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 77.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/castle_crashers_remastered",
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/13318-castle-crashers-remastered",
+              "date": "2019-12-11",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 90,
+              "url": "https://www.nintenderos.com/2019/10/analisis-castle-crashers-remastered-para-nintendo-switch/",
+              "date": "2019-10-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/castle-crashers-remastered-review/",
+              "date": "2019-09-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/castle_crashers_remastered",
+              "date": "2019-09-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/51758/castle-crashers-remastered-switch-review",
+              "date": "2019-09-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": 7.7,
+          "score": 8.2,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.7,
-              "scale": 10.0,
-              "count": 76,
-              "url": "https://www.nintendolife.com/games/switch-eshop/castle_crashers_remastered",
+              "name": "Metacritic users",
+              "score": 8.2,
+              "scale": 10,
+              "count": 21,
+              "url": "https://www.metacritic.com/game/castle-crashers-remastered/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 8.717797887081348,
-              "normalized": 7.7
+              "weight": 4.58257569495584,
+              "normalized": 8.2
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:25:37.358325+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:40.321352+00:00"
       },
       "requirements": {
         "image": true,
@@ -125438,7 +125835,12 @@
       },
       "basics_attempted": "2026-11-02T17:25:37.358325+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:04:43.108482+00:00"
     },
     "Switch:5378": {
       "title": "Catastronauts",
@@ -130625,39 +131027,112 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 76.1,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/cat_quest_ii",
+              "name": "Digitally Downloaded",
+              "score": 60,
+              "url": "http://www.digitallydownloaded.net/2019/10/review-cat-quest-2-nintendo-switch.html",
+              "date": "2019-10-29",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Easy Allies",
+              "score": 75,
+              "url": "https://easyallies.com/#!/review/cat-quest-2",
+              "date": "2019-11-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/13297-cat-quest-ii",
+              "date": "2019-12-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2019/11/analisis-cat-quest-ii-para-nintendo-switch/",
+              "date": "2019-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/cat_quest_ii",
+              "date": "2019-10-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/52069/cat-quest-ii-switch-review",
+              "date": "2019-10-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 80,
+              "url": "http://play.co.rs/2019/11/review-cat-quest-ii/",
+              "date": "2019-12-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayGround.ru",
+              "score": 80,
+              "url": "https://www.playground.ru/cat_quest_2/cat_quest_ii_eto_prosto_ommmuritelno-510934",
+              "date": "2019-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2019/11/19/cat-quest-ii-review/",
+              "date": "2019-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
-          "score": 7.8,
+          "score": 8.1,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.8,
-              "scale": 10.0,
-              "count": 58,
-              "url": "https://www.nintendolife.com/games/switch-eshop/cat_quest_ii",
+              "name": "Metacritic users",
+              "score": 8.1,
+              "scale": 10,
+              "count": 54,
+              "url": "https://www.metacritic.com/game/cat-quest-ii-the-lupus-empire/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 7.615773105863909,
-              "normalized": 7.800000000000001
+              "weight": 7.3484692283495345,
+              "normalized": 8.1
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:26:54.745834+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:05:02.913369+00:00"
       },
       "requirements": {
         "image": true,
@@ -130676,7 +131151,11 @@
       },
       "basics_attempted": "2026-11-02T17:26:54.745834+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "nindie": "No exact scored Nintendo Switch review",
+        "slush": "No scored Switch review indexed"
+      },
+      "full_attempted": "2026-11-02T21:05:05.488598+00:00"
     },
     "Switch:5783": {
       "title": "Children of Morta",
@@ -136162,19 +136641,35 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 70.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/castlestorm_ii",
+              "name": "Nindie Spotlight",
+              "score": 72.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=castlestorm-ii-switch",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/castlestorm_ii",
+              "date": "2020-10-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 80,
+              "url": "https://vandal.elespanol.com/analisis/pc/castlestorm-ii/74435#p-13",
+              "date": "2020-09-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
           "score": 3.7,
@@ -136194,7 +136689,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:29:03.470606+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:42.514206+00:00"
       },
       "requirements": {
         "image": true,
@@ -136213,7 +136716,11 @@
       },
       "basics_attempted": "2026-11-02T17:29:03.470606+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:04:45.191961+00:00"
     },
     "Switch:6287": {
       "title": "Catherine: Full Body",
@@ -155645,39 +156152,64 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 40.0,
+          "score": 36.7,
           "scale": 100,
           "sources": [
             {
               "name": "Nintendo Life",
-              "score": 40.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/cartoon_network_battle_crashers",
+              "score": 40,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/cartoon_network_battle_crashers?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2017-11-07",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 30,
+              "url": "http://www.nintendoworldreport.com/review/45864/cartoon-network-battle-crashers-switch",
+              "date": "2017-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 40,
+              "url": "http://switchplayer.net/2017/11/17/cartoon-network-battle-crashers/",
+              "date": "2017-11-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": 4.5,
+          "score": 3.9,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 4.5,
-              "scale": 10.0,
+              "name": "Metacritic users",
+              "score": 3.9,
+              "scale": 10,
               "count": 14,
-              "url": "https://www.nintendolife.com/games/nintendo-switch/cartoon_network_battle_crashers",
+              "url": "https://www.metacritic.com/game/cartoon-network-battle-crashers/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 3.7416573867739413,
-              "normalized": 4.5
+              "normalized": 3.9000000000000004
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:36:31.657994+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:35.918046+00:00"
       },
       "requirements": {
         "image": true,
@@ -155696,7 +156228,11 @@
       },
       "basics_attempted": "2026-11-02T17:36:31.657994+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed"
+      },
+      "full_attempted": "2026-11-02T21:04:38.458410+00:00"
     },
     "Switch:8444": {
       "title": "Clu Clu Land",
