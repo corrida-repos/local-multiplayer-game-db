@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:36:28.616137+00:00",
+  "updated": "2026-11-02T17:37:09.787074+00:00",
   "version": 2,
   "coverage": {
     "total": 2330,
-    "attempted": 852,
-    "ready": 543,
-    "missing_image": 1522,
-    "missing_store": 1561,
-    "missing_rating": 1741,
+    "attempted": 862,
+    "ready": 550,
+    "missing_image": 1512,
+    "missing_store": 1551,
+    "missing_rating": 1734,
     "full_attempted": 0
   },
   "games": {
@@ -89323,21 +89323,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:36:31.657621+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/brutal-rage-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:36:33.028610+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000035496/eafff4ea7a61e23317b4d3fba39f8b858f062cb529175b0165624ca6df38af19",
+        "source": "https://www.nintendo.com/us/store/products/brutal-rage-switch/",
+        "checked": "2026-11-02T17:36:33.028726+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:36:31.657621+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:8494": {
@@ -89345,23 +89362,55 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 72.5,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/47864/burnstar-switch-review",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2020/03/01/burnstar-review/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 2
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:36:31.657772+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/burnstar-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:36:34.118545+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000008882/7ea02c04fcb54d7258207c6d4ffca1df4ef57d8df82ace0ccaf5b28efb24090b",
+        "source": "https://www.nintendo.com/us/store/products/burnstar-switch/",
+        "checked": "2026-11-02T17:36:34.118751+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:36:31.657772+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:8425": {
@@ -89369,24 +89418,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 40.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 40.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/cartoon_network_battle_crashers",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 4.5,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 4.5,
+              "scale": 10.0,
+              "count": 14,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/cartoon_network_battle_crashers",
+              "platform": "Nintendo Switch",
+              "weight": 3.7416573867739413,
+              "normalized": 4.5
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:36:31.657994+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/cartoon-network-battle-crashers-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:36:34.616669+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000000439/b58214ca9c8d3830812237246051582b1cc6252955231467662dbf3589458dba",
+        "source": "https://www.nintendo.com/us/store/products/cartoon-network-battle-crashers-switch/",
+        "checked": "2026-11-02T17:36:34.616798+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:36:31.657994+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:8444": {
       "title": "Clu Clu Land",
@@ -89395,21 +89478,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:36:31.658144+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-CLU-CLU-LAND-1589218.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:36:36.480029+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ArcadeArchivesCluCluLand_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-CLU-CLU-LAND-1589218.html",
+        "checked": "2026-11-02T17:36:36.480029+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:36:31.658144+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:8486": {
@@ -89417,24 +89518,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/code_of_princess_ex",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.2,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.2,
+              "scale": 10.0,
+              "count": 21,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/code_of_princess_ex",
+              "platform": "Nintendo Switch",
+              "weight": 4.58257569495584,
+              "normalized": 7.199999999999999
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:36:36.813885+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/code-of-princess-ex-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:36:39.735197+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000001438/876ae78e006e3026e02a4327115505c5eb5dbb29786580775e6fd1b5ec624699",
+        "source": "https://www.nintendo.com/us/store/products/code-of-princess-ex-switch/",
+        "checked": "2026-11-02T17:36:39.735410+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:36:36.813885+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:8447": {
       "title": "Crimsonland",
@@ -89443,70 +89578,175 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.56,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.28,
+              "count": 3731,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP4403-PPSA02753_00-CRIMSONLAND00000",
+              "checked": "2026-11-02T17:36:42.412900+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 8.56
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:36:41.142509+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP4403-PPSA02753_00-CRIMSONLAND00000",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:36:42.412900+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202012/1813/WksIonbSriib1ddGJCZeEtC2.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP4403-PPSA02753_00-CRIMSONLAND00000",
+        "checked": "2026-11-02T17:36:42.412900+00:00"
+      },
+      "user": {
+        "score": 4.28,
+        "count": 3731,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP4403-PPSA02753_00-CRIMSONLAND00000",
+        "checked": "2026-11-02T17:36:42.412900+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP4403-PPSA02753_00-CRIMSONLAND00000",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP4403-PPSA02753_00-CRIMSONLAND00000",
+        "checked": "2026-11-02T17:36:42.412900+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:36:41.142509+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:8427": {
       "title": "Crimsonland",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 60.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/crimsonland",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:36:42.417978+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/crimsonland-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:36:43.612186+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000003745/447ff0652af4d645aba6274ccd375546517a520a5f53d0778c471cb4cf04705d",
+        "source": "https://www.nintendo.com/us/store/products/crimsonland-switch/",
+        "checked": "2026-11-02T17:36:43.612325+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:36:42.417978+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:8387": {
       "title": "Dark Witch Music Episode: Rudymical",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 60.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/dark_witch_music_episode_rudymical",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 6.5,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.5,
+              "scale": 10.0,
+              "count": 13,
+              "url": "https://www.nintendolife.com/games/switch-eshop/dark_witch_music_episode_rudymical",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 6.5
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:36:42.793280+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/dark-witch-music-episode-rudymical-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:36:44.544710+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000000486/f8922680252c484aef3b494f1be5cd94831d31c573cb5146328c4ee0500690ff",
+        "source": "https://www.nintendo.com/us/store/products/dark-witch-music-episode-rudymical-switch/",
+        "checked": "2026-11-02T17:36:44.544923+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:36:42.793280+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:8272": {
       "title": "Deer Drive Legends",
@@ -89515,21 +89755,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:36:43.240205+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/deer-drive-legends-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:36:46.714866+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000018869/6a30b2ea2a1b6779970c9a7e4bf10524676213d90e62314ebd1810a61a64c715",
+        "source": "https://www.nintendo.com/us/store/products/deer-drive-legends-switch/",
+        "checked": "2026-11-02T17:36:46.715088+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:36:43.240205+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:8053": {
@@ -89539,22 +89796,48 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 7,
+              "url": "https://www.nintendolife.com/games/switch-eshop/destropolis",
+              "platform": "Nintendo Switch",
+              "weight": 2.6457513110645907,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:36:45.098539+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/destropolis-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:36:47.087265+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000034448/4610829096729ad7126b246c07406b945f17653aad1a2d51e09ac1a434649b20",
+        "source": "https://www.nintendo.com/us/store/products/destropolis-switch/",
+        "checked": "2026-11-02T17:36:47.087480+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:36:45.098539+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:8436": {
       "title": "Die for Valhalla!",
