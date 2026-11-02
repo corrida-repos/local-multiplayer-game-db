@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T23:14:55.351233+00:00",
+  "updated": "2026-11-02T23:16:55.256624+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1829,
+    "ready": 1832,
     "missing_image": 111,
-    "missing_store": 607,
-    "missing_rating": 464,
+    "missing_store": 600,
+    "missing_rating": 460,
     "full_attempted": 1042,
     "image_health_pending": 2431
   },
@@ -42903,10 +42903,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 2.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 2.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/laserpitium",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:15:16.115705+00:00",
+              "weight": 1.0,
+              "normalized": 2.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -42916,20 +42929,20 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:40:04.685598+00:00"
+        "attempted": "2026-11-02T23:15:00.488715+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000059039/bec320379e6b95b4ed7ba3a248aa6f3afc6ca2ffcd1db8f563c8475e97a2e3b1",
         "source": "https://www.nintendo.com/us/store/products/laserpitium-switch/",
         "checked": "2026-11-02T19:32:21.246141+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:18.031197+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:15:00.488715+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "The read operation timed out",
@@ -42944,7 +42957,51 @@
           "checked": "2026-11-02T19:32:21.245894+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/LASERPITIUM-2380829.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:15:00.804255+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "LASERPITIUM"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:15:00.804572+00:00",
+              "next_attempt": "2026-11-03T23:15:00.804572+00:00",
+              "revision": "b271c8d19eb47650:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:15:00.804572+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/LASERPITIUM-2380829.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/LASERPITIUM-2380829.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:15:16.115767+00:00",
+              "next_attempt": "2026-11-03T23:15:16.115767+00:00",
+              "revision": "b271c8d19eb47650:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:15:16.115767+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/laserpitium"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/laserpitium"
+            }
+          }
+        }
+      }
     },
     "PS5:17390": {
       "title": "LEGO Batman: Legacy of the Dark Knight",
@@ -47569,11 +47626,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:40:09.359681+00:00"
+        "attempted": "2026-11-02T23:15:00.489686+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -47581,12 +47638,15 @@
         "source": "https://www.nintendo.com/us/store/products/last-4-alive-escape-from-zombies-switch/",
         "checked": "2026-11-02T19:32:23.529609+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:18.031984+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:15:00.489686+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:40:12.197532+00:00",
       "store_evidence": [
@@ -47596,7 +47656,100 @@
           "checked": "2026-11-02T19:32:23.529357+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Last-4-Alive-Escape-From-Zombies-2058794.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:15:04.047725+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Last 4 Alive: Escape From Zombies"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:15:04.048060+00:00",
+              "next_attempt": "2026-11-03T23:15:04.048060+00:00",
+              "revision": "718ac93294d76f75:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:15:04.048060+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Last-4-Alive-Escape-From-Zombies-2058794.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Last-4-Alive-Escape-From-Zombies-2058794.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:15.956102+00:00",
+              "next_attempt": "2026-11-03T23:16:15.956102+00:00",
+              "revision": "718ac93294d76f75:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/last_4_alive_escape_from_zombies",
+                "https://www.nintendolife.com/games/nintendo-switch/last_4_alive_escape_from_zombies"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/last_4_alive_escape_from_zombies"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:16.728238+00:00",
+              "next_attempt": "2026-11-03T23:16:16.728238+00:00",
+              "revision": "718ac93294d76f75:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=last-4-alive-escape-from-zombies-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=last-4-alive-escape-from-zombies-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:19.602955+00:00",
+              "next_attempt": "2026-11-03T23:16:19.602955+00:00",
+              "revision": "718ac93294d76f75:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/last-4-alive-escape-from-zombies/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/last-4-alive-escape-from-zombies/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/last-4-alive-escape-from-zombies/"
+              ],
+              "url": "https://www.metacritic.com/game/last-4-alive-escape-from-zombies/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:19.636423+00:00",
+              "next_attempt": "2026-11-03T23:16:19.636423+00:00",
+              "revision": "718ac93294d76f75:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Last+4+Alive%3A+Escape+From+Zombies&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Last+4+Alive%3A+Escape+From+Zombies&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:16:19.636572+00:00",
+              "next_attempt": "2026-11-03T00:16:19.636572+00:00",
+              "revision": "718ac93294d76f75:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:16:19.636645+00:00",
+              "next_attempt": "2026-11-03T00:16:19.636645+00:00",
+              "revision": "718ac93294d76f75:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:12293": {
       "title": "Last Beat Enhanced",
@@ -47957,11 +48110,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:40:32.484023+00:00"
+        "attempted": "2026-11-02T23:15:00.496058+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -47969,12 +48122,15 @@
         "source": "https://www.nintendo.com/us/store/products/legion-of-doom-switch/",
         "checked": "2026-11-02T19:32:28.674500+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:24.133289+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:15:00.496058+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:40:35.467268+00:00",
       "store_evidence": [
@@ -47984,7 +48140,100 @@
           "checked": "2026-11-02T19:32:28.674198+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Legion-of-Doom-2312179.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:15:05.210279+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Legion of Doom"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:15:05.210588+00:00",
+              "next_attempt": "2026-11-03T23:15:05.210588+00:00",
+              "revision": "d6be34f2eeeb292e:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:15:05.210588+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Legion-of-Doom-2312179.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Legion-of-Doom-2312179.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:20.759380+00:00",
+              "next_attempt": "2026-11-03T23:16:20.759380+00:00",
+              "revision": "d6be34f2eeeb292e:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/legion_of_doom",
+                "https://www.nintendolife.com/games/nintendo-switch/legion_of_doom"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/legion_of_doom"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:21.384850+00:00",
+              "next_attempt": "2026-11-03T23:16:21.384850+00:00",
+              "revision": "d6be34f2eeeb292e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=legion-of-doom-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=legion-of-doom-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:23.925271+00:00",
+              "next_attempt": "2026-11-03T23:16:23.925271+00:00",
+              "revision": "d6be34f2eeeb292e:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/legion-of-doom/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/legion-of-doom/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/legion-of-doom/"
+              ],
+              "url": "https://www.metacritic.com/game/legion-of-doom/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:23.958508+00:00",
+              "next_attempt": "2026-11-03T23:16:23.958508+00:00",
+              "revision": "d6be34f2eeeb292e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Legion+of+Doom&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Legion+of+Doom&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:16:23.958633+00:00",
+              "next_attempt": "2026-11-03T00:16:23.958633+00:00",
+              "revision": "d6be34f2eeeb292e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:16:23.958720+00:00",
+              "next_attempt": "2026-11-03T00:16:23.958720+00:00",
+              "revision": "d6be34f2eeeb292e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:12529": {
       "title": "Let's Cook Together 2",
@@ -48011,11 +48260,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:41:01.412081+00:00"
+        "attempted": "2026-11-02T23:15:24.253140+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -48023,12 +48272,15 @@
         "source": "https://www.nintendo.com/us/store/products/lets-cook-together-2-switch/",
         "checked": "2026-11-02T19:32:58.875481+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:57.772384+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:15:24.253140+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:41:08.186024+00:00",
       "store_evidence": [
@@ -48038,7 +48290,100 @@
           "checked": "2026-11-02T19:32:58.875183+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Let-s-Cook-Together-2-2747762.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:15:24.577874+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Let's Cook Together 2"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:15:24.578219+00:00",
+              "next_attempt": "2026-11-03T23:15:24.578219+00:00",
+              "revision": "89dca5ab0f8973ec:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:15:24.578219+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Let-s-Cook-Together-2-2747762.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Let-s-Cook-Together-2-2747762.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:35.872116+00:00",
+              "next_attempt": "2026-11-03T23:16:35.872116+00:00",
+              "revision": "89dca5ab0f8973ec:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/lets_cook_together_2",
+                "https://www.nintendolife.com/games/nintendo-switch/lets_cook_together_2"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/lets_cook_together_2"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:39.471142+00:00",
+              "next_attempt": "2026-11-03T23:16:39.471142+00:00",
+              "revision": "89dca5ab0f8973ec:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=lets-cook-together-2-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=lets-cook-together-2-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:46.640749+00:00",
+              "next_attempt": "2026-11-03T23:16:46.640749+00:00",
+              "revision": "89dca5ab0f8973ec:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/lets-cook-together-2/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/lets-cook-together-2/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/lets-cook-together-2/"
+              ],
+              "url": "https://www.metacritic.com/game/lets-cook-together-2/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:46.729201+00:00",
+              "next_attempt": "2026-11-03T23:16:46.729201+00:00",
+              "revision": "89dca5ab0f8973ec:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Let%27s+Cook+Together+2&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Let%27s+Cook+Together+2&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:16:46.729322+00:00",
+              "next_attempt": "2026-11-03T00:16:46.729322+00:00",
+              "revision": "89dca5ab0f8973ec:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:16:46.729384+00:00",
+              "next_attempt": "2026-11-03T00:16:46.729384+00:00",
+              "revision": "89dca5ab0f8973ec:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:10829": {
       "title": "Let's Sing 2022",
@@ -79872,11 +80217,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:40:15.951440+00:00"
+        "attempted": "2026-11-02T23:15:00.490032+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -79884,12 +80229,15 @@
         "source": "https://www.nintendo.com/us/store/products/last-4-survive-the-outbreak-switch/",
         "checked": "2026-11-02T19:32:24.373347+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:18.032113+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:15:00.490032+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:40:19.103421+00:00",
       "store_evidence": [
@@ -79899,7 +80247,100 @@
           "checked": "2026-11-02T19:32:24.373087+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Last-4-Survive-The-Outbreak-2521691.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:15:02.980748+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Last 4 Survive: The Outbreak"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:15:02.981083+00:00",
+              "next_attempt": "2026-11-03T23:15:02.981083+00:00",
+              "revision": "a0b3b1f924b93dad:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:15:02.981083+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Last-4-Survive-The-Outbreak-2521691.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Last-4-Survive-The-Outbreak-2521691.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:10.890148+00:00",
+              "next_attempt": "2026-11-03T23:16:10.890148+00:00",
+              "revision": "a0b3b1f924b93dad:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/last_4_survive_the_outbreak",
+                "https://www.nintendolife.com/games/nintendo-switch/last_4_survive_the_outbreak"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/last_4_survive_the_outbreak"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:11.782651+00:00",
+              "next_attempt": "2026-11-03T23:16:11.782651+00:00",
+              "revision": "a0b3b1f924b93dad:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=last-4-survive-the-outbreak-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=last-4-survive-the-outbreak-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:13.591130+00:00",
+              "next_attempt": "2026-11-03T23:16:13.591130+00:00",
+              "revision": "a0b3b1f924b93dad:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/last-4-survive-the-outbreak/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/last-4-survive-the-outbreak/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/last-4-survive-the-outbreak/"
+              ],
+              "url": "https://www.metacritic.com/game/last-4-survive-the-outbreak/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:13.627018+00:00",
+              "next_attempt": "2026-11-03T23:16:13.627018+00:00",
+              "revision": "a0b3b1f924b93dad:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Last+4+Survive%3A+The+Outbreak&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Last+4+Survive%3A+The+Outbreak&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:16:13.627175+00:00",
+              "next_attempt": "2026-11-03T00:16:13.627175+00:00",
+              "revision": "a0b3b1f924b93dad:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:16:13.627257+00:00",
+              "next_attempt": "2026-11-03T00:16:13.627257+00:00",
+              "revision": "a0b3b1f924b93dad:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:15088": {
       "title": "Llamasoft: The Jeff Minter Story",
@@ -85759,7 +86200,7 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:40:20.020639+00:00"
+        "attempted": "2026-11-02T23:15:00.494803+00:00"
       },
       "requirements": {
         "image": true,
@@ -85778,20 +86219,92 @@
         "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-LEGION-2580936.html",
         "checked": "2026-11-02T19:32:29.204365+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:18.032328+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:15:00.494803+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "aliases": [
         "Arcade Archives LEGION"
       ],
       "full_attempted": "2026-11-02T20:40:22.659571+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:40.766433+00:00",
+              "next_attempt": "2026-11-03T23:16:40.766433+00:00",
+              "revision": "e62a09d67b902feb:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/legion",
+                "https://www.nintendolife.com/games/switch-eshop/legion",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_legion"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_legion"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:45.609833+00:00",
+              "next_attempt": "2026-11-03T23:16:45.609833+00:00",
+              "revision": "e62a09d67b902feb:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=legion-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=legion-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:55.007030+00:00",
+              "next_attempt": "2026-11-03T23:16:55.007030+00:00",
+              "revision": "e62a09d67b902feb:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-legion/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/legion-1987/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-legion/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-legion/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:55.062228+00:00",
+              "next_attempt": "2026-11-03T23:16:55.062228+00:00",
+              "revision": "e62a09d67b902feb:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Legion&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Legion&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:16:55.062338+00:00",
+              "next_attempt": "2026-11-03T00:16:55.062338+00:00",
+              "revision": "e62a09d67b902feb:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:16:55.062394+00:00",
+              "next_attempt": "2026-11-03T00:16:55.062394+00:00",
+              "revision": "e62a09d67b902feb:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:15380": {
       "title": "Lesson Learned",
@@ -97419,11 +97932,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:40:06.159219+00:00"
+        "attempted": "2026-11-02T23:15:00.489034+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -97431,12 +97944,15 @@
         "source": "https://www.nintendo.com/us/store/products/lady-death-demonicron-switch/",
         "checked": "2026-11-02T19:32:21.132346+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:18.031356+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:15:00.489034+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:40:09.279088+00:00",
       "store_evidence": [
@@ -97446,7 +97962,100 @@
           "checked": "2026-11-02T19:32:21.132145+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Lady-Death-Demonicron-3186804.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:15:01.897077+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Lady Death Demonicron"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:15:01.897384+00:00",
+              "next_attempt": "2026-11-03T23:15:01.897384+00:00",
+              "revision": "7c7dc4a2cc1e976d:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:15:01.897384+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Lady-Death-Demonicron-3186804.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Lady-Death-Demonicron-3186804.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:05.781649+00:00",
+              "next_attempt": "2026-11-03T23:16:05.781649+00:00",
+              "revision": "7c7dc4a2cc1e976d:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/lady_death_demonicron",
+                "https://www.nintendolife.com/games/nintendo-switch/lady_death_demonicron"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/lady_death_demonicron"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:06.541486+00:00",
+              "next_attempt": "2026-11-03T23:16:06.541486+00:00",
+              "revision": "7c7dc4a2cc1e976d:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=lady-death-demonicron-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=lady-death-demonicron-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:11.555336+00:00",
+              "next_attempt": "2026-11-03T23:16:11.555336+00:00",
+              "revision": "7c7dc4a2cc1e976d:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/lady-death-demonicron/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/lady-death-demonicron/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/lady-death-demonicron/"
+              ],
+              "url": "https://www.metacritic.com/game/lady-death-demonicron/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:11.586506+00:00",
+              "next_attempt": "2026-11-03T23:16:11.586506+00:00",
+              "revision": "7c7dc4a2cc1e976d:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Lady+Death+Demonicron&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Lady+Death+Demonicron&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:16:11.586668+00:00",
+              "next_attempt": "2026-11-03T00:16:11.586668+00:00",
+              "revision": "7c7dc4a2cc1e976d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:16:11.586746+00:00",
+              "next_attempt": "2026-11-03T00:16:11.586746+00:00",
+              "revision": "7c7dc4a2cc1e976d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:15969": {
       "title": "Let's Sing 2025",
@@ -179556,10 +180165,22 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 5.8,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 5.8,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/last-resort-1992/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "checked": "2026-11-02T23:16:35.701529+00:00",
+              "weight": 2.23606797749979,
+              "normalized": 5.8
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": false,
@@ -179572,12 +180193,12 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:40:17.129021+00:00"
+        "attempted": "2026-11-02T23:15:00.493606+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
-        "rating": false
+        "rating": true
       },
       "store": {
         "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/ACA-NEOGEO-LAST-RESORT-1228880.html",
@@ -179591,11 +180212,11 @@
         "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/ACA-NEOGEO-LAST-RESORT-1228880.html",
         "checked": "2026-11-02T19:32:28.127029+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:18.032238+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:15:00.493606+00:00",
+      "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; Wrong console page; HTTP Error 404: Not Found; Wrong console page",
-        "nindie": "Not a Switch 1 review",
+        "community": "HTTP Error 404: Not Found; Wrong console or community page; HTTP Error 404: Not Found; Wrong console or community page",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "slush": "No scored Switch review indexed",
@@ -179605,7 +180226,51 @@
         "ACA NEOGEO LAST RESORT"
       ],
       "full_attempted": "2026-11-02T20:40:20.013663+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "identity_rejected",
+              "last_attempt": "2026-11-02T23:16:31.076794+00:00",
+              "next_attempt": "2026-11-03T23:16:31.076794+00:00",
+              "revision": "cc34aa8a4745e9f2:7",
+              "reason": "HTTP Error 404: Not Found; Wrong console or community page; HTTP Error 404: Not Found; Wrong console or community page",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/last_resort",
+                "https://www.nintendolife.com/games/nintendo-switch/aca_neogeo_last_resort",
+                "https://www.nintendolife.com/games/switch-eshop/aca_neogeo_last_resort"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/aca_neogeo_last_resort"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:31.707991+00:00",
+              "next_attempt": "2026-11-03T23:16:31.707991+00:00",
+              "revision": "cc34aa8a4745e9f2:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=last-resort-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=last-resort-switch"
+            },
+            "metacritic": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:16:35.701618+00:00",
+              "next_attempt": "2026-11-03T23:16:35.701618+00:00",
+              "revision": "cc34aa8a4745e9f2:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:16:35.701618+00:00",
+              "attempted_urls": [
+                "https://www.metacritic.com/game/last-resort/",
+                "https://backend.metacritic.com/reviews/metacritic/user/games/aca-neogeo-last-resort/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/user/games/last-resort-1992/platform/nintendo-switch/stats/web"
+              ],
+              "url": "https://backend.metacritic.com/reviews/metacritic/user/games/last-resort-1992/platform/nintendo-switch/stats/web"
+            }
+          }
+        }
+      }
     },
     "Switch:7228": {
       "title": "Levelhead",
@@ -187211,10 +187876,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/laser_kitty_pow_pow",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:15:20.949345+00:00",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -187224,23 +187902,106 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:40:18.081438+00:00"
+        "attempted": "2026-11-02T23:15:00.489288+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
-        "rating": false
+        "rating": true
       },
-      "basics_attempted": "2026-11-02T19:32:18.031809+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:15:00.489288+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
       "full_attempted": "2026-11-02T20:40:21.262474+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:15:01.162427+00:00",
+              "next_attempt": "2026-11-03T23:15:01.162427+00:00",
+              "revision": "ded1a19f6e3ef5c2:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Laser+Kitty+Pow+Pow%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Laser+Kitty+Pow+Pow%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:15:01.162427+00:00",
+              "next_attempt": "2026-11-03T23:15:01.162427+00:00",
+              "revision": "ded1a19f6e3ef5c2:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Laser+Kitty+Pow+Pow%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Laser+Kitty+Pow+Pow%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:15:20.949392+00:00",
+              "next_attempt": "2026-11-03T23:15:20.949392+00:00",
+              "revision": "ded1a19f6e3ef5c2:7",
+              "reason": "No qualifying image found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/laser_kitty_pow_pow"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/laser_kitty_pow_pow"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:15:24.089284+00:00",
+              "next_attempt": "2026-11-03T23:15:24.089284+00:00",
+              "revision": "ded1a19f6e3ef5c2:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=laser-kitty-pow-pow-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=laser-kitty-pow-pow-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:15:24.252976+00:00",
+              "next_attempt": "2026-11-03T23:15:24.252976+00:00",
+              "revision": "ded1a19f6e3ef5c2:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Laser+Kitty+Pow+Pow%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Laser+Kitty+Pow+Pow%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:15:20.949412+00:00",
+              "next_attempt": "2026-11-03T23:15:20.949412+00:00",
+              "revision": "ded1a19f6e3ef5c2:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:15:20.949412+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/laser_kitty_pow_pow"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/laser_kitty_pow_pow"
+            }
+          }
+        }
+      }
     },
     "Switch:7426": {
       "title": "Lightning Fighters",
@@ -202509,10 +203270,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/lets_cook_together",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:15:56.100359+00:00",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -202522,20 +203296,20 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:40:21.301640+00:00"
+        "attempted": "2026-11-02T23:15:16.116008+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000030071/86867e14c57cbb28580b3dc134d3739b95edf158a0ecd3fded7e02195f1d0d69",
         "source": "https://www.nintendo.com/us/store/products/lets-cook-together-switch/",
         "checked": "2026-11-02T19:32:31.196879+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:29.004307+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:15:16.116008+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "slush": "No scored Switch review indexed",
@@ -202549,7 +203323,51 @@
           "checked": "2026-11-02T19:32:31.196613+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Let-s-Cook-Together-1884653.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:15:16.369429+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Let's Cook Together"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:15:16.369749+00:00",
+              "next_attempt": "2026-11-03T23:15:16.369749+00:00",
+              "revision": "c9a1744416057e77:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:15:16.369749+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Let-s-Cook-Together-1884653.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Let-s-Cook-Together-1884653.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:15:56.100421+00:00",
+              "next_attempt": "2026-11-03T23:15:56.100421+00:00",
+              "revision": "c9a1744416057e77:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:15:56.100421+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/lets_cook_together"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/lets_cook_together"
+            }
+          }
+        }
+      }
     },
     "Switch:8251": {
       "title": "Mana Spark",
