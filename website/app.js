@@ -2,7 +2,7 @@ const $=s=>document.querySelector(s);
 const DATA_URL='https://raw.githubusercontent.com/corrida-repos/local-multiplayer-game-db/main/data/catalog.json';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeUrl=s=>{try{const u=new URL(s);return u.protocol==='https:'?u.href:''}catch{return ''}};
-let data=null,images={},ratings={},composites={},stores={},trailers={},psplus={},limit=24,activeGameKey=null,wishlistOpen=false;
+let data=null,images={},ratings={},composites={},stores={},trailers={},psplus={},limit=24,activeGameKey=null,wishlistOpen=false,catalogSort=null;
 const dialog=$('#game-detail');
 const STATE_KEY='sofa-duo-game-status';
 const gameKey=g=>g.title.normalize('NFKC').toLocaleLowerCase('pt');
@@ -91,4 +91,4 @@ load();
 
 window.addEventListener('storage',e=>{if(e.key===STATE_KEY){try{const next=JSON.parse(e.newValue||'{}');states=next&&typeof next==='object'&&!Array.isArray(next)?next:{};render();if(dialog.open){const game=data?.games.find(g=>entryKey(g)===activeGameKey);if(game)$('#detail-content .game-actions').innerHTML=gameActions(game)}}catch{}}});
 
-$('#open-wishlist').onclick=()=>{wishlistOpen=!wishlistOpen;$('#open-wishlist').innerHTML=wishlistOpen?'← Voltar ao catálogo':'♡ Quero jogar <span id="wishlist-count">0</span>';$('#open-wishlist').setAttribute('aria-pressed',String(wishlistOpen));$('#wishlist-title').hidden=!wishlistOpen;$('#toggle-filters').hidden=wishlistOpen;$('#filter-panel').hidden=wishlistOpen||$('#toggle-filters').getAttribute('aria-expanded')!=='true';limit=24;render();window.scrollTo({top:0,behavior:'instant'})};
+$('#open-wishlist').onclick=()=>{wishlistOpen=!wishlistOpen;if(wishlistOpen)catalogSort=$('#sort').value;else if(catalogSort)$('#sort').value=catalogSort;$('#open-wishlist').innerHTML=wishlistOpen?'← Voltar ao catálogo':'♡ Quero jogar <span id="wishlist-count">0</span>';$('#open-wishlist').setAttribute('aria-pressed',String(wishlistOpen));$('#wishlist-title').hidden=!wishlistOpen;$('#toggle-filters').hidden=wishlistOpen;$('#filter-panel').hidden=wishlistOpen||$('#toggle-filters').getAttribute('aria-expanded')!=='true';limit=24;render();window.scrollTo({top:0,behavior:'instant'})};
