@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:06:12.029135+00:00",
+  "updated": "2026-11-02T17:06:25.564778+00:00",
   "version": 1,
   "coverage": {
     "total": 1085,
-    "attempted": 252,
-    "ready": 188,
-    "missing_image": 810,
-    "missing_store": 813,
-    "missing_rating": 887,
+    "attempted": 262,
+    "ready": 195,
+    "missing_image": 800,
+    "missing_store": 803,
+    "missing_rating": 880,
     "full_attempted": 0
   },
   "games": {
@@ -15233,46 +15233,137 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 4.3,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 4.3,
+              "scale": 10,
+              "count": 11,
+              "url": "https://www.metacritic.com/game/dont-starve-together/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.3166247903554,
+              "normalized": 4.3
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:18.577946+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/dont-starve-together-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:06:22.076514+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000019795/081425533fd5a75ad96eb4333f260edf690b91110402ac801e07fd332035da8e",
+        "source": "https://www.nintendo.com/us/store/products/dont-starve-together-switch/",
+        "checked": "2026-11-02T17:06:22.077056+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:18.577946+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:10072": {
       "title": "Donuts'n'Justice",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 51.5,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Gaming Age",
+              "score": 33,
+              "url": "https://gaming-age.com/2021/07/donutsnjustice-review-for-ps5-ps4-xbox-one-switch/",
+              "date": "2021-07-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 70,
+              "url": "http://www.playstationcountry.com/donuts-n-justice-ps4-review/",
+              "date": "2021-06-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 8.22,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.11,
+              "count": 271,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA03760_00-RGDONUTSNJUSTICE",
+              "checked": "2026-11-02T17:06:23.104196+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 16.46207763315433,
+              "normalized": 8.22
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:22.077174+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA03760_00-RGDONUTSNJUSTICE",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:06:23.104196+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202105/1319/GHZKDyHvzoKXFnkkKk0OWzCN.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0896-PPSA03760_00-RGDONUTSNJUSTICE",
+        "checked": "2026-11-02T17:06:23.104196+00:00"
+      },
+      "user": {
+        "score": 4.11,
+        "count": 271,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA03760_00-RGDONUTSNJUSTICE",
+        "checked": "2026-11-02T17:06:23.104196+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP0896-PPSA03760_00-RGDONUTSNJUSTICE",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0896-PPSA03760_00-RGDONUTSNJUSTICE",
+        "checked": "2026-11-02T17:06:23.104196+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:22.077174+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:10583": {
       "title": "Doom & Destiny Worlds",
@@ -35651,24 +35742,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/donkey-kong-country-returns-hd",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.6,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.6,
+              "scale": 10.0,
+              "count": 402,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/donkey_kong_country_returns_hd",
+              "platform": "Nintendo Switch",
+              "weight": 20.049937655763422,
+              "normalized": 7.6
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:18.666874+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/donkey-kong-country-returns-hd-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:06:21.386015+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000084604/50b3b71a75022699ab39d631df7a6b1571df102f96d5f10e6267cbecadfa4cd6",
+        "source": "https://www.nintendo.com/us/store/products/donkey-kong-country-returns-hd-switch/",
+        "checked": "2026-11-02T17:06:21.386965+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:18.666874+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:15432": {
       "title": "Everafter Falls",
@@ -39901,22 +40026,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.88,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.94,
+              "count": 171,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UB0821-PPSA28463_00-BREADANDFRED0001",
+              "checked": "2026-11-02T17:06:15.148972+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 13.076696830622021,
+              "normalized": 7.880000000000001
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:14.177593+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UB0821-PPSA28463_00-BREADANDFRED0001",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:06:15.148972+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202503/0518/55acb282d4c82a2c633aec0d7ec418fbd3284d38b9fe3a51.png",
+        "source": "https://store.playstation.com/pt-pt/product/UB0821-PPSA28463_00-BREADANDFRED0001",
+        "checked": "2026-11-02T17:06:15.148972+00:00"
+      },
+      "user": {
+        "score": 3.94,
+        "count": 171,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UB0821-PPSA28463_00-BREADANDFRED0001",
+        "checked": "2026-11-02T17:06:15.148972+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UB0821-PPSA28463_00-BREADANDFRED0001",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UB0821-PPSA28463_00-BREADANDFRED0001",
+        "checked": "2026-11-02T17:06:15.148972+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:14.177593+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:16039": {
       "title": "Cell Scientist: Beyond",
@@ -39925,22 +40098,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:14.177832+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/cell-scientist-beyond-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:06:15.835816+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000087581/666f46c64dc4ffc8878abcc6ab0b2b6fa0328fac6e505be87364f52debd72f88",
+        "source": "https://www.nintendo.com/us/store/products/cell-scientist-beyond-switch/",
+        "checked": "2026-11-02T17:06:15.836151+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:14.177832+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:15974": {
       "title": "Coffee, Plis",
@@ -39949,22 +40137,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 4.92,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 2.46,
+              "count": 37,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP8255-PPSA21388_00-COFFEEPLIS0000NA",
+              "checked": "2026-11-02T17:06:16.560320+00:00",
+              "platform": "PSN · PS5",
+              "weight": 6.082762530298219,
+              "normalized": 4.92
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:14.179336+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP8255-PPSA21388_00-COFFEEPLIS0000NA",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:06:16.560320+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202402/2906/45721cc3abae81fd29358e5a2247fd64af56969cf18488e3.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP8255-PPSA21388_00-COFFEEPLIS0000NA",
+        "checked": "2026-11-02T17:06:16.560320+00:00"
+      },
+      "user": {
+        "score": 2.46,
+        "count": 37,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP8255-PPSA21388_00-COFFEEPLIS0000NA",
+        "checked": "2026-11-02T17:06:16.560320+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP8255-PPSA21388_00-COFFEEPLIS0000NA",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP8255-PPSA21388_00-COFFEEPLIS0000NA",
+        "checked": "2026-11-02T17:06:16.560320+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:14.179336+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:16066": {
       "title": "DESERTED",
@@ -39973,22 +40209,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:14.179638+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/deserted-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:06:16.331039+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000063803/41344bb4f1770e80a46ab4db83118d1f957b434b7743b53edc58ebe26d0bacfc",
+        "source": "https://www.nintendo.com/us/store/products/deserted-switch/",
+        "checked": "2026-11-02T17:06:16.331367+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:14.179638+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:16125": {
       "title": "DYNABLASTER",
@@ -39997,22 +40248,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.76,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.88,
+              "count": 8,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP7357-PPSA21745_00-0053683782866777",
+              "checked": "2026-11-02T17:06:17.505819+00:00",
+              "platform": "PSN · PS5",
+              "weight": 2.8284271247461903,
+              "normalized": 7.76
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:15.158627+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP7357-PPSA21745_00-0053683782866777",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:06:17.505819+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202406/1306/010361f5a2bc7e837923c6497465f76aeba9baf0c1345ec2.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP7357-PPSA21745_00-0053683782866777",
+        "checked": "2026-11-02T17:06:17.505819+00:00"
+      },
+      "user": {
+        "score": 3.88,
+        "count": 8,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP7357-PPSA21745_00-0053683782866777",
+        "checked": "2026-11-02T17:06:17.505819+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP7357-PPSA21745_00-0053683782866777",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP7357-PPSA21745_00-0053683782866777",
+        "checked": "2026-11-02T17:06:17.505819+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:15.158627+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:15995": {
       "title": "Damikira",
@@ -40021,22 +40320,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.28,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.14,
+              "count": 14,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP2005-PPSA24546_00-DAMIKIRA00000000",
+              "checked": "2026-11-02T17:06:18.658422+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 3.7416573867739413,
+              "normalized": 8.28
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:16.567946+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP2005-PPSA24546_00-DAMIKIRA00000000",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:06:18.658422+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202407/1705/f3f0c557497153c974dadc31623acdc8868a87ccf3e162f7.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP2005-PPSA24546_00-DAMIKIRA00000000",
+        "checked": "2026-11-02T17:06:18.658422+00:00"
+      },
+      "user": {
+        "score": 4.14,
+        "count": 14,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP2005-PPSA24546_00-DAMIKIRA00000000",
+        "checked": "2026-11-02T17:06:18.658422+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP2005-PPSA24546_00-DAMIKIRA00000000",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP2005-PPSA24546_00-DAMIKIRA00000000",
+        "checked": "2026-11-02T17:06:18.658422+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:16.567946+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:15991": {
       "title": "Damikira",
@@ -40045,22 +40392,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:17.517553+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/damikira-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:06:18.467391+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000084835/612a17862da242068f0f3478f899e35ee0a9d1c7da28be9d8a4f2b8e5a75c5e6",
+        "source": "https://www.nintendo.com/us/store/products/damikira-switch/",
+        "checked": "2026-11-02T17:06:18.467643+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:17.517553+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:16161": {
       "title": "Dorfs: Hammers for Hire",
