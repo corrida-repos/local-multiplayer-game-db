@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T21:08:22.285121+00:00",
+  "updated": "2026-11-02T21:09:10.164487+00:00",
   "version": 4,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 144,
     "missing_store": 256,
     "missing_rating": 611,
-    "full_attempted": 982
+    "full_attempted": 992
   },
   "games": {
     "PS5:13238": {
@@ -14825,15 +14825,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.77,
-              "count": 450,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.77,
               "scale": 5,
-              "source": "PSN",
+              "count": 450,
               "url": "https://store.playstation.com/pt-pt/product/EP2005-PPSA04592_00-CRISISWING000000",
-              "checked": "2026-11-02T17:03:21.999682+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 21.213203435596427,
               "normalized": 7.54
             }
@@ -14841,7 +14838,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:03:20.512059+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:08:36.167316+00:00"
       },
       "requirements": {
         "image": true,
@@ -14879,14 +14883,17 @@
       },
       "basics_attempted": "2026-11-02T17:03:20.512059+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:08:36.696688+00:00"
     },
     "Switch:10546": {
       "title": "Crisis Wing",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 62.7,
           "scale": 100,
           "sources": [
             {
@@ -14898,6 +14905,13 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Nindie Spotlight",
+              "score": 68.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=crisis-wing-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "Shindig",
               "score": 50,
               "url": "https://www.shindig.nz/games/game-review/crisis-wing-switch/",
@@ -14907,7 +14921,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 2
+          "source_count": 3
         },
         "user": {
           "score": null,
@@ -14916,7 +14930,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:03:22.008554+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:08:50.424893+00:00"
       },
       "requirements": {
         "image": true,
@@ -14935,7 +14957,11 @@
       },
       "basics_attempted": "2026-11-02T17:03:22.008554+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:08:53.047906+00:00"
     },
     "PS5:13950": {
       "title": "Cry Babies Magic Tears: The Big Game",
@@ -73771,26 +73797,48 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameSpew",
+              "score": 90,
+              "url": "https://www.gamespew.com/2024/09/crossy-road-castle-review/",
+              "date": "2024-09-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "https://www.pushsquare.com/reviews/ps5/crossy-road-castle",
+              "date": "2024-09-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/retro-inspired-indie-games-part-12#crossy-road-castle",
+              "date": "2024-09-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 7.42,
           "scale": 10,
           "sources": [
             {
-              "score": 3.71,
-              "count": 3203,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.71,
               "scale": 5,
-              "source": "PSN",
+              "count": 3203,
               "url": "https://store.playstation.com/pt-pt/product/EB0224-PPSA19932_00-0983360070413417",
-              "checked": "2026-11-02T17:04:18.716137+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 31.622776601683793,
               "normalized": 7.42
             }
@@ -73798,7 +73846,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:04:17.415936+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:08:48.423373+00:00"
       },
       "requirements": {
         "image": true,
@@ -73836,7 +73891,10 @@
       },
       "basics_attempted": "2026-11-02T17:04:17.415936+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:08:49.793873+00:00"
     },
     "Switch:15835": {
       "title": "Crossy Road: Castle",
@@ -99764,15 +99822,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4,
-              "count": 27,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4,
               "scale": 5,
-              "source": "PSN",
+              "count": 27,
               "url": "https://store.playstation.com/pt-pt/product/EP3877-PPSA34484_00-FULLGAMECROSAKPA",
-              "checked": "2026-11-02T17:19:51.107080+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 5.196152422706632,
               "normalized": 8.0
             }
@@ -99780,7 +99835,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:19:48.823885+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:08:39.861536+00:00"
       },
       "requirements": {
         "image": true,
@@ -99818,7 +99880,10 @@
       },
       "basics_attempted": "2026-11-02T17:19:48.823885+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:08:40.170078+00:00"
     },
     "Switch:17876": {
       "title": "Crosak",
@@ -99832,6 +99897,7 @@
               "name": "Cubed3",
               "score": 70,
               "url": "https://www.cubed3.com/games/reviews/nintendo-switch/crosak",
+              "date": "2026-04-27",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -99846,7 +99912,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:19:48.824169+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:08:43.824163+00:00"
       },
       "requirements": {
         "image": true,
@@ -99866,8 +99940,11 @@
       "basics_attempted": "2026-11-02T17:19:48.824169+00:00",
       "version": 2,
       "errors": {
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:08:46.751974+00:00"
     },
     "PS5:17902": {
       "title": "DAMON and BABY",
@@ -154103,39 +154180,95 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 83.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/crimzon_clover_-_world_explosion1",
+              "name": "4P.de",
+              "score": 91,
+              "url": "https://www.4players.de/4players.php/spielinfo/Switch/42469/Crimzon_Clover_-_World_EXplosion.html",
+              "date": "2020-11-04",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=crimzon-clover-world-explosion-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/crimzon_clover_world_explosion",
+              "date": "2020-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "https://www.nintendoworldreport.com/review/55647/crimzon-clover-world-explosion-switch-review",
+              "date": "2021-04-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 90,
+              "url": "https://noisypixel.net/crimzon-clover-world-explosion-review-switch-pc/",
+              "date": "2020-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 80,
+              "url": "https://www.thesixthaxis.com/2020/12/01/crimzon-clover-world-explosion-review/",
+              "date": "2020-12-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/standout-console-games#crimzon-clover-world-explosion",
+              "date": "2020-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
-          "score": 7.4,
+          "score": 7.8,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.4,
-              "scale": 10.0,
-              "count": 22,
-              "url": "https://www.nintendolife.com/games/switch-eshop/crimzon_clover_-_world_explosion1",
+              "name": "Metacritic users",
+              "score": 7.8,
+              "scale": 10,
+              "count": 20,
+              "url": "https://www.metacritic.com/game/crimzon-clover-world-explosion/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 4.69041575982343,
-              "normalized": 7.4
+              "weight": 4.47213595499958,
+              "normalized": 7.800000000000001
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:34:34.304344+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:08:39.430143+00:00"
       },
       "requirements": {
         "image": true,
@@ -154154,7 +154287,11 @@
       },
       "basics_attempted": "2026-11-02T17:34:34.304344+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:08:42.039319+00:00"
     },
     "Switch:7993": {
       "title": "Croixleur Σ",
@@ -154182,7 +154319,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:48:10.497139+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:08:41.628293+00:00"
       },
       "requirements": {
         "image": true,
@@ -154195,7 +154340,9 @@
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
-        "metacritic_reviews": "HTTP Error 404: Not Found"
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Croixleur-Sigma-1531722.html",
@@ -154207,14 +154354,15 @@
         "source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Croixleur-Sigma-1531722.html",
         "checked": "2026-11-02T19:48:10.497139+00:00",
         "method": "official-product-index"
-      }
+      },
+      "full_attempted": "2026-11-02T21:08:44.009812+00:00"
     },
     "Switch:7851": {
       "title": "CrossKrush",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 60.0,
           "scale": 100,
           "sources": [
             {
@@ -154223,10 +154371,18 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=crosskrush-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 50,
+              "url": "https://purenintendo.com/review-crosskrush-nintendo-switch/",
+              "date": "2020-11-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -154235,7 +154391,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:34:38.033848+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:08:49.331412+00:00"
       },
       "requirements": {
         "image": true,
@@ -154254,7 +154418,11 @@
       },
       "basics_attempted": "2026-11-02T17:34:38.033848+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:08:51.900159+00:00"
     },
     "Switch:8035": {
       "title": "Cube Raiders",
@@ -158899,28 +159067,135 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 61.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/crimsonland",
+              "name": "COGconnected",
+              "score": 65,
+              "url": "http://cogconnected.com/review/crimsonland-review/",
+              "date": "2017-12-05",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 70,
+              "url": "https://www.criticalhit.net/review/crimsonland-switch-review-guns-n-disposes/",
+              "date": "2018-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 50,
+              "url": "http://www.digitallydownloaded.net/2017/11/short-n-sweet-reviews-more-nintendo.html",
+              "date": "2017-11-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 60,
+              "url": "http://fnintendo.net/article/10194-crimsonland",
+              "date": "2017-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 65,
+              "url": "https://www.gamegrin.com/reviews/crimsonland-review/",
+              "date": "2017-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 60,
+              "url": "https://www.gamespace.com/featured/our-crimsonlands-on-switch-review",
+              "date": "2017-11-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 80.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=crimsonland-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 60,
+              "url": "http://www.nintenderos.com/2018/01/analisis-crimsonland/",
+              "date": "2018-02-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/crimsonland?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2017-11-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/45967/crimsonland-switch-review",
+              "date": "2017-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2017/12/04/crimsonland-review/",
+              "date": "2017-12-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 40,
+              "url": "https://www.vooks.net/crimsonland-switch-eshop-review/",
+              "date": "2017-12-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 12
         },
         "user": {
-          "score": null,
+          "score": 6.2,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.2,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/crimsonland/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 6.2
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:36:42.417978+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 11,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:08:46.023419+00:00"
       },
       "requirements": {
         "image": true,
@@ -158939,7 +159214,11 @@
       },
       "basics_attempted": "2026-11-02T17:36:42.417978+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:08:48.517784+00:00"
     },
     "Switch:8387": {
       "title": "Dark Witch Music Episode: Rudymical",
@@ -169846,15 +170125,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.62,
-              "count": 151,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.62,
               "scale": 5,
-              "source": "PSN",
+              "count": 151,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA02717_00-RATAGACROSSKRUSH",
-              "checked": "2026-11-02T17:40:33.947039+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 12.288205727444508,
               "normalized": 7.24
             }
@@ -169862,7 +170138,16 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:40:32.355756+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: The read operation timed out",
+          "Metacritic users: The read operation timed out",
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:09:09.631791+00:00"
       },
       "requirements": {
         "image": true,
@@ -169900,7 +170185,10 @@
       },
       "basics_attempted": "2026-11-02T17:40:32.355756+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:09:10.050412+00:00"
     },
     "Switch:9256": {
       "title": "Darius Cozmic Collection Arcade",
