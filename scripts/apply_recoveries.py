@@ -70,5 +70,6 @@ def apply_pending():
     after={k:e.requirements(v) for k,v in entries.items()};delta={field:sum(not before[k][field] and after[k][field] for k in entries) for field in ['image','store','rating']};delta['newly_complete']=sum(not all(before[k].values()) and all(after[k].values()) for k in entries)
     db=sqlite3.connect(ROOT/'data/enrichment.sqlite');db.execute('CREATE TABLE IF NOT EXISTS enrichment(game_key TEXT PRIMARY KEY,payload TEXT NOT NULL)');e.export(entries,db);db.close()
     state['applied'].append(digest);state.setdefault('batches',[]).append({'id':batch['id'],'applied':e.now(),'improvement':delta});state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n');print('RECOVERY APPLIED',json.dumps(delta),flush=True)
+    return delta
 
 if __name__=='__main__':apply_pending()
