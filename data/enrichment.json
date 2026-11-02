@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:20:08.110046+00:00",
+  "updated": "2026-11-02T17:20:47.552824+00:00",
   "version": 2,
   "coverage": {
     "total": 1585,
-    "attempted": 522,
-    "ready": 325,
-    "missing_image": 1077,
-    "missing_store": 1096,
-    "missing_rating": 1239,
+    "attempted": 532,
+    "ready": 329,
+    "missing_image": 1069,
+    "missing_store": 1088,
+    "missing_rating": 1234,
     "full_attempted": 0
   },
   "games": {
@@ -57497,21 +57497,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:20:10.081665+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:20:10.081665+00:00",
+      "version": 2,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "Switch:17594": {
@@ -57519,24 +57527,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 60.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/double-dragon-revive",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 5.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 5.7,
+              "scale": 10.0,
+              "count": 32,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/double_dragon_revive",
+              "platform": "Nintendo Switch",
+              "weight": 5.656854249492381,
+              "normalized": 5.700000000000001
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:20:12.560594+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/double-dragon-revive-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:20:14.565178+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000092999/cd299aff56e24d0bc8197f47da33875a778277d9369e4dc5ed43a36a2ba1d47e",
+        "source": "https://www.nintendo.com/us/store/products/double-dragon-revive-switch/",
+        "checked": "2026-11-02T17:20:14.565419+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:20:12.560594+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:17947": {
       "title": "Dragonkin: The Banished",
@@ -57545,22 +57587,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.68,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.34,
+              "count": 1239,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP6665-PPSA21601_00-DKB0000000000000",
+              "checked": "2026-11-02T17:20:17.169675+00:00",
+              "platform": "PSN · PS5",
+              "weight": 31.622776601683793,
+              "normalized": 8.68
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:20:16.119478+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP6665-PPSA21601_00-DKB0000000000000",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:20:17.169675+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202601/0509/e002b8568c395023498b1dc1d5e21cd5755bbdf5a8c3d1fa.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP6665-PPSA21601_00-DKB0000000000000",
+        "checked": "2026-11-02T17:20:17.169675+00:00"
+      },
+      "user": {
+        "score": 4.34,
+        "count": 1239,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP6665-PPSA21601_00-DKB0000000000000",
+        "checked": "2026-11-02T17:20:17.169675+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP6665-PPSA21601_00-DKB0000000000000",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP6665-PPSA21601_00-DKB0000000000000",
+        "checked": "2026-11-02T17:20:17.169675+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:20:16.119478+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:17767": {
       "title": "EGGCONSOLE SUPER LAYDOCK MISSION STRIKER MSX",
@@ -57569,21 +57659,41 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:20:17.986269+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/eggconsole-super-laydock-mission-striker-msx-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:20:20.687994+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000109863/bd3ffa25d6b89f0ef2f2b929fcd233e64c6a291de98892926276c92f885de583",
+        "source": "https://www.nintendo.com/us/store/products/eggconsole-super-laydock-mission-striker-msx-switch/",
+        "checked": "2026-11-02T17:20:20.688149+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:20:17.986269+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 301: Moved Permanently",
+        "metacritic_reviews": "HTTP Error 301: Moved Permanently",
+        "metacritic_critics": "The read operation timed out"
       }
     },
     "PS5:18072": {
@@ -57593,22 +57703,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.5,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.25,
+              "count": 169,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP1063-PPSA34233_00-0000000000000001",
+              "checked": "2026-11-02T17:20:27.980098+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 13.0,
+              "normalized": 8.5
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:20:26.617584+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP1063-PPSA34233_00-0000000000000001",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:20:27.980098+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202510/2220/827bf580277ec28f666adec712e9851ed6892a09d56d6d20.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP1063-PPSA34233_00-0000000000000001",
+        "checked": "2026-11-02T17:20:27.980098+00:00"
+      },
+      "user": {
+        "score": 4.25,
+        "count": 169,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP1063-PPSA34233_00-0000000000000001",
+        "checked": "2026-11-02T17:20:27.980098+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP1063-PPSA34233_00-0000000000000001",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP1063-PPSA34233_00-0000000000000001",
+        "checked": "2026-11-02T17:20:27.980098+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:20:26.617584+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:18071": {
       "title": "Etrange Overlord",
@@ -60625,21 +60783,42 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:20:17.176044+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/EGGCONSOLE-LAYDOCK-2-LAST-ATTACK-MSX2-3100839.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:20:20.201896+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/eggconsolelaydock2lastattackmsx2/1x1_EggconsoleLaydock2LastAttackMsx2_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/EGGCONSOLE-LAYDOCK-2-LAST-ATTACK-MSX2-3100839.html",
+        "checked": "2026-11-02T17:20:20.201896+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:20:17.176044+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "PS5:18361": {
@@ -62834,21 +63013,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:20:10.080988+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/disney-pixar-toy-story-3-complete-edition-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:20:11.225430+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000109113/ff06cff56dbe86d811097b363499f55fbfaf9b9e4584a6789679a66d03692bd0",
+        "source": "https://www.nintendo.com/us/store/products/disney-pixar-toy-story-3-complete-edition-switch/",
+        "checked": "2026-11-02T17:20:11.225629+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:20:10.080988+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:18898": {
@@ -62856,23 +63053,39 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2026/10/dog-man-bark-in-action-review/",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:20:10.081126+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "basics_attempted": "2026-11-02T17:20:10.081126+00:00",
+      "version": 2,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "Switch:18894": {
@@ -62880,24 +63093,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 80.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=dog-man-bark-in-action-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:20:10.081407+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/dog-man-bark-in-action-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:20:12.139134+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000125588/ea41c8bd4d11c46292c56cd29a0303fd1755f5210ee0967ce0fb12b0a51d40e1",
+        "source": "https://www.nintendo.com/us/store/products/dog-man-bark-in-action-switch/",
+        "checked": "2026-11-02T17:20:12.139287+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:20:10.081407+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:18760": {
       "title": "Dungeons of Alethrion",
@@ -62906,21 +63142,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:20:16.627188+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/dungeons-of-alethrion-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:20:18.017533+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000133554/d4f76d7819b0a6d44c9c0eb7b7b5a572f6607764c51f57a95b8ddf8aaf595f45",
+        "source": "https://www.nintendo.com/us/store/products/dungeons-of-alethrion-switch/",
+        "checked": "2026-11-02T17:20:18.017720+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:20:16.627188+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:18881": {
