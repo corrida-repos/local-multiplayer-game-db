@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-02T20:04:55.172933+00:00",
+  "updated": "2026-11-02T20:05:31.239336+00:00",
   "version": 4,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1729,
-    "missing_image": 223,
-    "missing_store": 329,
+    "ready": 1731,
+    "missing_image": 221,
+    "missing_store": 327,
     "missing_rating": 668,
     "full_attempted": 320
   },
@@ -58263,18 +58263,19 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:45:03.519646+00:00"
+        "attempted": "2026-11-02T20:04:58.470219+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T18:45:03.519646+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:04:58.470219+00:00",
+      "version": 4,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "image": "No unique matching video-game article with artwork"
       }
     },
     "Switch:12805": {
@@ -58688,21 +58689,22 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:46:28.744318+00:00"
+        "attempted": "2026-11-02T20:04:58.473490+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T18:46:28.744318+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:04:58.473490+00:00",
+      "version": 4,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
         "community": "HTTP Error 404: Not Found",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "image": "No unique matching video-game article with artwork"
       }
     },
     "Switch:10003": {
@@ -58961,22 +58963,23 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:47:04.884206+00:00"
+        "attempted": "2026-11-02T20:04:58.478358+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T18:47:04.884206+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:04:58.478358+00:00",
+      "version": 4,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "Not a Switch 1 review",
-        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_users": "The read operation timed out",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "image": "No unique matching video-game article with artwork"
       }
     },
     "PS5:13309": {
@@ -58991,7 +58994,7 @@
           "source_count": 0
         },
         "user": {
-          "score": 7.3,
+          "score": 8.15,
           "scale": 10,
           "sources": [
             {
@@ -59003,23 +59006,62 @@
               "platform": "PS5",
               "weight": 7.0710678118654755,
               "normalized": 7.3
+            },
+            {
+              "score": 4.17,
+              "count": 2066,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0700-PPSA08951_00-WELOVEKINGJR0000",
+              "checked": "2026-11-02T20:05:08.572836+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 8.34
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:47:04.885008+00:00"
+        "attempted": "2026-11-02T20:05:03.798839+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T18:47:04.885008+00:00",
-      "version": 3,
-      "errors": {
-        "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 403: Forbidden"
+      "basics_attempted": "2026-11-02T20:05:03.798839+00:00",
+      "version": 4,
+      "errors": {},
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0700-PPSA08951_00-WELOVEKINGJR0000",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T20:05:08.572836+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202305/1215/fb1f14176a48106a075b9f41db012fd52d3494480cfc7ecf.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0700-PPSA08951_00-WELOVEKINGJR0000",
+        "checked": "2026-11-02T20:05:08.572836+00:00"
+      },
+      "user": {
+        "score": 4.17,
+        "count": 2066,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0700-PPSA08951_00-WELOVEKINGJR0000",
+        "checked": "2026-11-02T20:05:08.572836+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP0700-PPSA08951_00-WELOVEKINGJR0000",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0700-PPSA08951_00-WELOVEKINGJR0000",
+        "checked": "2026-11-02T20:05:08.572836+00:00"
       }
     },
     "Switch:13306": {
@@ -59051,19 +59093,26 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:47:04.885320+00:00"
+        "attempted": "2026-11-02T20:05:04.286010+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T18:47:04.885320+00:00",
-      "version": 3,
-      "errors": {
-        "store": "Official Nintendo lookup: Exact Nintendo Switch store identity not verified",
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review"
+      "basics_attempted": "2026-11-02T20:05:04.286010+00:00",
+      "version": 4,
+      "errors": {},
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_5/1x1_NSwitch_WeLoveKatamariRerollRoyalReverie_image500w.jpg",
+        "source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/We-Love-Katamari-REROLL-Royal-Reverie-2338110.html",
+        "checked": "2026-11-02T20:05:04.286010+00:00",
+        "method": "official-product-index"
+      },
+      "store": {
+        "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/We-Love-Katamari-REROLL-Royal-Reverie-2338110.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T20:05:04.477996+00:00"
       }
     },
     "PS5:12193": {
@@ -63633,7 +63682,7 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:46:07.436930+00:00"
+        "attempted": "2026-11-02T20:04:58.470431+00:00"
       },
       "requirements": {
         "image": true,
@@ -63645,8 +63694,8 @@
         "source": "https://www.pushsquare.com/games/ps5/wwe_2k22",
         "checked": "2026-11-02T18:46:08.189684+00:00"
       },
-      "basics_attempted": "2026-11-02T18:46:07.436930+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:04:58.470431+00:00",
+      "version": 4,
       "errors": {
         "store": "No exact Portugal PS5 product verified"
       }
@@ -63688,7 +63737,7 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:46:07.437348+00:00"
+        "attempted": "2026-11-02T20:04:58.470657+00:00"
       },
       "requirements": {
         "image": true,
@@ -63700,8 +63749,8 @@
         "source": "https://www.pushsquare.com/games/ps5/wwe_2k23",
         "checked": "2026-11-02T18:46:09.510694+00:00"
       },
-      "basics_attempted": "2026-11-02T18:46:07.437348+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:04:58.470657+00:00",
+      "version": 4,
       "errors": {
         "store": "No exact Portugal PS5 product verified"
       }
@@ -63724,22 +63773,23 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:46:08.189855+00:00"
+        "attempted": "2026-11-02T20:04:58.470879+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T18:46:08.189855+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:04:58.470879+00:00",
+      "version": 4,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "image": "No unique matching video-game article with artwork"
       }
     },
     "Switch:14748": {
@@ -82086,19 +82136,20 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:46:31.012855+00:00"
+        "attempted": "2026-11-02T20:04:58.475149+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T18:46:31.012855+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:04:58.475149+00:00",
+      "version": 4,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "image": "No unique matching video-game article with artwork"
       }
     },
     "PS5:16526": {
@@ -106609,22 +106660,23 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:42:20.706513+00:00"
+        "attempted": "2026-11-02T20:04:58.470050+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T18:42:20.706513+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:04:58.470050+00:00",
+      "version": 4,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "image": "No unique matching video-game article with artwork"
       }
     },
     "Switch:18593": {
