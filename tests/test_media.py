@@ -16,6 +16,10 @@ class OfficialStores(unittest.TestCase):
         page='<title>Mario + Rabbids&reg; Kingdom Battle | Nintendo Switch games | Games | Nintendo UK</title><meta property="og:title" content="Team up with Mario and the Rabbids!">'
         self.assertTrue(nintendo_match(page,'Mario + Rabbids Kingdom Battle'));self.assertFalse(nintendo_match(page,'Mario + Rabbids Sparks of Hope'))
         self.assertFalse(official_url('Switch','https://www.nintendo.com/en-gb/Games/Nintendo-Switch-2-games/Example-123.html'))
+    def test_portuguese_document_title_with_marketing_social_title(self):
+        page='<title>Mario + Rabbids&reg; Kingdom Battle | Jogos para a Nintendo Switch | Jogos | Nintendo PT</title><meta property="og:title" content="Os Rabbids unem-se ao Mario">'
+        self.assertTrue(nintendo_match(page,'Mario + Rabbids Kingdom Battle'))
+        self.assertFalse(nintendo_match(page,'Mario + Rabbids Sparks of Hope'))
     def test_nintendo_trademarks(self):
         page='<meta property="og:title" content="Kirby’s Return to Dreamland™ Deluxe for the Nintendo Switch system™ – Official Site">'
         self.assertTrue(nintendo_match(page,"Kirby's Return to Dream Land Deluxe"))

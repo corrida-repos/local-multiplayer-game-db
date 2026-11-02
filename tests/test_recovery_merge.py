@@ -33,14 +33,14 @@ class CheckpointRecovery(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder);(root/'data').mkdir();game={'id':'1','title':'Game','platform':'PS5'}
             (root/'data/catalog.json').write_text(json.dumps({'games':[game]}))
-            entry={'title':'Game','platform':'PS5','image':{'url':'https://images.test/game.png'},'store':{'url':'https://official.test/game'},'ratings':{'user':e.composites.user_composite([{'name':'PSN','score':4,'scale':5,'count':10}])},'version':e.VERSION,'basics_attempted':e.now(),'full_attempted':e.now(),'full_version':e.VERSION}
+            entry={'title':'Game','platform':'PS5','image':{'url':'https://images.test/game.png'},'store':{'url':'https://store.playstation.com/pt-pt/product/GAME','region':'PT','verified':True},'ratings':{'user':e.composites.user_composite([{'name':'PSN','score':4,'scale':5,'count':10}])},'version':e.VERSION,'basics_attempted':e.now(),'full_attempted':e.now(),'full_version':e.VERSION,'field_status':{'image':{'sources':{'image_health':{'url':'https://images.test/game.png','revision':'health-v1','next_attempt':'9999-01-01T00:00:00+00:00'}}}}}
             calls=[]
             def checkpoint(*args,**kwargs):
                 calls.append(args)
                 if len(calls)==1:
                     critic=e.composites.critic_composite([{'name':'New review','score':95,'url':'https://review.test/game'}])
                     (root/'data/verified-recoveries.json').write_text(json.dumps({'id':'new-during-run','entry_passes':[{'PS5:1':{'title':'Game','platform':'PS5','ratings':{'critic':critic}}}]}))
-            with patch.object(e,'ROOT',root),patch.object(recovery,'ROOT',root),patch.object(e,'refresh_review_index'),patch.object(e.community_index,'refresh'),patch.object(e.community_index.load,'cache_clear'),patch.object(e.composites,'get'),patch.object(e,'basics',return_value=entry),patch.object(e.subprocess,'run',side_effect=checkpoint),patch.object(sys,'argv',['enrichment','--minutes','0.1','--workers','1','--checkpoint-push']),contextlib.redirect_stdout(io.StringIO()):
+            with patch.object(e,'ROOT',root),patch.object(recovery,'ROOT',root),patch.object(e,'refresh_review_index'),patch.object(e.community_index,'refresh'),patch.object(e.nintendo_index,'refresh'),patch.object(e.direct_reviews,'refresh'),patch.object(e.community_index.load,'cache_clear'),patch.object(e.composites,'get'),patch.object(e,'basics',return_value=entry),patch.object(e.subprocess,'run',side_effect=checkpoint),patch.object(sys,'argv',['enrichment','--minutes','0.1','--workers','1','--checkpoint-push']),contextlib.redirect_stdout(io.StringIO()):
                 e.main()
             saved=json.loads((root/'data/enrichment.json').read_text())['games']['PS5:1']
             self.assertEqual(saved['ratings']['critic']['score'],95)

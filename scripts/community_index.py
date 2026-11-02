@@ -4,7 +4,7 @@ from pathlib import Path
 from scripts import stores,ratings
 ROOT=Path(__file__).resolve().parents[1]
 SOURCES={'Switch':('www.nintendolife.com',{'nintendo-switch','switch-eshop'}),'PS5':('www.pushsquare.com',{'ps5'})}
-INTERVALS={host:5 for host,_ in SOURCES.values()}
+INTERVALS={**{host:5 for host,_ in SOURCES.values()},'purenintendo.com':10,'www.psu.com':5,'www.nintendoworldreport.com':1.1}
 
 def valid_url(url,platform):
     parsed=urllib.parse.urlparse(url);host,folders=SOURCES[platform];parts=parsed.path.split('/')
@@ -26,7 +26,7 @@ def load():
     return json.loads(path.read_text()) if path.exists() else {'platforms':{}}
 
 def refresh(get):
-    cached=load();cutoff=(dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=7)).isoformat();changed=False
+    cached=load();cutoff=(dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=1)).isoformat();changed=False
     for platform,(host,_) in SOURCES.items():
         previous=cached.setdefault('platforms',{}).get(platform,{})
         if previous.get('updated','')>=cutoff:continue

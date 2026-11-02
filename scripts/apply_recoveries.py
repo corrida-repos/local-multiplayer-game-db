@@ -34,7 +34,7 @@ def merge_entry(current,incoming):
         if field in ['store','image']:
             if field=='image':
                 if e.valid_image(value.get('url')) and not e.valid_image(previous.get('url')):result[field]=value
-            elif value.get('url') and not previous.get('url'):result[field]=value
+            elif e.stores.verified_portugal(value,current.get('platform')) and not e.stores.verified_portugal(previous,current.get('platform')):result[field]=value
         elif value.get('checked','')>=previous.get('checked',''):result[field]=value
     if incoming.get('ratings'):
         ratings=copy.deepcopy(result.get('ratings',{}));new=incoming['ratings']

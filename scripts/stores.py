@@ -35,6 +35,13 @@ def official_url(platform,url):
     if platform=='PS5':return parsed.hostname=='store.playstation.com' and re.match(r'^/[a-z]{2}-[a-z]{2}/(?:product|concept)/[^/]+/?$',parsed.path) is not None
     return platform=='Switch' and parsed.hostname=='www.nintendo.com' and (parsed.path.startswith('/us/store/products/') or re.match(r'^/(pt-pt/Jogos|en-gb/Games)/',parsed.path)) and '-switch-2/' not in parsed.path.lower() and 'nintendo-switch-2' not in parsed.path.lower()
 
+def portugal_url(platform,url):
+    if not official_url(platform,url):return False
+    return urllib.parse.urlparse(url).path.startswith('/pt-pt/')
+
+def verified_portugal(record,platform):
+    return portugal_url(platform,record.get('url','')) and record.get('region')=='PT' and record.get('verified') is True
+
 class Meta(HTMLParser):
     def __init__(self):super().__init__();self.title='';self.head_title='';self.in_title=False
     def handle_starttag(self,tag,attrs):
@@ -49,7 +56,7 @@ class Meta(HTMLParser):
 
 def nintendo_match(page,title,aliases=None):
     meta=Meta();meta.feed(page)
-    page_names=[re.split(r' for (?:the )?Nintendo| [–-] Nintendo Official Site| \| Nintendo| [–-] Official Site',name,flags=re.I)[0] for name in [meta.title,meta.head_title] if name]
+    page_names=[re.split(r' for (?:the )?Nintendo| [–-] Nintendo Official Site| \| (?:Nintendo|Jogos|Aplicações|Games)| [–-] Official Site',name,flags=re.I)[0] for name in [meta.title,meta.head_title] if name]
     names=[title]+NINTENDO_NAMES.get(title,[])+(aliases or [])
     canonical=lambda value:normal(re.sub(r"^(?:Arcade Archives(?: 2)?|Console Archives|ACA NEOGEO|SEGA AGES|Johnny Turbo['’]?s Arcade)[ :]+",'',value,flags=re.I))
     return any(canonical(name) in {canonical(value) for value in names} for name in page_names)
@@ -60,19 +67,10 @@ def fetch(url):
     with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':AGENT}),timeout=20) as response:return response.geturl(),response.read().decode('utf-8')
 
 def resolve(game,ratings):
-    platform,title=game['platform'],game['title'];now=dt.datetime.now(dt.timezone.utc).isoformat()
-    if (platform,title) in EXACT:return {'url':EXACT[(platform,title)],'label':'Abrir na PlayStation Store','checked':now}
-    if platform=='PS5':
-        user=ratings.get(platform+':'+game['id'],{}).get('user',{})
-        if user.get('source')=='PSN' and official_url(platform,user.get('url','')):return {'url':user['url'],'label':'Abrir na PlayStation Store','checked':user.get('checked') or now}
-        return None
-    candidate=game['url'] if official_url(platform,game['url']) else 'https://www.nintendo.com/us/store/products/'+NINTENDO_SLUGS.get(title,slug(title))+'-switch/'
-    if title in NSO:candidate='https://www.nintendo.com/us/store/products/super-nintendo-entertainment-system-nintendo-switch-online-switch/'
-    url,page=fetch(candidate)
-    if not official_url(platform,url) or not nintendo_match(page,title):return None
-    result={'url':url,'label':'Abrir na Nintendo eShop','checked':now}
-    if title in NSO:result.update(label='Ver no Nintendo Switch Online',note='Este jogo está incluído na aplicação de Super Nintendo do Nintendo Switch Online.')
-    return result
+    # Diagnostic entrypoint shares the same exact-console Portugal verifier.
+    from scripts import enrichment as e
+    metadata=e.resolve_psn(game,ratings.get('PS5:'+game['id'],{}),{}) if game['platform']=='PS5' else e.resolve_nintendo(game,{})
+    return metadata.get('store')
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--limit',type=int,default=60);args=parser.parse_args()

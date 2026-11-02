@@ -29,10 +29,15 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m unittest discover -s tests
+      - run: node tests/test_store_links.cjs
       - name: Configure checkpoints
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - name: Migrate completeness to the Portugal-only policy
+        run: |
+          python -m scripts.migrate_enrichment
+          bash scripts/checkpoint-enrichment.sh
       - name: Record coverage before this run
         id: baseline
         run: cp data/enrichment.json "$RUNNER_TEMP/enrichment-before.json"

@@ -17,7 +17,7 @@ class Enrichment(unittest.TestCase):
         self.assertIsNone(ratings.psn_rating(self.page.replace('"totalRatingsCount": 23','"totalRatingsCount": 0'),URL))
     def test_one_user_or_critic_score_satisfies_requirement(self):
         for kind in ['user','critic']:
-            entry={'image':{'url':'https://images.test/a'},'store':{'url':URL},'ratings':{kind:{'score':1,'scale':10}}}
+            entry={'image':{'url':'https://images.test/a'},'platform':'PS5','store':{'url':URL,'region':'PT','verified':True},'ratings':{kind:{'score':1,'scale':10}}}
             self.assertTrue(all(e.requirements(entry).values()))
         self.assertFalse(e.requirements({'ratings':{'user':{'score':None,'scale':10}}})['rating'])
     def test_new_basics_beat_existing_extra_source_collection(self):

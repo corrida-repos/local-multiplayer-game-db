@@ -65,14 +65,14 @@ class Refresh(unittest.TestCase):
         self.assertEqual(result['ratings']['user']['sources'][0]['checked'],'2026-01-01')
     def test_empty_seed_fields_can_be_filled_from_verified_data(self):
         entries={'Switch:1':{'image':{'url':None},'store':{}}}
-        e.seed([GAME],entries,{},{'Switch:1':{'url':'https://official.test/game'}},{},{},{'Example':{'url':'https://image.test/game'}},{})
+        e.seed([GAME],entries,{},{'Switch:1':{'url':'https://www.nintendo.com/pt-pt/Jogos/Example.html','region':'PT','verified':True}},{},{},{'Example':{'url':'https://image.test/game'}},{})
         self.assertTrue(entries['Switch:1']['requirements']['image']);self.assertTrue(entries['Switch:1']['requirements']['store'])
     def test_incomplete_entries_retry_after_collector_upgrade(self):
         entry={'version':e.VERSION-1,'basics_attempted':e.now(),'full_attempted':e.now(),'image':{'url':'i'},'store':{'url':'s'}}
         phase,queue=e.select_work([GAME],{'Switch:1':entry},set());self.assertEqual(phase,'basics');self.assertEqual(queue,[GAME])
     def test_full_queue_resumes_oldest_attempt_instead_of_starting_at_a_each_run(self):
         a={**GAME,'id':'2','title':'A'};z={**GAME,'title':'Z'}
-        def entry(stamp):return {'version':e.VERSION,'basics_attempted':e.now(),'full_attempted':stamp,'image':{'url':'i'},'store':{'url':'s'}}
+        def entry(stamp):return {'platform':'Switch','version':e.VERSION,'basics_attempted':e.now(),'full_attempted':stamp,'image':{'url':'https://images.test/game.png'},'store':{'url':'https://www.nintendo.com/pt-pt/Jogos/Example.html','region':'PT','verified':True},'ratings':{'user':{'score':8,'scale':10}},'field_status':{'image':{'sources':{'image_health':{'revision':'health-v1','url':'https://images.test/game.png','next_attempt':'9999-01-01T00:00:00+00:00'}}}}}
         phase,queue=e.select_work([a,z],{'Switch:1':entry('2026-01-01'),'Switch:2':entry('2026-02-01')},set())
         self.assertEqual(phase,'full');self.assertEqual(queue[0],z)
 
