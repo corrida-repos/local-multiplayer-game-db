@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-02T23:39:25.380689+00:00",
+  "updated": "2026-11-02T23:40:03.476817+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1892,
+    "ready": 1895,
     "missing_image": 110,
-    "missing_store": 499,
+    "missing_store": 496,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2432
@@ -583,16 +583,85 @@
         "store",
         "rating"
       ],
-      "attempted": "2026-11-02T20:06:27.248023+00:00",
+      "attempted": "2026-11-02T23:39:29.458752+00:00",
       "reasons": {
         "store": "No exact Portugal PS5 product verified",
         "community": "HTTP Error 404: Not Found",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "psn": "PS4-only listings found; native PS5 identity requires review. No exact Portugal PS5 product verified",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "psn": {
+              "status": "identity_rejected",
+              "last_attempt": "2026-11-02T23:39:55.051023+00:00",
+              "next_attempt": "2026-11-03T23:39:55.051023+00:00",
+              "revision": "22419f33c561cb38:7",
+              "reason": "PS4-only listings found; native PS5 identity requires review. No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC02MTE%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22After+Wave%3A+Downfall%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC02MTE%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22After+Wave%3A+Downfall%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC02MTE%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22After+Wave%3A+Downfall%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC02MTE%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22After+Wave%3A+Downfall%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "psn": {
+              "status": "identity_rejected",
+              "last_attempt": "2026-11-02T23:39:55.051023+00:00",
+              "next_attempt": "2026-11-03T23:39:55.051023+00:00",
+              "revision": "22419f33c561cb38:7",
+              "reason": "PS4-only listings found; native PS5 identity requires review. No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC02MTE%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22After+Wave%3A+Downfall%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC02MTE%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22After+Wave%3A+Downfall%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC02MTE%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22After+Wave%3A+Downfall%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC02MTE%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22After+Wave%3A+Downfall%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:59.463405+00:00",
+              "next_attempt": "2026-11-03T23:39:59.463405+00:00",
+              "revision": "22419f33c561cb38:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.pushsquare.com/games/ps5/after_wave_downfall"
+              ],
+              "url": "https://www.pushsquare.com/games/ps5/after_wave_downfall"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:40:03.000889+00:00",
+              "next_attempt": "2026-11-03T23:40:03.000889+00:00",
+              "revision": "22419f33c561cb38:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/after-wave-downfall/platform/playstation-5/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/after-wave-downfall/platform/playstation-5/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/after-wave-downfall/"
+              ],
+              "url": "https://www.metacritic.com/game/after-wave-downfall/"
+            },
+            "psu": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:40:03.001007+00:00",
+              "next_attempt": "2026-11-03T23:40:03.001007+00:00",
+              "revision": "22419f33c561cb38:7",
+              "reason": "No exact console review indexed"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T23:39:55.051023+00:00"
     },
     {
       "key": "Switch:19071",
@@ -820,20 +889,6 @@
         "nindie": "Not a Switch 1 review",
         "slush": "No scored Switch review indexed",
         "image": "No unique matching video-game article with artwork"
-      },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:14299",
-      "title": "Alien Hominid HD",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T20:06:27.248554+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review"
       },
       "field_status": {},
       "next_retry": ""
@@ -2488,16 +2543,100 @@
         "store",
         "rating"
       ],
-      "attempted": "2026-11-02T20:06:27.250631+00:00",
+      "attempted": "2026-11-02T23:39:31.038161+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:34.089400+00:00",
+              "next_attempt": "2026-11-03T23:39:34.089400+00:00",
+              "revision": "7f929bcc79e39846:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Bunny+Mahjo%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Bunny+Mahjo%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:55.457949+00:00",
+              "next_attempt": "2026-11-03T23:39:55.457949+00:00",
+              "revision": "7f929bcc79e39846:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/bunny_mahjo",
+                "https://www.nintendolife.com/games/switch-eshop/bunny_mahjo"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/bunny_mahjo"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:56.519766+00:00",
+              "next_attempt": "2026-11-03T23:39:56.519766+00:00",
+              "revision": "7f929bcc79e39846:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bunny-mahjo-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bunny-mahjo-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:40:01.865998+00:00",
+              "next_attempt": "2026-11-03T23:40:01.865998+00:00",
+              "revision": "7f929bcc79e39846:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/bunny-mahjo/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/bunny-mahjo/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/bunny-mahjo/"
+              ],
+              "url": "https://www.metacritic.com/game/bunny-mahjo/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:40:01.895457+00:00",
+              "next_attempt": "2026-11-03T23:40:01.895457+00:00",
+              "revision": "7f929bcc79e39846:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bunny+Mahjo&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bunny+Mahjo&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:40:01.895539+00:00",
+              "next_attempt": "2026-11-03T00:40:01.895539+00:00",
+              "revision": "7f929bcc79e39846:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:40:01.895584+00:00",
+              "next_attempt": "2026-11-03T00:40:01.895584+00:00",
+              "revision": "7f929bcc79e39846:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:40:01.895539+00:00"
     },
     {
       "key": "Switch:10601",
@@ -29073,18 +29212,6 @@
       "next_retry": "2026-11-03T23:39:12.848251+00:00"
     },
     {
-      "key": "Switch:12685",
-      "title": "Zag Heroez Miraculous: Rise of the Sphinx",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T20:05:58.171571+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "PS5:15999",
       "title": "Zag Heroez: Miraculous - Paris Under Siege",
       "platform": "PS5",
@@ -29092,34 +29219,86 @@
         "store",
         "rating"
       ],
-      "attempted": "2026-11-02T20:05:58.172177+00:00",
+      "attempted": "2026-11-02T23:39:29.454412+00:00",
       "reasons": {
         "store": "No exact Portugal PS5 product verified",
         "community": "HTTP Error 404: Not Found",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psn": "No exact Portugal PS5 product verified",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed"
       },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:15997",
-      "title": "Zag Heroez: Miraculous - Paris Under Siege",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T20:05:58.172763+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review",
-        "metacritic_users": "HTTP Error 404: Not Found",
-        "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
+      "field_status": {
+        "store": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:54.128753+00:00",
+              "next_attempt": "2026-11-03T23:39:54.128753+00:00",
+              "revision": "2eacbac3cc2a081b:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC05OTQ%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Zag+Heroez%3A+Miraculous+-+Paris+Under+Siege%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC05OTQ%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Zag+Heroez%3A+Miraculous+-+Paris+Under+Siege%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC05OTQ%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Zag+Heroez%3A+Miraculous+-+Paris+Under+Siege%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC05OTQ%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Zag+Heroez%3A+Miraculous+-+Paris+Under+Siege%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:54.128753+00:00",
+              "next_attempt": "2026-11-03T23:39:54.128753+00:00",
+              "revision": "2eacbac3cc2a081b:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC05OTQ%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Zag+Heroez%3A+Miraculous+-+Paris+Under+Siege%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC05OTQ%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Zag+Heroez%3A+Miraculous+-+Paris+Under+Siege%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC05OTQ%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Zag+Heroez%3A+Miraculous+-+Paris+Under+Siege%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC05OTQ%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Zag+Heroez%3A+Miraculous+-+Paris+Under+Siege%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:54.326222+00:00",
+              "next_attempt": "2026-11-03T23:39:54.326222+00:00",
+              "revision": "2eacbac3cc2a081b:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.pushsquare.com/games/ps5/zag_heroez_miraculous_paris_under_siege"
+              ],
+              "url": "https://www.pushsquare.com/games/ps5/zag_heroez_miraculous_paris_under_siege"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:56.971203+00:00",
+              "next_attempt": "2026-11-03T23:39:56.971203+00:00",
+              "revision": "2eacbac3cc2a081b:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/zag-heroez-miraculous-paris-under-siege/platform/playstation-5/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/zag-heroez-miraculous-paris-under-siege/platform/playstation-5/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/zag-heroez-miraculous-paris-under-siege/"
+              ],
+              "url": "https://www.metacritic.com/game/zag-heroez-miraculous-paris-under-siege/"
+            },
+            "psu": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:56.971347+00:00",
+              "next_attempt": "2026-11-03T23:39:56.971347+00:00",
+              "revision": "2eacbac3cc2a081b:7",
+              "reason": "No exact console review indexed"
+            }
+          }
+        }
       },
-      "field_status": {},
-      "next_retry": ""
+      "next_retry": "2026-11-03T23:39:54.128753+00:00"
     },
     {
       "key": "Switch:18820",
@@ -29147,20 +29326,155 @@
         "store",
         "rating"
       ],
-      "attempted": "2026-11-02T20:06:00.042168+00:00",
+      "attempted": "2026-11-02T23:39:29.454969+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
         "image": "No unique matching video-game article with artwork",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:32.986352+00:00",
+              "next_attempt": "2026-11-03T23:39:32.986352+00:00",
+              "revision": "2fe97298ca3b719d:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Zero+Fire%3A+Toaplan+Arcade+Garage%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Zero+Fire%3A+Toaplan+Arcade+Garage%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:32.986352+00:00",
+              "next_attempt": "2026-11-03T23:39:32.986352+00:00",
+              "revision": "2fe97298ca3b719d:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Zero+Fire%3A+Toaplan+Arcade+Garage%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Zero+Fire%3A+Toaplan+Arcade+Garage%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:50.509995+00:00",
+              "next_attempt": "2026-11-03T23:39:50.509995+00:00",
+              "revision": "2fe97298ca3b719d:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/zero_fire_toaplan_arcade_garage",
+                "https://www.nintendolife.com/games/switch-eshop/zero_fire_toaplan_arcade_garage"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/zero_fire_toaplan_arcade_garage"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:51.676503+00:00",
+              "next_attempt": "2026-11-03T23:39:51.676503+00:00",
+              "revision": "2fe97298ca3b719d:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=zero-fire-toaplan-arcade-garage-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=zero-fire-toaplan-arcade-garage-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:54.800001+00:00",
+              "next_attempt": "2026-11-03T23:39:54.800001+00:00",
+              "revision": "2fe97298ca3b719d:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Zero+Fire%3A+Toaplan+Arcade+Garage%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Zero+Fire%3A+Toaplan+Arcade+Garage%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:50.509995+00:00",
+              "next_attempt": "2026-11-03T23:39:50.509995+00:00",
+              "revision": "2fe97298ca3b719d:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/zero_fire_toaplan_arcade_garage",
+                "https://www.nintendolife.com/games/switch-eshop/zero_fire_toaplan_arcade_garage"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/zero_fire_toaplan_arcade_garage"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:51.676503+00:00",
+              "next_attempt": "2026-11-03T23:39:51.676503+00:00",
+              "revision": "2fe97298ca3b719d:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=zero-fire-toaplan-arcade-garage-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=zero-fire-toaplan-arcade-garage-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:54.630915+00:00",
+              "next_attempt": "2026-11-03T23:39:54.630915+00:00",
+              "revision": "2fe97298ca3b719d:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/zero-fire-toaplan-arcade-garage/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/zero-fire-toaplan-arcade-garage/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/zero-fire-toaplan-arcade-garage/"
+              ],
+              "url": "https://www.metacritic.com/game/zero-fire-toaplan-arcade-garage/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:54.661907+00:00",
+              "next_attempt": "2026-11-03T23:39:54.661907+00:00",
+              "revision": "2fe97298ca3b719d:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Zero+Fire%3A+Toaplan+Arcade+Garage&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Zero+Fire%3A+Toaplan+Arcade+Garage&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:39:54.661995+00:00",
+              "next_attempt": "2026-11-03T00:39:54.661995+00:00",
+              "revision": "2fe97298ca3b719d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:39:54.662042+00:00",
+              "next_attempt": "2026-11-03T00:39:54.662042+00:00",
+              "revision": "2fe97298ca3b719d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:39:54.661995+00:00"
     },
     {
       "key": "Switch:8126",
@@ -29169,13 +29483,30 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T20:06:01.681006+00:00",
+      "attempted": "2026-11-02T23:39:29.456222+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:31.199655+00:00",
+              "next_attempt": "2026-11-03T23:39:31.199655+00:00",
+              "revision": "315c72f108e3dfd4:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Zero+Gunner+2%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Zero+Gunner+2%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T23:39:31.199655+00:00"
     },
     {
       "key": "Switch:14369",
@@ -29279,14 +29610,31 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T20:06:27.247015+00:00",
+      "attempted": "2026-11-02T23:39:29.456940+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:32.290985+00:00",
+              "next_attempt": "2026-11-03T23:39:32.290985+00:00",
+              "revision": "26f60495f24674ff:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Zombieland%3A+Double+Tap+-+Road+Trip%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Zombieland%3A+Double+Tap+-+Road+Trip%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T23:39:32.290985+00:00"
     },
     {
       "key": "Switch:15174",
@@ -29311,18 +29659,152 @@
         "store",
         "rating"
       ],
-      "attempted": "2026-11-02T20:06:27.247384+00:00",
+      "attempted": "2026-11-02T23:39:29.458114+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_critics": "The read operation timed out",
         "image": "No unique matching video-game article with artwork",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:30.119110+00:00",
+              "next_attempt": "2026-11-03T23:39:30.119110+00:00",
+              "revision": "b8ae321e8b4a95e1:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22hololive+GoroGoro+Mountain%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22hololive+GoroGoro+Mountain%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:30.119110+00:00",
+              "next_attempt": "2026-11-03T23:39:30.119110+00:00",
+              "revision": "b8ae321e8b4a95e1:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22hololive+GoroGoro+Mountain%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22hololive+GoroGoro+Mountain%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:35.469202+00:00",
+              "next_attempt": "2026-11-03T23:39:35.469202+00:00",
+              "revision": "b8ae321e8b4a95e1:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/hololive_gorogoro_mountain",
+                "https://www.nintendolife.com/games/switch-eshop/hololive_gorogoro_mountain"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/hololive_gorogoro_mountain"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:36.082217+00:00",
+              "next_attempt": "2026-11-03T23:39:36.082217+00:00",
+              "revision": "b8ae321e8b4a95e1:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=hololive-gorogoro-mountain-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=hololive-gorogoro-mountain-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:38.110412+00:00",
+              "next_attempt": "2026-11-03T23:39:38.110412+00:00",
+              "revision": "b8ae321e8b4a95e1:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22hololive+GoroGoro+Mountain%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22hololive+GoroGoro+Mountain%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:35.469202+00:00",
+              "next_attempt": "2026-11-03T23:39:35.469202+00:00",
+              "revision": "b8ae321e8b4a95e1:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/hololive_gorogoro_mountain",
+                "https://www.nintendolife.com/games/switch-eshop/hololive_gorogoro_mountain"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/hololive_gorogoro_mountain"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:36.082217+00:00",
+              "next_attempt": "2026-11-03T23:39:36.082217+00:00",
+              "revision": "b8ae321e8b4a95e1:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=hololive-gorogoro-mountain-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=hololive-gorogoro-mountain-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:37.955241+00:00",
+              "next_attempt": "2026-11-03T23:39:37.955241+00:00",
+              "revision": "b8ae321e8b4a95e1:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/hololive-gorogoro-mountain/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/hololive-gorogoro-mountain/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/hololive-gorogoro-mountain/"
+              ],
+              "url": "https://www.metacritic.com/game/hololive-gorogoro-mountain/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:39:37.988132+00:00",
+              "next_attempt": "2026-11-03T23:39:37.988132+00:00",
+              "revision": "b8ae321e8b4a95e1:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=hololive+GoroGoro+Mountain&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=hololive+GoroGoro+Mountain&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:39:37.988218+00:00",
+              "next_attempt": "2026-11-03T00:39:37.988218+00:00",
+              "revision": "b8ae321e8b4a95e1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:39:37.988262+00:00",
+              "next_attempt": "2026-11-03T00:39:37.988262+00:00",
+              "revision": "b8ae321e8b4a95e1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:39:37.988218+00:00"
     },
     {
       "key": "Switch:13170",
