@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T19:43:58.949249+00:00",
+  "updated": "2026-11-02T19:44:32.189994+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 253,
     "missing_store": 358,
     "missing_rating": 689,
-    "full_attempted": 50
+    "full_attempted": 60
   },
   "games": {
     "PS5:13238": {
@@ -1527,7 +1527,16 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:52:21.531835+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: The read operation timed out",
+          "www.pushsquare.com/ps5: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:44:30.551719+00:00"
       },
       "requirements": {
         "image": false,
@@ -1540,17 +1549,26 @@
         "store": "No exact Portugal PS5 product verified",
         "community": "HTTP Error 403: Forbidden",
         "metacritic_users": "HTTP Error 404: Not Found",
-        "metacritic_reviews": "HTTP Error 404: Not Found"
-      }
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:44:30.802747+00:00"
     },
     "Switch:12276": {
       "title": "After Wave: Downfall",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 69.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 68.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=after-wave-downfall-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
             {
               "name": "Pure Nintendo",
               "score": 70,
@@ -1561,7 +1579,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -1570,7 +1588,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T16:57:50.608122+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:44:15.139769+00:00"
       },
       "requirements": {
         "image": true,
@@ -1589,7 +1614,10 @@
       },
       "basics_attempted": "2026-11-02T16:57:50.608122+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:44:15.707200+00:00"
     },
     "Switch:13067": {
       "title": "Akai Katana Shin",
@@ -75396,15 +75424,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.13,
-              "count": 54,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.13,
               "scale": 5,
-              "source": "PSN",
+              "count": 54,
               "url": "https://store.playstation.com/pt-pt/product/UP2005-PPSA26442_00-AGENTFALL0000000",
-              "checked": "2026-11-02T17:07:43.920806+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 7.3484692283495345,
               "normalized": 8.26
             }
@@ -75412,7 +75437,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:07:41.537442+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:44:16.015959+00:00"
       },
       "requirements": {
         "image": true,
@@ -75450,7 +75482,10 @@
       },
       "basics_attempted": "2026-11-02T17:07:41.537442+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:44:16.550386+00:00"
     },
     "Switch:16357": {
       "title": "Agent Fall",
@@ -75478,7 +75513,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:11:58.182700+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:44:20.465157+00:00"
       },
       "requirements": {
         "image": true,
@@ -75497,7 +75539,10 @@
       },
       "basics_attempted": "2026-11-02T19:11:58.182700+00:00",
       "version": 3,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:44:20.775200+00:00"
     },
     "PS5:16329": {
       "title": "Basureroes: Invasion",
@@ -87658,7 +87703,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:15:33.190666+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:44:22.648410+00:00"
       },
       "requirements": {
         "image": false,
@@ -87669,8 +87721,10 @@
       "version": 3,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found"
-      }
+        "community": "HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:44:23.178135+00:00"
     },
     "Switch:17497": {
       "title": "Airborne Justice",
@@ -102961,7 +103015,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:17:34.673772+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:44:21.573242+00:00"
       },
       "requirements": {
         "image": true,
@@ -102981,8 +103042,10 @@
       "basics_attempted": "2026-11-02T19:17:34.673772+00:00",
       "version": 3,
       "errors": {
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:44:22.285066+00:00"
     },
     "Switch:19132": {
       "title": "Air Hares",
@@ -103002,7 +103065,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:17:34.673872+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:44:23.862628+00:00"
       },
       "requirements": {
         "image": true,
@@ -103021,7 +103091,10 @@
       },
       "basics_attempted": "2026-11-02T19:17:34.673872+00:00",
       "version": 3,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:44:24.498039+00:00"
     },
     "Switch:4172": {
       "title": "Bacon Man: An Adventure",
@@ -106647,11 +106720,28 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 85.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/aero_fighters_2_neogeo",
+              "date": "2017-08-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/aca-neogeo-shoot-em-ups#aero-fighters-2",
+              "date": "2019-08-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 6.9,
@@ -106671,7 +106761,16 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:23:03.298685+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Metacritic users: The read operation timed out",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
+          "www.nintendolife.com/switch-eshop: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:44:29.417300+00:00"
       },
       "requirements": {
         "image": true,
@@ -106692,8 +106791,10 @@
       "version": 2,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:44:32.080489+00:00"
     },
     "Switch:5002": {
       "title": "Aero Fighters 3",
@@ -106707,6 +106808,7 @@
               "name": "Nintendo Life",
               "score": 80,
               "url": "http://www.nintendolife.com/reviews/switch-eshop/aero_fighters_3_neogeo?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-04-03",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -106714,6 +106816,7 @@
               "name": "Video Chums",
               "score": 80,
               "url": "https://videochums.com/article/aca-neogeo-shoot-em-ups#aero-fighters-3",
+              "date": "2019-08-12",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -106728,7 +106831,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:18:41.183540+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
+          "www.nintendolife.com/switch-eshop: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:44:12.627357+00:00"
       },
       "requirements": {
         "image": true,
@@ -106749,11 +106860,13 @@
       "version": 3,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "aliases": [
         "ACA NEOGEO AERO FIGHTERS 3"
-      ]
+      ],
+      "full_attempted": "2026-11-02T19:44:13.041079+00:00"
     },
     "Switch:4941": {
       "title": "Aqua Kitty UDX",
@@ -120089,7 +120202,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:20:34.391718+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
+          "www.nintendolife.com/switch-eshop: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:44:17.086280+00:00"
       },
       "requirements": {
         "image": false,
@@ -120104,8 +120227,10 @@
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
-      }
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:44:17.735628+00:00"
     },
     "Switch:6394": {
       "title": "Astral Chain",
