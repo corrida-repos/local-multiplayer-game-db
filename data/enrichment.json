@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:01:29.806561+00:00",
+  "updated": "2026-11-02T18:01:47.130057+00:00",
   "version": 2,
   "coverage": {
     "total": 2542,
-    "attempted": 1442,
-    "ready": 889,
-    "missing_image": 1239,
-    "missing_store": 1312,
-    "missing_rating": 1563,
+    "attempted": 1452,
+    "ready": 896,
+    "missing_image": 1229,
+    "missing_store": 1302,
+    "missing_rating": 1556,
     "full_attempted": 0
   },
   "games": {
@@ -40625,22 +40625,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.2,
+              "count": 84,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA05610_00-1221784256863423",
+              "checked": "2026-11-02T18:01:36.186620+00:00",
+              "platform": "PSN · PS5",
+              "weight": 9.16515138991168,
+              "normalized": 6.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:01:34.764976+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA05610_00-1221784256863423",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:01:36.186620+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202202/1515/zOuIKxxIKjhJMB2AEXyZJodD.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP6087-PPSA05610_00-1221784256863423",
+        "checked": "2026-11-02T18:01:36.186620+00:00"
+      },
+      "user": {
+        "score": 3.2,
+        "count": 84,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA05610_00-1221784256863423",
+        "checked": "2026-11-02T18:01:36.186620+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP6087-PPSA05610_00-1221784256863423",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP6087-PPSA05610_00-1221784256863423",
+        "checked": "2026-11-02T18:01:36.186620+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:01:34.764976+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:11625": {
       "title": "Outbreak: Contagious Memories",
@@ -40649,21 +40697,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:01:36.194318+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/outbreak-contagious-memories-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:01:37.059206+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000047255/ab85d23f5f4fc14e704001c97321a87e9bcc6cae86f53ec67035dff96fc082e3",
+        "source": "https://www.nintendo.com/us/store/products/outbreak-contagious-memories-switch/",
+        "checked": "2026-11-02T18:01:37.059373+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:01:36.194318+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:11636": {
@@ -96520,23 +96586,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 63.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 63.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=out-of-space-couch-edition-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:01:32.409006+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/out-of-space-couch-edition-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:01:34.639008+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000029906/ce1a0157a487a04857ce0952178b45e22162d0d0d6e061dada34cd16a0dc6881",
+        "source": "https://www.nintendo.com/us/store/products/out-of-space-couch-edition-switch/",
+        "checked": "2026-11-02T18:01:34.639194+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:01:32.409006+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:6655": {
@@ -102668,21 +102759,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:01:32.408552+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/our-flick-erasers-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:01:34.038013+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000021821/d6e29f9e7fb4dcc00ab23c559bbabf3c15fbe4b041c59a5d4717504c8e942a22",
+        "source": "https://www.nintendo.com/us/store/products/our-flick-erasers-switch/",
+        "checked": "2026-11-02T18:01:34.038151+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:01:32.408552+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:7502": {
@@ -105940,21 +106049,41 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:01:33.774068+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/outbreak-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:01:36.694709+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000034845/740d72586ee8ac844bd76b5d1cc2aa0c1deb804221796451c5eb9fd47a26d674",
+        "source": "https://www.nintendo.com/us/store/products/outbreak-switch/",
+        "checked": "2026-11-02T18:01:36.694842+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:01:33.774068+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 301: Moved Permanently",
+        "metacritic_reviews": "HTTP Error 301: Moved Permanently"
       }
     },
     "Switch:7795": {
@@ -109248,22 +109377,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.76,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.38,
+              "count": 64,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02553_00-1551801914886843",
+              "checked": "2026-11-02T18:01:34.759534+00:00",
+              "platform": "PSN · PS5",
+              "weight": 8.0,
+              "normalized": 6.76
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:01:32.409260+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02553_00-1551801914886843",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:01:34.759534+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0315/asGInU6zOf8SvsD4bxbXGdqU.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02553_00-1551801914886843",
+        "checked": "2026-11-02T18:01:34.759534+00:00"
+      },
+      "user": {
+        "score": 3.38,
+        "count": 64,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02553_00-1551801914886843",
+        "checked": "2026-11-02T18:01:34.759534+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP6087-PPSA02553_00-1551801914886843",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02553_00-1551801914886843",
+        "checked": "2026-11-02T18:01:34.759534+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:01:32.409260+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:8218": {
       "title": "Outbreak: Epidemic",
@@ -109272,22 +109449,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 5.42,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 2.71,
+              "count": 129,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02545_00-6936740438832727",
+              "checked": "2026-11-02T18:01:43.065856+00:00",
+              "platform": "PSN · PS5",
+              "weight": 11.357816691600547,
+              "normalized": 5.42
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:01:41.668590+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02545_00-6936740438832727",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:01:43.065856+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202208/2615/PLhdojIRgv3LJNzJSKoniHDI.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02545_00-6936740438832727",
+        "checked": "2026-11-02T18:01:43.065856+00:00"
+      },
+      "user": {
+        "score": 2.71,
+        "count": 129,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02545_00-6936740438832727",
+        "checked": "2026-11-02T18:01:43.065856+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP6087-PPSA02545_00-6936740438832727",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02545_00-6936740438832727",
+        "checked": "2026-11-02T18:01:43.065856+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:01:41.668590+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:8217": {
       "title": "Outbreak: The New Nightmare",
@@ -115998,45 +116223,118 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 4.92,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 2.46,
+              "count": 187,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02555_00-8717399952083442",
+              "checked": "2026-11-02T18:01:38.900780+00:00",
+              "platform": "PSN · PS5",
+              "weight": 13.674794331177344,
+              "normalized": 4.92
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:01:37.647057+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02555_00-8717399952083442",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:01:38.900780+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202104/0712/8pyTUeIFhmPFtOvogptWVBJ7.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02555_00-8717399952083442",
+        "checked": "2026-11-02T18:01:38.900780+00:00"
+      },
+      "user": {
+        "score": 2.46,
+        "count": 187,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02555_00-8717399952083442",
+        "checked": "2026-11-02T18:01:38.900780+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP6087-PPSA02555_00-8717399952083442",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP6087-PPSA02555_00-8717399952083442",
+        "checked": "2026-11-02T18:01:38.900780+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:01:37.647057+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:9487": {
       "title": "Outbreak: Endless Nightmares",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 43.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 43.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=outbreak-endless-nightmares-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:01:38.907651+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/outbreak-endless-nightmares-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:01:40.481393+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000035405/49c247009b45bd663ce023d1a7a7fb4c46e81746c2cdaba80de7b97fdd846e4e",
+        "source": "https://www.nintendo.com/us/store/products/outbreak-endless-nightmares-switch/",
+        "checked": "2026-11-02T18:01:40.481567+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:01:38.907651+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:9360": {
@@ -117890,22 +118188,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.3,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.15,
+              "count": 299,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP1302-PPSA02351_00-2535469917833439",
+              "checked": "2026-11-02T18:01:33.769260+00:00",
+              "platform": "PSN · PS5",
+              "weight": 17.291616465790582,
+              "normalized": 8.3
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:01:32.408709+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP1302-PPSA02351_00-2535469917833439",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:01:33.769260+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202010/2212/MZmd4sLvJuzMCpY1ldiaTEI5.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP1302-PPSA02351_00-2535469917833439",
+        "checked": "2026-11-02T18:01:33.769260+00:00"
+      },
+      "user": {
+        "score": 4.15,
+        "count": 299,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP1302-PPSA02351_00-2535469917833439",
+        "checked": "2026-11-02T18:01:33.769260+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP1302-PPSA02351_00-2535469917833439",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP1302-PPSA02351_00-2535469917833439",
+        "checked": "2026-11-02T18:01:33.769260+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:01:32.408709+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:9988": {
       "title": "River City Girls",
