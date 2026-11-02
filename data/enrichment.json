@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:28:37.439384+00:00",
+  "updated": "2026-11-02T18:28:55.390539+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
-    "attempted": 2052,
-    "ready": 1316,
-    "missing_image": 708,
-    "missing_store": 792,
-    "missing_rating": 1111,
+    "attempted": 2062,
+    "ready": 1324,
+    "missing_image": 699,
+    "missing_store": 783,
+    "missing_rating": 1103,
     "full_attempted": 0
   },
   "games": {
@@ -50389,21 +50389,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:40.280873+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:28:40.280873+00:00",
+      "version": 3,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "Switch:14166": {
@@ -50413,21 +50421,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:40.281083+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/sven-completely-screwed-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:28:42.258934+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000058632/49c5a7f7a4c1201fc277514a1257813bf07999c16bcf4ed0af78bb432bcd8cd2",
+        "source": "https://www.nintendo.com/us/store/products/sven-completely-screwed-switch/",
+        "checked": "2026-11-02T18:28:42.259227+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:40.281083+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:10747": {
@@ -50437,22 +50463,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.12,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.06,
+              "count": 163,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP6484-PPSA04750_00-GRIMORIOOFGAMES1",
+              "checked": "2026-11-02T18:28:43.604083+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 12.767145334803704,
+              "normalized": 8.12
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:40.282324+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP6484-PPSA04750_00-GRIMORIOOFGAMES1",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:28:43.604083+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202012/0713/CiKRWGwETYlBtDQ2QjR8hm41.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP6484-PPSA04750_00-GRIMORIOOFGAMES1",
+        "checked": "2026-11-02T18:28:43.604083+00:00"
+      },
+      "user": {
+        "score": 4.06,
+        "count": 163,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP6484-PPSA04750_00-GRIMORIOOFGAMES1",
+        "checked": "2026-11-02T18:28:43.604083+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP6484-PPSA04750_00-GRIMORIOOFGAMES1",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP6484-PPSA04750_00-GRIMORIOOFGAMES1",
+        "checked": "2026-11-02T18:28:43.604083+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:40.282324+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:manual-tekken8": {
       "title": "TEKKEN 8",
@@ -60760,46 +60834,117 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.12,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.06,
+              "count": 48,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP6484-PPSA27000_00-GRIMORIOOFGAMES0",
+              "checked": "2026-11-02T18:28:44.644526+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 6.928203230275509,
+              "normalized": 8.12
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:41.720629+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP6484-PPSA27000_00-GRIMORIOOFGAMES0",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:28:44.644526+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202412/1316/f88e9ab2dc00e2ee75b47c7d1ea342848c553d7a108d17de.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP6484-PPSA27000_00-GRIMORIOOFGAMES0",
+        "checked": "2026-11-02T18:28:44.644526+00:00"
+      },
+      "user": {
+        "score": 4.06,
+        "count": 48,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP6484-PPSA27000_00-GRIMORIOOFGAMES0",
+        "checked": "2026-11-02T18:28:44.644526+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP6484-PPSA27000_00-GRIMORIOOFGAMES0",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP6484-PPSA27000_00-GRIMORIOOFGAMES0",
+        "checked": "2026-11-02T18:28:44.644526+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:41.720629+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:15524": {
       "title": "Sword of the Necromancer: Resurrection",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 68.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 68.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=sword-of-the-necromancer-resurrection-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:43.611139+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/sword-of-the-necromancer-resurrection-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:28:47.297048+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000082144/4ee8d8ff6004b2c1a0a040c8371792394658f0f28d38394b293b3fab2b54b26c",
+        "source": "https://www.nintendo.com/us/store/products/sword-of-the-necromancer-resurrection-switch/",
+        "checked": "2026-11-02T18:28:47.297276+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:43.611139+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:15389": {
       "title": "Taito Milestones 3",
@@ -74783,22 +74928,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.64,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.82,
+              "count": 38,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP0781-PPSA29765_00-SURVIVORMERCSSGU",
+              "checked": "2026-11-02T18:28:41.712236+00:00",
+              "platform": "PSN · PS5",
+              "weight": 6.164414002968976,
+              "normalized": 7.640000000000001
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:40.280603+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP0781-PPSA29765_00-SURVIVORMERCSSGU",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:28:41.712236+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202509/1122/a29c323f5e6c9b5953c1a6921972209065791598ca6fea8b.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP0781-PPSA29765_00-SURVIVORMERCSSGU",
+        "checked": "2026-11-02T18:28:41.712236+00:00"
+      },
+      "user": {
+        "score": 3.82,
+        "count": 38,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP0781-PPSA29765_00-SURVIVORMERCSSGU",
+        "checked": "2026-11-02T18:28:41.712236+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP0781-PPSA29765_00-SURVIVORMERCSSGU",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP0781-PPSA29765_00-SURVIVORMERCSSGU",
+        "checked": "2026-11-02T18:28:41.712236+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:40.280603+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:16988": {
       "title": "TRIZEAL Remix",
@@ -102813,24 +103006,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/swimsanity",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:40.281840+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/swimsanity-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:28:44.386405+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000015034/04a91b32c2a5a84d3a581935bf0fc12c8b2ed0056c9be40caec7c21635c04304",
+        "source": "https://www.nintendo.com/us/store/products/swimsanity-switch/",
+        "checked": "2026-11-02T18:28:44.386721+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:40.281840+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:5436": {
       "title": "The LEGO Movie 2 Video Game",
@@ -118064,24 +118280,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 40.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 40.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/sword_of_the_necromancer",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 6.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.7,
+              "scale": 10.0,
+              "count": 12,
+              "url": "https://www.nintendolife.com/games/switch-eshop/sword_of_the_necromancer",
+              "platform": "Nintendo Switch",
+              "weight": 3.4641016151377544,
+              "normalized": 6.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:40.282549+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/sword-of-the-necromancer-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:28:47.179306+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000035417/6235dc3a8b9ff462248672cad132c41f6f51307608fbaef6e05c81e47c5f6700",
+        "source": "https://www.nintendo.com/us/store/products/sword-of-the-necromancer-switch/",
+        "checked": "2026-11-02T18:28:47.179649+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:40.282549+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:7582": {
       "title": "Timespinner",
@@ -121708,23 +121958,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Gameblog.fr",
+              "score": 60,
+              "url": "http://www.gameblog.fr/tests/3453-sweet-witches-switch",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:40.281429+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/sweet-witches-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:28:43.303159+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000021446/90b2559abf33abc2ad172214825cdbb288e9afee6e68edabd0cc8fec877d4c24",
+        "source": "https://www.nintendo.com/us/store/products/sweet-witches-switch/",
+        "checked": "2026-11-02T18:28:43.303580+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:40.281429+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:7913": {
@@ -129801,21 +130076,49 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.2,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.2,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/sword-of-the-guardian/user-reviews/?platform=nintendo-switch",
+              "platform": "Switch",
+              "weight": 3.0,
+              "normalized": 7.199999999999999
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:40.282098+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/sword-of-the-guardian-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:28:45.482870+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000001425/93db7fbffe218a60fec7c1d137d3f1a41df0861e74496166a1b3e5716a4e0ba1",
+        "source": "https://www.nintendo.com/us/store/products/sword-of-the-guardian-switch/",
+        "checked": "2026-11-02T18:28:45.483159+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:40.282098+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:9001": {
