@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T19:47:22.268450+00:00",
+  "updated": "2026-11-02T19:47:48.153909+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 253,
     "missing_store": 358,
     "missing_rating": 689,
-    "full_attempted": 110
+    "full_attempted": 120
   },
   "games": {
     "PS5:13238": {
@@ -2376,11 +2376,20 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/old-school-console-games-part-3#astebros",
+              "date": "2023-10-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 7.6,
@@ -2392,7 +2401,7 @@
               "scale": 10,
               "count": 5,
               "url": "https://www.metacritic.com/game/astebros/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 2.23606797749979,
               "normalized": 7.6
             }
@@ -2400,7 +2409,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T16:58:21.216985+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:47:40.096406+00:00"
       },
       "requirements": {
         "image": true,
@@ -2419,41 +2436,92 @@
       },
       "basics_attempted": "2026-11-02T16:58:21.216985+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:47:41.625014+00:00"
     },
     "PS5:14056": {
       "title": "Asterix & Obelix Slap Them All! 2",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 58.8,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2023/11/asterix-obelix-slap-them-all-2-review/",
+              "date": "2023-11-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 65,
+              "url": "https://www.jeuxactu.com/test-asterix-et-obelix-baffez-les-tous-2-c-est-un-dlc-mal-deguise-129926.htm",
+              "date": "2023-12-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 40,
+              "url": "https://www.thesixthaxis.com/2023/11/16/asterix-and-obelix-slap-them-all-2/",
+              "date": "2023-11-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 60,
+              "url": "https://vandal.elespanol.com/analisis/ps5/asterix-obelix-slap-them-all-2/144258#p-89",
+              "date": "2023-11-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 4
         },
         "user": {
-          "score": 8.46,
+          "score": 8.06,
           "scale": 10,
           "sources": [
             {
-              "score": 4.23,
-              "count": 196,
-              "scope": "PSN · PS4/PS5",
+              "name": "Metacritic users",
+              "score": 6.3,
+              "scale": 10,
+              "count": 10,
+              "url": "https://www.metacritic.com/game/asterix-and-obelix-slap-them-all-2/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 3.1622776601683795,
+              "normalized": 6.3
+            },
+            {
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.23,
               "scale": 5,
-              "source": "PSN",
+              "count": 196,
               "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA16746_00-AOSTA2PS500000EU",
-              "checked": "2026-11-02T16:58:23.630626+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 14.0,
               "normalized": 8.46
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T16:58:22.406834+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:47:40.543266+00:00"
       },
       "requirements": {
         "image": true,
@@ -2491,26 +2559,53 @@
       },
       "basics_attempted": "2026-11-02T16:58:22.406834+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:47:42.764953+00:00"
     },
     "Switch:14054": {
       "title": "Asterix & Obelix Slap Them All! 2",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 83.0,
+          "score": 69.5,
           "scale": 100,
           "sources": [
+            {
+              "name": "Everyeye.it",
+              "score": 65,
+              "url": "https://www.everyeye.it/articoli/recensione-asterix-obelix-slap-them-2-simile-gioco-62860.html",
+              "date": "2023-11-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 70,
+              "url": "https://www.gameover.gr/2023/12/05/asterix-obelix-slap-them-all-2-review/",
+              "date": "2024-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 83.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=asterix-and-obelix-slap-them-all-2-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 60,
+              "url": "https://www.spaziogames.it/articoli/asterix-obelix-slap-them-all-2-recensione",
+              "date": "2023-12-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
           "score": null,
@@ -2519,7 +2614,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:52:50.746078+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:47:44.495170+00:00"
       },
       "requirements": {
         "image": true,
@@ -2529,7 +2632,8 @@
       "basics_attempted": "2026-11-02T18:52:50.746078+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/asterix-and-obelix-slap-them-all-2-switch/",
@@ -2540,41 +2644,97 @@
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000066265/6c62e566a2418384e886cf64caba2dbad9be1869aeedb19045b4783a701cb89c",
         "source": "https://www.nintendo.com/us/store/products/asterix-and-obelix-slap-them-all-2-switch/",
         "checked": "2026-11-02T18:53:00.152943+00:00"
-      }
+      },
+      "full_attempted": "2026-11-02T19:47:45.881444+00:00"
     },
     "PS5:12662": {
       "title": "Asterix & Obelix XXXL: The Ram From Hibernia",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 64.8,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Jeuxvideo.com",
+              "score": 65,
+              "url": "https://www.jeuxvideo.com/test/1659602/asterix-obelix-xxxl-le-belier-d-hibernie-est-il-vraiment-a-la-hauteur-de-la-bande-dessinee.htm",
+              "date": "2022-11-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "KeenGamer",
+              "score": 65,
+              "url": "https://www.keengamer.com/articles/reviews/ps5-reviews/asterixobelix-xxxl-the-ram-from-hibernia-review-triple-extra-fun-ps5/",
+              "date": "2022-12-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 65,
+              "url": "https://multiplayer.it/recensioni/asterix-obelix-xxxl-the-ram-from-hibernia-recensione.html",
+              "date": "2022-11-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlaySense",
+              "score": 65,
+              "url": "https://playsense.nl/518996/review-asterix-obelix-xxxl-the-ram-from-hibernia/",
+              "date": "2022-11-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 64,
+              "url": "https://www.thegamesmachine.it/asterix-obelix-xxxl-the-ram-from-hibernia/asterix-e-obelix-xxxl-the-ram-from-ibernia-recensione/",
+              "date": "2022-11-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 5
         },
         "user": {
-          "score": 7.2,
+          "score": 7.1,
           "scale": 10,
           "sources": [
             {
-              "score": 3.6,
-              "count": 100,
-              "scope": "PSN · PS4/PS5",
+              "name": "Metacritic users",
+              "score": 6.7,
+              "scale": 10,
+              "count": 7,
+              "url": "https://www.metacritic.com/game/asterix-and-obelix-xxxl-the-ram-from-hibernia/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.6457513110645907,
+              "normalized": 6.7
+            },
+            {
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.6,
               "scale": 5,
-              "source": "PSN",
+              "count": 100,
               "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA08448_00-ADOXXXLPS50000EU",
-              "checked": "2026-11-02T16:58:37.241682+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 10.0,
               "normalized": 7.199999999999999
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T16:58:36.076321+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:47:42.144736+00:00"
       },
       "requirements": {
         "image": true,
@@ -2612,26 +2772,61 @@
       },
       "basics_attempted": "2026-11-02T16:58:36.076321+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:47:44.208515+00:00"
     },
     "Switch:12658": {
       "title": "Asterix & Obelix XXXL: The Ram From Hibernia",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 68.0,
+          "score": 62.6,
           "scale": 100,
           "sources": [
+            {
+              "name": "Everyeye.it",
+              "score": 50,
+              "url": "https://www.everyeye.it/articoli/recensione-asterix-obelix-xxxl-galli-tornati-magia-svanita-59501.html",
+              "date": "2022-11-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 60,
+              "url": "https://www.jeuxactu.com/test-asterix-obelix-xxxl-le-belier-dhibernie-retour-au-classicisme-128651.htm",
+              "date": "2022-11-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 65,
+              "url": "https://www.jeuxvideo.com/test/1659602/asterix-obelix-xxxl-le-belier-d-hibernie-est-il-vraiment-a-la-hauteur-de-la-bande-dessinee.htm",
+              "date": "2022-11-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 68.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=asterix-and-obelix-xxxl-the-ram-from-hibernia-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "XGN",
+              "score": 70,
+              "url": "https://www.xgn.nl/review/asterix-obelix-xxxl-the-ram-from-hibernia-review",
+              "date": "2022-12-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
           "score": null,
@@ -2640,7 +2835,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:52:56.435827+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:47:46.697093+00:00"
       },
       "requirements": {
         "image": true,
@@ -2650,7 +2853,8 @@
       "basics_attempted": "2026-11-02T18:52:56.435827+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/asterix-and-obelix-xxxl-the-ram-from-hibernia-switch/",
@@ -2661,7 +2865,8 @@
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000054708/736257c1ef897ff33da20851c1e425e0e0b800bbc2a01958129220689f6e80e9",
         "source": "https://www.nintendo.com/us/store/products/asterix-and-obelix-xxxl-the-ram-from-hibernia-switch/",
         "checked": "2026-11-02T18:53:02.276611+00:00"
-      }
+      },
+      "full_attempted": "2026-11-02T19:47:48.040497+00:00"
     },
     "PS5:13181": {
       "title": "Asterix & Obelix: Slap Them All!",
@@ -2679,15 +2884,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.98,
-              "count": 602,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.98,
               "scale": 5,
-              "source": "PSN",
+              "count": 602,
               "url": "https://store.playstation.com/pt-pt/product/EP4295-CUSA23755_00-ASTERIXBTA0000EU",
-              "checked": "2026-11-02T16:58:38.584565+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 24.535688292770594,
               "normalized": 7.960000000000001
             }
@@ -2695,7 +2897,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T16:58:36.077119+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:47:46.652275+00:00"
       },
       "requirements": {
         "image": true,
@@ -2733,7 +2942,10 @@
       },
       "basics_attempted": "2026-11-02T16:58:36.077119+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:47:47.261881+00:00"
     },
     "PS5:13549": {
       "title": "Asterix and Obelix XXL 3 - The Crystal Menhir",
@@ -83696,27 +83908,41 @@
           "source_count": 0
         },
         "user": {
-          "score": 7.74,
+          "score": 7.81,
           "scale": 10,
           "sources": [
             {
-              "score": 3.87,
-              "count": 68,
-              "scope": "PSN · PS5",
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/asterix-and-obelix-mission-babylon/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 3.0,
+              "normalized": 8.0
+            },
+            {
               "name": "PSN",
+              "score": 3.87,
               "scale": 5,
-              "source": "PSN",
+              "count": 68,
               "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA30490_00-AOBABYLONPS500EU",
-              "checked": "2026-11-02T17:11:26.627609+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 8.246211251235321,
               "normalized": 7.74
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:11:25.535690+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:47:39.446869+00:00"
       },
       "requirements": {
         "image": true,
@@ -83754,7 +83980,10 @@
       },
       "basics_attempted": "2026-11-02T17:11:25.535690+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:47:40.701319+00:00"
     },
     "Switch:17421": {
       "title": "Asterix & Obelix - Mission Babylon",
@@ -83774,7 +84003,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:14:17.130453+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:47:43.395910+00:00"
       },
       "requirements": {
         "image": true,
@@ -83785,7 +84022,8 @@
       "version": 3,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/asterix-and-obelix-mission-babylon-switch/",
@@ -83796,7 +84034,8 @@
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000093780/2133de7297613496763949e99a5166d5cbbab7431aed473183d7c48085536e9a",
         "source": "https://www.nintendo.com/us/store/products/asterix-and-obelix-mission-babylon-switch/",
         "checked": "2026-11-02T19:14:21.377161+00:00"
-      }
+      },
+      "full_attempted": "2026-11-02T19:47:44.787609+00:00"
     },
     "Switch:17221": {
       "title": "Ball Blast",
@@ -134201,7 +134440,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:23:13.768275+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:47:35.692777+00:00"
       },
       "requirements": {
         "image": true,
@@ -134221,8 +134468,10 @@
       "basics_attempted": "2026-11-02T19:23:13.768275+00:00",
       "version": 3,
       "errors": {
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:47:36.229149+00:00"
     },
     "Switch:8024": {
       "title": "Assault On Metaltron",
@@ -134250,7 +134499,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:34:22.910842+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:47:38.992774+00:00"
       },
       "requirements": {
         "image": true,
@@ -134269,7 +134526,10 @@
       },
       "basics_attempted": "2026-11-02T17:34:22.910842+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:47:39.359563+00:00"
     },
     "Switch:8006": {
       "title": "BFF or Die",
