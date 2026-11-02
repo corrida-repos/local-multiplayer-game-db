@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:10:52.367336+00:00",
+  "updated": "2026-11-02T18:11:13.542526+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
-    "attempted": 1662,
-    "ready": 1051,
-    "missing_image": 1046,
-    "missing_store": 1120,
-    "missing_rating": 1395,
+    "attempted": 1672,
+    "ready": 1057,
+    "missing_image": 1038,
+    "missing_store": 1112,
+    "missing_rating": 1389,
     "full_attempted": 0
   },
   "games": {
@@ -44878,36 +44878,52 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:55.284646+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/raystorm-x-raycrisis-hd-collection-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:11:00.298817+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000058692/43249394069894d4a966f9cc7e450be3a38a1ebc91826d95e24c9681fd666dd3",
+        "source": "https://www.nintendo.com/us/store/products/raystorm-x-raycrisis-hd-collection-switch/",
+        "checked": "2026-11-02T18:11:00.299176+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:55.284646+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:4463": {
       "title": "Rayman Legends",
       "platform": "Switch",
       "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/f/f6/Rayman_Legends_Box_Art.jpg",
-        "page": "https://en.wikipedia.org/wiki/Rayman_Legends"
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000001017/7075b9de20b7c835325dd28d4a9dd9e4e1cf58d3aa9339ced81100933902ee31",
+        "source": "https://www.nintendo.com/us/store/products/rayman-legends-definitive-edition-switch/",
+        "checked": "2026-11-02T18:11:01.998328+00:00"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/rayman-legends-definitive-edition-switch/",
         "label": "Abrir na Nintendo eShop",
-        "checked": "2026-11-02T15:59:24.527984+00:00",
-        "error": null,
-        "attempted": "2026-11-02T15:59:25.912863+00:00"
+        "checked": "2026-11-02T18:11:01.997878+00:00"
       },
       "trailer": {
         "id": "1GjRVLQJrX0",
@@ -44923,19 +44939,16 @@
         "critic": {
           "score": 84.0,
           "scale": 100,
-          "source_count": 1,
-          "method": "single-source",
           "sources": [
             {
-              "score": 84,
-              "scale": 100,
-              "source": "Metacritic",
-              "url": "https://www.metacritic.com/game/rayman-legends-definitive-edition/critic-reviews/?platform=nintendo-switch",
-              "checked": "2026-11-02T13:15:26.863925+00:00",
               "name": "Metacritic",
+              "score": 84,
+              "url": "https://www.metacritic.com/game/rayman-legends-definitive-edition/critic-reviews/?platform=nintendo-switch",
               "platform": "Switch"
             }
-          ]
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": 8.5,
@@ -44954,37 +44967,74 @@
             }
           ]
         },
-        "attempted": "2026-11-02T13:15:28.052464+00:00"
+        "attempted": "2026-11-02T18:10:55.284863+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
         "rating": true
-      }
+      },
+      "basics_attempted": "2026-11-02T18:10:55.284863+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:12144": {
       "title": "Ray’z Arcade Chronology",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/rayz-arcade-chronology",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 26,
+              "url": "https://www.nintendolife.com/games/switch-eshop/rayz_arcade_chronology",
+              "platform": "Nintendo Switch",
+              "weight": 5.0990195135927845,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:55.285096+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/rayz-arcade-chronology-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:11:02.691363+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000060103/e7d725445a84290a86c7c1fd4bd53337622492289ab9d65873e8a8c1e93cc7df",
+        "source": "https://www.nintendo.com/us/store/products/rayz-arcade-chronology-switch/",
+        "checked": "2026-11-02T18:11:02.691676+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:55.285096+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:11685": {
       "title": "Red Wings: American Aces",
@@ -53766,24 +53816,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 83.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 83.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=ready-steady-ship-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:55.285569+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/ready-steady-ship-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:11:03.402057+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000074775/a207cfc917052919ae4723f9812f586ecb119b9f7e20ce2f8b5bf8feffe007ea",
+        "source": "https://www.nintendo.com/us/store/products/ready-steady-ship-switch/",
+        "checked": "2026-11-02T18:11:03.402355+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:55.285569+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:14932": {
       "title": "Silkworm",
@@ -57255,24 +57328,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/rainbow-cotton",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 6.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.7,
+              "scale": 10.0,
+              "count": 9,
+              "url": "https://www.nintendolife.com/games/switch-eshop/rainbow_cotton",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 6.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:55.283752+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/rainbow-cotton-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:10:56.786435+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000072104/c81a4316dc1c951e9f64cef14bc76ec6ab45f5dea39eca0fbeddfd61160141ad",
+        "source": "https://www.nintendo.com/us/store/products/rainbow-cotton-switch/",
+        "checked": "2026-11-02T18:10:56.786729+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:55.283752+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:15254": {
       "title": "Ready, Steady, Ship!",
@@ -57281,22 +57388,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 5.04,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 2.52,
+              "count": 75,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP6958-PPSA20721_00-0387168554499017",
+              "checked": "2026-11-02T18:10:56.162848+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 8.660254037844387,
+              "normalized": 5.04
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:55.285290+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP6958-PPSA20721_00-0387168554499017",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:10:56.162848+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202403/0514/4000dfb31cdd746c4d053adfd9efd9ee363a1dbb7d1b4db8.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP6958-PPSA20721_00-0387168554499017",
+        "checked": "2026-11-02T18:10:56.162848+00:00"
+      },
+      "user": {
+        "score": 2.52,
+        "count": 75,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP6958-PPSA20721_00-0387168554499017",
+        "checked": "2026-11-02T18:10:56.162848+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP6958-PPSA20721_00-0387168554499017",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP6958-PPSA20721_00-0387168554499017",
+        "checked": "2026-11-02T18:10:56.162848+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:55.285290+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:15300": {
       "title": "Richman 11",
@@ -63379,24 +63534,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 60.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=rascals-escape-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:55.284367+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/rascals-escape-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:10:59.204055+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000041468/7fa5b6618f1de09b135eff091fb37d041efeb21b3b188bf52f5be8886e5d772a",
+        "source": "https://www.nintendo.com/us/store/products/rascals-escape-switch/",
+        "checked": "2026-11-02T18:10:59.204351+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:55.284367+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:16186": {
       "title": "Rescue: The Beagles",
@@ -97826,24 +98004,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 74.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 74.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=red-wings-aces-of-the-sky-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:58.276104+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/red-wings-aces-of-the-sky-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:11:06.201603+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000020697/6febe90e09a7582db1e243460352369bfb46fabf033029465d9cc4f05214fc2e",
+        "source": "https://www.nintendo.com/us/store/products/red-wings-aces-of-the-sky-switch/",
+        "checked": "2026-11-02T18:11:06.202023+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:58.276104+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:5798": {
       "title": "River City Girls",
@@ -111731,21 +111932,30 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:56.174493+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:10:56.174493+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:7669": {
@@ -118970,21 +119180,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:55.283993+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/rampage-knights-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:10:58.310539+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000015212/d9d1c95654af96450f9b2783be14db4e63e7ef304092b1b8fd41edaac61adfb7",
+        "source": "https://www.nintendo.com/us/store/products/rampage-knights-switch/",
+        "checked": "2026-11-02T18:10:58.310894+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:55.283993+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:9060": {
