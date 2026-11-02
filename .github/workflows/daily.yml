@@ -1,0 +1,36 @@
+name: Atualizar jogos locais
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: catalog-update
+  cancel-in-progress: false
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests
+      - name: Scrape com limite e intervalo entre pedidos
+        id: scrape
+        continue-on-error: true
+        run: python scripts/scrape.py --limit 300
+      - name: Guardar base de dados e catálogo
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Atualizar catálogo de multijogador local'
+            git push
+          fi
+      - name: Assinalar falhas da fonte
+        if: steps.scrape.outcome == 'failure'
+        run: exit 1
