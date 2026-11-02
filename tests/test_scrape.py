@@ -53,3 +53,16 @@ class CoverageQueue(unittest.TestCase):
             db.executescript("CREATE TABLE games(id TEXT PRIMARY KEY,title TEXT,platform TEXT); CREATE TABLE pages(url TEXT,checked TEXT); INSERT INTO pages VALUES('example','2026-11-02');")
             with patch.object(scrape,'ROOT',root):result=scrape.export_catalog(db,['example'],[])
             self.assertEqual(result['games'][0]['title'],'Borderlands 4');self.assertTrue(result['coverage_complete']);db.close()
+
+    def test_checkpoint_reopens_database_after_git_replaces_file(self):
+        import tempfile,os
+        from pathlib import Path
+        from unittest.mock import patch
+        from scripts import scrape
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);(root/'data').mkdir();path=root/'data/games.sqlite'
+            db=sqlite3.connect(path);db.execute('CREATE TABLE example(id INTEGER)');db.commit()
+            replacement=root/'replacement.sqlite';copy=sqlite3.connect(replacement);copy.execute('CREATE TABLE example(id INTEGER)');copy.commit();copy.close()
+            with patch.object(scrape,'ROOT',root),patch('subprocess.run',side_effect=lambda *a,**k:os.replace(replacement,path)):
+                reopened=scrape.push_checkpoint(db)
+            reopened.execute('INSERT INTO example VALUES(1)');reopened.commit();self.assertEqual(reopened.execute('SELECT id FROM example').fetchone()[0],1);reopened.close()

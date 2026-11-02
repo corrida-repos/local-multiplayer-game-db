@@ -81,6 +81,14 @@ def export_catalog(db,urls,errors):
     (ROOT/'data/last-run.json').write_text(json.dumps({'checked':checked,'pending':pending,'errors':errors},indent=2)+'\n')
     return report
 
+def push_checkpoint(db):
+    import subprocess
+    # Git can replace the SQLite inode during a rebase; never retain that handle.
+    db.close()
+    subprocess.run(['bash','scripts/checkpoint-catalog.sh'],check=True,cwd=ROOT)
+    reopened=sqlite3.connect(ROOT/'data/games.sqlite');reopened.row_factory=sqlite3.Row
+    return reopened
+
 def main():
     global robots
     ap=argparse.ArgumentParser(); ap.add_argument('--limit',type=int,default=300); ap.add_argument('--pending-only',action='store_true'); ap.add_argument('--checkpoint',type=int,default=100); ap.add_argument('--checkpoint-push',action='store_true'); args=ap.parse_args()
@@ -112,8 +120,7 @@ def main():
         if success and success % args.checkpoint==0:
             report=export_catalog(db,urls,errors);print(f"Progress: {report['checked']} checked; {report['pending']} pending; {len(report['games'])} games",flush=True)
             if args.checkpoint_push:
-                import subprocess
-                subprocess.run(['bash','scripts/checkpoint-catalog.sh'],check=True,cwd=ROOT)
+                db=push_checkpoint(db)
     if success==0 and candidates: raise RuntimeError('No pages successfully checked; preserving published JSON')
     curated=json.loads((ROOT/'data/competitive.json').read_text())
     for game in curated:
