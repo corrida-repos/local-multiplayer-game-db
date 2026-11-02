@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:39:08.284787+00:00",
+  "updated": "2026-11-02T17:39:40.902383+00:00",
   "version": 2,
   "coverage": {
     "total": 2424,
-    "attempted": 902,
-    "ready": 576,
-    "missing_image": 1571,
-    "missing_store": 1614,
-    "missing_rating": 1799,
+    "attempted": 912,
+    "ready": 581,
+    "missing_image": 1562,
+    "missing_store": 1605,
+    "missing_rating": 1793,
     "full_attempted": 0
   },
   "games": {
@@ -24222,21 +24222,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:39:21.241708+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/hyper-echelon-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:39:22.601395+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000028948/c4664acee7a9c836295602d00e9fe9fd18995910f4d6d13f31b8408914427183",
+        "source": "https://www.nintendo.com/us/store/products/hyper-echelon-switch/",
+        "checked": "2026-11-02T17:39:22.601559+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:39:21.241708+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:13131": {
@@ -24246,46 +24263,134 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 10.0,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 5,
+              "count": 7,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP3968-PPSA12539_00-0838753827733319",
+              "checked": "2026-11-02T17:39:23.660132+00:00",
+              "platform": "PSN · PS5",
+              "weight": 2.6457513110645907,
+              "normalized": 10.0
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:39:22.138470+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP3968-PPSA12539_00-0838753827733319",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:39:23.660132+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2615/XJZYok3qgOcV1RUy1t23Na8W.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP3968-PPSA12539_00-0838753827733319",
+        "checked": "2026-11-02T17:39:23.660132+00:00"
+      },
+      "user": {
+        "score": 5,
+        "count": 7,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP3968-PPSA12539_00-0838753827733319",
+        "checked": "2026-11-02T17:39:23.660132+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP3968-PPSA12539_00-0838753827733319",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP3968-PPSA12539_00-0838753827733319",
+        "checked": "2026-11-02T17:39:23.660132+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:39:22.138470+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:13127": {
       "title": "Hyper Gunsport",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Edge Magazine",
+              "score": 80,
+              "url": "",
+              "date": "2023-01-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamezebo",
+              "score": 80,
+              "url": "https://www.gamezebo.com/reviews/switch-review-round-up-panic-porcupine-papertris-hyper-gunsport-and-more/",
+              "date": "2023-06-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "https://www.godisageek.com/reviews/hyper-gunsport-review/",
+              "date": "2023-01-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 3
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:39:23.665318+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/hyper-gunsport-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:39:25.062597+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000058655/735a737a80cb8263bbc5665d11ef592af5ce06a14e9dbec891fe283aea6cf3c4",
+        "source": "https://www.nintendo.com/us/store/products/hyper-gunsport-switch/",
+        "checked": "2026-11-02T17:39:25.062752+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:39:23.665318+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:13583": {
       "title": "IGS Classic Arcade Collection",
@@ -63554,22 +63659,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.48,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.74,
+              "count": 823,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EB2071-PPSA34372_00-0748332557039838",
+              "checked": "2026-11-02T17:39:21.237666+00:00",
+              "platform": "PSN · PS5",
+              "weight": 28.687976575562104,
+              "normalized": 7.48
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:39:20.251597+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EB2071-PPSA34372_00-0748332557039838",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:39:21.237666+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202602/0614/a07bf61178b050ffe75fe013d3d3455b904c8c8a339065f8.png",
+        "source": "https://store.playstation.com/pt-pt/product/EB2071-PPSA34372_00-0748332557039838",
+        "checked": "2026-11-02T17:39:21.237666+00:00"
+      },
+      "user": {
+        "score": 3.74,
+        "count": 823,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EB2071-PPSA34372_00-0748332557039838",
+        "checked": "2026-11-02T17:39:21.237666+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EB2071-PPSA34372_00-0748332557039838",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EB2071-PPSA34372_00-0748332557039838",
+        "checked": "2026-11-02T17:39:21.237666+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:39:20.251597+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:18171": {
       "title": "Inkling Cats : Beneath the dreams",
@@ -90316,22 +90469,48 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 5.1,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 5.1,
+              "scale": 10.0,
+              "count": 43,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/harvest_moon_light_of_hope_special_edition",
+              "platform": "Nintendo Switch",
+              "weight": 6.557438524302,
+              "normalized": 5.1
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:39:11.432947+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/harvest-moon-light-of-hope-special-edition-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:39:16.775372+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000000608/194ddbb4c5172db18b61556804ca7abd332b3b8c5baa15f1eb59c072bfa94882",
+        "source": "https://www.nintendo.com/us/store/products/harvest-moon-light-of-hope-special-edition-switch/",
+        "checked": "2026-11-02T17:39:16.775612+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:39:11.432947+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:8136": {
       "title": "Heroes of Loot",
@@ -90340,21 +90519,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:39:18.337614+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/heroes-of-loot-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:39:20.061546+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000034971/d07302ba307051a54a21a94a1826323e68f1df44e666c364feeb4a42f52ae03e",
+        "source": "https://www.nintendo.com/us/store/products/heroes-of-loot-switch/",
+        "checked": "2026-11-02T17:39:20.061702+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:39:18.337614+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:8521": {
@@ -93203,21 +93399,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:39:11.432387+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/good-night-knight-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:39:13.215229+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000031919/7ce825adabc5b5f50cc3f4d98f5014ba7f652aadad4c2db9f1e7f63f2fd4d074",
+        "source": "https://www.nintendo.com/us/store/products/good-night-knight-switch/",
+        "checked": "2026-11-02T17:39:13.215491+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:39:11.432387+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:8828": {
@@ -93225,24 +93438,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 68.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 68.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=gravity-heroes-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:39:11.432557+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/gravity-heroes-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:39:13.693083+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000035007/0ed5043055f00d30663ee6aff04d0e6741b8e22a4adc76b29801abda06c0c0b9",
+        "source": "https://www.nintendo.com/us/store/products/gravity-heroes-switch/",
+        "checked": "2026-11-02T17:39:13.693237+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:39:11.432557+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:8898": {
       "title": "Gunslugs 2",
@@ -93251,21 +93487,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:39:11.432807+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/gunslugs-2-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:39:15.203621+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000036100/9587627be4a47e615e6ef07f2beaecd8479a989b26e3787701df4a8d1f559dce",
+        "source": "https://www.nintendo.com/us/store/products/gunslugs-2-switch/",
+        "checked": "2026-11-02T17:39:15.203775+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:39:11.432807+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:8894": {
@@ -93273,23 +93526,40 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/johnny-turbos-arcade-games#heavy-barrel",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:39:17.768408+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "basics_attempted": "2026-11-02T17:39:17.768408+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:8970": {
