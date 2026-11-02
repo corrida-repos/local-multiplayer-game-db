@@ -414,6 +414,8 @@ def select_work(games,entries,seen):
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--minutes',type=float,default=50);ap.add_argument('--workers',type=int,default=4);ap.add_argument('--ids');ap.add_argument('--checkpoint-push',action='store_true');args=ap.parse_args()
+    from scripts.apply_recoveries import apply_pending
+    apply_pending()
     refresh_review_index()
     entries=read('enrichment.json')['games'];legacy=read('ratings.json')['games'];known_stores=read('stores.json')['games'];old_composites=read('composites.json')['games'];old_trailers=read('trailers.json')['games'];curated=read('trailers-curated.json',{});artwork=read('images.json',{});seen=set();started=time.monotonic()
     # All network stages share per-host pacing, including the composite collector.
