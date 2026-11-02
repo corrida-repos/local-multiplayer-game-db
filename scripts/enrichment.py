@@ -20,11 +20,12 @@ def read(name,default=None):
     path=ROOT/'data'/name
     return json.loads(path.read_text()) if path.exists() else (default if default is not None else {'games':{}})
 def identity(value):
+    value=re.sub(r'\bPlayStation[®™ ]*5\b','',value,flags=re.I)
     value=re.sub(r'\bPS4\s*(?:&|and|/|e|,)?\s*PS5\b|\bPS5\b|\bPS4\b','',value,flags=re.I)
     value=re.sub(r'\b(iii|ii|iv)\b',lambda m:{'ii':'2','iii':'3','iv':'4'}[m[1].lower()],value,flags=re.I)
     return stores.normal(value)
 def matches_name(game,name):
-    return identity(name) in {identity(game['title']),identity(ratings.MC_ALIASES.get(game['title'],''))}
+    return bool(identity(name)) and identity(name) in {identity(game['title']),identity(ratings.MC_ALIASES.get(game['title'],''))}
 def image_from_media(media):
     for role in ['MASTER','GAMEHUB_COVER_ART','PORTRAIT_BANNER','FOUR_BY_THREE_BANNER','SCREENSHOT']:
         for item in media or []:
@@ -40,7 +41,7 @@ def psn_search(title):
 def psn_metadata(game,url,page):
     if not url.startswith('https://store.playstation.com/pt-pt/'):raise ValueError('Portugal PSN URL required')
     product=ratings.psn_product(page,url)
-    if not product or 'PS5' not in product.get('platforms',[]) or not matches_name(game,product.get('name','')):raise ValueError('Exact PS5 product identity not verified')
+    if not product or 'PS5' not in product.get('platforms',[]) or not any(matches_name(game,name) for name in [product.get('name',''),product.get('invariantName','')]):raise ValueError('Exact PS5 product identity not verified')
     if product.get('storeDisplayClassification') in ['ADD_ON','DEMO','TRIAL'] or product.get('topCategory')=='ADD_ON':raise ValueError('Not the full game')
     checked=now();result={'store':{'url':url,'label':'Abrir na PlayStation Store','checked':checked},'image':{'url':image_from_media(product.get('media')),'source':url,'checked':checked}}
     user=ratings.psn_rating(page,url)
@@ -64,7 +65,9 @@ def resolve_psn(game,legacy,known_store):
         if item.get('__typename')=='Product':
             if 'PS5' not in item.get('platforms',[]):continue
             urls=['https://store.playstation.com/pt-pt/product/'+item['id']]
-        else:urls=['https://store.playstation.com/pt-pt/concept/'+item['id']]
+        else:
+            products=sorted(item.get('products',[]),key=lambda p:'PPSA' not in p['id'])
+            urls=['https://store.playstation.com/pt-pt/concept/'+item['id']]+['https://store.playstation.com/pt-pt/product/'+p['id'] for p in products[:8]]
         for url in urls:
             try:final,page=get(url);return psn_metadata(game,final,page)
             except Exception as exc:errors.append(str(exc)[:120])
@@ -197,7 +200,7 @@ def select_work(games,entries,seen):
     if unseen:return 'basics',unseen
     # Finish every game's minimum data before spending requests on extra sources.
     retry=[g for g in games if (g['platform']+':'+g['id'],'basics') not in seen and not all(requirements(entries.get(g['platform']+':'+g['id'],{})).values())]
-    if retry:return 'basics',retry
+    if retry:return 'basics',sorted(retry,key=lambda g:entries.get(g['platform']+':'+g['id'],{}).get('basics_attempted',''))
     full=[g for g in games if (g['platform']+':'+g['id'],'full') not in seen and not entries.get(g['platform']+':'+g['id'],{}).get('full_attempted')]
     if full:return 'full',full
     stale=[g for g in games if (g['platform']+':'+g['id'],'basics') not in seen and now()>entries.get(g['platform']+':'+g['id'],{}).get('basics_attempted','')[:10]+'T23:59:59+00:00']
