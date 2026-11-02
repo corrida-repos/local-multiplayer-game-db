@@ -22,8 +22,20 @@ python scripts/scrape.py --limit 300
 
 Os workflows agendados correm no ramo predefinido. `contents: write` permite atualizar apenas os ficheiros do catálogo. As definições da organização devem permitir GitHub Actions. O GitHub pode desativar agendamentos após 60 dias sem atividade num repositório público; reativar em Actions se necessário.
 
+## Notas e avaliações
+
+`python scripts/ratings.py --limit 60` atualiza até 60 jogos por execução diária, dando prioridade aos ainda não consultados e depois aos mais antigos. Guarda os dados em `data/ratings.json` e na tabela SQLite `ratings`.
+
+- Críticos: Metacritic, **0–100**, da versão exata da consola. Não se usam notas de outras plataformas.
+- Utilizadores Switch: Metacritic, **0–10**, com pelo menos quatro avaliações nessa plataforma (o mínimo para apresentar uma média).
+- Utilizadores PS5: PlayStation Store Portugal (PSN), **0–5**. Certos produtos partilham a classificação PS4/PS5; o detalhe está no título da ligação.
+- Cada nota tem fonte e data de consulta próprias. Falhas temporárias mantêm a última nota obtida. Ausência de avaliações ou falta de correspondência segura aparece como **Sem nota**.
+- URLs Metacritic são descobertas a partir do nome, com exceções explícitas para edições; conceitos PSN são obtidos nas páginas oficiais ou mapeados para URLs oficiais confirmadas. Jogos sem correspondência ficam sem nota até haver uma fonte válida.
+
 ## Frontend
 
-HTML/CSS/JavaScript sem build. Filtros por consola, modo, género e jogadores, pesquisa, favoritos locais e escolha aleatória. Os favoritos são guardados apenas no navegador, sem sincronização. A cópia estática é usada se a exportação no GitHub estiver indisponível e é identificada como cópia de segurança. O site mostra a data real dos dados e sinaliza dados antigos.
+Catálogo simples em HTML/CSS/JavaScript, sem build: imagens, ligações diretas às fontes, pesquisa e filtros por consola, modo, género, jogadores e estado. Permite ordenar por nome, lançamento e nota dos críticos. Arte de jogos com ligação ao fornecedor: Wikipedia, Steam ou Nintendo. As notas são lidas diretamente do GitHub, com cópia de segurança na publicação.
 
-O site começa privado por predefinição do Sites. Para permitir acesso a outra pessoa, partilhe-o nas definições do Sites. O catálogo GitHub é público; não contém dados pessoais.
+**Já joguei** e **Não me interessa** retiram o jogo da vista predefinida **Por descobrir**, em ambas as consolas. O filtro Estado permite rever e restaurar escolhas. Estas preferências ficam em `localStorage` neste navegador, sem partilha entre dispositivos ou pessoas. Não são publicadas no GitHub.
+
+O site é **público**, por pedido do proprietário. O catálogo GitHub também é público e não contém dados pessoais.

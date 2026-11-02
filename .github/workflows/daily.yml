@@ -9,6 +9,11 @@ on:
         required: false
         default: '300'
         type: string
+      rating_limit:
+        description: Máximo de jogos cujas notas atualizar (1–60)
+        required: false
+        default: '60'
+        type: string
 permissions:
   contents: write
 concurrency:
@@ -32,6 +37,14 @@ jobs:
         run: |
           python -c "import os; n=int(os.environ['SCRAPE_LIMIT']); assert 1 <= n <= 300"
           python scripts/scrape.py --limit "$SCRAPE_LIMIT"
+      - name: Atualizar notas Metacritic e PSN
+        id: ratings
+        continue-on-error: true
+        env:
+          RATING_LIMIT: ${{ inputs.rating_limit || '60' }}
+        run: |
+          python -c "import os; n=int(os.environ['RATING_LIMIT']); assert 1 <= n <= 60"
+          python scripts/ratings.py --limit "$RATING_LIMIT"
       - name: Guardar base de dados e catálogo
         run: |
           git config user.name 'github-actions[bot]'
@@ -43,5 +56,5 @@ jobs:
             git push
           fi
       - name: Assinalar falhas da fonte
-        if: steps.scrape.outcome == 'failure'
+        if: steps.scrape.outcome == 'failure' || steps.ratings.outcome == 'failure'
         run: exit 1
