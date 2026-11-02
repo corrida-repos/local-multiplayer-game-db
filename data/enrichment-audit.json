@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-02T23:56:35.321280+00:00",
+  "updated": "2026-11-02T23:58:06.222001+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1919,
+    "ready": 1921,
     "missing_image": 109,
-    "missing_store": 452,
+    "missing_store": 445,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -29099,18 +29099,6 @@
       "next_retry": "2026-11-03T00:56:34.821271+00:00"
     },
     {
-      "key": "Switch:12482",
-      "title": "SUPER CHICKEN JUMPER",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:16:42.716318+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:14517",
       "title": "Sagaia",
       "platform": "Switch",
@@ -29276,13 +29264,30 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T21:16:42.716567+00:00",
+      "attempted": "2026-11-02T23:56:39.908912+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:56:40.544318+00:00",
+              "next_attempt": "2026-11-03T23:56:40.544318+00:00",
+              "revision": "fdd0fcf57009694d:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Samurai+Aces%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Samurai+Aces%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T23:56:40.544318+00:00"
     },
     {
       "key": "Switch:11989",
@@ -29479,29 +29484,101 @@
       "title": "Scotland Yard – Hunting Mister X",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:16:42.716871+00:00",
+      "attempted": "2026-11-02T23:56:39.910263+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:16996",
-      "title": "Scott Pilgrim EX",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:16:42.717809+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:56:44.552422+00:00",
+              "next_attempt": "2026-11-03T23:56:44.552422+00:00",
+              "revision": "7156a1537e6b0c98:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:56:44.552422+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Scotland-Yard-Hunting-Mister-X-2626724.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Scotland-Yard-Hunting-Mister-X-2626724.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:58:00.359228+00:00",
+              "next_attempt": "2026-11-03T23:58:00.359228+00:00",
+              "revision": "7156a1537e6b0c98:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/scotland_yard_-_hunting_mister_x",
+                "https://www.nintendolife.com/games/nintendo-switch/scotland_yard_hunting_mister_x",
+                "https://www.nintendolife.com/games/switch-eshop/scotland_yard_hunting_mister_x"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/scotland_yard_hunting_mister_x"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:58:01.205343+00:00",
+              "next_attempt": "2026-11-03T23:58:01.205343+00:00",
+              "revision": "7156a1537e6b0c98:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=scotland-yard-hunting-mister-x-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=scotland-yard-hunting-mister-x-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:58:04.550871+00:00",
+              "next_attempt": "2026-11-03T23:58:04.550871+00:00",
+              "revision": "7156a1537e6b0c98:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/scotland-yard-hunting-mister-x/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/scotland-yard-hunting-mister-x/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/scotland-yard-hunting-mister-x/"
+              ],
+              "url": "https://www.metacritic.com/game/scotland-yard-hunting-mister-x/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:58:04.586625+00:00",
+              "next_attempt": "2026-11-03T23:58:04.586625+00:00",
+              "revision": "7156a1537e6b0c98:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Scotland+Yard+%E2%80%93+Hunting+Mister+X&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Scotland+Yard+%E2%80%93+Hunting+Mister+X&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:58:04.586791+00:00",
+              "next_attempt": "2026-11-03T00:58:04.586791+00:00",
+              "revision": "7156a1537e6b0c98:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:58:04.586883+00:00",
+              "next_attempt": "2026-11-03T00:58:04.586883+00:00",
+              "revision": "7156a1537e6b0c98:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:58:04.586791+00:00"
     },
     {
       "key": "PS5:12181",
@@ -29544,31 +29621,198 @@
         "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:16:42.718945+00:00",
+      "attempted": "2026-11-02T23:56:39.910867+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:56:41.627602+00:00",
+              "next_attempt": "2026-11-03T23:56:41.627602+00:00",
+              "revision": "0be014512b97c9f6:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Seahorse+Soap+Patrol%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Seahorse+Soap+Patrol%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:30.175667+00:00",
+              "next_attempt": "2026-11-03T23:57:30.175667+00:00",
+              "revision": "0be014512b97c9f6:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/seahorse_soap_patrol",
+                "https://www.nintendolife.com/games/nintendo-switch/seahorse_soap_patrol"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/seahorse_soap_patrol"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:30.794486+00:00",
+              "next_attempt": "2026-11-03T23:57:30.794486+00:00",
+              "revision": "0be014512b97c9f6:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=seahorse-soap-patrol-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=seahorse-soap-patrol-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:46.934057+00:00",
+              "next_attempt": "2026-11-03T23:57:46.934057+00:00",
+              "revision": "0be014512b97c9f6:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/seahorse-soap-patrol/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/seahorse-soap-patrol/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/seahorse-soap-patrol/"
+              ],
+              "url": "https://www.metacritic.com/game/seahorse-soap-patrol/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:47.014368+00:00",
+              "next_attempt": "2026-11-03T23:57:47.014368+00:00",
+              "revision": "0be014512b97c9f6:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Seahorse+Soap+Patrol&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Seahorse+Soap+Patrol&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:57:47.014479+00:00",
+              "next_attempt": "2026-11-03T00:57:47.014479+00:00",
+              "revision": "0be014512b97c9f6:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:57:47.014527+00:00",
+              "next_attempt": "2026-11-03T00:57:47.014527+00:00",
+              "revision": "0be014512b97c9f6:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:57:47.014479+00:00"
     },
     {
       "key": "Switch:8505",
       "title": "Seal Electric Railway",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:16:42.719579+00:00",
+      "attempted": "2026-11-02T23:56:39.911212+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:56:41.273715+00:00",
+              "next_attempt": "2026-11-03T23:56:41.273715+00:00",
+              "revision": "d65832c9a7f6cfee:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:56:41.273715+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Seal-Electric-Railway-1906919.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Seal-Electric-Railway-1906919.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:25.280690+00:00",
+              "next_attempt": "2026-11-03T23:57:25.280690+00:00",
+              "revision": "d65832c9a7f6cfee:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/seal_electric_railway",
+                "https://www.nintendolife.com/games/nintendo-switch/seal_electric_railway"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/seal_electric_railway"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:25.879473+00:00",
+              "next_attempt": "2026-11-03T23:57:25.879473+00:00",
+              "revision": "d65832c9a7f6cfee:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=seal-electric-railway-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=seal-electric-railway-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:37.235509+00:00",
+              "next_attempt": "2026-11-03T23:57:37.235509+00:00",
+              "revision": "d65832c9a7f6cfee:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/seal-electric-railway/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/seal-electric-railway/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/seal-electric-railway/"
+              ],
+              "url": "https://www.metacritic.com/game/seal-electric-railway/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:37.268705+00:00",
+              "next_attempt": "2026-11-03T23:57:37.268705+00:00",
+              "revision": "d65832c9a7f6cfee:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Seal+Electric+Railway&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Seal+Electric+Railway&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:57:37.268826+00:00",
+              "next_attempt": "2026-11-03T00:57:37.268826+00:00",
+              "revision": "d65832c9a7f6cfee:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:57:37.268889+00:00",
+              "next_attempt": "2026-11-03T00:57:37.268889+00:00",
+              "revision": "d65832c9a7f6cfee:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:57:37.268826+00:00"
     },
     {
       "key": "Switch:7669",
@@ -29734,16 +29978,99 @@
       "title": "Sesame Street: Friends & Fun",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:16:42.720666+00:00",
+      "attempted": "2026-11-02T23:56:39.913223+00:00",
       "reasons": {
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:56:43.683007+00:00",
+              "next_attempt": "2026-11-03T23:56:43.683007+00:00",
+              "revision": "ff97d641ddd88588:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:56:43.683007+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Sesame-Street-Friends-Fun-3147246.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Sesame-Street-Friends-Fun-3147246.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:35.265788+00:00",
+              "next_attempt": "2026-11-03T23:57:35.265788+00:00",
+              "revision": "ff97d641ddd88588:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/sesame_street_friends_and_fun",
+                "https://www.nintendolife.com/games/nintendo-switch/sesame_street_friends_and_fun"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/sesame_street_friends_and_fun"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:35.875371+00:00",
+              "next_attempt": "2026-11-03T23:57:35.875371+00:00",
+              "revision": "ff97d641ddd88588:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=sesame-street-friends-and-fun-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=sesame-street-friends-and-fun-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:47.099430+00:00",
+              "next_attempt": "2026-11-03T23:57:47.099430+00:00",
+              "revision": "ff97d641ddd88588:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/sesame-street-friends-and-fun/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/sesame-street-friends-and-fun/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/sesame-street-friends-and-fun/"
+              ],
+              "url": "https://www.metacritic.com/game/sesame-street-friends-and-fun/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:48.118773+00:00",
+              "next_attempt": "2026-11-03T23:57:48.118773+00:00",
+              "revision": "ff97d641ddd88588:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Sesame+Street%3A+Friends+%26+Fun&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Sesame+Street%3A+Friends+%26+Fun&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:57:48.118940+00:00",
+              "next_attempt": "2026-11-03T00:57:48.118940+00:00",
+              "revision": "ff97d641ddd88588:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:57:48.119023+00:00",
+              "next_attempt": "2026-11-03T00:57:48.119023+00:00",
+              "revision": "ff97d641ddd88588:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:57:48.118940+00:00"
     },
     {
       "key": "Switch:8519",
@@ -29859,48 +30186,283 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T21:16:46.486000+00:00",
+      "attempted": "2026-11-02T23:56:39.915896+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:45.273977+00:00",
+              "next_attempt": "2026-11-03T23:57:45.273977+00:00",
+              "revision": "a74778624c1415c3:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/shanghai_iii",
+                "https://www.nintendolife.com/games/switch-eshop/shanghai_iii",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_shanghai_iii"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_shanghai_iii"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:45.900556+00:00",
+              "next_attempt": "2026-11-03T23:57:45.900556+00:00",
+              "revision": "a74778624c1415c3:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=shanghai-iii-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=shanghai-iii-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:54.220456+00:00",
+              "next_attempt": "2026-11-03T23:57:54.220456+00:00",
+              "revision": "a74778624c1415c3:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-shanghai-iii/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-shanghai-iii/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-shanghai-iii/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-shanghai-iii/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:54.276887+00:00",
+              "next_attempt": "2026-11-03T23:57:54.276887+00:00",
+              "revision": "a74778624c1415c3:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Shanghai+III&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Shanghai+III&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:57:54.277020+00:00",
+              "next_attempt": "2026-11-03T00:57:54.277020+00:00",
+              "revision": "a74778624c1415c3:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:57:54.277139+00:00",
+              "next_attempt": "2026-11-03T00:57:54.277139+00:00",
+              "revision": "a74778624c1415c3:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:57:54.277020+00:00"
     },
     {
       "key": "Switch:18814",
       "title": "Shape Wars",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:16:51.883328+00:00",
+      "attempted": "2026-11-02T23:56:40.182654+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:56:45.849816+00:00",
+              "next_attempt": "2026-11-03T23:56:45.849816+00:00",
+              "revision": "b62d3e32dd9e32a0:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:56:45.849816+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Shape-Wars-3179030.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Shape-Wars-3179030.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:50.303945+00:00",
+              "next_attempt": "2026-11-03T23:57:50.303945+00:00",
+              "revision": "b62d3e32dd9e32a0:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/shape_wars",
+                "https://www.nintendolife.com/games/nintendo-switch/shape_wars"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/shape_wars"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:50.989430+00:00",
+              "next_attempt": "2026-11-03T23:57:50.989430+00:00",
+              "revision": "b62d3e32dd9e32a0:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=shape-wars-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=shape-wars-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:54.486143+00:00",
+              "next_attempt": "2026-11-03T23:57:54.486143+00:00",
+              "revision": "b62d3e32dd9e32a0:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/shape-wars/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/shape-wars/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/shape-wars/"
+              ],
+              "url": "https://www.metacritic.com/game/shape-wars/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:55.354570+00:00",
+              "next_attempt": "2026-11-03T23:57:55.354570+00:00",
+              "revision": "b62d3e32dd9e32a0:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Shape+Wars&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Shape+Wars&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:57:55.354675+00:00",
+              "next_attempt": "2026-11-03T00:57:55.354675+00:00",
+              "revision": "b62d3e32dd9e32a0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:57:55.354731+00:00",
+              "next_attempt": "2026-11-03T00:57:55.354731+00:00",
+              "revision": "b62d3e32dd9e32a0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:57:55.354675+00:00"
     },
     {
       "key": "Switch:18595",
       "title": "Shard Squad",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:18:49.683594+00:00",
+      "attempted": "2026-11-02T23:56:40.544843+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:56:46.789394+00:00",
+              "next_attempt": "2026-11-03T23:56:46.789394+00:00",
+              "revision": "77f81fa257a043d9:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:56:46.789394+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Shard-Squad-3133777.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Shard-Squad-3133777.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:55.122989+00:00",
+              "next_attempt": "2026-11-03T23:57:55.122989+00:00",
+              "revision": "77f81fa257a043d9:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/shard_squad",
+                "https://www.nintendolife.com/games/nintendo-switch/shard_squad"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/shard_squad"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:57:55.770769+00:00",
+              "next_attempt": "2026-11-03T23:57:55.770769+00:00",
+              "revision": "77f81fa257a043d9:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=shard-squad-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=shard-squad-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:58:05.633912+00:00",
+              "next_attempt": "2026-11-03T23:58:05.633912+00:00",
+              "revision": "77f81fa257a043d9:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/shard-squad/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/shard-squad/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/shard-squad/"
+              ],
+              "url": "https://www.metacritic.com/game/shard-squad/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:58:05.688742+00:00",
+              "next_attempt": "2026-11-03T23:58:05.688742+00:00",
+              "revision": "77f81fa257a043d9:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Shard+Squad&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Shard+Squad&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:58:05.688879+00:00",
+              "next_attempt": "2026-11-03T00:58:05.688879+00:00",
+              "revision": "77f81fa257a043d9:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:58:05.688938+00:00",
+              "next_attempt": "2026-11-03T00:58:05.688938+00:00",
+              "revision": "77f81fa257a043d9:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:58:05.688879+00:00"
     },
     {
       "key": "Switch:5211",
