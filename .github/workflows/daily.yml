@@ -45,6 +45,18 @@ jobs:
         run: |
           python -c "import os; n=int(os.environ['RATING_LIMIT']); assert 1 <= n <= 60"
           python scripts/ratings.py --limit "$RATING_LIMIT"
+      - name: Atualizar links das lojas oficiais
+        id: stores
+        continue-on-error: true
+        run: python scripts/stores.py --limit 60
+      - name: Verificar catálogo PS Plus Portugal
+        id: psplus
+        continue-on-error: true
+        run: python scripts/psplus.py --limit 60
+      - name: Atualizar trailers oficiais
+        id: trailers
+        continue-on-error: true
+        run: python -m scripts.trailers --limit 60
       - name: Guardar base de dados e catálogo
         run: |
           git config user.name 'github-actions[bot]'
@@ -56,5 +68,5 @@ jobs:
             git push
           fi
       - name: Assinalar falhas da fonte
-        if: steps.scrape.outcome == 'failure' || steps.ratings.outcome == 'failure'
+        if: steps.scrape.outcome == 'failure' || steps.ratings.outcome == 'failure' || steps.stores.outcome == 'failure' || steps.trailers.outcome == 'failure' || steps.psplus.outcome == 'failure'
         run: exit 1

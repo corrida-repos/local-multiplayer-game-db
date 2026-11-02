@@ -34,7 +34,7 @@ Os workflows agendados correm no ramo predefinido. `contents: write` permite atu
 
 ## Frontend
 
-Os cartões mostram apenas imagem, plataforma, título, género, modo e ratings. Clicar na imagem, no título ou no cartão abre uma vista de detalhe com sinopse, experiência cooperativa, jogadores locais, data de lançamento, datas das notas, fontes e flags. As sinopses e a descrição da cooperação são recolhidas das páginas públicas do Co-Optimus no idioma original e limitadas a excertos curtos; os jogos da seleção manual têm sinopses em português. Os campos `synopsis` e `coop_description` são persistidos em SQLite e exportados no catálogo. A migração acrescenta apenas as colunas em falta e preserva os registos existentes.
+Os cartões mostram apenas imagem, plataforma, título, género, modo e ratings. Clicar na imagem, no título ou no cartão abre uma vista de detalhe com sinopse, experiência cooperativa, jogadores locais, data de lançamento, botão para a loja oficial, trailer YouTube e flags. As sinopses e a descrição da cooperação são recolhidas das páginas públicas do Co-Optimus no idioma original e limitadas a excertos curtos; os jogos da seleção manual têm sinopses em português. Os campos `synopsis` e `coop_description` são persistidos em SQLite e exportados no catálogo. A migração acrescenta apenas as colunas em falta e preserva os registos existentes.
 
 A ordenação fica sempre visível. A pesquisa, os filtros e “Limpar filtros” ficam numa secção recolhida por defeito, aberta pelo botão “Mostrar Pesquisa e Filtros”; recolher mantém as escolhas e os resultados atuais.
 
@@ -43,3 +43,17 @@ Catálogo simples em HTML/CSS/JavaScript, sem build: imagens, ligações diretas
 **Quero jogar**, **Já joguei** e **Não me interessa** retiram o jogo da vista predefinida **Por descobrir**, em ambas as consolas. O filtro Estado inclui a lista **Quero jogar**, além de Já jogados e Sem interesse, e permite rever e restaurar escolhas. É possível passar um jogo de Quero jogar para Já jogado ou Sem interesse. Estas preferências ficam em `localStorage` neste navegador, sem partilha entre dispositivos ou pessoas. Não são publicadas no GitHub.
 
 O site é **público**, por pedido do proprietário. O catálogo GitHub também é público e não contém dados pessoais.
+
+## Lojas oficiais e vídeos
+
+- `python scripts/stores.py --limit 60` mantém `data/stores.json` e a tabela SQLite `stores`. Os endereços PS5 são páginas oficiais da PlayStation Store Portugal, reaproveitando correspondências verificadas da recolha de notas. Para Nintendo Switch, verifica o título exato na página da loja Nintendo dos EUA; não usa páginas de pesquisa nem edições Switch 2. Jogos SNES do Nintendo Switch Online apontam para a aplicação oficial que os inclui. O link PS5 de It Takes Two usa o produto especificado pelo proprietário.
+- `python -m scripts.trailers --limit 60` mantém `data/trailers.json` e a tabela SQLite `trailers`. Prefere gameplay oficial; na ausência desse vídeo, usa outro trailer oficial identificado do mesmo jogo. Recolhe vídeos estruturados nas páginas oficiais PlayStation e usa correspondências verificadas em `data/trailers-curated.json` para Nintendo, outras editoras e jogos antigos. Estas correspondências também preservam as fontes. Não inventa IDs de vídeos nem mostra vídeos de outros jogos como alternativa.
+- As duas tarefas correm no GitHub Actions depois da atualização das notas, em lotes de até 60 jogos. A descoberta não é exaustiva para futuros jogos: quando não há correspondência oficial segura, a interface indica que o link ou vídeo ainda não foi identificado.
+- O leitor usa `youtube-nocookie.com`, com controlos e ecrã inteiro. A iframe só é criada após clicar em Reproduzir. Fecha e interrompe o leitor ao sair do detalhe; mudar uma flag não reinicia o vídeo. Há ligação direta ao YouTube caso a incorporação esteja indisponível.
+- A vista de detalhe não mostra datas internas de verificação/atualização, a nota PSN partilhada PS4/PS5, o título/descrição de estado, links ao Co-Optimus ou a nota final sobre armazenamento. Os dados continuam guardados para manutenção; as flags continuam funcionais e locais ao navegador.
+
+## Catálogo PS Plus (Portugal)
+
+`python scripts/psplus.py --limit 60` consulta apenas páginas `store.playstation.com/pt-pt/` dos jogos PS5 e guarda `data/psplus.json` e a tabela SQLite `psplus`. Exige uma oferta gratuita de jogo completo do tipo PS_PLUS_GAME_CATALOG ou PS_PLUS_CLASSICS_CATALOG, associada ao produto PS5 correto e a Extra/Premium. Não confunde descontos, jogos mensais, experimentações de jogos, EA Play, requisitos de jogo online ou ofertas de outra edição com inclusão no catálogo. Ofertas expiradas são excluídas.
+
+O filtro **No catálogo PS Plus** fica desligado por defeito, aplica-se apenas a PS5 e desaparece quando só Nintendo Switch está selecionada. Usa verificações de Portugal com menos de 48 horas; a recolha diária atualiza a disponibilidade. Erros de rede preservam o último registo, que deixa de ser usado pelo filtro se ficar antigo. “Limpar filtros” desliga esta opção. A disponibilidade pode mudar: a loja oficial é a fonte de confirmação final.
