@@ -156,6 +156,16 @@ def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
         except Exception as exc:errors['metacritic_users']=str(exc)[:160]
         if not users:
             try:
+                url=f'https://backend.metacritic.com/reviews/metacritic/critic/games/{name}/platform/{platform}/web?offset=0&limit=10&filterBySentiment=all&sort=score'
+                _,page=get(url);index=json.loads(page)['data'];items=index['items']
+                # One scored review is enough even when the aggregate is still TBD.
+                # Only use this page if it is the complete index, never a top-score prefix.
+                if 0<int(index['totalResults'])<=len(items):
+                    expected='PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch'
+                    critics.extend({'name':r['publicationName'],'score':r['score'],'url':r['url'],'platform':expected,'via':'Metacritic review index'} for r in items if r.get('platform')==expected)
+            except Exception as exc:errors['metacritic_reviews']=str(exc)[:160]
+        if not users and not critics:
+            try:
                 url=f'https://www.metacritic.com/game/{name}/';_,page=get(url);score=ratings.mc_critic(page,name,'PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch')
                 if score is not None:critics.append({'name':'Metacritic aggregate','score':score,'url':url+'critic-reviews/?platform='+platform,'platform':game['platform']})
             except Exception as exc:errors['metacritic_critics']=str(exc)[:160]

@@ -15,6 +15,7 @@ def normal(value):
     return re.sub('[^a-z0-9]','',unicodedata.normalize('NFKD',value).encode('ascii','ignore').decode().lower())
 
 def slug(value):
+    value=value.replace('&',' and ')
     value=unicodedata.normalize('NFKD',value).encode('ascii','ignore').decode().lower().replace("'",'')
     return re.sub('[^a-z0-9]+','-',value).strip('-')
 
