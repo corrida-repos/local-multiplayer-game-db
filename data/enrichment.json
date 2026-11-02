@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T20:59:25.046090+00:00",
+  "updated": "2026-11-02T20:59:44.591370+00:00",
   "version": 4,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1813,
+    "ready": 1816,
     "missing_image": 144,
-    "missing_store": 260,
-    "missing_rating": 612,
+    "missing_store": 256,
+    "missing_rating": 611,
     "full_attempted": 852
   },
   "games": {
@@ -25712,29 +25712,22 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 0,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
-          "www.nintendolife.com/switch-eshop: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T20:35:22.271187+00:00"
+        "attempted": "2026-11-02T20:59:28.977956+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T19:18:41.182709+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:59:28.977956+00:00",
+      "version": 4,
       "errors": {
-        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden; HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
         "nindie": "Not a Switch 1 review",
-        "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed"
       },
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/0/0b/Gun_Frontier_arcade_flyer.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
@@ -25742,7 +25735,12 @@
         "checked": "2026-11-02T19:30:23.711219+00:00",
         "method": "verified-game-article"
       },
-      "full_attempted": "2026-11-02T20:35:24.838940+00:00"
+      "full_attempted": "2026-11-02T20:35:24.838940+00:00",
+      "store": {
+        "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Arcade-Archives-GUN-FRONTIER-2254832.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T20:59:30.329045+00:00"
+      }
     },
     "Switch:11201": {
       "title": "Gunnail",
@@ -117257,11 +117255,11 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:18:51.015986+00:00"
+        "attempted": "2026-11-02T20:59:28.978188+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -117269,11 +117267,13 @@
         "source": "https://www.nintendolife.com/games/switch-eshop/crypt_of_the_necrodancer",
         "checked": "2026-11-02T17:23:53.905115+00:00"
       },
-      "basics_attempted": "2026-11-02T19:18:51.015986+00:00",
-      "version": 3,
-      "errors": {
-        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+      "basics_attempted": "2026-11-02T20:59:28.978188+00:00",
+      "version": 4,
+      "errors": {},
+      "store": {
+        "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Crypt-of-the-NecroDancer-Nintendo-Switch-Edition-1337079.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T20:59:29.347817+00:00"
       }
     },
     "Switch:5082": {
@@ -143192,11 +143192,20 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Digitally Downloaded",
+              "score": 70,
+              "url": "http://www.digitallydownloaded.net/2019/10/review-cubixx-nintendo-switch.html",
+              "date": "2019-10-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": null,
@@ -143205,33 +143214,20 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 404: Not Found",
-          "Metacritic users: HTTP Error 404: Not Found",
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
-          "www.nintendolife.com/switch-eshop: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T20:29:07.193932+00:00"
+        "attempted": "2026-11-02T20:59:28.978810+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
-      "basics_attempted": "2026-11-02T19:22:36.245293+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:59:28.978810+00:00",
+      "version": 4,
       "errors": {
-        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden; HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
-        "metacritic_reviews": "HTTP Error 404: Not Found",
-        "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "metacritic_reviews": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/9/9c/Cubixxhdlogo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
@@ -143239,7 +143235,12 @@
         "checked": "2026-11-02T19:29:36.285976+00:00",
         "method": "verified-game-article"
       },
-      "full_attempted": "2026-11-02T20:29:13.604396+00:00"
+      "full_attempted": "2026-11-02T20:29:13.604396+00:00",
+      "store": {
+        "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Cubixx-1646514.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T20:59:32.698138+00:00"
+      }
     },
     "Switch:7496": {
       "title": "DODGE HARD",
@@ -147413,18 +147414,11 @@
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 6,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T19:46:01.645783+00:00"
+        "attempted": "2026-11-02T20:59:28.979141+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -147432,14 +147426,15 @@
         "source": "https://www.nintendolife.com/games/switch-eshop/angerforce_reloaded",
         "checked": "2026-11-02T17:34:22.569999+00:00"
       },
-      "basics_attempted": "2026-11-02T19:23:13.767942+00:00",
-      "version": 3,
-      "errors": {
-        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
-      },
-      "full_attempted": "2026-11-02T19:46:02.138203+00:00"
+      "basics_attempted": "2026-11-02T20:59:28.979141+00:00",
+      "version": 4,
+      "errors": {},
+      "full_attempted": "2026-11-02T19:46:02.138203+00:00",
+      "store": {
+        "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/AngerForce-Reloaded-for-Nintendo-Switch-1549488.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T20:59:31.455334+00:00"
+      }
     },
     "Switch:7746": {
       "title": "Artifact Adventure Gaiden DX",
