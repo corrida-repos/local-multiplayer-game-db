@@ -50,6 +50,6 @@ class CoverageQueue(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder);(root/'data').mkdir();(root/'data/verified-local.json').write_text(json.dumps([{'id':'15799','title':'Borderlands 4'}]))
             db=sqlite3.connect(':memory:');db.row_factory=sqlite3.Row
-            db.executescript("CREATE TABLE games(id TEXT PRIMARY KEY,title TEXT); CREATE TABLE pages(url TEXT,checked TEXT); INSERT INTO pages VALUES('example','2026-11-02');")
+            db.executescript("CREATE TABLE games(id TEXT PRIMARY KEY,title TEXT,platform TEXT); CREATE TABLE pages(url TEXT,checked TEXT); INSERT INTO pages VALUES('example','2026-11-02');")
             with patch.object(scrape,'ROOT',root):result=scrape.export_catalog(db,['example'],[])
             self.assertEqual(result['games'][0]['title'],'Borderlands 4');self.assertTrue(result['coverage_complete']);db.close()
