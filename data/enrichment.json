@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:24:56.570232+00:00",
+  "updated": "2026-11-02T18:25:29.738164+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
-    "attempted": 1972,
-    "ready": 1274,
-    "missing_image": 769,
-    "missing_store": 850,
-    "missing_rating": 1159,
+    "attempted": 1982,
+    "ready": 1277,
+    "missing_image": 762,
+    "missing_store": 845,
+    "missing_rating": 1154,
     "full_attempted": 0
   },
   "games": {
@@ -48851,21 +48851,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:24:59.683780+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:24:59.683780+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:12307": {
@@ -48875,21 +48887,30 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:24:59.684606+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:24:59.684606+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:13406": {
@@ -73867,21 +73888,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:25:00.874345+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/strings-theory-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:25:09.098451+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000038902/3b8e64c43293ea1d4e7526c268d8f6448fb02b0215a010a06b759ef9511b767f",
+        "source": "https://www.nintendo.com/us/store/products/strings-theory-switch/",
+        "checked": "2026-11-02T18:25:09.098756+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:25:00.874345+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:17084": {
@@ -84521,22 +84559,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 10.0,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 5,
+              "count": 1,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP8188-PPSA25186_00-0908249910554407",
+              "checked": "2026-11-02T18:25:00.861466+00:00",
+              "platform": "PSN · PS5",
+              "weight": 1.0,
+              "normalized": 10.0
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:24:59.685596+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP8188-PPSA25186_00-0908249910554407",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:25:00.861466+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202509/1521/c658c7e0f0c940a8c90faa2c5c5563475af34be037c9789a.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP8188-PPSA25186_00-0908249910554407",
+        "checked": "2026-11-02T18:25:00.861466+00:00"
+      },
+      "user": {
+        "score": 5,
+        "count": 1,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP8188-PPSA25186_00-0908249910554407",
+        "checked": "2026-11-02T18:25:00.861466+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP8188-PPSA25186_00-0908249910554407",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP8188-PPSA25186_00-0908249910554407",
+        "checked": "2026-11-02T18:25:00.861466+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:24:59.685596+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:17822": {
       "title": "Synth Riders",
@@ -101374,22 +101460,48 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.1,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.1,
+              "scale": 10.0,
+              "count": 7,
+              "url": "https://www.nintendolife.com/games/switch-eshop/strikey_sisters",
+              "platform": "Nintendo Switch",
+              "weight": 2.6457513110645907,
+              "normalized": 7.1
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:24:59.685356+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/strikey-sisters-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:25:08.246031+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000016120/7779d48fa0f8eb877d0be1b4c21e594e4e201a50cec2701654ac38c4c8b6b8cf",
+        "source": "https://www.nintendo.com/us/store/products/strikey-sisters-switch/",
+        "checked": "2026-11-02T18:25:08.246389+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:24:59.685356+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:5444": {
       "title": "Sundered: Eldritch Edition",
@@ -112251,23 +112363,55 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/strikers_1945",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 30,
+              "url": "https://www.nintendolife.com/games/switch-eshop/strikers_1945",
+              "platform": "Nintendo Switch",
+              "weight": 5.477225575051661,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:24:59.684008+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "image": {
+        "url": "https://images.nintendolife.com/614cf3a266409/1280x720.jpg",
+        "source": "https://www.nintendolife.com/games/switch-eshop/strikers_1945",
+        "checked": "2026-11-02T18:25:07.341722+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:24:59.684008+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:6902": {
@@ -112275,23 +112419,55 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 90.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 90.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/strikers_1945_ii",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 24,
+              "url": "https://www.nintendolife.com/games/switch-eshop/strikers_1945_ii",
+              "platform": "Nintendo Switch",
+              "weight": 4.898979485566356,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:24:59.684369+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "image": {
+        "url": "https://images.nintendolife.com/ebb82526f7d2e/1280x720.jpg",
+        "source": "https://www.nintendolife.com/games/switch-eshop/strikers_1945_ii",
+        "checked": "2026-11-02T18:25:09.479051+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:24:59.684369+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:6894": {
@@ -112301,21 +112477,42 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:24:59.684863+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/ACA-NEOGEO-STRIKERS-1945-PLUS-1457951.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:25:10.036156+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_AcaNeogeoStrikers1945Plus_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/ACA-NEOGEO-STRIKERS-1945-PLUS-1457951.html",
+        "checked": "2026-11-02T18:25:10.036156+00:00"
+      },
+      "aliases": [
+        "ACA NEOGEO STRIKERS 1945 PLUS"
+      ],
+      "basics_attempted": "2026-11-02T18:24:59.684863+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:6892": {
@@ -112325,21 +112522,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:24:59.685109+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:24:59.685109+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:7276": {
@@ -116265,24 +116474,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 50.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 50.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/struggling",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:25:06.511827+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/struggling-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:25:11.406368+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000030015/6a1d3b1c132aa00886d5e3bc6da5f0d773295782991e0476779ef7391a813065",
+        "source": "https://www.nintendo.com/us/store/products/struggling-switch/",
+        "checked": "2026-11-02T18:25:11.406874+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:25:06.511827+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:7445": {
       "title": "Super Box Land Demake",
