@@ -34,7 +34,7 @@ def user_composite(sources):
     weight=sum(s['weight'] for s in valid)
     return {'score':round(sum(s['normalized']*s['weight'] for s in valid)/weight,2) if weight else None,'scale':10,'sources':valid,'source_count':len(valid),'method':'sqrt-votes-capped-at-1000-per-community'}
 def community_data(page,url,game,expected):
-    if urllib.parse.urlparse(url).path.split('/')[2]!=('ps5' if game['platform']=='PS5' else 'nintendo-switch'):raise ValueError('Wrong console page')
+    if urllib.parse.urlparse(url).path.split('/')[2] not in (['ps5'] if game['platform']=='PS5' else ['nintendo-switch','switch-eshop']):raise ValueError('Wrong console page')
     nodes=[]
     for text in re.findall(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',page,re.S|re.I):
         try:nodes.extend(walk(json.loads(text)))
@@ -74,10 +74,13 @@ def collect(game,legacy):
         # Metacritic's unpublished averages are zero until four votes exist.
         if data.get('reviewCount',0)>=4 and data.get('score') is not None:users.append({'name':'Metacritic users','score':data['score'],'scale':10,'count':data['reviewCount'],'url':f'https://www.metacritic.com/game/{name}/user-reviews/?platform={platform}','platform':expected})
     except Exception as e:errors.append('Metacritic users: '+str(e)[:100])
-    domain='www.pushsquare.com' if game['platform']=='PS5' else 'www.nintendolife.com';folder='ps5' if game['platform']=='PS5' else 'nintendo-switch';url=f'https://{domain}/games/{folder}/'+name.replace('-','_')
-    try:
-        final,page=get(url);c,u=community_data(page,final,game,expected);critics.extend(c);users.extend(u)
-    except Exception as e:errors.append(domain+': '+str(e)[:100])
+    domain='www.pushsquare.com' if game['platform']=='PS5' else 'www.nintendolife.com'
+    folders=['ps5'] if game['platform']=='PS5' else ['nintendo-switch','switch-eshop']
+    for folder in folders:
+        url=f'https://{domain}/games/{folder}/'+name.replace('-','_')
+        try:
+            final,page=get(url);c,u=community_data(page,final,game,expected);critics.extend(c);users.extend(u);break
+        except Exception as e:errors.append(domain+'/'+folder+': '+str(e)[:100])
     raw=legacy.get('user') or {}
     if game['platform']=='PS5' and raw.get('source')=='PSN':users.append({'name':'PSN'+(' (PS4/PS5 shared product)' if 'PS4/PS5' in raw.get('scope','') else ''),'score':raw.get('score'),'scale':raw.get('scale'),'count':raw.get('count'),'url':raw.get('url'),'platform':expected})
     result=critic_composite(critics) if complete else critic_composite([])

@@ -1,17 +1,20 @@
-name: Console rating composites
+name: Catch up all game enrichment
 on:
   schedule:
-    - cron: '43 9 * * *'
+    - cron: '17 * * * *'
   workflow_dispatch:
+  workflow_run:
+    workflows: ['Backfill complete catalogue coverage', 'Atualizar jogos locais']
+    types: [completed]
 permissions:
   contents: write
 concurrency:
-  group: composites-update
+  group: enrichment-update
   cancel-in-progress: false
 jobs:
-  ratings:
+  enrich:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 65
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,8 +25,8 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-      - name: Collect independent publications and console communities
-        run: python -m scripts.composites --limit 10000 --minutes 165 --checkpoint-push
-      - name: Save remaining scores
+      - name: Fill minimum data for every game, then finish all remaining stages
+        run: python -u -m scripts.enrichment --minutes 50 --workers 4 --checkpoint-push
+      - name: Save remaining results
         if: always()
-        run: bash scripts/checkpoint-composites.sh
+        run: bash scripts/checkpoint-enrichment.sh

@@ -24,7 +24,7 @@ Os workflows agendados correm no ramo predefinido. `contents: write` permite atu
 
 ## Notas e avaliações
 
-`python scripts/ratings.py --limit 60` atualiza até 60 jogos por execução diária, dando prioridade aos ainda não consultados e depois aos mais antigos. Guarda os dados em `data/ratings.json` e na tabela SQLite `ratings`.
+`python scripts/ratings.py --limit 60` é uma ferramenta de diagnóstico/compatibilidade. A recolha automática usa agora a fila contínua descrita abaixo. Guarda os dados em `data/ratings.json` e na tabela SQLite `ratings`.
 
 - Críticos: Metacritic, **0–100**, da versão exata da consola. Não se usam notas de outras plataformas.
 - Utilizadores Switch: Metacritic, **0–10**, com pelo menos quatro avaliações nessa plataforma (o mínimo para apresentar uma média).
@@ -48,7 +48,7 @@ O site é **público**, por pedido do proprietário. O catálogo GitHub também 
 
 - `python scripts/stores.py --limit 60` mantém `data/stores.json` e a tabela SQLite `stores`. Os endereços PS5 são páginas oficiais da PlayStation Store Portugal, reaproveitando correspondências verificadas da recolha de notas. Para Nintendo Switch, verifica o título exato na página da loja Nintendo dos EUA; não usa páginas de pesquisa nem edições Switch 2. Jogos SNES do Nintendo Switch Online apontam para a aplicação oficial que os inclui. O link PS5 de It Takes Two usa o produto especificado pelo proprietário.
 - `python -m scripts.trailers --limit 60` mantém `data/trailers.json` e a tabela SQLite `trailers`. Prefere gameplay oficial; na ausência desse vídeo, usa outro trailer oficial identificado do mesmo jogo. Recolhe vídeos estruturados nas páginas oficiais PlayStation e usa correspondências verificadas em `data/trailers-curated.json` para Nintendo, outras editoras e jogos antigos. Estas correspondências também preservam as fontes. Não inventa IDs de vídeos nem mostra vídeos de outros jogos como alternativa.
-- As duas tarefas correm no GitHub Actions depois da atualização das notas, em lotes de até 60 jogos. A descoberta não é exaustiva para futuros jogos: quando não há correspondência oficial segura, a interface indica que o link ou vídeo ainda não foi identificado.
+- Estes comandos continuam disponíveis para diagnóstico. A execução automática usa a fila contínua, sem o limite antigo de 60 jogos. A descoberta não é exaustiva para futuros jogos: quando não há correspondência oficial segura, a interface indica que o link ou vídeo ainda não foi identificado.
 - O leitor usa `youtube-nocookie.com`, com controlos e ecrã inteiro. A iframe só é criada após clicar em Reproduzir. Fecha e interrompe o leitor ao sair do detalhe; mudar uma flag não reinicia o vídeo. Há ligação direta ao YouTube caso a incorporação esteja indisponível.
 - A vista de detalhe não mostra datas internas de verificação/atualização, a nota PSN partilhada PS4/PS5, o título/descrição de estado, links ao Co-Optimus ou a nota final sobre armazenamento. Os dados continuam guardados para manutenção; as flags continuam funcionais e locais ao navegador.
 
@@ -76,6 +76,19 @@ Search accepts Roman or Arabic numerals, punctuation and apostrophe variations: 
 
 User scores combine the console-specific Metacritic user average, Push Square (PS5) or Nintendo Life (Switch) community, and the verified PS5-listed PSN product where available. PSN products shared with PS4 are identified in the breakdown. Scores are normalized to 0–10; each community's weight is `sqrt(min(votes, 1000))`. This reduces domination by very large communities without pretending to remove all bias or duplicate voters across sites. A single source is labelled; no verified votes means no invented score. Original scores, counts, links, and weights are exported in `data/composites.json` and displayed when clicking a score.
 
-The independent `composites.yml` workflow runs daily and on demand, prioritizing never-attempted games. It checkpoints every ten games in a separate `composites.sqlite` database so catalogue discovery can run concurrently. A partial run resumes with unattempted entries on the next run. OpenCritic's API requires a separate key and is not silently substituted with a cross-platform aggregate. These scores combine the accessible verified sources; they do not claim exhaustive coverage of every review site.
+The unified `enrichment.yml` workflow now runs all enrichment stages; `scripts.composites` remains available for diagnostics. Its historical results remain valid fallback data. OpenCritic's API requires a separate key and is not silently substituted with a cross-platform aggregate. These scores combine the accessible verified sources; they do not claim exhaustive coverage of every review site.
 
 The upper-right **Quero jogar** button shows all saved titles across consoles, independent of the catalogue filters. Remove a title directly or open its detail view to change its state. Returning preserves the catalogue filters. Preferences remain stored in this browser.
+
+
+### Continuous enrichment and completeness audit
+
+`python -m scripts.enrichment --minutes 50 --workers 4 --checkpoint-push` fills the minimum required data for **every** newly discovered game before spending requests on extra scores and trailers. The minimum is an image, an exact official store page, and at least one verified user **or** critic score. A zero-vote source, unpublished average, age rating, unrelated edition, PC score, or different console cannot satisfy the requirement. No entries are deleted or silently hidden to improve these counts.
+
+The collector queries the same public Portugal PSN search operation as the store, verifies exact title and PS5 identity on the product page, and merges product fields split across rendered data blocks. This avoids depending on a marketing page existing at a guessed PlayStation.com slug. A store lookup supplies its image, user score/vote count, and PS Plus verification together. Nintendo pages supply exact Switch links and images; rating lookups try both Nintendo Life retail and eShop paths, then platform-specific Metacritic. Existing verified data are retained when a later source is unavailable.
+
+`data/enrichment.json` and `data/enrichment.sqlite` contain results and provenance; `data/enrichment-audit.json` lists **every** incomplete entry, attempted time, missing fields, and source failures. Counts include verified legacy data and are never labelled complete while requirements are missing. Games with no published console-specific score remain visible and explicitly unresolved.
+
+The hourly workflow also triggers after daily discovery or a backfill run. Four I/O workers share one request-start interval of 1.1 seconds per host. Checkpoints every ten games close SQLite before rebasing, retry concurrent Git pushes, and reload the latest catalog; games discovered during the run enter the same queue. Later runs resume unattempted fields. After minimum enrichment, the queue collects all platform-specific critic pages, additional user communities, and official gameplay/trailer fallbacks. The app refreshes enrichment every five minutes without interrupting an already playing trailer.
+
+Default sorting is **Melhor nota: maior primeiro**: `max(critic / 100, user / user_scale)`, descending, with unrated games last and title as the tie-breaker. This compares each game's best available aggregate score on an equal scale.

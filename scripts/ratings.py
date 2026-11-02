@@ -45,18 +45,38 @@ def mc_user(page,game_slug,platform_slug):
             return score if isinstance(score,(int,float)) and 0<=score<=10 and isinstance(a[obj['reviewCount']],(int,float)) and a[obj['reviewCount']]>=4 else None
     return None
 
-def psn_rating(page):
+def psn_cache(page):
+    # Product fields are split between independently rendered components.
+    cache={}
     for content in re.findall(r'<script[^>]*type="application/json"[^>]*>(.*?)</script>',page,re.S):
-        try: obj=json.loads(content)
+        try:obj=json.loads(content)
         except (ValueError,TypeError):continue
-        cache=obj.get('cache',{})
-        # Use the actual concept's default product, not a related game or add-on.
-        concepts=[v for v in cache.values() if isinstance(v,dict) and v.get('__typename')=='Concept' and isinstance(v.get('defaultProduct'),dict)]
-        for concept in concepts:
+        for key,value in obj.get('cache',{}).items():
+            if isinstance(value,dict):cache.setdefault(key,{}).update(value)
+    return cache
+
+def psn_product(page,url=None):
+    cache=psn_cache(page)
+    if url:
+        match=re.search(r'/product/([^/?]+)',url)
+        if match:return cache.get('Product:'+match[1])
+        match=re.search(r'/concept/(\d+)',url)
+        if match:
+            concept=cache.get('Concept:'+match[1],{})
+            return cache.get(concept.get('defaultProduct',{}).get('__ref',''))
+    # Legacy callers use only a concept's actual default product.
+    for concept in cache.values():
+        if concept.get('__typename')=='Concept' and isinstance(concept.get('defaultProduct'),dict):
             product=cache.get(concept['defaultProduct'].get('__ref'),{})
-            if 'PS5' not in product.get('platforms',[]):continue
-            rating=product.get('starRating') or {};score=rating.get('averageRating')
-            if isinstance(score,(int,float)) and 0<=score<=5:return {'score':score,'count':rating.get('totalRatingsCount'),'scope':'PSN · PS4/PS5' if 'PS4' in product.get('platforms',[]) else 'PSN · PS5'}
+            if 'PS5' in product.get('platforms',[]):return product
+    return None
+
+def psn_rating(page,url=None):
+    product=psn_product(page,url)
+    if not product or 'PS5' not in product.get('platforms',[]):return None
+    rating=product.get('starRating') or {};score=rating.get('averageRating');count=rating.get('totalRatingsCount')
+    if isinstance(score,(int,float)) and 0<=score<=5 and isinstance(count,(int,float)) and count>0:
+        return {'score':score,'count':count,'scope':'PSN · PS4/PS5' if 'PS4' in product.get('platforms',[]) else 'PSN · PS5'}
     return None
 
 def enrich(game,previous):
@@ -81,7 +101,7 @@ def enrich(game,previous):
                 if not concept:raise ValueError('No matching PSN concept found')
                 concept_id=concept[1]
             url='https://store.playstation.com/pt-pt/concept/'+concept_id
-            rating=psn_rating(fetch(url))
+            rating=psn_rating(fetch(url),url)
             if rating:result['user']={**rating,'scale':5,'source':'PSN','url':url,'checked':dt.datetime.now(dt.timezone.utc).isoformat()}
             else:raise ValueError('No PS5 default-product rating available')
         except Exception as e:errors.append('PSN: '+str(e)[:120])
