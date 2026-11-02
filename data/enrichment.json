@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T19:49:59.017574+00:00",
+  "updated": "2026-11-02T19:50:26.676198+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 253,
     "missing_store": 358,
     "missing_rating": 689,
-    "full_attempted": 150
+    "full_attempted": 160
   },
   "games": {
     "PS5:13238": {
@@ -4312,26 +4312,32 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2023/09/baby-shark-sing-and-swim-party-review/",
+              "date": "2023-09-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 7.46,
           "scale": 10,
           "sources": [
             {
-              "score": 3.73,
-              "count": 55,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.73,
               "scale": 5,
-              "source": "PSN",
+              "count": 55,
               "url": "https://store.playstation.com/pt-pt/product/EP3678-PPSA09195_00-BSBASEGAME000001",
-              "checked": "2026-11-02T16:58:58.793481+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 7.416198487095663,
               "normalized": 7.46
             }
@@ -4339,7 +4345,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T16:58:57.757469+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:50:16.112560+00:00"
       },
       "requirements": {
         "image": true,
@@ -4377,7 +4390,10 @@
       },
       "basics_attempted": "2026-11-02T16:58:57.757469+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:50:16.585962+00:00"
     },
     "Switch:14048": {
       "title": "Baby Shark: Sing & Swim Party",
@@ -4397,7 +4413,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:53:19.298289+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:50:20.563724+00:00"
       },
       "requirements": {
         "image": true,
@@ -4408,7 +4432,8 @@
       "version": 3,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/baby-shark-sing-and-swim-party-switch/",
@@ -4419,7 +4444,8 @@
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000059140/8b716890392bf80fbbbdc465881c43351e8c9b194499b207119d5bf1e0499db6",
         "source": "https://www.nintendo.com/us/store/products/baby-shark-sing-and-swim-party-switch/",
         "checked": "2026-11-02T18:53:23.419296+00:00"
-      }
+      },
+      "full_attempted": "2026-11-02T19:50:23.413932+00:00"
     },
     "Switch:11058": {
       "title": "Baby Storm",
@@ -4447,7 +4473,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:53:19.298632+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:50:21.668280+00:00"
       },
       "requirements": {
         "image": true,
@@ -4467,8 +4501,10 @@
       "basics_attempted": "2026-11-02T18:53:19.298632+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
-      }
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:50:23.184683+00:00"
     },
     "PS5:13370": {
       "title": "Baldur's Gate III",
@@ -59776,15 +59812,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.36,
-              "count": 444,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.36,
               "scale": 5,
-              "source": "PSN",
+              "count": 444,
               "url": "https://store.playstation.com/pt-pt/product/EP1762-PPSA10975_00-BROKPS5000000000",
-              "checked": "2026-11-02T17:00:36.559019+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 21.071307505705477,
               "normalized": 8.72
             }
@@ -59792,7 +59825,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:00:35.329739+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:50:11.721410+00:00"
       },
       "requirements": {
         "image": true,
@@ -59830,7 +59870,10 @@
       },
       "basics_attempted": "2026-11-02T17:00:35.329739+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:50:12.066142+00:00"
     },
     "Switch:15143": {
       "title": "Balloony",
@@ -62634,39 +62677,63 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 77.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/brok-the-investigator",
+              "name": "Nindie Spotlight",
+              "score": 78.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=brok-the-investigator-switch",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/brok-the-investigator",
+              "date": "2023-03-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 85,
+              "url": "https://www.spaziogames.it/brok-the-investigator-recensione/",
+              "date": "2023-04-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": 7.8,
+          "score": 6.8,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.8,
-              "scale": 10.0,
-              "count": 18,
-              "url": "https://www.nintendolife.com/games/switch-eshop/brok_the_investigator",
+              "name": "Metacritic users",
+              "score": 6.8,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/brok-the-investigator/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 4.242640687119285,
-              "normalized": 7.800000000000001
+              "weight": 2.0,
+              "normalized": 6.799999999999999
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:02:10.219019+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:50:15.066508+00:00"
       },
       "requirements": {
         "image": true,
@@ -62685,7 +62752,10 @@
       },
       "basics_attempted": "2026-11-02T17:02:10.219019+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:50:15.696171+00:00"
     },
     "Switch:15282": {
       "title": "Baking Time",
@@ -88868,15 +88938,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.9,
-              "count": 31,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.9,
               "scale": 5,
-              "source": "PSN",
+              "count": 31,
               "url": "https://store.playstation.com/pt-pt/product/EP1762-PPSA32853_00-BROKTBRAWLBARPS5",
-              "checked": "2026-11-02T17:17:03.932066+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 5.5677643628300215,
               "normalized": 9.8
             }
@@ -88884,7 +88951,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:17:02.375057+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:50:17.220346+00:00"
       },
       "requirements": {
         "image": true,
@@ -88922,7 +88996,10 @@
       },
       "basics_attempted": "2026-11-02T17:17:02.375057+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:50:17.874754+00:00"
     },
     "Switch:17703": {
       "title": "BROK: The Brawl Bar",
@@ -88950,7 +89027,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:17:03.937220+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:50:17.261914+00:00"
       },
       "requirements": {
         "image": true,
@@ -88969,7 +89054,10 @@
       },
       "basics_attempted": "2026-11-02T17:17:03.937220+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:50:18.755072+00:00"
     },
     "PS5:17917": {
       "title": "Baladins",
@@ -104107,7 +104195,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:17:36.880620+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:50:24.960032+00:00"
       },
       "requirements": {
         "image": true,
@@ -104127,8 +104223,10 @@
       "basics_attempted": "2026-11-02T19:17:36.880620+00:00",
       "version": 3,
       "errors": {
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:50:25.495113+00:00"
     },
     "PS5:18971": {
       "title": "Blades & Battles",
@@ -131158,7 +131256,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:21:51.594697+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:50:26.064894+00:00"
       },
       "requirements": {
         "image": false,
@@ -131173,8 +131281,10 @@
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "The read operation timed out"
-      }
+        "metacritic_critics": "The read operation timed out",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:50:26.563359+00:00"
     },
     "Switch:7373": {
       "title": "Bee Simulator",
@@ -144182,39 +144292,79 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 74.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
+              "name": "Nindie Spotlight",
               "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/broforce",
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=broforce-switch",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/broforce?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/48299/broforce-switch-review",
+              "date": "2018-09-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2018/10/03/broforce-review/",
+              "date": "2018-10-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 60,
+              "url": "https://www.trustedreviews.com/reviews/broforce-switch",
+              "date": "2018-09-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": 7.7,
+          "score": 7.9,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.7,
-              "scale": 10.0,
-              "count": 72,
-              "url": "https://www.nintendolife.com/games/switch-eshop/broforce",
+              "name": "Metacritic users",
+              "score": 7.9,
+              "scale": 10,
+              "count": 35,
+              "url": "https://www.metacritic.com/game/broforce/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 8.48528137423857,
-              "normalized": 7.7
+              "weight": 5.916079783099616,
+              "normalized": 7.9
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:37:56.052568+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:50:11.756108+00:00"
       },
       "requirements": {
         "image": true,
@@ -144233,7 +144383,10 @@
       },
       "basics_attempted": "2026-11-02T17:37:56.052568+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:50:13.149066+00:00"
     },
     "Switch:8621": {
       "title": "Binarystar Infinity",
