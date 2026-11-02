@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:15:17.481631+00:00",
+  "updated": "2026-11-02T18:15:38.622632+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
-    "attempted": 1762,
-    "ready": 1124,
-    "missing_image": 956,
-    "missing_store": 1031,
-    "missing_rating": 1321,
+    "attempted": 1772,
+    "ready": 1132,
+    "missing_image": 947,
+    "missing_store": 1023,
+    "missing_rating": 1312,
     "full_attempted": 0
   },
   "games": {
@@ -46200,21 +46200,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:15:20.304700+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:15:20.304700+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:14629": {
@@ -46222,24 +46234,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 62.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 62.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=salt-and-sacrifice-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:15:20.306626+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/salt-and-sacrifice-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:15:25.727718+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000066440/8c1f56003049f063e375aae00f6b0e655807bb337cec195c41cc3e69c33a4189",
+        "source": "https://www.nintendo.com/us/store/products/salt-and-sacrifice-switch/",
+        "checked": "2026-11-02T18:15:25.728181+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:15:20.306626+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:11989": {
       "title": "Samurai Riot",
@@ -81261,46 +81296,117 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.78,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.89,
+              "count": 19,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP8208-PPSA30570_00-SAMURAIACAPOF000",
+              "checked": "2026-11-02T18:15:23.828451+00:00",
+              "platform": "PSN · PS5",
+              "weight": 4.358898943540674,
+              "normalized": 9.78
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:15:20.307108+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP8208-PPSA30570_00-SAMURAIACAPOF000",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:15:23.828451+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202509/0909/00f8be7f6a3fbcff70c61b964d6106a746ca297a43997b78.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP8208-PPSA30570_00-SAMURAIACAPOF000",
+        "checked": "2026-11-02T18:15:23.828451+00:00"
+      },
+      "user": {
+        "score": 4.89,
+        "count": 19,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP8208-PPSA30570_00-SAMURAIACAPOF000",
+        "checked": "2026-11-02T18:15:23.828451+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP8208-PPSA30570_00-SAMURAIACAPOF000",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP8208-PPSA30570_00-SAMURAIACAPOF000",
+        "checked": "2026-11-02T18:15:23.828451+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:15:20.307108+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:17675": {
       "title": "Samurai Academy: Paws of Fury",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 72.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 72.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=samurai-academy-paws-of-fury-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:15:21.890241+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/samurai-academy-paws-of-fury-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:15:27.507658+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000099165/9a34ecd66cc4d0d36f7014aadf23cff725d7c5f7c89c2f61a228c9ddbd5558e2",
+        "source": "https://www.nintendo.com/us/store/products/samurai-academy-paws-of-fury-switch/",
+        "checked": "2026-11-02T18:15:27.507964+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:15:21.890241+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:17493": {
       "title": "Slime Heroes",
@@ -84526,46 +84632,117 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.32,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.66,
+              "count": 378,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP4836-PPSA33373_00-0658522918396948",
+              "checked": "2026-11-02T18:15:21.882455+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 19.44222209522358,
+              "normalized": 9.32
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:15:20.304961+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP4836-PPSA33373_00-0658522918396948",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:15:21.882455+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202603/1823/958296087b30f8f8fcd7ff386b700f48947892bbdb80788f.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP4836-PPSA33373_00-0658522918396948",
+        "checked": "2026-11-02T18:15:21.882455+00:00"
+      },
+      "user": {
+        "score": 4.66,
+        "count": 378,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP4836-PPSA33373_00-0658522918396948",
+        "checked": "2026-11-02T18:15:21.882455+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP4836-PPSA33373_00-0658522918396948",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP4836-PPSA33373_00-0658522918396948",
+        "checked": "2026-11-02T18:15:21.882455+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:15:20.304961+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:18216": {
       "title": "Saint Slayer: Spear of Sacrilege",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 78.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 78.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=saint-slayer-spear-of-sacrilege-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:15:20.305408+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/saint-slayer-spear-of-sacrilege-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:15:23.131722+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000120058/bd567629be1d9f5c4c411d47524aad8dd1eacff17e46ca9fb9bf2394a8b9d51c",
+        "source": "https://www.nintendo.com/us/store/products/saint-slayer-spear-of-sacrilege-switch/",
+        "checked": "2026-11-02T18:15:23.132033+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:15:20.305408+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:18110": {
       "title": "Skinny & Franko: Fists of Violence",
@@ -93241,24 +93418,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/sallys_law",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:15:20.305907+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/sallys-law-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:15:24.401187+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000008865/addad930c805c9ff7559950a4b2adff01bff01b4871b27aa69043d50a5e0b400",
+        "source": "https://www.nintendo.com/us/store/products/sallys-law-switch/",
+        "checked": "2026-11-02T18:15:24.401481+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:15:20.305907+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:4780": {
       "title": "Sausage Sports Club",
@@ -107052,23 +107252,55 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/samurai_aces",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 9,
+              "url": "https://www.nintendolife.com/games/switch-eshop/samurai_aces",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:15:22.277789+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "image": {
+        "url": "https://images.nintendolife.com/2f1f3a5554c7e/1280x720.jpg",
+        "source": "https://www.nintendolife.com/games/switch-eshop/samurai_aces",
+        "checked": "2026-11-02T18:15:37.644011+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:15:22.277789+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:7046": {
@@ -117976,24 +118208,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 60.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/salt_and_sanctuary",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 33,
+              "url": "https://www.nintendolife.com/games/switch-eshop/salt_and_sanctuary",
+              "platform": "Nintendo Switch",
+              "weight": 5.744562646538029,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:15:20.306899+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/salt-and-sanctuary-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:15:27.603182+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000005003/f00cd25666dfe7239d8ce1efe4991783816a4311783b302395b085089eba43d0",
+        "source": "https://www.nintendo.com/us/store/products/salt-and-sanctuary-switch/",
+        "checked": "2026-11-02T18:15:27.603527+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:15:20.306899+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:8505": {
       "title": "Seal Electric Railway",
@@ -127371,22 +127637,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.08,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.54,
+              "count": 3656,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0609-PPSA07833_00-0895794101741764",
+              "checked": "2026-11-02T18:15:22.269463+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 7.08
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:15:20.306210+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0609-PPSA07833_00-0895794101741764",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:15:22.269463+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202109/2805/3OfHHMHNfNcPznx1fuWQXquT.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0609-PPSA07833_00-0895794101741764",
+        "checked": "2026-11-02T18:15:22.269463+00:00"
+      },
+      "user": {
+        "score": 3.54,
+        "count": 3656,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0609-PPSA07833_00-0895794101741764",
+        "checked": "2026-11-02T18:15:22.269463+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": true,
+        "tier": "Extra",
+        "product_id": "EP0609-PPSA07833_00-0895794101741764",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0609-PPSA07833_00-0895794101741764",
+        "checked": "2026-11-02T18:15:22.269463+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:15:20.306210+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:9741": {
       "title": "Sonic Colors: Ultimate",
