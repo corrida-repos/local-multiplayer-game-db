@@ -506,6 +506,14 @@ def main():
                 entries[key]=entry;db.execute('INSERT OR REPLACE INTO enrichment VALUES(?,?)',(key,json.dumps(entry,ensure_ascii=False)));db.commit();print(phase,key,game['title'],requirements(entry),flush=True)
         export(entries,db)
         if args.checkpoint_push:
-            db.close();subprocess.run(['bash','scripts/checkpoint-enrichment.sh'],cwd=ROOT,check=True);db=sqlite3.connect(ROOT/'data/enrichment.sqlite')
+            db.close();subprocess.run(['bash','scripts/checkpoint-enrichment.sh'],cwd=ROOT,check=True)
+            # A checkpoint can pull a newly verified recovery batch while this
+            # collector is running. Merge under this writer lock and reload it
+            # before the next export so in-memory entries cannot overwrite it.
+            if apply_pending():
+                entries=read('enrichment.json')['games']
+                subprocess.run(['bash','scripts/checkpoint-enrichment.sh'],cwd=ROOT,check=True)
+            community_index.load.cache_clear()
+            db=sqlite3.connect(ROOT/'data/enrichment.sqlite')
     export(entries,db);db.close()
 if __name__=='__main__':main()
