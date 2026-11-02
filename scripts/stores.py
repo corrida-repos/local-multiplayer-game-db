@@ -23,7 +23,7 @@ def official_url(platform,url):
     parsed=urllib.parse.urlparse(url)
     if parsed.scheme!='https':return False
     if platform=='PS5':return parsed.hostname=='store.playstation.com' and re.match(r'^/[a-z]{2}-[a-z]{2}/(?:product|concept)/[^/]+/?$',parsed.path) is not None
-    return platform=='Switch' and parsed.hostname=='www.nintendo.com' and parsed.path.startswith('/us/store/products/') and '-switch-2/' not in parsed.path
+    return platform=='Switch' and parsed.hostname=='www.nintendo.com' and (parsed.path.startswith('/us/store/products/') or re.match(r'^/(pt-pt/Jogos|en-gb/Games)/',parsed.path)) and '-switch-2/' not in parsed.path
 
 class Meta(HTMLParser):
     def __init__(self):super().__init__();self.title=''
@@ -35,7 +35,8 @@ def nintendo_match(page,title):
     meta=Meta();meta.feed(page)
     name=re.split(r' for (?:the )?Nintendo| [–-] Nintendo Official Site| \| Nintendo| [–-] Official Site',meta.title,flags=re.I)[0]
     names=[title]+NINTENDO_NAMES.get(title,[])
-    return normal(name) in {normal(value) for value in names}
+    canonical=lambda value:normal(re.sub(r'^(?:Arcade Archives|ACA NEOGEO|SEGA AGES)\s+','',value,flags=re.I))
+    return canonical(name) in {canonical(value) for value in names}
 
 def fetch(url):
     global last

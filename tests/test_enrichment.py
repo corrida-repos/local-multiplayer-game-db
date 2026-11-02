@@ -36,3 +36,28 @@ class Enrichment(unittest.TestCase):
         page='<script type="application/ld+json">'+json.dumps(data)+'</script>'
         c,u=e.composites.community_data(page,'https://www.nintendolife.com/games/switch-eshop/womenup_super_puzzles_dream',{**GAME,'platform':'Switch'},'Nintendo Switch')
         self.assertEqual(u[0]['score'],5)
+
+    def test_direct_single_switch_review_qualifies(self):
+        page=(Path(__file__).parent/'fixtures/nindie-aloof.html').read_text()
+        critics,image,store=e.nindie_data(page,'https://www.nindiespotlight.com/game_profile.cfm?game=aloof-switch',{'title':'ALOOF','platform':'Switch'})
+        self.assertEqual(critics[0]['score'],64);self.assertEqual(critics[0]['name'],'Nindie Spotlight');self.assertTrue(store.endswith('/aloof-switch/'))
+        with self.assertRaises(ValueError):e.nindie_data(page,'https://www.nindiespotlight.com/game_profile.cfm?game=aloof-switch',{'title':'Aloof','platform':'PS5'})
+        with self.assertRaises(ValueError):e.nindie_data(page.replace('Nintendo Switch -','Nintendo Switch 2 -'),'https://www.nindiespotlight.com/game_profile.cfm?game=aloof-switch',{'title':'Aloof','platform':'Switch'})
+    def test_console_name_and_ampersand_normalization(self):
+        self.assertTrue(e.matches_name({'title':'Baby Shark: Sing & Swim Party'},'Baby Shark: Sing and Swim Party'))
+        self.assertFalse(e.matches_name({'title':'Example'},''))
+        self.assertEqual(e.stores.slug('Sing & Swim'),'sing-and-swim')
+    def test_official_european_index_keeps_game_and_console_identity(self):
+        doc=json.loads((Path(__file__).parent/'fixtures/nintendo-eu-aero.json').read_text())
+        game={'title':'Aero Fighters','platform':'Switch'}
+        self.assertTrue(e.nintendo_index_match(game,doc));self.assertFalse(e.nintendo_index_match({**game,'title':'Aero Fighters 2'},doc))
+        self.assertFalse(e.nintendo_index_match(game,{**doc,'system_type':['nintendoswitch2_downloadsoftware']}))
+        self.assertTrue(e.stores.official_url('Switch','https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-AERO-FIGHTERS-2495521.html'))
+    def test_one_review_works_before_metacritic_publishes_aggregate(self):
+        game={'title':'Example','platform':'Switch','id':'1'}
+        def response(url):
+            if '/user/' in url:return url,json.dumps({'data':{'item':{'score':0,'reviewCount':0}}})
+            return url,json.dumps({'data':{'totalResults':1,'items':[{'publicationName':'A','score':75,'url':'https://review.test/a','platform':'Nintendo Switch'}]}})
+        with patch.object(e,'resolve_nintendo',return_value={'image':{'url':'https://images.test/a'},'store':{'url':'https://www.nintendo.com/us/store/products/example-switch/'}}),patch.object(e,'community',return_value=([],[],{})),patch.object(e,'nindie',side_effect=ValueError('No review')),patch.object(e,'get',side_effect=response):
+            entry=e.basics(game,{}, {},{},{},{},{})
+        self.assertEqual(entry['ratings']['critic']['score'],75);self.assertTrue(entry['requirements']['rating'])
