@@ -72,6 +72,9 @@ class Refresh(unittest.TestCase):
         self.assertEqual(phase,'full');self.assertEqual(queue[0],z)
 
 class Lookups(unittest.TestCase):
+    def test_product_suffix_order_does_not_hide_native_cross_gen_bundle(self):
+        self.assertTrue(e.matches_name({'title':'Call of Duty: Black Ops Cold War'},'Call of Duty®: Black Ops Cold War - Cross-Gen Bundle PS4™ & PS5®'))
+        self.assertFalse(e.matches_name({'title':'Call of Duty: Black Ops Cold War'},'Call of Duty®: Black Ops Cold War - Starter Pack PS4™ & PS5®'))
     def test_psn_locale_failure_does_not_block_english_search(self):
         game={'title':'Example','platform':'PS5','id':'1'};item={'__typename':'Product','id':'PID','name':'Example','platforms':['PS5']}
         with patch.object(e,'psn_search',side_effect=[OSError('PT search unavailable'),[item]]) as search,patch.object(e,'get',return_value=('https://store.playstation.com/pt-pt/product/PID','page')),patch.object(e,'psn_metadata',return_value={'store':{'url':'verified'}}):

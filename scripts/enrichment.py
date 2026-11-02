@@ -3,9 +3,9 @@ Each result owns its provenance and missing-field reasons. No synthetic ratings.
 """
 import argparse, concurrent.futures, datetime as dt, html, json, re, sqlite3, subprocess, threading, time, socket, email.utils, urllib.parse, urllib.request, urllib.error
 from pathlib import Path
-from scripts import composites, ratings, stores, trailers, psplus
+from scripts import composites, ratings, stores, trailers, psplus, community_index
 ROOT=Path(__file__).resolve().parents[1]
-VERSION=5
+VERSION=6
 SEARCH_HASH='4df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa'
 locks={};last={};guard=threading.Lock()
 def now():return dt.datetime.now(dt.timezone.utc).isoformat()
@@ -28,7 +28,7 @@ def get(url,headers=None,_redirects=0):
     with guard:lock=locks.setdefault(host,threading.Lock())
     for attempt in range(3):
         with lock:
-            time.sleep(max(0,1.1-(time.monotonic()-last.get(host,0))));last[host]=time.monotonic()
+            time.sleep(max(0,community_index.INTERVALS.get(host,1.1)-(time.monotonic()-last.get(host,0))));last[host]=time.monotonic()
         request=urllib.request.Request(url,headers={'User-Agent':ratings.AGENT,**(headers or {})})
         try:
             with urllib.request.urlopen(request,timeout=18) as response:return response.geturl(),response.read().decode('utf-8')
@@ -52,15 +52,7 @@ def get(url,headers=None,_redirects=0):
 def read(name,default=None):
     path=ROOT/'data'/name
     return json.loads(path.read_text()) if path.exists() else (default if default is not None else {'games':{}})
-def identity(value):
-    value=(value or '').replace('™','').replace('®','').replace('©','')
-    value=re.sub(r'\s*[-:|–—]?\s*(?:Standard Edition|Cross[- ]Gen Bundle)\s*$','',value,flags=re.I)
-    value=re.sub(r"^(?:arcade[ -]+archives(?:[ -]+2)?|console[ -]+archives|aca[ -]+neogeo|sega[ -]+ages|johnny[ -]+turbo['’]?s[ -]+arcade)[ :\-]+",'',value,flags=re.I)
-    value=value.replace('&',' and ')
-    value=re.sub(r'\bPlayStation[®™ ]*5\b','',value,flags=re.I)
-    value=re.sub(r'\bPS4\s*(?:&|and|/|e|,)?\s*PS5\b|\bPS5\b|\bPS4\b','',value,flags=re.I)
-    value=re.sub(r'\b(iii|ii|iv)\b',lambda m:{'ii':'2','iii':'3','iv':'4'}[m[1].lower()],value,flags=re.I)
-    return stores.normal(value)
+identity=stores.identity
 def source_match(game):
     return read('source-aliases.json',{}).get(game.get('platform','')+':'+game.get('title',''),{})
 def known_names(game):return list(dict.fromkeys(name for name in [game['title'],ratings.MC_ALIASES.get(game['title'],'')]+source_match(game).get('names',[])+game.get('aliases',[]) if name))
@@ -168,14 +160,11 @@ def resolve_nintendo(game,known_store):
     raise ValueError('Official Nintendo lookup: '+'; '.join(errors[-2:]))
 
 def community(game):
-    expected='PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch';name=ratings.MC_ALIASES.get(game['title'],ratings.slug(game['title'])).replace('-','_');domain='www.pushsquare.com' if game['platform']=='PS5' else 'www.nintendolife.com'
-    folders=['ps5'] if game['platform']=='PS5' else ['nintendo-switch','switch-eshop']
-    errors=[]
-    candidates=list(dict.fromkeys((folder,ratings.slug(alias).replace('-','_')) for alias in [name]+known_names(game) for folder in folders));fallback=None
-    for folder,name in candidates:
-        url=f'https://{domain}/games/{folder}/{name}'
+    expected='PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch'
+    source_game={**game,'aliases':known_names(game)};errors=[];fallback=None
+    for url in community_index.candidates(source_game):
         try:
-            final,page=get(url);critics,users=composites.community_data(page,final,game,expected)
+            final,page=get(url);critics,users=composites.community_data(page,final,source_game,expected)
             found=(critics,users,{'url':meta_image(page),'source':final,'checked':now()})
             if critics or users:return found
             if not fallback and found[2].get('url'):fallback=found
@@ -466,6 +455,7 @@ def main():
     applied=apply_pending()
     if applied and args.checkpoint_push:subprocess.run(['bash','scripts/checkpoint-enrichment.sh'],cwd=ROOT,check=True)
     refresh_review_index()
+    community_index.refresh(get)
     entries=read('enrichment.json')['games'];legacy=read('ratings.json')['games'];known_stores=read('stores.json')['games'];old_composites=read('composites.json')['games'];old_trailers=read('trailers.json')['games'];curated=read('trailers-curated.json',{});artwork=read('images.json',{});seen=set();started=time.monotonic()
     # All network stages share per-host pacing, including the composite collector.
     composites.get=get

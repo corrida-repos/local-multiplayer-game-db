@@ -14,6 +14,16 @@ def normal(value):
     value=html.unescape(value).replace('Σ',' sigma ').replace('σ',' sigma ').replace('+',' plus ').replace('™','').replace('®','').replace('©','')
     return re.sub('[^a-z0-9]','',unicodedata.normalize('NFKD',value).encode('ascii','ignore').decode().lower())
 
+def identity(value):
+    value=(value or '').replace('™','').replace('®','').replace('©','')
+    value=re.sub(r'\s*[-:|–—]?\s*(?:Standard Edition|Cross[- ]Gen Bundle)\s*$','',value,flags=re.I)
+    value=re.sub(r"^(?:arcade[ -]+archives(?:[ -]+2)?|console[ -]+archives|aca[ -]+neogeo|sega[ -]+ages|johnny[ -]+turbo['’]?s[ -]+arcade)[ :\-]+",'',value,flags=re.I)
+    value=value.replace('&',' and ')
+    value=re.sub(r'\bPlayStation[®™ ]*5\b','',value,flags=re.I)
+    value=re.sub(r'\bPS4\s*(?:&|and|/|e|,)?\s*PS5\b|\bPS5\b|\bPS4\b','',value,flags=re.I)
+    value=re.sub(r'\s*[-:|–—]?\s*(?:Standard Edition|Cross[- ]Gen Bundle)\s*$','',value,flags=re.I)
+    value=re.sub(r'\b(iii|ii|iv)\b',lambda m:{'ii':'2','iii':'3','iv':'4'}[m[1].lower()],value,flags=re.I)
+    return normal(value)
 def slug(value):
     value=value.replace('&',' and ').replace('+',' plus ')
     value=unicodedata.normalize('NFKD',value).encode('ascii','ignore').decode().lower().replace("'",'')

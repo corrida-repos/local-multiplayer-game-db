@@ -2,11 +2,13 @@
 import argparse,datetime as dt,json,math,re,sqlite3,time,urllib.parse,urllib.request
 from pathlib import Path
 from scripts.ratings import MC_ALIASES,slug
+from scripts import community_index,stores
+from html.parser import HTMLParser
 ROOT=Path(__file__).resolve().parents[1]
 VERSION=1
 last={}
 def get(url):
-    host=urllib.parse.urlparse(url).hostname;time.sleep(max(0,1.1-(time.monotonic()-last.get(host,0))));last[host]=time.monotonic()
+    host=urllib.parse.urlparse(url).hostname;time.sleep(max(0,community_index.INTERVALS.get(host,1.1)-(time.monotonic()-last.get(host,0))));last[host]=time.monotonic()
     with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'TwoPlayerGamesFinder/1.0 (+https://github.com/corrida-repos/local-multiplayer-game-db)'}),timeout=18) as r:return r.geturl(),r.read().decode()
 def walk(obj):
     if isinstance(obj,dict):
@@ -33,17 +35,47 @@ def user_composite(sources):
         valid.append({**source,'weight':min(math.sqrt(count),math.sqrt(1000)),'normalized':score/scale*10})
     weight=sum(s['weight'] for s in valid)
     return {'score':round(sum(s['normalized']*s['weight'] for s in valid)/weight,2) if weight else None,'scale':10,'sources':valid,'source_count':len(valid),'method':'sqrt-votes-capped-at-1000-per-community'}
+class VisibleGameRating(HTMLParser):
+    """Only the profile's own user-rating panel; never recommendations/comments."""
+    def __init__(self):
+        super().__init__();self.depth=0;self.capture=None;self.user_text='';self.critic_text='';self.average=None
+    def handle_starttag(self,tag,attrs):
+        attrs=dict(attrs);classes=attrs.get('class','').split()
+        if tag=='nav':
+            if self.depth:self.depth+=1
+            elif 'user-rating' in classes:self.depth=1
+        if not self.depth:return
+        if tag=='p' and 'user-ratings' in classes:self.capture='user'
+        elif tag=='p' and 'our-review' in classes:self.capture='critic'
+        if tag=='span' and 'score' in classes:
+            match=re.fullmatch(r'The average score from our readers is ([0-9]+(?:\.[0-9]+)?)',attrs.get('title','').strip())
+            if match:self.average=float(match[1])
+    def handle_data(self,text):
+        if self.depth and self.capture=='user':self.user_text+=text
+        elif self.depth and self.capture=='critic':self.critic_text+=text
+    def handle_endtag(self,tag):
+        if tag=='p':self.capture=None
+        if tag=='nav' and self.depth:self.depth-=1
+    def scores(self):
+        count=re.fullmatch(r'\s*User Ratings:\s*([0-9][0-9,]*)\s*',self.user_text)
+        count=int(count[1].replace(',','')) if count else 0
+        user={'score':self.average,'scale':10,'count':count} if count>0 and self.average is not None and 0<=self.average<=10 else None
+        critic=re.fullmatch(r'\s*Our Review:\s*([0-9]+(?:\.[0-9]+)?)\s*/\s*10\s*',self.critic_text)
+        critic=float(critic[1])*10 if critic and 0<=float(critic[1])<=10 else None
+        return critic,user
+
 def community_data(page,url,game,expected):
-    if urllib.parse.urlparse(url).path.split('/')[2] not in (['ps5'] if game['platform']=='PS5' else ['nintendo-switch','switch-eshop']):raise ValueError('Wrong console page')
+    if not community_index.valid_url(url,game['platform']):raise ValueError('Wrong console or community page')
     nodes=[]
     for text in re.findall(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',page,re.S|re.I):
         try:nodes.extend(walk(json.loads(text)))
         except ValueError:continue
-    products=[n for n in nodes if n.get('@type')=='VideoGame' and n.get('gamePlatform')==expected]
+    products=[n for n in nodes if n.get('@type')=='VideoGame' and n.get('gamePlatform')==expected and (not n.get('url') or n['url'].rstrip('/')==url.rstrip('/'))]
     if not products:raise ValueError('Console-specific game identity unavailable')
-    product=products[0];canonical=lambda value:re.sub(r'^(?:arcade-archives|aca-neogeo|sega-ages)-','',slug(value)).replace('-','')
-    requested={canonical(MC_ALIASES.get(game['title'],game['title']))}|{canonical(alias) for alias in game.get('aliases',[])}
-    if canonical(product.get('name','')) not in requested:raise ValueError('Different game/edition')
+    requested={stores.identity(value) for value in [game['title'],MC_ALIASES.get(game['title'],game['title'])]+game.get('aliases',[]) if value}
+    matches=[product for product in products if stores.identity(product.get('name','')) in requested]
+    if len(matches)!=1:raise ValueError('Different game/edition or ambiguous profile')
+    product=matches[0]
     name='Push Square' if game['platform']=='PS5' else 'Nintendo Life';users=[];critics=[]
     rating=product.get('aggregateRating') or {}
     if rating.get('ratingValue') is not None:users.append({'name':name,'score':float(rating['ratingValue']),'scale':float(rating.get('bestRating',10)),'count':int(rating.get('ratingCount',0)),'url':url,'platform':expected})
@@ -53,6 +85,9 @@ def community_data(page,url,game,expected):
         if ref and ref!=product.get('@id'):continue
         rating=node.get('reviewRating') or {}
         if rating.get('ratingValue') is not None:critics.append({'name':name,'score':float(rating['ratingValue'])/float(rating.get('bestRating',10))*100,'url':node.get('url') or url,'platform':expected,'via':name})
+    panel=VisibleGameRating();panel.feed(page);editorial,visible_user=panel.scores()
+    if not users and visible_user:users.append({**visible_user,'name':name,'url':url,'platform':expected,'via':'Published game-profile rating panel'})
+    if not critics and editorial is not None:critics.append({'name':name,'score':editorial,'url':url,'platform':expected,'via':name})
     return critics,users
 
 def source_names(game):
@@ -82,16 +117,11 @@ def collect(game,legacy):
                 if data.get('reviewCount',0)>=4 and data.get('score') is not None:users.append({'name':'Metacritic users','score':data['score'],'scale':10,'count':data['reviewCount'],'url':f'https://www.metacritic.com/game/{canonical}/user-reviews/?platform={platform}','platform':expected})
             except Exception as exc:errors.append('Metacritic users: '+str(exc)[:100])
         if critics and users:break
-    domain='www.pushsquare.com' if game['platform']=='PS5' else 'www.nintendolife.com'
-    folders=['ps5'] if game['platform']=='PS5' else ['nintendo-switch','switch-eshop'];found=False
-    for name in names:
-        for folder in folders:
-            url=f'https://{domain}/games/{folder}/'+name.replace('-','_')
-            try:
-                final,page=get(url);c,u=community_data(page,final,game,expected)
-                if c or u:critics.extend(c);users.extend(u);found=True;break
-            except Exception as exc:errors.append(domain+'/'+folder+': '+str(exc)[:100])
-        if found:break
+    for url in community_index.candidates(game):
+        try:
+            final,page=get(url);c,u=community_data(page,final,game,expected)
+            if c or u:critics.extend(c);users.extend(u);break
+        except Exception as exc:errors.append('Community: '+str(exc)[:100])
     raw=legacy.get('user') or {}
     if game['platform']=='PS5' and raw.get('source')=='PSN':users.append({'name':'PSN'+(' (PS4/PS5 shared product)' if 'PS4/PS5' in raw.get('scope','') else ''),'score':raw.get('score'),'scale':raw.get('scale'),'count':raw.get('count'),'url':raw.get('url'),'platform':expected,'checked':raw.get('checked','')})
     result=critic_composite(critics)
