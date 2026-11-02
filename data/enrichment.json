@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T16:58:50.308098+00:00",
+  "updated": "2026-11-02T16:59:22.930251+00:00",
   "version": 1,
   "coverage": {
     "total": 794,
-    "attempted": 42,
-    "ready": 74,
-    "missing_image": 693,
-    "missing_store": 690,
-    "missing_rating": 683,
+    "attempted": 52,
+    "ready": 82,
+    "missing_image": 684,
+    "missing_store": 681,
+    "missing_rating": 677,
     "full_attempted": 0
   },
   "games": {
@@ -2703,22 +2703,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T16:58:52.059052+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/astrosmash-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:58:53.082561+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000071247/c7de7cfe1341b54e62ec32ca24819df502139a7c42c80aecfbe6e3e75e6b0504",
+        "source": "https://www.nintendo.com/us/store/products/astrosmash-switch/",
+        "checked": "2026-11-02T16:58:53.083242+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:52.059052+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:12888": {
       "title": "Atari 50: The Anniversary Celebration",
@@ -2821,7 +2836,7 @@
           "source_count": 11
         },
         "user": {
-          "score": 7.29,
+          "score": 8.11,
           "scale": 10,
           "sources": [
             {
@@ -2843,23 +2858,63 @@
               "platform": "PlayStation 5",
               "weight": 4.242640687119285,
               "normalized": 7.199999999999999
+            },
+            {
+              "score": 4.22,
+              "count": 395,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA08603_00-4588832837629715",
+              "checked": "2026-11-02T16:58:53.494559+00:00",
+              "platform": "PSN · PS5",
+              "weight": 19.87460691435179,
+              "normalized": 8.44
             }
           ],
-          "source_count": 2,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 11,
-        "errors": [],
-        "platform": "PlayStation 5",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:42:12.591158+00:00"
+        "attempted": "2026-11-02T16:58:52.059240+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
-      }
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA08603_00-4588832837629715",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T16:58:53.494559+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2422/USama85yI65BcNV9EmYEYl6R.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0182-PPSA08603_00-4588832837629715",
+        "checked": "2026-11-02T16:58:53.494559+00:00"
+      },
+      "user": {
+        "score": 4.22,
+        "count": 395,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA08603_00-4588832837629715",
+        "checked": "2026-11-02T16:58:53.494559+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP0182-PPSA08603_00-4588832837629715",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0182-PPSA08603_00-4588832837629715",
+        "checked": "2026-11-02T16:58:53.494559+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:52.059240+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:12884": {
       "title": "Atari 50: The Anniversary Celebration",
@@ -3045,18 +3100,26 @@
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 19,
-        "errors": [],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:42:20.627805+00:00"
+        "attempted": "2026-11-02T16:58:52.059765+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/atari-50-the-anniversary-celebration-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:58:54.185568+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000054431/24d768b8b2d5022674468202a81b964b555c5bb1aa7b9f8af22b4b1539ab7567",
+        "source": "https://www.nintendo.com/us/store/products/atari-50-the-anniversary-celebration-switch/",
+        "checked": "2026-11-02T16:58:54.185947+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:52.059765+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:14219": {
       "title": "Avatar: The Last Airbender - Quest for Balance",
@@ -3065,22 +3128,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 5.16,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 2.58,
+              "count": 1134,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0281-PPSA04341_00-8088311817253850",
+              "checked": "2026-11-02T16:58:54.518058+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 5.16
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T16:58:52.060031+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0281-PPSA04341_00-8088311817253850",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T16:58:54.518058+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202307/2718/dc86387da734a7937b223ed24f8ddd4cf328d1eed97fc5d5.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0281-PPSA04341_00-8088311817253850",
+        "checked": "2026-11-02T16:58:54.518058+00:00"
+      },
+      "user": {
+        "score": 2.58,
+        "count": 1134,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0281-PPSA04341_00-8088311817253850",
+        "checked": "2026-11-02T16:58:54.518058+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP0281-PPSA04341_00-8088311817253850",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0281-PPSA04341_00-8088311817253850",
+        "checked": "2026-11-02T16:58:54.518058+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:52.060031+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:14217": {
       "title": "Avatar: The Last Airbender - Quest for Balance",
@@ -3089,25 +3200,281 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 1.8,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 1.8,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/avatar-the-last-airbender-quest-for-balance/user-reviews/?platform=nintendo-switch",
+              "platform": "Switch",
+              "weight": 2.0,
+              "normalized": 1.7999999999999998
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T16:58:53.509131+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/avatar-the-last-airbender-quest-for-balance-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:58:55.726285+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000043029/4ff8a1e4c87575f265e51de4b90de45040aa6e5350b30fab13894bf493f2ea68",
+        "source": "https://www.nintendo.com/us/store/products/avatar-the-last-airbender-quest-for-balance-switch/",
+        "checked": "2026-11-02T16:58:55.726752+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:53.509131+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:10322": {
       "title": "BADLAND: Game of the Year Edition",
+      "platform": "Switch",
+      "ratings": {
+        "critic": {
+          "score": null,
+          "scale": 100,
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
+        },
+        "user": {
+          "score": 7.0,
+          "scale": 10,
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.0,
+              "scale": 10.0,
+              "count": 7,
+              "url": "https://www.nintendolife.com/games/switch-eshop/badland_game_of_the_year_edition",
+              "platform": "Nintendo Switch",
+              "weight": 2.6457513110645907,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
+        },
+        "attempted": "2026-11-02T16:58:54.186267+00:00"
+      },
+      "requirements": {
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/badland-game-of-the-year-edition-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:58:56.304563+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000041529/ee5d7fa23c81131ef9d202e3c71efd548a8fa506f66a43cca61e029b9720d726",
+        "source": "https://www.nintendo.com/us/store/products/badland-game-of-the-year-edition-switch/",
+        "checked": "2026-11-02T16:58:56.305023+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:54.186267+00:00",
+      "version": 1,
+      "errors": {}
+    },
+    "Switch:13708": {
+      "title": "BATSUGUN Saturn Tribute Boosted",
+      "platform": "Switch",
+      "ratings": {
+        "critic": {
+          "score": 80.0,
+          "scale": 100,
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/batsugun-saturn-tribute-boosted",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
+        },
+        "user": {
+          "score": 7.4,
+          "scale": 10,
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 17,
+              "url": "https://www.nintendolife.com/games/switch-eshop/batsugun_saturn_tribute_boosted",
+              "platform": "Nintendo Switch",
+              "weight": 4.123105625617661,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
+        },
+        "attempted": "2026-11-02T16:58:54.526523+00:00"
+      },
+      "requirements": {
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/batsugun-saturn-tribute-boosted-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:58:57.474428+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000060612/669d2e24f5f39da213fdf3aaa0f0e1cfb3076dae0029dae86e5d7b0c19fc6bf5",
+        "source": "https://www.nintendo.com/us/store/products/batsugun-saturn-tribute-boosted-switch/",
+        "checked": "2026-11-02T16:58:57.474831+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:54.526523+00:00",
+      "version": 1,
+      "errors": {}
+    },
+    "Switch:14036": {
+      "title": "BOKURA",
+      "platform": "Switch",
+      "ratings": {
+        "critic": {
+          "score": null,
+          "scale": 100,
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
+        },
+        "user": {
+          "score": 7.3,
+          "scale": 10,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.3,
+              "scale": 10,
+              "count": 18,
+              "url": "https://www.metacritic.com/game/bokura/user-reviews/?platform=nintendo-switch",
+              "platform": "Switch",
+              "weight": 4.242640687119285,
+              "normalized": 7.3
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
+        },
+        "attempted": "2026-11-02T16:58:55.631127+00:00"
+      },
+      "requirements": {
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/bokura-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:58:59.218390+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000068760/7c1fde3a73055517821fbbcf52052c9ce67ab7d69bef2e8efae7dbdb7b8d9656",
+        "source": "https://www.nintendo.com/us/store/products/bokura-switch/",
+        "checked": "2026-11-02T16:58:59.218906+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:55.631127+00:00",
+      "version": 1,
+      "errors": {}
+    },
+    "PS5:14050": {
+      "title": "Baby Shark: Sing & Swim Party",
+      "platform": "PS5",
+      "ratings": {
+        "critic": {
+          "score": null,
+          "scale": 100,
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
+        },
+        "user": {
+          "score": 7.46,
+          "scale": 10,
+          "sources": [
+            {
+              "score": 3.73,
+              "count": 55,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP3678-PPSA09195_00-BSBASEGAME000001",
+              "checked": "2026-11-02T16:58:58.793481+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 7.416198487095663,
+              "normalized": 7.46
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
+        },
+        "attempted": "2026-11-02T16:58:57.757469+00:00"
+      },
+      "requirements": {
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP3678-PPSA09195_00-BSBASEGAME000001",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T16:58:58.793481+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202306/0712/7c84855d4d75f19ab6836f9d275d83ba25c421c10b6d2565.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP3678-PPSA09195_00-BSBASEGAME000001",
+        "checked": "2026-11-02T16:58:58.793481+00:00"
+      },
+      "user": {
+        "score": 3.73,
+        "count": 55,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP3678-PPSA09195_00-BSBASEGAME000001",
+        "checked": "2026-11-02T16:58:58.793481+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP3678-PPSA09195_00-BSBASEGAME000001",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP3678-PPSA09195_00-BSBASEGAME000001",
+        "checked": "2026-11-02T16:58:58.793481+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:57.757469+00:00",
+      "version": 1,
+      "errors": {}
+    },
+    "Switch:14048": {
+      "title": "Baby Shark: Sing & Swim Party",
       "platform": "Switch",
       "ratings": {
         "critic": {
@@ -3124,117 +3491,19 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 301: Moved Permanently",
-          "Metacritic users: HTTP Error 301: Moved Permanently",
-          "www.nintendolife.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:42:23.802089+00:00"
+        "attempted": "2026-11-02T16:58:58.803073+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
-      }
-    },
-    "Switch:13708": {
-      "title": "BATSUGUN Saturn Tribute Boosted",
-      "platform": "Switch",
-      "ratings": {
-        "critic": {
-          "score": null,
-          "scale": 100,
-          "source_count": 0,
-          "sources": []
-        },
-        "user": {
-          "score": null,
-          "scale": 10,
-          "source_count": 0,
-          "sources": []
-        },
-        "attempted": ""
       },
-      "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
-    },
-    "Switch:14036": {
-      "title": "BOKURA",
-      "platform": "Switch",
-      "ratings": {
-        "critic": {
-          "score": null,
-          "scale": 100,
-          "source_count": 0,
-          "sources": []
-        },
-        "user": {
-          "score": null,
-          "scale": 10,
-          "source_count": 0,
-          "sources": []
-        },
-        "attempted": ""
-      },
-      "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
-    },
-    "PS5:14050": {
-      "title": "Baby Shark: Sing & Swim Party",
-      "platform": "PS5",
-      "ratings": {
-        "critic": {
-          "score": null,
-          "scale": 100,
-          "source_count": 0,
-          "sources": []
-        },
-        "user": {
-          "score": null,
-          "scale": 10,
-          "source_count": 0,
-          "sources": []
-        },
-        "attempted": ""
-      },
-      "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
-    },
-    "Switch:14048": {
-      "title": "Baby Shark: Sing & Swim Party",
-      "platform": "Switch",
-      "ratings": {
-        "critic": {
-          "score": null,
-          "scale": 100,
-          "source_count": 0,
-          "sources": []
-        },
-        "user": {
-          "score": null,
-          "scale": 10,
-          "source_count": 0,
-          "sources": []
-        },
-        "attempted": ""
-      },
-      "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+      "basics_attempted": "2026-11-02T16:58:58.803073+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 301: Moved Permanently"
       }
     },
     "Switch:11058": {
