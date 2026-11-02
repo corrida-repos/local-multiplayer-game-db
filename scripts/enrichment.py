@@ -383,6 +383,8 @@ def seed(games,entries,legacy,known_stores,old_composites,old_trailers,artwork,o
         entry['requirements']=requirements(entry)
     share_artwork(games,entries)
 
+def source_revision(game,aliases):return recovery_state.revision(game,aliases)+':'+str(VERSION)
+
 def source_registry(game):
     sources={'psn':('store','image','rating')} if game['platform']=='PS5' else {'nintendo':('store','image'),'nindie':('image','rating'),'slush':('rating',)}
     sources.update(community=('image','rating'),metacritic=('rating',),wikipedia=('image',))
@@ -399,7 +401,7 @@ def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
         prior['user']['sources']=[{**source,'checked':source.get('checked') or prior.get('attempted','')} for source in prior['user']['sources']]
     if valid_image(artwork.get('url')) and not requirements(result)['image']:result['image']=dict(artwork)
     source_game={**game,'aliases':list(dict.fromkeys(result.get('aliases',[])+source_match(game).get('names',[])))}
-    revision=recovery_state.revision(game,source_game['aliases']);registry=source_registry(game)
+    revision=source_revision(game,source_game['aliases']);registry=source_registry(game)
     def merge_scores(critics,users):
         rating=result.setdefault('ratings',{});fresh_user=composites.user_composite([{**u,'checked':u.get('checked') or now()} for u in users])
         rating['critic']=critic_merge(rating.get('critic',{}),composites.critic_composite(critics))
@@ -555,7 +557,7 @@ def basic_due(game,entry):
     missing=[field for field,good in requirements(entry).items() if not good]
     if not missing:return False
     if lookup_upgrade(game,entry):return True
-    revision=recovery_state.revision(game,entry.get('aliases',[])+source_match(game).get('names',[]))
+    revision=source_revision(game,entry.get('aliases',[])+source_match(game).get('names',[]))
     return any(recovery_state.due(entry,source,[field for field in fields if field in missing],revision) for source,fields in source_registry(game).items() if any(field in missing for field in fields))
 
 def select_work(games,entries,seen):

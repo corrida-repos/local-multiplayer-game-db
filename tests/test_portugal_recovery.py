@@ -57,6 +57,13 @@ class Attempts(unittest.TestCase):
         self.assertTrue(rs.due(entry,'nintendo',['image'],'v1',clock+dt.timedelta(days=1)))
         rs.record(entry,'image_health',['image'],'v1','verified',clock=clock)
         self.assertFalse(rs.due(entry,'image_health',['image'],'v1',clock+dt.timedelta(days=1)))
+    def test_collector_revision_change_invalidates_negative_cache_inside_source_runner(self):
+        previous={'platform':'Switch','store':{'url':PT,'verified':True,'region':'PT'},'image':{'url':'https://images.test/game.png'},'version':e.VERSION-1,'ratings':{}}
+        old_revision=rs.revision(GAME,[])+':'+str(e.VERSION-1)
+        for source,fields in e.source_registry(GAME).items():rs.record(previous,source,list(fields),old_revision,'not_found')
+        with patch.object(e,'community',return_value=([],[{'name':'Nintendo Life','score':7,'scale':10,'count':2}],{})) as community:
+            value=e.basics(GAME,previous,{},{},{},{},{})
+        community.assert_called_once();self.assertTrue(value['requirements']['rating'])
     def test_retries_are_field_specific_and_survive_json_roundtrip(self):
         clock=dt.datetime(2026,1,1,tzinfo=dt.timezone.utc);entry={};rs.record(entry,'community',['rating'],'v1','not_found',clock=clock);entry=json.loads(json.dumps(entry))
         self.assertTrue(rs.due(entry,'community',['image'],'v1',clock));self.assertFalse(rs.due(entry,'community',['rating'],'v1',clock))
