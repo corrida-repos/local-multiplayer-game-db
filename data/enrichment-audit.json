@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-02T22:57:55.933818+00:00",
+  "updated": "2026-11-02T22:58:49.020999+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1782,
+    "ready": 1787,
     "missing_image": 112,
-    "missing_store": 697,
+    "missing_store": 688,
     "missing_rating": 477,
     "full_attempted": 1042,
     "image_health_pending": 2430
@@ -1479,14 +1479,31 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T19:19:50.733448+00:00",
+      "attempted": "2026-11-02T22:57:59.552998+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:00.209274+00:00",
+              "next_attempt": "2026-11-03T22:58:00.209274+00:00",
+              "revision": "14f035612cb59c41:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Bubble+Bobble+4+Friends%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Bubble+Bobble+4+Friends%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T22:58:00.209274+00:00"
     },
     {
       "key": "PS5:17654",
@@ -2356,38 +2373,6 @@
       "next_retry": ""
     },
     {
-      "key": "Switch:6247",
-      "title": "Clan N",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:20:34.391872+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review",
-        "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
-      },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:6123",
-      "title": "Climbros",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:20:34.392054+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review",
-        "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
-      },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "PS5:14037",
       "title": "Clockwork Aquario",
       "platform": "PS5",
@@ -2496,22 +2481,6 @@
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed"
-      },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:6703",
-      "title": "Cosmic Defenders",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:20:34.392173+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review",
-        "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
       },
       "field_status": {},
       "next_retry": ""
@@ -2823,22 +2792,6 @@
       "reasons": {
         "nindie": "Not a Switch 1 review",
         "metacritic_reviews": "The read operation timed out",
-        "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
-      },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:6694",
-      "title": "Cyber Complex",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:20:34.392275+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review",
         "slush": "No scored Switch review indexed",
         "trailer": "HTTP Error 404: Not Found"
       },
@@ -4318,22 +4271,6 @@
       "next_retry": ""
     },
     {
-      "key": "Switch:5425",
-      "title": "Freaky Awesome",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:19:56.491586+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review",
-        "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
-      },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:9305",
       "title": "From Shadows",
       "platform": "Switch",
@@ -5107,50 +5044,301 @@
       "title": "Haunted Zombie Slaughter",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:19:56.629243+00:00",
+      "attempted": "2026-11-02T22:57:59.553602+00:00",
       "reasons": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T22:58:03.120634+00:00",
+              "next_attempt": "2026-11-03T22:58:03.120634+00:00",
+              "revision": "f94530b88bf86cb6:7",
+              "reason": "",
+              "last_success": "2026-11-02T22:58:03.120634+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Haunted-Zombie-Slaughter-2332788.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Haunted-Zombie-Slaughter-2332788.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:31.121414+00:00",
+              "next_attempt": "2026-11-03T22:58:31.121414+00:00",
+              "revision": "f94530b88bf86cb6:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/haunted_zombie_slaughter",
+                "https://www.nintendolife.com/games/nintendo-switch/haunted_zombie_slaughter"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/haunted_zombie_slaughter"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:32.207118+00:00",
+              "next_attempt": "2026-11-03T22:58:32.207118+00:00",
+              "revision": "f94530b88bf86cb6:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=haunted-zombie-slaughter-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=haunted-zombie-slaughter-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:37.640341+00:00",
+              "next_attempt": "2026-11-03T22:58:37.640341+00:00",
+              "revision": "f94530b88bf86cb6:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/haunted-zombie-slaughter/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/haunted-zombie-slaughter/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/haunted-zombie-slaughter/"
+              ],
+              "url": "https://www.metacritic.com/game/haunted-zombie-slaughter/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:37.723501+00:00",
+              "next_attempt": "2026-11-03T22:58:37.723501+00:00",
+              "revision": "f94530b88bf86cb6:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Haunted+Zombie+Slaughter&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Haunted+Zombie+Slaughter&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T22:58:37.723627+00:00",
+              "next_attempt": "2026-11-02T23:58:37.723627+00:00",
+              "revision": "f94530b88bf86cb6:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T22:58:37.723696+00:00",
+              "next_attempt": "2026-11-02T23:58:37.723696+00:00",
+              "revision": "f94530b88bf86cb6:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-02T23:58:37.723627+00:00"
     },
     {
       "key": "Switch:14461",
       "title": "Haunted Zombie Slaughter 2",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:20:34.390744+00:00",
+      "attempted": "2026-11-02T22:57:59.554042+00:00",
       "reasons": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T22:58:02.023428+00:00",
+              "next_attempt": "2026-11-03T22:58:02.023428+00:00",
+              "revision": "68b87e9e8ae07baa:7",
+              "reason": "",
+              "last_success": "2026-11-02T22:58:02.023428+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Haunted-Zombie-Slaughter-2-2452565.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Haunted-Zombie-Slaughter-2-2452565.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:26.231762+00:00",
+              "next_attempt": "2026-11-03T22:58:26.231762+00:00",
+              "revision": "68b87e9e8ae07baa:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/haunted_zombie_slaughter_2",
+                "https://www.nintendolife.com/games/nintendo-switch/haunted_zombie_slaughter_2"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/haunted_zombie_slaughter_2"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:27.617859+00:00",
+              "next_attempt": "2026-11-03T22:58:27.617859+00:00",
+              "revision": "68b87e9e8ae07baa:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=haunted-zombie-slaughter-2-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=haunted-zombie-slaughter-2-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:40.231056+00:00",
+              "next_attempt": "2026-11-03T22:58:40.231056+00:00",
+              "revision": "68b87e9e8ae07baa:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/haunted-zombie-slaughter-2/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/haunted-zombie-slaughter-2/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/haunted-zombie-slaughter-2/"
+              ],
+              "url": "https://www.metacritic.com/game/haunted-zombie-slaughter-2/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:40.261261+00:00",
+              "next_attempt": "2026-11-03T22:58:40.261261+00:00",
+              "revision": "68b87e9e8ae07baa:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Haunted+Zombie+Slaughter+2&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Haunted+Zombie+Slaughter+2&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T22:58:40.261375+00:00",
+              "next_attempt": "2026-11-02T23:58:40.261375+00:00",
+              "revision": "68b87e9e8ae07baa:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T22:58:40.261520+00:00",
+              "next_attempt": "2026-11-02T23:58:40.261520+00:00",
+              "revision": "68b87e9e8ae07baa:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-02T23:58:40.261375+00:00"
     },
     {
       "key": "Switch:14715",
       "title": "Heavenly Bodies",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:20:34.390905+00:00",
+      "attempted": "2026-11-02T22:57:59.554352+00:00",
       "reasons": {
-        "nindie": "Not a Switch 1 review",
-        "slush": "No scored Switch review indexed"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T22:58:05.307659+00:00",
+              "next_attempt": "2026-11-03T22:58:05.307659+00:00",
+              "revision": "2fa9231c1a911d1b:7",
+              "reason": "",
+              "last_success": "2026-11-02T22:58:05.307659+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Heavenly-Bodies-2479618.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Heavenly-Bodies-2479618.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:36.126604+00:00",
+              "next_attempt": "2026-11-03T22:58:36.126604+00:00",
+              "revision": "2fa9231c1a911d1b:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/heavenly_bodies",
+                "https://www.nintendolife.com/games/nintendo-switch/heavenly_bodies"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/heavenly_bodies"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:37.719673+00:00",
+              "next_attempt": "2026-11-03T22:58:37.719673+00:00",
+              "revision": "2fa9231c1a911d1b:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=heavenly-bodies-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=heavenly-bodies-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:48.501891+00:00",
+              "next_attempt": "2026-11-03T22:58:48.501891+00:00",
+              "revision": "2fa9231c1a911d1b:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/heavenly-bodies/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/heavenly-bodies/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/heavenly-bodies/"
+              ],
+              "url": "https://www.metacritic.com/game/heavenly-bodies/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:48.577632+00:00",
+              "next_attempt": "2026-11-03T22:58:48.577632+00:00",
+              "revision": "2fa9231c1a911d1b:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Heavenly+Bodies&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Heavenly+Bodies&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T22:58:48.577757+00:00",
+              "next_attempt": "2026-11-02T23:58:48.577757+00:00",
+              "revision": "2fa9231c1a911d1b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T22:58:48.577815+00:00",
+              "next_attempt": "2026-11-02T23:58:48.577815+00:00",
+              "revision": "2fa9231c1a911d1b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-02T23:58:48.577757+00:00"
     },
     {
       "key": "Switch:8894",
@@ -5173,17 +5361,101 @@
       "title": "HellGunner",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:20:34.391212+00:00",
+      "attempted": "2026-11-02T22:57:59.555456+00:00",
       "reasons": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T22:58:00.913261+00:00",
+              "next_attempt": "2026-11-03T22:58:00.913261+00:00",
+              "revision": "81a76398844c9db8:7",
+              "reason": "",
+              "last_success": "2026-11-02T22:58:00.913261+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/HellGunner-2205288.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/HellGunner-2205288.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:06.277899+00:00",
+              "next_attempt": "2026-11-03T22:58:06.277899+00:00",
+              "revision": "81a76398844c9db8:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/hellgunner",
+                "https://www.nintendolife.com/games/nintendo-switch/hellgunner"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/hellgunner"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:06.925159+00:00",
+              "next_attempt": "2026-11-03T22:58:06.925159+00:00",
+              "revision": "81a76398844c9db8:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=hellgunner-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=hellgunner-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:16.476996+00:00",
+              "next_attempt": "2026-11-03T22:58:16.476996+00:00",
+              "revision": "81a76398844c9db8:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/hellgunner/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/hellgunner/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/hellgunner/"
+              ],
+              "url": "https://www.metacritic.com/game/hellgunner/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:58:16.579020+00:00",
+              "next_attempt": "2026-11-03T22:58:16.579020+00:00",
+              "revision": "81a76398844c9db8:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=HellGunner&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=HellGunner&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T22:58:16.579183+00:00",
+              "next_attempt": "2026-11-02T23:58:16.579183+00:00",
+              "revision": "81a76398844c9db8:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T22:58:16.579268+00:00",
+              "next_attempt": "2026-11-02T23:58:16.579268+00:00",
+              "revision": "81a76398844c9db8:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-02T23:58:16.579183+00:00"
     },
     {
       "key": "Switch:8136",
