@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-02T23:08:34.756297+00:00",
+  "updated": "2026-11-02T23:10:18.249228+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1826,
+    "ready": 1828,
     "missing_image": 111,
-    "missing_store": 627,
-    "missing_rating": 466,
+    "missing_store": 618,
+    "missing_rating": 464,
     "full_attempted": 1042,
     "image_health_pending": 2431
   },
@@ -9087,55 +9087,105 @@
       "next_retry": "2026-11-03T00:08:15.574259+00:00"
     },
     {
-      "key": "Switch:8060",
-      "title": "Jigsaw Fun: Piece It Together!",
-      "platform": "Switch",
-      "missing": [
-        "store",
-        "rating"
-      ],
-      "attempted": "2026-11-02T19:28:52.658760+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review",
-        "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
-      },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:10821",
       "title": "Jigsaw Fun: Wonderful Nature",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:29:12.303447+00:00",
+      "attempted": "2026-11-02T23:08:38.589999+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:7660",
-      "title": "Jim is Moving Out!",
-      "platform": "Switch",
-      "missing": [
-        "store",
-        "rating"
-      ],
-      "attempted": "2026-11-02T19:29:12.303602+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review",
-        "slush": "No scored Switch review indexed"
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:08:38.847976+00:00",
+              "next_attempt": "2026-11-03T23:08:38.847976+00:00",
+              "revision": "3295f699964eecd1:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:08:38.847976+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jigsaw-Fun-Wonderful-Nature-2079702.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jigsaw-Fun-Wonderful-Nature-2079702.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:44.052240+00:00",
+              "next_attempt": "2026-11-03T23:08:44.052240+00:00",
+              "revision": "3295f699964eecd1:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/jigsaw_fun_wonderful_nature",
+                "https://www.nintendolife.com/games/switch-eshop/jigsaw_fun_wonderful_nature"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/jigsaw_fun_wonderful_nature"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:46.526408+00:00",
+              "next_attempt": "2026-11-03T23:08:46.526408+00:00",
+              "revision": "3295f699964eecd1:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=jigsaw-fun-wonderful-nature-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jigsaw-fun-wonderful-nature-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:57.414675+00:00",
+              "next_attempt": "2026-11-03T23:08:57.414675+00:00",
+              "revision": "3295f699964eecd1:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/jigsaw-fun-wonderful-nature/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/jigsaw-fun-wonderful-nature/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/jigsaw-fun-wonderful-nature/"
+              ],
+              "url": "https://www.metacritic.com/game/jigsaw-fun-wonderful-nature/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:57.492326+00:00",
+              "next_attempt": "2026-11-03T23:08:57.492326+00:00",
+              "revision": "3295f699964eecd1:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Jigsaw+Fun%3A+Wonderful+Nature&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Jigsaw+Fun%3A+Wonderful+Nature&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:08:57.492449+00:00",
+              "next_attempt": "2026-11-03T00:08:57.492449+00:00",
+              "revision": "3295f699964eecd1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:08:57.492517+00:00",
+              "next_attempt": "2026-11-03T00:08:57.492517+00:00",
+              "revision": "3295f699964eecd1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
       },
-      "field_status": {},
-      "next_retry": ""
+      "next_retry": "2026-11-03T00:08:57.492449+00:00"
     },
     {
       "key": "Switch:7982",
@@ -9166,17 +9216,101 @@
       "title": "Joe & Mac Retro Collection",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:29:12.304055+00:00",
+      "attempted": "2026-11-02T23:08:38.590630+00:00",
       "reasons": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:08:41.090539+00:00",
+              "next_attempt": "2026-11-03T23:08:41.090539+00:00",
+              "revision": "fc888d107f1e7513:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:08:41.090539+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Joe-Mac-Retro-Collection-3213033.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Joe-Mac-Retro-Collection-3213033.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:29.410056+00:00",
+              "next_attempt": "2026-11-03T23:09:29.410056+00:00",
+              "revision": "fc888d107f1e7513:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/joe_and_mac_retro_collection",
+                "https://www.nintendolife.com/games/switch-eshop/joe_and_mac_retro_collection"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/joe_and_mac_retro_collection"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:31.853877+00:00",
+              "next_attempt": "2026-11-03T23:09:31.853877+00:00",
+              "revision": "fc888d107f1e7513:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=joe-and-mac-retro-collection-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=joe-and-mac-retro-collection-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:33.545445+00:00",
+              "next_attempt": "2026-11-03T23:09:33.545445+00:00",
+              "revision": "fc888d107f1e7513:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/joe-and-mac-retro-collection/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/joe-and-mac-retro-collection/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/joe-and-mac-retro-collection/"
+              ],
+              "url": "https://www.metacritic.com/game/joe-and-mac-retro-collection/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:33.601111+00:00",
+              "next_attempt": "2026-11-03T23:09:33.601111+00:00",
+              "revision": "fc888d107f1e7513:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Joe+%26+Mac+Retro+Collection&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Joe+%26+Mac+Retro+Collection&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:09:33.601257+00:00",
+              "next_attempt": "2026-11-03T00:09:33.601257+00:00",
+              "revision": "fc888d107f1e7513:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:09:33.601352+00:00",
+              "next_attempt": "2026-11-03T00:09:33.601352+00:00",
+              "revision": "fc888d107f1e7513:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:09:33.601257+00:00"
     },
     {
       "key": "Switch:7984",
@@ -9222,90 +9356,511 @@
       "title": "John Fox",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:29:12.304778+00:00",
+      "attempted": "2026-11-02T23:08:38.590884+00:00",
       "reasons": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:08:43.441324+00:00",
+              "next_attempt": "2026-11-03T23:08:43.441324+00:00",
+              "revision": "13a88a9760f1a436:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:08:43.441324+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/John-Fox-3147306.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/John-Fox-3147306.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:39.230167+00:00",
+              "next_attempt": "2026-11-03T23:09:39.230167+00:00",
+              "revision": "13a88a9760f1a436:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/john_fox",
+                "https://www.nintendolife.com/games/nintendo-switch/john_fox"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/john_fox"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:40.462023+00:00",
+              "next_attempt": "2026-11-03T23:09:40.462023+00:00",
+              "revision": "13a88a9760f1a436:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=john-fox-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=john-fox-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:44.351534+00:00",
+              "next_attempt": "2026-11-03T23:09:44.351534+00:00",
+              "revision": "13a88a9760f1a436:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/john-fox/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/john-fox/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/john-fox/"
+              ],
+              "url": "https://www.metacritic.com/game/john-fox/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:44.434379+00:00",
+              "next_attempt": "2026-11-03T23:09:44.434379+00:00",
+              "revision": "13a88a9760f1a436:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=John+Fox&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=John+Fox&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:09:44.434513+00:00",
+              "next_attempt": "2026-11-03T00:09:44.434513+00:00",
+              "revision": "13a88a9760f1a436:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:09:44.434569+00:00",
+              "next_attempt": "2026-11-03T00:09:44.434569+00:00",
+              "revision": "13a88a9760f1a436:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:09:44.434513+00:00"
     },
     {
       "key": "Switch:12731",
       "title": "Josh Journey: Darkness Totems",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:29:15.294807+00:00",
+      "attempted": "2026-11-02T23:08:38.591760+00:00",
       "reasons": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:08:42.341098+00:00",
+              "next_attempt": "2026-11-03T23:08:42.341098+00:00",
+              "revision": "faf50eeb402bd7a8:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:08:42.341098+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Josh-Journey-Darkness-Totems-2268982.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Josh-Journey-Darkness-Totems-2268982.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:34.062965+00:00",
+              "next_attempt": "2026-11-03T23:09:34.062965+00:00",
+              "revision": "faf50eeb402bd7a8:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/josh_journey_darkness_totems",
+                "https://www.nintendolife.com/games/nintendo-switch/josh_journey_darkness_totems"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/josh_journey_darkness_totems"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:36.896995+00:00",
+              "next_attempt": "2026-11-03T23:09:36.896995+00:00",
+              "revision": "faf50eeb402bd7a8:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=josh-journey-darkness-totems-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=josh-journey-darkness-totems-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:40.610244+00:00",
+              "next_attempt": "2026-11-03T23:09:40.610244+00:00",
+              "revision": "faf50eeb402bd7a8:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/josh-journey-darkness-totems/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/josh-journey-darkness-totems/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/josh-journey-darkness-totems/"
+              ],
+              "url": "https://www.metacritic.com/game/josh-journey-darkness-totems/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:40.710626+00:00",
+              "next_attempt": "2026-11-03T23:09:40.710626+00:00",
+              "revision": "faf50eeb402bd7a8:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Josh+Journey%3A+Darkness+Totems&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Josh+Journey%3A+Darkness+Totems&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:09:40.710763+00:00",
+              "next_attempt": "2026-11-03T00:09:40.710763+00:00",
+              "revision": "faf50eeb402bd7a8:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:09:40.710880+00:00",
+              "next_attempt": "2026-11-03T00:09:40.710880+00:00",
+              "revision": "faf50eeb402bd7a8:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:09:40.710763+00:00"
     },
     {
       "key": "Switch:13857",
       "title": "Jumanji: Wild Adventures",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:29:20.272376+00:00",
+      "attempted": "2026-11-02T23:08:38.593705+00:00",
       "reasons": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:08:46.548876+00:00",
+              "next_attempt": "2026-11-03T23:08:46.548876+00:00",
+              "revision": "6a93e3c51fe32e8e:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:08:46.548876+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Jumanji-Wild-Adventures-2455778.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Jumanji-Wild-Adventures-2455778.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:49.060086+00:00",
+              "next_attempt": "2026-11-03T23:09:49.060086+00:00",
+              "revision": "6a93e3c51fe32e8e:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/jumanji_wild_adventures",
+                "https://www.nintendolife.com/games/switch-eshop/jumanji_wild_adventures"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/jumanji_wild_adventures"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:52.204413+00:00",
+              "next_attempt": "2026-11-03T23:09:52.204413+00:00",
+              "revision": "6a93e3c51fe32e8e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=jumanji-wild-adventures-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jumanji-wild-adventures-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:57.237418+00:00",
+              "next_attempt": "2026-11-03T23:09:57.237418+00:00",
+              "revision": "6a93e3c51fe32e8e:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/jumanji-wild-adventures/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/jumanji-wild-adventures/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/jumanji-wild-adventures/"
+              ],
+              "url": "https://www.metacritic.com/game/jumanji-wild-adventures/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:57.323011+00:00",
+              "next_attempt": "2026-11-03T23:09:57.323011+00:00",
+              "revision": "6a93e3c51fe32e8e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Jumanji%3A+Wild+Adventures&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Jumanji%3A+Wild+Adventures&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:09:57.323214+00:00",
+              "next_attempt": "2026-11-03T00:09:57.323214+00:00",
+              "revision": "6a93e3c51fe32e8e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:09:57.323302+00:00",
+              "next_attempt": "2026-11-03T00:09:57.323302+00:00",
+              "revision": "6a93e3c51fe32e8e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:09:57.323214+00:00"
     },
     {
       "key": "Switch:16464",
       "title": "Jump,YOU!+",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:29:48.034718+00:00",
+      "attempted": "2026-11-02T23:08:38.595247+00:00",
       "reasons": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:08:44.366654+00:00",
+              "next_attempt": "2026-11-03T23:08:44.366654+00:00",
+              "revision": "cecda0f0d8ee2956:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:08:44.366654+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jump-YOU-2746705.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jump-YOU-2746705.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:59.068960+00:00",
+              "next_attempt": "2026-11-03T23:09:59.068960+00:00",
+              "revision": "cecda0f0d8ee2956:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/jump_youplus",
+                "https://www.nintendolife.com/games/nintendo-switch/jump_you_plus",
+                "https://www.nintendolife.com/games/switch-eshop/jump_you_plus"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/jump_you_plus"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:10:02.217741+00:00",
+              "next_attempt": "2026-11-03T23:10:02.217741+00:00",
+              "revision": "cecda0f0d8ee2956:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=jump-you-plus-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jump-you-plus-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:10:08.276519+00:00",
+              "next_attempt": "2026-11-03T23:10:08.276519+00:00",
+              "revision": "cecda0f0d8ee2956:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/jump-you-plus/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/jump-you-plus/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/jump-you-plus/"
+              ],
+              "url": "https://www.metacritic.com/game/jump-you-plus/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:10:08.313164+00:00",
+              "next_attempt": "2026-11-03T23:10:08.313164+00:00",
+              "revision": "cecda0f0d8ee2956:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Jump%2CYOU%21%2B&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Jump%2CYOU%21%2B&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:10:08.313267+00:00",
+              "next_attempt": "2026-11-03T00:10:08.313267+00:00",
+              "revision": "cecda0f0d8ee2956:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:10:08.313330+00:00",
+              "next_attempt": "2026-11-03T00:10:08.313330+00:00",
+              "revision": "cecda0f0d8ee2956:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:10:08.313267+00:00"
     },
     {
       "key": "Switch:7274",
       "title": "Jurassic Excite",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:29:48.034879+00:00",
+      "attempted": "2026-11-02T23:08:49.266578+00:00",
       "reasons": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 410: Gone",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:08:49.515345+00:00",
+              "next_attempt": "2026-11-03T23:08:49.515345+00:00",
+              "revision": "04846173687081a7:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:08:49.515345+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/JurassicExcite-1697952.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/JurassicExcite-1697952.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:10:09.217678+00:00",
+              "next_attempt": "2026-11-03T23:10:09.217678+00:00",
+              "revision": "04846173687081a7:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/jurassic_excite",
+                "https://www.nintendolife.com/games/nintendo-switch/jurassicexcite",
+                "https://www.nintendolife.com/games/switch-eshop/jurassicexcite"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/jurassicexcite"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:10:10.083317+00:00",
+              "next_attempt": "2026-11-03T23:10:10.083317+00:00",
+              "revision": "04846173687081a7:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=jurassic-excite-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jurassic-excite-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:10:17.742092+00:00",
+              "next_attempt": "2026-11-03T23:10:17.742092+00:00",
+              "revision": "04846173687081a7:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/jurassicexcite/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/jurassicexcite/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/jurassicexcite/"
+              ],
+              "url": "https://www.metacritic.com/game/jurassicexcite/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:10:17.777024+00:00",
+              "next_attempt": "2026-11-03T23:10:17.777024+00:00",
+              "revision": "04846173687081a7:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Jurassic+Excite&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Jurassic+Excite&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:10:17.777148+00:00",
+              "next_attempt": "2026-11-03T00:10:17.777148+00:00",
+              "revision": "04846173687081a7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:10:17.777227+00:00",
+              "next_attempt": "2026-11-03T00:10:17.777227+00:00",
+              "revision": "04846173687081a7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:10:17.777148+00:00"
     },
     {
       "key": "PS5:14669",
@@ -9314,12 +9869,31 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T19:29:48.035147+00:00",
+      "attempted": "2026-11-02T23:08:57.492702+00:00",
       "reasons": {
-        "store": "No exact Portugal PS5 product verified"
+        "store": "No exact Portugal PS5 product verified",
+        "psn": "No exact Portugal PS5 product verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:09:09.917676+00:00",
+              "next_attempt": "2026-11-03T23:09:09.917676+00:00",
+              "revision": "c02b0b7648146be4:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC02ODA%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Jurassic+Park+Classic+Games+Collection%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC02ODA%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Jurassic+Park+Classic+Games+Collection%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC02ODA%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Jurassic+Park+Classic+Games+Collection%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC02ODA%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Jurassic+Park+Classic+Games+Collection%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T23:09:09.917676+00:00"
     },
     {
       "key": "Switch:14668",
