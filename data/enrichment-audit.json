@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-02T23:53:36.940527+00:00",
+  "updated": "2026-11-02T23:54:50.102983+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1914,
+    "ready": 1917,
     "missing_image": 109,
-    "missing_store": 471,
+    "missing_store": 461,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -26162,17 +26162,100 @@
       "title": "Q2 HUMANITY",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:12:46.523306+00:00",
+      "attempted": "2026-11-02T23:53:40.683447+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:53:47.533960+00:00",
+              "next_attempt": "2026-11-03T23:53:47.533960+00:00",
+              "revision": "62e0ff416455d671:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:53:47.533960+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Q2-HUMANITY-2641468.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Q2-HUMANITY-2641468.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:31.250369+00:00",
+              "next_attempt": "2026-11-03T23:54:31.250369+00:00",
+              "revision": "62e0ff416455d671:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/q2_humanity",
+                "https://www.nintendolife.com/games/nintendo-switch/q2_humanity"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/q2_humanity"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:32.625694+00:00",
+              "next_attempt": "2026-11-03T23:54:32.625694+00:00",
+              "revision": "62e0ff416455d671:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=q2-humanity-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=q2-humanity-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:34.889675+00:00",
+              "next_attempt": "2026-11-03T23:54:34.889675+00:00",
+              "revision": "62e0ff416455d671:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/q2-humanity/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/q2-humanity/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/q2-humanity/"
+              ],
+              "url": "https://www.metacritic.com/game/q2-humanity/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:34.988210+00:00",
+              "next_attempt": "2026-11-03T23:54:34.988210+00:00",
+              "revision": "62e0ff416455d671:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Q2+HUMANITY&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Q2+HUMANITY&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:54:34.988342+00:00",
+              "next_attempt": "2026-11-03T00:54:34.988342+00:00",
+              "revision": "62e0ff416455d671:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:54:34.988398+00:00",
+              "next_attempt": "2026-11-03T00:54:34.988398+00:00",
+              "revision": "62e0ff416455d671:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:54:34.988342+00:00"
     },
     {
       "key": "PS5:10432",
@@ -26789,51 +26872,300 @@
       "title": "RAIDEN FIGHTERS 2 REMIX",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:12:46.523605+00:00",
+      "attempted": "2026-11-02T23:53:40.683680+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:53:46.439247+00:00",
+              "next_attempt": "2026-11-03T23:53:46.439247+00:00",
+              "revision": "5c53dcfd070d074e:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:53:46.439247+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/RAIDEN-FIGHTERS-2-REMIX-3037216.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/RAIDEN-FIGHTERS-2-REMIX-3037216.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:26.398059+00:00",
+              "next_attempt": "2026-11-03T23:54:26.398059+00:00",
+              "revision": "5c53dcfd070d074e:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/raiden_fighters_2_remix",
+                "https://www.nintendolife.com/games/nintendo-switch/raiden_fighters_2_remix"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/raiden_fighters_2_remix"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:27.795471+00:00",
+              "next_attempt": "2026-11-03T23:54:27.795471+00:00",
+              "revision": "5c53dcfd070d074e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=raiden-fighters-2-remix-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=raiden-fighters-2-remix-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:30.678784+00:00",
+              "next_attempt": "2026-11-03T23:54:30.678784+00:00",
+              "revision": "5c53dcfd070d074e:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/raiden-fighters-2-remix/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/raiden-fighters-2-remix/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/raiden-fighters-2-remix/"
+              ],
+              "url": "https://www.metacritic.com/game/raiden-fighters-2-remix/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:30.755281+00:00",
+              "next_attempt": "2026-11-03T23:54:30.755281+00:00",
+              "revision": "5c53dcfd070d074e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=RAIDEN+FIGHTERS+2+REMIX&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=RAIDEN+FIGHTERS+2+REMIX&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:54:30.755416+00:00",
+              "next_attempt": "2026-11-03T00:54:30.755416+00:00",
+              "revision": "5c53dcfd070d074e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:54:30.755481+00:00",
+              "next_attempt": "2026-11-03T00:54:30.755481+00:00",
+              "revision": "5c53dcfd070d074e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:54:30.755416+00:00"
     },
     {
       "key": "Switch:17993",
       "title": "RAIDEN FIGHTERS JET REMIX",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:12:46.524368+00:00",
+      "attempted": "2026-11-02T23:53:40.683956+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:53:41.048110+00:00",
+              "next_attempt": "2026-11-03T23:53:41.048110+00:00",
+              "revision": "36847d913a1854a2:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:53:41.048110+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/RAIDEN-FIGHTERS-JET-REMIX-3037212.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/RAIDEN-FIGHTERS-JET-REMIX-3037212.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:53:46.384888+00:00",
+              "next_attempt": "2026-11-03T23:53:46.384888+00:00",
+              "revision": "36847d913a1854a2:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/raiden_fighters_jet_remix",
+                "https://www.nintendolife.com/games/nintendo-switch/raiden_fighters_jet_remix"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/raiden_fighters_jet_remix"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:53:47.002481+00:00",
+              "next_attempt": "2026-11-03T23:53:47.002481+00:00",
+              "revision": "36847d913a1854a2:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=raiden-fighters-jet-remix-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=raiden-fighters-jet-remix-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:53:50.470921+00:00",
+              "next_attempt": "2026-11-03T23:53:50.470921+00:00",
+              "revision": "36847d913a1854a2:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/raiden-fighters-jet-remix/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/raiden-fighters-jet-remix/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/raiden-fighters-jet-remix/"
+              ],
+              "url": "https://www.metacritic.com/game/raiden-fighters-jet-remix/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:53:50.504463+00:00",
+              "next_attempt": "2026-11-03T23:53:50.504463+00:00",
+              "revision": "36847d913a1854a2:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=RAIDEN+FIGHTERS+JET+REMIX&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=RAIDEN+FIGHTERS+JET+REMIX&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:53:50.504578+00:00",
+              "next_attempt": "2026-11-03T00:53:50.504578+00:00",
+              "revision": "36847d913a1854a2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:53:50.504643+00:00",
+              "next_attempt": "2026-11-03T00:53:50.504643+00:00",
+              "revision": "36847d913a1854a2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:53:50.504578+00:00"
     },
     {
       "key": "Switch:12780",
       "title": "RUNOUT",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:12:46.525416+00:00",
+      "attempted": "2026-11-02T23:53:40.684649+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:53:48.647758+00:00",
+              "next_attempt": "2026-11-03T23:53:48.647758+00:00",
+              "revision": "13dacad7bc410068:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:53:48.647758+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/RUNOUT-2282969.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/RUNOUT-2282969.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:36.394922+00:00",
+              "next_attempt": "2026-11-03T23:54:36.394922+00:00",
+              "revision": "13dacad7bc410068:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/runout",
+                "https://www.nintendolife.com/games/nintendo-switch/runout"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/runout"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:36.998498+00:00",
+              "next_attempt": "2026-11-03T23:54:36.998498+00:00",
+              "revision": "13dacad7bc410068:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=runout-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=runout-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:40.183973+00:00",
+              "next_attempt": "2026-11-03T23:54:40.183973+00:00",
+              "revision": "13dacad7bc410068:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/runout/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/runout/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/runout/"
+              ],
+              "url": "https://www.metacritic.com/game/runout/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:40.266441+00:00",
+              "next_attempt": "2026-11-03T23:54:40.266441+00:00",
+              "revision": "13dacad7bc410068:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=RUNOUT&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=RUNOUT&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:54:40.266631+00:00",
+              "next_attempt": "2026-11-03T00:54:40.266631+00:00",
+              "revision": "13dacad7bc410068:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:54:40.266694+00:00",
+              "next_attempt": "2026-11-03T00:54:40.266694+00:00",
+              "revision": "13dacad7bc410068:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:54:40.266631+00:00"
     },
     {
       "key": "Switch:12178",
@@ -26995,29 +27327,100 @@
       "title": "Radiant: Guardians of Light",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:12:46.526143+00:00",
+      "attempted": "2026-11-02T23:53:40.684901+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:7910",
-      "title": "Ragtag Adventurers",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:12:46.526574+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:53:42.114029+00:00",
+              "next_attempt": "2026-11-03T23:53:42.114029+00:00",
+              "revision": "09ac2048e5e93a79:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:53:42.114029+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Radiant-Guardians-of-Light-2890828.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Radiant-Guardians-of-Light-2890828.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:21.402469+00:00",
+              "next_attempt": "2026-11-03T23:54:21.402469+00:00",
+              "revision": "09ac2048e5e93a79:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/radiant_guardians_of_light",
+                "https://www.nintendolife.com/games/nintendo-switch/radiant_guardians_of_light"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/radiant_guardians_of_light"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:22.545232+00:00",
+              "next_attempt": "2026-11-03T23:54:22.545232+00:00",
+              "revision": "09ac2048e5e93a79:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=radiant-guardians-of-light-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=radiant-guardians-of-light-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:27.358598+00:00",
+              "next_attempt": "2026-11-03T23:54:27.358598+00:00",
+              "revision": "09ac2048e5e93a79:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/radiant-guardians-of-light/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/radiant-guardians-of-light/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/radiant-guardians-of-light/"
+              ],
+              "url": "https://www.metacritic.com/game/radiant-guardians-of-light/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:27.438855+00:00",
+              "next_attempt": "2026-11-03T23:54:27.438855+00:00",
+              "revision": "09ac2048e5e93a79:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Radiant%3A+Guardians+of+Light&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Radiant%3A+Guardians+of+Light&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:54:27.439002+00:00",
+              "next_attempt": "2026-11-03T00:54:27.439002+00:00",
+              "revision": "09ac2048e5e93a79:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:54:27.439168+00:00",
+              "next_attempt": "2026-11-03T00:54:27.439168+00:00",
+              "revision": "09ac2048e5e93a79:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:54:27.439002+00:00"
     },
     {
       "key": "PS5:13960",
@@ -27232,61 +27635,203 @@
       "next_retry": "2026-11-03T23:31:23.659348+00:00"
     },
     {
-      "key": "Switch:9031",
-      "title": "Rampage Knights",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:12:46.528902+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:13543",
-      "title": "RayStorm X RayCrisis HD Collection",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:12:46.530343+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:17943",
       "title": "Ren & Stimpy Happy, Happy, Joy, Joy, Collection",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:12:59.885901+00:00",
+      "attempted": "2026-11-02T23:53:43.204927+00:00",
       "reasons": {
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:53:49.827209+00:00",
+              "next_attempt": "2026-11-03T23:53:49.827209+00:00",
+              "revision": "736b46f8f7378091:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:53:49.827209+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Ren-Stimpy-Happy-Happy-Joy-Joy-Collection-3033242.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Ren-Stimpy-Happy-Happy-Joy-Joy-Collection-3033242.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:41.240325+00:00",
+              "next_attempt": "2026-11-03T23:54:41.240325+00:00",
+              "revision": "736b46f8f7378091:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/ren_and_stimpy_happy_happy_joy_joy_collection",
+                "https://www.nintendolife.com/games/switch-eshop/ren_and_stimpy_happy_happy_joy_joy_collection"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/ren_and_stimpy_happy_happy_joy_joy_collection"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:42.283520+00:00",
+              "next_attempt": "2026-11-03T23:54:42.283520+00:00",
+              "revision": "736b46f8f7378091:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=ren-and-stimpy-happy-happy-joy-joy-collection-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=ren-and-stimpy-happy-happy-joy-joy-collection-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:48.473301+00:00",
+              "next_attempt": "2026-11-03T23:54:48.473301+00:00",
+              "revision": "736b46f8f7378091:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/ren-and-stimpy-happy-happy-joy-joy-collection/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/ren-and-stimpy-happy-happy-joy-joy-collection/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/ren-and-stimpy-happy-happy-joy-joy-collection/"
+              ],
+              "url": "https://www.metacritic.com/game/ren-and-stimpy-happy-happy-joy-joy-collection/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:48.527467+00:00",
+              "next_attempt": "2026-11-03T23:54:48.527467+00:00",
+              "revision": "736b46f8f7378091:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Ren+%26+Stimpy+Happy%2C+Happy%2C+Joy%2C+Joy%2C+Collection&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Ren+%26+Stimpy+Happy%2C+Happy%2C+Joy%2C+Joy%2C+Collection&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:54:48.527614+00:00",
+              "next_attempt": "2026-11-03T00:54:48.527614+00:00",
+              "revision": "736b46f8f7378091:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:54:48.527755+00:00",
+              "next_attempt": "2026-11-03T00:54:48.527755+00:00",
+              "revision": "736b46f8f7378091:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:54:48.527614+00:00"
     },
     {
       "key": "Switch:7315",
       "title": "Retro Tanks",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:13:13.752154+00:00",
+      "attempted": "2026-11-02T23:53:44.700478+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:53:50.835944+00:00",
+              "next_attempt": "2026-11-03T23:53:50.835944+00:00",
+              "revision": "f5449ad123a56cd0:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:53:50.835944+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Retro-Tanks-1823139.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Retro-Tanks-1823139.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:46.429473+00:00",
+              "next_attempt": "2026-11-03T23:54:46.429473+00:00",
+              "revision": "f5449ad123a56cd0:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/retro_tanks",
+                "https://www.nintendolife.com/games/switch-eshop/retro_tanks"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/retro_tanks"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:47.840690+00:00",
+              "next_attempt": "2026-11-03T23:54:47.840690+00:00",
+              "revision": "f5449ad123a56cd0:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=retro-tanks-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=retro-tanks-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:49.451557+00:00",
+              "next_attempt": "2026-11-03T23:54:49.451557+00:00",
+              "revision": "f5449ad123a56cd0:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/retro-tanks/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/retro-tanks/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/retro-tanks/"
+              ],
+              "url": "https://www.metacritic.com/game/retro-tanks/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:54:49.607057+00:00",
+              "next_attempt": "2026-11-03T23:54:49.607057+00:00",
+              "revision": "f5449ad123a56cd0:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Retro+Tanks&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Retro+Tanks&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:54:49.607263+00:00",
+              "next_attempt": "2026-11-03T00:54:49.607263+00:00",
+              "revision": "f5449ad123a56cd0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:54:49.607321+00:00",
+              "next_attempt": "2026-11-03T00:54:49.607321+00:00",
+              "revision": "f5449ad123a56cd0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:54:49.607263+00:00"
     },
     {
       "key": "Switch:18883",
