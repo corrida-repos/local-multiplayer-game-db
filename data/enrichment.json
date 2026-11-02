@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:22:03.212072+00:00",
+  "updated": "2026-11-02T17:22:23.466464+00:00",
   "version": 2,
   "coverage": {
     "total": 1647,
-    "attempted": 562,
-    "ready": 348,
-    "missing_image": 1103,
-    "missing_store": 1124,
-    "missing_rating": 1276,
+    "attempted": 572,
+    "ready": 353,
+    "missing_image": 1095,
+    "missing_store": 1116,
+    "missing_rating": 1270,
     "full_attempted": 0
   },
   "games": {
@@ -22199,23 +22199,40 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "TouchArcade",
+              "score": 80,
+              "url": "https://toucharcade.com/2023/09/05/taito-milestones-2-switch-eshop-review-digital-release-rhapsody-marl-kingdom-chronicles/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:05.458569+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "basics_attempted": "2026-11-02T17:22:05.458569+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:11887": {
@@ -22223,48 +22240,201 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 75.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2022/06/gravitar-recharged-review/",
+              "date": "2022-06-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 80,
+              "url": "https://www.gamingnexus.com/Article/7600/Gravitar-Recharged/",
+              "date": "2022-06-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 70,
+              "url": "https://www.playstationcountry.com/gravitar-recharged-ps5-review/",
+              "date": "2022-06-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "http://www.pushsquare.com/reviews/ps5/gravitar-recharged",
+              "date": "2022-06-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 8.14,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.07,
+              "count": 42,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA07625_00-4445486078309741",
+              "checked": "2026-11-02T17:22:07.922669+00:00",
+              "platform": "PSN · PS5",
+              "weight": 6.48074069840786,
+              "normalized": 8.14
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:05.458711+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA07625_00-4445486078309741",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:22:07.922669+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202204/2818/JNdqhiBqzI2Yg61kZgY06R6E.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0182-PPSA07625_00-4445486078309741",
+        "checked": "2026-11-02T17:22:07.922669+00:00"
+      },
+      "user": {
+        "score": 4.07,
+        "count": 42,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA07625_00-4445486078309741",
+        "checked": "2026-11-02T17:22:07.922669+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP0182-PPSA07625_00-4445486078309741",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0182-PPSA07625_00-4445486078309741",
+        "checked": "2026-11-02T17:22:07.922669+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:05.458711+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:11885": {
       "title": "Gravitar: Recharged",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.1,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Gamezebo",
+              "score": 70,
+              "url": "https://www.gamezebo.com/reviews/switch-review-round-up-mighty-goose-mini-motorways-kao-the-kangaroo-and-more/",
+              "date": "2022-07-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 67,
+              "url": "https://gaming-age.com/2022/06/gravitar-recharged-review-for-nintendo-switch-ps4-5-xbox-one-series-x/",
+              "date": "2022-06-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 75,
+              "url": "https://www.player2.net.au/2022/06/gravitar-recharged-reviving-the-under-appreciated/",
+              "date": "2022-06-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 60,
+              "url": "https://purenintendo.com/review-gravitar-recharged-nintendo-switch/",
+              "date": "2022-06-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 70,
+              "url": "https://toucharcade.com/2022/10/25/thems-fightin-herds-switch-review-warhammer-40000-eshop-deals-halloween/",
+              "date": "2022-10-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 74,
+              "url": "https://videochums.com/review/gravitar-recharged",
+              "date": "2022-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 75,
+              "url": "https://worthplaying.com/article/2022/7/15/reviews/132840-switch-review-gravitar-recharged/",
+              "date": "2022-07-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 7
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:05.458989+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/gravitar-recharged-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:22:06.641682+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000052492/2166b9ced19199e70d4dc97cc2a0758f3f4a082b252a0379c70e6f52c62870c5",
+        "source": "https://www.nintendo.com/us/store/products/gravitar-recharged-switch/",
+        "checked": "2026-11-02T17:22:06.641842+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:05.458989+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:14153": {
       "title": "Growl",
@@ -22273,21 +22443,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:07.927672+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-GROWL-2425859.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:22:11.230608+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/1x1_NSwitchDS_ArcadeArchivesGrowl_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-GROWL-2425859.html",
+        "checked": "2026-11-02T17:22:11.230608+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:07.927672+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:10599": {
@@ -22297,21 +22485,41 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:08.074414+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/guardian-force-saturn-tribute-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:22:09.941091+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000041619/6ac88920afa60cf6e979a64759589c468c06292fec2be76bddfa1a1bc50d0f7c",
+        "source": "https://www.nintendo.com/us/store/products/guardian-force-saturn-tribute-switch/",
+        "checked": "2026-11-02T17:22:09.941235+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:08.074414+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found"
       }
     },
     "Switch:12554": {
@@ -22319,24 +22527,88 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 49.8,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Cubed3",
+              "score": 30,
+              "url": "http://www.cubed3.com/review/4693/1/guilt-battle-arena-nintendo-switch.html",
+              "date": "2018-03-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 59,
+              "url": "http://www.nintenderos.com/2018/03/analisis-guilt-battle-arena/",
+              "date": "2018-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 40,
+              "url": "http://nintendoenthusiast.com/blog/2018/03/05/guilt-battle-arena-review-nintendo-switch/",
+              "date": "2018-03-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/guilt_battle_arena",
+              "date": "2018-03-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/46844/guilt-battle-arena-switch-review",
+              "date": "2018-03-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 40,
+              "url": "http://switchplayer.net/2018/04/02/guilt-battle-arena-review/",
+              "date": "2018-04-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 6
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:10.203482+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/GUILT-BATTLE-ARENA-1344438.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:22:13.447726+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_GuiltBattleArena_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/GUILT-BATTLE-ARENA-1344438.html",
+        "checked": "2026-11-02T17:22:13.447726+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:10.203482+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:12378": {
       "title": "Gun Frontier",
@@ -22345,21 +22617,30 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:12.847126+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:22:12.847126+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:11201": {
@@ -38783,21 +39064,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:05.459235+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/gravityscape-dx-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:22:07.744693+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000077380/b05deefabdb5fddfb7bd6ecaa2c4c34e0ad894a69e59fd7208635686a1c82635",
+        "source": "https://www.nintendo.com/us/store/products/gravityscape-dx-switch/",
+        "checked": "2026-11-02T17:22:07.744910+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:05.459235+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:15119": {
@@ -61466,22 +61764,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 4.88,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 2.44,
+              "count": 179,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/HB1179-PPSA32765_00-0486991519684660",
+              "checked": "2026-11-02T17:22:08.070910+00:00",
+              "platform": "PSN · PS5",
+              "weight": 13.379088160259652,
+              "normalized": 4.88
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:06.641979+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/HB1179-PPSA32765_00-0486991519684660",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:22:08.070910+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202601/0903/9feec62b7369b9a77a2dabd3cfe5489477fa01c89bac10f0.png",
+        "source": "https://store.playstation.com/pt-pt/product/HB1179-PPSA32765_00-0486991519684660",
+        "checked": "2026-11-02T17:22:08.070910+00:00"
+      },
+      "user": {
+        "score": 2.44,
+        "count": 179,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/HB1179-PPSA32765_00-0486991519684660",
+        "checked": "2026-11-02T17:22:08.070910+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "HB1179-PPSA32765_00-0486991519684660",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/HB1179-PPSA32765_00-0486991519684660",
+        "checked": "2026-11-02T17:22:08.070910+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:06.641979+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:18278": {
       "title": "Gunboat God",
@@ -61490,22 +61836,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.26,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.13,
+              "count": 8,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP2660-PPSA34003_00-0185371045862545",
+              "checked": "2026-11-02T17:22:14.682215+00:00",
+              "platform": "PSN · PS5",
+              "weight": 2.8284271247461903,
+              "normalized": 8.26
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:13.448130+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP2660-PPSA34003_00-0185371045862545",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:22:14.682215+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202602/0510/25d6d01e195c869e3ae6cc32e7acc1e6e37bfd58049d6328.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP2660-PPSA34003_00-0185371045862545",
+        "checked": "2026-11-02T17:22:14.682215+00:00"
+      },
+      "user": {
+        "score": 4.13,
+        "count": 8,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP2660-PPSA34003_00-0185371045862545",
+        "checked": "2026-11-02T17:22:14.682215+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP2660-PPSA34003_00-0185371045862545",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP2660-PPSA34003_00-0185371045862545",
+        "checked": "2026-11-02T17:22:14.682215+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:13.448130+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:18168": {
       "title": "Hero Siege",
