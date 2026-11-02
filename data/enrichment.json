@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:25:51.271572+00:00",
+  "updated": "2026-11-02T17:26:31.208311+00:00",
   "version": 2,
   "coverage": {
     "total": 1823,
-    "attempted": 632,
-    "ready": 396,
-    "missing_image": 1220,
-    "missing_store": 1244,
-    "missing_rating": 1395,
+    "attempted": 642,
+    "ready": 404,
+    "missing_image": 1211,
+    "missing_store": 1235,
+    "missing_rating": 1387,
     "full_attempted": 0
   },
   "games": {
@@ -71482,21 +71482,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:25:54.629897+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/ACA-NEOGEO-CROSSED-SWORDS-1425379.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:25:59.307809+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_AcaNeogeoCrossedSwords_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/ACA-NEOGEO-CROSSED-SWORDS-1425379.html",
+        "checked": "2026-11-02T17:25:59.307809+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:25:54.629897+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:5543": {
@@ -71506,21 +71524,49 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.2,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.2,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/dark-quest-2/user-reviews/?platform=nintendo-switch",
+              "platform": "Switch",
+              "weight": 2.449489742783178,
+              "normalized": 7.199999999999999
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:25:54.630039+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/dark-quest-2-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:25:57.550952+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000017451/268c56acdcb11e876c01dce3360d9bd583ec702f05872bb96a754ac56585128f",
+        "source": "https://www.nintendo.com/us/store/products/dark-quest-2-switch/",
+        "checked": "2026-11-02T17:25:57.551184+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:25:54.630039+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:5271": {
@@ -71528,48 +71574,105 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/de_blob_2",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 16,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/de_blob_2",
+              "platform": "Nintendo Switch",
+              "weight": 4.0,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:25:54.630276+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/de-blob-2-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:25:58.305023+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000007869/56b51da1704e4d88007d6434d827fd94d66ceca0195b8f78635797566f48553c",
+        "source": "https://www.nintendo.com/us/store/products/de-blob-2-switch/",
+        "checked": "2026-11-02T17:25:58.305338+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:25:54.630276+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:5557": {
       "title": "Defense Grid 2",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=defense-grid-2-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:25:54.630398+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/defense-grid-2-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:25:59.107716+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000013521/42c82befeb8ec8fc8f64d14048acaac28675721f904b0866767c627eaa824dce",
+        "source": "https://www.nintendo.com/us/store/products/defense-grid-2-switch/",
+        "checked": "2026-11-02T17:25:59.108012+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:25:54.630398+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:5432": {
       "title": "Degrees of Separation",
@@ -71578,22 +71681,48 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.6,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.6,
+              "scale": 10.0,
+              "count": 9,
+              "url": "https://www.nintendolife.com/games/switch-eshop/degrees_of_separation",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 6.6
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:26:00.193998+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/degrees-of-separation-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:26:01.666684+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000012282/9090fec7375ae7ed436db02f4dbb470c8e3769cb99d393212433b0cfb815df9c",
+        "source": "https://www.nintendo.com/us/store/products/degrees-of-separation-switch/",
+        "checked": "2026-11-02T17:26:01.666877+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:26:00.193998+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:5407": {
       "title": "Deru",
@@ -71602,21 +71731,32 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:26:01.727049+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:26:01.727049+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found"
       }
     },
     "Switch:5594": {
@@ -71624,48 +71764,94 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=door-kickers-action-squad-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:26:04.075319+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/door-kickers-action-squad-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:26:06.057953+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000015863/1281eda40584bd47a1272344e6b7aeeb1676f2cd1ab87119482abe9e02ade518",
+        "source": "https://www.nintendo.com/us/store/products/door-kickers-action-squad-switch/",
+        "checked": "2026-11-02T17:26:06.058176+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:26:04.075319+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:5265": {
       "title": "Epic Loon",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=epic-loon-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:26:07.954697+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/epic-loon-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:26:08.917817+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000006582/18415412ff55af8a52ab7fbae30fefd8dcaea3b82d1ec320b291782e70706be2",
+        "source": "https://www.nintendo.com/us/store/products/epic-loon-switch/",
+        "checked": "2026-11-02T17:26:08.917934+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:26:07.954697+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:5559": {
       "title": "Farm Together",
@@ -71674,46 +71860,106 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.9,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.9,
+              "scale": 10.0,
+              "count": 9,
+              "url": "https://www.nintendolife.com/games/switch-eshop/farm_together",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 6.9
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:26:11.669552+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/farm-together-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:26:13.589754+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000013165/982d383107fecd2949ca0dfa2ff48dec749e820d42424cf4d7642c11b17fb6c0",
+        "source": "https://www.nintendo.com/us/store/products/farm-together-switch/",
+        "checked": "2026-11-02T17:26:13.589968+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:26:11.669552+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:5259": {
       "title": "Flat Heroes",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/flat_heroes",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.2,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.2,
+              "scale": 10.0,
+              "count": 14,
+              "url": "https://www.nintendolife.com/games/switch-eshop/flat_heroes",
+              "platform": "Nintendo Switch",
+              "weight": 3.7416573867739413,
+              "normalized": 7.199999999999999
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:26:13.677640+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/flat-heroes-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:26:15.253452+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000001129/2228f268003a3bcc5c2e8be4d7a1d6780b4f1aa8cee45d94cfc1f7b124f31e0f",
+        "source": "https://www.nintendo.com/us/store/products/flat-heroes-switch/",
+        "checked": "2026-11-02T17:26:15.253633+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:26:13.677640+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:5352": {
       "title": "Fossil Hunters",
