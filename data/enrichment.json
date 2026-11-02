@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T21:06:10.054771+00:00",
+  "updated": "2026-11-02T21:06:43.049649+00:00",
   "version": 4,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 144,
     "missing_store": 256,
     "missing_rating": 611,
-    "full_attempted": 942
+    "full_attempted": 952
   },
   "games": {
     "PS5:13238": {
@@ -12982,7 +12982,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:55:47.475393+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:06:24.752557+00:00"
       },
       "requirements": {
         "image": true,
@@ -13002,8 +13010,11 @@
       "basics_attempted": "2026-11-02T18:55:47.475393+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
-      }
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:06:27.233382+00:00"
     },
     "Switch:11051": {
       "title": "Chicory: A Colorful Tale",
@@ -13099,7 +13110,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:02:31.266690+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:06:33.557309+00:00"
       },
       "requirements": {
         "image": true,
@@ -13118,7 +13137,17 @@
       },
       "basics_attempted": "2026-11-02T17:02:31.266690+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed"
+      },
+      "trailer": {
+        "id": "uJmNCphD_aU",
+        "title": "Chicory: A Colorful Tale - Official Trailer | PS5, PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/chicory-a-colorful-tale/"
+      },
+      "full_attempted": "2026-11-02T21:06:36.312919+00:00"
     },
     "PS5:14473": {
       "title": "Chipmonk!",
@@ -13192,7 +13221,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:55:47.475996+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:06:32.454032+00:00"
       },
       "requirements": {
         "image": true,
@@ -13212,8 +13249,11 @@
       "basics_attempted": "2026-11-02T18:55:47.475996+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
-      }
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:06:35.003684+00:00"
     },
     "Switch:11610": {
       "title": "Chippy",
@@ -83362,26 +83402,64 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 79.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Digital Chumps",
+              "score": 85,
+              "url": "https://digitalchumps.com/chip-clawz",
+              "date": "2025-09-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 70,
+              "url": "https://www.gamingnexus.com/Article/16256/Chip-n-Clawz-vs-The-Brainioids/",
+              "date": "2025-08-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Movies Games and Tech",
+              "score": 80,
+              "url": "https://moviesgamesandtech.com/2025/09/07/review-chip-n-clawz-vs-the-brainioids/",
+              "date": "2025-09-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation LifeStyle",
+              "score": 80,
+              "url": "https://www.playstationlifestyle.net/review/920770-chip-n-clawz-vs-the-brainioids-ps5-review/",
+              "date": "2025-08-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/5-super-special-ps5-games#chip-n-clawz-vs-the-brainioids",
+              "date": "2025-08-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 5
         },
         "user": {
           "score": 8.92,
           "scale": 10,
           "sources": [
             {
-              "score": 4.46,
-              "count": 124,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.46,
               "scale": 5,
-              "source": "PSN",
+              "count": 124,
               "url": "https://store.playstation.com/pt-pt/product/UP1980-PPSA28678_00-0039500138946665",
-              "checked": "2026-11-02T17:08:09.338680+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 11.135528725660043,
               "normalized": 8.92
             }
@@ -83389,7 +83467,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:08:08.149580+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:06:30.273015+00:00"
       },
       "requirements": {
         "image": true,
@@ -83427,7 +83512,10 @@
       },
       "basics_attempted": "2026-11-02T17:08:08.149580+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:06:30.770346+00:00"
     },
     "Switch:16391": {
       "title": "Cho Aniki Collection",
@@ -98867,6 +98955,7 @@
               "name": "Pure Nintendo",
               "score": 70,
               "url": "https://purenintendo.com/review-chicken-run-eggstraction-nintendo-switch/",
+              "date": "2025-11-20",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -98881,7 +98970,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:18:44.744456+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:06:26.957660+00:00"
       },
       "requirements": {
         "image": true,
@@ -98901,8 +98998,11 @@
       "basics_attempted": "2026-11-02T17:18:44.744456+00:00",
       "version": 2,
       "errors": {
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:06:31.635892+00:00"
     },
     "Switch:17827": {
       "title": "Cinnabunny",
@@ -126264,11 +126364,108 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 83.8,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Eurogamer Italy",
+              "score": 80,
+              "url": "https://www.eurogamer.it/articles/2018-11-12-child-of-light-ultimate-edition-recensione",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 83,
+              "url": "https://www.everyeye.it/articoli/recensione-child-of-light-ultimate-edition-fiaba-ubisoft-arriva-switch-41145.html",
+              "date": "2018-10-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/11647-child-of-light-ultimate-edition",
+              "date": "2018-10-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/child-of-light-review/1900-6415744/",
+              "date": "2018-10-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 90,
+              "url": "http://www.gameblog.fr/tests/3190-child-of-light-switch",
+              "date": "2018-10-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 88,
+              "url": "https://it.ign.com/child-of-light-nintendo-switch/146060/review/child-of-light-la-recensione-della-versione-switch",
+              "date": "2018-10-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 90,
+              "url": "http://www.jeuxvideo.com/test/938534/child-of-light-une-version-au-niveau-pour-un-j-rpg-plein-de-poesie.htm",
+              "date": "2018-10-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 88,
+              "url": "https://multiplayer.it/recensioni/child-of-light-ultimate-edition-recensione-nintendo-switch.html",
+              "date": "2018-10-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 90,
+              "url": "https://www.nintenderos.com/2018/10/analisis-child-of-light-ultimate-edition/",
+              "date": "2018-10-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/child_of_light_ultimate_edition",
+              "date": "2018-10-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/48610/child-of-light-ultimate-editionswitch-review",
+              "date": "2018-10-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 82,
+              "url": "https://www.spaziogames.it/child-of-light-ultimate-edition-recensione-la-magia-arriva-su-switch/",
+              "date": "2018-10-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 12
         },
         "user": {
           "score": 8.3,
@@ -126280,7 +126477,7 @@
               "scale": 10,
               "count": 110,
               "url": "https://www.metacritic.com/game/child-of-light/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 10.488088481701515,
               "normalized": 8.3
             }
@@ -126288,7 +126485,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:19:19.940559+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 12,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:06:35.750984+00:00"
       },
       "requirements": {
         "image": true,
@@ -126300,53 +126505,222 @@
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed"
       },
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/8/8c/Child_of_Light_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
         "source": "https://en.wikipedia.org/wiki/Child_of_Light",
         "checked": "2026-11-02T19:29:28.508739+00:00",
         "method": "verified-game-article"
-      }
+      },
+      "trailer": {
+        "id": "L1ZYj2yReBk",
+        "title": "Child of Light Accolades Trailer",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/child-of-light/"
+      },
+      "full_attempted": "2026-11-02T21:06:38.777486+00:00"
     },
     "Switch:5522": {
       "title": "Chocobo's Mystery Dungeon Every Buddy",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 73.4,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/chocobos_mystery_dungeon_every_buddy",
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/5490/1/chocobos-mystery-dungeon-every-buddy-nintendo-switch.html",
+              "date": "2019-06-03",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 80,
+              "url": "https://www.destructoid.com/review-chocobo-s-mystery-dungeon-every-buddy--550930.phtml",
+              "date": "2019-04-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 90,
+              "url": "http://www.digitallydownloaded.net/2019/03/review-chocobo-mystery-dungeon-every.html",
+              "date": "2019-03-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 75,
+              "url": "https://www.everyeye.it/articoli/recensione-chocobo-s-mystery-dungeon-every-buddy-versione-switch-43391.html",
+              "date": "2019-04-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 70,
+              "url": "https://www.gamespace.com/featured/chocobos-mystery-dungeon-every-buddy-review-adorably-punishing/",
+              "date": "2019-03-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 60,
+              "url": "http://www.gameblog.fr/tests/3352-chocobo-s-mystery-dungeon-every-buddy-switch-ps4",
+              "date": "2019-03-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 72,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-chocobos-mystery-dungeon-every-buddy-nintendo-switch-ps4-394143",
+              "date": "2019-03-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 73,
+              "url": "https://es.ign.com/chocobos-mystery-dungeon-every-buddy-nintendo-switch/147596/review/analisis-de-chocobos-mystery-dungeon-every-buddy-para-switch",
+              "date": "2019-03-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 70,
+              "url": "http://www.jeuxvideo.com/test/1019303/chocobo-s-mystery-dungeon-every-buddy-un-portage-digne-d-interet.htm",
+              "date": "2019-03-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 75,
+              "url": "https://multiplayer.it/recensioni/chocobos-mystery-dungeon-every-buddy-recensione.html",
+              "date": "2019-04-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 66,
+              "url": "https://www.nintenderos.com/2019/03/analisis-chocobos-mystery-dungeon-every-buddy/",
+              "date": "2019-03-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 80,
+              "url": "https://www.nintendoenthusiast.com/2019/03/29/chocobos-mystery-dungeon-every-buddy-review-for-nintendo-switch/",
+              "date": "2019-03-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/chocobors_mystery_dungeon_every_buddy?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2019-04-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 65,
+              "url": "http://www.nintendoworldreport.com/review/50092/chocobos-mystery-dungeon-every-buddy-switch-review",
+              "date": "2019-03-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 70,
+              "url": "https://www.pocketgamer.com/articles/080165/chocobos-mystery-dungeon-every-buddy-review/",
+              "date": "2019-04-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-chocobos-mystery-dungeon-every-buddy-nintendo-switch/",
+              "date": "2019-04-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 72,
+              "url": "http://www.rpgfan.com/reviews/Chocobos_Mystery_Dungeon_Every_Buddy/index.html",
+              "date": "2019-09-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 80,
+              "url": "https://twinfinite.net/2019/03/chocobos-mystery-dungeon-every-buddy-review/",
+              "date": "2019-03-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 80,
+              "url": "https://www.vooks.net/chocobos-mystery-dungeon-every-buddy-switch-eshop-review/",
+              "date": "2019-07-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 70,
+              "url": "https://www.xgn.nl/review/chocobos-mystery-dungeon-every-buddy-review",
+              "date": "2019-03-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 20
         },
         "user": {
-          "score": 7.2,
+          "score": 7.7,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.2,
-              "scale": 10.0,
-              "count": 62,
-              "url": "https://www.nintendolife.com/games/switch-eshop/chocobos_mystery_dungeon_every_buddy",
+              "name": "Metacritic users",
+              "score": 7.7,
+              "scale": 10,
+              "count": 36,
+              "url": "https://www.metacritic.com/game/chocobos-mystery-dungeon-every-buddy/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 7.874007874011811,
-              "normalized": 7.199999999999999
+              "weight": 6.0,
+              "normalized": 7.7
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:25:43.052298+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 20,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:06:40.158047+00:00"
       },
       "requirements": {
         "image": true,
@@ -126365,7 +126739,17 @@
       },
       "basics_attempted": "2026-11-02T17:25:43.052298+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed"
+      },
+      "trailer": {
+        "id": "flWfNqBkKJw",
+        "title": "Chocobo’s Mystery Dungeon - Every Buddy!: Story Trailer | PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/chocobos-mystery-dungeon-every-buddy/"
+      },
+      "full_attempted": "2026-11-02T21:06:42.938580+00:00"
     },
     "Switch:5339": {
       "title": "Claws of Furry",
@@ -131532,39 +131916,112 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 79.4,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/children_of_morta",
+              "name": "4P.de",
+              "score": 79,
+              "url": "https://www.4players.de/4players.php/dispbericht/Switch/Test/36124/84085/0/Children_of_Morta.html",
+              "date": "2019-11-20",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 81,
+              "url": "https://cogconnected.com/review/children-morta-switch-review/",
+              "date": "2019-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/5707/1/children-of-morta-nintendo-switch.html",
+              "date": "2019-12-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "https://fnintendo.net/article/13323-children-of-morta",
+              "date": "2019-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 80,
+              "url": "https://www.gamespace.com/featured/children-of-morta-switch-review/",
+              "date": "2019-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 85,
+              "url": "https://www.nintendoenthusiast.com/children-of-morta-review-for-nintendo-switch-focus-on-the-family/",
+              "date": "2019-12-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/children_of_morta?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2019-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/52215/children-of-morta-switch-review",
+              "date": "2019-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2020/07/24/children-of-morta-review/",
+              "date": "2020-07-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
-          "score": 7.7,
+          "score": 8.2,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.7,
-              "scale": 10.0,
-              "count": 49,
-              "url": "https://www.nintendolife.com/games/switch-eshop/children_of_morta",
+              "name": "Metacritic users",
+              "score": 8.2,
+              "scale": 10,
+              "count": 96,
+              "url": "https://www.metacritic.com/game/children-of-morta/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 7.0,
-              "normalized": 7.7
+              "weight": 9.797958971132712,
+              "normalized": 8.2
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:26:54.745933+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:06:29.166301+00:00"
       },
       "requirements": {
         "image": true,
@@ -131583,7 +132040,11 @@
       },
       "basics_attempted": "2026-11-02T17:26:54.745933+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "nindie": "No exact scored Nintendo Switch review",
+        "slush": "No scored Switch review indexed"
+      },
+      "full_attempted": "2026-11-02T21:06:34.073645+00:00"
     },
     "Switch:5637": {
       "title": "Civilization VI",
@@ -131622,7 +132083,17 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:23:31.102268+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:06:37.983703+00:00"
       },
       "requirements": {
         "image": true,
@@ -131636,7 +132107,9 @@
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/sid-meiers-civilization-vi-switch/",
@@ -131647,7 +132120,8 @@
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000013704/918c0badde3aeba760e2185f382a2402248a1292322cf540fd8d098eeb292e1e",
         "source": "https://www.nintendo.com/us/store/products/sid-meiers-civilization-vi-switch/",
         "checked": "2026-11-02T19:23:33.912255+00:00"
-      }
+      },
+      "full_attempted": "2026-11-02T21:06:40.914767+00:00"
     },
     "Switch:5967": {
       "title": "Code Shifter",
@@ -172052,34 +172526,209 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 87.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Finger Guns",
+              "score": 90,
+              "url": "https://fingerguns.net/reviews/2021/06/10/chicory-a-colorful-tale-review-ps5-an-unexpected-goty-contender/",
+              "date": "2021-06-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMINGbible",
+              "score": 90,
+              "url": "https://www.gamingbible.co.uk/reviews/games-stonefly-review-mini-mechs-in-a-wondrous-painterly-world-20210601",
+              "date": "2021-06-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 90,
+              "url": "https://gamerant.com/chicory-colorful-tale-review/",
+              "date": "2021-07-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2021/06/chicory-a-colorful-tale-review/",
+              "date": "2021-06-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 90,
+              "url": "https://www.gamespot.com/reviews/chicory-a-colorful-tale-review-masterful-strokes/1900-6417696/",
+              "date": "2021-07-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 95,
+              "url": "https://gamingtrend.com/feature/reviews/paint-the-future-chicory-a-colorful-tale-review/",
+              "date": "2021-06-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gfinity",
+              "score": 90,
+              "url": "https://www.gfinityesports.com/reviews/chicory-a-colorful-tale-review-chicory-ps5/",
+              "date": "2021-06-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 100,
+              "url": "https://www.heypoorplayer.com/2021/06/16/chicory-a-colorful-tale-review-ps5/",
+              "date": "2021-06-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 80,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-chicory-colorful-tale-ps5-ps4-pc-879495",
+              "date": "2021-06-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 90,
+              "url": "https://www.ign.com/articles/chicory-colorful-tale-review",
+              "date": "2021-06-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 70,
+              "url": "https://it.ign.com/chicory-a-colorful-tale/184000/review/chicory-a-colorful-tale-la-recensione ",
+              "date": "2021-07-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 85,
+              "url": "https://www.jeuxvideo.com/test/1428516/chicory-le-jeu-d-aventure-dote-d-un-sacre-coup-de-pinceau.htm",
+              "date": "2021-06-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 80,
+              "url": "https://metro.co.uk/2021/06/17/chicory-a-colorful-tale-review-paint-your-own-adventure-14785718/",
+              "date": "2021-06-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY",
+              "score": 90,
+              "url": "",
+              "date": "2021-07-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 90,
+              "url": "http://www.playstationcountry.com/chicory-a-colorful-tale-ps5-review/",
+              "date": "2021-07-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 90,
+              "url": "https://www.psu.com/reviews/chicory-a-colorful-tale-review-ps5-a-beautiful-adventure/",
+              "date": "2021-06-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Playstation",
+              "score": 90,
+              "url": "https://pureplaystation.com/review-chicory-a-colorful-tale-ps5-ps4/2021/07/",
+              "date": "2021-07-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 90,
+              "url": "http://www.pushsquare.com/reviews/ps5/chicory_a_colorful_tale",
+              "date": "2021-06-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/unconventional-indie-games-part-2#chicory-a-colorful-tale",
+              "date": "2021-07-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VideoGamer",
+              "score": 80,
+              "url": "https://www.videogamer.com/reviews/chicory-a-colorful-tale-review/",
+              "date": "2021-07-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 20
         },
         "user": {
-          "score": 8.88,
+          "score": 8.5,
           "scale": 10,
           "sources": [
             {
-              "score": 4.44,
-              "count": 543,
-              "scope": "PSN · PS4/PS5",
+              "name": "Metacritic users",
+              "score": 7.1,
+              "scale": 10,
+              "count": 39,
+              "url": "https://www.metacritic.com/game/chicory-a-colorful-tale/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 6.244997998398398,
+              "normalized": 7.1
+            },
+            {
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.44,
               "scale": 5,
-              "source": "PSN",
+              "count": 543,
               "url": "https://store.playstation.com/pt-pt/product/EP0403-PPSA03040_00-4483807038466427",
-              "checked": "2026-11-02T17:41:15.234713+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 23.302360395462088,
               "normalized": 8.88
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:41:13.963355+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 20,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:06:31.380802+00:00"
       },
       "requirements": {
         "image": true,
@@ -172117,7 +172766,14 @@
       },
       "basics_attempted": "2026-11-02T17:41:13.963355+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {},
+      "trailer": {
+        "id": "uJmNCphD_aU",
+        "title": "Chicory: A Colorful Tale - Official Trailer | PS5, PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/chicory-a-colorful-tale/"
+      },
+      "full_attempted": "2026-11-02T21:06:33.361520+00:00"
     },
     "Switch:9832": {
       "title": "ConnecTank",
