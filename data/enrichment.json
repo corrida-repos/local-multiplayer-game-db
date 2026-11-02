@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:53:10.527236+00:00",
+  "updated": "2026-11-02T17:53:33.022465+00:00",
   "version": 2,
   "coverage": {
     "total": 2542,
-    "attempted": 1242,
-    "ready": 769,
-    "missing_image": 1402,
-    "missing_store": 1472,
-    "missing_rating": 1695,
+    "attempted": 1252,
+    "ready": 776,
+    "missing_image": 1394,
+    "missing_store": 1465,
+    "missing_rating": 1687,
     "full_attempted": 0
   },
   "games": {
@@ -37162,21 +37162,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:18.292056+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:53:18.292056+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:14016": {
@@ -37184,24 +37196,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 80.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=manic-mechanics-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:18.885883+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/manic-mechanics-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:53:21.263552+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000066855/cea9bd5efae680226adee66c8edc05fe69fed54175409f288187289e3cf36431",
+        "source": "https://www.nintendo.com/us/store/products/manic-mechanics-switch/",
+        "checked": "2026-11-02T17:53:21.263717+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:18.885883+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:13379": {
       "title": "Mari and Bayu - The Road Home",
@@ -66272,22 +66307,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.38,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.19,
+              "count": 74,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP2796-PPSA28677_00-0522336102818921",
+              "checked": "2026-11-02T17:53:14.154479+00:00",
+              "platform": "PSN · PS5",
+              "weight": 8.602325267042627,
+              "normalized": 8.38
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:12.829215+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP2796-PPSA28677_00-0522336102818921",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:53:14.154479+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202506/2612/bc24d172b1dd267e2d665339d80860d16c6405db91ef02c9.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP2796-PPSA28677_00-0522336102818921",
+        "checked": "2026-11-02T17:53:14.154479+00:00"
+      },
+      "user": {
+        "score": 4.19,
+        "count": 74,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP2796-PPSA28677_00-0522336102818921",
+        "checked": "2026-11-02T17:53:14.154479+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP2796-PPSA28677_00-0522336102818921",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP2796-PPSA28677_00-0522336102818921",
+        "checked": "2026-11-02T17:53:14.154479+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:12.829215+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:17225": {
       "title": "Mai: Child of Ages",
@@ -66296,21 +66379,49 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.8,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.8,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/mai-child-of-ages/user-reviews/?platform=nintendo-switch",
+              "platform": "Switch",
+              "weight": 2.0,
+              "normalized": 7.800000000000001
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:12.829410+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/mai-child-of-ages-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:53:14.262843+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000093449/4afe13c9de66fbb7791949dd342dfbb6cdb25069b394d2e5f297dcb7878c4ff0",
+        "source": "https://www.nintendo.com/us/store/products/mai-child-of-ages-switch/",
+        "checked": "2026-11-02T17:53:14.263068+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:12.829410+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:17252": {
@@ -66320,45 +66431,114 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.18,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.59,
+              "count": 184,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP2005-PPSA27773_00-MAIDENCOPS000000",
+              "checked": "2026-11-02T17:53:16.288908+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 13.564659966250536,
+              "normalized": 9.18
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:14.161001+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP2005-PPSA27773_00-MAIDENCOPS000000",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:53:16.288908+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202506/2007/e037df2b7065a2db643f525de638a81323e92e0e56b6cbaa.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP2005-PPSA27773_00-MAIDENCOPS000000",
+        "checked": "2026-11-02T17:53:16.288908+00:00"
+      },
+      "user": {
+        "score": 4.59,
+        "count": 184,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP2005-PPSA27773_00-MAIDENCOPS000000",
+        "checked": "2026-11-02T17:53:16.288908+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP2005-PPSA27773_00-MAIDENCOPS000000",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP2005-PPSA27773_00-MAIDENCOPS000000",
+        "checked": "2026-11-02T17:53:16.288908+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:14.161001+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:17255": {
       "title": "Maiden Cops",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 73.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 73.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=maiden-cops-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:16.293119+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "image": {
+        "url": "https://nindiespotlight.com/images/games/m/maiden-cops-switch-banner.webp",
+        "source": "https://www.nindiespotlight.com/game_profile.cfm?game=maiden-cops-switch",
+        "checked": "2026-11-02T17:53:22.805944+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:16.293119+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "PS5:17236": {
@@ -77177,21 +77357,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:12.829682+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:53:12.829682+00:00",
+      "version": 2,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified: 'NoneType' object has no attribute 'get'",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "Switch:18679": {
@@ -77199,23 +77387,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 43.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 43.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=mai-child-of-ages-storms-of-time-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:12.829937+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/mai-child-of-ages-storms-of-time-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:53:15.335038+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000119444/bf6e079a9a8b0830048b730ef9e5eea2c98d5fb152b462bc03856f75df508735",
+        "source": "https://www.nintendo.com/us/store/products/mai-child-of-ages-storms-of-time-switch/",
+        "checked": "2026-11-02T17:53:15.335263+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:12.829937+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "PS5:18807": {
@@ -91921,24 +92134,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/manual_samuel",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:23.453617+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/manual-samuel-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:53:25.132633+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000006931/0dcc92621f6a30a7c15439e8ac5cfc1f9cb90e5d3d038c276cab25a663e78ddb",
+        "source": "https://www.nintendo.com/us/store/products/manual-samuel-switch/",
+        "checked": "2026-11-02T17:53:25.132950+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:23.453617+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:6128": {
       "title": "Megabyte Punch",
@@ -104009,24 +104245,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/mana_spark",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 6.8,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.8,
+              "scale": 10.0,
+              "count": 40,
+              "url": "https://www.nintendolife.com/games/switch-eshop/mana_spark",
+              "platform": "Nintendo Switch",
+              "weight": 6.324555320336759,
+              "normalized": 6.799999999999999
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:17.999675+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/mana-spark-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:53:19.583588+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000015604/42fa969dbe2b163fd66834714d4d863dbb457a81b2277b2bc7223a0c281f8bda",
+        "source": "https://www.nintendo.com/us/store/products/mana-spark-switch/",
+        "checked": "2026-11-02T17:53:19.583882+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:17.999675+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:8255": {
       "title": "Mario Bros.",
