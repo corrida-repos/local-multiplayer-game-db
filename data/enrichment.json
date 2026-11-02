@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T23:16:55.256624+00:00",
+  "updated": "2026-11-02T23:17:55.439996+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1832,
+    "ready": 1835,
     "missing_image": 111,
-    "missing_store": 600,
-    "missing_rating": 460,
+    "missing_store": 595,
+    "missing_rating": 457,
     "full_attempted": 1042,
     "image_health_pending": 2431
   },
@@ -48597,10 +48597,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 6.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/nintendo-switch/lets_sing_2023",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:17:00.050482+00:00",
+              "weight": 1.0,
+              "normalized": 6.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -48608,12 +48621,12 @@
         "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:40:49.217072+00:00"
+        "attempted": "2026-11-02T23:16:59.408839+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
-        "rating": false
+        "rating": true
       },
       "store": {
         "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Let-s-Sing-2023-2301970.html",
@@ -48627,8 +48640,8 @@
         "source": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Let-s-Sing-2023-2301970.html",
         "checked": "2026-11-02T19:33:03.467586+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:57.772682+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:16:59.408839+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "slush": "No scored Switch review indexed",
@@ -48638,7 +48651,25 @@
         "Let's Sing 2023"
       ],
       "full_attempted": "2026-11-02T20:40:52.337005+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:17:00.050544+00:00",
+              "next_attempt": "2026-11-03T23:17:00.050544+00:00",
+              "revision": "23141d9e2e247b98:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:17:00.050544+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/lets_sing_2023"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/lets_sing_2023"
+            }
+          }
+        }
+      }
     },
     "PS5:14381": {
       "title": "Let's Sing 2024",
@@ -48680,18 +48711,19 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:32:57.772850+00:00"
+        "attempted": "2026-11-02T23:16:59.409149+00:00"
       },
       "requirements": {
         "image": true,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T19:32:57.772850+00:00",
-      "version": 4,
+      "basics_attempted": "2026-11-02T23:16:59.409149+00:00",
+      "version": 7,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psn": "No exact Portugal PS5 product verified"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000053714/84104ffd412f02114210b6b1ec85e894fc9ed0c6fac6c58ca9494b1a1a5cf20e",
@@ -48701,7 +48733,26 @@
         "artwork_from": "Switch:14379",
         "note": "Shared artwork only; ratings and store remain console-specific."
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:37.207264+00:00",
+              "next_attempt": "2026-11-03T23:17:37.207264+00:00",
+              "revision": "91f21e8c3d9746bd:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAzQxMw%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Let%27s+Sing+2024%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAzQxMw%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Let%27s+Sing+2024%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAzQxMw%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Let%27s+Sing+2024%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAzQxMw%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Let%27s+Sing+2024%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            }
+          }
+        }
+      }
     },
     "Switch:14379": {
       "title": "Let's Sing 2024",
@@ -48729,7 +48780,7 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:41:09.096935+00:00"
+        "attempted": "2026-11-02T23:16:59.409385+00:00"
       },
       "requirements": {
         "image": true,
@@ -48741,12 +48792,16 @@
         "source": "https://www.nintendo.com/us/store/products/lets-sing-2024-switch/",
         "checked": "2026-11-02T19:33:01.462679+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:57.773059+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:16:59.409385+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:41:12.652739+00:00",
       "store_evidence": [
@@ -48756,7 +48811,89 @@
           "checked": "2026-11-02T19:33:01.462273+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:16:59.912419+00:00",
+              "next_attempt": "2026-11-03T23:16:59.912419+00:00",
+              "revision": "511204b3cd77a7b9:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Let%27s+Sing+2024%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Let%27s+Sing+2024%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:34.692590+00:00",
+              "next_attempt": "2026-11-03T23:17:34.692590+00:00",
+              "revision": "511204b3cd77a7b9:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/lets_sing_2024",
+                "https://www.nintendolife.com/games/nintendo-switch/lets_sing_2024"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/lets_sing_2024"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:37.865620+00:00",
+              "next_attempt": "2026-11-03T23:17:37.865620+00:00",
+              "revision": "511204b3cd77a7b9:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=lets-sing-2024-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=lets-sing-2024-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:40.979884+00:00",
+              "next_attempt": "2026-11-03T23:17:40.979884+00:00",
+              "revision": "511204b3cd77a7b9:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/lets-sing-2024/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/lets-sing-2024/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/lets-sing-2024/"
+              ],
+              "url": "https://www.metacritic.com/game/lets-sing-2024/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:41.064342+00:00",
+              "next_attempt": "2026-11-03T23:17:41.064342+00:00",
+              "revision": "511204b3cd77a7b9:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Let%27s+Sing+2024&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Let%27s+Sing+2024&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:17:41.064438+00:00",
+              "next_attempt": "2026-11-03T00:17:41.064438+00:00",
+              "revision": "511204b3cd77a7b9:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:17:41.064483+00:00",
+              "next_attempt": "2026-11-03T00:17:41.064483+00:00",
+              "revision": "511204b3cd77a7b9:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:12684": {
       "title": "Let's Sing ABBA",
@@ -98080,24 +98217,26 @@
               "url": "https://www.metacritic.com/game/lets-sing-2025/user-reviews/?platform=playstation-5",
               "platform": "PS5",
               "weight": 2.23606797749979,
-              "normalized": 2.4
+              "normalized": 2.4,
+              "checked": "2026-11-02T19:32:57.773455+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:32:57.773455+00:00"
+        "attempted": "2026-11-02T23:16:59.409709+00:00"
       },
       "requirements": {
         "image": true,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T19:32:57.773455+00:00",
-      "version": 4,
+      "basics_attempted": "2026-11-02T23:16:59.409709+00:00",
+      "version": 7,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psn": "No exact Portugal PS5 product verified"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000080164/30052dbe3c15a0d0b9585c979fdd96c6f0056fa80ca89c5524b526d7b68fad9a",
@@ -98107,7 +98246,26 @@
         "artwork_from": "Switch:15968",
         "note": "Shared artwork only; ratings and store remain console-specific."
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:36.144446+00:00",
+              "next_attempt": "2026-11-03T23:17:36.144446+00:00",
+              "revision": "a7f7f1f8558fa5b4:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC03MTc%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Let%27s+Sing+2025%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC03MTc%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Let%27s+Sing+2025%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC03MTc%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Let%27s+Sing+2025%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC03MTc%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Let%27s+Sing+2025%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            }
+          }
+        }
+      }
     },
     "Switch:15968": {
       "title": "Let's Sing 2025",
@@ -109713,11 +109871,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:40:54.809477+00:00"
+        "attempted": "2026-11-02T23:16:59.413259+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -109725,12 +109883,15 @@
         "source": "https://www.nintendo.com/us/store/products/luminaria-dark-echoes-switch/",
         "checked": "2026-11-02T19:33:08.144883+00:00"
       },
-      "basics_attempted": "2026-11-02T19:33:02.259185+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:16:59.413259+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:40:58.250380+00:00",
       "store_evidence": [
@@ -109740,7 +109901,100 @@
           "checked": "2026-11-02T19:33:08.144618+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Luminaria-Dark-Echoes-2837089.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:17:01.424697+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Luminaria: Dark Echoes"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:17:01.425013+00:00",
+              "next_attempt": "2026-11-03T23:17:01.425013+00:00",
+              "revision": "53855d00788dce8f:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:17:01.425013+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Luminaria-Dark-Echoes-2837089.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Luminaria-Dark-Echoes-2837089.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:39.660732+00:00",
+              "next_attempt": "2026-11-03T23:17:39.660732+00:00",
+              "revision": "53855d00788dce8f:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/luminaria_dark_echoes",
+                "https://www.nintendolife.com/games/nintendo-switch/luminaria_dark_echoes"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/luminaria_dark_echoes"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:42.956108+00:00",
+              "next_attempt": "2026-11-03T23:17:42.956108+00:00",
+              "revision": "53855d00788dce8f:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=luminaria-dark-echoes-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=luminaria-dark-echoes-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:45.822102+00:00",
+              "next_attempt": "2026-11-03T23:17:45.822102+00:00",
+              "revision": "53855d00788dce8f:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/luminaria-dark-echoes/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/luminaria-dark-echoes/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/luminaria-dark-echoes/"
+              ],
+              "url": "https://www.metacritic.com/game/luminaria-dark-echoes/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:45.901595+00:00",
+              "next_attempt": "2026-11-03T23:17:45.901595+00:00",
+              "revision": "53855d00788dce8f:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Luminaria%3A+Dark+Echoes&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Luminaria%3A+Dark+Echoes&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:17:45.901700+00:00",
+              "next_attempt": "2026-11-03T00:17:45.901700+00:00",
+              "revision": "53855d00788dce8f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:17:45.901763+00:00",
+              "next_attempt": "2026-11-03T00:17:45.901763+00:00",
+              "revision": "53855d00788dce8f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:16941": {
       "title": "Mosa Lina",
@@ -124541,18 +124795,19 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:32:57.773777+00:00"
+        "attempted": "2026-11-02T23:16:59.411046+00:00"
       },
       "requirements": {
         "image": true,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T19:32:57.773777+00:00",
-      "version": 4,
+      "basics_attempted": "2026-11-02T23:16:59.411046+00:00",
+      "version": 7,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psn": "No exact Portugal PS5 product verified"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000088254/9e94e9f95abf71bb3002fc7554f7f4a9c6d8f16dc8ff5703b2a970bf26a65f46",
@@ -124562,7 +124817,26 @@
         "artwork_from": "Switch:17572",
         "note": "Shared artwork only; ratings and store remain console-specific."
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:38.756433+00:00",
+              "next_attempt": "2026-11-03T23:17:38.756433+00:00",
+              "revision": "3585318af1cf8e81:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAy0yNQ%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Let%27s+Sing+2026%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAy0yNQ%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Let%27s+Sing+2026%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAy0yNQ%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Let%27s+Sing+2026%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAy0yNQ%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Let%27s+Sing+2026%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            }
+          }
+        }
+      }
     },
     "Switch:17572": {
       "title": "Let's Sing 2026",
@@ -136478,11 +136752,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:40:57.024239+00:00"
+        "attempted": "2026-11-02T23:16:59.412249+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -136490,12 +136764,15 @@
         "source": "https://www.nintendo.com/us/store/products/limbot-switch/",
         "checked": "2026-11-02T19:33:03.035203+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:57.774126+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:16:59.412249+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:41:00.215277+00:00",
       "store_evidence": [
@@ -136505,7 +136782,100 @@
           "checked": "2026-11-02T19:33:03.034956+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Limbot-3140926.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:17:01.866859+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Limbot"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:17:01.867195+00:00",
+              "next_attempt": "2026-11-03T23:17:01.867195+00:00",
+              "revision": "a7a9ad405c00706f:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:17:01.867195+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Limbot-3140926.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Limbot-3140926.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:44.973642+00:00",
+              "next_attempt": "2026-11-03T23:17:44.973642+00:00",
+              "revision": "a7a9ad405c00706f:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/limbot",
+                "https://www.nintendolife.com/games/nintendo-switch/limbot"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/limbot"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:46.125262+00:00",
+              "next_attempt": "2026-11-03T23:17:46.125262+00:00",
+              "revision": "a7a9ad405c00706f:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=limbot-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=limbot-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:48.658849+00:00",
+              "next_attempt": "2026-11-03T23:17:48.658849+00:00",
+              "revision": "a7a9ad405c00706f:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/limbot/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/limbot/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/limbot/"
+              ],
+              "url": "https://www.metacritic.com/game/limbot/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:48.741430+00:00",
+              "next_attempt": "2026-11-03T23:17:48.741430+00:00",
+              "revision": "a7a9ad405c00706f:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Limbot&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Limbot&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:17:48.741536+00:00",
+              "next_attempt": "2026-11-03T00:17:48.741536+00:00",
+              "revision": "a7a9ad405c00706f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:17:48.741595+00:00",
+              "next_attempt": "2026-11-03T00:17:48.741595+00:00",
+              "revision": "a7a9ad405c00706f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:18566": {
       "title": "Lunadra: Luna Awakens the Legendary Dragon",
@@ -136532,11 +136902,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:41:00.498325+00:00"
+        "attempted": "2026-11-02T23:17:00.050768+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -136544,12 +136914,15 @@
         "source": "https://www.nintendo.com/us/store/products/lunadra-luna-awakens-the-legendary-dragon-switch/",
         "checked": "2026-11-02T19:33:29.194053+00:00"
       },
-      "basics_attempted": "2026-11-02T19:33:27.579227+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:17:00.050768+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:41:05.951429+00:00",
       "store_evidence": [
@@ -136559,7 +136932,100 @@
           "checked": "2026-11-02T19:33:29.193791+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Lunadra-Luna-Awakens-the-Legendary-Dragon-3127952.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:17:03.633487+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Lunadra: Luna Awakens the Legendary Dragon"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:17:03.633819+00:00",
+              "next_attempt": "2026-11-03T23:17:03.633819+00:00",
+              "revision": "31e5894f87b966b1:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:17:03.633819+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Lunadra-Luna-Awakens-the-Legendary-Dragon-3127952.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Lunadra-Luna-Awakens-the-Legendary-Dragon-3127952.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:49.676430+00:00",
+              "next_attempt": "2026-11-03T23:17:49.676430+00:00",
+              "revision": "31e5894f87b966b1:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/lunadra_luna_awakens_the_legendary_dragon",
+                "https://www.nintendolife.com/games/nintendo-switch/lunadra_luna_awakens_the_legendary_dragon"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/lunadra_luna_awakens_the_legendary_dragon"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:50.374128+00:00",
+              "next_attempt": "2026-11-03T23:17:50.374128+00:00",
+              "revision": "31e5894f87b966b1:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=lunadra-luna-awakens-the-legendary-dragon-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=lunadra-luna-awakens-the-legendary-dragon-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:55.165684+00:00",
+              "next_attempt": "2026-11-03T23:17:55.165684+00:00",
+              "revision": "31e5894f87b966b1:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/lunadra-luna-awakens-the-legendary-dragon/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/lunadra-luna-awakens-the-legendary-dragon/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/lunadra-luna-awakens-the-legendary-dragon/"
+              ],
+              "url": "https://www.metacritic.com/game/lunadra-luna-awakens-the-legendary-dragon/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:17:55.247688+00:00",
+              "next_attempt": "2026-11-03T23:17:55.247688+00:00",
+              "revision": "31e5894f87b966b1:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Lunadra%3A+Luna+Awakens+the+Legendary+Dragon&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Lunadra%3A+Luna+Awakens+the+Legendary+Dragon&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:17:55.247833+00:00",
+              "next_attempt": "2026-11-03T00:17:55.247833+00:00",
+              "revision": "31e5894f87b966b1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:17:55.247949+00:00",
+              "next_attempt": "2026-11-03T00:17:55.247949+00:00",
+              "revision": "31e5894f87b966b1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18681": {
       "title": "Mai: Child of Ages - Storms of Time",
@@ -196626,10 +197092,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/m_a_c_e_space_shooter",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:17:29.916563+00:00",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": false,
@@ -196641,20 +197120,20 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:41:05.945689+00:00"
+        "attempted": "2026-11-02T23:17:04.908347+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000014995/4d890102ec9c0d110a97dc7f4f3e0e1b6b755fc6882ff5090c8fd4830368cec0",
         "source": "https://www.nintendo.com/us/store/products/m-a-c-e-space-shooter-switch/",
         "checked": "2026-11-02T19:33:29.973525+00:00"
       },
-      "basics_attempted": "2026-11-02T19:33:27.579516+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:17:04.908347+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
@@ -196671,7 +197150,51 @@
           "checked": "2026-11-02T19:33:29.973257+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/M-A-C-E-Space-Shooter-1465841.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:17:05.171386+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "M.A.C.E. Space Shooter"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:17:05.171709+00:00",
+              "next_attempt": "2026-11-03T23:17:05.171709+00:00",
+              "revision": "a0db70d921950df1:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:17:05.171709+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/M-A-C-E-Space-Shooter-1465841.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/M-A-C-E-Space-Shooter-1465841.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:17:29.916624+00:00",
+              "next_attempt": "2026-11-03T23:17:29.916624+00:00",
+              "revision": "a0db70d921950df1:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:17:29.916624+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/m_a_c_e_space_shooter"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/m_a_c_e_space_shooter"
+            }
+          }
+        }
+      }
     },
     "Switch:7901": {
       "title": "MachiKnights -Blood bagos-",
@@ -219521,10 +220044,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/luke_and_rebecca",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:17:04.908067+00:00",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -219534,20 +220070,20 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:41:02.591489+00:00"
+        "attempted": "2026-11-02T23:16:59.412528+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000011521/81d8a4bdacd3481e2aacc6c3aee1e82485cf3588c083e66643a3c4703c7b2ee8",
         "source": "https://www.nintendo.com/us/store/products/luke-and-rebecca-switch/",
         "checked": "2026-11-02T19:33:05.850744+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:59.622826+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:16:59.412528+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "slush": "No scored Switch review indexed",
@@ -219561,7 +220097,51 @@
           "checked": "2026-11-02T19:33:05.850482+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Luke-Rebecca-1463512.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:16:59.722677+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Luke & Rebecca"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:16:59.723000+00:00",
+              "next_attempt": "2026-11-03T23:16:59.723000+00:00",
+              "revision": "f1c07286197116a6:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:16:59.723000+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Luke-Rebecca-1463512.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Luke-Rebecca-1463512.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:17:04.908129+00:00",
+              "next_attempt": "2026-11-03T23:17:04.908129+00:00",
+              "revision": "f1c07286197116a6:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:17:04.908129+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/luke_and_rebecca"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/luke_and_rebecca"
+            }
+          }
+        }
+      }
     },
     "Switch:9683": {
       "title": "Lumberhill",
