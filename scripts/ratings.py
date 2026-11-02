@@ -14,9 +14,9 @@ def slug(title):
     title=unicodedata.normalize('NFKD',title).encode('ascii','ignore').decode().lower().replace("'",'')
     return re.sub(r'[^a-z0-9]+','-',title).strip('-')
 
-MC_ALIASES={'Rayman Legends':'rayman-legends-definitive-edition','Super Mario 3D World + Bowser’s Fury':'super-mario-3d-world-plus-bowsers-fury','Overcooked! Special Edition':'overcooked-special-edition','LEGO City: Undercover':'lego-city-undercover'}
+MC_ALIASES={"Baldur's Gate III":"baldurs-gate-3",'Rayman Legends':'rayman-legends-definitive-edition','Super Mario 3D World + Bowser’s Fury':'super-mario-3d-world-plus-bowsers-fury','Overcooked! Special Edition':'overcooked-special-edition','LEGO City: Undercover':'lego-city-undercover'}
 PS_CONCEPTS={'Teenage Mutant Ninja Turtles: Mutants Unleashed':'10008636','Teenage Mutant Ninja Turtles: Splintered Fate':'10011976','Overcooked! All You Can Eat!':'10000899','Teenage Mutant Ninja Turtles Arcade: Wrath of the Mutants':'10009199'}
-PS_ALIASES={'Overcooked! All You Can Eat!':'overcooked-all-you-can-eat','Teenage Mutant Ninja Turtles: Shredder\'s Revenge':'teenage-mutant-ninja-turtles-shredders-revenge'}
+PS_ALIASES={"Baldur's Gate III":"baldurs-gate-3",'Overcooked! All You Can Eat!':'overcooked-all-you-can-eat','Teenage Mutant Ninja Turtles: Shredder\'s Revenge':'teenage-mutant-ninja-turtles-shredders-revenge'}
 
 def nuxt(page):
     m=re.search(r'<script[^>]*id="__NUXT_DATA__"[^>]*>(.*?)</script>',page,re.S)

@@ -57,3 +57,15 @@ O site é **público**, por pedido do proprietário. O catálogo GitHub também 
 `python scripts/psplus.py --limit 60` consulta apenas páginas `store.playstation.com/pt-pt/` dos jogos PS5 e guarda `data/psplus.json` e a tabela SQLite `psplus`. Exige uma oferta gratuita de jogo completo do tipo PS_PLUS_GAME_CATALOG ou PS_PLUS_CLASSICS_CATALOG, associada ao produto PS5 correto e a Extra/Premium. Não confunde descontos, jogos mensais, experimentações de jogos, EA Play, requisitos de jogo online ou ofertas de outra edição com inclusão no catálogo. Ofertas expiradas são excluídas.
 
 O filtro **No catálogo PS Plus** fica desligado por defeito, aplica-se apenas a PS5 e desaparece quando só Nintendo Switch está selecionada. Usa verificações de Portugal com menos de 48 horas; a recolha diária atualiza a disponibilidade. Erros de rede preservam o último registo, que deixa de ser usado pelo filtro se ficar antigo. “Limpar filtros” desliga esta opção. A disponibilidade pode mudar: a loja oficial é a fonte de confirmação final.
+
+## Coverage and full backfill
+
+The initial catalogue was only a sample: 63 of 3,246 discovered Co-Optimus PS5/Switch pages had been checked. An old franchise-priority list delayed other games, including Baldur’s Gate III. That list has been removed. Scheduling now handles unseen pages before previously attempted failures and old successful checks, without franchise preferences.
+
+The daily run remains bounded to 300 pages. The separate **Backfill complete catalogue coverage** Actions workflow processes all pending discovered pages in one run with a 180-minute budget, observes the source crawl interval, and checkpoints SQLite and the public JSON to Git every 100 successful checks. Its concurrency group is shared with the daily workflow to prevent competing SQLite writes. A cancelled or timed-out run resumes from the persisted checkpoints.
+
+`catalog.json` reports `checked`, `pending` and `coverage_complete`; checked pages include both eligible and excluded games. These measure coverage of the discovered source, not every game in existence. Co-Optimus concentrates on cooperative games; the small competitive selection remains manual, so this is not an exhaustive competitive-multiplayer catalogue. Native PS5 and Switch 1 editions are checked separately; PS4-only games are not inferred as PS5-native releases.
+
+Search accepts Roman or Arabic numerals, punctuation and apostrophe variations: “Baldur’s Gate III”, “Baldur’s Gate 3” and “Baldurs Gate 3” match the same entry. Enabling PS Plus or score/state filters can still legitimately hide a game.
+
+`data/verified-local.json` contains explicitly verified primary-source corrections. They are applied at every export/checkpoint so a conflicting secondary-source record cannot silently remove the game. Borderlands 4 PS5 is one such correction: the Portuguese PlayStation Store lists two local players although Co-Optimus says local co-op is unsupported.

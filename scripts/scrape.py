@@ -56,14 +56,39 @@ def parse_game(page, url, today=None):
             'players': int(count[1]), 'mode': 'Cooperação', 'genre': clean(genre[1]) if genre else 'Outros',
             'release': date.isoformat(), 'url': url, 'source': 'Co-Optimus', 'synopsis': description_section(page,'description'), 'coop_description': description_section(page,'coop-exp',600), 'checked': dt.datetime.now(dt.timezone.utc).isoformat()}
 
+def ensure_coverage_columns(db):
+    existing={row[1] for row in db.execute('PRAGMA table_info(pages)')}
+    for name in ('attempted','decision'):
+        if name not in existing:db.execute('ALTER TABLE pages ADD COLUMN '+name+' TEXT')
+    db.commit()
+
+def select_candidates(rows,urls,pending_only=False):
+    inventory=set(urls)
+    candidates=[dict(row) for row in rows if row['url'] in inventory and (not pending_only or row['checked'] is None)]
+    return sorted(candidates,key=lambda row:(row['checked'] is not None,row.get('attempted') or '',row['checked'] or '',row['url']))
+
+def export_catalog(db,urls,errors):
+    # Explicit primary-source corrections survive conflicting secondary-source data.
+    supplement=ROOT/'data/verified-local.json'
+    for game in json.loads(supplement.read_text()) if supplement.exists() else []:
+        keys=list(game);db.execute(f"INSERT OR REPLACE INTO games({','.join(keys)}) VALUES({','.join('?' for _ in keys)})",list(game.values()))
+    db.commit()
+    games=[dict(row) for row in db.execute('SELECT * FROM games ORDER BY title,platform')]
+    inventory=set(urls);active=[row for row in db.execute('SELECT url,checked FROM pages') if row['url'] in inventory]
+    checked=sum(row['checked'] is not None for row in active);pending=len(active)-checked
+    report={'updated':dt.datetime.now(dt.timezone.utc).isoformat(),'discovered':len(set(urls)), 'checked':checked,'pending':pending,'coverage_complete':pending==0,'errors':len(errors),'games':games}
+    (ROOT/'data/catalog.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+    (ROOT/'data/last-run.json').write_text(json.dumps({'checked':checked,'pending':pending,'errors':errors},indent=2)+'\n')
+    return report
+
 def main():
     global robots
-    ap=argparse.ArgumentParser(); ap.add_argument('--limit',type=int,default=300); args=ap.parse_args()
+    ap=argparse.ArgumentParser(); ap.add_argument('--limit',type=int,default=300); ap.add_argument('--pending-only',action='store_true'); ap.add_argument('--checkpoint',type=int,default=100); ap.add_argument('--checkpoint-push',action='store_true'); args=ap.parse_args()
     (ROOT/'data').mkdir(exist_ok=True)
     db=sqlite3.connect(ROOT/'data/games.sqlite'); db.row_factory=sqlite3.Row
     db.executescript('''CREATE TABLE IF NOT EXISTS pages(url TEXT PRIMARY KEY, checked TEXT, error TEXT);
     CREATE TABLE IF NOT EXISTS games(id TEXT PRIMARY KEY,title TEXT,platform TEXT,players INTEGER CHECK(players>=2),mode TEXT,genre TEXT,release TEXT,url TEXT,source TEXT,checked TEXT);''')
-    ensure_detail_columns(db)
+    ensure_detail_columns(db); ensure_coverage_columns(db)
     rules=fetch(BASE+'/robots.txt'); robots=urllib.robotparser.RobotFileParser(); robots.parse(rules.splitlines())
     maps=re.findall(r'<loc>(.*?)</loc>',fetch(BASE+'/sitemaps/siteMapGames_index.xml'))
     urls=[]
@@ -71,9 +96,7 @@ def main():
         urls += [u.replace('http:','https:') for u in re.findall(r'<loc>(.*?)</loc>',fetch(m)) if '/playstation-5/' in u or '/nintendo-switch/' in u]
     if len(urls)<100: raise RuntimeError('Discovery unexpectedly small; preserving previous catalogue')
     db.executemany('INSERT OR IGNORE INTO pages(url) VALUES(?)', [(u,) for u in urls]); db.commit()
-    priorities=['it-takes-two','split-fiction','overcooked','unravel-two','sackboy','moving-out','stardew-valley','luigi','kirby','super-mario','teenage-mutant','cuphead','unrailed','rayman','lego','trine','untitled-goose','cat-quest','lovers-in-a-dangerous','tools-up']
-    candidates=[dict(r) for r in db.execute('SELECT * FROM pages') if r['url'] in set(urls)]
-    candidates.sort(key=lambda r:(r['checked'] is not None, r['checked'] or '', next((i for i,p in enumerate(priorities) if p in r['url']),999),r['url']))
+    candidates=select_candidates(db.execute('SELECT * FROM pages'),urls,args.pending_only)
     errors=[]; success=0
     for row in candidates[:args.limit]:
         u=row['url']
@@ -82,19 +105,21 @@ def main():
             if game:
                 keys=list(game); db.execute(f"INSERT OR REPLACE INTO games({','.join(keys)}) VALUES({','.join('?' for _ in keys)})", list(game.values()))
             else: db.execute('DELETE FROM games WHERE url=?',(u,))
-            db.execute('UPDATE pages SET checked=?,error=NULL WHERE url=?',(dt.datetime.now(dt.timezone.utc).isoformat(),u)); success+=1
+            now=dt.datetime.now(dt.timezone.utc).isoformat();db.execute('UPDATE pages SET checked=?,attempted=?,decision=?,error=NULL WHERE url=?',(now,now,'eligible' if game else 'excluded',u)); success+=1
         except Exception as e:
-            errors.append({'url':u,'error':str(e)[:200]}); db.execute('UPDATE pages SET error=? WHERE url=?',(str(e)[:200],u))
+            errors.append({'url':u,'error':str(e)[:200]}); db.execute('UPDATE pages SET error=?,attempted=? WHERE url=?',(str(e)[:200],dt.datetime.now(dt.timezone.utc).isoformat(),u))
         db.commit()
-    if success==0: raise RuntimeError('No pages successfully checked; preserving published JSON')
+        if success and success % args.checkpoint==0:
+            report=export_catalog(db,urls,errors);print(f"Progress: {report['checked']} checked; {report['pending']} pending; {len(report['games'])} games",flush=True)
+            if args.checkpoint_push:
+                import subprocess
+                subprocess.run(['bash','scripts/checkpoint-catalog.sh'],check=True,cwd=ROOT)
+    if success==0 and candidates: raise RuntimeError('No pages successfully checked; preserving published JSON')
     curated=json.loads((ROOT/'data/competitive.json').read_text())
     for game in curated:
         keys=list(game); db.execute(f"INSERT OR REPLACE INTO games({','.join(keys)}) VALUES({','.join('?' for _ in keys)})", list(game.values()))
     db.commit()
-    games=[dict(r) for r in db.execute('SELECT * FROM games ORDER BY title,platform')]
-    report={'updated':dt.datetime.now(dt.timezone.utc).isoformat(),'discovered':len(set(urls)), 'checked':db.execute('SELECT count(*) FROM pages WHERE checked IS NOT NULL').fetchone()[0], 'errors':len(errors), 'games':games}
-    (ROOT/'data/catalog.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-    (ROOT/'data/last-run.json').write_text(json.dumps({'success':success,'errors':errors},indent=2)+'\n')
+    report=export_catalog(db,urls,errors);games=report['games']
     db.close()
     print(f'{len(games)} editions; {success} checked; {len(errors)} errors; {report["discovered"]} discovered')
     if errors: raise RuntimeError('Partial scrape failure; successful records exported, inspect last-run.json')

@@ -26,3 +26,18 @@ class Details(unittest.TestCase):
         ensure_detail_columns(db);ensure_detail_columns(db)
         self.assertEqual(db.execute('SELECT title,synopsis,coop_description FROM games').fetchone(),('Existing game',None,None))
         db.close()
+
+class CoverageQueue(unittest.TestCase):
+    def test_all_franchises_get_a_turn(self):
+        from scripts.scrape import select_candidates
+        rows=[{'url':'https://game/baldurs-gate','checked':None,'attempted':None},{'url':'https://game/mario','checked':None,'attempted':None}]
+        self.assertEqual(select_candidates(rows,[r['url'] for r in rows])[0]['url'],rows[0]['url'])
+    def test_failed_pages_do_not_starve_unseen_games(self):
+        from scripts.scrape import select_candidates
+        rows=[{'url':'a','checked':None,'attempted':'2026-11-02'},{'url':'b','checked':None,'attempted':None},{'url':'c','checked':'2026-11-01','attempted':'2026-11-01'}]
+        self.assertEqual([r['url'] for r in select_candidates(rows,['a','b','c'],True)],['b','a'])
+    def test_baldurs_gate_ps5_split_screen_is_eligible(self):
+        from pathlib import Path
+        source=(Path(__file__).parent/'fixtures/bg3-ps5.html').read_text()
+        game=parse_game(source,'https://www.co-optimus.com/game/13370/playstation-5/baldur-s-gate-iii.html')
+        self.assertEqual((game['platform'],game['players']),('PS5',2))

@@ -1,0 +1,28 @@
+name: Backfill complete catalogue coverage
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: catalog-update
+  cancel-in-progress: false
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - id: scrape
+        continue-on-error: true
+        run: python -u scripts/scrape.py --limit 10000 --pending-only --checkpoint 100 --checkpoint-push
+      - if: always()
+        run: bash scripts/checkpoint-catalog.sh
+      - if: steps.scrape.outcome == 'failure'
+        run: exit 1
