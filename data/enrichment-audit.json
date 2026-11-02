@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-02T23:33:07.155357+00:00",
+  "updated": "2026-11-02T23:34:32.004483+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1882,
+    "ready": 1884,
     "missing_image": 110,
-    "missing_store": 514,
+    "missing_store": 512,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2432
@@ -22431,20 +22431,155 @@
         "store",
         "rating"
       ],
-      "attempted": "2026-11-02T20:01:58.208988+00:00",
+      "attempted": "2026-11-02T23:33:11.287301+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
         "image": "No unique matching video-game article with artwork",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:11.928437+00:00",
+              "next_attempt": "2026-11-03T23:33:11.928437+00:00",
+              "revision": "1527f7d05969621e:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Spy+Bros.+%28Pipi+%26+Bibi%27s+DX%29%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Spy+Bros.+%28Pipi+%26+Bibi%27s+DX%29%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:11.928437+00:00",
+              "next_attempt": "2026-11-03T23:33:11.928437+00:00",
+              "revision": "1527f7d05969621e:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Spy+Bros.+%28Pipi+%26+Bibi%27s+DX%29%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Spy+Bros.+%28Pipi+%26+Bibi%27s+DX%29%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:56.700339+00:00",
+              "next_attempt": "2026-11-03T23:33:56.700339+00:00",
+              "revision": "1527f7d05969621e:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/spy_bros_pipi_and_bibis_dx",
+                "https://www.nintendolife.com/games/switch-eshop/spy_bros_pipi_and_bibis_dx"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/spy_bros_pipi_and_bibis_dx"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:57.781844+00:00",
+              "next_attempt": "2026-11-03T23:33:57.781844+00:00",
+              "revision": "1527f7d05969621e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=spy-bros-pipi-and-bibis-dx-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=spy-bros-pipi-and-bibis-dx-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:05.656516+00:00",
+              "next_attempt": "2026-11-03T23:34:05.656516+00:00",
+              "revision": "1527f7d05969621e:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Spy+Bros.+%28Pipi+%26+Bibi%27s+DX%29%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Spy+Bros.+%28Pipi+%26+Bibi%27s+DX%29%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:56.700339+00:00",
+              "next_attempt": "2026-11-03T23:33:56.700339+00:00",
+              "revision": "1527f7d05969621e:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/spy_bros_pipi_and_bibis_dx",
+                "https://www.nintendolife.com/games/switch-eshop/spy_bros_pipi_and_bibis_dx"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/spy_bros_pipi_and_bibis_dx"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:57.781844+00:00",
+              "next_attempt": "2026-11-03T23:33:57.781844+00:00",
+              "revision": "1527f7d05969621e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=spy-bros-pipi-and-bibis-dx-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=spy-bros-pipi-and-bibis-dx-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:05.363316+00:00",
+              "next_attempt": "2026-11-03T23:34:05.363316+00:00",
+              "revision": "1527f7d05969621e:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/spy-bros-pipi-and-bibis-dx/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/spy-bros-pipi-and-bibis-dx/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/spy-bros-pipi-and-bibis-dx/"
+              ],
+              "url": "https://www.metacritic.com/game/spy-bros-pipi-and-bibis-dx/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:05.447321+00:00",
+              "next_attempt": "2026-11-03T23:34:05.447321+00:00",
+              "revision": "1527f7d05969621e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Spy+Bros.+%28Pipi+%26+Bibi%27s+DX%29&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Spy+Bros.+%28Pipi+%26+Bibi%27s+DX%29&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:34:05.447421+00:00",
+              "next_attempt": "2026-11-03T00:34:05.447421+00:00",
+              "revision": "1527f7d05969621e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:34:05.447467+00:00",
+              "next_attempt": "2026-11-03T00:34:05.447467+00:00",
+              "revision": "1527f7d05969621e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:34:05.447421+00:00"
     },
     {
       "key": "Switch:8028",
@@ -22494,13 +22629,32 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T20:02:00.039453+00:00",
+      "attempted": "2026-11-02T23:33:11.287543+00:00",
       "reasons": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psn": "No exact Portugal PS5 product verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:23.711285+00:00",
+              "next_attempt": "2026-11-03T23:33:23.711285+00:00",
+              "revision": "95c460bf80fca3cd:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAzYyMw%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Star+Trek+Prodigy%3A+Supernova%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAzYyMw%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Star+Trek+Prodigy%3A+Supernova%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAzYyMw%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Star+Trek+Prodigy%3A+Supernova%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAzYyMw%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Star+Trek+Prodigy%3A+Supernova%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T23:33:23.711285+00:00"
     },
     {
       "key": "Switch:7227",
@@ -22632,17 +22786,151 @@
         "store",
         "rating"
       ],
-      "attempted": "2026-11-02T20:02:13.487331+00:00",
+      "attempted": "2026-11-02T23:33:11.287859+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "image": "No unique matching video-game article with artwork",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:14.112214+00:00",
+              "next_attempt": "2026-11-03T23:33:14.112214+00:00",
+              "revision": "456d01b1f6e7bc4e:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Strikers+1945+III%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Strikers+1945+III%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:14.112214+00:00",
+              "next_attempt": "2026-11-03T23:33:14.112214+00:00",
+              "revision": "456d01b1f6e7bc4e:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Strikers+1945+III%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Strikers+1945+III%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:06.635977+00:00",
+              "next_attempt": "2026-11-03T23:34:06.635977+00:00",
+              "revision": "456d01b1f6e7bc4e:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/strikers_1945_iii",
+                "https://www.nintendolife.com/games/switch-eshop/strikers_1945_iii"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/strikers_1945_iii"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:07.697901+00:00",
+              "next_attempt": "2026-11-03T23:34:07.697901+00:00",
+              "revision": "456d01b1f6e7bc4e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=strikers-1945-iii-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=strikers-1945-iii-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:09.918994+00:00",
+              "next_attempt": "2026-11-03T23:34:09.918994+00:00",
+              "revision": "456d01b1f6e7bc4e:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Strikers+1945+III%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Strikers+1945+III%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:06.635977+00:00",
+              "next_attempt": "2026-11-03T23:34:06.635977+00:00",
+              "revision": "456d01b1f6e7bc4e:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/strikers_1945_iii",
+                "https://www.nintendolife.com/games/switch-eshop/strikers_1945_iii"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/strikers_1945_iii"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:07.697901+00:00",
+              "next_attempt": "2026-11-03T23:34:07.697901+00:00",
+              "revision": "456d01b1f6e7bc4e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=strikers-1945-iii-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=strikers-1945-iii-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:09.707595+00:00",
+              "next_attempt": "2026-11-03T23:34:09.707595+00:00",
+              "revision": "456d01b1f6e7bc4e:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/strikers-1945-iii/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/strikers-1945-iii/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/strikers-1945-iii/"
+              ],
+              "url": "https://www.metacritic.com/game/strikers-1945-iii/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:09.739874+00:00",
+              "next_attempt": "2026-11-03T23:34:09.739874+00:00",
+              "revision": "456d01b1f6e7bc4e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Strikers+1945+III&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Strikers+1945+III&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:34:09.739945+00:00",
+              "next_attempt": "2026-11-03T00:34:09.739945+00:00",
+              "revision": "456d01b1f6e7bc4e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:34:09.739988+00:00",
+              "next_attempt": "2026-11-03T00:34:09.739988+00:00",
+              "revision": "456d01b1f6e7bc4e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:34:09.739945+00:00"
     },
     {
       "key": "Switch:6894",
@@ -22651,15 +22939,84 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T20:02:13.487596+00:00",
+      "attempted": "2026-11-02T23:33:11.288179+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:16.643573+00:00",
+              "next_attempt": "2026-11-03T23:34:16.643573+00:00",
+              "revision": "49d840a4f9ff0d62:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/strikers_1945_plus",
+                "https://www.nintendolife.com/games/nintendo-switch/aca_neogeo_strikers_1945_plus",
+                "https://www.nintendolife.com/games/switch-eshop/aca_neogeo_strikers_1945_plus"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/aca_neogeo_strikers_1945_plus"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:17.399455+00:00",
+              "next_attempt": "2026-11-03T23:34:17.399455+00:00",
+              "revision": "49d840a4f9ff0d62:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=strikers-1945-plus-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=strikers-1945-plus-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:31.468991+00:00",
+              "next_attempt": "2026-11-03T23:34:31.468991+00:00",
+              "revision": "49d840a4f9ff0d62:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/aca-neogeo-strikers-1945-plus/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/aca-neogeo-strikers-1945-plus/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/aca-neogeo-strikers-1945-plus/"
+              ],
+              "url": "https://www.metacritic.com/game/aca-neogeo-strikers-1945-plus/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:31.550310+00:00",
+              "next_attempt": "2026-11-03T23:34:31.550310+00:00",
+              "revision": "49d840a4f9ff0d62:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Strikers+1945+Plus&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Strikers+1945+Plus&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:34:31.550413+00:00",
+              "next_attempt": "2026-11-03T00:34:31.550413+00:00",
+              "revision": "49d840a4f9ff0d62:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:34:31.550475+00:00",
+              "next_attempt": "2026-11-03T00:34:31.550475+00:00",
+              "revision": "49d840a4f9ff0d62:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:34:31.550413+00:00"
     },
     {
       "key": "Switch:6892",
@@ -22670,20 +23027,155 @@
         "store",
         "rating"
       ],
-      "attempted": "2026-11-02T20:02:13.488428+00:00",
+      "attempted": "2026-11-02T23:33:11.288817+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
         "image": "No unique matching video-game article with artwork",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:13.043918+00:00",
+              "next_attempt": "2026-11-03T23:33:13.043918+00:00",
+              "revision": "a8d5b7348519e142:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Strikers+1999%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Strikers+1999%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:13.043918+00:00",
+              "next_attempt": "2026-11-03T23:33:13.043918+00:00",
+              "revision": "a8d5b7348519e142:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Strikers+1999%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Strikers+1999%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:01.543825+00:00",
+              "next_attempt": "2026-11-03T23:34:01.543825+00:00",
+              "revision": "a8d5b7348519e142:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/strikers_1999",
+                "https://www.nintendolife.com/games/switch-eshop/strikers_1999"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/strikers_1999"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:04.651349+00:00",
+              "next_attempt": "2026-11-03T23:34:04.651349+00:00",
+              "revision": "a8d5b7348519e142:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=strikers-1999-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=strikers-1999-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:07.300031+00:00",
+              "next_attempt": "2026-11-03T23:34:07.300031+00:00",
+              "revision": "a8d5b7348519e142:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Strikers+1999%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Strikers+1999%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:01.543825+00:00",
+              "next_attempt": "2026-11-03T23:34:01.543825+00:00",
+              "revision": "a8d5b7348519e142:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/strikers_1999",
+                "https://www.nintendolife.com/games/switch-eshop/strikers_1999"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/strikers_1999"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:04.651349+00:00",
+              "next_attempt": "2026-11-03T23:34:04.651349+00:00",
+              "revision": "a8d5b7348519e142:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=strikers-1999-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=strikers-1999-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:07.062212+00:00",
+              "next_attempt": "2026-11-03T23:34:07.062212+00:00",
+              "revision": "a8d5b7348519e142:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/strikers-1999/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/strikers-1999/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/strikers-1999/"
+              ],
+              "url": "https://www.metacritic.com/game/strikers-1999/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:07.113551+00:00",
+              "next_attempt": "2026-11-03T23:34:07.113551+00:00",
+              "revision": "a8d5b7348519e142:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Strikers+1999&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Strikers+1999&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:34:07.113642+00:00",
+              "next_attempt": "2026-11-03T00:34:07.113642+00:00",
+              "revision": "a8d5b7348519e142:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:34:07.113683+00:00",
+              "next_attempt": "2026-11-03T00:34:07.113683+00:00",
+              "revision": "a8d5b7348519e142:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:34:07.113642+00:00"
     },
     {
       "key": "Switch:16815",
@@ -22733,18 +23225,6 @@
         "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed"
       },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:6720",
-      "title": "Sunset Riders",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T20:02:13.488716+00:00",
-      "reasons": {},
       "field_status": {},
       "next_retry": ""
     },
@@ -22819,15 +23299,80 @@
         "image",
         "store"
       ],
-      "attempted": "2026-11-02T20:02:13.492154+00:00",
+      "attempted": "2026-11-02T23:33:11.289863+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
-        "image": "No unique matching video-game article with artwork"
+        "nindie": "No review profile indexed for this game",
+        "image": "No unique matching video-game article with artwork",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:16.318336+00:00",
+              "next_attempt": "2026-11-03T23:33:16.318336+00:00",
+              "revision": "95cdd284a44c542d:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Super+BurgerTime%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Super+BurgerTime%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:16.318336+00:00",
+              "next_attempt": "2026-11-03T23:33:16.318336+00:00",
+              "revision": "95cdd284a44c542d:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Super+BurgerTime%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Super+BurgerTime%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:41.868911+00:00",
+              "next_attempt": "2026-11-03T23:33:41.868911+00:00",
+              "revision": "95cdd284a44c542d:7",
+              "reason": "No qualifying image found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/johnny_turbos_arcade_super_burger_time"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/johnny_turbos_arcade_super_burger_time"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:44.996376+00:00",
+              "next_attempt": "2026-11-03T23:33:44.996376+00:00",
+              "revision": "95cdd284a44c542d:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=super-burgertime-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-burgertime-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:45.191398+00:00",
+              "next_attempt": "2026-11-03T23:33:45.191398+00:00",
+              "revision": "95cdd284a44c542d:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Super+BurgerTime%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Super+BurgerTime%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T23:33:16.318336+00:00"
     },
     {
       "key": "Switch:14196",
@@ -22924,18 +23469,153 @@
         "store",
         "rating"
       ],
-      "attempted": "2026-11-02T20:02:14.617088+00:00",
+      "attempted": "2026-11-02T23:33:11.290902+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_critics": "HTTP Error 410: Gone",
         "image": "No unique matching video-game article with artwork",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "metacritic": "HTTP Error 410: Gone",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:15.219434+00:00",
+              "next_attempt": "2026-11-03T23:33:15.219434+00:00",
+              "revision": "0496804c2de502ee:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Super+Spacefortress+Macross%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Super+Spacefortress+Macross%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:15.219434+00:00",
+              "next_attempt": "2026-11-03T23:33:15.219434+00:00",
+              "revision": "0496804c2de502ee:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Super+Spacefortress+Macross%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Super+Spacefortress+Macross%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:11.504687+00:00",
+              "next_attempt": "2026-11-03T23:34:11.504687+00:00",
+              "revision": "0496804c2de502ee:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/super_spacefortress_macross",
+                "https://www.nintendolife.com/games/switch-eshop/super_spacefortress_macross"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/super_spacefortress_macross"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:13.853167+00:00",
+              "next_attempt": "2026-11-03T23:34:13.853167+00:00",
+              "revision": "0496804c2de502ee:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=super-spacefortress-macross-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-spacefortress-macross-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:27.149958+00:00",
+              "next_attempt": "2026-11-03T23:34:27.149958+00:00",
+              "revision": "0496804c2de502ee:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Super+Spacefortress+Macross%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Super+Spacefortress+Macross%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:11.504687+00:00",
+              "next_attempt": "2026-11-03T23:34:11.504687+00:00",
+              "revision": "0496804c2de502ee:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/super_spacefortress_macross",
+                "https://www.nintendolife.com/games/switch-eshop/super_spacefortress_macross"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/super_spacefortress_macross"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:13.853167+00:00",
+              "next_attempt": "2026-11-03T23:34:13.853167+00:00",
+              "revision": "0496804c2de502ee:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=super-spacefortress-macross-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-spacefortress-macross-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:26.922767+00:00",
+              "next_attempt": "2026-11-03T23:34:26.922767+00:00",
+              "revision": "0496804c2de502ee:7",
+              "reason": "HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/super-spacefortress-macross/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/super-spacefortress-macross/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/super-spacefortress-macross/"
+              ],
+              "url": "https://www.metacritic.com/game/super-spacefortress-macross/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:26.958511+00:00",
+              "next_attempt": "2026-11-03T23:34:26.958511+00:00",
+              "revision": "0496804c2de502ee:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Super+Spacefortress+Macross&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Super+Spacefortress+Macross&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:34:26.958599+00:00",
+              "next_attempt": "2026-11-03T00:34:26.958599+00:00",
+              "revision": "0496804c2de502ee:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:34:26.958644+00:00",
+              "next_attempt": "2026-11-03T00:34:26.958644+00:00",
+              "revision": "0496804c2de502ee:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:34:26.958599+00:00"
     },
     {
       "key": "Switch:7928",
@@ -22979,18 +23659,6 @@
       "next_retry": ""
     },
     {
-      "key": "Switch:3548",
-      "title": "Surgeon Simulator",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T20:02:15.674740+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:15248",
       "title": "Surmount: A Mountain Climbing Adventure",
       "platform": "Switch",
@@ -22998,15 +23666,82 @@
         "image",
         "store"
       ],
-      "attempted": "2026-11-02T20:02:44.578981+00:00",
+      "attempted": "2026-11-02T23:33:12.697333+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
-        "image": "No unique matching video-game article with artwork"
+        "nindie": "No review profile indexed for this game",
+        "image": "No unique matching video-game article with artwork",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:17.415626+00:00",
+              "next_attempt": "2026-11-03T23:33:17.415626+00:00",
+              "revision": "fff31278614120e6:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Surmount%3A+A+Mountain+Climbing+Adventure%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Surmount%3A+A+Mountain+Climbing+Adventure%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:33:17.415626+00:00",
+              "next_attempt": "2026-11-03T23:33:17.415626+00:00",
+              "revision": "fff31278614120e6:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Surmount%3A+A+Mountain+Climbing+Adventure%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Surmount%3A+A+Mountain+Climbing+Adventure%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:21.662030+00:00",
+              "next_attempt": "2026-11-03T23:34:21.662030+00:00",
+              "revision": "fff31278614120e6:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/surmount_a_mountain_climbing_adventure",
+                "https://www.nintendolife.com/games/switch-eshop/surmount_a_mountain_climbing_adventure"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/surmount_a_mountain_climbing_adventure"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:22.367531+00:00",
+              "next_attempt": "2026-11-03T23:34:22.367531+00:00",
+              "revision": "fff31278614120e6:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=surmount-a-mountain-climbing-adventure-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=surmount-a-mountain-climbing-adventure-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:34:22.475376+00:00",
+              "next_attempt": "2026-11-03T23:34:22.475376+00:00",
+              "revision": "fff31278614120e6:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Surmount%3A+A+Mountain+Climbing+Adventure%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Surmount%3A+A+Mountain+Climbing+Adventure%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T23:33:17.415626+00:00"
     },
     {
       "key": "Switch:14166",
