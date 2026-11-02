@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T21:11:07.952898+00:00",
+  "updated": "2026-11-02T21:11:36.016723+00:00",
   "version": 4,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 144,
     "missing_store": 256,
     "missing_rating": 611,
-    "full_attempted": 1022
+    "full_attempted": 1032
   },
   "games": {
     "PS5:13238": {
@@ -16360,15 +16360,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.13,
-              "count": 627,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.13,
               "scale": 5,
-              "source": "PSN",
+              "count": 627,
               "url": "https://store.playstation.com/pt-pt/product/EP0700-PPSA06763_00-DRFM2MAINCONTENT",
-              "checked": "2026-11-02T17:04:46.732141+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 25.03996805109783,
               "normalized": 8.26
             }
@@ -16376,7 +16373,16 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:04:45.713697+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:11:24.277773+00:00"
       },
       "requirements": {
         "image": true,
@@ -16414,16 +16420,26 @@
       },
       "basics_attempted": "2026-11-02T17:04:45.713697+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:11:24.695402+00:00"
     },
     "Switch:12867": {
       "title": "DORAEMON STORY OF SEASONS: Friends of the Great Kingdom",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 74.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 78.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=doraemon-story-of-seasons-friends-of-the-great-kingdom-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
             {
               "name": "Nintendo Life",
               "score": 70.0,
@@ -16433,7 +16449,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": 6.5,
@@ -16453,7 +16469,17 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:04:46.745084+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:11:24.312501+00:00"
       },
       "requirements": {
         "image": true,
@@ -16472,7 +16498,11 @@
       },
       "basics_attempted": "2026-11-02T17:04:46.745084+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:11:26.809609+00:00"
     },
     "Switch:13776": {
       "title": "DYNABLASTER",
@@ -16486,6 +16516,7 @@
               "name": "Pure Nintendo",
               "score": 55,
               "url": "https://purenintendo.com/review-dynablaster-nintendo-switch/",
+              "date": "2023-10-10",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -16500,7 +16531,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:09:01.339225+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:11:22.114171+00:00"
       },
       "requirements": {
         "image": true,
@@ -16520,8 +16559,11 @@
       "basics_attempted": "2026-11-02T19:09:01.339225+00:00",
       "version": 3,
       "errors": {
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:11:25.475816+00:00"
     },
     "PS5:11120": {
       "title": "DYSMANTLE",
@@ -16560,7 +16602,7 @@
           "source_count": 3
         },
         "user": {
-          "score": 8.84,
+          "score": 8.93,
           "scale": 10,
           "sources": [
             {
@@ -16574,33 +16616,27 @@
               "normalized": 7.6
             },
             {
-              "name": "Push Square",
-              "score": 7.9,
-              "scale": 10.0,
-              "count": 13,
-              "url": "https://www.pushsquare.com/games/ps5/dysmantle",
-              "platform": "PlayStation 5",
-              "weight": 3.605551275463989,
-              "normalized": 7.9
-            },
-            {
-              "score": 4.57,
-              "count": 4369,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.57,
               "scale": 5,
-              "source": "PSN",
+              "count": 4369,
               "url": "https://store.playstation.com/pt-pt/product/EP4403-PPSA05134_00-DYSMANTLE0000000",
-              "checked": "2026-11-02T17:05:04.988167+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 31.622776601683793,
               "normalized": 9.14
             }
           ],
-          "source_count": 3,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:05:04.096459+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:11:27.539053+00:00"
       },
       "requirements": {
         "image": true,
@@ -16638,14 +16674,17 @@
       },
       "basics_attempted": "2026-11-02T17:05:04.096459+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:11:28.029341+00:00"
     },
     "Switch:11118": {
       "title": "DYSMANTLE",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 75.0,
+          "score": 82.5,
           "scale": 100,
           "sources": [
             {
@@ -16655,10 +16694,17 @@
               "date": "2022-05-04",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 90.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=dysmantle-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": 9.2,
@@ -16678,7 +16724,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:05:04.096696+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:11:28.408628+00:00"
       },
       "requirements": {
         "image": true,
@@ -16697,7 +16751,11 @@
       },
       "basics_attempted": "2026-11-02T17:05:04.096696+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:11:31.147167+00:00"
     },
     "Switch:14679": {
       "title": "Daioh",
@@ -16759,26 +16817,32 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/dandy-and-randy-dx-lumberhill-and-rifftrax-review#dandy-and-randy-dx",
+              "date": "2022-05-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 8.86,
           "scale": 10,
           "sources": [
             {
-              "score": 4.43,
-              "count": 42,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.43,
               "scale": 5,
-              "source": "PSN",
+              "count": 42,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA07602_00-RAGADANDYRANDYDX",
-              "checked": "2026-11-02T17:05:06.199665+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 6.48074069840786,
               "normalized": 8.86
             }
@@ -16786,7 +16850,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:05:04.098005+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:11:34.339953+00:00"
       },
       "requirements": {
         "image": true,
@@ -16824,7 +16895,10 @@
       },
       "basics_attempted": "2026-11-02T17:05:04.098005+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:11:35.901181+00:00"
     },
     "Switch:11802": {
       "title": "Dandy & Randy DX",
@@ -79165,15 +79239,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.88,
-              "count": 8,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.88,
               "scale": 5,
-              "source": "PSN",
+              "count": 8,
               "url": "https://store.playstation.com/pt-pt/product/EP7357-PPSA21745_00-0053683782866777",
-              "checked": "2026-11-02T17:06:17.505819+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 2.8284271247461903,
               "normalized": 7.76
             }
@@ -79181,7 +79252,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:06:15.158627+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:11:23.167559+00:00"
       },
       "requirements": {
         "image": true,
@@ -79219,7 +79297,10 @@
       },
       "basics_attempted": "2026-11-02T17:06:15.158627+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:11:23.820920+00:00"
     },
     "PS5:15995": {
       "title": "Damikira",
@@ -79237,15 +79318,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.14,
-              "count": 14,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.14,
               "scale": 5,
-              "source": "PSN",
+              "count": 14,
               "url": "https://store.playstation.com/pt-pt/product/UP2005-PPSA24546_00-DAMIKIRA00000000",
-              "checked": "2026-11-02T17:06:18.658422+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 3.7416573867739413,
               "normalized": 8.28
             }
@@ -79253,7 +79331,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:06:16.567946+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:11:33.233514+00:00"
       },
       "requirements": {
         "image": true,
@@ -79291,7 +79376,10 @@
       },
       "basics_attempted": "2026-11-02T17:06:16.567946+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:11:34.700070+00:00"
     },
     "Switch:15991": {
       "title": "Damikira",
@@ -107449,34 +107537,169 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 72.2,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Checkpoint Gaming",
+              "score": 70,
+              "url": "https://checkpointgaming.net/reviews/2026/09/dynasty-warriors-3-complete-edition-remastered-review-well-fight-til-its-over/",
+              "date": "2026-09-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Finger Guns",
+              "score": 70,
+              "url": "https://fingerguns.net/reviews/2026/09/30/dynasty-warriors-3-complete-edition-remastered-review-ps5-bu-im-back/",
+              "date": "2026-09-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 90,
+              "url": "https://www.gamegrin.com/reviews/dynasty-warriors-3-complete-edition-remastered-review/",
+              "date": "2026-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2026/09/dynasty-warriors-3-complete-edition-remastered-review/",
+              "date": "2026-09-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameliner",
+              "score": 70,
+              "url": "https://gameliner.nl/reviews/dynasty-warriors-3-complete-edition-remastered-review-lichtjes-verouderd-nog-steeds-entertainend/7484-29-1-1043",
+              "date": "2026-10-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.no",
+              "score": 50,
+              "url": "https://www.gamer.no/artikler/nokre-gongar-held-det-med-minna/521205",
+              "date": "2026-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamesurf",
+              "score": 70,
+              "url": "https://www.gamesurf.it/recensioni/gioco/dynasty-warriors-3-complete-edition-remastered-la-recensione",
+              "date": "2026-10-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Adria",
+              "score": 60,
+              "url": "https://adria.ign.com/dynasty-warriors-3-complete-edition-remastered/54540/dynasty-warriors-3-complete-edition-remastered-recenzija",
+              "date": "2026-10-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 78,
+              "url": "https://as.com/meristation/analisis/analisis-de-dynasty-warriors-3-complete-edition-remastered-nostalgia-en-forma-de-un-clasico-del-musou-f202610-n/",
+              "date": "2026-10-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 75,
+              "url": "https://noisypixel.net/dynasty-warriors-3-complete-edition-remastered-review/",
+              "date": "2026-09-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 80,
+              "url": "https://www.psu.com/reviews/dynasty-warriors-3-complete-edition-remastered-ps5-review/",
+              "date": "2026-10-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "https://www.pushsquare.com/reviews/ps5/dynasty-warriors-3-complete-edition-remastered",
+              "date": "2026-09-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Jimquisition",
+              "score": 80,
+              "url": "https://www.thejimquisition.com/post/dynasty-warriors-3-complete-edition-remastered-new-bu-review",
+              "date": "2026-10-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 80,
+              "url": "https://www.thesixthaxis.com/2026/09/30/dynasty-warriors-3-complete-edition-remastered-review/",
+              "date": "2026-09-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 70,
+              "url": "https://vandal.elespanol.com/analisis/ps5/dynasty-warriors-3-complete-edition-remastered/218530",
+              "date": "2026-10-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 15
         },
         "user": {
-          "score": 8.6,
+          "score": 8.63,
           "scale": 10,
           "sources": [
             {
-              "score": 4.3,
-              "count": 2789,
-              "scope": "PSN · PS5",
+              "name": "Metacritic users",
+              "score": 8.8,
+              "scale": 10,
+              "count": 23,
+              "url": "https://www.metacritic.com/game/dynasty-warriors-3-complete-edition-remastered/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 4.795831523312719,
+              "normalized": 8.8
+            },
+            {
               "name": "PSN",
+              "score": 4.3,
               "scale": 5,
-              "source": "PSN",
+              "count": 2789,
               "url": "https://store.playstation.com/pt-pt/product/JP0106-PPSA32935_00-DW3CEREMASTERED0",
-              "checked": "2026-11-02T17:19:52.504852+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 31.622776601683793,
               "normalized": 8.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:19:51.113263+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 15,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:11:32.122606+00:00"
       },
       "requirements": {
         "image": true,
@@ -107514,7 +107737,14 @@
       },
       "basics_attempted": "2026-11-02T17:19:51.113263+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {},
+      "trailer": {
+        "id": "UTVVw9fsHVA",
+        "title": "Dynasty Warriors 3: Complete Edition Remastered - Overview Trailer | PS5 Games",
+        "kind": "gameplay",
+        "source": "https://www.playstation.com/en-us/games/dynasty-warriors-3-complete-edition-remastered/"
+      },
+      "full_attempted": "2026-11-02T21:11:32.874538+00:00"
     },
     "Switch:18085": {
       "title": "Devastators",
@@ -143490,7 +143720,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 65.0,
           "scale": 100,
           "sources": [
             {
@@ -143499,10 +143729,18 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=damaged-in-transit-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2020/06/11/damaged-in-transit-review/",
+              "date": "2020-06-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -143511,7 +143749,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:30:46.803272+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:11:30.585169+00:00"
       },
       "requirements": {
         "image": true,
@@ -143530,7 +143776,11 @@
       },
       "basics_attempted": "2026-11-02T17:30:46.803272+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:11:33.764006+00:00"
     },
     "Switch:7254": {
       "title": "Devil May Cry 3 Special Edition",
