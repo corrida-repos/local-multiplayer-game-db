@@ -61,3 +61,35 @@ class Enrichment(unittest.TestCase):
         with patch.object(e,'resolve_nintendo',return_value={'image':{'url':'https://images.test/a'},'store':{'url':'https://www.nintendo.com/us/store/products/example-switch/'}}),patch.object(e,'community',return_value=([],[],{})),patch.object(e,'nindie',side_effect=ValueError('No review')),patch.object(e,'get',side_effect=response):
             entry=e.basics(game,{}, {},{},{},{},{})
         self.assertEqual(entry['ratings']['critic']['score'],75);self.assertTrue(entry['requirements']['rating'])
+    def test_trademarks_and_standard_product_names_match(self):
+        self.assertTrue(e.matches_name({'title':'Arcade Paradise'},'Arcade Paradise PS4™ & PS5™'))
+        self.assertTrue(e.matches_name({'title':'Diablo IV'},'Diablo® IV - Standard Edition'))
+        self.assertFalse(e.matches_name({'title':'Diablo IV'},'Diablo IV: Lord of Hatred - Deluxe Edition'))
+        self.assertEqual(e.identity('Assault Android Cactus+'),e.identity('Assault Android Cactus Plus'))
+    def test_localized_psn_search_binds_same_portugal_product(self):
+        game={'title':'Asterix and Obelix XXL 3 - The Crystal Menhir','platform':'PS5','id':'13549'}
+        pid='EP4295-PPSA07498_00-ASTERIXXXL3PS5EU'
+        page=(Path(__file__).parent/'fixtures/psn-localized.html').read_text()
+        pt={'__typename':'Product','id':pid,'name':'Astérix e Obélix XXL3: O Menir de Cristal','platforms':['PS5']}
+        gb={**pt,'name':'Asterix & Obelix XXL3: The Crystal Menhir'}
+        with patch.object(e,'psn_search',side_effect=[[pt],[gb]]) as search,patch.object(e,'get',return_value=('https://store.playstation.com/pt-pt/product/'+pid,page)):
+            result=e.resolve_psn(game,{}, {})
+        self.assertEqual(search.call_args_list[-1].args[1:],('GB','en'));self.assertIn('/pt-pt/',result['store']['url']);self.assertTrue(result['user']['score']>0)
+    def test_explicit_switch_edition_alias_stays_console_specific(self):
+        self.assertTrue(e.matches_name({'platform':'Switch','title':'99Vidas'},'99Vidas - Definitive Edition'))
+        self.assertFalse(e.matches_name({'platform':'PS5','title':'99Vidas'},'99Vidas - Definitive Edition'))
+        self.assertTrue(e.matches_name({'platform':'Switch','title':'9th Dawn III: Shadow of Erthil'},'9th Dawn III'))
+    def test_wikipedia_image_requires_unique_game_article(self):
+        game={'title':'64th. Street: A Detective Story','platform':'Switch'}
+        entry={'title':'64th Street','thumbnail':{'source':'https://upload.wikimedia.org/wikipedia/en/example.png'},'categories':[{'title':'Category:1992 video games'}]}
+        result=e.wikipedia_image_data({'query':{'pages':{'1':entry}}},game)
+        self.assertIn('64th_Street',result['source'])
+        with self.assertRaises(ValueError):e.wikipedia_image_data({'query':{'pages':{'1':{**entry,'categories':[{'title':'Category:Streets'}]}}}},game)
+        with self.assertRaises(ValueError):e.wikipedia_image_data({'query':{'pages':{'1':entry,'2':{**entry,'title':'64th Street (2026 video game)'}}}},game)
+    def test_retro_brand_names_do_not_borrow_other_platforms(self):
+        self.assertTrue(e.matches_name({'title':'Bomb Jack Twin','platform':'PS5'},'Arcade Archives 2 BOMB JACK TWIN'))
+        self.assertTrue(e.matches_name({'title':'Bubble Bobble','platform':'PS5'},'Console Archives BUBBLE BOBBLE'))
+        self.assertFalse(e.matches_name({'title':'Balloon Fight','platform':'Switch'},'Balloon Flight'))
+        self.assertFalse(e.matches_name({'title':'Donkey Kong Country','platform':'Switch'},'Donkey Kong Country Returns HD'))
+        self.assertNotEqual(e.identity('Croixleur Σ'),e.identity('Croixleur'))
+        self.assertEqual(e.identity('Croixleur Σ'),e.identity('Croixleur Sigma'))

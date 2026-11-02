@@ -11,11 +11,11 @@ NSO={'Kirby Super Star',"Kirby's Dream Land 3"}
 last=0
 
 def normal(value):
-    value=html.unescape(value).replace('™','').replace('®','').replace('©','')
+    value=html.unescape(value).replace('Σ',' sigma ').replace('σ',' sigma ').replace('+',' plus ').replace('™','').replace('®','').replace('©','')
     return re.sub('[^a-z0-9]','',unicodedata.normalize('NFKD',value).encode('ascii','ignore').decode().lower())
 
 def slug(value):
-    value=value.replace('&',' and ')
+    value=value.replace('&',' and ').replace('+',' plus ')
     value=unicodedata.normalize('NFKD',value).encode('ascii','ignore').decode().lower().replace("'",'')
     return re.sub('[^a-z0-9]+','-',value).strip('-')
 
@@ -31,11 +31,11 @@ class Meta(HTMLParser):
         attrs=dict(attrs)
         if tag=='meta' and attrs.get('property')=='og:title':self.title=attrs.get('content','')
 
-def nintendo_match(page,title):
+def nintendo_match(page,title,aliases=None):
     meta=Meta();meta.feed(page)
     name=re.split(r' for (?:the )?Nintendo| [–-] Nintendo Official Site| \| Nintendo| [–-] Official Site',meta.title,flags=re.I)[0]
-    names=[title]+NINTENDO_NAMES.get(title,[])
-    canonical=lambda value:normal(re.sub(r'^(?:Arcade Archives|ACA NEOGEO|SEGA AGES)\s+','',value,flags=re.I))
+    names=[title]+NINTENDO_NAMES.get(title,[])+(aliases or [])
+    canonical=lambda value:normal(re.sub(r"^(?:Arcade Archives(?: 2)?|Console Archives|ACA NEOGEO|SEGA AGES|Johnny Turbo['’]?s Arcade)[ :]+",'',value,flags=re.I))
     return canonical(name) in {canonical(value) for value in names}
 
 def fetch(url):

@@ -11,7 +11,7 @@ def fetch(url):
     with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':AGENT}),timeout=25) as r:return r.read().decode()
 
 def slug(title):
-    title=title.replace('&',' and ')
+    title=title.replace('Σ',' sigma ').replace('σ',' sigma ').replace('&',' and ').replace('+',' plus ')
     title=unicodedata.normalize('NFKD',title).encode('ascii','ignore').decode().lower().replace("'",'')
     return re.sub(r'[^a-z0-9]+','-',title).strip('-')
 

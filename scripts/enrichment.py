@@ -1,42 +1,60 @@
 """Continuous per-game enrichment: all basics first, then composite scores and trailers.
 Each result owns its provenance and missing-field reasons. No synthetic ratings.
 """
-import argparse, concurrent.futures, datetime as dt, html, json, re, sqlite3, subprocess, threading, time, urllib.parse, urllib.request
+import argparse, concurrent.futures, datetime as dt, html, json, re, sqlite3, subprocess, threading, time, urllib.parse, urllib.request, urllib.error
 from pathlib import Path
 from scripts import composites, ratings, stores, trailers, psplus
 ROOT=Path(__file__).resolve().parents[1]
-VERSION=3
+VERSION=4
 SEARCH_HASH='4df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa'
 locks={};last={};guard=threading.Lock()
 def now():return dt.datetime.now(dt.timezone.utc).isoformat()
-def get(url,headers=None):
+def get(url,headers=None,_redirects=0):
     host=urllib.parse.urlparse(url).hostname
     with guard:lock=locks.setdefault(host,threading.Lock())
     with lock:
         time.sleep(max(0,1.1-(time.monotonic()-last.get(host,0))));last[host]=time.monotonic()
     request=urllib.request.Request(url,headers={'User-Agent':ratings.AGENT,**(headers or {})})
-    with urllib.request.urlopen(request,timeout=18) as response:return response.geturl(),response.read().decode('utf-8')
+    try:
+        with urllib.request.urlopen(request,timeout=18) as response:return response.geturl(),response.read().decode('utf-8')
+    except urllib.error.HTTPError as exc:
+        # This API reports canonical slugs in JSON rather than a Location header.
+        if exc.code!=301 or host!='backend.metacritic.com' or _redirects>=2:raise
+        body=exc.read()
+        try:
+            data=json.loads(body);platform=re.search(r'/platform/([^/]+)/',url)[1]
+            choices=[item['slug'] for error in data.get('errors',[]) for item in error.get('context',{}).get('availableOn',[]) if item.get('slug','').endswith('/'+platform)]
+            target=choices[0].rsplit('/',1)[0] if len(choices)==1 else None
+            old=re.search(r'/games/([^/]+)/platform/',url)[1]
+            if not target or target==old or not re.fullmatch(r'[a-z0-9-]+',target):raise ValueError('No unique canonical slug on the requested console')
+        except (ValueError,KeyError,TypeError,IndexError):raise exc
+        return get(url.replace('/games/'+old+'/platform/','/games/'+target+'/platform/',1),headers,_redirects+1)
 def read(name,default=None):
     path=ROOT/'data'/name
     return json.loads(path.read_text()) if path.exists() else (default if default is not None else {'games':{}})
 def identity(value):
-    value=re.sub(r'^(?:arcade[ -]+archives|aca[ -]+neogeo|sega[ -]+ages)[ -]+','',value,flags=re.I)
+    value=value.replace('™','').replace('®','').replace('©','')
+    value=re.sub(r'\s*[-:|–—]?\s*(?:Standard Edition|Cross[- ]Gen Bundle)\s*$','',value,flags=re.I)
+    value=re.sub(r"^(?:arcade[ -]+archives(?:[ -]+2)?|console[ -]+archives|aca[ -]+neogeo|sega[ -]+ages|johnny[ -]+turbo['’]?s[ -]+arcade)[ :\-]+",'',value,flags=re.I)
     value=value.replace('&',' and ')
     value=re.sub(r'\bPlayStation[®™ ]*5\b','',value,flags=re.I)
     value=re.sub(r'\bPS4\s*(?:&|and|/|e|,)?\s*PS5\b|\bPS5\b|\bPS4\b','',value,flags=re.I)
     value=re.sub(r'\b(iii|ii|iv)\b',lambda m:{'ii':'2','iii':'3','iv':'4'}[m[1].lower()],value,flags=re.I)
     return stores.normal(value)
+def source_match(game):
+    return read('source-aliases.json',{}).get(game.get('platform','')+':'+game.get('title',''),{})
+def known_names(game):return [game['title'],ratings.MC_ALIASES.get(game['title'],'')]+source_match(game).get('names',[])+game.get('aliases',[])
 def matches_name(game,name):
-    return bool(identity(name)) and identity(name) in {identity(game['title']),identity(ratings.MC_ALIASES.get(game['title'],''))}
+    return bool(identity(name)) and identity(name) in {identity(value) for value in known_names(game)}
 def image_from_media(media):
     for role in ['MASTER','GAMEHUB_COVER_ART','PORTRAIT_BANNER','FOUR_BY_THREE_BANNER','SCREENSHOT']:
         for item in media or []:
             if item.get('type')=='IMAGE' and item.get('role')==role and item.get('url','').startswith('https://'):return item['url']
-def psn_search(title):
-    variables={'countryCode':'PT','languageCode':'pt','nextCursor':'','pageOffset':0,'pageSize':24,'searchTerm':title}
+def psn_search(title,country='PT',language='pt'):
+    variables={'countryCode':country,'languageCode':language,'nextCursor':'','pageOffset':0,'pageSize':24,'searchTerm':title}
     extensions={'persistedQuery':{'version':1,'sha256Hash':SEARCH_HASH}}
     query=urllib.parse.urlencode({'operationName':'getSearchResults','variables':json.dumps(variables),'extensions':json.dumps(extensions)})
-    _,page=get('https://web.np.playstation.com/api/graphql/v1//op?'+query,{'Accept':'application/json','Content-Type':'application/json','x-psn-store-locale-override':'pt-PT'})
+    _,page=get('https://web.np.playstation.com/api/graphql/v1//op?'+query,{'Accept':'application/json','Content-Type':'application/json','x-psn-store-locale-override':language+'-'+country})
     data=json.loads(page)
     if data.get('errors'):raise ValueError(str(data['errors'])[:150])
     return data['data']['universalSearch']['results']
@@ -53,7 +71,7 @@ def psn_metadata(game,url,page):
     return result
 
 def resolve_psn(game,legacy,known_store):
-    candidates=[];exact=stores.EXACT.get(('PS5',game['title']))
+    candidates=[];exact=source_match(game).get('store_url') or stores.EXACT.get(('PS5',game['title']))
     if exact:candidates.append(exact)
     for candidate in [known_store.get('url'),legacy.get('user',{}).get('url')]:
         if candidate and candidate.startswith('https://store.playstation.com/pt-pt/') and candidate not in candidates:candidates.append(candidate)
@@ -61,18 +79,19 @@ def resolve_psn(game,legacy,known_store):
     for url in candidates:
         try:final,page=get(url);return psn_metadata(game,final,page)
         except Exception as exc:errors.append(str(exc)[:120])
-    results=psn_search(game['title'])
-    for item in results:
-        if not matches_name(game,item.get('name','')):continue
-        if item.get('__typename')=='Product':
-            if 'PS5' not in item.get('platforms',[]):continue
-            urls=['https://store.playstation.com/pt-pt/product/'+item['id']]
-        else:
-            products=sorted(item.get('products',[]),key=lambda p:'PPSA' not in p['id'])
-            urls=['https://store.playstation.com/pt-pt/concept/'+item['id']]+['https://store.playstation.com/pt-pt/product/'+p['id'] for p in products[:8]]
-        for url in urls:
-            try:final,page=get(url);return psn_metadata(game,final,page)
-            except Exception as exc:errors.append(str(exc)[:120])
+    for country,language in [('PT','pt'),('GB','en')]:
+        results=psn_search(game['title'],country,language)
+        for item in results:
+            if not matches_name(game,item.get('name','')):continue
+            if item.get('__typename')=='Product':
+                if 'PS5' not in item.get('platforms',[]):continue
+                urls=['https://store.playstation.com/pt-pt/product/'+item['id']]
+            else:
+                products=sorted(item.get('products',[]),key=lambda p:'PPSA' not in p['id'])
+                urls=['https://store.playstation.com/pt-pt/concept/'+item['id']]+['https://store.playstation.com/pt-pt/product/'+p['id'] for p in products[:8]]
+            for url in urls:
+                try:final,page=get(url);return psn_metadata(game,final,page)
+                except Exception as exc:errors.append(str(exc)[:120])
     raise ValueError('No exact Portugal PS5 product verified'+(': '+'; '.join(errors[:2]) if errors else ''))
 
 def meta_image(page):
@@ -85,14 +104,14 @@ def nintendo_index_match(game,doc):
     systems=doc.get('system_type',[])
     if not any(re.match(r'^nintendoswitch(?:_|$)',system) for system in systems):return False
     canonical=lambda value:identity(re.sub(r'^(?:Arcade Archives|ACA NEOGEO|SEGA AGES)\s+','',value,flags=re.I))
-    return canonical(doc.get('title','')) in {canonical(value) for value in [game['title']]+stores.NINTENDO_NAMES.get(game['title'],[])}
+    return canonical(doc.get('title','')) in {canonical(value) for value in known_names(game)+stores.NINTENDO_NAMES.get(game['title'],[])}
 
 def resolve_nintendo(game,known_store):
-    title=game['title'];url=known_store.get('url') or 'https://www.nintendo.com/us/store/products/'+stores.NINTENDO_SLUGS.get(title,stores.slug(title))+'-switch/'
+    title=game['title'];url=known_store.get('url') or source_match(game).get('store_url') or 'https://www.nintendo.com/us/store/products/'+stores.NINTENDO_SLUGS.get(title,stores.slug(title))+'-switch/'
     if title in stores.NSO:url='https://www.nintendo.com/us/store/products/super-nintendo-entertainment-system-nintendo-switch-online-switch/'
     try:
         final,page=get(url)
-        if not stores.official_url('Switch',final) or not stores.nintendo_match(page,title):raise ValueError('Exact Nintendo Switch store identity not verified')
+        if not stores.official_url('Switch',final) or not stores.nintendo_match(page,title,known_names(game)):raise ValueError('Exact Nintendo Switch store identity not verified')
         store={'url':final,'label':'Abrir na Nintendo eShop','checked':now()}
         if title in stores.NSO:store.update(label='Ver no Nintendo Switch Online',note='Incluído na aplicação Super Nintendo do Nintendo Switch Online.')
         return {'store':store,'image':{'url':meta_image(page),'source':final,'checked':now()}}
@@ -162,11 +181,29 @@ def refresh_review_index():
 
 def nindie(game):
     name=stores.slug(game['title']);index=read('nindie-index.json',{}).get('games',{})
-    candidates=index.get(identity(game['title']),[]) or ['https://www.nindiespotlight.com/game_profile.cfm?game='+name+'-switch']
+    candidates=list(dict.fromkeys(url for alias in known_names(game) for url in index.get(identity(alias),[]))) or ['https://www.nindiespotlight.com/game_profile.cfm?game='+name+'-switch']
     for url in candidates:
         try:final,page=get(url);return nindie_data(page,final,game)
         except Exception as exc:error=exc
     raise ValueError(str(error)[:160])
+
+def wikipedia_image_data(payload,game):
+    candidates=[]
+    for page in payload.get('query',{}).get('pages',{}).values():
+        title=re.sub(r'\s*\((?:\d{4} )?(?:video )?game\)$','',page.get('title',''),flags=re.I)
+        categories=[c.get('title','').lower() for c in page.get('categories',[])]
+        if not any('video games' in category for category in categories):continue
+        if not matches_name(game,title):continue
+        image=page.get('thumbnail',{}).get('source','')
+        if image.startswith('https://upload.wikimedia.org/'):
+            candidates.append({'url':image,'source':'https://en.wikipedia.org/wiki/'+urllib.parse.quote(page['title'].replace(' ','_')),'checked':now(),'method':'verified-game-article'})
+    if len(candidates)!=1:raise ValueError('No unique matching video-game article with artwork')
+    return candidates[0]
+
+def wikipedia_image(game):
+    params={'action':'query','generator':'search','gsrsearch':'"'+game['title'].replace('"','')+'" video game','gsrlimit':5,'prop':'pageimages|categories','piprop':'thumbnail','pithumbsize':500,'pilicense':'any','cllimit':50,'format':'json'}
+    _,page=get('https://en.wikipedia.org/w/api.php?'+urllib.parse.urlencode(params))
+    return wikipedia_image_data(json.loads(page),game)
 
 def has_score(value):return isinstance(value.get('score'),(int,float)) and value.get('scale',0)>0 and 0<=value['score']<=value['scale']
 def requirements(entry):
@@ -198,14 +235,20 @@ def seed(games,entries,legacy,known_stores,old_composites,old_trailers,artwork,o
 def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
     result=dict(previous or {});errors={};key=game['platform']+':'+game['id'];stamp=now()
     if old_trailer.get('id'):result.setdefault('trailer',old_trailer)
+    match=source_match(game)
+    if not result.get('image',{}).get('url') and match.get('image_url','').startswith('https://www.nintendo.com/'):
+        result['image']={'url':match['image_url'],'source':match['source'],'checked':stamp,'method':'official-product-index'}
     if artwork.get('url'):result.setdefault('image',artwork)
-    try:metadata=resolve_psn(game,legacy,known_store) if game['platform']=='PS5' else resolve_nintendo(game,known_store);result.update({k:v for k,v in metadata.items() if k!='image' or v.get('url')})
+    source_game={**game,'aliases':result.get('aliases',[])+source_match(game).get('names',[])}
+    current_store=result.get('store') or known_store
+    try:metadata=resolve_psn(source_game,legacy,current_store) if game['platform']=='PS5' else resolve_nintendo(source_game,current_store);result.update({k:v for k,v in metadata.items() if k!='image' or v.get('url')})
     except Exception as exc:errors['store']=str(exc)[:200]
     critics=[];users=[]
-    if has_score(old_composite.get('critic',{})):critics=old_composite['critic'].get('sources',[])
+    prior_ratings=result.get('ratings') or old_composite
+    if has_score(prior_ratings.get('critic',{})):critics=list(prior_ratings['critic'].get('sources',[]))
     elif has_score(legacy.get('critic',{})):
         c=legacy['critic'];critics=[{'name':c.get('source','Metacritic'),'score':c['score'],'url':c['url'],'platform':game['platform']}]
-    if has_score(old_composite.get('user',{})):users=list(old_composite['user'].get('sources',[]))
+    if has_score(prior_ratings.get('user',{})):users=list(prior_ratings['user'].get('sources',[]))
     fresh=result.get('user')
     if fresh:
         users=[u for u in users if not u.get('name','').startswith('PSN')]+[fresh]
@@ -213,7 +256,7 @@ def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
         raw=legacy['user'];users.append({**raw,'name':raw.get('source','PSN'),'platform':raw.get('scope')})
     if (not critics and not users) or not result.get('image',{}).get('url'):
         try:
-            c,u,image=community({**game,'aliases':result.get('aliases',[])});critics.extend(c);users.extend(u)
+            c,u,image=community({**source_game,'aliases':result.get('aliases',[])+source_match(game).get('names',[])});critics.extend(c);users.extend(u)
             if image.get('url') and not result.get('image',{}).get('url'):result['image']=image
         except Exception as exc:errors['community']=str(exc)[:200]
     if game['platform']=='Switch' and ((not critics and not users) or not result.get('store',{}).get('url') or not result.get('image',{}).get('url')):
@@ -245,6 +288,9 @@ def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
                 url=f'https://www.metacritic.com/game/{name}/';_,page=get(url);score=ratings.mc_critic(page,name,'PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch')
                 if score is not None:critics.append({'name':'Metacritic aggregate','score':score,'url':url+'critic-reviews/?platform='+platform,'platform':game['platform']})
             except Exception as exc:errors['metacritic_critics']=str(exc)[:160]
+    if not result.get('image',{}).get('url'):
+        try:result['image']=wikipedia_image(source_game)
+        except Exception as exc:errors['image']=str(exc)[:160]
     result['ratings']={'critic':composites.critic_composite(critics),'user':composites.user_composite(users),'attempted':stamp}
     for kind in ['critic','user']:
         prior=(previous or {}).get('ratings',{}).get(kind,{})
@@ -256,7 +302,7 @@ def complete(game,previous,legacy,curated):
     result=dict(previous);errors=dict(result.get('errors',{}));raw=dict(legacy)
     if result.get('user'):raw['user']=result['user']
     try:
-        composite=composites.collect(game,raw)
+        composite=composites.collect({**game,'aliases':result.get('aliases',[])+source_match(game).get('names',[])},raw)
         for kind in ['critic','user']:
             if not has_score(composite.get(kind,{})) and has_score(result.get('ratings',{}).get(kind,{})):composite[kind]=result['ratings'][kind]
         if game['platform']=='Switch':
@@ -288,16 +334,22 @@ def export(entries,db):
     (ROOT/'data/enrichment-audit.json').write_text(json.dumps({'updated':now(),'coverage':report,'entries':audit},ensure_ascii=False,indent=2)+'\n')
     print('COVERAGE',json.dumps(report),flush=True)
 
+def lookup_upgrade(game,entry):
+    old=entry.get('version',0)
+    if old<3:return True
+    if old>=VERSION:return False
+    return (game['platform']=='PS5' and not requirements(entry)['store']) or bool(source_match(game)) or any('301' in error for error in entry.get('errors',{}).values()) or '+' in game['title'] or ' plus' in game['title'].lower() or not requirements(entry)['image']
+
 def select_work(games,entries,seen):
     unseen=[g for g in games if (g['platform']+':'+g['id'],'basics') not in seen and not entries.get(g['platform']+':'+g['id'],{}).get('basics_attempted')]
     if unseen:return 'basics',unseen
     # Finish every game's minimum data before spending requests on extra sources.
     cutoff=(dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=1)).isoformat()
-    retry=[g for g in games if (g['platform']+':'+g['id'],'basics') not in seen and not all(requirements(entries.get(g['platform']+':'+g['id'],{})).values()) and (entries.get(g['platform']+':'+g['id'],{}).get('version',0)<VERSION or entries.get(g['platform']+':'+g['id'],{}).get('basics_attempted','')<cutoff)]
+    retry=[g for g in games if (g['platform']+':'+g['id'],'basics') not in seen and not all(requirements(entries.get(g['platform']+':'+g['id'],{})).values()) and (lookup_upgrade(g,entries.get(g['platform']+':'+g['id'],{})) or entries.get(g['platform']+':'+g['id'],{}).get('basics_attempted','')<cutoff)]
     if retry:return 'basics',sorted(retry,key=lambda g:entries.get(g['platform']+':'+g['id'],{}).get('basics_attempted',''))
     full_cutoff=(dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=7)).isoformat()
     full=[g for g in games if (g['platform']+':'+g['id'],'full') not in seen and entries.get(g['platform']+':'+g['id'],{}).get('full_attempted','')<full_cutoff]
-    if full:return 'full',full
+    if full:return 'full',sorted(full,key=lambda g:(requirements(entries.get(g['platform']+':'+g['id'],{}))['rating'],g['title']))
     stale=[g for g in games if (g['platform']+':'+g['id'],'basics') not in seen and entries.get(g['platform']+':'+g['id'],{}).get('basics_attempted','')<cutoff]
     return 'basics',stale
 
