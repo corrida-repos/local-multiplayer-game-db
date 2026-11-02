@@ -1,0 +1,29 @@
+name: Console rating composites
+on:
+  schedule:
+    - cron: '43 9 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: composites-update
+  cancel-in-progress: false
+jobs:
+  ratings:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests
+      - name: Configure checkpoints
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - name: Collect independent publications and console communities
+        run: python -m scripts.composites --limit 10000 --minutes 165 --checkpoint-push
+      - name: Save remaining scores
+        if: always()
+        run: bash scripts/checkpoint-composites.sh

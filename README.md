@@ -69,3 +69,13 @@ The daily run remains bounded to 300 pages. The separate **Backfill complete cat
 Search accepts Roman or Arabic numerals, punctuation and apostrophe variations: “Baldur’s Gate III”, “Baldur’s Gate 3” and “Baldurs Gate 3” match the same entry. Enabling PS Plus or score/state filters can still legitimately hide a game.
 
 `data/verified-local.json` contains explicitly verified primary-source corrections. They are applied at every export/checkpoint so a conflicting secondary-source record cannot silently remove the game. Borderlands 4 PS5 is one such correction: the Portuguese PlayStation Store lists two local players although Co-Optimus says local co-op is unsupported.
+
+### Composite scores (console-specific)
+
+`python -m scripts.composites` collects every page of Metacritic's public, platform-specific critic index and normalizes scores to 0–100. Each publication domain counts once (latest review if repeated), with equal weight. Push Square PS5 and Nintendo Life Switch editorial scores are also included when exact game and console identities match, deduplicated against the index. If the index fails midway, its top-scoring prefix is discarded: a verified legacy Metacritic aggregate is shown alone as a labelled fallback. No PC or other-console critic aggregate fills a gap.
+
+User scores combine the console-specific Metacritic user average, Push Square (PS5) or Nintendo Life (Switch) community, and the verified PS5-listed PSN product where available. PSN products shared with PS4 are identified in the breakdown. Scores are normalized to 0–10; each community's weight is `sqrt(min(votes, 1000))`. This reduces domination by very large communities without pretending to remove all bias or duplicate voters across sites. A single source is labelled; no verified votes means no invented score. Original scores, counts, links, and weights are exported in `data/composites.json` and displayed when clicking a score.
+
+The independent `composites.yml` workflow runs daily and on demand, prioritizing never-attempted games. It checkpoints every ten games in a separate `composites.sqlite` database so catalogue discovery can run concurrently. A partial run resumes with unattempted entries on the next run. OpenCritic's API requires a separate key and is not silently substituted with a cross-platform aggregate. These scores combine the accessible verified sources; they do not claim exhaustive coverage of every review site.
+
+The upper-right **Quero jogar** button shows all saved titles across consoles, independent of the catalogue filters. Remove a title directly or open its detail view to change its state. Returning preserves the catalogue filters. Preferences remain stored in this browser.
