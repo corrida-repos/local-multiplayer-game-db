@@ -34,6 +34,8 @@ Os workflows agendados correm no ramo predefinido. `contents: write` permite atu
 
 ## Frontend
 
+A ordenação fica sempre visível. A pesquisa, os filtros e “Limpar filtros” ficam numa secção recolhida por defeito, aberta pelo botão “Pesquisar e filtrar”; recolher mantém as escolhas e os resultados atuais.
+
 Catálogo simples em HTML/CSS/JavaScript, sem build: imagens, ligações diretas às fontes, pesquisa e filtros por consola, modo, género, jogadores e estado. Consola, Modo, Género e Estado permitem escolha múltipla, sem opção “Todos”: nenhuma seleção significa sem restrição nesse filtro. Género inclui “Qualquer Género”, que limpa as escolhas específicas; selecionar géneros específicos desmarca essa opção. As opções dentro de um filtro combinam-se com OU; filtros diferentes combinam-se com E. Os valores por defeito, também repostos por “Limpar filtros”, são PS5, Cooperação, 2 ou mais jogadores, Qualquer Género e os estados Por descobrir e Quero jogar. Permite ordenar por nome, lançamento e nota dos críticos. Arte de jogos com ligação ao fornecedor: Wikipedia, Steam ou Nintendo. As notas são lidas diretamente do GitHub, com cópia de segurança na publicação.
 
 **Quero jogar**, **Já joguei** e **Não me interessa** retiram o jogo da vista predefinida **Por descobrir**, em ambas as consolas. O filtro Estado inclui a lista **Quero jogar**, além de Já jogados e Sem interesse, e permite rever e restaurar escolhas. É possível passar um jogo de Quero jogar para Já jogado ou Sem interesse. Estas preferências ficam em `localStorage` neste navegador, sem partilha entre dispositivos ou pessoas. Não são publicadas no GitHub.
