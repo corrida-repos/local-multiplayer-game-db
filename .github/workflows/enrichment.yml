@@ -17,6 +17,8 @@ jobs:
     timeout-minutes: 65
     steps:
       - uses: actions/checkout@v4
+      - name: Load the latest catalog and collector after waiting in the queue
+        run: git pull --ff-only origin main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
