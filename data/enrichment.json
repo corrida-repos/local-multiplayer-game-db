@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:55:06.222224+00:00",
+  "updated": "2026-11-02T17:55:27.484372+00:00",
   "version": 2,
   "coverage": {
     "total": 2542,
-    "attempted": 1292,
-    "ready": 798,
-    "missing_image": 1364,
-    "missing_store": 1435,
-    "missing_rating": 1662,
+    "attempted": 1302,
+    "ready": 806,
+    "missing_image": 1354,
+    "missing_store": 1425,
+    "missing_rating": 1654,
     "full_attempted": 0
   },
   "games": {
@@ -38230,21 +38230,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:55:15.213705+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/million-shells-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:55:16.010405+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000063134/2cacd2137ea4d33124a6a0e73261666ee85bee32f40ae3dcc0f803ba7877016d",
+        "source": "https://www.nintendo.com/us/store/products/million-shells-switch/",
+        "checked": "2026-11-02T17:55:16.010552+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:55:15.213705+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:10075": {
@@ -52825,46 +52842,128 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.58,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.79,
+              "count": 2239,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP7816-PPSA18529_00-0759104150721681",
+              "checked": "2026-11-02T17:55:12.407697+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 7.58
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:55:08.934561+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP7816-PPSA18529_00-0759104150721681",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:55:12.407697+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202410/2821/51d6eb5a4a96c0a546c0f7e475a6477a6c4a29196c95820b.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP7816-PPSA18529_00-0759104150721681",
+        "checked": "2026-11-02T17:55:12.407697+00:00"
+      },
+      "user": {
+        "score": 3.79,
+        "count": 2239,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP7816-PPSA18529_00-0759104150721681",
+        "checked": "2026-11-02T17:55:12.407697+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": true,
+        "tier": "Extra",
+        "product_id": "EP7816-PPSA18529_00-0759104150721681",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP7816-PPSA18529_00-0759104150721681",
+        "checked": "2026-11-02T17:55:12.407697+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:55:08.934561+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:15471": {
       "title": "Mighty Morphin Power Rangers: Rita's Rewind",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/mighty-morphin-power-rangers-ritas-rewind",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.3,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.3,
+              "scale": 10.0,
+              "count": 53,
+              "url": "https://www.nintendolife.com/games/switch-eshop/mighty_morphin_power_rangers_ritas_rewind",
+              "platform": "Nintendo Switch",
+              "weight": 7.280109889280518,
+              "normalized": 7.3
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:55:10.234484+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/mighty-morphin-power-rangers-ritas-rewind-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:55:11.796793+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000069877/266e7b7e09548a1784eeeadb5e1643d28bba74532eb231923cc00ffbf8004072",
+        "source": "https://www.nintendo.com/us/store/products/mighty-morphin-power-rangers-ritas-rewind-switch/",
+        "checked": "2026-11-02T17:55:11.796987+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:55:10.234484+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:15321": {
       "title": "Monster Outbreak",
@@ -58523,22 +58622,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.14,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.57,
+              "count": 68,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP8599-PPSA17170_00-0395164079175805",
+              "checked": "2026-11-02T17:55:10.230054+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 8.246211251235321,
+              "normalized": 9.14
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:55:08.933901+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP8599-PPSA17170_00-0395164079175805",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:55:10.230054+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202410/0811/1980ffbd80c79185cb857848aa825d879c121368a2265409.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP8599-PPSA17170_00-0395164079175805",
+        "checked": "2026-11-02T17:55:10.230054+00:00"
+      },
+      "user": {
+        "score": 4.57,
+        "count": 68,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP8599-PPSA17170_00-0395164079175805",
+        "checked": "2026-11-02T17:55:10.230054+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP8599-PPSA17170_00-0395164079175805",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP8599-PPSA17170_00-0395164079175805",
+        "checked": "2026-11-02T17:55:10.230054+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:55:08.933901+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:16030": {
       "title": "Monarchy",
@@ -72277,46 +72424,117 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.08,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.54,
+              "count": 13,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA33080_00-MILOSDREAMRATGAM",
+              "checked": "2026-11-02T17:55:17.549679+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 3.605551275463989,
+              "normalized": 9.08
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:55:16.359721+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA33080_00-MILOSDREAMRATGAM",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:55:17.549679+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202512/0908/6cb3f1ac110cf034a7f0af66b5370c6dcdb7ed1d6add4f9b.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0896-PPSA33080_00-MILOSDREAMRATGAM",
+        "checked": "2026-11-02T17:55:17.549679+00:00"
+      },
+      "user": {
+        "score": 4.54,
+        "count": 13,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA33080_00-MILOSDREAMRATGAM",
+        "checked": "2026-11-02T17:55:17.549679+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP0896-PPSA33080_00-MILOSDREAMRATGAM",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0896-PPSA33080_00-MILOSDREAMRATGAM",
+        "checked": "2026-11-02T17:55:17.549679+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:55:16.359721+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:17847": {
       "title": "Milo's Dream",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 67.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 67.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=milos-dream-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:55:17.553449+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/milos-dream-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:55:18.928941+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000106603/f9fb09f06155202f1c8607d0b6c09176680b1485309d9735016365fd6123ff80",
+        "source": "https://www.nintendo.com/us/store/products/milos-dream-switch/",
+        "checked": "2026-11-02T17:55:18.929143+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:55:17.553449+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:17642": {
       "title": "Monster Prom 4: Monster Con XXL",
@@ -75753,21 +75971,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:55:08.934089+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/micro-mages-maker-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:55:10.345368+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000061252/122b3fd9385a5c5d99b99a38641dd96e35293581e571216091e0f6b29fa8d465",
+        "source": "https://www.nintendo.com/us/store/products/micro-mages-maker-switch/",
+        "checked": "2026-11-02T17:55:10.345537+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:55:08.934089+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:18095": {
@@ -83153,24 +83388,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 60.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=milanoir-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:55:12.412411+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/milanoir-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:55:13.848422+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000001077/ba6dfc265924de654c0bf41770b3bfb33862498e298a55de15784793b7f3960d",
+        "source": "https://www.nintendo.com/us/store/products/milanoir-switch/",
+        "checked": "2026-11-02T17:55:13.848680+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:55:12.412411+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:4840": {
       "title": "Mutation Nation",
@@ -89784,24 +90042,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/mighty_switch_force_collection",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 32,
+              "url": "https://www.nintendolife.com/games/switch-eshop/mighty_switch_force_collection",
+              "platform": "Nintendo Switch",
+              "weight": 5.656854249492381,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:55:11.314838+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/mighty-switch-force-collection-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:55:12.709302+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000021453/6a50584e06c136d37a16ebc8116b7a5e843eeac5709fe20239d6cb42a5d78958",
+        "source": "https://www.nintendo.com/us/store/products/mighty-switch-force-collection-switch/",
+        "checked": "2026-11-02T17:55:12.709561+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:55:11.314838+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:5894": {
       "title": "Outbuddies DX",
@@ -113823,22 +114115,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.86,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.43,
+              "count": 207,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0122-PPSA03463_00-MIGHTYGOOSE000EU",
+              "checked": "2026-11-02T17:55:11.310864+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 14.38749456993816,
+              "normalized": 8.86
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:55:08.934332+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0122-PPSA03463_00-MIGHTYGOOSE000EU",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:55:11.310864+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202105/2104/DTHKoxluHCkRSSMwDR6PC9yp.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0122-PPSA03463_00-MIGHTYGOOSE000EU",
+        "checked": "2026-11-02T17:55:11.310864+00:00"
+      },
+      "user": {
+        "score": 4.43,
+        "count": 207,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0122-PPSA03463_00-MIGHTYGOOSE000EU",
+        "checked": "2026-11-02T17:55:11.310864+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP0122-PPSA03463_00-MIGHTYGOOSE000EU",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0122-PPSA03463_00-MIGHTYGOOSE000EU",
+        "checked": "2026-11-02T17:55:11.310864+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:55:08.934332+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:9990": {
       "title": "Mushihimesama",
