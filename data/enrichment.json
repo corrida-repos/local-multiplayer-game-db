@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T23:05:48.738674+00:00",
+  "updated": "2026-11-02T23:06:57.411070+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1820,
+    "ready": 1824,
     "missing_image": 111,
-    "missing_store": 639,
-    "missing_rating": 470,
+    "missing_store": 633,
+    "missing_rating": 468,
     "full_attempted": 1042,
     "image_health_pending": 2431
   },
@@ -33960,11 +33960,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:37:31.130838+00:00"
+        "attempted": "2026-11-02T23:05:52.814491+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -33972,12 +33972,15 @@
         "source": "https://www.nintendo.com/us/store/products/in-extremis-dx-switch/",
         "checked": "2026-11-02T19:28:15.790229+00:00"
       },
-      "basics_attempted": "2026-11-02T19:28:13.401032+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:05:52.814491+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:37:33.836859+00:00",
       "store_evidence": [
@@ -33987,7 +33990,100 @@
           "checked": "2026-11-02T19:28:15.789936+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/In-Extremis-DX-2301125.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:05:55.253584+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "In Extremis DX"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:05:55.253892+00:00",
+              "next_attempt": "2026-11-03T23:05:55.253892+00:00",
+              "revision": "31255cfa7ab0caca:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:05:55.253892+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/In-Extremis-DX-2301125.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/In-Extremis-DX-2301125.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:38.035119+00:00",
+              "next_attempt": "2026-11-03T23:06:38.035119+00:00",
+              "revision": "31255cfa7ab0caca:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/in_extremis_dx",
+                "https://www.nintendolife.com/games/nintendo-switch/in_extremis_dx"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/in_extremis_dx"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:39.167560+00:00",
+              "next_attempt": "2026-11-03T23:06:39.167560+00:00",
+              "revision": "31255cfa7ab0caca:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=in-extremis-dx-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=in-extremis-dx-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:40.974334+00:00",
+              "next_attempt": "2026-11-03T23:06:40.974334+00:00",
+              "revision": "31255cfa7ab0caca:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/in-extremis-dx/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/in-extremis-dx/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/in-extremis-dx/"
+              ],
+              "url": "https://www.metacritic.com/game/in-extremis-dx/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:41.008436+00:00",
+              "next_attempt": "2026-11-03T23:06:41.008436+00:00",
+              "revision": "31255cfa7ab0caca:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=In+Extremis+DX&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=In+Extremis+DX&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:06:41.008554+00:00",
+              "next_attempt": "2026-11-03T00:06:41.008554+00:00",
+              "revision": "31255cfa7ab0caca:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:06:41.008616+00:00",
+              "next_attempt": "2026-11-03T00:06:41.008616+00:00",
+              "revision": "31255cfa7ab0caca:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:13411": {
       "title": "Infernax",
@@ -34016,21 +34112,24 @@
         ],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:37:32.045551+00:00"
+        "attempted": "2026-11-02T23:05:54.157624+00:00"
       },
       "requirements": {
         "image": true,
         "store": false,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T19:28:13.401473+00:00",
-      "version": 4,
+      "basics_attempted": "2026-11-02T23:05:54.157624+00:00",
+      "version": 7,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
         "community": "HTTP Error 404: Not Found",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psn": "PS4-only listings found; native PS5 identity requires review. No exact Portugal PS5 product verified",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed"
       },
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Infernax_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
@@ -34039,7 +34138,76 @@
         "method": "verified-game-article"
       },
       "full_attempted": "2026-11-02T20:37:32.440807+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "platform_review": {
+        "reason": "PS4-only listings found; native PS5 identity requires review. No exact Portugal PS5 product verified",
+        "checked": "2026-11-02T23:05:55.581468+00:00"
+      },
+      "field_status": {
+        "store": {
+          "sources": {
+            "psn": {
+              "status": "identity_rejected",
+              "last_attempt": "2026-11-02T23:05:55.581494+00:00",
+              "next_attempt": "2026-11-03T23:05:55.581494+00:00",
+              "revision": "eb450531a3c0c3ce:7",
+              "reason": "PS4-only listings found; native PS5 identity requires review. No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22PT%22%2C+%22languageCode%22%3A+%22pt%22%2C+%22nextCursor%22%3A+%22%22%2C+%22pageOffset%22%3A+0%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Infernax%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22%22%2C+%22pageOffset%22%3A+0%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Infernax%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22%22%2C+%22pageOffset%22%3A+0%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Infernax%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "psn": {
+              "status": "identity_rejected",
+              "last_attempt": "2026-11-02T23:05:55.581494+00:00",
+              "next_attempt": "2026-11-03T23:05:55.581494+00:00",
+              "revision": "eb450531a3c0c3ce:7",
+              "reason": "PS4-only listings found; native PS5 identity requires review. No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22PT%22%2C+%22languageCode%22%3A+%22pt%22%2C+%22nextCursor%22%3A+%22%22%2C+%22pageOffset%22%3A+0%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Infernax%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22%22%2C+%22pageOffset%22%3A+0%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Infernax%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22%22%2C+%22pageOffset%22%3A+0%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Infernax%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:05:55.832852+00:00",
+              "next_attempt": "2026-11-03T23:05:55.832852+00:00",
+              "revision": "eb450531a3c0c3ce:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.pushsquare.com/games/ps5/infernax"
+              ],
+              "url": "https://www.pushsquare.com/games/ps5/infernax"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:05:59.618815+00:00",
+              "next_attempt": "2026-11-03T23:05:59.618815+00:00",
+              "revision": "eb450531a3c0c3ce:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/infernax/platform/playstation-5/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/infernax/platform/playstation-5/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/infernax/"
+              ],
+              "url": "https://www.metacritic.com/game/infernax/"
+            },
+            "psu": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:05:59.618950+00:00",
+              "next_attempt": "2026-11-03T23:05:59.618950+00:00",
+              "revision": "eb450531a3c0c3ce:7",
+              "reason": "No exact console review indexed"
+            }
+          }
+        }
+      }
     },
     "Switch:13409": {
       "title": "Infernax",
@@ -120310,11 +120478,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:36:57.136216+00:00"
+        "attempted": "2026-11-02T23:05:52.814161+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -120322,12 +120490,15 @@
         "source": "https://www.nintendo.com/us/store/products/hypno-halo-switch/",
         "checked": "2026-11-02T19:27:39.823561+00:00"
       },
-      "basics_attempted": "2026-11-02T19:27:31.942837+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:05:52.814161+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:37:04.895417+00:00",
       "store_evidence": [
@@ -120337,7 +120508,100 @@
           "checked": "2026-11-02T19:27:39.823313+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Hypno-Halo-2969555.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:05:57.466442+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Hypno Halo"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:05:57.466754+00:00",
+              "next_attempt": "2026-11-03T23:05:57.466754+00:00",
+              "revision": "c83d5132d62a2d38:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:05:57.466754+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Hypno-Halo-2969555.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Hypno-Halo-2969555.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:43.226233+00:00",
+              "next_attempt": "2026-11-03T23:06:43.226233+00:00",
+              "revision": "c83d5132d62a2d38:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/hypno_halo",
+                "https://www.nintendolife.com/games/nintendo-switch/hypno_halo"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/hypno_halo"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:44.688866+00:00",
+              "next_attempt": "2026-11-03T23:06:44.688866+00:00",
+              "revision": "c83d5132d62a2d38:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=hypno-halo-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=hypno-halo-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:46.443259+00:00",
+              "next_attempt": "2026-11-03T23:06:46.443259+00:00",
+              "revision": "c83d5132d62a2d38:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/hypno-halo/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/hypno-halo/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/hypno-halo/"
+              ],
+              "url": "https://www.metacritic.com/game/hypno-halo/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:46.476686+00:00",
+              "next_attempt": "2026-11-03T23:06:46.476686+00:00",
+              "revision": "c83d5132d62a2d38:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Hypno+Halo&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Hypno+Halo&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:06:46.476807+00:00",
+              "next_attempt": "2026-11-03T00:06:46.476807+00:00",
+              "revision": "c83d5132d62a2d38:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:06:46.476866+00:00",
+              "next_attempt": "2026-11-03T00:06:46.476866+00:00",
+              "revision": "c83d5132d62a2d38:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:17609": {
       "title": "I Got Isekai'd Into a Shmup",
@@ -162118,23 +162382,159 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:37:27.671349+00:00"
+        "attempted": "2026-11-02T23:05:53.310501+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T19:28:13.401331+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:05:53.310501+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
       "full_attempted": "2026-11-02T20:37:31.141901+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:05:54.552830+00:00",
+              "next_attempt": "2026-11-03T23:05:54.552830+00:00",
+              "revision": "bb666e0ac0a04781:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Infected+Shelter%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Infected+Shelter%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:05:54.552830+00:00",
+              "next_attempt": "2026-11-03T23:05:54.552830+00:00",
+              "revision": "bb666e0ac0a04781:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Infected+Shelter%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Infected+Shelter%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:33.158326+00:00",
+              "next_attempt": "2026-11-03T23:06:33.158326+00:00",
+              "revision": "bb666e0ac0a04781:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/infected_shelter",
+                "https://www.nintendolife.com/games/nintendo-switch/infected_shelter"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/infected_shelter"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:33.959408+00:00",
+              "next_attempt": "2026-11-03T23:06:33.959408+00:00",
+              "revision": "bb666e0ac0a04781:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=infected-shelter-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=infected-shelter-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:37.746414+00:00",
+              "next_attempt": "2026-11-03T23:06:37.746414+00:00",
+              "revision": "bb666e0ac0a04781:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Infected+Shelter%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Infected+Shelter%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:33.158326+00:00",
+              "next_attempt": "2026-11-03T23:06:33.158326+00:00",
+              "revision": "bb666e0ac0a04781:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/infected_shelter",
+                "https://www.nintendolife.com/games/nintendo-switch/infected_shelter"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/infected_shelter"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:33.959408+00:00",
+              "next_attempt": "2026-11-03T23:06:33.959408+00:00",
+              "revision": "bb666e0ac0a04781:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=infected-shelter-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=infected-shelter-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:37.576208+00:00",
+              "next_attempt": "2026-11-03T23:06:37.576208+00:00",
+              "revision": "bb666e0ac0a04781:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/infected-shelter/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/infected-shelter/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/infected-shelter/"
+              ],
+              "url": "https://www.metacritic.com/game/infected-shelter/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:37.606164+00:00",
+              "next_attempt": "2026-11-03T23:06:37.606164+00:00",
+              "revision": "bb666e0ac0a04781:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Infected+Shelter&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Infected+Shelter&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:06:37.606249+00:00",
+              "next_attempt": "2026-11-03T00:06:37.606249+00:00",
+              "revision": "bb666e0ac0a04781:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:06:37.606291+00:00",
+              "next_attempt": "2026-11-03T00:06:37.606291+00:00",
+              "revision": "bb666e0ac0a04781:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:5712": {
       "title": "JUMANJI: The Video Game",
@@ -214097,7 +214497,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:27:31.941747+00:00"
+        "attempted": "2026-11-02T23:05:52.809869+00:00"
       },
       "requirements": {
         "image": true,
@@ -214109,13 +214509,31 @@
         "source": "https://www.nintendolife.com/games/nintendo-switch/gelly_break",
         "checked": "2026-11-02T17:42:04.514804+00:00"
       },
-      "basics_attempted": "2026-11-02T19:27:31.941747+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:05:52.809869+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:05:53.309936+00:00",
+              "next_attempt": "2026-11-03T23:05:53.309936+00:00",
+              "revision": "e40ce602ad5045f0:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Gelly+Break%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Gelly+Break%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "Switch:9575": {
       "title": "Go! Birdie",
@@ -214207,10 +214625,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/gun_skaters",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:05:58.269265+00:00",
+              "weight": 1.0,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -214220,20 +214651,20 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:35:29.165568+00:00"
+        "attempted": "2026-11-02T23:05:52.810146+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000035278/7816ba29b9c9e7c6a5cb991b6bad9d7e8b6da3311cc59c47b49072decb6ecdba",
         "source": "https://www.nintendo.com/us/store/products/gun-skaters-switch/",
         "checked": "2026-11-02T19:27:34.592313+00:00"
       },
-      "basics_attempted": "2026-11-02T19:27:31.942032+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:05:52.810146+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "slush": "No scored Switch review indexed",
@@ -214247,7 +214678,51 @@
           "checked": "2026-11-02T19:27:34.592052+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Gun-Skaters-1937969.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:05:53.079098+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Gun Skaters"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:05:53.079409+00:00",
+              "next_attempt": "2026-11-03T23:05:53.079409+00:00",
+              "revision": "34f98dd200a9c23c:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:05:53.079409+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Gun-Skaters-1937969.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Gun-Skaters-1937969.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:05:58.269328+00:00",
+              "next_attempt": "2026-11-03T23:05:58.269328+00:00",
+              "revision": "34f98dd200a9c23c:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:05:58.269328+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/gun_skaters"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/gun_skaters"
+            }
+          }
+        }
+      }
     },
     "Switch:9078": {
       "title": "Guns of Mercy - Rangers Edition",
@@ -214275,11 +214750,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:27:31.942181+00:00"
+        "attempted": "2026-11-02T23:05:52.810412+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -214287,8 +214762,8 @@
         "source": "https://www.nintendo.com/us/store/products/guns-of-mercy-rangers-edition-switch/",
         "checked": "2026-11-02T19:27:35.138466+00:00"
       },
-      "basics_attempted": "2026-11-02T19:27:31.942181+00:00",
-      "version": 4,
+      "basics_attempted": "2026-11-02T23:05:52.810412+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "Not a Switch 1 review",
@@ -214302,7 +214777,35 @@
           "checked": "2026-11-02T19:27:35.138213+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Guns-of-Mercy-Rangers-Edition-1492520.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:05:54.156614+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Guns of Mercy - Rangers Edition"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:05:54.156952+00:00",
+              "next_attempt": "2026-11-03T23:05:54.156952+00:00",
+              "revision": "c0a47e3da70cc45e:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:05:54.156952+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Guns-of-Mercy-Rangers-Edition-1492520.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Guns-of-Mercy-Rangers-Edition-1492520.html"
+            }
+          }
+        }
+      }
     },
     "Switch:9097": {
       "title": "Hacky Zack",
@@ -214330,11 +214833,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:27:31.942495+00:00"
+        "attempted": "2026-11-02T23:05:52.813061+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -214342,8 +214845,8 @@
         "source": "https://www.nintendo.com/us/store/products/hacky-zack-switch/",
         "checked": "2026-11-02T19:27:37.228637+00:00"
       },
-      "basics_attempted": "2026-11-02T19:27:31.942495+00:00",
-      "version": 4,
+      "basics_attempted": "2026-11-02T23:05:52.813061+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 301: Moved Permanently",
@@ -214356,7 +214859,35 @@
           "checked": "2026-11-02T19:27:37.228386+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Hacky-Zack-1416356.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:05:56.371466+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Hacky Zack"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:05:56.371786+00:00",
+              "next_attempt": "2026-11-03T23:05:56.371786+00:00",
+              "revision": "30918c40dbf8826e:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:05:56.371786+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Hacky-Zack-1416356.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Hacky-Zack-1416356.html"
+            }
+          }
+        }
+      }
     },
     "Switch:9098": {
       "title": "Hardway Party",
@@ -214370,10 +214901,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/hardway_party",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:06:23.439645+00:00",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -214383,20 +214927,20 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:36:20.733313+00:00"
+        "attempted": "2026-11-02T23:05:52.813664+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000013635/367d169c699d75877ad2e118cfb05c8444149d791ddfa3a079107c25ab5e40d0",
         "source": "https://www.nintendo.com/us/store/products/hardway-party-switch/",
         "checked": "2026-11-02T19:27:38.132314+00:00"
       },
-      "basics_attempted": "2026-11-02T19:27:31.942638+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:05:52.813664+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "slush": "No scored Switch review indexed",
@@ -214410,7 +214954,51 @@
           "checked": "2026-11-02T19:27:38.132064+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Hardway-Party-1491932.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:05:58.565586+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Hardway Party"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:05:58.565918+00:00",
+              "next_attempt": "2026-11-03T23:05:58.565918+00:00",
+              "revision": "322d5928e7be08a7:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:05:58.565918+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Hardway-Party-1491932.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Hardway-Party-1491932.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:06:23.439704+00:00",
+              "next_attempt": "2026-11-03T23:06:23.439704+00:00",
+              "revision": "322d5928e7be08a7:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:06:23.439704+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/hardway_party"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/hardway_party"
+            }
+          }
+        }
+      }
     },
     "Switch:9297": {
       "title": "Harvest Life",
@@ -219838,7 +220426,7 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:36:09.700520+00:00"
+        "attempted": "2026-11-02T23:05:52.812339+00:00"
       },
       "requirements": {
         "image": true,
@@ -219857,18 +220445,89 @@
         "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-HACHA-MECHA-FIGHTER-1982068.html",
         "checked": "2026-11-02T19:27:42.077808+00:00"
       },
-      "basics_attempted": "2026-11-02T19:27:31.942360+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:05:52.812339+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "aliases": [
         "Arcade Archives HACHA MECHA FIGHTER"
       ],
       "full_attempted": "2026-11-02T20:36:12.889605+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:48.194821+00:00",
+              "next_attempt": "2026-11-03T23:06:48.194821+00:00",
+              "revision": "939ffadbbd1e9002:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/hacha_mecha_fighter",
+                "https://www.nintendolife.com/games/switch-eshop/hacha_mecha_fighter",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_hacha_mecha_fighter"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_hacha_mecha_fighter"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:49.214424+00:00",
+              "next_attempt": "2026-11-03T23:06:49.214424+00:00",
+              "revision": "939ffadbbd1e9002:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=hacha-mecha-fighter-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=hacha-mecha-fighter-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:57.178960+00:00",
+              "next_attempt": "2026-11-03T23:06:57.178960+00:00",
+              "revision": "939ffadbbd1e9002:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-hacha-mecha-fighter/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-hacha-mecha-fighter/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-hacha-mecha-fighter/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-hacha-mecha-fighter/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:06:57.214182+00:00",
+              "next_attempt": "2026-11-03T23:06:57.214182+00:00",
+              "revision": "939ffadbbd1e9002:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Hacha+Mecha+Fighter&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Hacha+Mecha+Fighter&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:06:57.214306+00:00",
+              "next_attempt": "2026-11-03T00:06:57.214306+00:00",
+              "revision": "939ffadbbd1e9002:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:06:57.214372+00:00",
+              "next_attempt": "2026-11-03T00:06:57.214372+00:00",
+              "revision": "939ffadbbd1e9002:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:9900": {
       "title": "Just Dance 2022",
