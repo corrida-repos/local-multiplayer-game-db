@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:28:55.390539+00:00",
+  "updated": "2026-11-02T18:29:14.625969+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
-    "attempted": 2062,
-    "ready": 1324,
-    "missing_image": 699,
-    "missing_store": 783,
-    "missing_rating": 1103,
+    "attempted": 2072,
+    "ready": 1330,
+    "missing_image": 691,
+    "missing_store": 776,
+    "missing_rating": 1096,
     "full_attempted": 0
   },
   "games": {
@@ -50532,15 +50532,14 @@
       "title": "TEKKEN 8",
       "platform": "PS5",
       "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/b/b4/Tekken_8_cover_art.jpg",
-        "page": "https://en.wikipedia.org/wiki/Tekken_8"
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0312/aff71a0ced271048f5079b1fcf715bcb45110efc13e9704a.png",
+        "source": "https://store.playstation.com/pt-pt/concept/10006270",
+        "checked": "2026-11-02T18:28:58.881021+00:00"
       },
       "store": {
         "url": "https://store.playstation.com/pt-pt/concept/10006270",
         "label": "Abrir na PlayStation Store",
-        "checked": "2026-11-02T13:12:40.161472+00:00",
-        "error": null,
-        "attempted": "2026-11-02T15:59:41.445840+00:00"
+        "checked": "2026-11-02T18:28:58.881021+00:00"
       },
       "trailer": {
         "id": "2C3zOufe8s0",
@@ -50556,56 +50555,67 @@
         "in_catalog": false,
         "tier": null,
         "product_id": "EP0700-PPSA10594_00-TEKKEN8000000000",
-        "source": "https://store.playstation.com/pt-pt/concept/10006270",
         "region": "PT",
-        "checked": "2026-11-02T16:00:10.209431+00:00",
-        "error": null,
-        "attempted": "2026-11-02T16:00:10.209444+00:00"
+        "source": "https://store.playstation.com/pt-pt/concept/10006270",
+        "checked": "2026-11-02T18:28:58.881021+00:00"
       },
       "ratings": {
         "critic": {
           "score": 90.0,
           "scale": 100,
-          "source_count": 1,
-          "method": "single-source",
           "sources": [
             {
-              "score": 90,
-              "scale": 100,
-              "source": "Metacritic",
-              "url": "https://www.metacritic.com/game/tekken-8/critic-reviews/?platform=playstation-5",
-              "checked": "2026-11-02T13:12:38.215223+00:00",
               "name": "Metacritic",
+              "score": 90,
+              "url": "https://www.metacritic.com/game/tekken-8/critic-reviews/?platform=playstation-5",
               "platform": "PS5"
             }
-          ]
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": 8.5,
           "scale": 10,
-          "source_count": 1,
-          "method": "single-source",
           "sources": [
             {
               "score": 4.25,
-              "count": 25846,
+              "count": 25849,
               "scope": "PSN · PS5",
+              "name": "PSN",
               "scale": 5,
               "source": "PSN",
               "url": "https://store.playstation.com/pt-pt/concept/10006270",
-              "checked": "2026-11-02T13:12:40.161472+00:00",
-              "name": "PSN",
-              "platform": "PSN · PS5"
+              "checked": "2026-11-02T18:28:58.881021+00:00",
+              "platform": "PSN · PS5",
+              "weight": 31.622776601683793,
+              "normalized": 8.5
             }
-          ]
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T13:12:40.161494+00:00"
+        "attempted": "2026-11-02T18:28:58.094952+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
         "rating": true
-      }
+      },
+      "user": {
+        "score": 4.25,
+        "count": 25849,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/concept/10006270",
+        "checked": "2026-11-02T18:28:58.881021+00:00",
+        "platform": "PSN · PS5"
+      },
+      "basics_attempted": "2026-11-02T18:28:58.094952+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:13688": {
       "title": "TORINTO",
@@ -50614,21 +50624,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:59.801109+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:28:59.801109+00:00",
+      "version": 3,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "Switch:13686": {
@@ -63881,21 +63899,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:58.094762+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/tactical-bandits-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:29:03.288728+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000071708/150a36d9e0052e330c3c62440fcd1eae9379d947e9c8aac6ba8bcbabad55edce",
+        "source": "https://www.nintendo.com/us/store/products/tactical-bandits-switch/",
+        "checked": "2026-11-02T18:29:03.289041+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:58.094762+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:15861": {
@@ -71871,45 +71907,118 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.2,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.1,
+              "count": 336,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP3948-PPSA24203_00-0327439105680872",
+              "checked": "2026-11-02T18:28:59.793956+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 18.33030277982336,
+              "normalized": 8.2
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:58.095410+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP3948-PPSA24203_00-0327439105680872",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:28:59.793956+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202412/0908/ba3a809bae117109c2f101f64eb9bad42315a7df90767c42.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP3948-PPSA24203_00-0327439105680872",
+        "checked": "2026-11-02T18:28:59.793956+00:00"
+      },
+      "user": {
+        "score": 4.1,
+        "count": 336,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP3948-PPSA24203_00-0327439105680872",
+        "checked": "2026-11-02T18:28:59.793956+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP3948-PPSA24203_00-0327439105680872",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP3948-PPSA24203_00-0327439105680872",
+        "checked": "2026-11-02T18:28:59.793956+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:58.095410+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:16318": {
       "title": "THE HOUSE OF THE DEAD 2: Remake",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 83.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 83.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-house-of-the-dead-2-remake-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:58.095783+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/the-house-of-the-dead-2-remake-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:29:06.285603+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000072883/96572bd7bbbffde9778004a8fd5ffa3593b20eccb92e9c180dfb48e826158849",
+        "source": "https://www.nintendo.com/us/store/products/the-house-of-the-dead-2-remake-switch/",
+        "checked": "2026-11-02T18:29:06.285957+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:58.095783+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "Switch:16451": {
@@ -85661,47 +85770,95 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 83.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 83.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=synth-riders-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:58.093592+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/synth-riders-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:28:59.414552+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000101914/74049ebaae352ef8bf0925f967d7dd9a2c2af3ee6419df0facea89dc9bc8b14c",
+        "source": "https://www.nintendo.com/us/store/products/synth-riders-switch/",
+        "checked": "2026-11-02T18:28:59.414891+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:58.093592+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:18064": {
       "title": "Söldner-X 2: Final Prototype Definitive Edition",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 83.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 83.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=soldner-x-2-final-prototype-definitive-edition-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:58.093828+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/soldner-x-2-final-prototype-definitive-edition-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:29:00.899616+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000094576/ad0f68078e03ada3579b0ea0f5118acf2b0c3b130b1fbc3d89ff688dffdfdfd1",
+        "source": "https://www.nintendo.com/us/store/products/soldner-x-2-final-prototype-definitive-edition-switch/",
+        "checked": "2026-11-02T18:29:00.899937+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:58.093828+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "Switch:17461": {
@@ -85709,23 +85866,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 78.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 78.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=soldner-x-himmelssturmer-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:58.094153+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/soldner-x-himmelssturmer-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:29:02.394768+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000077609/ed418bc63c712530bfac47de449f53220a86201ed9640f7f009d4ccb4308d762",
+        "source": "https://www.nintendo.com/us/store/products/soldner-x-himmelssturmer-switch/",
+        "checked": "2026-11-02T18:29:02.395059+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:58.094153+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "Switch:18053": {
@@ -114129,23 +114311,55 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 90.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 90.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/tengai",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 22,
+              "url": "https://www.nintendolife.com/games/switch-eshop/tengai",
+              "platform": "Nintendo Switch",
+              "weight": 4.69041575982343,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:58.095125+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "image": {
+        "url": "https://images.nintendolife.com/c7184fb1cc826/1280x720.jpg",
+        "source": "https://www.nintendolife.com/games/switch-eshop/tengai",
+        "checked": "2026-11-02T18:29:11.908850+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:58.095125+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:7193": {
@@ -135794,24 +136008,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 63.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 63.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=together-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:28:58.894832+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/together-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:29:07.017614+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000036937/3bea7e09476cfeca0196ec1d49f72b176dfe86f9b29416760b766b8b8611d5c7",
+        "source": "https://www.nintendo.com/us/store/products/together-switch/",
+        "checked": "2026-11-02T18:29:07.017913+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:28:58.894832+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:9693": {
       "title": "Task Force Harrier",
