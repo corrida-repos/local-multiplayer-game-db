@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:44:33.524337+00:00",
+  "updated": "2026-11-02T17:44:57.300662+00:00",
   "version": 2,
   "coverage": {
     "total": 2542,
-    "attempted": 1022,
-    "ready": 649,
-    "missing_image": 1582,
-    "missing_store": 1635,
-    "missing_rating": 1834,
+    "attempted": 1032,
+    "ready": 656,
+    "missing_image": 1574,
+    "missing_store": 1627,
+    "missing_rating": 1827,
     "full_attempted": 0
   },
   "games": {
@@ -48741,21 +48741,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:44:46.193864+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:44:46.193864+00:00",
+      "version": 2,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "Switch:16059": {
@@ -61318,45 +61326,132 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.76,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.88,
+              "count": 240,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP0182-PPSA34438_00-SNOOCHTOTHENOOCH",
+              "checked": "2026-11-02T17:44:37.588072+00:00",
+              "platform": "PSN · PS5",
+              "weight": 15.491933384829668,
+              "normalized": 7.76
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:44:36.323055+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP0182-PPSA34438_00-SNOOCHTOTHENOOCH",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:44:37.588072+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202603/2417/b2e1709f8e6535eaee2a093f26dbbe6cb5e6eefb24aacbb2.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP0182-PPSA34438_00-SNOOCHTOTHENOOCH",
+        "checked": "2026-11-02T17:44:37.588072+00:00"
+      },
+      "user": {
+        "score": 3.88,
+        "count": 240,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP0182-PPSA34438_00-SNOOCHTOTHENOOCH",
+        "checked": "2026-11-02T17:44:37.588072+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP0182-PPSA34438_00-SNOOCHTOTHENOOCH",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP0182-PPSA34438_00-SNOOCHTOTHENOOCH",
+        "checked": "2026-11-02T17:44:37.588072+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:44:36.323055+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:18041": {
       "title": "Jay and Silent Bob: Chronic Blunt Punch",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 58.3,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo News PL",
+              "score": 60,
+              "url": "https://nintendonews.pl/recenzja-jay-and-silent-bob-chronic-blunt-punch-na-nintendo-switch-2",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "https://www.nintendoworldreport.com/review/75243/jay-and-silent-bob-chronic-blunt-punch-switch-review",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SECTOR.sk",
+              "score": 40,
+              "url": " https://www.sector.sk/recenzia/40570/jay-and-silent-bob-chronic-blunt-punch.htm",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 3
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:44:36.323251+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/jay-and-silent-bob-chronic-blunt-punch-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:44:39.712139+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000112709/bbc739036161efdba041a4e066744d8430e0b9302805d61c6a7f5f036f7143b1",
+        "source": "https://www.nintendo.com/us/store/products/jay-and-silent-bob-chronic-blunt-punch-switch/",
+        "checked": "2026-11-02T17:44:39.712276+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:44:36.323251+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:17866": {
@@ -61366,21 +61461,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:44:43.854867+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:44:43.854867+00:00",
+      "version": 2,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "Switch:17836": {
@@ -61388,24 +61491,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 76.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 76.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jelly-and-toast-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:44:44.070817+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/jelly-and-toast-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:44:45.562776+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000093067/6337ecda8548d2dd1380e88b523fa8bbc10e057c21a5d46a3f060d0f11dd8e9f",
+        "source": "https://www.nintendo.com/us/store/products/jelly-and-toast-switch/",
+        "checked": "2026-11-02T17:44:45.562926+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:44:44.070817+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:17774": {
       "title": "JellyCar Worlds",
@@ -61414,22 +61540,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.42,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.71,
+              "count": 21,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP6097-PPSA33746_00-0464463379506793",
+              "checked": "2026-11-02T17:44:46.188314+00:00",
+              "platform": "PSN · PS5",
+              "weight": 4.58257569495584,
+              "normalized": 9.42
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:44:44.198417+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP6097-PPSA33746_00-0464463379506793",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:44:46.188314+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202511/1906/53d4f481d3604acfbb52747691a08dc3fc7b52201d64df99.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP6097-PPSA33746_00-0464463379506793",
+        "checked": "2026-11-02T17:44:46.188314+00:00"
+      },
+      "user": {
+        "score": 4.71,
+        "count": 21,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP6097-PPSA33746_00-0464463379506793",
+        "checked": "2026-11-02T17:44:46.188314+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP6097-PPSA33746_00-0464463379506793",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP6097-PPSA33746_00-0464463379506793",
+        "checked": "2026-11-02T17:44:46.188314+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:44:44.198417+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:17534": {
       "title": "KIBORG",
@@ -64850,21 +65024,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:44:36.322667+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/jaleco-sports-goal-2-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:44:38.135236+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000109465/a0b82148e233eb70a8badf5636cd1a0fb9195f850e3e9a3baa3c1717d0bd86d1",
+        "source": "https://www.nintendo.com/us/store/products/jaleco-sports-goal-2-switch/",
+        "checked": "2026-11-02T17:44:38.135385+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:44:36.322667+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:18094": {
@@ -77872,23 +78063,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 86.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 86.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jamestown-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:44:36.322812+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jamestown-1678684.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:44:40.997264+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_Jamestown_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jamestown-1678684.html",
+        "checked": "2026-11-02T17:44:40.997264+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:44:36.322812+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "Switch:5796": {
@@ -80980,24 +81196,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 60.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/jay_and_silent_bob_mall_brawl",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 4.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 4.7,
+              "scale": 10.0,
+              "count": 6,
+              "url": "https://www.nintendolife.com/games/switch-eshop/jay_and_silent_bob_mall_brawl",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 4.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:44:37.592223+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/jay-and-silent-bob-mall-brawl-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:44:41.413274+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000029452/9a0d8a2a0af3dbdcfe87f62388e82085934695782919ba138831f65b6959fc45",
+        "source": "https://www.nintendo.com/us/store/products/jay-and-silent-bob-mall-brawl-switch/",
+        "checked": "2026-11-02T17:44:41.413506+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:44:37.592223+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:6538": {
       "title": "Let's Go Nuts!",
@@ -89505,24 +89755,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 75.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jet-set-knights-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:44:45.253009+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/jet-set-knights-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:44:46.638525+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000033574/21075fdbb48bbde5a1f941f99bedfcbba1c6152545e70ff30b2892e4ebce8a46",
+        "source": "https://www.nintendo.com/us/store/products/jet-set-knights-switch/",
+        "checked": "2026-11-02T17:44:46.638676+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:44:45.253009+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:7982": {
       "title": "Joe & Mac 2: Lost in the Tropics",
