@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:10:13.197985+00:00",
+  "updated": "2026-11-02T17:10:33.554786+00:00",
   "version": 1,
   "coverage": {
     "total": 1229,
-    "attempted": 362,
-    "ready": 241,
-    "missing_image": 858,
-    "missing_store": 870,
-    "missing_rating": 972,
+    "attempted": 372,
+    "ready": 246,
+    "missing_image": 849,
+    "missing_store": 862,
+    "missing_rating": 967,
     "full_attempted": 0
   },
   "games": {
@@ -19754,21 +19754,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:16.930408+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
         "rating": false
+      },
+      "image": {
+        "url": "https://images.nintendolife.com//1280x720.jpg",
+        "source": "https://www.nintendolife.com/games/switch-eshop/fort_boyard",
+        "checked": "2026-11-02T17:10:24.432994+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:16.930408+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found"
       }
     },
     "Switch:10081": {
@@ -19776,24 +19788,83 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 67.5,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Digitally Downloaded",
+              "score": 60,
+              "url": "http://www.digitallydownloaded.net/2021/08/review-fort-triumph-nintendo-switch.html",
+              "date": "2021-08-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 70,
+              "url": "https://www.gamingnexus.com/Article/7392/Fort-Triumph/",
+              "date": "2021-08-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-fort-triumph-nintendo-switch/",
+              "date": "2021-09-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 70,
+              "url": "https://toucharcade.com/2021/08/23/switcharcade-round-up-reviews-featuring-fort-triumph-and-more-plus-the-latest-new-releases-and-sales/",
+              "date": "2021-08-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 7.5,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.5,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/fort-triumph/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 7.5
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:18.075631+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/fort-triumph-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:22.325157+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000036836/31eb82e7b1e1cebe15c6183df0f1039b53c12859a0fad6aa8ec75764b8409150",
+        "source": "https://www.nintendo.com/us/store/products/fort-triumph-switch/",
+        "checked": "2026-11-02T17:10:22.325697+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:18.075631+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:11528": {
       "title": "Funtasia",
@@ -37065,22 +37136,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:22.956685+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/frogsong-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:24.881163+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000075283/8a3121bc8974f94618f5154db7f236d449cbf0ab82efea8b0f4958f23145b73a",
+        "source": "https://www.nintendo.com/us/store/products/frogsong-switch/",
+        "checked": "2026-11-02T17:10:24.881687+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:22.956685+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:15014": {
       "title": "Gravityscape DX",
@@ -39263,21 +39349,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:22.325879+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/fortress-challenge-fort-boyard-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:23.667648+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000077672/cb806a78ac28354806dd1c16f8206d22d75338faf6d770e6bd6bab5b442bd245",
+        "source": "https://www.nintendo.com/us/store/products/fortress-challenge-fort-boyard-switch/",
+        "checked": "2026-11-02T17:10:23.668039+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:22.325879+00:00",
+      "version": 1,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "PS5:15423": {
@@ -39287,46 +39390,117 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.12,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.56,
+              "count": 437,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP5335-PPSA21412_00-FROGUNENCORE0000",
+              "checked": "2026-11-02T17:10:27.216887+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 20.904544960366874,
+              "normalized": 7.119999999999999
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:25.886228+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP5335-PPSA21412_00-FROGUNENCORE0000",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:10:27.216887+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1718/73575796b9bb97c7276c055c31005ceb83c0b4762fca3616.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP5335-PPSA21412_00-FROGUNENCORE0000",
+        "checked": "2026-11-02T17:10:27.216887+00:00"
+      },
+      "user": {
+        "score": 3.56,
+        "count": 437,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP5335-PPSA21412_00-FROGUNENCORE0000",
+        "checked": "2026-11-02T17:10:27.216887+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP5335-PPSA21412_00-FROGUNENCORE0000",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP5335-PPSA21412_00-FROGUNENCORE0000",
+        "checked": "2026-11-02T17:10:27.216887+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:25.886228+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:15421": {
       "title": "Frogun Encore",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/frogun-encore",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:27.167448+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/frogun-encore-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:28.726813+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000078204/465a960972dc044fbfc756aaa07c651d132ecc8a946699fa7a5907e0f0fd5cc7",
+        "source": "https://www.nintendo.com/us/store/products/frogun-encore-switch/",
+        "checked": "2026-11-02T17:10:28.727151+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:27.167448+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:15309": {
       "title": "Goliath Depot",
@@ -41543,21 +41717,31 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:16.929782+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:10:16.929782+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "PS5:15618": {
@@ -41567,22 +41751,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.76,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.88,
+              "count": 16,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA21876_00-FB202400000PS5EU",
+              "checked": "2026-11-02T17:10:22.948995+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 4.0,
+              "normalized": 7.76
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:21.548109+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA21876_00-FB202400000PS5EU",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:10:22.948995+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202404/0914/744a452ffd7749ea791c141ad17c52c1506f907c26c8c1a2.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP4295-PPSA21876_00-FB202400000PS5EU",
+        "checked": "2026-11-02T17:10:22.948995+00:00"
+      },
+      "user": {
+        "score": 3.88,
+        "count": 16,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA21876_00-FB202400000PS5EU",
+        "checked": "2026-11-02T17:10:22.948995+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP4295-PPSA21876_00-FB202400000PS5EU",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP4295-PPSA21876_00-FB202400000PS5EU",
+        "checked": "2026-11-02T17:10:22.948995+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:21.548109+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:15655": {
       "title": "Fueled Up",
@@ -44163,22 +44395,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.94,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.47,
+              "count": 2712,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP4395-PPSA23123_00-FORTHEKING200000",
+              "checked": "2026-11-02T17:10:18.060435+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 6.94
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:16.930139+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP4395-PPSA23123_00-FORTHEKING200000",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:10:18.060435+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202411/1911/ad09aae201d797cc0c435475c33787bde37543acbd101873.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP4395-PPSA23123_00-FORTHEKING200000",
+        "checked": "2026-11-02T17:10:18.060435+00:00"
+      },
+      "user": {
+        "score": 3.47,
+        "count": 2712,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP4395-PPSA23123_00-FORTHEKING200000",
+        "checked": "2026-11-02T17:10:18.060435+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP4395-PPSA23123_00-FORTHEKING200000",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP4395-PPSA23123_00-FORTHEKING200000",
+        "checked": "2026-11-02T17:10:18.060435+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:16.930139+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:16119": {
       "title": "G.I. Joe: Wrath of Cobra",
@@ -46827,22 +47107,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:16.929596+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/folk-hero-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:18.780918+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000071784/86808917ec7488f99a753753a60fed5de6c68db376b31a7b755942fefa35fd85",
+        "source": "https://www.nintendo.com/us/store/products/folk-hero-switch/",
+        "checked": "2026-11-02T17:10:18.781246+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:16.929596+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:16652": {
       "title": "GRADIUS ORIGINS",
