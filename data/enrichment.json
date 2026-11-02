@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:19:46.511326+00:00",
+  "updated": "2026-11-02T17:20:08.110046+00:00",
   "version": 2,
   "coverage": {
     "total": 1585,
-    "attempted": 512,
-    "ready": 318,
-    "missing_image": 1086,
-    "missing_store": 1105,
-    "missing_rating": 1246,
+    "attempted": 522,
+    "ready": 325,
+    "missing_image": 1077,
+    "missing_store": 1096,
+    "missing_rating": 1239,
     "full_attempted": 0
   },
   "games": {
@@ -57128,21 +57128,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:19:48.823737+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/color-breakers-2-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:19:50.374108+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000103916/2370af8d2dbbad448a2bd0f6e8e2268543b3fe19a2bc73756ea30dbffc040bdf",
+        "source": "https://www.nintendo.com/us/store/products/color-breakers-2-switch/",
+        "checked": "2026-11-02T17:19:50.374275+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:19:48.823737+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:17751": {
@@ -57152,45 +57169,118 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.0,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4,
+              "count": 27,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP3877-PPSA34484_00-FULLGAMECROSAKPA",
+              "checked": "2026-11-02T17:19:51.107080+00:00",
+              "platform": "PSN · PS5",
+              "weight": 5.196152422706632,
+              "normalized": 8.0
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:19:48.823885+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP3877-PPSA34484_00-FULLGAMECROSAKPA",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:19:51.107080+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202512/0817/88fadf0d7026c5e6e42204ca16268c73303e57379a2da32d.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP3877-PPSA34484_00-FULLGAMECROSAKPA",
+        "checked": "2026-11-02T17:19:51.107080+00:00"
+      },
+      "user": {
+        "score": 4,
+        "count": 27,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP3877-PPSA34484_00-FULLGAMECROSAKPA",
+        "checked": "2026-11-02T17:19:51.107080+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP3877-PPSA34484_00-FULLGAMECROSAKPA",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP3877-PPSA34484_00-FULLGAMECROSAKPA",
+        "checked": "2026-11-02T17:19:51.107080+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:19:48.823885+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:17876": {
       "title": "Crosak",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Cubed3",
+              "score": 70,
+              "url": "https://www.cubed3.com/games/reviews/nintendo-switch/crosak",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:19:48.824169+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/crosak-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:19:51.078395+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000112864/1c0bda3f241cd59a24cb5ad56fcef481e1fb9454fe7b57542572331b55eb1321",
+        "source": "https://www.nintendo.com/us/store/products/crosak-switch/",
+        "checked": "2026-11-02T17:19:51.078549+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:19:48.824169+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:17902": {
@@ -57200,45 +57290,125 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.0,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4,
+              "count": 267,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP0036-PPSA29511_00-0127969198442568",
+              "checked": "2026-11-02T17:19:51.031923+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 16.34013463836819,
+              "normalized": 8.0
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:19:48.824400+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP0036-PPSA29511_00-0127969198442568",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:19:51.031923+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202510/2905/5debc06ad51ca18c1a53954e7b11fa9e6e46859367883a33.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP0036-PPSA29511_00-0127969198442568",
+        "checked": "2026-11-02T17:19:51.031923+00:00"
+      },
+      "user": {
+        "score": 4,
+        "count": 267,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP0036-PPSA29511_00-0127969198442568",
+        "checked": "2026-11-02T17:19:51.031923+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP0036-PPSA29511_00-0127969198442568",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP0036-PPSA29511_00-0127969198442568",
+        "checked": "2026-11-02T17:19:51.031923+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:19:48.824400+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:17901": {
       "title": "DAMON and BABY",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 84.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "TierraGamer",
+              "score": 83,
+              "url": "https://tierragamer.com/resenas/videojuegos/damon-and-baby-es-un-viaje-imperdible-que-tiene-todo-lo-que-podrias-querer-de-un-juego/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 85,
+              "url": "https://universonintendo.com/analise-damon-and-baby/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 2
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:19:51.037968+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/damon-and-baby-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:19:52.039854+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000110528/f7f0b7def12a20e5f839b57d646d199723ed062ffa96403fbd643221e786ed2e",
+        "source": "https://www.nintendo.com/us/store/products/damon-and-baby-switch/",
+        "checked": "2026-11-02T17:19:52.040006+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:19:51.037968+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:18081": {
@@ -57246,24 +57416,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/dark-scrolls",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:19:52.511212+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/dark-scrolls-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:19:53.915643+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000099148/1801c1b18dbdbd6304ec10cb98225abfc083544bb57cb544b30d4af610c98883",
+        "source": "https://www.nintendo.com/us/store/products/dark-scrolls-switch/",
+        "checked": "2026-11-02T17:19:53.915791+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:19:52.511212+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:18082": {
       "title": "Devastators",
@@ -57272,21 +57465,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:19:56.303400+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:19:56.303400+00:00",
+      "version": 2,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "PS5:17629": {
@@ -60310,22 +60511,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.6,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.3,
+              "count": 2789,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/JP0106-PPSA32935_00-DW3CEREMASTERED0",
+              "checked": "2026-11-02T17:19:52.504852+00:00",
+              "platform": "PSN · PS5",
+              "weight": 31.622776601683793,
+              "normalized": 8.6
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:19:51.113263+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/JP0106-PPSA32935_00-DW3CEREMASTERED0",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:19:52.504852+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202509/1706/c38f789d742f4247906888b3d195b8440937bf66bef6de91.png",
+        "source": "https://store.playstation.com/pt-pt/product/JP0106-PPSA32935_00-DW3CEREMASTERED0",
+        "checked": "2026-11-02T17:19:52.504852+00:00"
+      },
+      "user": {
+        "score": 4.3,
+        "count": 2789,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/JP0106-PPSA32935_00-DW3CEREMASTERED0",
+        "checked": "2026-11-02T17:19:52.504852+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "JP0106-PPSA32935_00-DW3CEREMASTERED0",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/JP0106-PPSA32935_00-DW3CEREMASTERED0",
+        "checked": "2026-11-02T17:19:52.504852+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:19:51.113263+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:18085": {
       "title": "Devastators",
@@ -60334,21 +60583,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:20:02.473066+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-DEVASTATORS-3055140.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:20:04.012871+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/arcadearchivesdevastators/1x1_ArcadeArchivesDevastators_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-DEVASTATORS-3055140.html",
+        "checked": "2026-11-02T17:20:04.012871+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:20:02.473066+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:18326": {
@@ -62495,22 +62762,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.72,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.86,
+              "count": 1194,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP0182-PPSA33626_00-TOYSTORYCOMPLETE",
+              "checked": "2026-11-02T17:20:05.214963+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 9.72
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:20:03.725401+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP0182-PPSA33626_00-TOYSTORYCOMPLETE",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:20:05.214963+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202608/1114/86b2651fcc61e74da44a7949263a63f43fee87911bd4c411.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP0182-PPSA33626_00-TOYSTORYCOMPLETE",
+        "checked": "2026-11-02T17:20:05.214963+00:00"
+      },
+      "user": {
+        "score": 4.86,
+        "count": 1194,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP0182-PPSA33626_00-TOYSTORYCOMPLETE",
+        "checked": "2026-11-02T17:20:05.214963+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP0182-PPSA33626_00-TOYSTORYCOMPLETE",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP0182-PPSA33626_00-TOYSTORYCOMPLETE",
+        "checked": "2026-11-02T17:20:05.214963+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:20:03.725401+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:18731": {
       "title": "Disney/Pixar Toy Story 3 Complete Edition",
