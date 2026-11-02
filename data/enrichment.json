@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T19:15:01.628858+00:00",
+  "updated": "2026-11-02T19:15:30.633859+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1688,
-    "missing_image": 257,
-    "missing_store": 359,
-    "missing_rating": 702,
+    "ready": 1693,
+    "missing_image": 256,
+    "missing_store": 358,
+    "missing_rating": 697,
     "full_attempted": 0
   },
   "games": {
@@ -22813,19 +22813,21 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:12:22.557311+00:00"
+        "attempted": "2026-11-02T19:15:05.027379+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T17:12:22.557311+00:00",
-      "version": 1,
+      "basics_attempted": "2026-11-02T19:15:05.027379+00:00",
+      "version": 3,
       "errors": {
-        "store": "HTTP Error 404: Not Found",
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
@@ -67321,11 +67323,19 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 71.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 71.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=goobnballoonsdx-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": null,
@@ -67334,25 +67344,25 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:12:25.989036+00:00"
+        "attempted": "2026-11-02T19:15:07.589341+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
-        "rating": false
+        "rating": true
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/goobnballoonsdx-switch/",
         "label": "Abrir na Nintendo eShop",
-        "checked": "2026-11-02T17:12:27.626360+00:00"
+        "checked": "2026-11-02T19:15:13.423359+00:00"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000079348/2cd27e7dc64ae2008605b2febc96ca6e386a495f1cd1f724cbc1eed6414faaa1",
         "source": "https://www.nintendo.com/us/store/products/goobnballoonsdx-switch/",
-        "checked": "2026-11-02T17:12:27.626710+00:00"
+        "checked": "2026-11-02T19:15:13.423670+00:00"
       },
-      "basics_attempted": "2026-11-02T17:12:25.989036+00:00",
-      "version": 1,
+      "basics_attempted": "2026-11-02T19:15:07.589341+00:00",
+      "version": 3,
       "errors": {}
     },
     "Switch:15893": {
@@ -76422,7 +76432,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:12:17.161758+00:00"
+        "attempted": "2026-11-02T19:15:05.027229+00:00"
       },
       "requirements": {
         "image": true,
@@ -76432,16 +76442,18 @@
       "store": {
         "url": "https://www.nintendo.com/us/store/products/go-fight-fantastic-switch/",
         "label": "Abrir na Nintendo eShop",
-        "checked": "2026-11-02T17:12:18.567196+00:00"
+        "checked": "2026-11-02T19:15:11.526472+00:00"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000081416/48eeeec61f71c2074137024015359a3c691a359573bf072164a8e3225b756569",
         "source": "https://www.nintendo.com/us/store/products/go-fight-fantastic-switch/",
-        "checked": "2026-11-02T17:12:18.567510+00:00"
+        "checked": "2026-11-02T19:15:11.526733+00:00"
       },
-      "basics_attempted": "2026-11-02T17:12:17.161758+00:00",
-      "version": 1,
-      "errors": {}
+      "basics_attempted": "2026-11-02T19:15:05.027229+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
+      }
     },
     "PS5:16656": {
       "title": "HYPERCHARGE: Unboxed",
@@ -83837,11 +83849,19 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Vooks",
+              "score": 80,
+              "url": "https://www.vooks.net/dreamworks-gabbys-dollhouse-ready-to-party-switch-review/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": null,
@@ -83850,26 +83870,28 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:11:56.288047+00:00"
+        "attempted": "2026-11-02T19:15:05.026022+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
-        "rating": false
+        "rating": true
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/dreamworks-gabbys-dollhouse-ready-to-party-switch/",
         "label": "Abrir na Nintendo eShop",
-        "checked": "2026-11-02T17:11:58.043618+00:00"
+        "checked": "2026-11-02T19:15:06.605478+00:00"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000087895/e5c046f35a98b932cc2e50392c7d101dc62b5d4e8566a4125469e2e6c82e2ff9",
         "source": "https://www.nintendo.com/us/store/products/dreamworks-gabbys-dollhouse-ready-to-party-switch/",
-        "checked": "2026-11-02T17:11:58.044135+00:00"
+        "checked": "2026-11-02T19:15:06.606034+00:00"
       },
-      "basics_attempted": "2026-11-02T17:11:56.288047+00:00",
-      "version": 1,
-      "errors": {}
+      "basics_attempted": "2026-11-02T19:15:05.026022+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
+      }
     },
     "PS5:17273": {
       "title": "Esophaguys",
@@ -83948,11 +83970,19 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 83.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 83.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=esophaguys-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": null,
@@ -83961,25 +83991,25 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:12:02.520010+00:00"
+        "attempted": "2026-11-02T19:15:05.026168+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
-        "rating": false
+        "rating": true
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/esophaguys-switch/",
         "label": "Abrir na Nintendo eShop",
-        "checked": "2026-11-02T17:12:03.963213+00:00"
+        "checked": "2026-11-02T19:15:07.176144+00:00"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000090278/4a4537f229f9db0471c1e42a6452fe4e75a0755f03cae05815199fa8cd708034",
         "source": "https://www.nintendo.com/us/store/products/esophaguys-switch/",
-        "checked": "2026-11-02T17:12:03.963537+00:00"
+        "checked": "2026-11-02T19:15:07.176394+00:00"
       },
-      "basics_attempted": "2026-11-02T17:12:02.520010+00:00",
-      "version": 1,
+      "basics_attempted": "2026-11-02T19:15:05.026168+00:00",
+      "version": 3,
       "errors": {}
     },
     "Switch:17404": {
@@ -83987,11 +84017,19 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 30.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Gameliner",
+              "score": 30,
+              "url": "https://gameliner.nl/reviews/extremely-powerful-capybaras-review-extremely-mid-capybaras/7368-24-1-181",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": null,
@@ -84000,26 +84038,28 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:12:02.520337+00:00"
+        "attempted": "2026-11-02T19:15:05.026425+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
-        "rating": false
+        "rating": true
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/extremely-powerful-capybaras-switch/",
         "label": "Abrir na Nintendo eShop",
-        "checked": "2026-11-02T17:12:04.749395+00:00"
+        "checked": "2026-11-02T19:15:07.887795+00:00"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000087720/f37d1d222351da09a8666603573248a9b45723866eab6889e03884784cb67500",
         "source": "https://www.nintendo.com/us/store/products/extremely-powerful-capybaras-switch/",
-        "checked": "2026-11-02T17:12:04.749741+00:00"
+        "checked": "2026-11-02T19:15:07.888045+00:00"
       },
-      "basics_attempted": "2026-11-02T17:12:02.520337+00:00",
-      "version": 1,
-      "errors": {}
+      "basics_attempted": "2026-11-02T19:15:05.026425+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
+      }
     },
     "PS5:17130": {
       "title": "Farm Together 2",
@@ -84111,7 +84151,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:12:02.520817+00:00"
+        "attempted": "2026-11-02T19:15:05.026570+00:00"
       },
       "requirements": {
         "image": true,
@@ -84121,16 +84161,18 @@
       "store": {
         "url": "https://www.nintendo.com/us/store/products/farm-together-2-switch/",
         "label": "Abrir na Nintendo eShop",
-        "checked": "2026-11-02T17:12:06.637694+00:00"
+        "checked": "2026-11-02T19:15:09.538761+00:00"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000072468/a6e1c1edfd450787e9e88a5df601cbedf4111ecb7057735b7e1c7b2dadcbf5b2",
         "source": "https://www.nintendo.com/us/store/products/farm-together-2-switch/",
-        "checked": "2026-11-02T17:12:06.638229+00:00"
+        "checked": "2026-11-02T19:15:09.539169+00:00"
       },
-      "basics_attempted": "2026-11-02T17:12:02.520817+00:00",
-      "version": 1,
-      "errors": {}
+      "basics_attempted": "2026-11-02T19:15:05.026570+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
+      }
     },
     "PS5:17135": {
       "title": "Fire & Water",
@@ -84150,19 +84192,18 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:12:03.767761+00:00"
+        "attempted": "2026-11-02T19:15:05.026716+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T17:12:03.767761+00:00",
-      "version": 1,
+      "basics_attempted": "2026-11-02T19:15:05.026716+00:00",
+      "version": 3,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found",
-        "metacritic_users": "HTTP Error 301: Moved Permanently"
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "PS5:17333": {
@@ -84242,11 +84283,19 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 82.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 82.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=flora-and-fang-guardians-of-the-vampire-garden-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": null,
@@ -84255,19 +84304,25 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:12:08.730201+00:00"
+        "attempted": "2026-11-02T19:15:05.026956+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
       },
-      "basics_attempted": "2026-11-02T17:12:08.730201+00:00",
-      "version": 1,
-      "errors": {
-        "store": "HTTP Error 404: Not Found",
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "metacritic_users": "HTTP Error 301: Moved Permanently"
+      "basics_attempted": "2026-11-02T19:15:05.026956+00:00",
+      "version": 3,
+      "errors": {},
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/flora-and-fang-guardians-of-the-vampire-garden-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T19:15:10.730746+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000095656/3034b728659293c111366037c58b55aebf34f6697b46ca04d742fe2c282e3ce4",
+        "source": "https://www.nintendo.com/us/store/products/flora-and-fang-guardians-of-the-vampire-garden-switch/",
+        "checked": "2026-11-02T19:15:10.731045+00:00"
       }
     },
     "PS5:17364": {
@@ -87050,7 +87105,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:16:50.792963+00:00"
+        "attempted": "2026-11-02T19:15:09.709762+00:00"
       },
       "requirements": {
         "image": true,
@@ -87060,15 +87115,15 @@
       "store": {
         "url": "https://www.nintendo.com/us/store/products/a-dance-of-fire-and-ice-switch/",
         "label": "Abrir na Nintendo eShop",
-        "checked": "2026-11-02T17:16:52.203136+00:00"
+        "checked": "2026-11-02T19:15:14.889346+00:00"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000089145/e594a668fd46b661daec1874570cac9d8769b237ddb147bd330b06952b44d267",
         "source": "https://www.nintendo.com/us/store/products/a-dance-of-fire-and-ice-switch/",
-        "checked": "2026-11-02T17:16:52.203394+00:00"
+        "checked": "2026-11-02T19:15:14.889590+00:00"
       },
-      "basics_attempted": "2026-11-02T17:16:50.792963+00:00",
-      "version": 2,
+      "basics_attempted": "2026-11-02T19:15:09.709762+00:00",
+      "version": 3,
       "errors": {
         "nindie": "Not a Switch 1 review"
       }
