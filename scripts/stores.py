@@ -33,20 +33,26 @@ def official_url(platform,url):
     parsed=urllib.parse.urlparse(url)
     if parsed.scheme!='https':return False
     if platform=='PS5':return parsed.hostname=='store.playstation.com' and re.match(r'^/[a-z]{2}-[a-z]{2}/(?:product|concept)/[^/]+/?$',parsed.path) is not None
-    return platform=='Switch' and parsed.hostname=='www.nintendo.com' and (parsed.path.startswith('/us/store/products/') or re.match(r'^/(pt-pt/Jogos|en-gb/Games)/',parsed.path)) and '-switch-2/' not in parsed.path
+    return platform=='Switch' and parsed.hostname=='www.nintendo.com' and (parsed.path.startswith('/us/store/products/') or re.match(r'^/(pt-pt/Jogos|en-gb/Games)/',parsed.path)) and '-switch-2/' not in parsed.path.lower() and 'nintendo-switch-2' not in parsed.path.lower()
 
 class Meta(HTMLParser):
-    def __init__(self):super().__init__();self.title=''
+    def __init__(self):super().__init__();self.title='';self.head_title='';self.in_title=False
     def handle_starttag(self,tag,attrs):
         attrs=dict(attrs)
+        if tag=='title':self.in_title=True
         if tag=='meta' and attrs.get('property')=='og:title':self.title=attrs.get('content','')
+
+    def handle_endtag(self,tag):
+        if tag=='title':self.in_title=False
+    def handle_data(self,text):
+        if self.in_title:self.head_title+=text
 
 def nintendo_match(page,title,aliases=None):
     meta=Meta();meta.feed(page)
-    name=re.split(r' for (?:the )?Nintendo| [–-] Nintendo Official Site| \| Nintendo| [–-] Official Site',meta.title,flags=re.I)[0]
+    page_names=[re.split(r' for (?:the )?Nintendo| [–-] Nintendo Official Site| \| Nintendo| [–-] Official Site',name,flags=re.I)[0] for name in [meta.title,meta.head_title] if name]
     names=[title]+NINTENDO_NAMES.get(title,[])+(aliases or [])
     canonical=lambda value:normal(re.sub(r"^(?:Arcade Archives(?: 2)?|Console Archives|ACA NEOGEO|SEGA AGES|Johnny Turbo['’]?s Arcade)[ :]+",'',value,flags=re.I))
-    return canonical(name) in {canonical(value) for value in names}
+    return any(canonical(name) in {canonical(value) for value in names} for name in page_names)
 
 def fetch(url):
     global last

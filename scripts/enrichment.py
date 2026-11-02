@@ -123,7 +123,7 @@ def meta_image(page):
     for tag in re.findall(r'<meta\b[^>]*>',page,re.I):
         if re.search(r'(?:property|name)=["\']og:image["\']',tag,re.I):
             match=re.search(r'content=["\']([^"\']+)',tag,re.I)
-            if match and valid_image(html.unescape(match[1])):return html.unescape(match[1])
+            if match and valid_image(html.unescape(match[1]).strip()):return html.unescape(match[1]).strip()
 
 def nintendo_index_match(game,doc):
     systems=doc.get('system_type',[])

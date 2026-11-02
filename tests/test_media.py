@@ -12,6 +12,10 @@ class OfficialStores(unittest.TestCase):
         page='<meta property="og:title" content="Moving Out 2 for Nintendo Switch - Nintendo Official Site">'
         self.assertTrue(nintendo_match(page,'Moving Out 2'))
         self.assertFalse(nintendo_match(page,'Moving Out'))
+    def test_editorial_og_title_can_use_exact_document_title(self):
+        page='<title>Mario + Rabbids&reg; Kingdom Battle | Nintendo Switch games | Games | Nintendo UK</title><meta property="og:title" content="Team up with Mario and the Rabbids!">'
+        self.assertTrue(nintendo_match(page,'Mario + Rabbids Kingdom Battle'));self.assertFalse(nintendo_match(page,'Mario + Rabbids Sparks of Hope'))
+        self.assertFalse(official_url('Switch','https://www.nintendo.com/en-gb/Games/Nintendo-Switch-2-games/Example-123.html'))
     def test_nintendo_trademarks(self):
         page='<meta property="og:title" content="Kirby’s Return to Dreamland™ Deluxe for the Nintendo Switch system™ – Official Site">'
         self.assertTrue(nintendo_match(page,"Kirby's Return to Dream Land Deluxe"))
