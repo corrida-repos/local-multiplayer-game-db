@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:22:23.466464+00:00",
+  "updated": "2026-11-02T17:23:00.675904+00:00",
   "version": 2,
   "coverage": {
     "total": 1647,
-    "attempted": 572,
-    "ready": 353,
-    "missing_image": 1095,
-    "missing_store": 1116,
-    "missing_rating": 1270,
+    "attempted": 582,
+    "ready": 359,
+    "missing_image": 1085,
+    "missing_store": 1106,
+    "missing_rating": 1264,
     "full_attempted": 0
   },
   "games": {
@@ -22650,21 +22650,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:25.403311+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-GUNNAIL-2160724.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:22:30.103935+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ArcadeArchivesGunnail_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-GUNNAIL-2160724.html",
+        "checked": "2026-11-02T17:22:30.103935+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:25.403311+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:13183": {
@@ -22672,48 +22690,112 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 55.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Gamezebo",
+              "score": 60,
+              "url": "https://www.gamezebo.com/reviews/gunscape-switch-review-diy-fps/",
+              "date": "2023-02-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 50,
+              "url": "https://purenintendo.com/review-gunscape-nintendo-switch/",
+              "date": "2023-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 2
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:25.403709+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/gunscape-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:22:28.969682+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000026900/f478f64c06f5f94670f8f0338bca1f97d19888454a284dbd1e5fd0da48d28993",
+        "source": "https://www.nintendo.com/us/store/products/gunscape-switch/",
+        "checked": "2026-11-02T17:22:28.969843+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:25.403709+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:13161": {
       "title": "Guntech 2",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 65.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "KeenGamer",
+              "score": 60,
+              "url": "https://www.keengamer.com/articles/reviews/switch-reviews/guntech-2-review-bullet-hell-switch/",
+              "date": "2023-01-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 70,
+              "url": "https://toucharcade.com/2023/01/04/guntech-2-pixel-boy-switch-review-eshop-deals-prices/",
+              "date": "2023-01-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 2
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:25.403832+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/guntech-2-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:22:30.098882+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000053771/2cbd871c821ec78364e144c8437e0b34b2a57d898748565efa7a99cd785e4377",
+        "source": "https://www.nintendo.com/us/store/products/guntech-2-switch/",
+        "checked": "2026-11-02T17:22:30.099106+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:25.403832+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:10494": {
       "title": "Guts 'N Goals",
@@ -22722,46 +22804,118 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.72,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.86,
+              "count": 7,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP2011-PPSA04388_00-2337819673921593",
+              "checked": "2026-11-02T17:22:30.446704+00:00",
+              "platform": "PSN · PS5",
+              "weight": 2.6457513110645907,
+              "normalized": 7.720000000000001
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:28.969959+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP2011-PPSA04388_00-2337819673921593",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:22:30.446704+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202108/1221/QSrpoSKz5yS9yCHOdr0DUmoM.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP2011-PPSA04388_00-2337819673921593",
+        "checked": "2026-11-02T17:22:30.446704+00:00"
+      },
+      "user": {
+        "score": 3.86,
+        "count": 7,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP2011-PPSA04388_00-2337819673921593",
+        "checked": "2026-11-02T17:22:30.446704+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP2011-PPSA04388_00-2337819673921593",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP2011-PPSA04388_00-2337819673921593",
+        "checked": "2026-11-02T17:22:30.446704+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:28.969959+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:10497": {
       "title": "Guts 'N Goals",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 50.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Gamezebo",
+              "score": 50,
+              "url": "https://www.gamezebo.com/2022/01/03/switch-review-round-up-super-arcade-football-skatebird-dusk-and-more/",
+              "date": "2022-01-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:30.099207+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/guts-n-goals-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:22:32.419447+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000035843/2b4c9b01c71553df1466f522efb1ead9b2944225d544a3dcfb3406c56af86b84",
+        "source": "https://www.nintendo.com/us/store/products/guts-n-goals-switch/",
+        "checked": "2026-11-02T17:22:32.419597+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:30.099207+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:12980": {
       "title": "Gyro Boss DX",
@@ -22770,21 +22924,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:30.451379+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/gyro-boss-dx-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:22:33.620843+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000019416/9e5f491adee389aa4ce6a4982d9ddb7dd8f5bd2232d7e168ecd107b5a05c8c86",
+        "source": "https://www.nintendo.com/us/store/products/gyro-boss-dx-switch/",
+        "checked": "2026-11-02T17:22:33.621054+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:30.451379+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:10713": {
@@ -22794,21 +22965,40 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:32.419688+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/holy-cow-milking-simulator-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:22:34.530041+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000043511/ca0cd8bd279fda7c64431693cc6f0c69740ec0ca7e045f1c7a17dfa630d6769d",
+        "source": "https://www.nintendo.com/us/store/products/holy-cow-milking-simulator-switch/",
+        "checked": "2026-11-02T17:22:34.530257+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:32.419688+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_reviews": "The read operation timed out"
       }
     },
     "Switch:14109": {
@@ -22816,24 +23006,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 77.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 77.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=hyper-meteor-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:33.868985+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/hyper-meteor-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:22:35.554023+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000050014/a51e3ef1a6abbd2f6f9c6c92cb025095b74a2ff4aa980a5f9002a6e4fcf662ab",
+        "source": "https://www.nintendo.com/us/store/products/hyper-meteor-switch/",
+        "checked": "2026-11-02T17:22:35.554237+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:33.868985+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:14611": {
       "title": "Harmony's Odyssey",
@@ -46769,21 +46982,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:25.403464+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/guns-and-draguns-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:22:27.766880+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000083175/421e8f60dfc1af59edbc8d96cd8a33bbe06e089e5f341c519a4e6937568be131",
+        "source": "https://www.nintendo.com/us/store/products/guns-and-draguns-switch/",
+        "checked": "2026-11-02T17:22:27.767031+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:25.403464+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:16131": {
@@ -49617,22 +49847,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.86,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.93,
+              "count": 1535,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP6131-PPSA20082_00-0273376769559459",
+              "checked": "2026-11-02T17:22:37.764907+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 7.86
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:22:36.598420+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP6131-PPSA20082_00-0273376769559459",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:22:37.764907+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202505/2313/16ce0f141219828d07bbb3e9f1bf879ebad91174f3ed8041.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP6131-PPSA20082_00-0273376769559459",
+        "checked": "2026-11-02T17:22:37.764907+00:00"
+      },
+      "user": {
+        "score": 3.93,
+        "count": 1535,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP6131-PPSA20082_00-0273376769559459",
+        "checked": "2026-11-02T17:22:37.764907+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP6131-PPSA20082_00-0273376769559459",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP6131-PPSA20082_00-0273376769559459",
+        "checked": "2026-11-02T17:22:37.764907+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:22:36.598420+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:16584": {
       "title": "Hero's Hour",
