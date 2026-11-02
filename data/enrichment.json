@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:02:23.153974+00:00",
+  "updated": "2026-11-02T18:02:44.861853+00:00",
   "version": 2,
   "coverage": {
     "total": 2542,
-    "attempted": 1472,
-    "ready": 905,
-    "missing_image": 1216,
-    "missing_store": 1290,
-    "missing_rating": 1544,
+    "attempted": 1482,
+    "ready": 910,
+    "missing_image": 1210,
+    "missing_store": 1284,
+    "missing_rating": 1538,
     "full_attempted": 0
   },
   "games": {
@@ -41135,21 +41135,32 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:02:25.359096+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:02:25.359096+00:00",
+      "version": 2,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 403: Forbidden",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "PS5:12392": {
@@ -41159,21 +41170,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:02:25.359590+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:02:25.359590+00:00",
+      "version": 2,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 403: Forbidden"
       }
     },
     "Switch:10144": {
@@ -41183,21 +41202,50 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.3,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.3,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/paw-patrol-the-movie-adventure-city-calls/user-reviews/?platform=nintendo-switch",
+              "platform": "Switch",
+              "weight": 2.449489742783178,
+              "normalized": 6.3
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:02:30.706568+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/paw-patrol-the-movie-adventure-city-calls-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:02:32.105724+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000035639/89bdb94feed84a66d2ef078456ee2915f39c3ebf3f123da27d2308d470fb5371",
+        "source": "https://www.nintendo.com/us/store/products/paw-patrol-the-movie-adventure-city-calls-switch/",
+        "checked": "2026-11-02T18:02:32.106005+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:02:30.706568+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:13831": {
@@ -41207,45 +41255,140 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.12,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.56,
+              "count": 1528,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP3678-PPSA09190_00-7409034077921786",
+              "checked": "2026-11-02T18:02:33.378470+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 7.119999999999999
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:02:32.087105+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP3678-PPSA09190_00-7409034077921786",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:02:33.378470+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202305/1909/93dd02b6676b8f34738166f248d60790c790df5fd993950f.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP3678-PPSA09190_00-7409034077921786",
+        "checked": "2026-11-02T18:02:33.378470+00:00"
+      },
+      "user": {
+        "score": 3.56,
+        "count": 1528,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP3678-PPSA09190_00-7409034077921786",
+        "checked": "2026-11-02T18:02:33.378470+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": true,
+        "tier": "Extra",
+        "product_id": "EP3678-PPSA09190_00-7409034077921786",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP3678-PPSA09190_00-7409034077921786",
+        "checked": "2026-11-02T18:02:33.378470+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:02:32.087105+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:13827": {
       "title": "PAW Patrol World",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 66.2,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Gamereactor Spain",
+              "score": 70,
+              "url": "https://www.gamereactor.es/paw-patrol-world-la-patrulla-canina-1033243/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/reviewmini/65105/paw-patrol-world-switch-review-mini",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-paw-patrol-world-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 50,
+              "url": "https://screenrant.com/paw-patrol-world-switch-review/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 4
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:02:33.384789+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/paw-patrol-world-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:02:34.837804+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000055976/81169c4a097055360050d38bb9a68417ebac8439e3dd73d099437b7e129663ff",
+        "source": "https://www.nintendo.com/us/store/products/paw-patrol-world-switch/",
+        "checked": "2026-11-02T18:02:34.838023+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:02:33.384789+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:12621": {
@@ -69685,23 +69828,49 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Hobby Consolas",
+              "score": 80,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-pac-man-world-re-pac-2-remake-estupendo-plataformas-3d-todo-tipo-jugadores-1485024",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:02:25.358969+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/pac-man-world-2-re-pac-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:02:26.926641+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000072522/2c7c40b05eed6b523e36afd8e24619c9323396fb6e42a05f5a8a0530d42e3dbf",
+        "source": "https://www.nintendo.com/us/store/products/pac-man-world-2-re-pac-switch/",
+        "checked": "2026-11-02T18:02:26.926862+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:02:25.358969+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:17289": {
@@ -78828,21 +78997,40 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 5.5,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 5.5,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/paw-patrol-dino-world/user-reviews/?platform=playstation-5",
+              "platform": "PS5",
+              "weight": 2.0,
+              "normalized": 5.5
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:02:33.580658+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "basics_attempted": "2026-11-02T18:02:33.580658+00:00",
+      "version": 2,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 403: Forbidden"
       }
     },
     "Switch:18415": {
@@ -78852,21 +79040,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:02:34.388018+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/paw-patrol-dino-world-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:02:36.088369+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000094508/241f73a2c8ea7b1ef3df9709aacaf7f5c322fd143602213a1d620de94022c769",
+        "source": "https://www.nintendo.com/us/store/products/paw-patrol-dino-world-switch/",
+        "checked": "2026-11-02T18:02:36.088698+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:02:34.388018+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:18219": {
@@ -96933,21 +97139,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:02:25.359346+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:02:25.359346+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:6237": {
@@ -96955,23 +97173,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 89.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 89.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=phogs-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:02:35.057149+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/phogs-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:02:36.758912+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000022861/485225bf47864c91b341207f375f07d50f8b3dcaa2886dffe494f608c65ad9fe",
+        "source": "https://www.nintendo.com/us/store/products/phogs-switch/",
+        "checked": "2026-11-02T18:02:36.759115+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:02:35.057149+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:6556": {
