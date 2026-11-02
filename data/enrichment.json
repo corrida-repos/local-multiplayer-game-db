@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-02T23:11:01.438189+00:00",
+  "updated": "2026-11-02T23:12:04.399799+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1828,
+    "ready": 1829,
     "missing_image": 111,
-    "missing_store": 618,
+    "missing_store": 614,
     "missing_rating": 464,
     "full_attempted": 1042,
     "image_health_pending": 2431
@@ -37336,13 +37336,14 @@
               "url": "https://www.metacritic.com/game/just-dance-2023-edition/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 6.164414002968976,
-              "normalized": 6.799999999999999
+              "normalized": 6.799999999999999,
+              "checked": "2026-11-02T19:30:16.844547+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:30:16.844547+00:00"
+        "attempted": "2026-11-02T23:11:06.500133+00:00"
       },
       "requirements": {
         "image": true,
@@ -37354,13 +37355,31 @@
         "source": "https://www.nintendolife.com/games/switch-eshop/just_dance_2023_edition",
         "checked": "2026-11-02T17:46:34.422756+00:00"
       },
-      "basics_attempted": "2026-11-02T19:30:16.844547+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:11:06.500133+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:08.230872+00:00",
+              "next_attempt": "2026-11-03T23:11:08.230872+00:00",
+              "revision": "dbd7af9e604816a2:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Just+Dance+2023+Edition%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Just+Dance+2023+Edition%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "PS5:14020": {
       "title": "Just Dance 2024 Edition",
@@ -37385,24 +37404,26 @@
               "url": "https://www.metacritic.com/game/just-dance-2024-edition/user-reviews/?platform=playstation-5",
               "platform": "PS5",
               "weight": 2.0,
-              "normalized": 3.0
+              "normalized": 3.0,
+              "checked": "2026-11-02T19:30:16.844735+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:30:16.844735+00:00"
+        "attempted": "2026-11-02T23:11:06.500387+00:00"
       },
       "requirements": {
         "image": true,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T19:30:16.844735+00:00",
-      "version": 4,
+      "basics_attempted": "2026-11-02T23:11:06.500387+00:00",
+      "version": 7,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psn": "No exact Portugal PS5 product verified"
       },
       "image": {
         "url": "https://images.nintendolife.com/4a697f364f576/1280x720.jpg",
@@ -37412,7 +37433,26 @@
         "artwork_from": "Switch:14019",
         "note": "Shared artwork only; ratings and store remain console-specific."
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:31.564084+00:00",
+              "next_attempt": "2026-11-03T23:11:31.564084+00:00",
+              "revision": "cab1dd8e9b8118b0:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC01OTM%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Just+Dance+2024+Edition%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC01OTM%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Just+Dance+2024+Edition%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC01OTM%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Just+Dance+2024+Edition%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC01OTM%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Just+Dance+2024+Edition%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            }
+          }
+        }
+      }
     },
     "Switch:14019": {
       "title": "Just Dance 2024 Edition",
@@ -37445,13 +37485,14 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/just_dance_2024_edition",
               "platform": "Nintendo Switch",
               "weight": 3.1622776601683795,
-              "normalized": 6.7
+              "normalized": 6.7,
+              "checked": "2026-11-02T19:30:16.844888+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:30:16.844888+00:00"
+        "attempted": "2026-11-02T23:11:06.500655+00:00"
       },
       "requirements": {
         "image": true,
@@ -37463,13 +37504,31 @@
         "source": "https://www.nintendolife.com/games/switch-eshop/just_dance_2024_edition",
         "checked": "2026-11-02T17:46:40.875486+00:00"
       },
-      "basics_attempted": "2026-11-02T19:30:16.844888+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:11:06.500655+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:07.034599+00:00",
+              "next_attempt": "2026-11-03T23:11:07.034599+00:00",
+              "revision": "2073719c5d16f04c:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Just+Dance+2024+Edition%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Just+Dance+2024+Edition%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "PS5:11418": {
       "title": "KLONOA Phantasy Reverie Series",
@@ -38119,11 +38178,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:38:58.545999+00:00"
+        "attempted": "2026-11-02T23:11:07.035352+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -38131,12 +38190,15 @@
         "source": "https://www.nintendo.com/us/store/products/kamikaze-veggies-switch/",
         "checked": "2026-11-02T19:30:49.422918+00:00"
       },
-      "basics_attempted": "2026-11-02T19:30:34.959537+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:11:07.035352+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:39:01.687701+00:00",
       "store_evidence": [
@@ -38146,7 +38208,100 @@
           "checked": "2026-11-02T19:30:49.422668+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Kamikaze-Veggies-2296856.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:11:10.053740+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Kamikaze Veggies"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:11:10.054082+00:00",
+              "next_attempt": "2026-11-03T23:11:10.054082+00:00",
+              "revision": "8a6b4aa827d99053:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:11:10.054082+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Kamikaze-Veggies-2296856.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Kamikaze-Veggies-2296856.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:46.992272+00:00",
+              "next_attempt": "2026-11-03T23:11:46.992272+00:00",
+              "revision": "8a6b4aa827d99053:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/kamikaze_veggies",
+                "https://www.nintendolife.com/games/nintendo-switch/kamikaze_veggies"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/kamikaze_veggies"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:47.616467+00:00",
+              "next_attempt": "2026-11-03T23:11:47.616467+00:00",
+              "revision": "8a6b4aa827d99053:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=kamikaze-veggies-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=kamikaze-veggies-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:51.243348+00:00",
+              "next_attempt": "2026-11-03T23:11:51.243348+00:00",
+              "revision": "8a6b4aa827d99053:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/kamikaze-veggies/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/kamikaze-veggies/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/kamikaze-veggies/"
+              ],
+              "url": "https://www.metacritic.com/game/kamikaze-veggies/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:51.273612+00:00",
+              "next_attempt": "2026-11-03T23:11:51.273612+00:00",
+              "revision": "8a6b4aa827d99053:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Kamikaze+Veggies&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Kamikaze+Veggies&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:11:51.273729+00:00",
+              "next_attempt": "2026-11-03T00:11:51.273729+00:00",
+              "revision": "8a6b4aa827d99053:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:11:51.273790+00:00",
+              "next_attempt": "2026-11-03T00:11:51.273790+00:00",
+              "revision": "8a6b4aa827d99053:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:11290": {
       "title": "Kinduo",
@@ -90622,20 +90777,80 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:30:16.845019+00:00"
+        "attempted": "2026-11-02T23:11:06.501000+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T19:30:16.845019+00:00",
-      "version": 4,
+      "basics_attempted": "2026-11-02T23:11:06.501000+00:00",
+      "version": 7,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psn": "No exact Portugal PS5 product verified",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:32.610781+00:00",
+              "next_attempt": "2026-11-03T23:11:32.610781+00:00",
+              "revision": "b75204ba1f4bcafb:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC03MzE%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Just+Dance+2025+Edition%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC03MzE%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Just+Dance+2025+Edition%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC03MzE%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Just+Dance+2025+Edition%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC03MzE%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Just+Dance+2025+Edition%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:32.610781+00:00",
+              "next_attempt": "2026-11-03T23:11:32.610781+00:00",
+              "revision": "b75204ba1f4bcafb:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC03MzE%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Just+Dance+2025+Edition%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC03MzE%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Just+Dance+2025+Edition%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC03MzE%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Just+Dance+2025+Edition%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC03MzE%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Just+Dance+2025+Edition%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:32.873297+00:00",
+              "next_attempt": "2026-11-03T23:11:32.873297+00:00",
+              "revision": "b75204ba1f4bcafb:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.pushsquare.com/games/ps5/just_dance_2025_edition"
+              ],
+              "url": "https://www.pushsquare.com/games/ps5/just_dance_2025_edition"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:33.140224+00:00",
+              "next_attempt": "2026-11-03T23:11:33.140224+00:00",
+              "revision": "b75204ba1f4bcafb:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Just+Dance+2025+Edition%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Just+Dance+2025+Edition%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        }
+      }
     },
     "Switch:15639": {
       "title": "Just Dance 2025 Edition",
@@ -90649,7 +90864,7 @@
           "source_count": 0
         },
         "user": {
-          "score": 6.4,
+          "score": 6.62,
           "scale": 10,
           "sources": [
             {
@@ -90660,26 +90875,106 @@
               "url": "https://www.metacritic.com/game/just-dance-2025-edition/user-reviews/?platform=nintendo-switch",
               "platform": "Switch",
               "weight": 5.656854249492381,
-              "normalized": 6.4
+              "normalized": 6.4,
+              "checked": "2026-11-02T19:30:16.845188+00:00"
+            },
+            {
+              "score": 7.25,
+              "scale": 10,
+              "count": 4,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/just_dance_2025_edition",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:11:27.329965+00:00",
+              "weight": 2.0,
+              "normalized": 7.25
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:30:16.845188+00:00"
+        "attempted": "2026-11-02T23:11:06.501350+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T19:30:16.845188+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:11:06.501350+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:09.330578+00:00",
+              "next_attempt": "2026-11-03T23:11:09.330578+00:00",
+              "revision": "df3df5292e741d1f:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Just+Dance+2025+Edition%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Just+Dance+2025+Edition%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:09.330578+00:00",
+              "next_attempt": "2026-11-03T23:11:09.330578+00:00",
+              "revision": "df3df5292e741d1f:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Just+Dance+2025+Edition%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Just+Dance+2025+Edition%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:27.330028+00:00",
+              "next_attempt": "2026-11-03T23:11:27.330028+00:00",
+              "revision": "df3df5292e741d1f:7",
+              "reason": "No qualifying image found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/just_dance_2025_edition"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/just_dance_2025_edition"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:27.966469+00:00",
+              "next_attempt": "2026-11-03T23:11:27.966469+00:00",
+              "revision": "df3df5292e741d1f:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=just-dance-2025-edition-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=just-dance-2025-edition-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:28.180041+00:00",
+              "next_attempt": "2026-11-03T23:11:28.180041+00:00",
+              "revision": "df3df5292e741d1f:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Just+Dance+2025+Edition%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Just+Dance+2025+Edition%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        }
+      }
     },
     "Switch:15731": {
       "title": "King'n Knight",
@@ -90709,7 +91004,7 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:39:04.975852+00:00"
+        "attempted": "2026-11-02T23:11:07.899590+00:00"
       },
       "requirements": {
         "image": true,
@@ -90728,20 +91023,92 @@
         "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/King-n-Knight-2621354.html",
         "checked": "2026-11-02T19:30:43.986140+00:00"
       },
-      "basics_attempted": "2026-11-02T19:30:34.960379+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:11:07.899590+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "aliases": [
         "King 'n Knight"
       ],
       "full_attempted": "2026-11-02T20:39:07.802300+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:57.113866+00:00",
+              "next_attempt": "2026-11-03T23:11:57.113866+00:00",
+              "revision": "f49e5666f34596f0:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/kingn_knight",
+                "https://www.nintendolife.com/games/switch-eshop/kingn_knight",
+                "https://www.nintendolife.com/games/nintendo-switch/king_n_knight"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/king_n_knight"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:57.790822+00:00",
+              "next_attempt": "2026-11-03T23:11:57.790822+00:00",
+              "revision": "f49e5666f34596f0:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=kingn-knight-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=kingn-knight-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:12:04.167445+00:00",
+              "next_attempt": "2026-11-03T23:12:04.167445+00:00",
+              "revision": "f49e5666f34596f0:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/king-n-knight/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/king-n-knight/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/king-n-knight/"
+              ],
+              "url": "https://www.metacritic.com/game/king-n-knight/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:12:04.202589+00:00",
+              "next_attempt": "2026-11-03T23:12:04.202589+00:00",
+              "revision": "f49e5666f34596f0:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=King%27n+Knight&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=King%27n+Knight&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:12:04.202768+00:00",
+              "next_attempt": "2026-11-03T00:12:04.202768+00:00",
+              "revision": "f49e5666f34596f0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:12:04.202839+00:00",
+              "next_attempt": "2026-11-03T00:12:04.202839+00:00",
+              "revision": "f49e5666f34596f0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:15630": {
       "title": "Knights & Guns",
@@ -96134,11 +96501,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:38:53.154909+00:00"
+        "attempted": "2026-11-02T23:11:06.505703+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -96146,12 +96513,14 @@
         "source": "https://www.nintendo.com/us/store/products/kuukiyomi-4-consider-it-switch/",
         "checked": "2026-11-02T19:30:49.161865+00:00"
       },
-      "basics_attempted": "2026-11-02T19:30:34.959397+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:11:06.505703+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:38:56.394182+00:00",
       "store_evidence": [
@@ -96161,7 +96530,100 @@
           "checked": "2026-11-02T19:30:49.161361+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/KUUKIYOMI-4-Consider-It-2700730.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:11:08.964856+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "KUUKIYOMI 4: Consider It"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:11:08.965197+00:00",
+              "next_attempt": "2026-11-03T23:11:08.965197+00:00",
+              "revision": "49c9e66e3d2c3c70:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:11:08.965197+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/KUUKIYOMI-4-Consider-It-2700730.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/KUUKIYOMI-4-Consider-It-2700730.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:42.151410+00:00",
+              "next_attempt": "2026-11-03T23:11:42.151410+00:00",
+              "revision": "49c9e66e3d2c3c70:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/kuukiyomi_4_consider_it",
+                "https://www.nintendolife.com/games/nintendo-switch/kuukiyomi_4_consider_it"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/kuukiyomi_4_consider_it"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:44.684599+00:00",
+              "next_attempt": "2026-11-03T23:11:44.684599+00:00",
+              "revision": "49c9e66e3d2c3c70:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=kuukiyomi-4-consider-it-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=kuukiyomi-4-consider-it-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:48.637051+00:00",
+              "next_attempt": "2026-11-03T23:11:48.637051+00:00",
+              "revision": "49c9e66e3d2c3c70:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/kuukiyomi-4-consider-it/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/kuukiyomi-4-consider-it/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/kuukiyomi-4-consider-it/"
+              ],
+              "url": "https://www.metacritic.com/game/kuukiyomi-4-consider-it/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:48.670227+00:00",
+              "next_attempt": "2026-11-03T23:11:48.670227+00:00",
+              "revision": "49c9e66e3d2c3c70:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=KUUKIYOMI+4%3A+Consider+It&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=KUUKIYOMI+4%3A+Consider+It&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:11:48.670338+00:00",
+              "next_attempt": "2026-11-03T00:11:48.670338+00:00",
+              "revision": "49c9e66e3d2c3c70:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:11:48.670477+00:00",
+              "next_attempt": "2026-11-03T00:11:48.670477+00:00",
+              "revision": "49c9e66e3d2c3c70:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:16097": {
       "title": "Kaminari Kishi Riot",
@@ -102742,11 +103204,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:39:02.142082+00:00"
+        "attempted": "2026-11-02T23:11:06.502204+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -102754,12 +103216,15 @@
         "source": "https://www.nintendo.com/us/store/products/justice-ninja-casey-switch/",
         "checked": "2026-11-02T19:30:22.839092+00:00"
       },
-      "basics_attempted": "2026-11-02T19:30:18.431465+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:11:06.502204+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:39:05.464553+00:00",
       "store_evidence": [
@@ -102769,7 +103234,100 @@
           "checked": "2026-11-02T19:30:22.838835+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Justice-Ninja-Casey-2749569.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:11:06.770521+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Justice Ninja Casey"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:11:06.770827+00:00",
+              "next_attempt": "2026-11-03T23:11:06.770827+00:00",
+              "revision": "74ec9a486f426372:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:11:06.770827+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Justice-Ninja-Casey-2749569.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Justice-Ninja-Casey-2749569.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:12.125512+00:00",
+              "next_attempt": "2026-11-03T23:11:12.125512+00:00",
+              "revision": "74ec9a486f426372:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/justice_ninja_casey",
+                "https://www.nintendolife.com/games/nintendo-switch/justice_ninja_casey"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/justice_ninja_casey"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:15.044032+00:00",
+              "next_attempt": "2026-11-03T23:11:15.044032+00:00",
+              "revision": "74ec9a486f426372:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=justice-ninja-casey-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=justice-ninja-casey-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:16.843359+00:00",
+              "next_attempt": "2026-11-03T23:11:16.843359+00:00",
+              "revision": "74ec9a486f426372:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/justice-ninja-casey/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/justice-ninja-casey/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/justice-ninja-casey/"
+              ],
+              "url": "https://www.metacritic.com/game/justice-ninja-casey/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:11:16.919043+00:00",
+              "next_attempt": "2026-11-03T23:11:16.919043+00:00",
+              "revision": "74ec9a486f426372:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Justice+Ninja+Casey&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Justice+Ninja+Casey&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:11:16.919181+00:00",
+              "next_attempt": "2026-11-03T00:11:16.919181+00:00",
+              "revision": "74ec9a486f426372:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:11:16.919243+00:00",
+              "next_attempt": "2026-11-03T00:11:16.919243+00:00",
+              "revision": "74ec9a486f426372:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:16636": {
       "title": "Kemono Heroes",
@@ -216901,7 +217459,8 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.4142135623730951,
-              "normalized": 7.0
+              "normalized": 7.0,
+              "checked": "2026-11-02T20:58:28.679876+00:00"
             }
           ],
           "source_count": 1,
@@ -216917,11 +217476,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:58:28.679876+00:00"
+        "attempted": "2026-11-02T23:11:06.502522+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -216929,8 +217488,8 @@
         "source": "https://www.nintendo.com/us/store/products/kuukiyomi-3-consider-it-more-and-more-father-to-son-switch/",
         "checked": "2026-11-02T19:30:42.262295+00:00"
       },
-      "basics_attempted": "2026-11-02T19:30:34.959110+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:11:06.502522+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "Not a Switch 1 review",
@@ -216948,7 +217507,35 @@
           "checked": "2026-11-02T19:30:42.261909+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/KUUKIYOMI-3-Consider-It-More-and-More-Father-to-Son-1943019.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:11:07.898542+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "KUUKIYOMI 3: Consider It More and More!! - Father to Son"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:11:07.898851+00:00",
+              "next_attempt": "2026-11-03T23:11:07.898851+00:00",
+              "revision": "761f93c32f397796:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:11:07.898851+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/KUUKIYOMI-3-Consider-It-More-and-More-Father-to-Son-1943019.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/KUUKIYOMI-3-Consider-It-More-and-More-Father-to-Son-1943019.html"
+            }
+          }
+        }
+      }
     },
     "PS5:9453": {
       "title": "KeyWe",
