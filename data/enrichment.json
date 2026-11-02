@@ -1,14 +1,14 @@
 {
-  "updated": "2026-11-02T20:30:02.652214+00:00",
+  "updated": "2026-11-02T20:30:36.974434+00:00",
   "version": 4,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1810,
+    "ready": 1811,
     "missing_image": 144,
     "missing_store": 260,
-    "missing_rating": 617,
-    "full_attempted": 392
+    "missing_rating": 616,
+    "full_attempted": 402
   },
   "games": {
     "PS5:13238": {
@@ -16558,7 +16558,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:09:34.106421+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
+          "www.nintendolife.com/switch-eshop: HTTP Error 410: Gone"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T20:30:19.517736+00:00"
       },
       "requirements": {
         "image": true,
@@ -16579,8 +16587,11 @@
       "version": 3,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T20:30:22.913649+00:00"
     },
     "PS5:10580": {
       "title": "Destroy All Humans! 2 - Reprobed",
@@ -17005,7 +17016,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:07:22.821700+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
+          "www.nintendolife.com/switch-eshop: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T20:30:22.811549+00:00"
       },
       "requirements": {
         "image": true,
@@ -17020,14 +17041,17 @@
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "The read operation timed out"
+        "metacritic_critics": "The read operation timed out",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/8/80/Diablo_III_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
         "source": "https://en.wikipedia.org/wiki/Diablo_III",
         "checked": "2026-11-02T20:08:02.844806+00:00",
         "method": "verified-game-article"
-      }
+      },
+      "full_attempted": "2026-11-02T20:30:28.231057+00:00"
     },
     "PS5:5909": {
       "title": "Diablo IV",
@@ -17472,11 +17496,22 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 40.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "The Game Slush Pile",
+              "score": 40.0,
+              "url": "https://gameslushpile.com/2023/10/07/dinobreak-switch-game-review/",
+              "date": "2023-10-07T07:38:32-04:00",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review",
+              "original_score": 2.0,
+              "original_scale": 5.0
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": null,
@@ -17485,12 +17520,19 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:09:34.107276+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T20:30:25.203642+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
-        "rating": false
+        "rating": true
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/dinobreak-switch/",
@@ -17505,8 +17547,10 @@
       "basics_attempted": "2026-11-02T19:09:34.107276+00:00",
       "version": 3,
       "errors": {
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T20:30:33.877280+00:00"
     },
     "Switch:12509": {
       "title": "Disney Illusion Island Starring Mickey & Friends",
@@ -17526,7 +17570,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:07:27.426394+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
+          "www.nintendolife.com/switch-eshop: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T20:30:29.421065+00:00"
       },
       "requirements": {
         "image": false,
@@ -17542,8 +17596,11 @@
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
-        "image": "No unique matching video-game article with artwork"
-      }
+        "image": "No unique matching video-game article with artwork",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T20:30:34.887665+00:00"
     },
     "PS5:17814": {
       "title": "Divinity: Original Sin II - Definitive Edition",
@@ -17776,7 +17833,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:08:06.104603+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
+          "www.nintendolife.com/switch-eshop: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T20:30:32.687212+00:00"
       },
       "requirements": {
         "image": true,
@@ -17786,7 +17851,9 @@
       "basics_attempted": "2026-11-02T20:08:06.104603+00:00",
       "version": 4,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-DON-DOKO-DON-2349859.html",
@@ -17800,7 +17867,8 @@
       },
       "aliases": [
         "Arcade Archives DON DOKO DON"
-      ]
+      ],
+      "full_attempted": "2026-11-02T20:30:36.873719+00:00"
     },
     "Switch:11052": {
       "title": "Don't Starve Together",
@@ -62561,7 +62629,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:08:06.104415+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
+          "www.nintendolife.com/switch-eshop: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T20:30:31.585072+00:00"
       },
       "requirements": {
         "image": false,
@@ -62577,8 +62655,11 @@
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
-        "image": "No unique matching video-game article with artwork"
-      }
+        "image": "No unique matching video-game article with artwork",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T20:30:35.976933+00:00"
     },
     "PS5:15072": {
       "title": "F1 24",
@@ -95350,7 +95431,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:23:49.066082+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T20:30:18.506783+00:00"
       },
       "requirements": {
         "image": true,
@@ -95361,14 +95449,16 @@
       "version": 4,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/a/a2/DevastatorsTitle.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
         "source": "https://en.wikipedia.org/wiki/Devastators",
         "checked": "2026-11-02T19:29:44.657681+00:00",
         "method": "verified-game-article"
-      }
+      },
+      "full_attempted": "2026-11-02T20:30:19.274833+00:00"
     },
     "PS5:17629": {
       "title": "Don't Starve Together",
@@ -95388,7 +95478,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:23:51.949880+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T20:30:28.356051+00:00"
       },
       "requirements": {
         "image": false,
@@ -95399,8 +95496,10 @@
       "version": 4,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found"
-      }
+        "community": "HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T20:30:29.796378+00:00"
     },
     "Switch:17594": {
       "title": "Double Dragon Revive",
@@ -102255,7 +102354,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:17:13.896451+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
+          "www.nintendolife.com/switch-eshop: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T20:30:17.413408+00:00"
       },
       "requirements": {
         "image": true,
@@ -102275,11 +102382,14 @@
       "basics_attempted": "2026-11-02T19:17:13.896451+00:00",
       "version": 3,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "aliases": [
         "Arcade Archives DEVASTATORS"
-      ]
+      ],
+      "full_attempted": "2026-11-02T20:30:20.733762+00:00"
     },
     "Switch:18326": {
       "title": "EGGCONSOLE LAYDOCK 2 LAST ATTACK MSX2+",
@@ -106381,7 +106491,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:17:34.672351+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
+          "www.nintendolife.com/switch-eshop: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T20:30:27.238324+00:00"
       },
       "requirements": {
         "image": true,
@@ -106402,8 +106520,11 @@
       "version": 3,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T20:30:32.285076+00:00"
     },
     "PS5:18898": {
       "title": "Dog Man: Bark in Action",
