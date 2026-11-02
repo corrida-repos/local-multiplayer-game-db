@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:10:46.444233+00:00",
+  "updated": "2026-11-02T17:10:59.623227+00:00",
   "version": 1,
   "coverage": {
     "total": 1229,
-    "attempted": 382,
-    "ready": 253,
-    "missing_image": 841,
-    "missing_store": 854,
-    "missing_rating": 960,
+    "attempted": 392,
+    "ready": 260,
+    "missing_image": 831,
+    "missing_store": 845,
+    "missing_rating": 952,
     "full_attempted": 0
   },
   "games": {
@@ -20167,22 +20167,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.28,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.14,
+              "count": 100,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP5335-PPSA04746_00-4472125003402262",
+              "checked": "2026-11-02T17:10:49.408404+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 10.0,
+              "normalized": 6.28
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:48.469445+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP5335-PPSA04746_00-4472125003402262",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:10:49.408404+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202201/2818/8LJvYB9t7IM3y50in80jzXEx.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP5335-PPSA04746_00-4472125003402262",
+        "checked": "2026-11-02T17:10:49.408404+00:00"
+      },
+      "user": {
+        "score": 3.14,
+        "count": 100,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP5335-PPSA04746_00-4472125003402262",
+        "checked": "2026-11-02T17:10:49.408404+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP5335-PPSA04746_00-4472125003402262",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP5335-PPSA04746_00-4472125003402262",
+        "checked": "2026-11-02T17:10:49.408404+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:48.469445+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:11319": {
       "title": "GUNGUNGUN",
@@ -20191,21 +20239,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:48.469679+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/gungungun-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:49.506146+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000041438/fc97c5edc0de31ba75967ef0faaa64106a4d9ca8ea36ba0bcdd69d496a82f19c",
+        "source": "https://www.nintendo.com/us/store/products/gungungun-switch/",
+        "checked": "2026-11-02T17:10:49.506464+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:48.469679+00:00",
+      "version": 1,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone"
       }
     },
     "PS5:13104": {
@@ -20213,48 +20278,294 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 69.4,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Destructoid",
+              "score": 80,
+              "url": "https://www.destructoid.com/reviews/grim-guardians-demon-purge-review-destructoid-anime-gal-gun/",
+              "date": "2023-02-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Finger Guns",
+              "score": 60,
+              "url": "https://fingerguns.net/games/2023/02/24/grim-guardians-demon-purge-review-ps5-in-the-vain-of-vanias/",
+              "date": "2023-02-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 60,
+              "url": "https://www.gamespew.com/2023/02/grim-guardians-demon-purge-review/",
+              "date": "2023-02-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer Escape",
+              "score": 80,
+              "url": "https://gamerescape.com/2023/02/24/review-grim-guardians-demon-purge/",
+              "date": "2023-02-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 70,
+              "url": "https://hardcoregamer.com/reviews/review-grim-guardians-demon-purge/437915/",
+              "date": "2023-02-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 70,
+              "url": "https://psxbrasil.com.br/analise/grim-guardians-demon-purge-review/",
+              "date": "2023-02-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 55,
+              "url": "https://www.psu.com/reviews/grim-guardians-demon-purge-ps5-review/",
+              "date": "2023-02-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Mako Reactor",
+              "score": 80,
+              "url": "https://themakoreactor.com/featured/grim-guardians-demon-purge-ps5-review/47006/",
+              "date": "2023-02-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 8
         },
         "user": {
-          "score": null,
+          "score": 8.52,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.26,
+              "count": 700,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP1095-PPSA09600_00-GGACPSAPP0000000",
+              "checked": "2026-11-02T17:10:50.752900+00:00",
+              "platform": "PSN · PS5",
+              "weight": 26.457513110645905,
+              "normalized": 8.52
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:48.470040+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP1095-PPSA09600_00-GGACPSAPP0000000",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:10:50.752900+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202303/1702/5450ff258992cfe6645b3329da8b8f7d1fc9a69cdcbe12a8.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP1095-PPSA09600_00-GGACPSAPP0000000",
+        "checked": "2026-11-02T17:10:50.752900+00:00"
+      },
+      "user": {
+        "score": 4.26,
+        "count": 700,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP1095-PPSA09600_00-GGACPSAPP0000000",
+        "checked": "2026-11-02T17:10:50.752900+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP1095-PPSA09600_00-GGACPSAPP0000000",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP1095-PPSA09600_00-GGACPSAPP0000000",
+        "checked": "2026-11-02T17:10:50.752900+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:48.470040+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:13102": {
       "title": "Gal Guardians: Demon Purge",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 76.2,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Digitally Downloaded",
+              "score": 70,
+              "url": "https://www.digitallydownloaded.net/2023/02/review-grim-guardians-demon-purge-nintendo-switch.html",
+              "date": "2023-02-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "https://www.godisageek.com/reviews/grim-guardians-review/#:~:text=Grim%20Guardians%3A%20Demon%20Purge%20is%20an%20entertaining%20action%20platformer%20that,interesting%20weapons%20and%20tricky%20platforming.",
+              "date": "2023-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 80,
+              "url": "https://www.heypoorplayer.com/2023/02/22/grim-guardians-demon-purge-review-switch/",
+              "date": "2023-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 70,
+              "url": "https://multiplayer.it/recensioni/grim-guardians-demon-purge-recensione.html",
+              "date": "2023-02-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/grim-guardians-demon-purge",
+              "date": "2023-02-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/62908/grim-guardians-demon-purge-switch-review",
+              "date": "2023-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Tactics",
+              "score": 70,
+              "url": "https://www.pockettactics.com/grimm-guardians-demon-purge/review",
+              "date": "2023-02-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shindig",
+              "score": 80,
+              "url": "https://www.shindig.nz/games/game-review/quick-hits-classically-trained-platformers/",
+              "date": "2023-03-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Siliconera",
+              "score": 70,
+              "url": "https://www.siliconera.com/review-grim-guardians-demon-purge-feels-like-a-lite-castlevania/",
+              "date": "2023-02-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Mako Reactor",
+              "score": 80,
+              "url": "https://themakoreactor.com/featured/grim-guardians-demon-purge-switch-steam-deck-review-pc-remote-play-together/46987/",
+              "date": "2023-02-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 70,
+              "url": "https://toucharcade.com/2023/02/27/ninja-jajamaru-switch-review-grim-guardians-demon-purge-elderland-eshop-price-discount-cotton-games/",
+              "date": "2023-02-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 95,
+              "url": "https://universonintendo.com/analise-grim-guardians-demon-purge/",
+              "date": "2023-03-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 12
         },
         "user": {
-          "score": null,
+          "score": 7.57,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 19,
+              "url": "https://www.metacritic.com/game/gal-guardians-demon-purge/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.358898943540674,
+              "normalized": 7.4
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 30,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/gal_guardians_demon_purge",
+              "platform": "Nintendo Switch",
+              "weight": 5.477225575051661,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 2,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:48.470411+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/gal-guardians-demon-purge-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:51.240226+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000061625/eb65238c30c99743ad96491405700c29e7299d8ec8e4890aef19817c7d0bc1c4",
+        "source": "https://www.nintendo.com/us/store/products/gal-guardians-demon-purge-switch/",
+        "checked": "2026-11-02T17:10:51.241006+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:48.470411+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:11745": {
       "title": "Galactic Wars EX",
@@ -20263,22 +20574,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.96,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.48,
+              "count": 31,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP3111-PPSA06571_00-JANDUSOFT0000001",
+              "checked": "2026-11-02T17:10:52.821619+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 5.5677643628300215,
+              "normalized": 6.959999999999999
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:51.241230+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP3111-PPSA06571_00-JANDUSOFT0000001",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:10:52.821619+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202203/2810/KvoXL6oK7q6mQvP5SVxJKMuL.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP3111-PPSA06571_00-JANDUSOFT0000001",
+        "checked": "2026-11-02T17:10:52.821619+00:00"
+      },
+      "user": {
+        "score": 3.48,
+        "count": 31,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP3111-PPSA06571_00-JANDUSOFT0000001",
+        "checked": "2026-11-02T17:10:52.821619+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP3111-PPSA06571_00-JANDUSOFT0000001",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP3111-PPSA06571_00-JANDUSOFT0000001",
+        "checked": "2026-11-02T17:10:52.821619+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:51.241230+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:11743": {
       "title": "Galactic Wars EX",
@@ -20287,22 +20646,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:52.422831+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/galactic-wars-ex-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:53.847796+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000049506/0d78f7ef010a824a3d1cf2e6f06cb44ae7d7fa0e46ceeb25b30673ff74b76059",
+        "source": "https://www.nintendo.com/us/store/products/galactic-wars-ex-switch/",
+        "checked": "2026-11-02T17:10:53.848135+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:52.422831+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:14156": {
       "title": "Galaxy Champions TV",
@@ -20311,45 +20685,113 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.2,
+              "count": 115,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP6985-PPSA16052_00-0962335291874132",
+              "checked": "2026-11-02T17:10:54.008964+00:00",
+              "platform": "PSN · PS5",
+              "weight": 10.723805294763608,
+              "normalized": 8.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:52.656049+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP6985-PPSA16052_00-0962335291874132",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:10:54.008964+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202306/2919/ea25059bb151fd02885bcb4601e16d3067a1234c076a875c.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP6985-PPSA16052_00-0962335291874132",
+        "checked": "2026-11-02T17:10:54.008964+00:00"
+      },
+      "user": {
+        "score": 4.2,
+        "count": 115,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP6985-PPSA16052_00-0962335291874132",
+        "checked": "2026-11-02T17:10:54.008964+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP6985-PPSA16052_00-0962335291874132",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP6985-PPSA16052_00-0962335291874132",
+        "checked": "2026-11-02T17:10:54.008964+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:52.656049+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:10998": {
       "title": "Game Tengoku: CruisinMix Special",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/game_tengoku_cruisinmix_special",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:52.828643+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "image": {
+        "url": "https://images.nintendolife.com/d273f794725d0/1280x720.jpg",
+        "source": "https://www.nintendolife.com/games/switch-eshop/game_tengoku_cruisinmix_special",
+        "checked": "2026-11-02T17:10:57.751416+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:52.828643+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found"
       }
     },
     "Switch:12161": {
@@ -44715,46 +45157,128 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.6,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.3,
+              "count": 346,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/JP1368-PPSA27182_00-GGAC2PSAPP000000",
+              "checked": "2026-11-02T17:10:52.409305+00:00",
+              "platform": "PSN · PS5",
+              "weight": 18.601075237738275,
+              "normalized": 8.6
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:49.416573+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/JP1368-PPSA27182_00-GGAC2PSAPP000000",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:10:52.409305+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1015/5958611627add4478ac89c631487a09ee4d2d457a02778c5.png",
+        "source": "https://store.playstation.com/pt-pt/product/JP1368-PPSA27182_00-GGAC2PSAPP000000",
+        "checked": "2026-11-02T17:10:52.409305+00:00"
+      },
+      "user": {
+        "score": 4.3,
+        "count": 346,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/JP1368-PPSA27182_00-GGAC2PSAPP000000",
+        "checked": "2026-11-02T17:10:52.409305+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "JP1368-PPSA27182_00-GGAC2PSAPP000000",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/JP1368-PPSA27182_00-GGAC2PSAPP000000",
+        "checked": "2026-11-02T17:10:52.409305+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:49.416573+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:15955": {
       "title": "Gal Guardians: Servants of the Dark",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/gal-guardians-servants-of-the-dark",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 32,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/gal_guardians_servants_of_the_dark",
+              "platform": "Nintendo Switch",
+              "weight": 5.656854249492381,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:50.770739+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/gal-guardians-servants-of-the-dark-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:52.335930+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000091930/a10999f6c7cb9e9b2ccd4fea023764ca96eb41c43dd553cafa00ec9bec0fe062",
+        "source": "https://www.nintendo.com/us/store/products/gal-guardians-servants-of-the-dark-switch/",
+        "checked": "2026-11-02T17:10:52.336463+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:50.770739+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:16232": {
       "title": "Guns And Draguns",
