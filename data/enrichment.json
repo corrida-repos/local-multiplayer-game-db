@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:38:13.821451+00:00",
+  "updated": "2026-11-02T17:38:43.422353+00:00",
   "version": 2,
   "coverage": {
     "total": 2424,
-    "attempted": 882,
-    "ready": 563,
-    "missing_image": 1588,
-    "missing_store": 1629,
-    "missing_rating": 1814,
+    "attempted": 892,
+    "ready": 570,
+    "missing_image": 1579,
+    "missing_store": 1621,
+    "missing_rating": 1806,
     "full_attempted": 0
   },
   "games": {
@@ -92214,23 +92214,49 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 50.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 50,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/blues_journey_neogeo",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:38:18.046375+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/ACA-NEOGEO-BLUE-S-JOURNEY-1264199.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:38:22.844100+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_AcaNeogeoBluesJourney_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/ACA-NEOGEO-BLUE-S-JOURNEY-1264199.html",
+        "checked": "2026-11-02T17:38:22.844100+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:38:18.046375+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:9054": {
@@ -92240,21 +92266,32 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:38:18.046534+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:38:18.046534+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found"
       }
     },
     "Switch:8996": {
@@ -92262,23 +92299,61 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 50.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=coffee-crisis-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/coffee-crisis",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 5.3,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 5.3,
+              "scale": 10.0,
+              "count": 14,
+              "url": "https://www.nintendolife.com/games/switch-eshop/coffee_crisis",
+              "platform": "Nintendo Switch",
+              "weight": 3.7416573867739413,
+              "normalized": 5.300000000000001
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:38:18.046766+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "image": {
+        "url": "https://images.nintendolife.com/3c916f262b298/1280x720.jpg",
+        "source": "https://www.nintendolife.com/games/switch-eshop/coffee_crisis",
+        "checked": "2026-11-02T17:38:29.740403+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:38:18.046766+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found"
       }
     },
     "Switch:9064": {
@@ -92288,70 +92363,153 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 4.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 4.7,
+              "scale": 10.0,
+              "count": 9,
+              "url": "https://www.nintendolife.com/games/switch-eshop/coloring_book",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 4.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:38:18.046880+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/coloring-book-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:38:22.589389+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000015006/14ba34560b6da3722c67b424ff69d27f4640625e4df2c9afcdaf2ea10bf6a708",
+        "source": "https://www.nintendo.com/us/store/products/coloring-book-switch/",
+        "checked": "2026-11-02T17:38:22.589625+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:38:18.046880+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:8724": {
       "title": "Colossus Down",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 50.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 50.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/colossus_down",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:38:26.296480+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/colossus-down-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:38:27.675598+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000032988/524f13adbcfab49754b5124df8e373b70f9bc4996c89ca45be753ca3d1578983",
+        "source": "https://www.nintendo.com/us/store/products/colossus-down-switch/",
+        "checked": "2026-11-02T17:38:27.675749+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:38:26.296480+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:8613": {
       "title": "Crashlands",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/crashlands",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 6.5,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.5,
+              "scale": 10.0,
+              "count": 6,
+              "url": "https://www.nintendolife.com/games/switch-eshop/crashlands",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 6.5
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:38:27.463093+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/crashlands-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:38:29.440469+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000013050/6c21df2df01dfb41f5969f379ce19740612964c5c06a5c85258471453ec66c78",
+        "source": "https://www.nintendo.com/us/store/products/crashlands-switch/",
+        "checked": "2026-11-02T17:38:29.440686+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:38:27.463093+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:8867": {
       "title": "Cybattler",
@@ -92360,21 +92518,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:38:31.351917+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-CYBATTLER-1926132.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:38:32.754361+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ArcadeArchivesCybattler_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-CYBATTLER-1926132.html",
+        "checked": "2026-11-02T17:38:32.754361+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:38:31.351917+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:8948": {
@@ -92384,45 +92560,118 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.22,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.61,
+              "count": 101,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP1580-PPSA02659_00-5830848773442383",
+              "checked": "2026-11-02T17:38:33.003900+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 10.04987562112089,
+              "normalized": 7.22
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:38:31.776374+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP1580-PPSA02659_00-5830848773442383",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:38:33.003900+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202012/3104/N1eGtrZCexPZ0MavshX9TWA5.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP1580-PPSA02659_00-5830848773442383",
+        "checked": "2026-11-02T17:38:33.003900+00:00"
+      },
+      "user": {
+        "score": 3.61,
+        "count": 101,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP1580-PPSA02659_00-5830848773442383",
+        "checked": "2026-11-02T17:38:33.003900+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP1580-PPSA02659_00-5830848773442383",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP1580-PPSA02659_00-5830848773442383",
+        "checked": "2026-11-02T17:38:33.003900+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:38:31.776374+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:8957": {
       "title": "Demon's Crystals",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2019/01/16/demons-crystals-review/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:38:33.008857+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/demons-crystals-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:38:34.652256+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000013976/cc2dc48f4fa3bf00c003b199d72824078061e9e96882a862e7e673447b07ef4d",
+        "source": "https://www.nintendo.com/us/store/products/demons-crystals-switch/",
+        "checked": "2026-11-02T17:38:34.652408+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:38:33.008857+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:9063": {
@@ -92430,24 +92679,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 50.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 50.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=destruction-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:38:33.094922+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/destruction-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:38:35.839699+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000013506/30a01590a02d288a0f1f10c8090c1057295c55ade43f7d6112dfa91bb8ac76f0",
+        "source": "https://www.nintendo.com/us/store/products/destruction-switch/",
+        "checked": "2026-11-02T17:38:35.839890+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:38:33.094922+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:8702": {
       "title": "Discovery",
