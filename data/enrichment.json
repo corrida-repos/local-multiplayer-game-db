@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T23:06:57.411070+00:00",
+  "updated": "2026-11-02T23:08:34.489891+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1824,
+    "ready": 1826,
     "missing_image": 111,
-    "missing_store": 633,
-    "missing_rating": 468,
+    "missing_store": 627,
+    "missing_rating": 466,
     "full_attempted": 1042,
     "image_health_pending": 2431
   },
@@ -35587,20 +35587,89 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:28:13.402273+00:00"
+        "attempted": "2026-11-02T23:07:02.595680+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T19:28:13.402273+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:07:02.595680+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "community": "HTTP Error 404: Not Found",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:07:03.265013+00:00",
+              "next_attempt": "2026-11-03T23:07:03.265013+00:00",
+              "revision": "03b80fe404bf7e16:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22JUMANJI%3A+The+Curse+Returns%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22JUMANJI%3A+The+Curse+Returns%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:07:03.265013+00:00",
+              "next_attempt": "2026-11-03T23:07:03.265013+00:00",
+              "revision": "03b80fe404bf7e16:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22JUMANJI%3A+The+Curse+Returns%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22JUMANJI%3A+The+Curse+Returns%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:07:57.964248+00:00",
+              "next_attempt": "2026-11-03T23:07:57.964248+00:00",
+              "revision": "03b80fe404bf7e16:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/jumanji_the_curse_returns",
+                "https://www.nintendolife.com/games/nintendo-switch/jumanji_the_curse_returns"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/jumanji_the_curse_returns"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:01.400115+00:00",
+              "next_attempt": "2026-11-03T23:08:01.400115+00:00",
+              "revision": "03b80fe404bf7e16:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=jumanji-the-curse-returns-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jumanji-the-curse-returns-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:01.567220+00:00",
+              "next_attempt": "2026-11-03T23:08:01.567220+00:00",
+              "revision": "03b80fe404bf7e16:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22JUMANJI%3A+The+Curse+Returns%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22JUMANJI%3A+The+Curse+Returns%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        }
+      }
     },
     "PS5:10712": {
       "title": "JUMANJI: The Video Game",
@@ -35788,11 +35857,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:37:44.105382+00:00"
+        "attempted": "2026-11-02T23:07:03.925364+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -35800,13 +35869,15 @@
         "source": "https://www.nintendo.com/us/store/products/jigsaw-fun-amazing-animals-switch/",
         "checked": "2026-11-02T19:28:50.561750+00:00"
       },
-      "basics_attempted": "2026-11-02T19:28:44.893329+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:07:03.925364+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:37:46.977896+00:00",
       "store_evidence": [
@@ -35816,7 +35887,100 @@
           "checked": "2026-11-02T19:28:50.561485+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jigsaw-Fun-Amazing-Animals-2054368.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:07:07.416181+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Jigsaw Fun: Amazing Animals"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:07:07.416487+00:00",
+              "next_attempt": "2026-11-03T23:07:07.416487+00:00",
+              "revision": "4b026fcec35648d4:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:07:07.416487+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jigsaw-Fun-Amazing-Animals-2054368.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jigsaw-Fun-Amazing-Animals-2054368.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:07.810869+00:00",
+              "next_attempt": "2026-11-03T23:08:07.810869+00:00",
+              "revision": "4b026fcec35648d4:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/jigsaw_fun_amazing_animals",
+                "https://www.nintendolife.com/games/switch-eshop/jigsaw_fun_amazing_animals"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/jigsaw_fun_amazing_animals"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:08.414374+00:00",
+              "next_attempt": "2026-11-03T23:08:08.414374+00:00",
+              "revision": "4b026fcec35648d4:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=jigsaw-fun-amazing-animals-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jigsaw-fun-amazing-animals-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:13.585826+00:00",
+              "next_attempt": "2026-11-03T23:08:13.585826+00:00",
+              "revision": "4b026fcec35648d4:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/jigsaw-fun-amazing-animals/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/jigsaw-fun-amazing-animals/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/jigsaw-fun-amazing-animals/"
+              ],
+              "url": "https://www.metacritic.com/game/jigsaw-fun-amazing-animals/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:13.660647+00:00",
+              "next_attempt": "2026-11-03T23:08:13.660647+00:00",
+              "revision": "4b026fcec35648d4:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Jigsaw+Fun%3A+Amazing+Animals&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Jigsaw+Fun%3A+Amazing+Animals&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:08:13.660780+00:00",
+              "next_attempt": "2026-11-03T00:08:13.660780+00:00",
+              "revision": "4b026fcec35648d4:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:08:13.660846+00:00",
+              "next_attempt": "2026-11-03T00:08:13.660846+00:00",
+              "revision": "4b026fcec35648d4:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:11076": {
       "title": "Jigsaw Fun: Greatest Cities",
@@ -35843,11 +36007,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:37:45.258818+00:00"
+        "attempted": "2026-11-02T23:07:04.334741+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -35855,12 +36019,15 @@
         "source": "https://www.nintendo.com/us/store/products/jigsaw-fun-greatest-cities-switch/",
         "checked": "2026-11-02T19:28:51.729611+00:00"
       },
-      "basics_attempted": "2026-11-02T19:28:46.611951+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:07:04.334741+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:37:50.995761+00:00",
       "store_evidence": [
@@ -35870,7 +36037,100 @@
           "checked": "2026-11-02T19:28:51.729360+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jigsaw-Fun-Greatest-Cities-2095343.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:07:08.379838+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Jigsaw Fun: Greatest Cities"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:07:08.380166+00:00",
+              "next_attempt": "2026-11-03T23:07:08.380166+00:00",
+              "revision": "4dd00ceec93febab:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:07:08.380166+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jigsaw-Fun-Greatest-Cities-2095343.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jigsaw-Fun-Greatest-Cities-2095343.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:12.971341+00:00",
+              "next_attempt": "2026-11-03T23:08:12.971341+00:00",
+              "revision": "4dd00ceec93febab:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/jigsaw_fun_greatest_cities",
+                "https://www.nintendolife.com/games/nintendo-switch/jigsaw_fun_greatest_cities"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/jigsaw_fun_greatest_cities"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:13.567967+00:00",
+              "next_attempt": "2026-11-03T23:08:13.567967+00:00",
+              "revision": "4dd00ceec93febab:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=jigsaw-fun-greatest-cities-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jigsaw-fun-greatest-cities-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:15.520573+00:00",
+              "next_attempt": "2026-11-03T23:08:15.520573+00:00",
+              "revision": "4dd00ceec93febab:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/jigsaw-fun-greatest-cities/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/jigsaw-fun-greatest-cities/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/jigsaw-fun-greatest-cities/"
+              ],
+              "url": "https://www.metacritic.com/game/jigsaw-fun-greatest-cities/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:15.574113+00:00",
+              "next_attempt": "2026-11-03T23:08:15.574113+00:00",
+              "revision": "4dd00ceec93febab:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Jigsaw+Fun%3A+Greatest+Cities&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Jigsaw+Fun%3A+Greatest+Cities&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:08:15.574259+00:00",
+              "next_attempt": "2026-11-03T00:08:15.574259+00:00",
+              "revision": "4dd00ceec93febab:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:08:15.574331+00:00",
+              "next_attempt": "2026-11-03T00:08:15.574331+00:00",
+              "revision": "4dd00ceec93febab:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:10821": {
       "title": "Jigsaw Fun: Wonderful Nature",
@@ -89805,7 +90065,7 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:37:38.650892+00:00"
+        "attempted": "2026-11-02T23:07:02.597673+00:00"
       },
       "requirements": {
         "image": true,
@@ -89824,20 +90084,92 @@
         "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-JACKAL-2597514.html",
         "checked": "2026-11-02T19:28:51.667699+00:00"
       },
-      "basics_attempted": "2026-11-02T19:28:44.892375+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:07:02.597673+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "aliases": [
         "Arcade Archives JACKAL"
       ],
       "full_attempted": "2026-11-02T20:37:41.691154+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:17.964217+00:00",
+              "next_attempt": "2026-11-03T23:08:17.964217+00:00",
+              "revision": "f98e722e3624f677:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/jackal",
+                "https://www.nintendolife.com/games/switch-eshop/jackal",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_jackal"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_jackal"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:19.257961+00:00",
+              "next_attempt": "2026-11-03T23:08:19.257961+00:00",
+              "revision": "f98e722e3624f677:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=jackal-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jackal-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:34.261410+00:00",
+              "next_attempt": "2026-11-03T23:08:34.261410+00:00",
+              "revision": "f98e722e3624f677:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-jackal/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/jackal-1989/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-jackal/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-jackal/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:34.294780+00:00",
+              "next_attempt": "2026-11-03T23:08:34.294780+00:00",
+              "revision": "f98e722e3624f677:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Jackal&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Jackal&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:08:34.294965+00:00",
+              "next_attempt": "2026-11-03T00:08:34.294965+00:00",
+              "revision": "f98e722e3624f677:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:08:34.295070+00:00",
+              "next_attempt": "2026-11-03T00:08:34.295070+00:00",
+              "revision": "f98e722e3624f677:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:15640": {
       "title": "Just Dance 2025 Edition",
@@ -128770,11 +129102,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:37:41.823953+00:00"
+        "attempted": "2026-11-02T23:07:02.599607+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -128782,12 +129114,15 @@
         "source": "https://www.nintendo.com/us/store/products/jaleco-sports-goal-switch/",
         "checked": "2026-11-02T19:28:50.202419+00:00"
       },
-      "basics_attempted": "2026-11-02T19:28:44.892588+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:07:02.599607+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:37:44.561556+00:00",
       "store_evidence": [
@@ -128797,7 +129132,100 @@
           "checked": "2026-11-02T19:28:50.202165+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jaleco-Sports-Goal--2970816.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:07:06.195513+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Jaleco Sports: Goal!"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:07:06.195824+00:00",
+              "next_attempt": "2026-11-03T23:07:06.195824+00:00",
+              "revision": "3165fabf842646d1:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:07:06.195824+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jaleco-Sports-Goal--2970816.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jaleco-Sports-Goal--2970816.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:02.821966+00:00",
+              "next_attempt": "2026-11-03T23:08:02.821966+00:00",
+              "revision": "3165fabf842646d1:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/jaleco_sports_goal",
+                "https://www.nintendolife.com/games/nintendo-switch/jaleco_sports_goal"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/jaleco_sports_goal"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:06.302503+00:00",
+              "next_attempt": "2026-11-03T23:08:06.302503+00:00",
+              "revision": "3165fabf842646d1:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=jaleco-sports-goal-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jaleco-sports-goal-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:10.948367+00:00",
+              "next_attempt": "2026-11-03T23:08:10.948367+00:00",
+              "revision": "3165fabf842646d1:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/jaleco-sports-goal/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/jaleco-sports-goal/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/jaleco-sports-goal/"
+              ],
+              "url": "https://www.metacritic.com/game/jaleco-sports-goal/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:08:11.031723+00:00",
+              "next_attempt": "2026-11-03T23:08:11.031723+00:00",
+              "revision": "3165fabf842646d1:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Jaleco+Sports%3A+Goal%21&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Jaleco+Sports%3A+Goal%21&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:08:11.031890+00:00",
+              "next_attempt": "2026-11-03T00:08:11.031890+00:00",
+              "revision": "3165fabf842646d1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:08:11.032005+00:00",
+              "next_attempt": "2026-11-03T00:08:11.032005+00:00",
+              "revision": "3165fabf842646d1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18166": {
       "title": "Jaleco Sports: Goal! 2",
@@ -128899,11 +129327,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:37:39.920648+00:00"
+        "attempted": "2026-11-02T23:07:02.600286+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -128911,12 +129339,15 @@
         "source": "https://www.nintendo.com/us/store/products/jaleco-sports-goal-2-switch/",
         "checked": "2026-11-02T19:28:49.186601+00:00"
       },
-      "basics_attempted": "2026-11-02T19:28:44.892773+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:07:02.600286+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:37:43.237228+00:00",
       "store_evidence": [
@@ -128926,7 +129357,100 @@
           "checked": "2026-11-02T19:28:49.186345+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jaleco-Sports-Goal-2-3065588.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:07:02.930922+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Jaleco Sports: Goal! 2"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:07:02.931229+00:00",
+              "next_attempt": "2026-11-03T23:07:02.931229+00:00",
+              "revision": "b7c8852703d09f2b:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:07:02.931229+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jaleco-Sports-Goal-2-3065588.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Jaleco-Sports-Goal-2-3065588.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:07:42.966607+00:00",
+              "next_attempt": "2026-11-03T23:07:42.966607+00:00",
+              "revision": "b7c8852703d09f2b:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/jaleco_sports_goal_2",
+                "https://www.nintendolife.com/games/nintendo-switch/jaleco_sports_goal_2"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/jaleco_sports_goal_2"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:07:43.576797+00:00",
+              "next_attempt": "2026-11-03T23:07:43.576797+00:00",
+              "revision": "b7c8852703d09f2b:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=jaleco-sports-goal-2-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jaleco-sports-goal-2-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:07:48.088542+00:00",
+              "next_attempt": "2026-11-03T23:07:48.088542+00:00",
+              "revision": "b7c8852703d09f2b:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/jaleco-sports-goal-2/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/jaleco-sports-goal-2/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/jaleco-sports-goal-2/"
+              ],
+              "url": "https://www.metacritic.com/game/jaleco-sports-goal-2/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:07:48.119244+00:00",
+              "next_attempt": "2026-11-03T23:07:48.119244+00:00",
+              "revision": "b7c8852703d09f2b:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Jaleco+Sports%3A+Goal%21+2&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Jaleco+Sports%3A+Goal%21+2&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:07:48.119355+00:00",
+              "next_attempt": "2026-11-03T00:07:48.119355+00:00",
+              "revision": "b7c8852703d09f2b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:07:48.119424+00:00",
+              "next_attempt": "2026-11-03T00:07:48.119424+00:00",
+              "revision": "b7c8852703d09f2b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:18094": {
       "title": "Lost Twins 2",
@@ -144269,13 +144793,14 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/jydge",
               "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
-              "normalized": 5.6
+              "normalized": 5.6,
+              "checked": "2026-11-02T19:28:44.892097+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:28:44.892097+00:00"
+        "attempted": "2026-11-02T23:07:02.597291+00:00"
       },
       "requirements": {
         "image": true,
@@ -144287,12 +144812,30 @@
         "source": "https://www.nintendolife.com/games/switch-eshop/jydge",
         "checked": "2026-11-02T17:44:21.326635+00:00"
       },
-      "basics_attempted": "2026-11-02T19:28:44.892097+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:07:02.597291+00:00",
+      "version": 7,
       "errors": {
-        "store": "Official Nintendo lookup: HTTP Error 404: Not Found"
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:07:04.333974+00:00",
+              "next_attempt": "2026-11-03T23:07:04.333974+00:00",
+              "revision": "76fdb206ab8da978:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22JYDGE%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22JYDGE%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "Switch:5070": {
       "title": "Juicy Realm",
@@ -176236,10 +176779,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/its_raining_fists_and_metal",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:07:23.006267+00:00",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -176249,20 +176805,20 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:37:32.280520+00:00"
+        "attempted": "2026-11-02T23:07:02.595420+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000027390/15076f08307fe37c38b38d4367cfc783e7636c4933d455c59628a7687653915d",
         "source": "https://www.nintendo.com/us/store/products/its-raining-fists-and-metal-switch/",
         "checked": "2026-11-02T19:28:17.767976+00:00"
       },
-      "basics_attempted": "2026-11-02T19:28:13.401985+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:07:02.595420+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "slush": "No scored Switch review indexed",
@@ -176276,7 +176832,51 @@
           "checked": "2026-11-02T19:28:17.767718+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/It-s-Raining-Fists-and-Metal-1709340.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:07:04.001643+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "It's Raining Fists and Metal"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:07:04.001968+00:00",
+              "next_attempt": "2026-11-03T23:07:04.001968+00:00",
+              "revision": "6f04bc64318ecd15:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:07:04.001968+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/It-s-Raining-Fists-and-Metal-1709340.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/It-s-Raining-Fists-and-Metal-1709340.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:07:23.006327+00:00",
+              "next_attempt": "2026-11-03T23:07:23.006327+00:00",
+              "revision": "6f04bc64318ecd15:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:07:23.006327+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/its_raining_fists_and_metal"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/its_raining_fists_and_metal"
+            }
+          }
+        }
+      }
     },
     "Switch:7273": {
       "title": "Jump Gunners",
@@ -192275,10 +192875,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 4.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/junk_planet",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:07:27.907466+00:00",
+              "weight": 1.4142135623730951,
+              "normalized": 4.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -192288,20 +192901,20 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:37:35.508643+00:00"
+        "attempted": "2026-11-02T23:07:02.595976+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000016586/13c618f4d2b53f4981c9e75c141adcd1522df47bb1ca72746a905c3156a0b2b5",
         "source": "https://www.nintendo.com/us/store/products/junk-planet-switch/",
         "checked": "2026-11-02T19:28:24.216245+00:00"
       },
-      "basics_attempted": "2026-11-02T19:28:17.342634+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:07:02.595976+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "slush": "No scored Switch review indexed",
@@ -192315,7 +192928,51 @@
           "checked": "2026-11-02T19:28:24.215993+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/JUNK-PLANET-1534278.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:07:05.185199+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "JUNK PLANET"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:07:05.185509+00:00",
+              "next_attempt": "2026-11-03T23:07:05.185509+00:00",
+              "revision": "632991e19448b2f4:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:07:05.185509+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/JUNK-PLANET-1534278.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/JUNK-PLANET-1534278.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:07:27.907527+00:00",
+              "next_attempt": "2026-11-03T23:07:27.907527+00:00",
+              "revision": "632991e19448b2f4:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:07:27.907527+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/junk_planet"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/junk_planet"
+            }
+          }
+        }
+      }
     },
     "Switch:7700": {
       "title": "Jet Set Knights",
@@ -199101,18 +199758,19 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:28:44.891753+00:00"
+        "attempted": "2026-11-02T23:07:02.596361+00:00"
       },
       "requirements": {
         "image": true,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T19:28:44.891753+00:00",
-      "version": 4,
+      "basics_attempted": "2026-11-02T23:07:02.596361+00:00",
+      "version": 7,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psn": "No exact Portugal PS5 product verified"
       },
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/e/eb/Jydge_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
@@ -199120,7 +199778,25 @@
         "checked": "2026-11-02T19:30:31.586419+00:00",
         "method": "verified-game-article"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:07:03.924779+00:00",
+              "next_attempt": "2026-11-03T23:07:03.924779+00:00",
+              "revision": "e8430ea5274bf054:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22PT%22%2C+%22languageCode%22%3A+%22pt%22%2C+%22nextCursor%22%3A+%22%22%2C+%22pageOffset%22%3A+0%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22JYDGE%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22%22%2C+%22pageOffset%22%3A+0%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22JYDGE%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22%22%2C+%22pageOffset%22%3A+0%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22JYDGE%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            }
+          }
+        }
+      }
     },
     "Switch:8060": {
       "title": "Jigsaw Fun: Piece It Together!",
