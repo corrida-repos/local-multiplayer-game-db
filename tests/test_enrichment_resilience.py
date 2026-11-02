@@ -58,6 +58,11 @@ class Refresh(unittest.TestCase):
     def test_null_concept_default_product_is_not_a_pipeline_error(self):
         page='<script type="application/json">'+json.dumps({'cache':{'Concept:123':{'defaultProduct':None}}})+'</script>'
         self.assertIsNone(e.ratings.psn_product(page,'https://store.playstation.com/pt-pt/concept/123'))
+    def test_basics_does_not_mark_carried_forward_user_votes_as_new_observations(self):
+        previous={'image':{'url':'https://images.test/a'},'store':{'url':'https://official.test/a'},'ratings':{'user':c.user_composite([user('Nintendo Life',8)]),'attempted':'2026-01-01'}}
+        with patch.object(e,'resolve_nintendo',return_value={'store':previous['store']}):
+            result=e.basics(GAME,previous,{}, {},{},{},{})
+        self.assertEqual(result['ratings']['user']['sources'][0]['checked'],'2026-01-01')
     def test_empty_seed_fields_can_be_filled_from_verified_data(self):
         entries={'Switch:1':{'image':{'url':None},'store':{}}}
         e.seed([GAME],entries,{},{'Switch:1':{'url':'https://official.test/game'}},{},{},{'Example':{'url':'https://image.test/game'}},{})

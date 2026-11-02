@@ -373,7 +373,7 @@ def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
     if has_score(prior_ratings.get('critic',{})):critics=list(prior_ratings['critic'].get('sources',[]))
     elif has_score(legacy.get('critic',{})):
         c=legacy['critic'];critics=[{'name':c.get('source','Metacritic'),'score':c['score'],'url':c['url'],'platform':game['platform']}]
-    if has_score(prior_ratings.get('user',{})):users=list(prior_ratings['user'].get('sources',[]))
+    if has_score(prior_ratings.get('user',{})):users=[{**source,'checked':source.get('checked') or prior_ratings.get('attempted','')} for source in prior_ratings['user'].get('sources',[])]
     fresh=result.get('user')
     if fresh:
         users=[u for u in users if not u.get('name','').startswith('PSN')]+[fresh]
