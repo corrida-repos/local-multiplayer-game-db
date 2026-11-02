@@ -5,7 +5,7 @@ import argparse, concurrent.futures, datetime as dt, html, json, re, sqlite3, su
 from pathlib import Path
 from scripts import composites, ratings, stores, trailers, psplus
 ROOT=Path(__file__).resolve().parents[1]
-VERSION=2
+VERSION=3
 SEARCH_HASH='4df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa'
 locks={};last={};guard=threading.Lock()
 def now():return dt.datetime.now(dt.timezone.utc).isoformat()
@@ -20,6 +20,7 @@ def read(name,default=None):
     path=ROOT/'data'/name
     return json.loads(path.read_text()) if path.exists() else (default if default is not None else {'games':{}})
 def identity(value):
+    value=re.sub(r'^(?:arcade[ -]+archives|aca[ -]+neogeo|sega[ -]+ages)[ -]+','',value,flags=re.I)
     value=value.replace('&',' and ')
     value=re.sub(r'\bPlayStation[®™ ]*5\b','',value,flags=re.I)
     value=re.sub(r'\bPS4\s*(?:&|and|/|e|,)?\s*PS5\b|\bPS5\b|\bPS4\b','',value,flags=re.I)
@@ -108,7 +109,7 @@ def resolve_nintendo(game,known_store):
                     final,page=get(candidate)
                     if not stores.official_url('Switch',final):continue
                     checked=now();image=meta_image(page) or doc.get('image_url_sq_s')
-                    return {'store':{'url':final,'label':'Abrir na Nintendo eShop','checked':checked},'image':{'url':image,'source':final,'checked':checked}}
+                    return {'store':{'url':final,'label':'Abrir na Nintendo eShop','checked':checked},'image':{'url':image,'source':final,'checked':checked},'aliases':[doc['title']]}
             except Exception:continue
         raise ValueError('Official Nintendo lookup: '+str(original_error)[:150])
 
@@ -116,7 +117,8 @@ def community(game):
     expected='PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch';name=ratings.MC_ALIASES.get(game['title'],ratings.slug(game['title'])).replace('-','_');domain='www.pushsquare.com' if game['platform']=='PS5' else 'www.nintendolife.com'
     folders=['ps5'] if game['platform']=='PS5' else ['nintendo-switch','switch-eshop']
     errors=[]
-    for folder in folders:
+    candidates=[(folder,name) for folder in folders]+[(folder,ratings.slug(alias).replace('-','_')) for alias in game.get('aliases',[]) for folder in folders]
+    for folder,name in candidates:
         url=f'https://{domain}/games/{folder}/{name}'
         try:
             final,page=get(url);critics,users=composites.community_data(page,final,game,expected)
@@ -146,9 +148,25 @@ def nindie_data(page,url,game):
             return critics,{'url':node.get('image'),'source':url,'checked':now()},candidate
     raise ValueError('No exact scored Nintendo Switch review')
 
+def refresh_review_index():
+    cached=read('nindie-index.json',{})
+    cutoff=(dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=7)).isoformat()
+    if cached.get('updated','')>=cutoff:return
+    try:
+        _,page=get('https://www.nindiespotlight.com/sitemap.xml');index={}
+        for value in re.findall(r'<loc>(.*?)</loc>',page):
+            url=html.unescape(value);slug=urllib.parse.parse_qs(urllib.parse.urlparse(url).query).get('game',[''])[0]
+            if slug.endswith('-switch'):index.setdefault(identity(slug[:-7]),[]).append(url)
+        if index:(ROOT/'data/nindie-index.json').write_text(json.dumps({'updated':now(),'source':'https://www.nindiespotlight.com/sitemap.xml','games':index},ensure_ascii=False,indent=2)+'\n')
+    except Exception as exc:print('Review index refresh:',str(exc)[:100],flush=True)
+
 def nindie(game):
-    name=stores.slug(game['title']);url='https://www.nindiespotlight.com/game_profile.cfm?game='+name+'-switch'
-    final,page=get(url);return nindie_data(page,final,game)
+    name=stores.slug(game['title']);index=read('nindie-index.json',{}).get('games',{})
+    candidates=index.get(identity(game['title']),[]) or ['https://www.nindiespotlight.com/game_profile.cfm?game='+name+'-switch']
+    for url in candidates:
+        try:final,page=get(url);return nindie_data(page,final,game)
+        except Exception as exc:error=exc
+    raise ValueError(str(error)[:160])
 
 def has_score(value):return isinstance(value.get('score'),(int,float)) and value.get('scale',0)>0 and 0<=value['score']<=value['scale']
 def requirements(entry):
@@ -195,7 +213,7 @@ def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
         raw=legacy['user'];users.append({**raw,'name':raw.get('source','PSN'),'platform':raw.get('scope')})
     if (not critics and not users) or not result.get('image',{}).get('url'):
         try:
-            c,u,image=community(game);critics.extend(c);users.extend(u)
+            c,u,image=community({**game,'aliases':result.get('aliases',[])});critics.extend(c);users.extend(u)
             if image.get('url') and not result.get('image',{}).get('url'):result['image']=image
         except Exception as exc:errors['community']=str(exc)[:200]
     if game['platform']=='Switch' and ((not critics and not users) or not result.get('store',{}).get('url') or not result.get('image',{}).get('url')):
@@ -285,6 +303,7 @@ def select_work(games,entries,seen):
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--minutes',type=float,default=50);ap.add_argument('--workers',type=int,default=4);ap.add_argument('--ids');ap.add_argument('--checkpoint-push',action='store_true');args=ap.parse_args()
+    refresh_review_index()
     entries=read('enrichment.json')['games'];legacy=read('ratings.json')['games'];known_stores=read('stores.json')['games'];old_composites=read('composites.json')['games'];old_trailers=read('trailers.json')['games'];curated=read('trailers-curated.json',{});artwork=read('images.json',{});seen=set();started=time.monotonic()
     # All network stages share per-host pacing, including the composite collector.
     composites.get=get

@@ -26,7 +26,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
       - name: Fill minimum data for every game, then finish all remaining stages
-        run: python -u -m scripts.enrichment --minutes 50 --workers 4 --checkpoint-push
+        run: python -u -m scripts.enrichment --minutes 50 --workers 8 --checkpoint-push
       - name: Save remaining results
         if: always() && !cancelled()
         run: bash scripts/checkpoint-enrichment.sh

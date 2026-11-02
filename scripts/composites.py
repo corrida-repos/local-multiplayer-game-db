@@ -41,8 +41,9 @@ def community_data(page,url,game,expected):
         except ValueError:continue
     products=[n for n in nodes if n.get('@type')=='VideoGame' and n.get('gamePlatform')==expected]
     if not products:raise ValueError('Console-specific game identity unavailable')
-    product=products[0];requested=MC_ALIASES.get(game['title'],slug(game['title'])).replace('-','')
-    if slug(product.get('name','')).replace('-','')!=requested:raise ValueError('Different game/edition')
+    product=products[0];canonical=lambda value:re.sub(r'^(?:arcade-archives|aca-neogeo|sega-ages)-','',slug(value)).replace('-','')
+    requested={canonical(MC_ALIASES.get(game['title'],game['title']))}|{canonical(alias) for alias in game.get('aliases',[])}
+    if canonical(product.get('name','')) not in requested:raise ValueError('Different game/edition')
     name='Push Square' if game['platform']=='PS5' else 'Nintendo Life';users=[];critics=[]
     rating=product.get('aggregateRating') or {}
     if rating.get('ratingValue') is not None:users.append({'name':name,'score':float(rating['ratingValue']),'scale':float(rating.get('bestRating',10)),'count':int(rating.get('ratingCount',0)),'url':url,'platform':expected})
