@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-02T23:26:38.994825+00:00",
+  "updated": "2026-11-02T23:27:27.427636+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1853,
+    "ready": 1857,
     "missing_image": 111,
-    "missing_store": 557,
-    "missing_rating": 445,
+    "missing_store": 551,
+    "missing_rating": 443,
     "full_attempted": 1042,
     "image_health_pending": 2431
   },
@@ -17364,57 +17364,105 @@
       "next_retry": "2026-11-03T00:26:19.449060+00:00"
     },
     {
-      "key": "Switch:7962",
-      "title": "Outbreak",
-      "platform": "Switch",
-      "missing": [
-        "store",
-        "rating"
-      ],
-      "attempted": "2026-11-02T19:38:33.889250+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review",
-        "metacritic_users": "HTTP Error 301: Moved Permanently",
-        "metacritic_reviews": "HTTP Error 301: Moved Permanently",
-        "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
-      },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:11625",
       "title": "Outbreak: Contagious Memories",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:38:33.889372+00:00",
+      "attempted": "2026-11-02T23:26:43.286687+00:00",
       "reasons": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:8054",
-      "title": "Outbreak: The New Nightmare",
-      "platform": "Switch",
-      "missing": [
-        "store",
-        "rating"
-      ],
-      "attempted": "2026-11-02T19:38:33.889508+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review",
-        "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:26:44.839901+00:00",
+              "next_attempt": "2026-11-03T23:26:44.839901+00:00",
+              "revision": "4c6860597cd94308:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:26:44.839901+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Outbreak-Contagious-Memories-2185038.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Outbreak-Contagious-Memories-2185038.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:04.123156+00:00",
+              "next_attempt": "2026-11-03T23:27:04.123156+00:00",
+              "revision": "4c6860597cd94308:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/outbreak_contagious_memories",
+                "https://www.nintendolife.com/games/nintendo-switch/outbreak_contagious_memories"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/outbreak_contagious_memories"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:04.909553+00:00",
+              "next_attempt": "2026-11-03T23:27:04.909553+00:00",
+              "revision": "4c6860597cd94308:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=outbreak-contagious-memories-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=outbreak-contagious-memories-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:11.372201+00:00",
+              "next_attempt": "2026-11-03T23:27:11.372201+00:00",
+              "revision": "4c6860597cd94308:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/outbreak-contagious-memories/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/outbreak-contagious-memories/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/outbreak-contagious-memories/"
+              ],
+              "url": "https://www.metacritic.com/game/outbreak-contagious-memories/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:11.450264+00:00",
+              "next_attempt": "2026-11-03T23:27:11.450264+00:00",
+              "revision": "4c6860597cd94308:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Outbreak%3A+Contagious+Memories&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Outbreak%3A+Contagious+Memories&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:27:11.450358+00:00",
+              "next_attempt": "2026-11-03T00:27:11.450358+00:00",
+              "revision": "4c6860597cd94308:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:27:11.450423+00:00",
+              "next_attempt": "2026-11-03T00:27:11.450423+00:00",
+              "revision": "4c6860597cd94308:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
       },
-      "field_status": {},
-      "next_retry": ""
+      "next_retry": "2026-11-03T00:27:11.450358+00:00"
     },
     {
       "key": "PS5:15188",
@@ -17423,13 +17471,32 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T19:38:33.889689+00:00",
+      "attempted": "2026-11-02T23:26:43.287603+00:00",
       "reasons": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psn": "No exact Portugal PS5 product verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:02.258969+00:00",
+              "next_attempt": "2026-11-03T23:27:02.258969+00:00",
+              "revision": "e0e0b0184e79b89e:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CBgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAjM3%22%2C+%22pageOffset%22%3A+24%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Outer+Terror%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CDAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAjM3%22%2C+%22pageOffset%22%3A+48%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Outer+Terror%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAjM3%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Outer+Terror%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qAjM3%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22Outer+Terror%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T23:27:02.258969+00:00"
     },
     {
       "key": "Switch:15186",
@@ -17438,36 +17505,29 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T19:38:38.686212+00:00",
+      "attempted": "2026-11-02T23:26:43.288004+00:00",
       "reasons": {
-        "store": "Official Nintendo lookup: HTTP Error 404: Not Found"
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:4592",
-      "title": "Overcooked! Special Edition",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:38:39.598275+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:9037",
-      "title": "Overdriven Reloaded: Special Edition",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:39:05.526156+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:45.041625+00:00",
+              "next_attempt": "2026-11-03T23:26:45.041625+00:00",
+              "revision": "90d47d77ef1b625b:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Outer+Terror%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Outer+Terror%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T23:26:45.041625+00:00"
     },
     {
       "key": "Switch:7817",
@@ -17476,15 +17536,32 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T19:39:05.526437+00:00",
+      "attempted": "2026-11-02T23:26:43.291412+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "Not a Switch 1 review",
-        "metacritic_reviews": "The read operation timed out"
+        "metacritic_reviews": "The read operation timed out",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:43.974902+00:00",
+              "next_attempt": "2026-11-03T23:26:43.974902+00:00",
+              "revision": "c4a3d2d450a5f352:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Override%3A+Mech+City+Brawl%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Override%3A+Mech+City+Brawl%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T23:26:43.974902+00:00"
     },
     {
       "key": "Switch:6746",
@@ -17518,17 +17595,86 @@
         "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:39:05.526957+00:00",
+      "attempted": "2026-11-02T23:26:43.975600+00:00",
       "reasons": {
         "store": "No exact Portugal PS5 product verified",
         "community": "HTTP Error 404: Not Found",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psn": "No exact Portugal PS5 product verified",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:06.753334+00:00",
+              "next_attempt": "2026-11-03T23:27:06.753334+00:00",
+              "revision": "56a4e0af464c6c23:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC0yNTU%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22PAW+Patrol+Mighty+Pups%3A+Adventure+Bay%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC0yNTU%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22PAW+Patrol+Mighty+Pups%3A+Adventure+Bay%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC0yNTU%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22PAW+Patrol+Mighty+Pups%3A+Adventure+Bay%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC0yNTU%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22PAW+Patrol+Mighty+Pups%3A+Adventure+Bay%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "psn": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:06.753334+00:00",
+              "next_attempt": "2026-11-03T23:27:06.753334+00:00",
+              "revision": "56a4e0af464c6c23:7",
+              "reason": "No exact Portugal PS5 product verified",
+              "attempted_urls": [
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CEgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC0yNTU%22%2C+%22pageOffset%22%3A+72%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22PAW+Patrol+Mighty+Pups%3A+Adventure+Bay%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CGAaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC0yNTU%22%2C+%22pageOffset%22%3A+96%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22PAW+Patrol+Mighty+Pups%3A+Adventure+Bay%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D",
+                "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC0yNTU%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22PAW+Patrol+Mighty+Pups%3A+Adventure+Bay%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+              ],
+              "url": "https://web.np.playstation.com/api/graphql/v1//op?operationName=getSearchResults&variables=%7B%22countryCode%22%3A+%22GB%22%2C+%22languageCode%22%3A+%22en%22%2C+%22nextCursor%22%3A+%22CHgaUAogMjg1YzBhMjFhNmVlNGQzOWIwNWI5ODZhZDVkZjEyNTMSLHNlYXJjaC1yZWxldmFuY3ktY29uY2VwdC1nYW1lLWFsbC10b3BrLWFzdHJhIh5zZWFyY2gubm9fZXhwZXJpbWVudC5ub24uMC5ub24qBC0yNTU%22%2C+%22pageOffset%22%3A+120%2C+%22pageSize%22%3A+24%2C+%22searchTerm%22%3A+%22PAW+Patrol+Mighty+Pups%3A+Adventure+Bay%22%7D&extensions=%7B%22persistedQuery%22%3A+%7B%22version%22%3A+1%2C+%22sha256Hash%22%3A+%224df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa%22%7D%7D"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:06.968482+00:00",
+              "next_attempt": "2026-11-03T23:27:06.968482+00:00",
+              "revision": "56a4e0af464c6c23:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.pushsquare.com/games/ps5/paw_patrol_mighty_pups_adventure_bay"
+              ],
+              "url": "https://www.pushsquare.com/games/ps5/paw_patrol_mighty_pups_adventure_bay"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:10.290462+00:00",
+              "next_attempt": "2026-11-03T23:27:10.290462+00:00",
+              "revision": "56a4e0af464c6c23:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/paw-patrol-mighty-pups-adventure-bay/platform/playstation-5/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/paw-patrol-mighty-pups-adventure-bay/platform/playstation-5/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/paw-patrol-mighty-pups-adventure-bay/"
+              ],
+              "url": "https://www.metacritic.com/game/paw-patrol-mighty-pups-adventure-bay/"
+            },
+            "psu": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:10.290571+00:00",
+              "next_attempt": "2026-11-03T23:27:10.290571+00:00",
+              "revision": "56a4e0af464c6c23:7",
+              "reason": "No exact console review indexed"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T23:27:06.753334+00:00"
     },
     {
       "key": "Switch:6655",
@@ -17555,17 +17701,103 @@
       "title": "PAW Patrol: Dino World",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T19:39:09.395722+00:00",
+      "attempted": "2026-11-02T23:26:44.167126+00:00",
       "reasons": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:26:49.106203+00:00",
+              "next_attempt": "2026-11-03T23:26:49.106203+00:00",
+              "revision": "e83d382fdaba9afd:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:26:49.106203+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/PAW-Patrol-Dino-World-3113973.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/PAW-Patrol-Dino-World-3113973.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:19.122344+00:00",
+              "next_attempt": "2026-11-03T23:27:19.122344+00:00",
+              "revision": "e83d382fdaba9afd:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/paw_patrol_dino_world",
+                "https://www.nintendolife.com/games/nintendo-switch/paw_patroltm_dino_world",
+                "https://www.nintendolife.com/games/switch-eshop/paw_patroltm_dino_world"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/paw_patroltm_dino_world"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:19.756300+00:00",
+              "next_attempt": "2026-11-03T23:27:19.756300+00:00",
+              "revision": "e83d382fdaba9afd:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=paw-patrol-dino-world-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=paw-patrol-dino-world-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:26.956792+00:00",
+              "next_attempt": "2026-11-03T23:27:26.956792+00:00",
+              "revision": "e83d382fdaba9afd:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/paw-patroltm-dino-world/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/paw-patroltm-dino-world/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/paw-patroltm-dino-world/"
+              ],
+              "url": "https://www.metacritic.com/game/paw-patroltm-dino-world/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:27:26.989245+00:00",
+              "next_attempt": "2026-11-03T23:27:26.989245+00:00",
+              "revision": "e83d382fdaba9afd:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=PAW+Patrol%3A+Dino+World&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=PAW+Patrol%3A+Dino+World&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:27:26.989360+00:00",
+              "next_attempt": "2026-11-03T00:27:26.989360+00:00",
+              "revision": "e83d382fdaba9afd:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:27:26.989435+00:00",
+              "next_attempt": "2026-11-03T00:27:26.989435+00:00",
+              "revision": "e83d382fdaba9afd:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:27:26.989360+00:00"
     },
     {
       "key": "Switch:9067",
