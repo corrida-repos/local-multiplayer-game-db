@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T19:52:50.415581+00:00",
+  "updated": "2026-11-02T19:53:19.154344+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 253,
     "missing_store": 358,
     "missing_rating": 689,
-    "full_attempted": 210
+    "full_attempted": 220
   },
   "games": {
     "PS5:13238": {
@@ -6033,7 +6033,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:53:46.081760+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:10.886533+00:00"
       },
       "requirements": {
         "image": true,
@@ -6054,8 +6062,10 @@
       "version": 3,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:11.534104+00:00"
     },
     "Switch:10360": {
       "title": "Bio-Ship Paladin",
@@ -6075,7 +6085,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:53:46.081991+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:16.386511+00:00"
       },
       "requirements": {
         "image": true,
@@ -6086,7 +6104,8 @@
       "version": 3,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden; HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-BIO-SHIP-PALADIN-2020524.html",
@@ -6100,7 +6119,8 @@
       },
       "aliases": [
         "Arcade Archives BIO-SHIP PALADIN"
-      ]
+      ],
+      "full_attempted": "2026-11-02T19:53:16.915879+00:00"
     },
     "PS5:14607": {
       "title": "Bish Bash Bots",
@@ -71968,34 +71988,105 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.6,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Finger Guns",
+              "score": 50,
+              "url": "https://fingerguns.net/reviews/2025/02/10/big-helmet-heroes-review-ps5-a-big-helmet-wont-save-you-here/",
+              "date": "2025-02-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 54,
+              "url": "https://www.games.ch/big-helmet-heroes/test/review-ljiaf/",
+              "date": "2025-02-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 80,
+              "url": "https://gamerant.com/big-helmet-heroes-review/",
+              "date": "2025-02-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2025/02/big-helmet-heroes-review/",
+              "date": "2025-02-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 70,
+              "url": "https://www.impulsegamer.com/big-helmet-heroes-review-ps5/",
+              "date": "2025-02-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 60,
+              "url": "https://www.playstationcountry.com/big-helmet-heroes-ps5-review/",
+              "date": "2025-02-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 40,
+              "url": "https://www.thesixthaxis.com/2025/02/03/big-helmet-heroes-review/",
+              "date": "2025-02-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 7
         },
         "user": {
-          "score": 7.48,
+          "score": 7.31,
           "scale": 10,
           "sources": [
             {
-              "score": 3.74,
-              "count": 525,
-              "scope": "PSN · PS5",
+              "name": "Metacritic users",
+              "score": 6.5,
+              "scale": 10,
+              "count": 24,
+              "url": "https://www.metacritic.com/game/big-helmet-heroes/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 4.898979485566356,
+              "normalized": 6.5
+            },
+            {
               "name": "PSN",
+              "score": 3.74,
               "scale": 5,
-              "source": "PSN",
+              "count": 525,
               "url": "https://store.playstation.com/pt-pt/product/UB0045-PPSA19943_00-BIGHELMETPS50000",
-              "checked": "2026-11-02T17:06:04.422550+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 22.9128784747792,
               "normalized": 7.48
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:06:02.237091+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:01.968746+00:00"
       },
       "requirements": {
         "image": true,
@@ -72033,26 +72124,45 @@
       },
       "basics_attempted": "2026-11-02T17:06:02.237091+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:02.426997+00:00"
     },
     "Switch:16237": {
       "title": "Big Helmet Heroes",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 92.0,
+          "score": 77.3,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 60,
+              "url": "https://www.cubed3.com/review/10039/1/big-helmet-heroes-nintendo-switch.html",
+              "date": "2025-02-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 92.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=big-helmet-heroes-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-big-helmet-heroes-nintendo-switch/",
+              "date": "2025-02-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
           "score": null,
@@ -72061,7 +72171,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:10:24.698337+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:04.094688+00:00"
       },
       "requirements": {
         "image": true,
@@ -72080,7 +72198,10 @@
       },
       "basics_attempted": "2026-11-02T19:10:24.698337+00:00",
       "version": 3,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:04.361938+00:00"
     },
     "PS5:16293": {
       "title": "Biped",
@@ -72098,15 +72219,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.49,
-              "count": 3260,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.49,
               "scale": 5,
-              "source": "PSN",
+              "count": 3260,
               "url": "https://store.playstation.com/pt-pt/product/EP6008-PPSA24591_00-0184863662672381",
-              "checked": "2026-11-02T17:06:05.433286+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 31.622776601683793,
               "normalized": 6.98
             }
@@ -72114,7 +72232,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:06:04.435636+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:05.216860+00:00"
       },
       "requirements": {
         "image": true,
@@ -72152,7 +72277,10 @@
       },
       "basics_attempted": "2026-11-02T17:06:04.435636+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:05.468514+00:00"
     },
     "PS5:15967": {
       "title": "Biped 2",
@@ -72166,27 +72294,42 @@
           "source_count": 0
         },
         "user": {
-          "score": 6.12,
+          "score": 5.82,
           "scale": 10,
           "sources": [
             {
-              "score": 3.06,
-              "count": 149,
-              "scope": "PSN · PS4/PS5",
+              "name": "Metacritic users",
+              "score": 4.2,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/biped-2/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.23606797749979,
+              "normalized": 4.2
+            },
+            {
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.06,
               "scale": 5,
-              "source": "PSN",
+              "count": 149,
               "url": "https://store.playstation.com/pt-pt/product/EP6008-PPSA23066_00-0000000BIPED2PS5",
-              "checked": "2026-11-02T17:06:06.673306+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 12.206555615733702,
               "normalized": 6.12
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:06:05.445888+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: The read operation timed out",
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:18.825765+00:00"
       },
       "requirements": {
         "image": true,
@@ -72224,7 +72367,10 @@
       },
       "basics_attempted": "2026-11-02T17:06:05.445888+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:19.020099+00:00"
     },
     "PS5:16297": {
       "title": "Boti: Byteland Overclocked",
@@ -89975,7 +90121,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:16:03.345394+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:13.087341+00:00"
       },
       "requirements": {
         "image": true,
@@ -89995,8 +90149,10 @@
       "basics_attempted": "2026-11-02T19:16:03.345394+00:00",
       "version": 3,
       "errors": {
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:13.700003+00:00"
     },
     "Switch:17861": {
       "title": "Biplanes",
@@ -90016,7 +90172,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:16:03.345547+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 301: Moved Permanently",
+          "Metacritic users: HTTP Error 301: Moved Permanently",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:17.478856+00:00"
       },
       "requirements": {
         "image": true,
@@ -90038,8 +90204,10 @@
       "errors": {
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 301: Moved Permanently",
-        "metacritic_reviews": "HTTP Error 301: Moved Permanently"
-      }
+        "metacritic_reviews": "HTTP Error 301: Moved Permanently",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:18.043591+00:00"
     },
     "PS5:17760": {
       "title": "BlazBlue Entropy Effect X",
@@ -118599,39 +118767,95 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 73.6,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/biped",
+              "name": "Digitally Downloaded",
+              "score": 70,
+              "url": "http://www.digitallydownloaded.net/2020/06/review-biped-nintendo-switch.html",
+              "date": "2020-06-28",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 60,
+              "url": "https://www.eurogamer.it/articles/2020-07-09-biped-recensione",
+              "date": "2020-07-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 85.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=biped-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 75,
+              "url": "https://www.nintendoenthusiast.com/biped-review-nintendo-switch-next-studios-postmeta-games/",
+              "date": "2020-07-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/biped",
+              "date": "2020-07-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/54243/biped-switch-review",
+              "date": "2020-07-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-biped-nintendo-switch/",
+              "date": "2020-07-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
-          "score": 6.5,
+          "score": 7.9,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 6.5,
-              "scale": 10.0,
-              "count": 6,
-              "url": "https://www.nintendolife.com/games/switch-eshop/biped",
+              "name": "Metacritic users",
+              "score": 7.9,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/biped/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 2.449489742783178,
-              "normalized": 6.5
+              "weight": 3.0,
+              "normalized": 7.9
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:26:40.845785+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:08.686320+00:00"
       },
       "requirements": {
         "image": true,
@@ -118650,7 +118874,10 @@
       },
       "basics_attempted": "2026-11-02T17:26:40.845785+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:08.889634+00:00"
     },
     "Switch:5675": {
       "title": "Black Paradox",
@@ -145520,7 +145747,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 68.0,
+          "score": 74.0,
           "scale": 100,
           "sources": [
             {
@@ -145529,10 +145756,18 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=binarystar-infinity-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/arcade-shooter-games-for-switch#binarystar-infinity",
+              "date": "2021-05-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -145541,7 +145776,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:38:02.157053+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:06.298134+00:00"
       },
       "requirements": {
         "image": true,
@@ -145560,7 +145803,10 @@
       },
       "basics_attempted": "2026-11-02T17:38:02.157053+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:06.772947+00:00"
     },
     "Switch:8567": {
       "title": "Bit Dungeon Plus",
