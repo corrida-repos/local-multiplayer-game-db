@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:02:24.317136+00:00",
+  "updated": "2026-11-02T17:02:54.442296+00:00",
   "version": 1,
   "coverage": {
     "total": 930,
-    "attempted": 142,
-    "ready": 136,
-    "missing_image": 742,
-    "missing_store": 742,
-    "missing_rating": 787,
+    "attempted": 152,
+    "ready": 138,
+    "missing_image": 735,
+    "missing_store": 735,
+    "missing_rating": 786,
     "full_attempted": 0
   },
   "games": {
@@ -10066,21 +10066,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:02:26.020496+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:02:26.020496+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "PS5:13451": {
@@ -10095,26 +10103,65 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.16,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.58,
+              "count": 26,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP4395-PPSA10628_00-000000CHENSOCLUB",
+              "checked": "2026-11-02T17:02:27.165557+00:00",
+              "platform": "PSN · PS5",
+              "weight": 5.0990195135927845,
+              "normalized": 9.16
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 0,
-        "errors": [
-          "www.pushsquare.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "PlayStation 5",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:45:38.653199+00:00"
+        "attempted": "2026-11-02T17:02:26.021150+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP4395-PPSA10628_00-000000CHENSOCLUB",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:02:27.165557+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1210/bsLfy0ueK6YgBUAqRTDEWxh8.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP4395-PPSA10628_00-000000CHENSOCLUB",
+        "checked": "2026-11-02T17:02:27.165557+00:00"
+      },
+      "user": {
+        "score": 4.58,
+        "count": 26,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP4395-PPSA10628_00-000000CHENSOCLUB",
+        "checked": "2026-11-02T17:02:27.165557+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP4395-PPSA10628_00-000000CHENSOCLUB",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP4395-PPSA10628_00-000000CHENSOCLUB",
+        "checked": "2026-11-02T17:02:27.165557+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:02:26.021150+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:12309": {
       "title": "Chenso Club",
@@ -10134,19 +10181,27 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 0,
-        "errors": [
-          "www.nintendolife.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:45:40.892488+00:00"
+        "attempted": "2026-11-02T17:02:26.021432+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/chenso-club-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:02:32.855505+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000052427/068661c65c71af46c9fe22d9115f23f0c78e6d433e9937493eebb84339adc2a2",
+        "source": "https://www.nintendo.com/us/store/products/chenso-club-switch/",
+        "checked": "2026-11-02T17:02:32.855828+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:02:26.021432+00:00",
+      "version": 1,
+      "errors": {
+        "metacritic_users": "The read operation timed out"
       }
     },
     "Switch:11634": {
@@ -10167,20 +10222,26 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 0,
-        "errors": [
-          "www.nintendolife.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:45:43.144117+00:00"
+        "attempted": "2026-11-02T17:02:27.175221+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/chex-quest-hd-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:02:34.348307+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000049213/b35e474bde30ba8346650f9ca4d69901c529834618e91a91af7f8d9566698384",
+        "source": "https://www.nintendo.com/us/store/products/chex-quest-hd-switch/",
+        "checked": "2026-11-02T17:02:34.348786+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:02:27.175221+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:13928": {
       "title": "Chickenoidz Super Party",
@@ -10189,22 +10250,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:02:29.848255+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/chickenoidz-super-party-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:02:36.731837+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000065851/69732736e49d0af7b8c77441f700035eb133053edcea3d9e13bc5c85638d9ebb",
+        "source": "https://www.nintendo.com/us/store/products/chickenoidz-super-party-switch/",
+        "checked": "2026-11-02T17:02:36.732172+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:02:29.848255+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:11051": {
       "title": "Chicory: A Colorful Tale",
@@ -10300,20 +10376,26 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 8,
-        "errors": [
-          "www.nintendolife.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:45:45.277475+00:00"
+        "attempted": "2026-11-02T17:02:31.266690+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/chicory-a-colorful-tale-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:02:35.078851+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000045561/8279c19cc173e820387b77d1e33e8a6eaf8db48366c910bdc8e3823d126f399e",
+        "source": "https://www.nintendo.com/us/store/products/chicory-a-colorful-tale-switch/",
+        "checked": "2026-11-02T17:02:35.079341+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:02:31.266690+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:14473": {
       "title": "Chipmonk!",
@@ -10322,21 +10404,30 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:02:35.079575+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:02:35.079575+00:00",
+      "version": 1,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 404: Not Found"
       }
     },
     "Switch:14471": {
@@ -10346,22 +10437,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:02:38.503745+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/chipmonk-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:02:39.928739+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000069820/f125112c0c85464ee5606e0033b0eda4ccabf680c1fcc22d11a5a26d7ea3156d",
+        "source": "https://www.nintendo.com/us/store/products/chipmonk-switch/",
+        "checked": "2026-11-02T17:02:39.929072+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:02:38.503745+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:11610": {
       "title": "Chippy",
@@ -10381,20 +10487,26 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 0,
-        "errors": [
-          "www.nintendolife.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:45:47.512387+00:00"
+        "attempted": "2026-11-02T17:02:39.980944+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/chippy-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:02:41.187501+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000026958/a4cef6c4e298ff3a47c1ef2f20c74f098ffdf8697a798b31c8241085e52f2676",
+        "source": "https://www.nintendo.com/us/store/products/chippy-switch/",
+        "checked": "2026-11-02T17:02:41.187828+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:02:39.980944+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:13391": {
       "title": "Chippy & Noppo",
@@ -31850,21 +31962,31 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:02:26.020760+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:02:26.020760+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "PS5:15277": {
