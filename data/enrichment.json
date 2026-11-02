@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T21:03:31.645152+00:00",
+  "updated": "2026-11-02T21:04:20.630849+00:00",
   "version": 4,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 144,
     "missing_store": 256,
     "missing_rating": 611,
-    "full_attempted": 902
+    "full_attempted": 912
   },
   "games": {
     "PS5:13238": {
@@ -11155,15 +11155,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.39,
-              "count": 93,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.39,
               "scale": 5,
-              "source": "PSN",
+              "count": 93,
               "url": "https://store.playstation.com/pt-pt/product/EP5395-PPSA02636_00-CANNIBALCUISINE1",
-              "checked": "2026-11-02T17:01:48.828136+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 9.643650760992955,
               "normalized": 6.78
             }
@@ -11171,7 +11168,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:01:47.454536+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:03:45.675436+00:00"
       },
       "requirements": {
         "image": true,
@@ -11209,14 +11213,17 @@
       },
       "basics_attempted": "2026-11-02T17:01:47.454536+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:03:45.957361+00:00"
     },
     "Switch:12015": {
       "title": "Capcom Arcade 2nd Stadium",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 78.6,
+          "score": 79.2,
           "scale": 100,
           "sources": [
             {
@@ -11258,6 +11265,13 @@
               "date": "2022-08-03",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 86.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=capcom-arcade-2nd-stadium-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             },
             {
               "name": "Nintenderos",
@@ -11317,7 +11331,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 12
+          "source_count": 13
         },
         "user": {
           "score": null,
@@ -11326,7 +11340,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:01:47.709846+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 12,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:03:53.356269+00:00"
       },
       "requirements": {
         "image": true,
@@ -11345,7 +11367,11 @@
       },
       "basics_attempted": "2026-11-02T17:01:47.709846+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:03:55.441860+00:00"
     },
     "Switch:13639": {
       "title": "Cassette Beasts",
@@ -72323,39 +72349,135 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 84.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/capcom-fighting-collection-2",
+              "name": "Creative Bloq",
+              "score": 80,
+              "url": "https://www.creativebloq.com/entertainment/gaming/capcom-fighting-collection-2-review-a-pixel-perfect-celebration-of-chaos-and-creativity",
+              "date": "2025-05-14",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "https://www.cubed3.com/games/reviews/nintendo-switch/capcom-fighting-collection-2",
+              "date": "2026-02-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 75,
+              "url": "https://www.jeuxvideo.com/test/1997994/capcom-fighting-collection-2-des-jeux-video-de-combat-de-la-grande-epoque-qui-tabassent-mais-pas-forcement-destines-a-tous-les-joueurs.htm",
+              "date": "2025-05-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Merlin'in Kazanı (Turkey)",
+              "score": 82,
+              "url": "http://www.merlininkazani.com/Capcom_Fighting_Collection_2-oyun_inceleme-128708p1.html",
+              "date": "2025-05-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 94.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=capcom-fighting-collection-2-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/capcom-fighting-collection-2-switch-review-online-netcode/",
+              "date": "2025-05-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/capcom-fighting-collection-2",
+              "date": "2025-05-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "https://www.nintendoworldreport.com/review/71050/capcom-fighting-collection-2-switch-review",
+              "date": "2025-05-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 91,
+              "url": "https://www.nintendojo.com/reviews/review-capcom-fighting-collection-2-switch",
+              "date": "2025-05-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 80,
+              "url": "https://play.co.rs/kad-cika-bobi-zatvori-igraonicu-capcom-otvori-kolekciju-capcom-fighting-collection-2-recenzija/",
+              "date": "2025-06-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 90,
+              "url": "https://www.thesixthaxis.com/2025/05/16/capcom-fighting-collection-2-review/",
+              "date": "2025-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 90,
+              "url": "https://universonintendo.com/analise-capcom-fighting-collection-2/",
+              "date": "2025-05-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 12
         },
         "user": {
-          "score": 7.6,
+          "score": 9.0,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.6,
-              "scale": 10.0,
-              "count": 71,
-              "url": "https://www.nintendolife.com/games/nintendo-switch/capcom_fighting_collection_2",
+              "name": "Metacritic users",
+              "score": 9,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/capcom-fighting-collection-2/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 8.426149773176359,
-              "normalized": 7.6
+              "weight": 2.0,
+              "normalized": 9.0
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:04:08.956617+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 11,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:03:56.665669+00:00"
       },
       "requirements": {
         "image": true,
@@ -72374,33 +72496,51 @@
       },
       "basics_attempted": "2026-11-02T17:04:08.956617+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:03:58.800538+00:00"
     },
     "PS5:15930": {
       "title": "Care Bears: To The Rescue",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 72.5,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Finger Guns",
+              "score": 70,
+              "url": "https://fingerguns.net/reviews/2025/03/05/care-bears-to-the-rescue-review-ps5-fuzzy-fun-and-full-of-friendship/",
+              "date": "2025-03-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameBlast",
+              "score": 75,
+              "url": "https://www.gameblast.com.br/2025/03/analise-care-bears-to-the-rescue-review.html",
+              "date": "2025-04-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 9.02,
           "scale": 10,
           "sources": [
             {
-              "score": 4.51,
-              "count": 133,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.51,
               "scale": 5,
-              "source": "PSN",
+              "count": 133,
               "url": "https://store.playstation.com/pt-pt/product/EP3948-PPSA27217_00-0693513333673706",
-              "checked": "2026-11-02T17:04:12.011845+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 11.532562594670797,
               "normalized": 9.02
             }
@@ -72408,7 +72548,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:04:09.689138+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:03:51.160656+00:00"
       },
       "requirements": {
         "image": true,
@@ -72446,14 +72593,17 @@
       },
       "basics_attempted": "2026-11-02T17:04:09.689138+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:03:51.363763+00:00"
     },
     "Switch:15928": {
       "title": "Care Bears: To The Rescue",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 65.0,
+          "score": 72.5,
           "scale": 100,
           "sources": [
             {
@@ -72462,10 +72612,18 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=care-bears-to-the-rescue-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/4-cool-2d-indies-for-switch#care-bears-to-the-rescue",
+              "date": "2024-11-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -72474,7 +72632,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:57:00.177959+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:02.152269+00:00"
       },
       "requirements": {
         "image": true,
@@ -72494,8 +72660,11 @@
       "basics_attempted": "2026-11-02T18:57:00.177959+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
-      }
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:04:05.579094+00:00"
     },
     "Switch:15728": {
       "title": "Cats on Duty",
@@ -91530,26 +91699,32 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 50.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Movies Games and Tech",
+              "score": 50,
+              "url": "https://moviesgamesandtech.com/2025/08/21/review-cargo-2/",
+              "date": "2025-08-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 4.22,
           "scale": 10,
           "sources": [
             {
-              "score": 2.11,
-              "count": 9,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 2.11,
               "scale": 5,
-              "source": "PSN",
+              "count": 9,
               "url": "https://store.playstation.com/pt-pt/product/EP5987-PPSA28127_00-ULGCARGOPS500002",
-              "checked": "2026-11-02T17:11:49.768453+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 3.0,
               "normalized": 4.22
             }
@@ -91557,7 +91732,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:11:48.824443+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:03:59.995436+00:00"
       },
       "requirements": {
         "image": true,
@@ -91595,7 +91777,10 @@
       },
       "basics_attempted": "2026-11-02T17:11:48.824443+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:04:00.166451+00:00"
     },
     "PS5:17371": {
       "title": "Cats Ritual",
@@ -113534,15 +113719,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.9,
-              "count": 389,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.9,
               "scale": 5,
-              "source": "PSN",
+              "count": 389,
               "url": "https://store.playstation.com/pt-pt/product/UP7939-PPSA35331_00-0351570034582021",
-              "checked": "2026-11-02T17:21:02.846313+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 19.72308292331602,
               "normalized": 7.800000000000001
             }
@@ -113550,7 +113732,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:21:01.476566+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:04.386833+00:00"
       },
       "requirements": {
         "image": true,
@@ -113588,7 +113777,10 @@
       },
       "basics_attempted": "2026-11-02T17:21:01.476566+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:04:04.708670+00:00"
     },
     "PS5:18956": {
       "title": "Chained Beasts",
@@ -117978,39 +118170,568 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 81.6,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/captain_toad_treasure_tracker",
+              "name": "3DJuegos",
+              "score": 85,
+              "url": "https://www.3djuegos.com/juegos/analisis/31620/0/captain-toad-treasure-tracker/",
+              "date": "2018-07-11",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "4P.de",
+              "score": 85,
+              "url": "http://www.4players.de/4players.php/dispbericht/Switch/Test/35846/83274/0/Captain_Toad_Treasure_Tracker.html",
+              "date": "2018-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 90,
+              "url": "https://areajugones.sport.es/captain-toad-treasure-tracker/analisis/",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 90,
+              "url": "http://atomix.vg/review-captain-toad-treasure-tracker-switch-3ds/",
+              "date": "2018-07-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "AusGamers",
+              "score": 78,
+              "url": "https://www.ausgamers.com/games/captain-toad-treasure-tracker/review/",
+              "date": "2018-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 80,
+              "url": "",
+              "date": "2018-10-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 80,
+              "url": "https://www.cgmagonline.com/reviews/captain-toad-treasure-tracker-nintendo-switch-review/",
+              "date": "2018-07-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 83,
+              "url": "http://cogconnected.com/review/captain-toad-treasure-tracker-switch-review/",
+              "date": "2018-07-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 75,
+              "url": "https://www.criticalhit.net/review/captain-toad-treasure-tracker/",
+              "date": "2018-07-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 90,
+              "url": "http://www.cubed3.com/review/4980/1/captain-toad-treasure-tracker-nintendo-switch.html",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 90,
+              "url": "http://www.darkstation.com/reviews/captain-toad-treasure-tracker-review",
+              "date": "2018-08-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 80,
+              "url": "https://www.destructoid.com/review-captain-toad-treasure-tracker-513315.phtml",
+              "date": "2018-07-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 80,
+              "url": "https://www.dualshockers.com/captain-toad-treasure-tracker-nintendo-switch-review/",
+              "date": "2018-07-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 70,
+              "url": "https://www.eurogamer.it/articles/2018-07-11-captain-toad-treasure-tracker-recensione",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 85,
+              "url": "https://www.everyeye.it/articoli/recensione-captain-toad-treasure-tracker-fungo-esploratore-switch-39771.html",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "http://fnintendo.net/article/11156-captain-toad-treasure-tracker",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 80,
+              "url": "https://www.gameinformer.com/review/captain-toad-treasure-tracker/nintendo-recuts-a-semiprecious-stone",
+              "date": "2018-07-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 80,
+              "url": "https://www.gamepro.de/artikel/captain-toad-treasure-tracker-kleiner-schatzsucher-ganz-gross,3332457.html",
+              "date": "2018-07-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 90,
+              "url": "https://www.gamespace.com/reviews/captain-toad-treasure-tracker-nintendo-switch-review/",
+              "date": "2018-07-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/captain-toad-treasure-tracker-nintendo-switch-revi/1900-6416940/",
+              "date": "2018-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 80,
+              "url": "http://www.gameblog.fr/tests/3099-captain-toad-treasure-tracker-switch",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 80,
+              "url": "https://gamer.nl/artikelen/review/captain-toad-treasure-tracker-switch/",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.no",
+              "score": 80,
+              "url": "https://www.gamer.no/artikler/anmeldelse-captain-toad-treasure-tracker/442497",
+              "date": "2018-07-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamersky",
+              "score": 88,
+              "url": "http://www.gamersky.com/review/201807/1076798.shtml",
+              "date": "2018-07-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesBeat",
+              "score": 90,
+              "url": "https://venturebeat.com/2018/07/11/captain-toad-treasure-tracker-review-a-peak-nintendo-puzzler-for-switch/",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 83,
+              "url": "http://www.gaming-age.com/2018/07/captain-toad-treasure-tracker-review-for-nintendo-switch/",
+              "date": "2018-07-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 85,
+              "url": "http://www.godisageek.com/reviews/captain-toad-treasure-tracker-review-2/",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 90,
+              "url": "https://www.hardcoregamer.com/2018/07/25/review-captain-toad-treasure-tracker-switch/306273/",
+              "date": "2018-07-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 85,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-captain-toad-treasure-tracker-nintendo-switch-274821",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 87,
+              "url": "http://www.ign.com/articles/2018/07/11/captain-toad-treasure-tracker-switch-and-3ds-review",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 85,
+              "url": "http://it.ign.com/captain-toad-treasure-tracker-nintendo-switch/142379/review/captain-toad-treasure-tracker-la-recensione-per-switch",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 80,
+              "url": "http://www.impulsegamer.com/captain-toad-treasure-tracker-switch-review/",
+              "date": "2018-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "InsideGamer.nl",
+              "score": 83,
+              "url": "http://www.insidegamer.nl/artikel/captain-toad-treasure-tracker-review-vertrouwd-goud/",
+              "date": "2018-07-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 70,
+              "url": "http://www.jeuxvideo.com/test/880506/captain-toad-treasure-tracker-la-version-switch-un-portage-honorable.htm",
+              "date": "2018-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 89,
+              "url": "https://www.levelup.com/Nintendo-Switch/juegos/467263/Captain-Toad-Treasure-Tracker/review",
+              "date": "2018-07-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "M3",
+              "score": 70,
+              "url": " https://m3.idg.se/2.1022/1.705012/captain-toad-treasure-tracker--allas-favoritsvamp-far-en-ny-chans-att-skina",
+              "date": "2018-08-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 78,
+              "url": "http://meristation.as.com/nintendo-switch/captain-toad-treasure-tracker/analisis-juego/2268023",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 80,
+              "url": "https://metro.co.uk/2018/07/11/captain-toad-treasure-tracker-switch-review-make-room-for-the-mushrooms-7702544/",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/captain-toad-treasure-tracker-recensione-nintendo-switch-202300.html",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "My Nintendo News",
+              "score": 70,
+              "url": "https://mynintendonews.com/2018/07/11/review-captain-toad-treasure-tracker-for-nintendo-switch/",
+              "date": "2018-07-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 90,
+              "url": "http://www.nintenderos.com/2018/07/analisis-captain-toad-treasure-tracker-2/",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 85,
+              "url": "https://nintendoenthusiast.com/blog/2018/07/18/captain-toad-treasure-tracker-review-nintendo-switch/",
+              "date": "2018-07-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 75,
+              "url": "",
+              "date": "2018-09-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/captain-toad-treasure-tracker-review-switch/",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/captain_toad_treasure_tracker",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/47725/captain-toad-treasure-tracker-switch3ds-review",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 91,
+              "url": "http://www.nintendojo.com/reviews/review-captain-toad-treasure-tracker-switch-3ds",
+              "date": "2018-08-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 80,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/Captain+Toad/review.asp?c=78028",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 80,
+              "url": "https://press-start.com.au/reviews/nintendo-switch/2018/07/11/captain-toad-treasure-tracker-review-nintendo-switch-pure-portable-puzzling/",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Riot Pixels",
+              "score": 80,
+              "url": "http://riotpixels.com/captain-toad-treasure-tracker-impressions/",
+              "date": "2018-07-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 80,
+              "url": "http://www.shacknews.com/article/106174/captain-toad-treasure-tracker-nintendo-switch-review-buried-treasure",
+              "date": "2018-07-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Slant Magazine",
+              "score": 90,
+              "url": "https://www.slantmagazine.com/games/review/captain-toad-treasure-tracker-switch",
+              "date": "2018-07-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 80,
+              "url": "https://www.spaziogames.it/recensioni_videogiochi/console_nintendo_switch/22637/captain-toad-treasure-tracker-recensione-della-versione-switch.aspx",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 80,
+              "url": "https://stevivor.com/reviews/captain-toad-treasure-tracker-review-switch-proper-handheld/",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2018/07/11/captain-toad-treasure-tracker/",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 80,
+              "url": "https://www.thedigitalfix.com/gaming/content/9926/captain-toad-treasure-tracker/",
+              "date": "2018-07-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 60,
+              "url": "https://www.trustedreviews.com/reviews/captain-toad-treasure-tracker-nintendo-switch",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 80,
+              "url": "https://twinfinite.net/2018/07/captain-toad-treasure-tracker-switch-review/",
+              "date": "2018-07-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 82,
+              "url": "https://vandal.elespanol.com/analisis/switch/captain-toad-treasure-tracker/58484",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VideoGamer",
+              "score": 70,
+              "url": "https://www.videogamer.com/reviews/captain-toad-treasure-tracker-switch-review",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 80,
+              "url": "https://www.vooks.net/captain-toad-treasure-tracker-switch-review/",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 75,
+              "url": "https://wccftech.com/review/captain-toad-treasure-tracker/",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 90,
+              "url": "http://wegotthiscovered.com/gaming/captain-toad-treasure-tracker-review-nintendo-switch/",
+              "date": "2018-07-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 90,
+              "url": "https://www.xgn.nl/review/captain-toad-treasure-tracker-switch-review",
+              "date": "2018-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Yahoo!",
+              "score": 90,
+              "url": "https://finance.yahoo.com/news/captain-toad-treasure-tracker-review-another-great-nintendo-port-go-players-180806338.html",
+              "date": "2018-07-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "games(TM)",
+              "score": 80,
+              "url": "",
+              "date": "2018-08-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 66
         },
         "user": {
-          "score": 8.0,
+          "score": 7.9,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 8.0,
-              "scale": 10.0,
-              "count": 403,
-              "url": "https://www.nintendolife.com/games/nintendo-switch/captain_toad_treasure_tracker",
+              "name": "Metacritic users",
+              "score": 7.9,
+              "scale": 10,
+              "count": 320,
+              "url": "https://www.metacritic.com/game/captain-toad-treasure-tracker/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 20.074859899884732,
-              "normalized": 8.0
+              "weight": 17.88854381999832,
+              "normalized": 7.9
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:23:17.106633+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 73,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:12.212772+00:00"
       },
       "requirements": {
         "image": true,
@@ -118029,7 +118750,12 @@
       },
       "basics_attempted": "2026-11-02T17:23:17.106633+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:04:15.071818+00:00"
     },
     "Switch:4600": {
       "title": "Cave Story Plus",
@@ -124405,39 +125131,232 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 78.4,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/capcom_beat_em_up_bundle",
+              "name": "CD-Action",
+              "score": 80,
+              "url": "",
+              "date": "2019-02-13",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 85,
+              "url": "https://cogconnected.com/review/capcom-beat-em-bundle-review-no-quarters-needed-for-this-fun/",
+              "date": "2018-09-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 70,
+              "url": "http://www.digitallydownloaded.net/2018/10/review-capcom-beat-em-up-bundle.html",
+              "date": "2018-10-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 80,
+              "url": "https://www.dualshockers.com/capcom-beat-em-bundle-review-pc-ps4-xbox-one-switch/",
+              "date": "2018-10-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "EGM",
+              "score": 80,
+              "url": "http://www.egmnow.com/articles/reviews/capcom-beat-em-up-bundle-review/",
+              "date": "2018-09-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 90,
+              "url": "https://www.eurogamer.it/articles/2018-09-18-capcom-beat-em-up-bundle-recensione",
+              "date": "2018-09-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 83,
+              "url": "https://www.everyeye.it/articoli/recensione-capcom-beat-em-up-bundle-emozioni-scorrimento-40800.html",
+              "date": "2018-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "https://fnintendo.net/article/11549-capcom-beat-em-up-bundle",
+              "date": "2018-10-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 91,
+              "url": "http://www.gaming-age.com/2018/09/capcom-beat-em-up-bundle-review-for-switch-ps4-and-xbox-one/",
+              "date": "2018-09-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 75,
+              "url": "http://gamingtrend.com/feature/reviews/brawling-bliss-capcom-beat-em-up-bundle-review/",
+              "date": "2018-10-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 80,
+              "url": "https://it.ign.com/capcom-beat-em-up-bundle-nintendo-switch/145081/review/capcom-beatem-up-bundle-la-recensione",
+              "date": "2018-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 70,
+              "url": "https://es.ign.com/capcom-beatem-up-bundle-nintendo-switch/139397/review/analisis-de-capcom-beatem-up-bundle-para-ps4-one-switch-y-pc",
+              "date": "2018-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 70,
+              "url": "https://metro.co.uk/2018/09/21/capcom-beat-em-up-bundle-review-mindless-violence-7965709/",
+              "date": "2018-09-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/capcom-beat-em-up-bundle-la-recensione.html",
+              "date": "2018-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 75,
+              "url": "https://www.nintenderos.com/2018/09/analisis-capcom-beat-em-up-bundle/",
+              "date": "2018-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 75,
+              "url": "",
+              "date": "2019-02-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/capcom-beat-em-up-bundle-review/",
+              "date": "2018-09-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/capcom_beat_em_up_bundle",
+              "date": "2018-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/48408/capcom-beat-em-up-bundle-switch-review",
+              "date": "2018-09-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 91,
+              "url": "http://www.nintendojo.com/reviews/review-capcom-beat-em-up-bundle-switch",
+              "date": "2018-10-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 60,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/Capcom+Beat+%27Em+Up+Bundle/review.asp?c=78768",
+              "date": "2018-09-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 80,
+              "url": "https://www.shacknews.com/article/107994/capcom-beatem-up-bundle-review-hit-me-with-your-best-shot",
+              "date": "2018-10-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 82,
+              "url": "https://www.spaziogames.it/capcom-beatem-up-bundle-botte-dal-passato/",
+              "date": "2018-10-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 60,
+              "url": "https://www.trustedreviews.com/reviews/capcom-beat-em-up-bundle-review",
+              "date": "2018-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 24
         },
         "user": {
-          "score": 7.4,
+          "score": 7.8,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.4,
-              "scale": 10.0,
-              "count": 106,
-              "url": "https://www.nintendolife.com/games/switch-eshop/capcom_beat_em_up_bundle",
+              "name": "Metacritic users",
+              "score": 7.8,
+              "scale": 10,
+              "count": 32,
+              "url": "https://www.metacritic.com/game/capcom-beat-em-up-bundle/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 10.295630140987,
-              "normalized": 7.4
+              "weight": 5.656854249492381,
+              "normalized": 7.800000000000001
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:25:32.539904+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 25,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:04.354557+00:00"
       },
       "requirements": {
         "image": true,
@@ -124456,7 +125375,12 @@
       },
       "basics_attempted": "2026-11-02T17:25:32.539904+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:04:07.667212+00:00"
     },
     "Switch:5576": {
       "title": "Castle Crashers Remastered",
@@ -169457,39 +170381,296 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 79.4,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/capcom_arcade_stadium",
+              "name": "4P.de",
+              "score": 80,
+              "url": "https://www.4players.de/4players.php/dispbericht/Switch/Test/42622/84773/0/Capcom_Arcade_Stadium.html",
+              "date": "2021-02-27",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "App Trigger",
+              "score": 80,
+              "url": "https://apptrigger.com/2021/02/21/capcom-arcade-stadium-review/",
+              "date": "2021-02-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 80,
+              "url": "https://attackofthefanboy.com/reviews/capcom-arcade-stadium-review/",
+              "date": "2021-02-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 90,
+              "url": "https://www.cgmagonline.com/reviews/capcom-arcade-stadium-switch/",
+              "date": "2021-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 73,
+              "url": "https://cogconnected.com/review/capcom-arcade-stadium-review/",
+              "date": "2021-02-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/6335/1/capcom-arcade-stadium-nintendo-switch.html",
+              "date": "2021-03-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 70,
+              "url": "https://www.darkstation.com/reviews/capcom-arcade-stadium-review",
+              "date": "2021-03-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 70,
+              "url": "https://www.destructoid.com/stories/review-capcom-arcade-stadium-620475.phtml",
+              "date": "2021-02-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 70,
+              "url": "https://www.eurogamer.it/articles/2021-03-15-capcom-arcade-stadium-recensione",
+              "date": "2021-03-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 70,
+              "url": "https://gamecritics.com/brian-theisen/capcom-stadium-arcade-review/",
+              "date": "2021-03-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSkinny",
+              "score": 80,
+              "url": "https://www.gameskinny.com/utaec/capcom-arcade-stadium-review-a-visual-history-of-the-80s-arcade",
+              "date": "2021-02-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 83,
+              "url": "https://gaming-age.com/2021/02/capcom-arcade-stadium-review-for-nintendo-switch/",
+              "date": "2021-02-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 80,
+              "url": "https://gamingtrend.com/feature/reviews/quarter-munching-goodness-capcom-arcade-stadium-review/",
+              "date": "2021-02-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 80,
+              "url": "https://hardcoregamer.com/2021/02/21/review-capcom-arcade-stadium/397734/",
+              "date": "2021-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 77,
+              "url": "https://www.hobbyconsolas.com/reviews/capcom-arcade-stadium-analisis-nintendo-switch-coleccion-813877",
+              "date": "2021-02-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 83,
+              "url": "https://it.ign.com/capcom-arcade-stadium-nintendo-switch/179044/review/capcom-arcade-stadium-la-recensione ",
+              "date": "2021-02-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 75,
+              "url": "https://www.jeuxvideo.com/test/1367091/capcom-arcade-stadium-la-compilation-grand-spectacle.htm",
+              "date": "2021-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 85,
+              "url": "https://as.com/meristation/2021/03/11/analisis/1615454274_648313.html",
+              "date": "2021-03-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 90,
+              "url": "https://metro.co.uk/2021/02/22/capcom-arcade-stadium-review-classic-coin-op-collection-14124236/",
+              "date": "2021-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 84,
+              "url": "https://multiplayer.it/recensioni/capcom-arcade-stadium-recensione-raccolta-capcom.html",
+              "date": "2021-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2021/02/analisis-capcom-arcade-stadium-para-nintendo-switch/",
+              "date": "2021-02-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 70,
+              "url": "https://www.nintendoenthusiast.com/capcom-arcade-stadium-review-for-nintendo-switch/",
+              "date": "2021-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/capcom_arcade_stadium",
+              "date": "2021-02-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 85,
+              "url": "https://noisypixel.net/capcom-arcade-stadium-review-switch/",
+              "date": "2021-03-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shindig",
+              "score": 90,
+              "url": "https://www.shindig.nz/videogames/reviews/capcom-arcade-stadium-switch/",
+              "date": "2021-03-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 78,
+              "url": "https://www.thegamesmachine.it/capcom-arcade-stadium-pc-ps4-xbox-one-switch/capcom-arcade-stadium-recensione/ ",
+              "date": "2021-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TierraGamer",
+              "score": 75,
+              "url": "https://www.tierragamer.com/resena-capcom-arcade-stadium-nintendo-switch/",
+              "date": "2021-03-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 77,
+              "url": "https://vandal.elespanol.com/analisis/switch/capcom-arcade-stadium/94089#p-83",
+              "date": "2021-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 86,
+              "url": "https://videochums.com/review/capcom-arcade-stadium",
+              "date": "2021-02-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 80,
+              "url": "https://wegotthiscovered.com/gaming/capcom-arcade-stadium-review/",
+              "date": "2021-03-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 80,
+              "url": "https://www.xgn.nl/review/capcom-arcade-stadium-review",
+              "date": "2021-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 80,
+              "url": "http://www.ztgd.com/reviews/capcom-arcade-stadium-switch/",
+              "date": "2021-03-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 32
         },
         "user": {
-          "score": 7.4,
+          "score": 7.0,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.4,
-              "scale": 10.0,
-              "count": 91,
-              "url": "https://www.nintendolife.com/games/switch-eshop/capcom_arcade_stadium",
+              "name": "Metacritic users",
+              "score": 7,
+              "scale": 10,
+              "count": 28,
+              "url": "https://www.metacritic.com/game/capcom-arcade-stadium/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 9.539392014169456,
-              "normalized": 7.4
+              "weight": 5.291502622129181,
+              "normalized": 7.0
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:41:07.824428+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 34,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T21:04:17.639551+00:00"
       },
       "requirements": {
         "image": true,
@@ -169508,7 +170689,12 @@
       },
       "basics_attempted": "2026-11-02T17:41:07.824428+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T21:04:20.516660+00:00"
     },
     "Switch:9720": {
       "title": "Capcom Arcade Stadium Pack 1: Dawn of the Arcade (’84 – ’88)",
