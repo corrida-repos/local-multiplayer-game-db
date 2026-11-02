@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:53:33.022465+00:00",
+  "updated": "2026-11-02T17:53:52.030016+00:00",
   "version": 2,
   "coverage": {
     "total": 2542,
-    "attempted": 1252,
-    "ready": 776,
-    "missing_image": 1394,
-    "missing_store": 1465,
-    "missing_rating": 1687,
+    "attempted": 1262,
+    "ready": 780,
+    "missing_image": 1388,
+    "missing_store": 1459,
+    "missing_rating": 1682,
     "full_attempted": 0
   },
   "games": {
@@ -37245,21 +37245,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:35.634087+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/mari-and-bayu-the-road-home-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:53:37.004277+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000049271/5cd998e8a55fe24448f948f6af64e00b3807ec2c03be3d3583ae182da832dae2",
+        "source": "https://www.nintendo.com/us/store/products/mari-and-bayu-the-road-home-switch/",
+        "checked": "2026-11-02T17:53:37.004428+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:35.634087+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:manual-mk8": {
@@ -37267,14 +37284,13 @@
       "platform": "Switch",
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000000153/de697f487a36d802dd9a5ff0341f717c8486221f2f1219b675af37aca63bc453",
-        "page": "https://www.nintendo.com/us/store/products/mario-kart-8-deluxe-switch/"
+        "source": "https://www.nintendo.com/us/store/products/mario-kart-8-deluxe-switch/",
+        "checked": "2026-11-02T17:53:39.254153+00:00"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/mario-kart-8-deluxe-switch/",
         "label": "Abrir na Nintendo eShop",
-        "checked": "2026-11-02T15:59:14.537921+00:00",
-        "error": null,
-        "attempted": "2026-11-02T15:59:16.290010+00:00"
+        "checked": "2026-11-02T17:53:39.253923+00:00"
       },
       "trailer": {
         "id": "ZKB9FEXhJ68",
@@ -37290,19 +37306,16 @@
         "critic": {
           "score": 92.0,
           "scale": 100,
-          "source_count": 1,
-          "method": "single-source",
           "sources": [
             {
-              "score": 92,
-              "scale": 100,
-              "source": "Metacritic",
-              "url": "https://www.metacritic.com/game/mario-kart-8-deluxe/critic-reviews/?platform=nintendo-switch",
-              "checked": "2026-11-02T13:10:46.014057+00:00",
               "name": "Metacritic",
+              "score": 92,
+              "url": "https://www.metacritic.com/game/mario-kart-8-deluxe/critic-reviews/?platform=nintendo-switch",
               "platform": "Switch"
             }
-          ]
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": 8.6,
@@ -37321,85 +37334,190 @@
             }
           ]
         },
-        "attempted": "2026-11-02T13:10:46.860518+00:00"
+        "attempted": "2026-11-02T17:53:35.634497+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
         "rating": true
-      }
+      },
+      "basics_attempted": "2026-11-02T17:53:35.634497+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:13394": {
       "title": "Mario Party Superstars",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/mario-party-superstars",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 8.0,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 8.0,
+              "scale": 10.0,
+              "count": 585,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/mario_party_superstars",
+              "platform": "Nintendo Switch",
+              "weight": 24.186773244895647,
+              "normalized": 8.0
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:35.634604+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/mario-party-superstars-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:53:41.246412+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000042934/ae43ce2e25afbc4c069c2920075ead01a84f02dfe55b87876268409f6ccc0304",
+        "source": "https://www.nintendo.com/us/store/products/mario-party-superstars-switch/",
+        "checked": "2026-11-02T17:53:41.246764+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:35.634604+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:11407": {
       "title": "Mario Strikers: Battle League",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 90.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 90.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/mario-strikers-battle-league",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 6.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.7,
+              "scale": 10.0,
+              "count": 232,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/mario_strikers_battle_league",
+              "platform": "Nintendo Switch",
+              "weight": 15.231546211727817,
+              "normalized": 6.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:39.254261+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/mario-strikers-battle-league-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:53:42.030208+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000049936/c280b6843af262757f041d2aa3543992ec076b97545abea4dbadda797d9056fc",
+        "source": "https://www.nintendo.com/us/store/products/mario-strikers-battle-league-switch/",
+        "checked": "2026-11-02T17:53:42.030646+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:39.254261+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:14419": {
       "title": "Mario vs. Donkey Kong",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/mario-vs-donkey-kong",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.5,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.5,
+              "scale": 10.0,
+              "count": 315,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/mario_vs_donkey_kong",
+              "platform": "Nintendo Switch",
+              "weight": 17.74823934929885,
+              "normalized": 7.5
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:41.865212+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/mario-vs-donkey-kong-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:53:44.633492+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000072191/2fda60f3007987817be456876e7755f5120522a75e477961fbb622fd32f9e588",
+        "source": "https://www.nintendo.com/us/store/products/mario-vs-donkey-kong-switch/",
+        "checked": "2026-11-02T17:53:44.633867+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:41.865212+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:14635": {
       "title": "Mars Base",
@@ -37408,21 +37526,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:42.923837+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:53:42.923837+00:00",
+      "version": 2,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "Switch:14636": {
@@ -37432,21 +37558,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:43.796349+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/mars-base-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:53:46.124343+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000054853/93520bbf1e304f2a403cc1184a794b01c8715e146867ab7fbc5d5fc2874d4b41",
+        "source": "https://www.nintendo.com/us/store/products/mars-base-switch/",
+        "checked": "2026-11-02T17:53:46.124592+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:43.796349+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:12829": {
@@ -82354,24 +82497,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/mario_tennis_aces",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 373,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/mario_tennis_aces",
+              "platform": "Nintendo Switch",
+              "weight": 19.313207915827967,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:41.255856+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/mario-tennis-aces-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:53:42.370441+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000003889/7d4bb0a9ace1fb56a41aae8ef0d4ee806419e6187afdb4697a598458f02cd8e7",
+        "source": "https://www.nintendo.com/us/store/products/mario-tennis-aces-switch/",
+        "checked": "2026-11-02T17:53:42.370643+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:53:41.255856+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:4665": {
       "title": "Mario and Rabbids Kingdom Battle",
@@ -82380,21 +82557,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:41.791912+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:53:41.791912+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:4929": {
@@ -104305,21 +104494,41 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.2,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.2,
+              "scale": 10,
+              "count": 26,
+              "url": "https://www.metacritic.com/game/mario-bros/user-reviews/?platform=nintendo-switch",
+              "platform": "Switch",
+              "weight": 5.0990195135927845,
+              "normalized": 6.2
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:53:35.634244+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "basics_attempted": "2026-11-02T17:53:35.634244+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:8228": {
