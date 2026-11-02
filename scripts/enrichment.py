@@ -112,11 +112,18 @@ def resolve_psn(game,legacy,known_store):
                     except Exception as exc:errors.append(str(exc)[:120])
     raise ValueError('No exact Portugal PS5 product verified'+(': '+'; '.join(errors[:2]) if errors else ''))
 
+def valid_image(url):
+    if not isinstance(url,str):return False
+    parsed=urllib.parse.urlparse(url)
+    if parsed.scheme!='https' or not parsed.hostname:return False
+    if parsed.hostname in ['images.nintendolife.com','images.pushsquare.com'] and not re.match(r'^/[a-zA-Z0-9]+/',parsed.path):return False
+    return True
+
 def meta_image(page):
     for tag in re.findall(r'<meta\b[^>]*>',page,re.I):
         if re.search(r'(?:property|name)=["\']og:image["\']',tag,re.I):
             match=re.search(r'content=["\']([^"\']+)',tag,re.I)
-            if match and html.unescape(match[1]).startswith('https://'):return html.unescape(match[1])
+            if match and valid_image(html.unescape(match[1])):return html.unescape(match[1])
 
 def nintendo_index_match(game,doc):
     systems=doc.get('system_type',[])
@@ -307,13 +314,29 @@ def wikipedia_image(game):
 def has_score(value):return isinstance(value.get('score'),(int,float)) and value.get('scale',0)>0 and 0<=value['score']<=value['scale']
 def requirements(entry):
     rating=entry.get('ratings',{})
-    return {'image':bool(entry.get('image',{}).get('url')),'store':bool(entry.get('store',{}).get('url')),'rating':any(has_score(rating.get(kind,{})) for kind in ['user','critic'])}
+    return {'image':valid_image(entry.get('image',{}).get('url')),'store':bool(entry.get('store',{}).get('url')),'rating':any(has_score(rating.get(kind,{})) for kind in ['user','critic'])}
+
+def share_artwork(games,entries):
+    by_title={}
+    for game in games:by_title.setdefault(game['title'],[]).append(game)
+    for game in games:
+        entry=entries.get(game['platform']+':'+game['id'],{})
+        if valid_image(entry.get('image',{}).get('url')) or not game.get('synopsis'):continue
+        candidates=[]
+        for other in by_title[game['title']]:
+            if other['platform']==game['platform'] or ' '.join(other.get('synopsis','').split())!=' '.join(game['synopsis'].split()):continue
+            art=entries.get(other['platform']+':'+other['id'],{}).get('image',{})
+            if valid_image(art.get('url')):candidates.append((other,art))
+        if len(candidates)==1:
+            other,art=candidates[0];entry['image']={**art,'method':'same-game-artwork','artwork_from':other['platform']+':'+other['id'],'note':'Shared artwork only; ratings and store remain console-specific.'}
+            entry['requirements']=requirements(entry)
 
 def seed(games,entries,legacy,known_stores,old_composites,old_trailers,artwork,old_plus):
     # Audit existing verified data too; unattempted enrichment is not missing data.
     for game in games:
         key=game['platform']+':'+game['id'];entry=entries.setdefault(key,{'title':game['title'],'platform':game['platform']})
-        if artwork.get(game['title'],{}).get('url') and not entry.get('image',{}).get('url'):entry['image']=artwork[game['title']]
+        if entry.get('image') and not valid_image(entry['image'].get('url')):entry.pop('image')
+        if valid_image(artwork.get(game['title'],{}).get('url')) and not entry.get('image',{}).get('url'):entry['image']=artwork[game['title']]
         if known_stores.get(key,{}).get('url') and not entry.get('store',{}).get('url'):entry['store']=known_stores[key]
         if old_trailers.get(key,{}).get('id'):entry.setdefault('trailer',old_trailers[key])
         if old_plus.get(key,{}).get('checked'):entry.setdefault('psplus',old_plus[key])
@@ -330,6 +353,7 @@ def seed(games,entries,legacy,known_stores,old_composites,old_trailers,artwork,o
                     else:result[kind]={'score':None,'scale':100 if kind=='critic' else 10,'source_count':0,'sources':[]}
                 result['attempted']=source.get('attempted','');entry['ratings']=result
         entry['requirements']=requirements(entry)
+    share_artwork(games,entries)
 
 def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
     result=dict(previous or {});errors={};key=game['platform']+':'+game['id'];stamp=now()
@@ -337,7 +361,8 @@ def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
     match=source_match(game)
     if not result.get('image',{}).get('url') and match.get('image_url','').startswith('https://www.nintendo.com/'):
         result['image']={'url':match['image_url'],'source':match['source'],'checked':stamp,'method':'official-product-index'}
-    if artwork.get('url') and not result.get('image',{}).get('url'):result['image']=artwork
+    if result.get('image') and not valid_image(result['image'].get('url')):result.pop('image')
+    if valid_image(artwork.get('url')) and not result.get('image',{}).get('url'):result['image']=artwork
     source_game={**game,'aliases':result.get('aliases',[])+source_match(game).get('names',[])}
     current_store=result.get('store') or known_store
     try:metadata=resolve_psn(source_game,legacy,current_store) if game['platform']=='PS5' else resolve_nintendo(source_game,current_store);result.update({k:v for k,v in metadata.items() if k!='image' or v.get('url')})
