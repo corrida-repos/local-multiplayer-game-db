@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:04:24.516126+00:00",
+  "updated": "2026-11-02T18:04:47.725948+00:00",
   "version": 2,
   "coverage": {
     "total": 2542,
-    "attempted": 1522,
-    "ready": 940,
-    "missing_image": 1174,
-    "missing_store": 1248,
-    "missing_rating": 1507,
+    "attempted": 1532,
+    "ready": 948,
+    "missing_image": 1165,
+    "missing_store": 1239,
+    "missing_rating": 1499,
     "full_attempted": 0
   },
   "games": {
@@ -42280,21 +42280,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:04:33.391597+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:04:33.391597+00:00",
+      "version": 2,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 403: Forbidden"
       }
     },
     "Switch:13208": {
@@ -42304,21 +42312,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:04:34.907485+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/pets-at-work-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:04:35.796384+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000059068/206bb99453307daf482e88228d7661ba5ec146797950d22c46d2206c26453905",
+        "source": "https://www.nintendo.com/us/store/products/pets-at-work-switch/",
+        "checked": "2026-11-02T18:04:35.796531+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:04:34.907485+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:12940": {
@@ -52179,22 +52205,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.54,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.27,
+              "count": 190,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP4541-PPSA19608_00-PERENNIALORDEREU",
+              "checked": "2026-11-02T18:04:33.385806+00:00",
+              "platform": "PSN · PS5",
+              "weight": 13.784048752090222,
+              "normalized": 8.54
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:04:31.757256+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP4541-PPSA19608_00-PERENNIALORDEREU",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:04:33.385806+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202402/0608/3d125b1f796bcaec3338611e967a26332f8b8ce8c4366c1c.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP4541-PPSA19608_00-PERENNIALORDEREU",
+        "checked": "2026-11-02T18:04:33.385806+00:00"
+      },
+      "user": {
+        "score": 4.27,
+        "count": 190,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP4541-PPSA19608_00-PERENNIALORDEREU",
+        "checked": "2026-11-02T18:04:33.385806+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP4541-PPSA19608_00-PERENNIALORDEREU",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP4541-PPSA19608_00-PERENNIALORDEREU",
+        "checked": "2026-11-02T18:04:33.385806+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:04:31.757256+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:14988": {
       "title": "Quadroids",
@@ -58202,45 +58276,133 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.34,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.67,
+              "count": 321,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP5857-PPSA13794_00-0516018046423206",
+              "checked": "2026-11-02T18:04:40.658387+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 17.916472867168917,
+              "normalized": 9.34
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:04:39.098724+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP5857-PPSA13794_00-0516018046423206",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:04:40.658387+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202411/1615/5d52bb3928c4d0e5671e391d84171ff5218631473b10819d.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP5857-PPSA13794_00-0516018046423206",
+        "checked": "2026-11-02T18:04:40.658387+00:00"
+      },
+      "user": {
+        "score": 4.67,
+        "count": 321,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP5857-PPSA13794_00-0516018046423206",
+        "checked": "2026-11-02T18:04:40.658387+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP5857-PPSA13794_00-0516018046423206",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP5857-PPSA13794_00-0516018046423206",
+        "checked": "2026-11-02T18:04:40.658387+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:04:39.098724+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:15613": {
       "title": "Phantom Breaker: Battle Grounds Ultimate",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 75.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "CGMagazine",
+              "score": 90,
+              "url": "https://www.cgmagonline.com/review/game/phantom-breaker-battle-grounds/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game8",
+              "score": 80,
+              "url": "https://game8.co/articles/reviews/phantom-breaker-battle-grounds-ultimate-review",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 55,
+              "url": "https://universonintendo.com/analise-phantom-breaker-battle-grounds-ultimate/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 3
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:04:40.663005+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/phantom-breaker-battle-grounds-ultimate-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:04:41.869254+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000062589/134bff5b3e7581310f8fc954de649108855266be58bf4e20b248b7a5ef42a588",
+        "source": "https://www.nintendo.com/us/store/products/phantom-breaker-battle-grounds-ultimate-switch/",
+        "checked": "2026-11-02T18:04:41.869450+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:04:40.663005+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:15865": {
@@ -87662,23 +87824,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=phantom-breaker-battle-grounds-overdrive-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:04:37.088197+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Phantom-Breaker-Battle-Grounds-Overdrive-1313630.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:04:38.525783+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_PhantomBreakerBattleGroundsOverdrive_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Phantom-Breaker-Battle-Grounds-Overdrive-1313630.html",
+        "checked": "2026-11-02T18:04:38.525783+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:04:37.088197+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:5099": {
@@ -98128,23 +98315,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 64.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 64.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=paw-paw-paw-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:04:28.411028+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/paw-paw-paw-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:04:31.493240+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000034539/5e65aa6e18cc281bac39f5b00d344d374d19875580b7e44a135ea77b0cd2dd64",
+        "source": "https://www.nintendo.com/us/store/products/paw-paw-paw-switch/",
+        "checked": "2026-11-02T18:04:31.493461+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:04:28.411028+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:6566": {
@@ -104277,23 +104489,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 75.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=party-hard-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:04:28.410640+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/party-hard-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:04:30.237217+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000007272/ce40ea7cd63866b945bfac5e8aef6ed6f957dea931fad625cb8950e05002ef69",
+        "source": "https://www.nintendo.com/us/store/products/party-hard-switch/",
+        "checked": "2026-11-02T18:04:30.237378+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:04:28.410640+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:7501": {
@@ -104301,23 +104538,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 73.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 73.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=party-hard-2-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:04:28.410912+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/party-hard-2-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:04:31.109290+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000031287/bea3b46057b3e75ca13556de99612ac4efe9b8839a38defd86cd8f682f7645ef",
+        "source": "https://www.nintendo.com/us/store/products/party-hard-2-switch/",
+        "checked": "2026-11-02T18:04:31.109468+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:04:28.410912+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:7597": {
@@ -114780,23 +115042,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 30.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 30.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=peasant-knight-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:04:28.411130+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/peasant-knight-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:04:32.897550+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000001071/8a7f8e1cdbe76931567225c88f1d00e674afdbff714efe83d69d3f9794cf51f8",
+        "source": "https://www.nintendo.com/us/store/products/peasant-knight-switch/",
+        "checked": "2026-11-02T18:04:32.897702+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:04:28.411130+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:8705": {
