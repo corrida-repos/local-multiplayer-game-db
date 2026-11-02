@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T23:25:05.889114+00:00",
+  "updated": "2026-11-02T23:26:38.740495+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1847,
+    "ready": 1853,
     "missing_image": 111,
-    "missing_store": 566,
-    "missing_rating": 450,
+    "missing_store": 557,
+    "missing_rating": 445,
     "full_attempted": 1042,
     "image_health_pending": 2431
   },
@@ -55556,10 +55556,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 6.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/nintendo-switch/operation_wolf_returns_first_mission",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:25:35.383041+00:00",
+              "weight": 1.0,
+              "normalized": 6.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -55567,20 +55580,20 @@
         "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:44:54.031509+00:00"
+        "attempted": "2026-11-02T23:25:10.055192+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000049762/4c278da4c6c20adfbb64c1e151b73a4a7323c7b1d3560427b81dbebf3e3ec470",
         "source": "https://www.nintendo.com/us/store/products/operation-wolf-returns-first-mission-switch/",
         "checked": "2026-11-02T19:37:52.787993+00:00"
       },
-      "basics_attempted": "2026-11-02T19:37:44.677984+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:25:10.055192+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "slush": "No scored Switch review indexed",
@@ -55594,7 +55607,51 @@
           "checked": "2026-11-02T19:37:52.787624+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Operation-Wolf-Returns-First-Mission-2436358.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:25:13.856983+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Operation Wolf Returns: First Mission"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:13.857300+00:00",
+              "next_attempt": "2026-11-03T23:25:13.857300+00:00",
+              "revision": "116eedb97b9ade8b:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:13.857300+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Operation-Wolf-Returns-First-Mission-2436358.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Operation-Wolf-Returns-First-Mission-2436358.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:35.383134+00:00",
+              "next_attempt": "2026-11-03T23:25:35.383134+00:00",
+              "revision": "116eedb97b9ade8b:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:35.383134+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/operation_wolf_returns_first_mission"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/operation_wolf_returns_first_mission"
+            }
+          }
+        }
+      }
     },
     "Switch:12862": {
       "title": "Ordyne",
@@ -55622,7 +55679,7 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:45:27.900264+00:00"
+        "attempted": "2026-11-02T23:25:10.056610+00:00"
       },
       "requirements": {
         "image": true,
@@ -55641,18 +55698,89 @@
         "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-ORDYNE-2291268.html",
         "checked": "2026-11-02T19:37:56.954544+00:00"
       },
-      "basics_attempted": "2026-11-02T19:37:52.312696+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:25:10.056610+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "aliases": [
         "Arcade Archives ORDYNE"
       ],
       "full_attempted": "2026-11-02T20:45:31.085424+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:20.296731+00:00",
+              "next_attempt": "2026-11-03T23:26:20.296731+00:00",
+              "revision": "2d3acdcde63b562e:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/ordyne",
+                "https://www.nintendolife.com/games/switch-eshop/ordyne",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_ordyne"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_ordyne"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:21.379683+00:00",
+              "next_attempt": "2026-11-03T23:26:21.379683+00:00",
+              "revision": "2d3acdcde63b562e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=ordyne-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=ordyne-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:38.476501+00:00",
+              "next_attempt": "2026-11-03T23:26:38.476501+00:00",
+              "revision": "2d3acdcde63b562e:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-ordyne/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-ordyne/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-ordyne/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-ordyne/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:38.552877+00:00",
+              "next_attempt": "2026-11-03T23:26:38.552877+00:00",
+              "revision": "2d3acdcde63b562e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Ordyne&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Ordyne&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:26:38.552976+00:00",
+              "next_attempt": "2026-11-03T00:26:38.552976+00:00",
+              "revision": "2d3acdcde63b562e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:26:38.553035+00:00",
+              "next_attempt": "2026-11-03T00:26:38.553035+00:00",
+              "revision": "2d3acdcde63b562e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:14157": {
       "title": "Organ Trail Complete Edition",
@@ -55690,11 +55818,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:45:30.395543+00:00"
+        "attempted": "2026-11-02T23:25:10.057305+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -55702,8 +55830,8 @@
         "source": "https://www.nintendo.com/us/store/products/organ-trail-complete-edition-switch/",
         "checked": "2026-11-02T19:38:34.776060+00:00"
       },
-      "basics_attempted": "2026-11-02T19:38:33.888506+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:25:10.057305+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "trailer": "HTTP Error 404: Not Found"
@@ -55716,7 +55844,35 @@
           "checked": "2026-11-02T19:38:34.775784+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Organ-Trail-Complete-Edition-2424143.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:25:16.904157+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Organ Trail Complete Edition"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:16.904457+00:00",
+              "next_attempt": "2026-11-03T23:25:16.904457+00:00",
+              "revision": "e71462ef27463082:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:16.904457+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Organ-Trail-Complete-Edition-2424143.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Organ-Trail-Complete-Edition-2424143.html"
+            }
+          }
+        }
+      }
     },
     "Switch:14420": {
       "title": "Osyaberi! Horijyo! Gekihori: Anna Holinski saves the universe, alright?!",
@@ -55730,10 +55886,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/osyaberi_horijyo_gekihori_anna_holinski_saves_the_universe_alright",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:25:45.613715+00:00",
+              "weight": 1.4142135623730951,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": false,
@@ -55745,20 +55914,20 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:45:45.128705+00:00"
+        "attempted": "2026-11-02T23:25:10.057925+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000043008/39f842941f9b8ca72c973c01fbfa035368c515d07dc27f219a98e9b331522740",
         "source": "https://www.nintendo.com/us/store/products/osyaberi-horijyo-gekihori-anna-holinski-saves-the-universe-alright-switch/",
         "checked": "2026-11-02T19:38:36.285842+00:00"
       },
-      "basics_attempted": "2026-11-02T19:38:33.888670+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:25:10.057925+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
@@ -55775,7 +55944,51 @@
           "checked": "2026-11-02T19:38:36.285532+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Osyaberi-Horijyo-Gekihori-Anna-Holinski-saves-the-universe-alright--2448278.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:25:15.820197+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Osyaberi! Horijyo! Gekihori: Anna Holinski saves the universe, alright?!"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:15.820496+00:00",
+              "next_attempt": "2026-11-03T23:25:15.820496+00:00",
+              "revision": "829a9f4651254128:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:15.820496+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Osyaberi-Horijyo-Gekihori-Anna-Holinski-saves-the-universe-alright--2448278.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Osyaberi-Horijyo-Gekihori-Anna-Holinski-saves-the-universe-alright--2448278.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:45.613790+00:00",
+              "next_attempt": "2026-11-03T23:25:45.613790+00:00",
+              "revision": "829a9f4651254128:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:45.613790+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/osyaberi_horijyo_gekihori_anna_holinski_saves_the_universe_alright"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/osyaberi_horijyo_gekihori_anna_holinski_saves_the_universe_alright"
+            }
+          }
+        }
+      }
     },
     "PS5:11627": {
       "title": "Outbreak: Contagious Memories",
@@ -88527,11 +88740,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:44:59.634756+00:00"
+        "attempted": "2026-11-02T23:25:10.056268+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -88539,12 +88752,15 @@
         "source": "https://www.nintendo.com/us/store/products/orbwars-switch/",
         "checked": "2026-11-02T19:37:56.270989+00:00"
       },
-      "basics_attempted": "2026-11-02T19:37:52.229140+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:25:10.056268+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:45:03.339855+00:00",
       "store_evidence": [
@@ -88554,7 +88770,100 @@
           "checked": "2026-11-02T19:37:56.270738+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/OrbWars-2576775.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:25:14.710983+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "OrbWars"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:14.711284+00:00",
+              "next_attempt": "2026-11-03T23:25:14.711284+00:00",
+              "revision": "a0d6958abca9d19e:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:14.711284+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/OrbWars-2576775.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/OrbWars-2576775.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:10.406485+00:00",
+              "next_attempt": "2026-11-03T23:26:10.406485+00:00",
+              "revision": "a0d6958abca9d19e:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/orbwars",
+                "https://www.nintendolife.com/games/nintendo-switch/orbwars"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/orbwars"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:11.846907+00:00",
+              "next_attempt": "2026-11-03T23:26:11.846907+00:00",
+              "revision": "a0d6958abca9d19e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=orbwars-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=orbwars-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:16.973191+00:00",
+              "next_attempt": "2026-11-03T23:26:16.973191+00:00",
+              "revision": "a0d6958abca9d19e:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/orbwars/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/orbwars/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/orbwars/"
+              ],
+              "url": "https://www.metacritic.com/game/orbwars/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:17.006100+00:00",
+              "next_attempt": "2026-11-03T23:26:17.006100+00:00",
+              "revision": "a0d6958abca9d19e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=OrbWars&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=OrbWars&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:26:17.006212+00:00",
+              "next_attempt": "2026-11-03T00:26:17.006212+00:00",
+              "revision": "a0d6958abca9d19e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:26:17.006322+00:00",
+              "next_attempt": "2026-11-03T00:26:17.006322+00:00",
+              "revision": "a0d6958abca9d19e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:15363": {
       "title": "PICROSS S NAMCO LEGENDARY edition",
@@ -111897,11 +112206,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:45:07.547480+00:00"
+        "attempted": "2026-11-02T23:25:10.055419+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -111909,12 +112218,15 @@
         "source": "https://www.nintendo.com/us/store/products/operius-dx-switch/",
         "checked": "2026-11-02T19:37:53.303669+00:00"
       },
-      "basics_attempted": "2026-11-02T19:37:44.678153+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:25:10.055419+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:45:14.183674+00:00",
       "store_evidence": [
@@ -111924,7 +112236,100 @@
           "checked": "2026-11-02T19:37:53.303405+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Operius-DX-2844365.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:25:12.524442+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Operius DX"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:12.524737+00:00",
+              "next_attempt": "2026-11-03T23:25:12.524737+00:00",
+              "revision": "fe0c567c2d2eb234:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:12.524737+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Operius-DX-2844365.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Operius-DX-2844365.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:05.420166+00:00",
+              "next_attempt": "2026-11-03T23:26:05.420166+00:00",
+              "revision": "fe0c567c2d2eb234:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/operius_dx",
+                "https://www.nintendolife.com/games/nintendo-switch/operius_dx"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/operius_dx"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:07.041361+00:00",
+              "next_attempt": "2026-11-03T23:26:07.041361+00:00",
+              "revision": "fe0c567c2d2eb234:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=operius-dx-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=operius-dx-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:13.379329+00:00",
+              "next_attempt": "2026-11-03T23:26:13.379329+00:00",
+              "revision": "fe0c567c2d2eb234:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/operius-dx/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/operius-dx/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/operius-dx/"
+              ],
+              "url": "https://www.metacritic.com/game/operius-dx/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:13.463040+00:00",
+              "next_attempt": "2026-11-03T23:26:13.463040+00:00",
+              "revision": "fe0c567c2d2eb234:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Operius+DX&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Operius+DX&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:26:13.463167+00:00",
+              "next_attempt": "2026-11-03T00:26:13.463167+00:00",
+              "revision": "fe0c567c2d2eb234:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:26:13.463227+00:00",
+              "next_attempt": "2026-11-03T00:26:13.463227+00:00",
+              "revision": "fe0c567c2d2eb234:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:16869": {
       "title": "Parasol Superstars",
@@ -191833,10 +192238,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 3.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/omotomo",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:25:15.492013+00:00",
+              "weight": 1.4142135623730951,
+              "normalized": 3.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -191846,20 +192264,20 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:44:45.259094+00:00"
+        "attempted": "2026-11-02T23:25:10.054229+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000027283/0dca25f3cdf74cbf9991d7c486edb59d440fd0100d7f2e464f7ddd71921f0bc9",
         "source": "https://www.nintendo.com/us/store/products/omotomo-switch/",
         "checked": "2026-11-02T19:37:48.193955+00:00"
       },
-      "basics_attempted": "2026-11-02T19:37:44.677321+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:25:10.054229+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "slush": "No scored Switch review indexed",
@@ -191873,7 +192291,51 @@
           "checked": "2026-11-02T19:37:48.193699+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/OmoTomO-1708171.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:25:10.343053+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "OmoTomO"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:10.343382+00:00",
+              "next_attempt": "2026-11-03T23:25:10.343382+00:00",
+              "revision": "160ef1a53758f7ac:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:10.343382+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/OmoTomO-1708171.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/OmoTomO-1708171.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:15.492109+00:00",
+              "next_attempt": "2026-11-03T23:25:15.492109+00:00",
+              "revision": "160ef1a53758f7ac:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:15.492109+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/omotomo"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/omotomo"
+            }
+          }
+        }
+      }
     },
     "Switch:7612": {
       "title": "Our Flick Erasers",
@@ -191887,10 +192349,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/our_flick_erasers",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:25:55.630057+00:00",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -191900,20 +192375,20 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:45:38.928812+00:00"
+        "attempted": "2026-11-02T23:25:16.905053+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000021821/d6e29f9e7fb4dcc00ab23c559bbabf3c15fbe4b041c59a5d4717504c8e942a22",
         "source": "https://www.nintendo.com/us/store/products/our-flick-erasers-switch/",
         "checked": "2026-11-02T19:38:39.080441+00:00"
       },
-      "basics_attempted": "2026-11-02T19:38:33.889132+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:25:16.905053+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "slush": "No scored Switch review indexed",
@@ -191927,7 +192402,51 @@
           "checked": "2026-11-02T19:38:39.080180+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Our-Flick-Erasers-1616800.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:25:19.110543+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Our Flick Erasers"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:19.110843+00:00",
+              "next_attempt": "2026-11-03T23:25:19.110843+00:00",
+              "revision": "ee926db3d1a089d9:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:19.110843+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Our-Flick-Erasers-1616800.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Our-Flick-Erasers-1616800.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:55.630131+00:00",
+              "next_attempt": "2026-11-03T23:25:55.630131+00:00",
+              "revision": "ee926db3d1a089d9:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:55.630131+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/our_flick_erasers"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/our_flick_erasers"
+            }
+          }
+        }
+      }
     },
     "Switch:7502": {
       "title": "Party Hard",
@@ -208032,10 +208551,23 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 5.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 5.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/operation_hardcore",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:25:25.642935+00:00",
+              "weight": 1.4142135623730951,
+              "normalized": 5.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -208045,20 +208577,20 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:44:55.362602+00:00"
+        "attempted": "2026-11-02T23:25:10.054461+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
-        "rating": false
+        "store": true,
+        "rating": true
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000008402/73b62b14905dfab0a86f19621be0b869236d515a9c26775837f99897a48c4b87",
         "source": "https://www.nintendo.com/us/store/products/operation-hardcore-switch/",
         "checked": "2026-11-02T19:37:51.591601+00:00"
       },
-      "basics_attempted": "2026-11-02T19:37:44.677811+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:25:10.054461+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review",
         "slush": "No scored Switch review indexed",
@@ -208072,7 +208604,51 @@
           "checked": "2026-11-02T19:37:51.591349+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Operation-Hardcore-1385049.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:25:11.568486+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Operation Hardcore"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:11.568785+00:00",
+              "next_attempt": "2026-11-03T23:25:11.568785+00:00",
+              "revision": "a392c49c09c436b7:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:11.568785+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Operation-Hardcore-1385049.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Operation-Hardcore-1385049.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:25.642992+00:00",
+              "next_attempt": "2026-11-03T23:25:25.642992+00:00",
+              "revision": "a392c49c09c436b7:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:25.642992+00:00",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/operation_hardcore"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/operation_hardcore"
+            }
+          }
+        }
+      }
     },
     "PS5:8219": {
       "title": "Outbreak",
@@ -223852,11 +224428,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:45:33.391014+00:00"
+        "attempted": "2026-11-02T23:25:15.492325+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -223864,16 +224440,19 @@
         "source": "https://www.nintendo.com/us/store/products/osyaberi-puzzle-chigatan-spot-the-differences-with-everyone-switch/",
         "checked": "2026-11-02T19:38:36.966176+00:00"
       },
-      "basics_attempted": "2026-11-02T19:38:33.888941+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:25:15.492325+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:45:37.630327+00:00",
       "store_evidence": [
@@ -223883,7 +224462,100 @@
           "checked": "2026-11-02T19:38:36.965921+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Osyaberi-Puzzle-Chigatan-Spot-the-Differences-with-Everyone--1938055.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:25:18.023714+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Osyaberi! Puzzle Chigatan ～Spot the Differences with Everyone～"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:25:18.024018+00:00",
+              "next_attempt": "2026-11-03T23:25:18.024018+00:00",
+              "revision": "75361a0fa4fccea0:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:25:18.024018+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Osyaberi-Puzzle-Chigatan-Spot-the-Differences-with-Everyone--1938055.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Osyaberi-Puzzle-Chigatan-Spot-the-Differences-with-Everyone--1938055.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:15.412683+00:00",
+              "next_attempt": "2026-11-03T23:26:15.412683+00:00",
+              "revision": "75361a0fa4fccea0:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/osyaberi_puzzle_chigatan_spot_the_differences_with_everyone",
+                "https://www.nintendolife.com/games/switch-eshop/osyaberi_puzzle_chigatan_spot_the_differences_with_everyone"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/osyaberi_puzzle_chigatan_spot_the_differences_with_everyone"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:16.863764+00:00",
+              "next_attempt": "2026-11-03T23:26:16.863764+00:00",
+              "revision": "75361a0fa4fccea0:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=osyaberi-puzzle-chigatan-spot-the-differences-with-everyone-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=osyaberi-puzzle-chigatan-spot-the-differences-with-everyone-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:19.393956+00:00",
+              "next_attempt": "2026-11-03T23:26:19.393956+00:00",
+              "revision": "75361a0fa4fccea0:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/osyaberi-puzzle-chigatan-spot-the-differences-with-everyone/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/osyaberi-puzzle-chigatan-spot-the-differences-with-everyone/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/osyaberi-puzzle-chigatan-spot-the-differences-with-everyone/"
+              ],
+              "url": "https://www.metacritic.com/game/osyaberi-puzzle-chigatan-spot-the-differences-with-everyone/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:26:19.448924+00:00",
+              "next_attempt": "2026-11-03T23:26:19.448924+00:00",
+              "revision": "75361a0fa4fccea0:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Osyaberi%21+Puzzle+Chigatan+%EF%BD%9ESpot+the+Differences+with+Everyone%EF%BD%9E&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Osyaberi%21+Puzzle+Chigatan+%EF%BD%9ESpot+the+Differences+with+Everyone%EF%BD%9E&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:26:19.449060+00:00",
+              "next_attempt": "2026-11-03T00:26:19.449060+00:00",
+              "revision": "75361a0fa4fccea0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:26:19.449244+00:00",
+              "next_attempt": "2026-11-03T00:26:19.449244+00:00",
+              "revision": "75361a0fa4fccea0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:9488": {
       "title": "Outbreak: Endless Nightmares",
