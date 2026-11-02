@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T19:50:57.565966+00:00",
+  "updated": "2026-11-02T19:51:28.343681+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 253,
     "missing_store": 358,
     "missing_rating": 689,
-    "full_attempted": 170
+    "full_attempted": 180
   },
   "games": {
     "PS5:13238": {
@@ -5069,7 +5069,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 65.6,
+          "score": 65.1,
           "scale": 100,
           "sources": [
             {
@@ -5105,6 +5105,13 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Nindie Spotlight",
+              "score": 61.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=baldurs-gate-dark-alliance-ii-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "Nintendo Life",
               "score": 50,
               "url": "http://www.nintendolife.com/reviews/switch-eshop/baldurs-gate-dark-alliance-2",
@@ -5138,7 +5145,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 8
+          "source_count": 9
         },
         "user": {
           "score": null,
@@ -5147,7 +5154,16 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T16:59:26.626612+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: The read operation timed out",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:26.376464+00:00"
       },
       "requirements": {
         "image": true,
@@ -5166,26 +5182,45 @@
       },
       "basics_attempted": "2026-11-02T16:59:26.626612+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:26.765505+00:00"
     },
     "Switch:14389": {
       "title": "Bang-On Balls: Chronicles",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 56.7,
           "scale": 100,
           "sources": [
+            {
+              "name": "Gamezebo",
+              "score": 40,
+              "url": "https://www.gamezebo.com/reviews/switch-review-round-up-rise-of-the-triad-ludicrous-edition-frog-detective-and-more/",
+              "date": "2023-11-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 70.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bang-on-balls-chronicles-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 60,
+              "url": "https://toucharcade.com/2023/10/23/hot-wheels-unleashed-2-switch-review-wargroove-2-eshop-price/",
+              "date": "2023-10-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
           "score": null,
@@ -5194,7 +5229,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:53:19.298947+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:20.872619+00:00"
       },
       "requirements": {
         "image": true,
@@ -5215,14 +5258,21 @@
       "version": 3,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
-      }
+      },
+      "trailer": {
+        "id": "TyZyz4KjUJs",
+        "title": "Bang-On Balls: Chronicles: Launch Trailer | PS4 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/bang-on-balls-chronicles/"
+      },
+      "full_attempted": "2026-11-02T19:51:21.633162+00:00"
     },
     "Switch:13508": {
       "title": "Baron: Fur Is Gonna Fly",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 75.0,
+          "score": 68.8,
           "scale": 100,
           "sources": [
             {
@@ -5231,10 +5281,34 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=baron-fur-is-gonna-fly-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/53119/baron-fur-is-gonna-fly-switch-review",
+              "date": "2020-03-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-baron-fur-is-gonna-fly-nintendo-switch/",
+              "date": "2020-04-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 50,
+              "url": "http://switchplayer.net/2020/05/18/baron-fur-is-gonna-fly-review/",
+              "date": "2020-05-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
           "score": null,
@@ -5243,7 +5317,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:53:19.299242+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:27.474626+00:00"
       },
       "requirements": {
         "image": true,
@@ -5263,8 +5345,10 @@
       "basics_attempted": "2026-11-02T18:53:19.299242+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
-      }
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:28.215964+00:00"
     },
     "Switch:13924": {
       "title": "Barony",
@@ -59894,9 +59978,17 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 58.0,
+          "score": 44.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "Movies Games and Tech",
+              "score": 30,
+              "url": "https://moviesgamesandtech.com/2024/04/06/review-balloony/",
+              "date": "2024-04-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 57.99999999999999,
@@ -59906,7 +59998,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -59915,7 +60007,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:53:46.083030+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:15.955043+00:00"
       },
       "requirements": {
         "image": true,
@@ -59935,42 +60035,75 @@
       "basics_attempted": "2026-11-02T18:53:46.083030+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
-      }
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:17.578099+00:00"
     },
     "PS5:15062": {
       "title": "Bang-On Balls: Chronicles",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Gaming Age",
+              "score": 70,
+              "url": "https://gaming-age.com/2023/12/bang-on-balls-chronicles-review-for-playstation-xbox-pc-nintendo-switch/",
+              "date": "2023-12-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 70,
+              "url": "https://www.thesixthaxis.com/2023/11/22/bang-on-balls-chronicle-review/",
+              "date": "2023-11-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
-          "score": 8.0,
+          "score": 7.97,
           "scale": 10,
           "sources": [
             {
-              "score": 4,
-              "count": 2343,
-              "scope": "PSN · PS5",
+              "name": "Metacritic users",
+              "score": 7.5,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/bang-on-balls-chronicles/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.0,
+              "normalized": 7.5
+            },
+            {
               "name": "PSN",
+              "score": 4,
               "scale": 5,
-              "source": "PSN",
+              "count": 2343,
               "url": "https://store.playstation.com/pt-pt/product/EP6958-PPSA11116_00-0819788566392013",
-              "checked": "2026-11-02T17:00:40.017195+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 31.622776601683793,
               "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:00:38.743120+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:12.650124+00:00"
       },
       "requirements": {
         "image": true,
@@ -60008,7 +60141,14 @@
       },
       "basics_attempted": "2026-11-02T17:00:38.743120+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {},
+      "trailer": {
+        "id": "TyZyz4KjUJs",
+        "title": "Bang-On Balls: Chronicles: Launch Trailer | PS4 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/bang-on-balls-chronicles/"
+      },
+      "full_attempted": "2026-11-02T19:51:18.283405+00:00"
     },
     "Switch:15099": {
       "title": "Baron of Blood",
@@ -60036,7 +60176,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:53:46.083235+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:24.175602+00:00"
       },
       "requirements": {
         "image": true,
@@ -60056,8 +60204,10 @@
       "basics_attempted": "2026-11-02T18:53:46.083235+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
-      }
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:24.560174+00:00"
     },
     "PS5:14790": {
       "title": "Brothers: A Tale of Two Sons Remake",
@@ -67293,11 +67443,20 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2024/10/barbie-project-friendship-review/",
+              "date": "2024-10-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 3.6,
@@ -67309,7 +67468,7 @@
               "scale": 10,
               "count": 5,
               "url": "https://www.metacritic.com/game/barbie-project-friendship/user-reviews/?platform=playstation-5",
-              "platform": "PS5",
+              "platform": "PlayStation 5",
               "weight": 2.23606797749979,
               "normalized": 3.5999999999999996
             }
@@ -67317,7 +67476,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:57:00.176839+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:14.821098+00:00"
       },
       "requirements": {
         "image": false,
@@ -67328,8 +67494,10 @@
       "version": 3,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 403: Forbidden"
-      }
+        "community": "HTTP Error 403: Forbidden",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:16.342355+00:00"
     },
     "Switch:15693": {
       "title": "Barbie Project Friendship",
@@ -67349,7 +67517,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:57:00.177256+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:18.161179+00:00"
       },
       "requirements": {
         "image": true,
@@ -67370,8 +67546,10 @@
       "version": 3,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:18.703357+00:00"
     },
     "Switch:15876": {
       "title": "Capcom Fighting Collection 2",
@@ -84452,7 +84630,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:14:39.191316+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:11.550897+00:00"
       },
       "requirements": {
         "image": true,
@@ -84472,8 +84658,10 @@
       "basics_attempted": "2026-11-02T19:14:39.191316+00:00",
       "version": 3,
       "errors": {
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:14.201693+00:00"
     },
     "Switch:17168": {
       "title": "Beat 'Em Up Collection (QUByte Classics)",
@@ -149949,7 +150137,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:25:57.637429+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:13.752330+00:00"
       },
       "requirements": {
         "image": false,
@@ -149961,8 +150157,10 @@
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:15.173351+00:00"
     },
     "Switch:9082": {
       "title": "Battle Axe",
