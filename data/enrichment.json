@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:23:40.606188+00:00",
+  "updated": "2026-11-02T17:24:22.032128+00:00",
   "version": 2,
   "coverage": {
     "total": 1737,
-    "attempted": 592,
-    "ready": 368,
-    "missing_image": 1165,
-    "missing_store": 1186,
-    "missing_rating": 1345,
+    "attempted": 602,
+    "ready": 375,
+    "missing_image": 1156,
+    "missing_store": 1179,
+    "missing_rating": 1335,
     "full_attempted": 0
   },
   "games": {
@@ -67970,21 +67970,41 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.0,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 216,
+              "url": "https://www.metacritic.com/game/cave-story-plus/user-reviews/?platform=nintendo-switch",
+              "platform": "Switch",
+              "weight": 14.696938456699069,
+              "normalized": 8.0
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:23:43.546819+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "basics_attempted": "2026-11-02T17:23:43.546819+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: Exact Nintendo Switch store identity not verified",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:4869": {
@@ -67992,47 +68012,102 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/caveman_warriors",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:23:43.546964+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/caveman-warriors-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:23:45.783257+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000001528/d7e37f5e7e76c3a015105ec5138b2eb6b365e8324a51aa39ed16fbd5f15c25e9",
+        "source": "https://www.nintendo.com/us/store/products/caveman-warriors-switch/",
+        "checked": "2026-11-02T17:23:45.783476+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:23:43.546964+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:5141": {
       "title": "Crypt of the NecroDancer",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 90.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 90.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/crypt_of_the_necrodancer",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 144,
+              "url": "https://www.nintendolife.com/games/switch-eshop/crypt_of_the_necrodancer",
+              "platform": "Nintendo Switch",
+              "weight": 12.0,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:23:43.547198+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "image": {
+        "url": "https://images.nintendolife.com/5ae59d34a5baa/1280x720.jpg",
+        "source": "https://www.nintendolife.com/games/switch-eshop/crypt_of_the_necrodancer",
+        "checked": "2026-11-02T17:23:53.905115+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:23:43.547198+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:5082": {
@@ -68040,143 +68115,323 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/death_road_to_canada",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 44,
+              "url": "https://www.nintendolife.com/games/switch-eshop/death_road_to_canada",
+              "platform": "Nintendo Switch",
+              "weight": 6.6332495807108,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:23:43.547343+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/death-road-to-canada-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:23:48.294094+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000005722/3aed14f2b01c08cf913abb91635557b81950ef5c55cfbe3727c8ee06cc2b89e6",
+        "source": "https://www.nintendo.com/us/store/products/death-road-to-canada-switch/",
+        "checked": "2026-11-02T17:23:48.294425+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:23:43.547343+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:4681": {
       "title": "Death Squared",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/death_squared",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 52,
+              "url": "https://www.nintendolife.com/games/switch-eshop/death_squared",
+              "platform": "Nintendo Switch",
+              "weight": 7.211102550927978,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:23:48.488645+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/death-squared-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:23:49.416542+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000000767/86c5e15ed2397dcf6330b91cf7c1859147df0fc9ed5858af1f1888e67c2c2c94",
+        "source": "https://www.nintendo.com/us/store/products/death-squared-switch/",
+        "checked": "2026-11-02T17:23:49.416696+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:23:48.488645+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:4706": {
       "title": "Dimension Drive",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/dimension_drive",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:23:52.721805+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/dimension-drive-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:23:54.098276+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000000431/ef87f13cb2eeaad275c776e45b1c0f96cd103e6c29e7fc0488a2931047579400",
+        "source": "https://www.nintendo.com/us/store/products/dimension-drive-switch/",
+        "checked": "2026-11-02T17:23:54.098430+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:23:52.721805+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:4908": {
       "title": "Donkey Kong Country: Tropical Freeze",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 90.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 90.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/donkey_kong_country_tropical_freeze",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 8.5,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 8.5,
+              "scale": 10.0,
+              "count": 743,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/donkey_kong_country_tropical_freeze",
+              "platform": "Nintendo Switch",
+              "weight": 27.258026340878022,
+              "normalized": 8.5
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:23:55.059053+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/donkey-kong-country-tropical-freeze-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:23:56.162215+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000001339/d01cba67eb98fec32ac98027c07fa8d92dd52773565bfadc69f817c860e34b8a",
+        "source": "https://www.nintendo.com/us/store/products/donkey-kong-country-tropical-freeze-switch/",
+        "checked": "2026-11-02T17:23:56.162428+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:23:55.059053+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:5066": {
       "title": "DragoDino",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=dragodino-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:23:56.350801+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/dragodino-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:23:57.865862+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000005091/3ef29519cfc4e46a1fe2f549a097b3f9a92f74aa37f0d2e0feff7e530dbf7bcd",
+        "source": "https://www.nintendo.com/us/store/products/dragodino-switch/",
+        "checked": "2026-11-02T17:23:57.866118+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:23:56.350801+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:5054": {
       "title": "Dragon Blaze",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 90.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 90.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/dragon_blaze",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 18,
+              "url": "https://www.nintendolife.com/games/switch-eshop/dragon_blaze",
+              "platform": "Nintendo Switch",
+              "weight": 4.242640687119285,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:23:56.362901+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "image": {
+        "url": "https://images.nintendolife.com/528e818fe7aa3/1280x720.jpg",
+        "source": "https://www.nintendolife.com/games/switch-eshop/dragon_blaze",
+        "checked": "2026-11-02T17:24:04.995059+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:23:56.362901+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:5055": {
@@ -68184,23 +68439,49 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 45.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "NintendoWorldReport",
+              "score": 45,
+              "url": "http://www.nintendoworldreport.com/review/47067/eternal-edge-switch-review",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:23:58.318551+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/eternal-edge-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:24:00.557309+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000008581/e88664acc7f9fb8e92c322b1c6dbd5d592e9bb407139ea8902b75a497ddad1ce",
+        "source": "https://www.nintendo.com/us/store/products/eternal-edge-switch/",
+        "checked": "2026-11-02T17:24:00.557569+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:23:58.318551+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:4809": {
