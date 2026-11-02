@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:48:32.523293+00:00",
+  "updated": "2026-11-02T17:48:56.119749+00:00",
   "version": 2,
   "coverage": {
     "total": 2542,
-    "attempted": 1122,
-    "ready": 698,
-    "missing_image": 1500,
-    "missing_store": 1567,
-    "missing_rating": 1768,
+    "attempted": 1132,
+    "ready": 704,
+    "missing_image": 1490,
+    "missing_store": 1557,
+    "missing_rating": 1762,
     "full_attempted": 0
   },
   "games": {
@@ -30892,21 +30892,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:48:34.704866+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/knightout-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:48:35.446896+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000005724/c61a089e0d07895c48fa3736c38358f34947d1445b5f2875058ee6451efcd23d",
+        "source": "https://www.nintendo.com/us/store/products/knightout-switch/",
+        "checked": "2026-11-02T17:48:35.447116+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:48:34.704866+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:10255": {
@@ -30916,46 +30933,168 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 14,
+              "url": "https://www.nintendolife.com/games/switch-eshop/knights_and_guns",
+              "platform": "Nintendo Switch",
+              "weight": 3.7416573867739413,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:48:34.705339+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/knights-and-guns-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:48:37.642009+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000030590/e2ec2616955124f1f65f9b7b5e8a93aeaceaaea8a92ec4e1c49a26f6ce215d6e",
+        "source": "https://www.nintendo.com/us/store/products/knights-and-guns-switch/",
+        "checked": "2026-11-02T17:48:37.642226+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:48:34.705339+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:13021": {
       "title": "Kukoos: Lost Pets",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 68.3,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "But Why Tho?",
+              "score": 85,
+              "url": "https://butwhytho.net/2022/12/06/kukoos-lost-pets-review/",
+              "date": "2022-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 73,
+              "url": "https://digitalchumps.com/kukoos-lost-pets-switch/",
+              "date": "2022-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 40,
+              "url": "https://gamerant.com/kukoos-lost-pets-review/",
+              "date": "2022-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 80,
+              "url": "https://www.gamegrin.com/reviews/kukoos-lost-pets-review/",
+              "date": "2022-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/kukoos-lost-pets",
+              "date": "2022-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 50,
+              "url": "https://noisypixel.net/kukoos-lost-pets-review/",
+              "date": "2022-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 85,
+              "url": "https://purenintendo.com/review-kukoos-lost-pets-nintendo-switch/",
+              "date": "2023-01-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 80,
+              "url": "https://www.starbit.pt/2022/12/12/kukoos-lost-pets-analise/",
+              "date": "2023-01-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 70,
+              "url": "https://toucharcade.com/2022/12/12/samurai-maiden-nintendo-switch-review-eshop-price-discount-deal-wavetail-stadia/",
+              "date": "2022-12-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 50,
+              "url": "https://universonintendo.com/analise-kukoos-lost-pets/",
+              "date": "2023-01-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 10
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:48:44.649505+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/kukoos-lost-pets-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:48:46.689955+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000058020/fb672ca2cd5ed307a55e6e479a42e7af9512b23fa67c017a71dcffc40f762e6e",
+        "source": "https://www.nintendo.com/us/store/products/kukoos-lost-pets-switch/",
+        "checked": "2026-11-02T17:48:46.690155+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:48:44.649505+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:14690": {
       "title": "Kumi-Daiko Beatoff",
@@ -30964,21 +31103,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:48:44.801114+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/kumi-daiko-beatoff-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:48:47.154761+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000070855/4dfbd9324e5e07d8c0a8eee4a05c2bbebd90175ed879ef5a5f2cb33c8a09344b",
+        "source": "https://www.nintendo.com/us/store/products/kumi-daiko-beatoff-switch/",
+        "checked": "2026-11-02T17:48:47.154981+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:48:44.801114+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:13400": {
@@ -30986,24 +31143,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Pure Nintendo",
+              "score": 60,
+              "url": "https://purenintendo.com/review-kung-street-rage-fury-ultimate-edition-nintendo-switch/",
+              "date": "2023-04-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:48:45.890218+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/kung-fury-street-rage-ultimate-edition-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:48:49.267950+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000049464/6056300cf0fe83b098b492f9594e7e3c2bb0b33f1907335e5f0c306eeb3c782c",
+        "source": "https://www.nintendo.com/us/store/products/kung-fury-street-rage-ultimate-edition-switch/",
+        "checked": "2026-11-02T17:48:49.268177+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:48:45.890218+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:10192": {
       "title": "Kunio-kun no Dodge Ball da yo: Zenin Shūgo",
@@ -44936,21 +45117,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:48:35.928924+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/knights-of-braveland-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:48:38.873885+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000070176/258c19c07f88ee5f29817ff0ad4178816732287d6d9a1deba75a3780dd7783ae",
+        "source": "https://www.nintendo.com/us/store/products/knights-of-braveland-switch/",
+        "checked": "2026-11-02T17:48:38.874126+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:48:35.928924+00:00",
+      "version": 2,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:15005": {
@@ -50305,22 +50503,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.14,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.07,
+              "count": 28,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP6290-PPSA14415_00-0229692421700194",
+              "checked": "2026-11-02T17:48:35.924799+00:00",
+              "platform": "PSN · PS5",
+              "weight": 5.291502622129181,
+              "normalized": 8.14
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:48:34.705023+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP6290-PPSA14415_00-0229692421700194",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:48:35.924799+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202406/1209/26959bcf25d8a103ac3488a1f8d5f2a183ba0496beb4d32a.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP6290-PPSA14415_00-0229692421700194",
+        "checked": "2026-11-02T17:48:35.924799+00:00"
+      },
+      "user": {
+        "score": 4.07,
+        "count": 28,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP6290-PPSA14415_00-0229692421700194",
+        "checked": "2026-11-02T17:48:35.924799+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP6290-PPSA14415_00-0229692421700194",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP6290-PPSA14415_00-0229692421700194",
+        "checked": "2026-11-02T17:48:35.924799+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:48:34.705023+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:15779": {
       "title": "Mad Devils",
@@ -83269,24 +83515,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/knights_and_bikes",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 6.9,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.9,
+              "scale": 10.0,
+              "count": 13,
+              "url": "https://www.nintendolife.com/games/switch-eshop/knights_and_bikes",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 6.9
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:48:34.705592+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/knights-and-bikes-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:48:38.926540+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000020674/f1349a475e346451ee43fcf18a132dbeeaf0b81f0c8cd55244ba76ecd5fa2bfd",
+        "source": "https://www.nintendo.com/us/store/products/knights-and-bikes-switch/",
+        "checked": "2026-11-02T17:48:38.926856+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:48:34.705592+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:5746": {
       "title": "LEGO Star Wars: The Skywalker Saga",
@@ -88745,21 +89025,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:48:43.943805+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-KOUTETSU-YOUSAI-STRAHL-1812398.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:48:47.534416+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ArcadeArchivesKoutetsuYousaiStrahl_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-KOUTETSU-YOUSAI-STRAHL-1812398.html",
+        "checked": "2026-11-02T17:48:47.534416+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:48:43.943805+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:6813": {
@@ -104543,24 +104841,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 60.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/koloro",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 6.2,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.2,
+              "scale": 10.0,
+              "count": 15,
+              "url": "https://www.nintendolife.com/games/switch-eshop/koloro",
+              "platform": "Nintendo Switch",
+              "weight": 3.872983346207417,
+              "normalized": 6.2
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:48:39.323002+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/koloro-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:48:40.814714+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000015179/2d858fb065c4714e2f8702ebe879e6f927f1d93d0a24b0cd88916117f2ff8797",
+        "source": "https://www.nintendo.com/us/store/products/koloro-switch/",
+        "checked": "2026-11-02T17:48:40.814910+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:48:39.323002+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:9101": {
       "title": "Luke & Rebecca",
