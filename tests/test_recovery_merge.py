@@ -14,3 +14,7 @@ class RecoveryMerge(unittest.TestCase):
     def test_cannot_move_a_recovery_between_games_or_consoles(self):
         with self.assertRaises(ValueError):merge_entry(self.base(),{'platform':'Switch'})
         with self.assertRaises(ValueError):merge_entry(self.base(),{'title':'Other Game'})
+    def test_older_community_snapshot_cannot_replace_newer_votes(self):
+        current=self.base();current['ratings']['attempted']='2026-11-02T20:00:00Z';current['ratings']['user']=e.composites.user_composite([{'name':'Metacritic users','score':8,'scale':10,'count':1000}])
+        incoming={'ratings':{'attempted':'2026-11-02T19:00:00Z','user':e.composites.user_composite([{'name':'Metacritic users','score':5,'scale':10,'count':5}])}}
+        result=merge_entry(current,incoming);self.assertEqual(result['ratings']['user']['score'],8);self.assertEqual(result['ratings']['user']['sources'][0]['count'],1000)

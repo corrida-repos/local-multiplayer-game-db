@@ -12,14 +12,14 @@ def critic_merge(current,incoming):
         return current
     return e.composites.critic_composite(current.get('sources',[])+incoming.get('sources',[]))
 
-def user_merge(current,incoming):
+def user_merge(current,incoming,current_stamp='',incoming_stamp=''):
     if not e.has_score(incoming):return current
     if not e.has_score(current):return incoming
-    unique={}
-    for source in current.get('sources',[])+incoming.get('sources',[]):
-        name=source.get('name') or source.get('source','');key='PSN' if name.startswith('PSN') else name.lower()
-        old=unique.get(key)
-        if old is None or source.get('checked','')>=old.get('checked',''):unique[key]=source
+    unique={};seen_at={}
+    for rating,stamp in [(current,current_stamp),(incoming,incoming_stamp)]:
+        for source in rating.get('sources',[]):
+            name=source.get('name') or source.get('source','');key='PSN' if name.startswith('PSN') else name.lower();checked=source.get('checked') or stamp
+            if key not in unique or checked>=seen_at[key]:unique[key]=source;seen_at[key]=checked
     merged=e.composites.user_composite(list(unique.values()))
     return merged if e.has_score(merged) else current
 
@@ -37,7 +37,7 @@ def merge_entry(current,incoming):
     if incoming.get('ratings'):
         ratings=copy.deepcopy(result.get('ratings',{}));new=incoming['ratings']
         ratings['critic']=critic_merge(ratings.get('critic',{}),new.get('critic',{}))
-        ratings['user']=user_merge(ratings.get('user',{}),new.get('user',{}))
+        ratings['user']=user_merge(ratings.get('user',{}),new.get('user',{}),ratings.get('attempted',''),new.get('attempted',''))
         ratings['attempted']=max(ratings.get('attempted',''),new.get('attempted',''))
         result['ratings']=ratings
     if incoming.get('version'):result['version']=max(result.get('version',0),incoming['version'])

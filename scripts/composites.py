@@ -71,9 +71,9 @@ def collect(game,legacy):
     except Exception as e:complete=False;errors.append('Metacritic critics: '+str(e)[:100])
     try:
         url=base+f'user/games/{name}/platform/{platform}/stats/web'
-        _,page=get(url);data=json.loads(page)['data']['item']
+        final,page=get(url);data=json.loads(page)['data']['item'];canonical=re.search(r'/games/([^/]+)/platform/',final)[1]
         # Metacritic's unpublished averages are zero until four votes exist.
-        if data.get('reviewCount',0)>=4 and data.get('score') is not None:users.append({'name':'Metacritic users','score':data['score'],'scale':10,'count':data['reviewCount'],'url':f'https://www.metacritic.com/game/{name}/user-reviews/?platform={platform}','platform':expected})
+        if data.get('reviewCount',0)>=4 and data.get('score') is not None:users.append({'name':'Metacritic users','score':data['score'],'scale':10,'count':data['reviewCount'],'url':f'https://www.metacritic.com/game/{canonical}/user-reviews/?platform={platform}','platform':expected})
     except Exception as e:errors.append('Metacritic users: '+str(e)[:100])
     domain='www.pushsquare.com' if game['platform']=='PS5' else 'www.nintendolife.com'
     folders=['ps5'] if game['platform']=='PS5' else ['nintendo-switch','switch-eshop']
