@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T19:56:17.407607+00:00",
+  "updated": "2026-11-02T19:56:59.458297+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 253,
     "missing_store": 358,
     "missing_rating": 689,
-    "full_attempted": 270
+    "full_attempted": 280
   },
   "games": {
     "PS5:13238": {
@@ -7213,7 +7213,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:53:46.824688+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:56:30.567013+00:00"
       },
       "requirements": {
         "image": true,
@@ -7234,15 +7242,17 @@
       "version": 3,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:56:30.995476+00:00"
     },
     "Switch:11213": {
       "title": "Boomerang Fu",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 78.0,
+          "score": 77.5,
           "scale": 100,
           "sources": [
             {
@@ -7252,6 +7262,13 @@
               "date": "2021-10-12",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=boomerang-fu-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             },
             {
               "name": "Nintendo Life",
@@ -7287,7 +7304,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 5
+          "source_count": 6
         },
         "user": {
           "score": 8.6,
@@ -7307,7 +7324,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:00:51.549269+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:56:39.365778+00:00"
       },
       "requirements": {
         "image": true,
@@ -7326,7 +7351,10 @@
       },
       "basics_attempted": "2026-11-02T17:00:51.549269+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:56:40.569097+00:00"
     },
     "PS5:7667": {
       "title": "Borderlands 3",
@@ -7381,7 +7409,7 @@
           "source_count": 5
         },
         "user": {
-          "score": 8.15,
+          "score": 8.43,
           "scale": 10,
           "sources": [
             {
@@ -7395,33 +7423,27 @@
               "normalized": 7.5
             },
             {
-              "name": "Push Square",
-              "score": 7.2,
-              "scale": 10.0,
-              "count": 169,
-              "url": "https://www.pushsquare.com/games/ps5/borderlands_3",
-              "platform": "PlayStation 5",
-              "weight": 13.0,
-              "normalized": 7.199999999999999
-            },
-            {
-              "score": 4.41,
-              "count": 44726,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.41,
               "scale": 5,
-              "source": "PSN",
+              "count": 44726,
               "url": "https://store.playstation.com/pt-pt/product/EP1001-PPSA01463_00-0000000OAKNGSIEE",
-              "checked": "2026-11-02T17:00:53.617418+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 31.622776601683793,
               "normalized": 8.82
             }
           ],
-          "source_count": 3,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:00:52.127388+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:56:39.198355+00:00"
       },
       "requirements": {
         "image": true,
@@ -7459,7 +7481,14 @@
       },
       "basics_attempted": "2026-11-02T17:00:52.127388+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {},
+      "trailer": {
+        "id": "BGJVVPhIVCk",
+        "title": "Borderlands 3 - Gameplay Reveal Event Trailer | PS4",
+        "kind": "gameplay",
+        "source": "https://www.playstation.com/en-us/games/borderlands-3/"
+      },
+      "full_attempted": "2026-11-02T19:56:40.202350+00:00"
     },
     "PS5:15799": {
       "title": "Borderlands 4",
@@ -7704,15 +7733,12 @@
               "normalized": 5.5
             },
             {
-              "score": 3.85,
-              "count": 21596,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.85,
               "scale": 5,
-              "source": "PSN",
+              "count": 21596,
               "url": "https://store.playstation.com/pt-pt/product/UP1001-PPSA01494_00-000000000000OAK2",
-              "checked": "2026-11-02T17:00:54.878150+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 31.622776601683793,
               "normalized": 7.7
             }
@@ -7720,7 +7746,14 @@
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:00:53.639811+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 27,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:56:43.544606+00:00"
       },
       "requirements": {
         "image": true,
@@ -7758,7 +7791,14 @@
       },
       "basics_attempted": "2026-11-02T17:00:53.639811+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {},
+      "trailer": {
+        "id": "T7miyMigr_E",
+        "title": "Borderlands 4 - Gameplay Trailer | PS5 Games",
+        "kind": "gameplay",
+        "source": "https://www.playstation.com/en-us/games/borderlands-4/"
+      },
+      "full_attempted": "2026-11-02T19:56:45.036561+00:00"
     },
     "PS5:14346": {
       "title": "Borderlands Collection: Pandora's Box",
@@ -7786,15 +7826,12 @@
               "normalized": 4.0
             },
             {
-              "score": 4.56,
-              "count": 972,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.56,
               "scale": 5,
-              "source": "PSN",
+              "count": 972,
               "url": "https://store.playstation.com/pt-pt/product/EP1001-PPSA17639_00-BLWARCHESTBUNDLE",
-              "checked": "2026-11-02T17:00:55.985078+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 31.176914536239792,
               "normalized": 9.12
             }
@@ -7802,7 +7839,14 @@
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:00:54.899009+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:56:42.133409+00:00"
       },
       "requirements": {
         "image": true,
@@ -7840,7 +7884,8 @@
       },
       "basics_attempted": "2026-11-02T17:00:54.899009+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {},
+      "full_attempted": "2026-11-02T19:56:43.984301+00:00"
     },
     "Switch:6636": {
       "title": "Borderlands Legendary Collection",
@@ -8143,7 +8188,7 @@
           "source_count": 36
         },
         "user": {
-          "score": 8.05,
+          "score": 8.1,
           "scale": 10,
           "sources": [
             {
@@ -8155,22 +8200,20 @@
               "platform": "Nintendo Switch",
               "weight": 10.198039027185569,
               "normalized": 8.1
-            },
-            {
-              "name": "Nintendo Life",
-              "score": 8.0,
-              "scale": 10.0,
-              "count": 146,
-              "url": "https://www.nintendolife.com/games/nintendo-switch/borderlands_legendary_collection",
-              "platform": "Nintendo Switch",
-              "weight": 12.083045973594572,
-              "normalized": 8.0
             }
           ],
-          "source_count": 2,
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:01:06.622561+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 37,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:56:58.478822+00:00"
       },
       "requirements": {
         "image": true,
@@ -8189,7 +8232,11 @@
       },
       "basics_attempted": "2026-11-02T17:01:06.622561+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:56:59.030179+00:00"
     },
     "Switch:6634": {
       "title": "Borderlands: The Handsome Collection",
@@ -129331,11 +129378,36 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 50.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Digitally Downloaded",
+              "score": 50,
+              "url": "http://www.digitallydownloaded.net/2020/04/review-boot-hill-bounties-nintendo.html",
+              "date": "2020-04-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 50,
+              "url": "https://gamecritics.com/gc-staff/boot-hill-bounties-review/",
+              "date": "2020-06-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 50,
+              "url": "http://www.nintendoworldreport.com/review/53529/boot-hill-bounties-switch-review",
+              "date": "2020-04-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 7.8,
@@ -129347,7 +129419,7 @@
               "scale": 10,
               "count": 10,
               "url": "https://www.metacritic.com/game/boot-hill-bounties/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 3.1622776601683795,
               "normalized": 7.800000000000001
             }
@@ -129355,7 +129427,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:30:27.070528+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:56:40.466067+00:00"
       },
       "requirements": {
         "image": true,
@@ -129375,8 +129455,10 @@
       "basics_attempted": "2026-11-02T17:30:27.070528+00:00",
       "version": 2,
       "errors": {
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:56:41.951938+00:00"
     },
     "Switch:7291": {
       "title": "Brotherhood United",
@@ -143168,19 +143250,43 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 85.0,
+          "score": 63.8,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 60,
+              "url": "http://www.cubed3.com/review/6272/1/bonkies-nintendo-switch.html",
+              "date": "2021-02-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 85.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bonkies-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 50,
+              "url": "https://purenintendo.com/review-bonkies-nintendo-switch/",
+              "date": "2021-02-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2021/02/28/bonkies-review/",
+              "date": "2021-03-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
           "score": null,
@@ -143189,7 +143295,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:36:12.524209+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:56:32.768250+00:00"
       },
       "requirements": {
         "image": true,
@@ -143208,7 +143322,10 @@
       },
       "basics_attempted": "2026-11-02T17:36:12.524209+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:56:33.363941+00:00"
     },
     "Switch:8134": {
       "title": "Boot Hill Heroes",
@@ -143222,6 +143339,7 @@
               "name": "NintendoWorldReport",
               "score": 50,
               "url": "https://www.nintendoworldreport.com/review/55847/boot-hill-heroes-switch-review",
+              "date": "2021-01-04",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -143236,7 +143354,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:36:16.529863+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:56:41.575693+00:00"
       },
       "requirements": {
         "image": true,
@@ -143256,8 +143382,10 @@
       "basics_attempted": "2026-11-02T17:36:16.529863+00:00",
       "version": 2,
       "errors": {
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:56:42.985095+00:00"
     },
     "Switch:8258": {
       "title": "Brawl Brothers",
@@ -153117,6 +153245,7 @@
               "name": "Switch Player",
               "score": 60,
               "url": "http://switchplayer.net/2020/01/08/boom-ball-boost-edition-review/",
+              "date": "2020-01-08",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -153124,6 +153253,7 @@
               "name": "Video Chums",
               "score": 60,
               "url": "https://videochums.com/article/switch-co-op-indie-games#boom-ball-boost-edition",
+              "date": "2018-10-19",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -153138,7 +153268,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:40:21.627881+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:56:37.172953+00:00"
       },
       "requirements": {
         "image": true,
@@ -153159,8 +153297,10 @@
       "version": 2,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:56:37.548788+00:00"
     },
     "Switch:9624": {
       "title": "Brawlhalla",
