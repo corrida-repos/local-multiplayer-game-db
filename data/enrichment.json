@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:34:08.108609+00:00",
+  "updated": "2026-11-02T18:34:34.174954+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
-    "attempted": 2182,
-    "ready": 1402,
-    "missing_image": 602,
-    "missing_store": 688,
-    "missing_rating": 1021,
+    "attempted": 2192,
+    "ready": 1408,
+    "missing_image": 594,
+    "missing_store": 680,
+    "missing_rating": 1015,
     "full_attempted": 0
   },
   "games": {
@@ -53049,15 +53049,14 @@
       "title": "The LEGO NINJAGO Movie Video Game",
       "platform": "Switch",
       "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/a/ae/The_Lego_Ninjago_Movie_Videogame_cover.jpg",
-        "page": "https://en.wikipedia.org/wiki/The_Lego_Ninjago_Movie_Video_Game"
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000001532/9610a0645f0a25ff11a6aacc95ec529986387abaa6c8cb1597e3a812675556b8",
+        "source": "https://www.nintendo.com/us/store/products/lego-ninjago-movie-video-game-switch/",
+        "checked": "2026-11-02T18:34:15.985292+00:00"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/lego-ninjago-movie-video-game-switch/",
         "label": "Abrir na Nintendo eShop",
-        "checked": "2026-11-02T15:58:51.433765+00:00",
-        "error": null,
-        "attempted": "2026-11-02T15:58:53.087457+00:00"
+        "checked": "2026-11-02T18:34:15.984885+00:00"
       },
       "trailer": {
         "id": "ItPsQhpPXR8",
@@ -53073,19 +53072,16 @@
         "critic": {
           "score": 66.0,
           "scale": 100,
-          "source_count": 1,
-          "method": "single-source",
           "sources": [
             {
-              "score": 66,
-              "scale": 100,
-              "source": "Metacritic",
-              "url": "https://www.metacritic.com/game/the-lego-ninjago-movie-video-game/critic-reviews/?platform=nintendo-switch",
-              "checked": "2026-11-02T13:13:25.605474+00:00",
               "name": "Metacritic",
+              "score": 66,
+              "url": "https://www.metacritic.com/game/the-lego-ninjago-movie-video-game/critic-reviews/?platform=nintendo-switch",
               "platform": "Switch"
             }
-          ]
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": 6.6,
@@ -53104,13 +53100,16 @@
             }
           ]
         },
-        "attempted": "2026-11-02T13:13:26.263701+00:00"
+        "attempted": "2026-11-02T18:34:10.964103+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
         "rating": true
-      }
+      },
+      "basics_attempted": "2026-11-02T18:34:10.964103+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:13930": {
       "title": "The Lara Croft Collection",
@@ -53119,21 +53118,50 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 5.5,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 5.5,
+              "scale": 10,
+              "count": 10,
+              "url": "https://www.metacritic.com/game/the-lara-croft-collection/user-reviews/?platform=nintendo-switch",
+              "platform": "Switch",
+              "weight": 3.1622776601683795,
+              "normalized": 5.5
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:34:10.964304+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/the-lara-croft-collection-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:34:18.479531+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000055794/11e92763c749094c9e133814ab5aad1f4cb6e1c274a1b640f5d68158e1132608",
+        "source": "https://www.nintendo.com/us/store/products/the-lara-croft-collection-switch/",
+        "checked": "2026-11-02T18:34:18.479986+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:34:10.964304+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:13524": {
@@ -53143,21 +53171,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:34:10.964849+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/the-last-dragon-slayer-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:34:18.368563+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000059849/b7e1a7ac99593847247c0af345771d84e759e10870bbd5a1e733b73b56ade3df",
+        "source": "https://www.nintendo.com/us/store/products/the-last-dragon-slayer-switch/",
+        "checked": "2026-11-02T18:34:18.368863+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:34:10.964849+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:11776": {
@@ -53165,23 +53211,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 85.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 85.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-last-friend-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:34:12.107811+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/the-last-friend-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:34:20.900940+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000039144/aa22ec9456cb2f43fc11bf04fc9a9600bb7867f7fbaaddf94768ee68ce16e0e5",
+        "source": "https://www.nintendo.com/us/store/products/the-last-friend-switch/",
+        "checked": "2026-11-02T18:34:20.901353+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:34:12.107811+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "Switch:11784": {
@@ -65205,45 +65276,118 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.14,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.07,
+              "count": 180,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0281-PPSA21259_00-0494366621029670",
+              "checked": "2026-11-02T18:34:12.100725+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 13.416407864998739,
+              "normalized": 8.14
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:34:10.963160+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0281-PPSA21259_00-0494366621029670",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:34:12.100725+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202407/1813/709414d1c2b659f55a364056c416cdc0e8517fd2c191778e.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0281-PPSA21259_00-0494366621029670",
+        "checked": "2026-11-02T18:34:12.100725+00:00"
+      },
+      "user": {
+        "score": 4.07,
+        "count": 180,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0281-PPSA21259_00-0494366621029670",
+        "checked": "2026-11-02T18:34:12.100725+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP0281-PPSA21259_00-0494366621029670",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0281-PPSA21259_00-0494366621029670",
+        "checked": "2026-11-02T18:34:12.100725+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:34:10.963160+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:15678": {
       "title": "The Karate Kid: Street Rumble",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 79.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 79.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-karate-kid-street-rumble-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:34:10.963677+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/the-karate-kid-street-rumble-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:34:13.970964+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000077734/09e84fc43a9cd821ef39fb96c8591b432348da228f44e4ceaf6d6d626f3b90d9",
+        "source": "https://www.nintendo.com/us/store/products/the-karate-kid-street-rumble-switch/",
+        "checked": "2026-11-02T18:34:13.971364+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:34:10.963677+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "Switch:15710": {
@@ -76583,23 +76727,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 76.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 76.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-jerrymaya-detective-agency-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:34:10.962989+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/the-jerrymaya-detective-agency-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:34:13.081677+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000083507/179c990f1c2bd077abd3cfa849ad04af3e398906a65faa9971e098cfe145f7e2",
+        "source": "https://www.nintendo.com/us/store/products/the-jerrymaya-detective-agency-switch/",
+        "checked": "2026-11-02T18:34:13.081989+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:34:10.962989+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "PS5:16925": {
@@ -80313,22 +80482,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 5.1,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 2.55,
+              "count": 139,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/HP8406-PPSA26287_00-PS501THELASTCAMP",
+              "checked": "2026-11-02T18:34:13.113537+00:00",
+              "platform": "PSN · PS5",
+              "weight": 11.789826122551595,
+              "normalized": 5.1
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:34:10.964532+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/HP8406-PPSA26287_00-PS501THELASTCAMP",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:34:13.113537+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202505/0707/61c6cfb3322019f77fa84b039e91fa8e6715d2fe28bb31ed.png",
+        "source": "https://store.playstation.com/pt-pt/product/HP8406-PPSA26287_00-PS501THELASTCAMP",
+        "checked": "2026-11-02T18:34:13.113537+00:00"
+      },
+      "user": {
+        "score": 2.55,
+        "count": 139,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/HP8406-PPSA26287_00-PS501THELASTCAMP",
+        "checked": "2026-11-02T18:34:13.113537+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "HP8406-PPSA26287_00-PS501THELASTCAMP",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/HP8406-PPSA26287_00-PS501THELASTCAMP",
+        "checked": "2026-11-02T18:34:13.113537+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:34:10.964532+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:17401": {
       "title": "Tiny Lands 2",
@@ -105729,21 +105946,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:34:10.963881+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:34:10.963881+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:5476": {
@@ -137275,21 +137504,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:34:13.123600+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/the-last-kids-on-earth-and-the-staff-of-doom-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:34:22.585824+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000028659/782de38b574b431bca4f2ea76e83e3cbe234c7866aec7329e7cf94afa5e40781",
+        "source": "https://www.nintendo.com/us/store/products/the-last-kids-on-earth-and-the-staff-of-doom-switch/",
+        "checked": "2026-11-02T18:34:22.586248+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:34:13.123600+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:9407": {
