@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:10:29.100776+00:00",
+  "updated": "2026-11-02T18:10:52.367336+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
-    "attempted": 1652,
-    "ready": 1044,
-    "missing_image": 1053,
-    "missing_store": 1127,
-    "missing_rating": 1403,
+    "attempted": 1662,
+    "ready": 1051,
+    "missing_image": 1046,
+    "missing_store": 1120,
+    "missing_rating": 1395,
     "full_attempted": 0
   },
   "games": {
@@ -44636,21 +44636,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:33.181571+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:10:33.181571+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "PS5:13957": {
@@ -44660,46 +44672,128 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.84,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.42,
+              "count": 5362,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP3245-PPSA08500_00-RAINWORLDEUPS500",
+              "checked": "2026-11-02T18:10:36.446913+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 8.84
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:33.183115+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP3245-PPSA08500_00-RAINWORLDEUPS500",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:10:36.446913+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202212/3015/8uhUduWChINJs5O8hEyfUPPL.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP3245-PPSA08500_00-RAINWORLDEUPS500",
+        "checked": "2026-11-02T18:10:36.446913+00:00"
+      },
+      "user": {
+        "score": 4.42,
+        "count": 5362,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP3245-PPSA08500_00-RAINWORLDEUPS500",
+        "checked": "2026-11-02T18:10:36.446913+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": true,
+        "tier": "Extra",
+        "product_id": "EP3245-PPSA08500_00-RAINWORLDEUPS500",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP3245-PPSA08500_00-RAINWORLDEUPS500",
+        "checked": "2026-11-02T18:10:36.446913+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:33.183115+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:13953": {
       "title": "Rain World",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/rain-world",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 14,
+              "url": "https://www.nintendolife.com/games/switch-eshop/rain_world",
+              "platform": "Nintendo Switch",
+              "weight": 3.7416573867739413,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:33.183417+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/rain-world-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:10:38.652866+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000013493/71f75ef1b21a61090bac1dfe1ea744bf205066fcc2652854b122c6173fae4158",
+        "source": "https://www.nintendo.com/us/store/products/rain-world-switch/",
+        "checked": "2026-11-02T18:10:38.653310+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:33.183417+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:13960": {
       "title": "Rain World: Downpour",
@@ -44708,21 +44802,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:33.183601+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:10:33.183601+00:00",
+      "version": 3,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified: Not the full game",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "Switch:13958": {
@@ -44732,21 +44834,41 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 10.0,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 10,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/rain-world-downpour/user-reviews/?platform=nintendo-switch",
+              "platform": "Switch",
+              "weight": 2.0,
+              "normalized": 10.0
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:34.319062+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "basics_attempted": "2026-11-02T18:10:34.319062+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:13543": {
@@ -53574,22 +53696,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.52,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.76,
+              "count": 51,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA19257_00-0257797966290427",
+              "checked": "2026-11-02T18:10:34.304610+00:00",
+              "platform": "PSN · PS5",
+              "weight": 7.14142842854285,
+              "normalized": 7.52
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:33.181967+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA19257_00-0257797966290427",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:10:34.304610+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202311/0514/45f98b52ee42853f022d644a880cfad28f169249b22e70ff.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP6087-PPSA19257_00-0257797966290427",
+        "checked": "2026-11-02T18:10:34.304610+00:00"
+      },
+      "user": {
+        "score": 3.76,
+        "count": 51,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP6087-PPSA19257_00-0257797966290427",
+        "checked": "2026-11-02T18:10:34.304610+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP6087-PPSA19257_00-0257797966290427",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP6087-PPSA19257_00-0257797966290427",
+        "checked": "2026-11-02T18:10:34.304610+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:33.181967+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:15095": {
       "title": "Ready, Steady, Ship!",
@@ -56964,23 +57134,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "TouchArcade",
+              "score": 70,
+              "url": "https://toucharcade.com/2024/06/17/railbreak-switch-review-eshop-falcom-sorcerian-nintendo/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:33.182491+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/railbreak-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:10:37.477390+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000081055/7a150a4a425fc046fff4832d42358deda497a613918267295a8784080f2f5b6b",
+        "source": "https://www.nintendo.com/us/store/products/railbreak-switch/",
+        "checked": "2026-11-02T18:10:37.477617+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:33.182491+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:15196": {
@@ -56990,22 +57185,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.26,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.13,
+              "count": 47,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP8204-PPSA18901_00-RAINBOWCTTNPS5EU",
+              "checked": "2026-11-02T18:10:38.914639+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 6.855654600401044,
+              "normalized": 8.26
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:35.326830+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP8204-PPSA18901_00-RAINBOWCTTNPS5EU",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:10:38.914639+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202402/2213/ea7f77186deabb1e9adafe5755f3f2d4b18beef42cbd9d00.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP8204-PPSA18901_00-RAINBOWCTTNPS5EU",
+        "checked": "2026-11-02T18:10:38.914639+00:00"
+      },
+      "user": {
+        "score": 4.13,
+        "count": 47,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP8204-PPSA18901_00-RAINBOWCTTNPS5EU",
+        "checked": "2026-11-02T18:10:38.914639+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP8204-PPSA18901_00-RAINBOWCTTNPS5EU",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP8204-PPSA18901_00-RAINBOWCTTNPS5EU",
+        "checked": "2026-11-02T18:10:38.914639+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:35.326830+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:15195": {
       "title": "Rainbow Cotton",
@@ -87168,22 +87411,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.12,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.56,
+              "count": 16,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP6088-PPSA38778_00-0484243524436415",
+              "checked": "2026-11-02T18:10:35.312546+00:00",
+              "platform": "PSN · PS5",
+              "weight": 4.0,
+              "normalized": 9.12
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:33.182741+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP6088-PPSA38778_00-0484243524436415",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:10:35.312546+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202606/2418/76201c1339baa9e250ddddcd3202c4c3b3d2c9115cfd353b.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP6088-PPSA38778_00-0484243524436415",
+        "checked": "2026-11-02T18:10:35.312546+00:00"
+      },
+      "user": {
+        "score": 4.56,
+        "count": 16,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP6088-PPSA38778_00-0484243524436415",
+        "checked": "2026-11-02T18:10:35.312546+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP6088-PPSA38778_00-0484243524436415",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP6088-PPSA38778_00-0484243524436415",
+        "checked": "2026-11-02T18:10:35.312546+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:33.182741+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:19037": {
       "title": "SHOCKWAVE TRIGGERS",
@@ -107898,24 +108189,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/raiden_v_directors_cut",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 6.9,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.9,
+              "scale": 10.0,
+              "count": 13,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/raiden_v_directors_cut",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 6.9
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:10:33.181383+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/raiden-v-directors-cut-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:10:35.112278+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000018129/d510b5d754530ba8692743eb8781ca5e30eda9cfdb647e8ba4390532de8a5329",
+        "source": "https://www.nintendo.com/us/store/products/raiden-v-directors-cut-switch/",
+        "checked": "2026-11-02T18:10:35.112719+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:10:33.181383+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:7648": {
       "title": "Redeemer: Enhanced Edition",
