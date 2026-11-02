@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T19:47:48.153909+00:00",
+  "updated": "2026-11-02T19:48:50.988972+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 253,
     "missing_store": 358,
     "missing_rating": 689,
-    "full_attempted": 120
+    "full_attempted": 130
   },
   "games": {
     "PS5:13238": {
@@ -2965,7 +2965,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:52:59.626467+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:48:03.186582+00:00"
       },
       "requirements": {
         "image": false,
@@ -2976,8 +2983,10 @@
       "version": 3,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 403: Forbidden"
-      }
+        "community": "HTTP Error 403: Forbidden",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:48:03.972636+00:00"
     },
     "PS5:10798": {
       "title": "Asteroids: Recharged",
@@ -3004,15 +3013,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.36,
-              "count": 158,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.36,
               "scale": 5,
-              "source": "PSN",
+              "count": 158,
               "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA05552_00-1522586772341407",
-              "checked": "2026-11-02T16:58:40.397791+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 12.569805089976535,
               "normalized": 8.72
             }
@@ -3020,7 +3026,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T16:58:38.595988+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:48:05.044296+00:00"
       },
       "requirements": {
         "image": true,
@@ -3058,14 +3071,17 @@
       },
       "basics_attempted": "2026-11-02T16:58:38.595988+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:48:05.871334+00:00"
     },
     "Switch:10795": {
       "title": "Asteroids: Recharged",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 71.0,
+          "score": 71.7,
           "scale": 100,
           "sources": [
             {
@@ -3093,6 +3109,13 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=asteroids-recharged-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "Pure Nintendo",
               "score": 60,
               "url": "https://purenintendo.com/review-asteroids-recharged-nintendo-switch/",
@@ -3110,7 +3133,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 5
+          "source_count": 6
         },
         "user": {
           "score": 5.9,
@@ -3130,7 +3153,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T16:58:40.410677+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:48:06.360150+00:00"
       },
       "requirements": {
         "image": true,
@@ -3149,33 +3180,90 @@
       },
       "basics_attempted": "2026-11-02T16:58:40.410677+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:48:07.821175+00:00"
     },
     "PS5:14706": {
       "title": "Astral Ascent",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 82.9,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Gamereactor UK",
+              "score": 90,
+              "url": "https://www.gamereactor.eu/astral-ascent-1330033/",
+              "date": "2023-11-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 80,
+              "url": "https://www.heypoorplayer.com/2023/12/28/astral-ascent-review-ps5/",
+              "date": "2024-01-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 85,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-astral-ascent-ps5-ps4-nintendo-switch-pc-1337422",
+              "date": "2023-11-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 85,
+              "url": "https://psxbrasil.com.br/analise/astral-ascent-review/",
+              "date": "2023-12-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Extreme",
+              "score": 90,
+              "url": "https://psxextreme.com/reviews/astral-ascent-ps5-review/",
+              "date": "2023-11-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "https://www.pushsquare.com/reviews/ps5/astral-ascent",
+              "date": "2023-11-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/console-games-grab-bag-explore-destroy-and-toast#astral-ascent",
+              "date": "2023-12-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 7
         },
         "user": {
           "score": 9.62,
           "scale": 10,
           "sources": [
             {
-              "score": 4.81,
-              "count": 757,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.81,
               "scale": 5,
-              "source": "PSN",
+              "count": 757,
               "url": "https://store.playstation.com/pt-pt/product/EP6245-PPSA03609_00-0167758544406367",
-              "checked": "2026-11-02T16:58:43.316241+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 27.51363298439521,
               "normalized": 9.62
             }
@@ -3183,7 +3271,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T16:58:42.049273+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:48:06.179209+00:00"
       },
       "requirements": {
         "image": true,
@@ -3221,46 +3316,74 @@
       },
       "basics_attempted": "2026-11-02T16:58:42.049273+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:48:07.438557+00:00"
     },
     "Switch:14638": {
       "title": "Astral Ascent",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 85.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/astral-ascent",
+              "name": "Impulsegamer",
+              "score": 86,
+              "url": "https://www.impulsegamer.com/astral-ascent-review-switch/",
+              "date": "2023-11-27",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/astral-ascent",
+              "date": "2023-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 80,
+              "url": "https://www.starbit.pt/2024/06/07/astral-ascent-analise/",
+              "date": "2024-06-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": 7.9,
+          "score": 9.3,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.9,
-              "scale": 10.0,
-              "count": 39,
-              "url": "https://www.nintendolife.com/games/switch-eshop/astral_ascent",
+              "name": "Metacritic users",
+              "score": 9.3,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/astral-ascent/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 6.244997998398398,
-              "normalized": 7.9
+              "weight": 2.0,
+              "normalized": 9.3
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T16:58:42.669806+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:48:09.013831+00:00"
       },
       "requirements": {
         "image": true,
@@ -3279,7 +3402,11 @@
       },
       "basics_attempted": "2026-11-02T16:58:42.669806+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:48:09.388607+00:00"
     },
     "Switch:14717": {
       "title": "Astro Miner",
@@ -59419,11 +59546,35 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 76.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 78.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=astro-duel-2-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-astro-duel-2-nintendo-switch/",
+              "date": "2024-04-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/console-games-grab-bag-craft-resist-and-go-berserk#astro-duel-2",
+              "date": "2024-03-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 4.0,
@@ -59435,7 +59586,7 @@
               "scale": 10,
               "count": 7,
               "url": "https://www.metacritic.com/game/astro-duel-2/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
               "normalized": 4.0
             }
@@ -59443,7 +59594,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:00:33.895836+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:48:12.758489+00:00"
       },
       "requirements": {
         "image": true,
@@ -59462,7 +59621,10 @@
       },
       "basics_attempted": "2026-11-02T17:00:33.895836+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:48:13.114460+00:00"
     },
     "PS5:15016": {
       "title": "BROK the InvestiGator",
@@ -112945,11 +113107,44 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 52.5,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "FNintendo",
+              "score": 50,
+              "url": "https://fnintendo.net/article/13575-asterix-obelix-xxl-3-the-crystal-menhir",
+              "date": "2020-03-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 55,
+              "url": "http://www.jeuxvideo.com/test/1149484/asterix-obelix-xxl-3-le-menhir-de-cristal-charmant-mais-laborieux.htm",
+              "date": "2019-11-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 50,
+              "url": "https://as.com/meristation/2019/12/04/analisis/1575495674_162803.html",
+              "date": "2020-01-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 55,
+              "url": "https://www.nintenderos.com/2020/06/analisis-asterix-y-obelix-xxl3-the-crystal-menhir-para-nintendo-switch/",
+              "date": "2020-06-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 4
         },
         "user": {
           "score": 7.1,
@@ -112961,7 +113156,7 @@
               "scale": 10,
               "count": 10,
               "url": "https://www.metacritic.com/game/asterix-and-obelix-xxl-3-the-crystal-menhir/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 3.1622776601683795,
               "normalized": 7.1
             }
@@ -112969,7 +113164,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:19:14.224762+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:48:04.162299+00:00"
       },
       "requirements": {
         "image": false,
@@ -112981,8 +113184,10 @@
       "errors": {
         "store": "Official Nintendo lookup: Exact Nintendo Switch store identity not verified",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:48:04.586591+00:00"
     },
     "Switch:5472": {
       "title": "At Sundown: Shots in the Dark",
@@ -117359,31 +117564,80 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 66.4,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "COGconnected",
+              "score": 70,
+              "url": "https://cogconnected.com/review/astro-bears-review/",
+              "date": "2019-07-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 52,
+              "url": "https://www.nintenderos.com/2020/01/analisis-astro-bears-para-nintendo-switch/",
+              "date": "2020-01-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 70,
+              "url": "https://www.nintendoenthusiast.com/2019/08/13/astro-bears-review/",
+              "date": "2019-08-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-astro-bears-nintendo-switch/",
+              "date": "2019-08-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/cheap-switch-exclusive-indie-games-part-2#astro-bears",
+              "date": "2019-07-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 5
         },
         "user": {
-          "score": 6.6,
+          "score": 6.8,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 6.6,
-              "scale": 10.0,
-              "count": 9,
-              "url": "https://www.nintendolife.com/games/switch-eshop/astro_bears",
+              "name": "Metacritic users",
+              "score": 6.8,
+              "scale": 10,
+              "count": 21,
+              "url": "https://www.metacritic.com/game/astro-bears/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 3.0,
-              "normalized": 6.6
+              "weight": 4.58257569495584,
+              "normalized": 6.799999999999999
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:26:37.047559+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:48:17.238350+00:00"
       },
       "requirements": {
         "image": true,
@@ -117402,7 +117656,11 @@
       },
       "basics_attempted": "2026-11-02T17:26:37.047559+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:48:18.144172+00:00"
     },
     "Switch:5890": {
       "title": "Battle Planet - Judgment Day",
@@ -121326,39 +121584,776 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 87.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/astral_chain",
+              "name": "3DJuegos",
+              "score": 95,
+              "url": "https://www.3djuegos.com/juegos/analisis/34031/0/astral-chain/",
+              "date": "2019-08-26",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "4P.de",
+              "score": 85,
+              "url": "https://www.4players.de/4players.php/dispbericht/Switch/Test/40432/83945/0/Astral_Chain.html",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 95,
+              "url": "https://areajugones.sport.es/videojuegos/analisis-astral-chain-excelencia-encadenada/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 96,
+              "url": "https://atomix.vg/review-astral-chain/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 90,
+              "url": "https://attackofthefanboy.com/reviews/astral-chain-review/",
+              "date": "2019-09-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "BaziCenter",
+              "score": 95,
+              "url": "https://www.bazicenter.com/review/astral-chain/ ",
+              "date": "2019-09-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 95,
+              "url": "https://www.cgmagonline.com/reviews/astral-chain-switch-review/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 91,
+              "url": "https://cogconnected.com/review/astral-chain-review/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 80,
+              "url": "https://www.criticalhit.net/review/astral-chain-review-complex-combo-chaining/",
+              "date": "2019-08-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 100,
+              "url": "http://www.cubed3.com/review/5584/1/astral-chain-nintendo-switch.html",
+              "date": "2019-09-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 90,
+              "url": "https://www.darkstation.com/reviews/astral-chain-review",
+              "date": "2019-09-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 90,
+              "url": "https://www.destructoid.com/review-astral-chain-563615.phtml",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 85,
+              "url": "http://digitalchumps.com/astral-chain/",
+              "date": "2019-09-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 80,
+              "url": "http://www.digitallydownloaded.net/2019/08/review-astral-chain-nintendo-switch.html",
+              "date": "2019-08-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 100,
+              "url": "https://www.dualshockers.com/astral-chain-review/",
+              "date": "2019-09-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "EGM",
+              "score": 80,
+              "url": "https://egmnow.com/astral-chain-review/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Easy Allies",
+              "score": 80,
+              "url": "https://easyallies.com/#!/review/astral-chain",
+              "date": "2019-09-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 90,
+              "url": "",
+              "date": "2019-09-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 80,
+              "url": "https://www.eurogamer.it/articles/2019-08-26-astral-chain-recensione",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 90,
+              "url": "https://www.everyeye.it/articoli/recensione-astral-chain-vertice-action-secondo-platinum-games-45089.html?cactus=thejackal",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 90,
+              "url": "https://fnintendo.net/article/12828-astral-chain",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 90,
+              "url": "https://www.gameinformer.com/review/astral-chain/astral-chain-review-an-explosive-battlefield-duet",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Revolution",
+              "score": 90,
+              "url": "https://www.gamerevolution.com/review/596981-astral-chain-review",
+              "date": "2019-09-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game World Navigator Magazine",
+              "score": 87,
+              "url": "",
+              "date": "2019-10-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 80,
+              "url": "https://www.gamegrin.com/reviews/astral-chain-review/",
+              "date": "2019-09-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 85,
+              "url": "https://www.gameover.gr/reviews/39794-astral-chain-review",
+              "date": "2019-08-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/astral-chain-review-certified-platinum/1900-6417280/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 80,
+              "url": "http://www.gameblog.fr/tests/3456-astral-chain-switch",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameplanet",
+              "score": 90,
+              "url": "https://www.gameplanet.com.au/nintendo-switch/reviews/g5d6707508f8c2/Astral-Chain-Review/",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 85,
+              "url": "https://gamer.nl/artikelen/review/astral-chain-kent-nauwelijks-zwakke-schakels/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.no",
+              "score": 80,
+              "url": "https://www.gamer.no/artikler/anmeldelse-astral-chain/473710",
+              "date": "2019-09-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamers Heroes",
+              "score": 90,
+              "url": "http://www.gamersheroes.com/honest-game-reviews/astral-chain-review/",
+              "date": "2019-09-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamersky",
+              "score": 88,
+              "url": "https://www.gamersky.com/review/201909/1220655.shtml",
+              "date": "2019-09-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 100,
+              "url": "https://games.tiscali.cz/recenze/astral-chain-recenze-333498",
+              "date": "2019-09-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 83,
+              "url": "http://www.gaming-age.com/2019/09/astral-chain-review-for-nintendo-switch/",
+              "date": "2019-09-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 95,
+              "url": "https://gamingtrend.com/feature/reviews/platinum-hits-astral-chain-review/",
+              "date": "2019-09-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "http://www.godisageek.com/reviews/astral-chain-review/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 90,
+              "url": "https://www.hardcoregamer.com/2019/09/04/review-astral-chain/356345/",
+              "date": "2019-09-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 93,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-astral-chain-platinumgames-nintendo-switch-473051",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 90,
+              "url": "https://www.ign.com/articles/2019/08/26/astral-chain-review",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 91,
+              "url": "https://it.ign.com/astral-chain-nintendo-switch/159112/review/astral-chain-la-recensione ",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 87,
+              "url": "https://es.ign.com/astral-chain-nintendo-switch/154654/review/analisis-de-astral-chain-para-nintendo-switch ",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 90,
+              "url": "http://www.impulsegamer.com/astral-chain-nintendo-switch-review/",
+              "date": "2019-09-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "InsideGamer.nl",
+              "score": 83,
+              "url": "https://www.insidegamer.nl/artikel/astral-chain-review-houdt-je-vastgeketend-aan-de-switch/",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 75,
+              "url": " https://www.jeuxactu.com/test-astral-chain-le-nouveau-platinumgames-est-il-vraiment-a-la-hauteu-119373.htm",
+              "date": "2019-08-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 80,
+              "url": "http://www.jeuxvideo.com/test/1094969/astral-chain-un-nouvel-immanquable-signe-platinumgames.htm",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LEVEL (Czech Republic)",
+              "score": 100,
+              "url": "",
+              "date": "2020-02-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 88,
+              "url": "https://www.levelup.com/Nintendo-Switch/juegos/514269/Astral-Chain/review",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "M3",
+              "score": 70,
+              "url": "https://m3.idg.se/2.1022/1.723544/astral-chain",
+              "date": "2019-09-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG",
+              "score": 65,
+              "url": "https://www.millenium.org/test/342426.html",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 90,
+              "url": "https://as.com/meristation/2019/08/25/analisis/1566727699_528038.html",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 90,
+              "url": "https://metro.co.uk/2019/08/26/astral-chain-review-platinumgames-unleashed-10632107/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 92,
+              "url": "https://multiplayer.it/recensioni/astral-chain-recensione.html",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "My Nintendo News",
+              "score": 90,
+              "url": "https://mynintendonews.com/2019/08/26/review-astral-chain-for-nintendo-switch/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New Game Network",
+              "score": 80,
+              "url": "https://www.newgamenetwork.com/article/2201/astral-chain-review/",
+              "date": "2019-09-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New York Daily News",
+              "score": 100,
+              "url": "https://www.nydailynews.com/entertainment/tv/ny-astral-chain-video-game-review-20190827-pw3euaelprbc7iiobybqsj64k4-story.html",
+              "date": "2019-08-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 85,
+              "url": "https://www.nintenderos.com/2019/08/analisis-astral-chain/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 95,
+              "url": "https://www.nintendoenthusiast.com/2019/08/26/astral-chain-review-another-big-win-for-nintendo-and-platinum-games/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 85,
+              "url": "",
+              "date": "2020-04-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 100,
+              "url": "https://www.nintendo-insider.com/astral-chain-review/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/astral_chain ",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/51508/astral-chain-switch-review",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 90,
+              "url": "http://play.co.rs/2019/09/review-astral-chain/ ",
+              "date": "2019-10-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Power Unlimited",
+              "score": 94,
+              "url": "https://pu.nl/artikelen/review/astral-chain-review-bayonetta-gemixt-met-professor-layton/",
+              "date": "2019-09-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 80,
+              "url": "http://press-start.com.au/reviews/nintendo-switch/2019/08/24/astral-chain-review-strong-links-with-some-kinks",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 90,
+              "url": "https://purenintendo.com/review-astral-chain-nintendo-switch/",
+              "date": "2019-09-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Site",
+              "score": 70,
+              "url": "https://www.rpgsite.net/review/8909-astral-chain-review",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPGamer",
+              "score": 80,
+              "url": "https://rpgamer.com/review/astral-chain-review/",
+              "date": "2019-09-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 90,
+              "url": "https://screenrant.com/astral-chains-review/ ‎",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 80,
+              "url": "https://www.shacknews.com/article/113614/astral-chain-review-an-unbreakable-bond ",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Slant Magazine",
+              "score": 80,
+              "url": "https://www.slantmagazine.com/games/review-astral-chain-vibrantly-super-charges-the-same-old-same-old/",
+              "date": "2019-09-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 83,
+              "url": "https://www.spaziogames.it/astral-chain-non-e-il-classico-titolo-che-vi-aspettereste-da-platinum-games/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 85,
+              "url": "https://stevivor.com/reviews/astral-chain-review-big-sparkle-destiny-tiny-officers-salary/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 100,
+              "url": "http://switchplayer.net/2019/08/26/astral-chain-review/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 85,
+              "url": "https://www.thegamesmachine.it/astral-chain-switch/astral-chain-recensione/ ",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 80,
+              "url": "https://www.thesixthaxis.com/2019/08/26/astral-chain-review/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TrueGaming",
+              "score": 85,
+              "url": "https://www.true-gaming.net/home/405628/",
+              "date": "2019-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 80,
+              "url": "https://www.trustedreviews.com/reviews/astral-chain",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 90,
+              "url": "https://twinfinite.net/2019/08/astral-chain-review---anime-crimes-division",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "USgamer",
+              "score": 80,
+              "url": "https://www.usgamer.net/articles/astral-chain-review",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VG247",
+              "score": 80,
+              "url": "https://www.vg247.com/2019/08/28/astral-chain-review/",
+              "date": "2019-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VGC",
+              "score": 100,
+              "url": "https://www.videogameschronicle.com/reviews/astral-chain/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 90,
+              "url": "https://vandal.elespanol.com/analisis/switch/astral-chain/70570/#p-83",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vgames",
+              "score": 90,
+              "url": "https://www.vgames.co.il/article/26471.html",
+              "date": "2019-09-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 86,
+              "url": "https://videochums.com/review/astral-chain",
+              "date": "2019-08-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 90,
+              "url": "https://www.vooks.net/astral-chain-review/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Washington Post",
+              "score": 80,
+              "url": "https://www.washingtonpost.com/arts-entertainment/2019/09/12/astral-chain-wacky-complicated-ultimately-enjoyable/",
+              "date": "2019-09-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 93,
+              "url": "https://wccftech.com/review/astral-chain-twins-of-destiny/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 90,
+              "url": "https://wegotthiscovered.com/gaming/astral-chain-review/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 80,
+              "url": "https://worthplaying.com/article/2019/9/9/reviews/116087/",
+              "date": "2019-09-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 85,
+              "url": "https://www.xgn.nl/review/astral-chain-review ",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 85,
+              "url": "http://www.ztgd.com/reviews/astral-chain-switch/",
+              "date": "2019-11-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 92
         },
         "user": {
-          "score": 8.6,
+          "score": 9.0,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 8.6,
-              "scale": 10.0,
-              "count": 719,
-              "url": "https://www.nintendolife.com/games/nintendo-switch/astral_chain",
+              "name": "Metacritic users",
+              "score": 9,
+              "scale": 10,
+              "count": 3665,
+              "url": "https://www.metacritic.com/game/astral-chain/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 26.814175355583846,
-              "normalized": 8.6
+              "weight": 31.622776601683793,
+              "normalized": 9.0
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:28:41.082776+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 98,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:48:48.211855+00:00"
       },
       "requirements": {
         "image": true,
@@ -121377,7 +122372,11 @@
       },
       "basics_attempted": "2026-11-02T17:28:41.082776+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:48:50.874876+00:00"
     },
     "Switch:6142": {
       "title": "B.Ark",
@@ -147875,31 +148874,79 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 72.4,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Everyeye.it",
+              "score": 65,
+              "url": "https://www.everyeye.it/articoli/recensione-asterix-obelix-slap-them-botte-orbi-galli-55534.html",
+              "date": "2021-12-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 86,
+              "url": "https://www.impulsegamer.com/asterix-and-obelix-slap-them-all-review/",
+              "date": "2022-01-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 50,
+              "url": "https://multiplayer.it/recensioni/asterix-obelix-slap-them-all-recensione.html",
+              "date": "2021-12-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 81.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=asterix-and-obelix-slap-them-all-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2021/12/analisis-asterix-obelix-slap-them-all-para-nintendo-switch/",
+              "date": "2021-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 5
         },
         "user": {
-          "score": 7.4,
+          "score": 6.4,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.4,
-              "scale": 10.0,
-              "count": 8,
-              "url": "https://www.nintendolife.com/games/switch-eshop/asterix_and_obelix_slap_them_all",
+              "name": "Metacritic users",
+              "score": 6.4,
+              "scale": 10,
+              "count": 11,
+              "url": "https://www.metacritic.com/game/asterix-and-obelix-slap-them-all/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 2.8284271247461903,
-              "normalized": 7.4
+              "weight": 3.3166247903554,
+              "normalized": 6.4
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:39:54.019778+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:48:01.750420+00:00"
       },
       "requirements": {
         "image": true,
@@ -147918,7 +148965,10 @@
       },
       "basics_attempted": "2026-11-02T17:39:54.019778+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:48:02.347547+00:00"
     },
     "Switch:9096": {
       "title": "Azure Reflections",
