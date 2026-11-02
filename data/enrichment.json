@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T19:51:28.343681+00:00",
+  "updated": "2026-11-02T19:51:55.622228+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 253,
     "missing_store": 358,
     "missing_rating": 689,
-    "full_attempted": 180
+    "full_attempted": 190
   },
   "games": {
     "PS5:13238": {
@@ -5376,7 +5376,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:53:19.299441+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 301: Moved Permanently",
+          "Metacritic users: HTTP Error 301: Moved Permanently",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:41.446485+00:00"
       },
       "requirements": {
         "image": true,
@@ -5396,8 +5406,10 @@
       "basics_attempted": "2026-11-02T18:53:19.299441+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
-      }
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:43.060851+00:00"
     },
     "PS5:12970": {
       "title": "Battle Axe",
@@ -5424,15 +5436,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.26,
-              "count": 58,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.26,
               "scale": 5,
-              "source": "PSN",
+              "count": 58,
               "url": "https://store.playstation.com/pt-pt/product/EP5938-PPSA09437_00-033BATTLEAXEEUR5",
-              "checked": "2026-11-02T16:59:34.561023+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 7.615773105863909,
               "normalized": 8.52
             }
@@ -5440,7 +5449,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T16:59:33.162441+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:43.502141+00:00"
       },
       "requirements": {
         "image": true,
@@ -5478,33 +5494,42 @@
       },
       "basics_attempted": "2026-11-02T16:59:33.162441+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:43.898363+00:00"
     },
     "PS5:14406": {
       "title": "Battle Stations Blockade",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 50.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "PlayStation Country",
+              "score": 50,
+              "url": "https://www.playstationcountry.com/battle-stations-blockade-ps5-review/",
+              "date": "2023-12-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 6.26,
           "scale": 10,
           "sources": [
             {
-              "score": 3.13,
-              "count": 15,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.13,
               "scale": 5,
-              "source": "PSN",
+              "count": 15,
               "url": "https://store.playstation.com/pt-pt/product/EP2005-PPSA16227_00-BATTLESTATIONS00",
-              "checked": "2026-11-02T16:59:35.657811+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 3.872983346207417,
               "normalized": 6.26
             }
@@ -5512,7 +5537,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T16:59:34.569348+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:45.707613+00:00"
       },
       "requirements": {
         "image": true,
@@ -5550,7 +5582,10 @@
       },
       "basics_attempted": "2026-11-02T16:59:34.569348+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:46.239537+00:00"
     },
     "Switch:14404": {
       "title": "Battle Stations Blockade",
@@ -5578,7 +5613,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:53:19.299651+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:51.249017+00:00"
       },
       "requirements": {
         "image": true,
@@ -5598,8 +5641,10 @@
       "basics_attempted": "2026-11-02T18:53:19.299651+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
-      }
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:52.538889+00:00"
     },
     "Switch:13877": {
       "title": "Beat 'Em Up Archives (QUByte Classics)",
@@ -76600,6 +76645,7 @@
               "name": "GameBlast",
               "score": 85,
               "url": "https://www.gameblast.com.br/2025/01/analise-basureroes-invasion-review.html",
+              "date": "2025-04-08",
               "platform": "PlayStation 5",
               "via": "Metacritic review index"
             },
@@ -76607,6 +76653,7 @@
               "name": "PSX Brasil",
               "score": 80,
               "url": "https://psxbrasil.com.br/analise/basureroes-invasion-review/",
+              "date": "2025-01-30",
               "platform": "PlayStation 5",
               "via": "Metacritic review index"
             }
@@ -76621,7 +76668,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:12:02.952795+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:41.362132+00:00"
       },
       "requirements": {
         "image": false,
@@ -76632,8 +76686,10 @@
       "version": 3,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 404: Not Found"
-      }
+        "community": "HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:42.017609+00:00"
     },
     "Switch:16328": {
       "title": "Basureroes: Invasion",
@@ -76661,7 +76717,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:12:15.524713+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:43.599634+00:00"
       },
       "requirements": {
         "image": true,
@@ -76676,8 +76740,10 @@
       "basics_attempted": "2026-11-02T19:12:15.524713+00:00",
       "version": 3,
       "errors": {
-        "store": "Official Nintendo lookup: HTTP Error 404: Not Found"
-      }
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:45.141926+00:00"
     },
     "PS5:16592": {
       "title": "Bee Simulator: The Hive",
@@ -81034,15 +81100,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.95,
-              "count": 219,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.95,
               "scale": 5,
-              "source": "PSN",
+              "count": 219,
               "url": "https://store.playstation.com/pt-pt/product/UP6261-PPSA27019_00-0679710665118767",
-              "checked": "2026-11-02T17:09:36.187446+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 14.798648586948742,
               "normalized": 7.9
             }
@@ -81050,7 +81113,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:09:33.256495+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:53.575819+00:00"
       },
       "requirements": {
         "image": true,
@@ -81088,7 +81158,10 @@
       },
       "basics_attempted": "2026-11-02T17:09:33.256495+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:53.994392+00:00"
     },
     "PS5:16709": {
       "title": "Blazing Trail",
@@ -89435,7 +89508,16 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:15:33.191820+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:51.208016+00:00"
       },
       "requirements": {
         "image": false,
@@ -89448,8 +89530,10 @@
         "store": "No exact Portugal PS5 product verified",
         "community": "HTTP Error 404: Not Found",
         "metacritic_users": "HTTP Error 404: Not Found",
-        "metacritic_reviews": "HTTP Error 404: Not Found"
-      }
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:51.636606+00:00"
     },
     "Switch:17685": {
       "title": "BattleTanks - Animal Wars",
@@ -118210,7 +118294,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:19:50.733289+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:46.496810+00:00"
       },
       "requirements": {
         "image": false,
@@ -118225,8 +118319,10 @@
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
-      }
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:47.359475+00:00"
     },
     "Switch:6024": {
       "title": "Biped",
@@ -150199,7 +150295,16 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:40:00.745558+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: The read operation timed out",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:51:54.938114+00:00"
       },
       "requirements": {
         "image": true,
@@ -150218,7 +150323,11 @@
       },
       "basics_attempted": "2026-11-02T17:40:00.745558+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:51:55.414940+00:00"
     },
     "Switch:9565": {
       "title": "Blink: Rogues",
