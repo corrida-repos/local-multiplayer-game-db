@@ -24,6 +24,20 @@ def fetch(url):
 def clean(s):
     return html.unescape(re.sub('<[^>]+>', ' ', s)).strip()
 
+def description_section(page, section_id, max_length=900):
+    match=re.search(r'<div[^>]+id=["\']'+re.escape(section_id)+r'["\'][^>]*>(.*?)</div>',page,re.S|re.I)
+    if not match:return None
+    body=re.sub(r'<h[1-6][^>]*>.*?</h[1-6]>|<script[^>]*>.*?</script>','',match[1],flags=re.S|re.I)
+    text=' '.join(clean(body).split())
+    if not text:return None
+    return text if len(text)<=max_length else text[:max_length].rsplit(' ',1)[0]+'…'
+
+def ensure_detail_columns(db):
+    columns={row[1] for row in db.execute('PRAGMA table_info(games)')}
+    for column in ('synopsis','coop_description'):
+        if column not in columns:db.execute('ALTER TABLE games ADD COLUMN '+column+' TEXT')
+    db.commit()
+
 def parse_game(page, url, today=None):
     platform = 'PS5' if '/playstation-5/' in url else 'Switch' if '/nintendo-switch/' in url else None
     if not platform: raise ValueError('Unsupported platform')
@@ -40,7 +54,7 @@ def parse_game(page, url, today=None):
     genre = re.search(r'<strong>Genre:</strong>(.*?)</li>', page, re.S)
     return {'id': re.search(r'/game/(\d+)/',url)[1], 'title': clean(title[1]), 'platform': platform,
             'players': int(count[1]), 'mode': 'Cooperação', 'genre': clean(genre[1]) if genre else 'Outros',
-            'release': date.isoformat(), 'url': url, 'source': 'Co-Optimus', 'checked': dt.datetime.now(dt.timezone.utc).isoformat()}
+            'release': date.isoformat(), 'url': url, 'source': 'Co-Optimus', 'synopsis': description_section(page,'description'), 'coop_description': description_section(page,'coop-exp',600), 'checked': dt.datetime.now(dt.timezone.utc).isoformat()}
 
 def main():
     global robots
@@ -49,6 +63,7 @@ def main():
     db=sqlite3.connect(ROOT/'data/games.sqlite'); db.row_factory=sqlite3.Row
     db.executescript('''CREATE TABLE IF NOT EXISTS pages(url TEXT PRIMARY KEY, checked TEXT, error TEXT);
     CREATE TABLE IF NOT EXISTS games(id TEXT PRIMARY KEY,title TEXT,platform TEXT,players INTEGER CHECK(players>=2),mode TEXT,genre TEXT,release TEXT,url TEXT,source TEXT,checked TEXT);''')
+    ensure_detail_columns(db)
     rules=fetch(BASE+'/robots.txt'); robots=urllib.robotparser.RobotFileParser(); robots.parse(rules.splitlines())
     maps=re.findall(r'<loc>(.*?)</loc>',fetch(BASE+'/sitemaps/siteMapGames_index.xml'))
     urls=[]

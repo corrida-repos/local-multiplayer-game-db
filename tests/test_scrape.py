@@ -1,5 +1,6 @@
 import datetime, unittest
-from scripts.scrape import parse_game
+from scripts.scrape import parse_game, description_section, ensure_detail_columns
+import sqlite3
 URL='https://www.co-optimus.com/game/123/playstation-5/test.html'
 def page(local='2 Players', date='01/01/2024'):
     return f'<h1>Game &amp; Duo</h1><dt>Local Co-Op</dt><dd><em>{local}</em></dd><span class="released">{date}</span><strong>Genre:</strong> Puzzle</li>'
@@ -13,3 +14,15 @@ class Eligibility(unittest.TestCase):
         with self.assertRaises(ValueError): parse_game(page(),URL.replace('playstation-5','nintendo-switch2'))
     def test_changed_html(self):
         with self.assertRaises(ValueError): parse_game('<h1>Oops</h1>',URL)
+
+class Details(unittest.TestCase):
+    def test_extracts_plain_synopsis_without_heading(self):
+        source='<div id="description"><h3>Description</h3><p>A &amp; B play <strong>together</strong>.</p></div>'
+        self.assertEqual(description_section(source,'description'),'A & B play together .')
+    def test_missing_synopsis(self):
+        self.assertIsNone(description_section('<div id="other">Text</div>','description'))
+    def test_detail_columns_preserve_existing_games(self):
+        db=sqlite3.connect(':memory:');db.execute('CREATE TABLE games(id TEXT PRIMARY KEY,title TEXT)');db.execute("INSERT INTO games VALUES('1','Existing game')")
+        ensure_detail_columns(db);ensure_detail_columns(db)
+        self.assertEqual(db.execute('SELECT title,synopsis,coop_description FROM games').fetchone(),('Existing game',None,None))
+        db.close()
