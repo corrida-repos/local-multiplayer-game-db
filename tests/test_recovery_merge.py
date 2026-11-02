@@ -18,3 +18,8 @@ class RecoveryMerge(unittest.TestCase):
         current=self.base();current['ratings']['attempted']='2026-11-02T20:00:00Z';current['ratings']['user']=e.composites.user_composite([{'name':'Metacritic users','score':8,'scale':10,'count':1000}])
         incoming={'ratings':{'attempted':'2026-11-02T19:00:00Z','user':e.composites.user_composite([{'name':'Metacritic users','score':5,'scale':10,'count':5}])}}
         result=merge_entry(current,incoming);self.assertEqual(result['ratings']['user']['score'],8);self.assertEqual(result['ratings']['user']['sources'][0]['count'],1000)
+
+    def test_recovery_replaces_broken_source_placeholder_with_real_image(self):
+        current=self.base();current['image']={'url':'https://images.pushsquare.com//1280x720.jpg'}
+        result=merge_entry(current,{'image':{'url':'https://image.api.playstation.com/game.png'}})
+        self.assertEqual(result['image']['url'],'https://image.api.playstation.com/game.png')
