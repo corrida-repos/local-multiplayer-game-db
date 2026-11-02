@@ -28,5 +28,5 @@ jobs:
       - name: Fill minimum data for every game, then finish all remaining stages
         run: python -u -m scripts.enrichment --minutes 50 --workers 4 --checkpoint-push
       - name: Save remaining results
-        if: always()
+        if: always() && !cancelled()
         run: bash scripts/checkpoint-enrichment.sh
