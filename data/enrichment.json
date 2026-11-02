@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:10:33.554786+00:00",
+  "updated": "2026-11-02T17:10:46.444233+00:00",
   "version": 1,
   "coverage": {
     "total": 1229,
-    "attempted": 372,
-    "ready": 246,
-    "missing_image": 849,
-    "missing_store": 862,
-    "missing_rating": 967,
+    "attempted": 382,
+    "ready": 253,
+    "missing_image": 841,
+    "missing_store": 854,
+    "missing_rating": 960,
     "full_attempted": 0
   },
   "games": {
@@ -19873,21 +19873,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:36.558137+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:10:36.558137+00:00",
+      "version": 1,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "Switch:11525": {
@@ -19895,24 +19903,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/funtasia-recensione.html",
+              "date": "2022-10-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:36.558635+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/funtasia-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:38.692462+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000054703/d67781e05830d74db4ab5d8abfa6bca9c026543c31462f819eb0e9feeab62da7",
+        "source": "https://www.nintendo.com/us/store/products/funtasia-switch/",
+        "checked": "2026-11-02T17:10:38.692779+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:36.558635+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:13469": {
       "title": "FurryFury: Smash & Roll",
@@ -19921,21 +19953,30 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:36.558873+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:10:36.558873+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 301: Moved Permanently"
       }
     },
     "Switch:10488": {
@@ -19943,24 +19984,91 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 79.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Hey Poor Player",
+              "score": 80,
+              "url": "https://www.heypoorplayer.com/2021/10/05/g-darius-hd-review-switch/",
+              "date": "2021-10-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-g-darius-hd-nintendo-switch/",
+              "date": "2021-10-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shindig",
+              "score": 80,
+              "url": "https://www.shindig.nz/games/game-review/g-darius-hd-switch/",
+              "date": "2021-10-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Mako Reactor",
+              "score": 85,
+              "url": "https://themakoreactor.com/featured/g-darius-hd-review-nintendo-switch-ps4-steam/30312/",
+              "date": "2021-10-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 80,
+              "url": "https://toucharcade.com/2021/10/04/switcharcade-round-up-reviews-featuring-diablo-ii-resurrected-and-g-darius-hd-plus-new-releases-news-and-sales/",
+              "date": "2021-10-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 5
         },
         "user": {
-          "score": null,
+          "score": 7.8,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.8,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/g-darius-hd/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.0,
+              "normalized": 7.800000000000001
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:38.692914+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/g-darius-hd-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:41.323304+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000034394/729970732604791c41f649e2b1bc4d5bba08ff177b416d3f5ab8c285c7c01a79",
+        "source": "https://www.nintendo.com/us/store/products/g-darius-hd-switch/",
+        "checked": "2026-11-02T17:10:41.323699+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:38.692914+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:14349": {
       "title": "G.I. Joe: Wrath of Cobra",
@@ -19969,21 +20077,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:40.460237+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/g-i-joe-wrath-of-cobra-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:42.465338+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000075207/43992f2d9c4480cc192ae9216992426c3a856c4a3a55806221c6ecd735681e81",
+        "source": "https://www.nintendo.com/us/store/products/g-i-joe-wrath-of-cobra-switch/",
+        "checked": "2026-11-02T17:10:42.465781+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:40.460237+00:00",
+      "version": 1,
+      "errors": {
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:12365": {
@@ -19991,24 +20117,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-grood-nintendo-switch/",
+              "date": "2020-12-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:41.727053+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/grood-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:44.568645+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000031450/63215806965a93dea7af4e458de45cd764811e0ecc810ac664d2fa929d2ae800",
+        "source": "https://www.nintendo.com/us/store/products/grood-switch/",
+        "checked": "2026-11-02T17:10:44.569107+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:41.727053+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:11332": {
       "title": "GUNGUNGUN",
@@ -41823,22 +41973,48 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.9,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.9,
+              "scale": 10.0,
+              "count": 7,
+              "url": "https://www.nintendolife.com/games/switch-eshop/fueled_up",
+              "platform": "Nintendo Switch",
+              "weight": 2.6457513110645907,
+              "normalized": 6.9
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:36.557960+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/fueled-up-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:37.582725+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000077332/c73ae3e42ee715238d1265380c52ff1f8190f650ce3eb9704df31152e081f20c",
+        "source": "https://www.nintendo.com/us/store/products/fueled-up-switch/",
+        "checked": "2026-11-02T17:10:37.583059+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:36.557960+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:15862": {
       "title": "Goat Simulator 3",
@@ -44467,22 +44643,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.88,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.44,
+              "count": 245,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/HP6701-PPSA23704_00-0691986459296638",
+              "checked": "2026-11-02T17:10:40.510373+00:00",
+              "platform": "PSN · PS5",
+              "weight": 15.652475842498529,
+              "normalized": 6.879999999999999
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:39.276073+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/HP6701-PPSA23704_00-0691986459296638",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:10:40.510373+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202410/3016/92b2873ecc2dcd45e75481e379b731a00eba933097b8a8cc.png",
+        "source": "https://store.playstation.com/pt-pt/product/HP6701-PPSA23704_00-0691986459296638",
+        "checked": "2026-11-02T17:10:40.510373+00:00"
+      },
+      "user": {
+        "score": 3.44,
+        "count": 245,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/HP6701-PPSA23704_00-0691986459296638",
+        "checked": "2026-11-02T17:10:40.510373+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "HP6701-PPSA23704_00-0691986459296638",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/HP6701-PPSA23704_00-0691986459296638",
+        "checked": "2026-11-02T17:10:40.510373+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:39.276073+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:15957": {
       "title": "Gal Guardians: Servants of the Dark",
@@ -47146,46 +47370,128 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.34,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.67,
+              "count": 331,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/JP0101-PPSA19724_00-GRADIUSORIGINCOL",
+              "checked": "2026-11-02T17:10:41.717495+00:00",
+              "platform": "PSN · PS5",
+              "weight": 18.193405398660254,
+              "normalized": 9.34
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:40.519596+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/JP0101-PPSA19724_00-GRADIUSORIGINCOL",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:10:41.717495+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1808/4f588810bee68b1bcb2c38a8ddf345544fa93cd989b61164.png",
+        "source": "https://store.playstation.com/pt-pt/product/JP0101-PPSA19724_00-GRADIUSORIGINCOL",
+        "checked": "2026-11-02T17:10:41.717495+00:00"
+      },
+      "user": {
+        "score": 4.67,
+        "count": 331,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/JP0101-PPSA19724_00-GRADIUSORIGINCOL",
+        "checked": "2026-11-02T17:10:41.717495+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "JP0101-PPSA19724_00-GRADIUSORIGINCOL",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/JP0101-PPSA19724_00-GRADIUSORIGINCOL",
+        "checked": "2026-11-02T17:10:41.717495+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:40.519596+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:16650": {
       "title": "GRADIUS ORIGINS",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/gradius-origins",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 26,
+              "url": "https://www.nintendolife.com/games/switch-eshop/gradius_origins",
+              "platform": "Nintendo Switch",
+              "weight": 5.0990195135927845,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:41.323893+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/gradius-origins-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:44.255077+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000074357/3aa056053571cb6c7e2583e62a17551cece821069b4d8e9fe7daa864816021e1",
+        "source": "https://www.nintendo.com/us/store/products/gradius-origins-switch/",
+        "checked": "2026-11-02T17:10:44.255549+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:41.323893+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:16537": {
       "title": "Go Fight Fantastic!",
