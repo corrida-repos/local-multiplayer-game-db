@@ -187,6 +187,36 @@ def nindie(game):
         except Exception as exc:error=exc
     raise ValueError(str(error)[:160])
 
+def minimal_metacritic(game):
+    platform='playstation-5' if game['platform']=='PS5' else 'nintendo-switch';expected='PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch';errors={}
+    names=list(dict.fromkeys([ratings.MC_ALIASES.get(game['title'],ratings.slug(game['title']))]+[ratings.slug(name) for name in known_names(game) if name]))[:4]
+    for name in names:
+        critics=[];users=[]
+        try:
+            url=f'https://backend.metacritic.com/reviews/metacritic/user/games/{name}/platform/{platform}/stats/web';final,page=get(url);u=json.loads(page)['data']['item']
+            canonical=re.search(r'/games/([^/]+)/platform/',final)[1]
+            if u.get('reviewCount',0)>=4 and u.get('score') is not None:users.append({'name':'Metacritic users','score':u['score'],'scale':10,'count':u['reviewCount'],'url':f'https://www.metacritic.com/game/{canonical}/user-reviews/?platform={platform}','platform':expected})
+        except Exception as exc:errors['metacritic_users']=str(exc)[:160]
+        if not users:
+            try:
+                offset=0;total=None;reviews=[]
+                while total is None or offset<total:
+                    url=f'https://backend.metacritic.com/reviews/metacritic/critic/games/{name}/platform/{platform}/web?offset={offset}&limit=10&filterBySentiment=all&sort=score'
+                    _,page=get(url);index=json.loads(page)['data'];items=index['items'];total=int(index['totalResults'])
+                    if not items and offset<total:raise ValueError('Incomplete console-specific critic index')
+                    reviews.extend({'name':r['publicationName'],'score':r['score'],'url':r['url'],'date':r.get('date',''),'platform':expected,'via':'Metacritic review index'} for r in items if r.get('platform')==expected)
+                    offset+=len(items)
+                    if total==0:break
+                critics=reviews
+            except Exception as exc:errors['metacritic_reviews']=str(exc)[:160]
+        if not users and not critics:
+            try:
+                url=f'https://www.metacritic.com/game/{name}/';_,page=get(url);score=ratings.mc_critic(page,name,expected)
+                if score is not None:critics.append({'name':'Metacritic aggregate','score':score,'url':url+'critic-reviews/?platform='+platform,'platform':expected})
+            except Exception as exc:errors['metacritic_critics']=str(exc)[:160]
+        if critics or users:return critics,users,errors
+    return [],[],errors
+
 def wikipedia_image_data(payload,game):
     candidates=[]
     for page in payload.get('query',{}).get('pages',{}).values():
@@ -268,26 +298,7 @@ def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
                 except Exception as exc:errors['store']=str(exc)[:160]
         except Exception as exc:errors['nindie']=str(exc)[:160]
     if not critics and not users:
-        name=ratings.MC_ALIASES.get(game['title'],ratings.slug(game['title']));platform='playstation-5' if game['platform']=='PS5' else 'nintendo-switch'
-        try:
-            url=f'https://backend.metacritic.com/reviews/metacritic/user/games/{name}/platform/{platform}/stats/web';_,page=get(url);u=json.loads(page)['data']['item']
-            if u.get('reviewCount',0)>=4 and u.get('score') is not None:users.append({'name':'Metacritic users','score':u['score'],'scale':10,'count':u['reviewCount'],'url':f'https://www.metacritic.com/game/{name}/user-reviews/?platform={platform}','platform':game['platform']})
-        except Exception as exc:errors['metacritic_users']=str(exc)[:160]
-        if not users:
-            try:
-                url=f'https://backend.metacritic.com/reviews/metacritic/critic/games/{name}/platform/{platform}/web?offset=0&limit=10&filterBySentiment=all&sort=score'
-                _,page=get(url);index=json.loads(page)['data'];items=index['items']
-                # One scored review is enough even when the aggregate is still TBD.
-                # Only use this page if it is the complete index, never a top-score prefix.
-                if 0<int(index['totalResults'])<=len(items):
-                    expected='PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch'
-                    critics.extend({'name':r['publicationName'],'score':r['score'],'url':r['url'],'platform':expected,'via':'Metacritic review index'} for r in items if r.get('platform')==expected)
-            except Exception as exc:errors['metacritic_reviews']=str(exc)[:160]
-        if not users and not critics:
-            try:
-                url=f'https://www.metacritic.com/game/{name}/';_,page=get(url);score=ratings.mc_critic(page,name,'PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch')
-                if score is not None:critics.append({'name':'Metacritic aggregate','score':score,'url':url+'critic-reviews/?platform='+platform,'platform':game['platform']})
-            except Exception as exc:errors['metacritic_critics']=str(exc)[:160]
+        c,u,failures=minimal_metacritic(source_game);critics.extend(c);users.extend(u);errors.update(failures)
     if not result.get('image',{}).get('url'):
         try:result['image']=wikipedia_image(source_game)
         except Exception as exc:errors['image']=str(exc)[:160]

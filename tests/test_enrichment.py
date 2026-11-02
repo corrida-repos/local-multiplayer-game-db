@@ -93,3 +93,19 @@ class Enrichment(unittest.TestCase):
         self.assertFalse(e.matches_name({'title':'Donkey Kong Country','platform':'Switch'},'Donkey Kong Country Returns HD'))
         self.assertNotEqual(e.identity('Croixleur Σ'),e.identity('Croixleur'))
         self.assertEqual(e.identity('Croixleur Σ'),e.identity('Croixleur Sigma'))
+    def test_minimum_score_collects_every_critic_page(self):
+        game={'title':'Example','platform':'Switch'}
+        def response(url):
+            if '/user/' in url:return url,json.dumps({'data':{'item':{'score':0,'reviewCount':0}}})
+            start=0 if 'offset=0&' in url else 10
+            items=[{'publicationName':str(n),'score':100 if n<10 else 20,'url':f'https://review{n}.test/r','platform':'Nintendo Switch'} for n in range(start,10 if start==0 else 12)]
+            return url,json.dumps({'data':{'totalResults':12,'items':items}})
+        with patch.object(e,'get',side_effect=response):critics,users,errors=e.minimal_metacritic(game)
+        self.assertEqual(len(critics),12);self.assertEqual(e.composites.critic_composite(critics)['score'],86.7)
+    def test_minimum_score_rejects_incomplete_sorted_prefix(self):
+        def response(url):
+            if '/user/' in url:return url,json.dumps({'data':{'item':{'score':0,'reviewCount':0}}})
+            if 'offset=0&' in url:return url,json.dumps({'data':{'totalResults':20,'items':[{'publicationName':'A','score':100,'url':'https://a.test/r','platform':'Nintendo Switch'}]}})
+            raise OSError('source interrupted')
+        with patch.object(e,'get',side_effect=response):critics,users,errors=e.minimal_metacritic({'title':'Example','platform':'Switch'})
+        self.assertEqual(critics,[]);self.assertEqual(users,[])

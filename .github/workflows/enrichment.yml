@@ -3,6 +3,12 @@ on:
   schedule:
     - cron: '17 * * * *'
   workflow_dispatch:
+    inputs:
+      game_ids:
+        description: Optional comma-separated PS5/ Switch database keys for a targeted recovery
+        required: false
+        default: ''
+        type: string
   workflow_run:
     workflows: ['Backfill complete catalogue coverage', 'Atualizar jogos locais']
     types: [completed]
@@ -28,7 +34,14 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
       - name: Fill minimum data for every game, then finish all remaining stages
-        run: python -u -m scripts.enrichment --minutes 50 --workers 8 --checkpoint-push
+        env:
+          ENRICHMENT_IDS: ${{ inputs.game_ids || '' }}
+        run: |
+          enrichment_args=(--minutes 50 --workers 8 --checkpoint-push)
+          if [ -n "$ENRICHMENT_IDS" ]; then
+            enrichment_args+=(--ids "$ENRICHMENT_IDS")
+          fi
+          python -u -m scripts.enrichment "${enrichment_args[@]}"
       - name: Save remaining results
         if: always() && !cancelled()
         run: bash scripts/checkpoint-enrichment.sh
