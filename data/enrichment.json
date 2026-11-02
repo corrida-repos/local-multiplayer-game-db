@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:09:46.783225+00:00",
+  "updated": "2026-11-02T17:10:13.197985+00:00",
   "version": 1,
   "coverage": {
     "total": 1229,
-    "attempted": 352,
-    "ready": 239,
-    "missing_image": 866,
-    "missing_store": 877,
-    "missing_rating": 974,
+    "attempted": 362,
+    "ready": 241,
+    "missing_image": 858,
+    "missing_store": 870,
+    "missing_rating": 972,
     "full_attempted": 0
   },
   "games": {
@@ -48648,21 +48648,30 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:09:50.048725+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:09:50.048725+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 301: Moved Permanently"
       }
     },
     "Switch:17089": {
@@ -48672,21 +48681,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:09:50.048966+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
         "rating": false
+      },
+      "image": {
+        "url": "https://images.nintendolife.com/156584fed87cd/1280x720.jpg",
+        "source": "https://www.nintendolife.com/games/switch-eshop/bubble_trouble_3",
+        "checked": "2026-11-02T17:09:54.294141+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:09:50.048966+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found"
       }
     },
     "PS5:16789": {
@@ -48696,22 +48717,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.7,
+              "count": 96,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/JP0122-PPSA27709_00-0819535728056332",
+              "checked": "2026-11-02T17:09:51.176782+00:00",
+              "platform": "PSN · PS5",
+              "weight": 9.797958971132712,
+              "normalized": 9.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:09:50.049302+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/JP0122-PPSA27709_00-0819535728056332",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:09:51.176782+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202504/0713/7105f63f6ce68eb234ebda16857cf1339b87d77fb746142a.png",
+        "source": "https://store.playstation.com/pt-pt/product/JP0122-PPSA27709_00-0819535728056332",
+        "checked": "2026-11-02T17:09:51.176782+00:00"
+      },
+      "user": {
+        "score": 4.7,
+        "count": 96,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/JP0122-PPSA27709_00-0819535728056332",
+        "checked": "2026-11-02T17:09:51.176782+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "JP0122-PPSA27709_00-0819535728056332",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/JP0122-PPSA27709_00-0819535728056332",
+        "checked": "2026-11-02T17:09:51.176782+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:09:50.049302+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:16788": {
       "title": "CATO: Buttered Cat",
@@ -48720,22 +48789,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:09:50.049587+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/cato-buttered-cat-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:09:53.263801+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000095824/68d705275f3e913feb9ea22388414822523f1a1ca9fb286dbde269833eae0187",
+        "source": "https://www.nintendo.com/us/store/products/cato-buttered-cat-switch/",
+        "checked": "2026-11-02T17:09:53.264275+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:09:50.049587+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:16830": {
       "title": "CTHULOOT",
@@ -48744,22 +48828,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:09:51.186735+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/cthuloot-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:09:54.786040+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000096707/8ac2cacd2f65fa8042ef0f3a4aaf95952aac41a00d43c16ee79a9b8674e70ba4",
+        "source": "https://www.nintendo.com/us/store/products/cthuloot-switch/",
+        "checked": "2026-11-02T17:09:54.786354+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:09:51.186735+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:17087": {
       "title": "Candivity",
@@ -48768,22 +48867,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:09:52.966096+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/candivity-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:09:58.282615+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000082814/4db6222b0a01f19ff5a6d723472a1eca2bba0b4232719d9565efa86b60483842",
+        "source": "https://www.nintendo.com/us/store/products/candivity-switch/",
+        "checked": "2026-11-02T17:09:58.283146+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:09:52.966096+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:16989": {
       "title": "CarGo!",
@@ -48792,22 +48906,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:09:56.055259+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/cargo-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:09:57.158001+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000095342/7b326916ff1d9aafde8f80cd0eb840ee68aa57f3fd2a5a6325ffdc4152826421",
+        "source": "https://www.nintendo.com/us/store/products/cargo-switch/",
+        "checked": "2026-11-02T17:09:57.158354+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:09:56.055259+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:16734": {
       "title": "Disney Illusion Island Starring Mickey & Friends",
@@ -48816,21 +48945,30 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:09:59.878199+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:09:59.878199+00:00",
+      "version": 1,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 301: Moved Permanently"
       }
     },
     "PS5:16696": {
@@ -48840,22 +48978,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.78,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.39,
+              "count": 28,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA27090_00-FEUDALBROSTONORG",
+              "checked": "2026-11-02T17:10:02.718782+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 5.291502622129181,
+              "normalized": 8.78
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:01.514617+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA27090_00-FEUDALBROSTONORG",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:10:02.718782+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202503/1400/28f52906fb2f0e77499e51f360d0dca8361717de8b1b89f3.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0896-PPSA27090_00-FEUDALBROSTONORG",
+        "checked": "2026-11-02T17:10:02.718782+00:00"
+      },
+      "user": {
+        "score": 4.39,
+        "count": 28,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA27090_00-FEUDALBROSTONORG",
+        "checked": "2026-11-02T17:10:02.718782+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP0896-PPSA27090_00-FEUDALBROSTONORG",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0896-PPSA27090_00-FEUDALBROSTONORG",
+        "checked": "2026-11-02T17:10:02.718782+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:01.514617+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:17068": {
       "title": "Finnigan Fox",
@@ -48864,22 +49050,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:10:01.776938+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/finnigan-fox-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:10:04.715046+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000092312/1e65d5d20d193c5b5ebc6e5c816a39e71bbf0a9d0fd6a5ef60bf0d1f0ebc5881",
+        "source": "https://www.nintendo.com/us/store/products/finnigan-fox-switch/",
+        "checked": "2026-11-02T17:10:04.715370+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:10:01.776938+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:16717": {
       "title": "Gangbusters",
