@@ -187,6 +187,46 @@ def nindie(game):
         except Exception as exc:error=exc
     raise ValueError(str(error)[:160])
 
+def opaque_critic(critic):
+    return critic.get('method')=='single-aggregate-fallback-incomplete-index' or any('aggregate' in source.get('name','').lower() or source.get('name')=='Metacritic' for source in critic.get('sources',[]))
+
+def curated_critics(game):
+    expected='PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch'
+    return [source for source in source_match(game).get('critic_sources',[]) if source.get('platform')==expected and isinstance(source.get('score'),(int,float)) and 0<=source['score']<=100 and source.get('scale',100)==100 and source.get('url','').startswith('https://')]
+
+def slush_title(name):
+    match=re.fullmatch(r'(.*?)\s+(?:Nintendo\s+)?Switch\s+(?:Game\s+)?Review',html.unescape(name).strip(),re.I)
+    return match[1].strip(' :-–') if match else None
+
+def slush_data(page,url,game):
+    if game['platform']!='Switch' or urllib.parse.urlparse(url).hostname not in ['gameslushpile.com','www.gameslushpile.com']:raise ValueError('Not a Switch critic source')
+    for text in re.findall(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',page,re.S|re.I):
+        try:nodes=composites.walk(json.loads(text))
+        except ValueError:continue
+        for node in nodes:
+            if node.get('@type')!='Review' or node.get('url','').rstrip('/')!=url.rstrip('/'):continue
+            title=slush_title(node.get('name',''))
+            if not title or not matches_name(game,title):continue
+            rating=node.get('reviewRating',{})
+            try:raw=float(rating['ratingValue']);scale=float(rating['bestRating']);score=raw/scale*100
+            except (KeyError,TypeError,ValueError,ZeroDivisionError):continue
+            if 0<=score<=100:
+                return {'name':'The Game Slush Pile','score':score,'url':url,'date':node.get('datePublished',''),'platform':'Nintendo Switch','via':'Direct console-specific review','original_score':raw,'original_scale':scale}
+    raise ValueError('No exact scored Nintendo Switch review')
+
+def slush_review(game):
+    candidates=list(source_match(game).get('review_urls',[]))
+    if not candidates:
+        params=urllib.parse.urlencode({'search':game['title'],'per_page':5})
+        _,page=get('https://gameslushpile.com/wp-json/wp/v2/search?'+params)
+        for item in json.loads(page):
+            title=slush_title(item.get('title',''))
+            if title and matches_name(game,title):candidates.append(item['url'])
+    for url in candidates:
+        try:final,page=get(url);return slush_data(page,final,game)
+        except Exception as exc:error=exc
+    raise ValueError(str(error)[:150] if candidates else 'No scored Switch review indexed')
+
 def minimal_metacritic(game):
     platform='playstation-5' if game['platform']=='PS5' else 'nintendo-switch';expected='PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch';errors={}
     names=list(dict.fromkeys([ratings.MC_ALIASES.get(game['title'],ratings.slug(game['title']))]+[ratings.slug(name) for name in known_names(game) if name]))[:4]
@@ -284,6 +324,7 @@ def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
         users=[u for u in users if not u.get('name','').startswith('PSN')]+[fresh]
     elif game['platform']=='PS5' and has_score(legacy.get('user',{})):
         raw=legacy['user'];users.append({**raw,'name':raw.get('source','PSN'),'platform':raw.get('scope')})
+    if not opaque_critic({'sources':critics}):critics.extend(curated_critics(game))
     if (not critics and not users) or not result.get('image',{}).get('url'):
         try:
             c,u,image=community({**source_game,'aliases':result.get('aliases',[])+source_match(game).get('names',[])});critics.extend(c);users.extend(u)
@@ -299,6 +340,9 @@ def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
         except Exception as exc:errors['nindie']=str(exc)[:160]
     if not critics and not users:
         c,u,failures=minimal_metacritic(source_game);critics.extend(c);users.extend(u);errors.update(failures)
+    if game['platform']=='Switch' and not critics and not users:
+        try:critics.append(slush_review(source_game))
+        except Exception as exc:errors['slush']=str(exc)[:160]
     if not result.get('image',{}).get('url'):
         try:result['image']=wikipedia_image(source_game)
         except Exception as exc:errors['image']=str(exc)[:160]
@@ -320,8 +364,12 @@ def complete(game,previous,legacy,curated):
             try:
                 c,_,_=nindie(game)
                 # Never mix an opaque aggregate with potentially overlapping reviews.
-                if composite['critic'].get('method')!='single-aggregate-fallback-incomplete-index':composite['critic']=composites.critic_composite(composite['critic'].get('sources',[])+c)
+                if not opaque_critic(composite['critic']):composite['critic']=composites.critic_composite(composite['critic'].get('sources',[])+c)
             except Exception as exc:errors['nindie']=str(exc)[:160]
+        if game['platform']=='Switch' and not opaque_critic(composite['critic']) and not any('gameslushpile.com' in source.get('url','') for source in composite['critic'].get('sources',[])):
+            try:composite['critic']=composites.critic_composite(composite['critic'].get('sources',[])+[slush_review(game)])
+            except Exception as exc:errors['slush']=str(exc)[:160]
+        if not opaque_critic(composite['critic']):composite['critic']=composites.critic_composite(composite['critic'].get('sources',[])+curated_critics(game))
         result['ratings']=composite
     except Exception as exc:errors['composites']=str(exc)[:160]
     chosen=curated.get(game['title']) or result.get('trailer')

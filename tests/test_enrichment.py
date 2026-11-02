@@ -109,3 +109,16 @@ class Enrichment(unittest.TestCase):
             raise OSError('source interrupted')
         with patch.object(e,'get',side_effect=response):critics,users,errors=e.minimal_metacritic({'title':'Example','platform':'Switch'})
         self.assertEqual(critics,[]);self.assertEqual(users,[])
+    def test_direct_slush_review_uses_its_own_scale_and_console(self):
+        page=(Path(__file__).parent/'fixtures/slush-alien-review.html').read_text();url='https://gameslushpile.com/2023/11/04/alien-hominid-hd-switch-game-review/'
+        result=e.slush_data(page,url,{'title':'Alien Hominid HD','platform':'Switch'})
+        self.assertEqual(result['score'],90);self.assertEqual(result['original_score'],4.5);self.assertEqual(result['original_scale'],5)
+        with self.assertRaises(ValueError):e.slush_data(page,url,{'title':'Alien Hominid HD','platform':'PS5'})
+        with self.assertRaises(ValueError):e.slush_data(page.replace('Switch Game Review','PC Game Review'),url,{'title':'Alien Hominid HD','platform':'Switch'})
+    def test_curated_reviews_are_platform_bound_and_deduplicated(self):
+        game={'title':'All You Need is Help','platform':'Switch'};sources=e.curated_critics(game)
+        result=e.composites.critic_composite(sources+[sources[0]])
+        self.assertEqual(result['source_count'],3);self.assertEqual(result['score'],60.7)
+        self.assertEqual(e.curated_critics({**game,'platform':'PS5'}),[])
+        self.assertTrue(e.opaque_critic({'sources':[{'name':'Metacritic aggregate'}]}))
+        self.assertFalse(e.opaque_critic({'sources':[{'name':'Nindie Spotlight','via':'Metacritic review index'}]}))
