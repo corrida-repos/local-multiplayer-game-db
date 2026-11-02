@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T16:58:34.018438+00:00",
+  "updated": "2026-11-02T16:58:50.308098+00:00",
   "version": 1,
   "coverage": {
     "total": 794,
-    "attempted": 32,
-    "ready": 68,
-    "missing_image": 700,
-    "missing_store": 697,
-    "missing_rating": 687,
+    "attempted": 42,
+    "ready": 74,
+    "missing_image": 693,
+    "missing_store": 690,
+    "missing_rating": 683,
     "full_attempted": 0
   },
   "games": {
@@ -2118,21 +2118,30 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T16:58:36.076137+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T16:58:36.076137+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 301: Moved Permanently"
       }
     },
     "PS5:12662": {
@@ -2147,28 +2156,65 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.2,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.6,
+              "count": 100,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA08448_00-ADOXXXLPS50000EU",
+              "checked": "2026-11-02T16:58:37.241682+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 10.0,
+              "normalized": 7.199999999999999
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 301: Moved Permanently",
-          "Metacritic users: HTTP Error 301: Moved Permanently",
-          "www.pushsquare.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "PlayStation 5",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:41:57.491255+00:00"
+        "attempted": "2026-11-02T16:58:36.076321+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA08448_00-ADOXXXLPS50000EU",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T16:58:37.241682+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1609/DXxoC6B1z1tTgaKQyY9Ysn2M.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP4295-PPSA08448_00-ADOXXXLPS50000EU",
+        "checked": "2026-11-02T16:58:37.241682+00:00"
+      },
+      "user": {
+        "score": 3.6,
+        "count": 100,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA08448_00-ADOXXXLPS50000EU",
+        "checked": "2026-11-02T16:58:37.241682+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP4295-PPSA08448_00-ADOXXXLPS50000EU",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP4295-PPSA08448_00-ADOXXXLPS50000EU",
+        "checked": "2026-11-02T16:58:37.241682+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:36.076321+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:12658": {
       "title": "Asterix & Obelix XXXL: The Ram From Hibernia",
@@ -2188,25 +2234,95 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 301: Moved Permanently",
-          "Metacritic users: HTTP Error 301: Moved Permanently",
-          "www.nintendolife.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:41:59.327110+00:00"
+        "attempted": "2026-11-02T16:58:36.076740+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T16:58:36.076740+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 301: Moved Permanently"
       }
     },
     "PS5:13181": {
       "title": "Asterix & Obelix: Slap Them All!",
+      "platform": "PS5",
+      "ratings": {
+        "critic": {
+          "score": null,
+          "scale": 100,
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
+        },
+        "user": {
+          "score": 7.96,
+          "scale": 10,
+          "sources": [
+            {
+              "score": 3.98,
+              "count": 602,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP4295-CUSA23755_00-ASTERIXBTA0000EU",
+              "checked": "2026-11-02T16:58:38.584565+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 24.535688292770594,
+              "normalized": 7.960000000000001
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
+        },
+        "attempted": "2026-11-02T16:58:36.077119+00:00"
+      },
+      "requirements": {
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP4295-CUSA23755_00-ASTERIXBTA0000EU",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T16:58:38.584565+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202110/1809/RC6QFtWUYfX4p3M4TJyUjtan.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP4295-CUSA23755_00-ASTERIXBTA0000EU",
+        "checked": "2026-11-02T16:58:38.584565+00:00"
+      },
+      "user": {
+        "score": 3.98,
+        "count": 602,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP4295-CUSA23755_00-ASTERIXBTA0000EU",
+        "checked": "2026-11-02T16:58:38.584565+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP4295-CUSA23755_00-ASTERIXBTA0000EU",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP4295-CUSA23755_00-ASTERIXBTA0000EU",
+        "checked": "2026-11-02T16:58:38.584565+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:36.077119+00:00",
+      "version": 1,
+      "errors": {}
+    },
+    "PS5:13549": {
+      "title": "Asterix and Obelix XXL 3 - The Crystal Menhir",
       "platform": "PS5",
       "ratings": {
         "critic": {
@@ -2223,45 +2339,18 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 404: Not Found",
-          "Metacritic users: HTTP Error 404: Not Found",
-          "www.pushsquare.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "PlayStation 5",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:42:02.120710+00:00"
+        "attempted": "2026-11-02T16:58:37.249304+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
-      }
-    },
-    "PS5:13549": {
-      "title": "Asterix and Obelix XXL 3 - The Crystal Menhir",
-      "platform": "PS5",
-      "ratings": {
-        "critic": {
-          "score": null,
-          "scale": 100,
-          "source_count": 0,
-          "sources": []
-        },
-        "user": {
-          "score": null,
-          "scale": 10,
-          "source_count": 0,
-          "sources": []
-        },
-        "attempted": ""
       },
-      "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+      "basics_attempted": "2026-11-02T16:58:37.249304+00:00",
+      "version": 1,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "PS5:10798": {
@@ -2285,24 +2374,65 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 8.72,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.36,
+              "count": 158,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA05552_00-1522586772341407",
+              "checked": "2026-11-02T16:58:40.397791+00:00",
+              "platform": "PSN · PS5",
+              "weight": 12.569805089976535,
+              "normalized": 8.72
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 1,
-        "errors": [],
-        "platform": "PlayStation 5",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:42:03.982050+00:00"
+        "attempted": "2026-11-02T16:58:38.595988+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
-      }
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA05552_00-1522586772341407",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T16:58:40.397791+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202111/1219/Z7PUMhBkbSL598ZnD7k3WDmD.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0182-PPSA05552_00-1522586772341407",
+        "checked": "2026-11-02T16:58:40.397791+00:00"
+      },
+      "user": {
+        "score": 4.36,
+        "count": 158,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA05552_00-1522586772341407",
+        "checked": "2026-11-02T16:58:40.397791+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP0182-PPSA05552_00-1522586772341407",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0182-PPSA05552_00-1522586772341407",
+        "checked": "2026-11-02T16:58:40.397791+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:38.595988+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:10795": {
       "title": "Asteroids: Recharged",
@@ -2374,20 +2504,26 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 5,
-        "errors": [
-          "www.nintendolife.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:42:09.169858+00:00"
+        "attempted": "2026-11-02T16:58:40.410677+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/asteroids-recharged-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:58:42.960631+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000046964/a02b8c870217ce001b4d8e336c17715d01eec240b70f85b3b7c16943faa6c9fb",
+        "source": "https://www.nintendo.com/us/store/products/asteroids-recharged-switch/",
+        "checked": "2026-11-02T16:58:42.961101+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:40.410677+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:14706": {
       "title": "Astral Ascent",
@@ -2396,46 +2532,128 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.62,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.81,
+              "count": 757,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP6245-PPSA03609_00-0167758544406367",
+              "checked": "2026-11-02T16:58:43.316241+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 27.51363298439521,
+              "normalized": 9.62
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T16:58:42.049273+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP6245-PPSA03609_00-0167758544406367",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T16:58:43.316241+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202310/1917/3092882504f753126413c5b7a03b2a88dd245aadcb7da793.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP6245-PPSA03609_00-0167758544406367",
+        "checked": "2026-11-02T16:58:43.316241+00:00"
+      },
+      "user": {
+        "score": 4.81,
+        "count": 757,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP6245-PPSA03609_00-0167758544406367",
+        "checked": "2026-11-02T16:58:43.316241+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP6245-PPSA03609_00-0167758544406367",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP6245-PPSA03609_00-0167758544406367",
+        "checked": "2026-11-02T16:58:43.316241+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:42.049273+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:14638": {
       "title": "Astral Ascent",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 90.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 90.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/astral-ascent",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.9,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.9,
+              "scale": 10.0,
+              "count": 39,
+              "url": "https://www.nintendolife.com/games/switch-eshop/astral_ascent",
+              "platform": "Nintendo Switch",
+              "weight": 6.244997998398398,
+              "normalized": 7.9
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T16:58:42.669806+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/astral-ascent-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:58:44.520927+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000068938/b67edfd7bb89a04edb1ee08d9f41b595510d77050a07702daefc93a2023d3083",
+        "source": "https://www.nintendo.com/us/store/products/astral-ascent-switch/",
+        "checked": "2026-11-02T16:58:44.521483+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:42.669806+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:14717": {
       "title": "Astro Miner",
@@ -2444,21 +2662,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T16:58:42.905201+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/astro-miner-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:58:44.977125+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000071070/776241e41694f837ce6b620293eb1ca0ae013eb7098bcc1babf5ac6585900e5c",
+        "source": "https://www.nintendo.com/us/store/products/astro-miner-switch/",
+        "checked": "2026-11-02T16:58:44.977584+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:58:42.905201+00:00",
+      "version": 1,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "Switch:14550": {
