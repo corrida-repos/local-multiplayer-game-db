@@ -3,6 +3,12 @@ on:
   schedule:
     - cron: '23 6 * * *'
   workflow_dispatch:
+    inputs:
+      limit:
+        description: Máximo de páginas a verificar (1–300)
+        required: false
+        default: '300'
+        type: string
 permissions:
   contents: write
 concurrency:
@@ -21,7 +27,11 @@ jobs:
       - name: Scrape com limite e intervalo entre pedidos
         id: scrape
         continue-on-error: true
-        run: python scripts/scrape.py --limit 300
+        env:
+          SCRAPE_LIMIT: ${{ inputs.limit || '300' }}
+        run: |
+          python -c "import os; n=int(os.environ['SCRAPE_LIMIT']); assert 1 <= n <= 300"
+          python scripts/scrape.py --limit "$SCRAPE_LIMIT"
       - name: Guardar base de dados e catálogo
         run: |
           git config user.name 'github-actions[bot]'
@@ -29,6 +39,7 @@ jobs:
           git add data/
           if ! git diff --cached --quiet; then
             git commit -m 'Atualizar catálogo de multijogador local'
+            git pull --rebase origin main
             git push
           fi
       - name: Assinalar falhas da fonte
