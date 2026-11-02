@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-02T22:57:18.821099+00:00",
+  "updated": "2026-11-02T22:57:55.933818+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1775,
+    "ready": 1782,
     "missing_image": 112,
-    "missing_store": 704,
+    "missing_store": 697,
     "missing_rating": 477,
     "full_attempted": 1042,
     "image_health_pending": 2430
@@ -866,21 +866,6 @@
       "next_retry": ""
     },
     {
-      "key": "Switch:4172",
-      "title": "Bacon Man: An Adventure",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:17:36.880620+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
-      },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:7432",
       "title": "Bad Dudes",
       "platform": "Switch",
@@ -1685,21 +1670,6 @@
       "next_retry": ""
     },
     {
-      "key": "Switch:17361",
-      "title": "Bunny Battle Nemesis",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:14:39.192149+00:00",
-      "reasons": {
-        "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
-      },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:11739",
       "title": "Bunny Mahjo",
       "platform": "Switch",
@@ -2251,15 +2221,32 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T19:19:19.940559+00:00",
+      "attempted": "2026-11-02T22:57:23.203189+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "Not a Switch 1 review",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:57:24.647488+00:00",
+              "next_attempt": "2026-11-03T22:57:24.647488+00:00",
+              "revision": "21f134926a7ee461:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Child+of+Light%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Child+of+Light%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T22:57:24.647488+00:00"
     },
     {
       "key": "PS5:14473",
@@ -2609,15 +2596,84 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T19:19:26.376170+00:00",
+      "attempted": "2026-11-02T22:57:23.540548+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:57:38.893810+00:00",
+              "next_attempt": "2026-11-03T22:57:38.893810+00:00",
+              "revision": "0c798fe7371831d2:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/crossed_swords",
+                "https://www.nintendolife.com/games/nintendo-switch/aca_neogeo_crossed_swords",
+                "https://www.nintendolife.com/games/switch-eshop/aca_neogeo_crossed_swords"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/aca_neogeo_crossed_swords"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:57:40.863561+00:00",
+              "next_attempt": "2026-11-03T22:57:40.863561+00:00",
+              "revision": "0c798fe7371831d2:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=crossed-swords-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=crossed-swords-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:57:55.411155+00:00",
+              "next_attempt": "2026-11-03T22:57:55.411155+00:00",
+              "revision": "0c798fe7371831d2:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/aca-neogeo-crossed-swords/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/aca-neogeo-crossed-swords/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/aca-neogeo-crossed-swords/"
+              ],
+              "url": "https://www.metacritic.com/game/aca-neogeo-crossed-swords/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:57:55.491168+00:00",
+              "next_attempt": "2026-11-03T22:57:55.491168+00:00",
+              "revision": "0c798fe7371831d2:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Crossed+Swords&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Crossed+Swords&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T22:57:55.492102+00:00",
+              "next_attempt": "2026-11-02T23:57:55.492102+00:00",
+              "revision": "0c798fe7371831d2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T22:57:55.492187+00:00",
+              "next_attempt": "2026-11-02T23:57:55.492187+00:00",
+              "revision": "0c798fe7371831d2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-02T23:57:55.492102+00:00"
     },
     {
       "key": "Switch:13948",
@@ -3580,20 +3636,6 @@
       "next_retry": ""
     },
     {
-      "key": "Switch:17279",
-      "title": "DreamWorks Gabby’s Dollhouse: Ready to Party",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:15:05.026022+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review"
-      },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:10826",
       "title": "Dumpy and Bumpy",
       "platform": "Switch",
@@ -3884,18 +3926,6 @@
       "next_retry": ""
     },
     {
-      "key": "Switch:17270",
-      "title": "Esophaguys",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:15:05.026168+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:10525",
       "title": "Espgaluda II",
       "platform": "Switch",
@@ -3941,20 +3971,6 @@
         }
       },
       "next_retry": "2026-11-03T22:34:03.591736+00:00"
-    },
-    {
-      "key": "Switch:17404",
-      "title": "Extremely Powerful Capybaras",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:15:05.026425+00:00",
-      "reasons": {
-        "nindie": "Not a Switch 1 review"
-      },
-      "field_status": {},
-      "next_retry": ""
     },
     {
       "key": "PS5:9472",
@@ -4417,7 +4433,7 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T19:19:14.223672+00:00",
+      "attempted": "2026-11-02T22:57:22.904157+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
@@ -4426,10 +4442,27 @@
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:57:23.539945+00:00",
+              "next_attempt": "2026-11-03T22:57:23.539945+00:00",
+              "revision": "103e01c0ae77d2a6:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22GUNBIRD2%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22GUNBIRD2%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T22:57:23.539945+00:00"
     },
     {
       "key": "Switch:11319",
@@ -4727,18 +4760,6 @@
       "next_retry": ""
     },
     {
-      "key": "Switch:15879",
-      "title": "GoobnBalloonsDX",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:15:07.589341+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:8770",
       "title": "Good Night, Knight",
       "platform": "Switch",
@@ -4853,25 +4874,6 @@
       "attempted": "2026-11-02T19:23:13.767000+00:00",
       "reasons": {
         "nindie": "Not a Switch 1 review",
-        "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
-      },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:10599",
-      "title": "Guardian Force - Saturn Tribute",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T19:18:41.182538+00:00",
-      "reasons": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
-        "metacritic_users": "HTTP Error 404: Not Found",
-        "metacritic_reviews": "HTTP Error 404: Not Found",
         "slush": "No scored Switch review indexed",
         "trailer": "HTTP Error 404: Not Found"
       },
