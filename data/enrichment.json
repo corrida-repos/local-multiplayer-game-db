@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T20:05:54.819713+00:00",
+  "updated": "2026-11-02T20:06:22.255143+00:00",
   "version": 4,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1734,
-    "missing_image": 216,
-    "missing_store": 325,
-    "missing_rating": 666,
+    "ready": 1739,
+    "missing_image": 211,
+    "missing_store": 321,
+    "missing_rating": 661,
     "full_attempted": 320
   },
   "games": {
@@ -60140,21 +60140,22 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:50:28.561675+00:00"
+        "attempted": "2026-11-02T20:05:58.171128+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T18:50:28.561675+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:05:58.171128+00:00",
+      "version": 4,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 403: Forbidden",
+        "community": "HTTP Error 404: Not Found",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "image": "No unique matching video-game article with artwork"
       }
     },
     "Switch:12685": {
@@ -60162,11 +60163,19 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 56.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 55.99999999999999,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=miraculous-rise-of-the-sphinx-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": null,
@@ -60175,22 +60184,26 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:50:28.562248+00:00"
+        "attempted": "2026-11-02T20:05:58.171571+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
       },
-      "basics_attempted": "2026-11-02T18:50:28.562248+00:00",
-      "version": 3,
-      "errors": {
-        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review",
-        "metacritic_users": "HTTP Error 404: Not Found",
-        "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
+      "basics_attempted": "2026-11-02T20:05:58.171571+00:00",
+      "version": 4,
+      "errors": {},
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_5/1x1_NSwitch_MiraculousRiseOfTheSphinx_image500w.jpg",
+        "source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Miraculous-Rise-of-the-Sphinx-2278873.html",
+        "checked": "2026-11-02T20:05:58.171571+00:00",
+        "method": "official-product-index"
+      },
+      "store": {
+        "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Miraculous-Rise-of-the-Sphinx-2278873.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T20:06:00.550464+00:00"
       }
     },
     "Switch:14369": {
@@ -63855,24 +63868,64 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.26,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.13,
+              "count": 15,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA19571_00-XATROMCOMMAND0RG",
+              "checked": "2026-11-02T20:06:00.034786+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 3.872983346207417,
+              "normalized": 8.26
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:49:40.713380+00:00"
+        "attempted": "2026-11-02T20:05:58.169251+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
       },
-      "basics_attempted": "2026-11-02T18:49:40.713380+00:00",
-      "version": 3,
-      "errors": {
-        "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 403: Forbidden"
+      "basics_attempted": "2026-11-02T20:05:58.169251+00:00",
+      "version": 4,
+      "errors": {},
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA19571_00-XATROMCOMMAND0RG",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T20:06:00.034786+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202402/1512/c282caf7ca287dde7477fe724e66360dc491bf6a2b43a9fb.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0896-PPSA19571_00-XATROMCOMMAND0RG",
+        "checked": "2026-11-02T20:06:00.034786+00:00"
+      },
+      "user": {
+        "score": 4.13,
+        "count": 15,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA19571_00-XATROMCOMMAND0RG",
+        "checked": "2026-11-02T20:06:00.034786+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP0896-PPSA19571_00-XATROMCOMMAND0RG",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0896-PPSA19571_00-XATROMCOMMAND0RG",
+        "checked": "2026-11-02T20:06:00.034786+00:00"
       }
     },
     "Switch:15063": {
@@ -68473,22 +68526,23 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:50:29.571329+00:00"
+        "attempted": "2026-11-02T20:06:00.042168+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T18:50:29.571329+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:06:00.042168+00:00",
+      "version": 4,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "image": "No unique matching video-game article with artwork"
       }
     },
     "PS5:15279": {
@@ -77511,21 +77565,22 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:50:28.562478+00:00"
+        "attempted": "2026-11-02T20:05:58.172177+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T18:50:28.562478+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:05:58.172177+00:00",
+      "version": 4,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 403: Forbidden",
+        "community": "HTTP Error 404: Not Found",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "image": "No unique matching video-game article with artwork"
       }
     },
     "Switch:15997": {
@@ -77533,11 +77588,20 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 30.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Vgames",
+              "score": 30,
+              "url": "https://www.vgames.co.il/article/30884.html",
+              "date": "2024-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": null,
@@ -77546,22 +77610,31 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:50:28.562739+00:00"
+        "attempted": "2026-11-02T20:05:58.172763+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
       },
-      "basics_attempted": "2026-11-02T18:50:28.562739+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:05:58.172763+00:00",
+      "version": 4,
       "errors": {
-        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/miraculousparisundersiege/1x1_MiraculousParisUnderSiege_image500w.jpg",
+        "source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Miraculous-Paris-Under-Siege-2667219.html",
+        "checked": "2026-11-02T20:05:58.172763+00:00",
+        "method": "official-product-index"
+      },
+      "store": {
+        "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Miraculous-Paris-Under-Siege-2667219.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T20:06:01.626348+00:00"
       }
     },
     "Switch:15953": {
@@ -82284,7 +82357,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:49:58.050475+00:00"
+        "attempted": "2026-11-02T20:05:58.170595+00:00"
       },
       "requirements": {
         "image": true,
@@ -82294,7 +82367,7 @@
       "store": {
         "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/YOU-Game-2745404.html",
         "label": "Abrir na Nintendo eShop",
-        "checked": "2026-11-02T18:50:07.141573+00:00"
+        "checked": "2026-11-02T20:05:58.391115+00:00"
       },
       "image": {
         "url": "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/yougame/1x1_YouGame_image500w.jpg",
@@ -82304,14 +82377,11 @@
       "aliases": [
         "YOU Game+"
       ],
-      "basics_attempted": "2026-11-02T18:49:58.050475+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:05:58.170595+00:00",
+      "version": 4,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden; HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review",
-        "metacritic_users": "HTTP Error 404: Not Found",
-        "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:16362": {
@@ -110356,24 +110426,64 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.42,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.71,
+              "count": 35,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/JP0571-PPSA38426_00-HAMPRDC000000001",
+              "checked": "2026-11-02T20:06:01.672676+00:00",
+              "platform": "PSN · PS5",
+              "weight": 5.916079783099616,
+              "normalized": 9.42
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:49:43.963109+00:00"
+        "attempted": "2026-11-02T20:05:58.169427+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
       },
-      "basics_attempted": "2026-11-02T18:49:43.963109+00:00",
-      "version": 3,
-      "errors": {
-        "store": "No exact Portugal PS5 product verified",
-        "community": "HTTP Error 403: Forbidden"
+      "basics_attempted": "2026-11-02T20:05:58.169427+00:00",
+      "version": 4,
+      "errors": {},
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/JP0571-PPSA38426_00-HAMPRDC000000001",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T20:06:01.672676+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202609/0402/3d9c6f0859b8d2ae03b5e5ca8f5b0c769cdbf0e0bd2f8b36.png",
+        "source": "https://store.playstation.com/pt-pt/product/JP0571-PPSA38426_00-HAMPRDC000000001",
+        "checked": "2026-11-02T20:06:01.672676+00:00"
+      },
+      "user": {
+        "score": 4.71,
+        "count": 35,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/JP0571-PPSA38426_00-HAMPRDC000000001",
+        "checked": "2026-11-02T20:06:01.672676+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "JP0571-PPSA38426_00-HAMPRDC000000001",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/JP0571-PPSA38426_00-HAMPRDC000000001",
+        "checked": "2026-11-02T20:06:01.672676+00:00"
       }
     },
     "Switch:4481": {
@@ -125471,37 +125581,43 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.7,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 20,
+              "url": "https://www.nintendolife.com/games/switch-eshop/wuppo_definitive_edition",
+              "platform": "Nintendo Switch",
+              "weight": 4.47213595499958,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:49:13.372394+00:00"
+        "attempted": "2026-11-02T20:05:58.169081+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
-        "rating": false
+        "rating": true
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/wuppo-definitive-edition-switch/",
         "label": "Abrir na Nintendo eShop",
-        "checked": "2026-11-02T18:49:16.740345+00:00"
+        "checked": "2026-11-02T20:06:00.797424+00:00"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000020966/4cb200f1d3d01f3ad8d099461803db8c36cbe1401f05b7f1c88a111c5fb4aa5f",
         "source": "https://www.nintendo.com/us/store/products/wuppo-definitive-edition-switch/",
-        "checked": "2026-11-02T18:49:16.740751+00:00"
+        "checked": "2026-11-02T20:06:00.797961+00:00"
       },
-      "basics_attempted": "2026-11-02T18:49:13.372394+00:00",
-      "version": 3,
-      "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review",
-        "metacritic_users": "HTTP Error 301: Moved Permanently",
-        "metacritic_reviews": "HTTP Error 301: Moved Permanently"
-      }
+      "basics_attempted": "2026-11-02T20:05:58.169081+00:00",
+      "version": 4,
+      "errors": {}
     },
     "Switch:5938": {
       "title": "XenoRaptor",
@@ -149638,14 +149754,22 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/zero_gunner_2",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
-          "score": 7.7,
+          "score": 7.5,
           "scale": 10,
           "sources": [
             {
@@ -149657,24 +149781,38 @@
               "platform": "Switch",
               "weight": 2.449489742783178,
               "normalized": 7.7
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 21,
+              "url": "https://www.nintendolife.com/games/switch-eshop/zero_gunner_2",
+              "platform": "Nintendo Switch",
+              "weight": 4.58257569495584,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:50:34.696673+00:00"
+        "attempted": "2026-11-02T20:06:01.681006+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T18:50:34.696673+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T20:06:01.681006+00:00",
+      "version": 4,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
         "nindie": "Not a Switch 1 review"
+      },
+      "image": {
+        "url": "https://images.nintendolife.com/46f1bd78d354c/1280x720.jpg",
+        "source": "https://www.nintendolife.com/games/switch-eshop/zero_gunner_2",
+        "checked": "2026-11-02T20:06:16.746901+00:00"
       }
     },
     "Switch:8326": {
