@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T19:53:19.154344+00:00",
+  "updated": "2026-11-02T19:53:55.799884+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 253,
     "missing_store": 358,
     "missing_rating": 689,
-    "full_attempted": 220
+    "full_attempted": 230
   },
   "games": {
     "PS5:13238": {
@@ -6127,26 +6127,32 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/old-school-console-games-part-3#bish-bash-bots",
+              "date": "2023-10-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 8.74,
           "scale": 10,
           "sources": [
             {
-              "score": 4.37,
-              "count": 59,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.37,
               "scale": 5,
-              "source": "PSN",
+              "count": 59,
               "url": "https://store.playstation.com/pt-pt/product/EP7678-PPSA15983_00-BBBSIEEPS5000000",
-              "checked": "2026-11-02T17:00:06.170811+00:00",
-              "platform": "PSN · PS4/PS5",
+              "platform": "PlayStation 5",
               "weight": 7.681145747868608,
               "normalized": 8.74
             }
@@ -6154,7 +6160,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:00:04.916577+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:33.163245+00:00"
       },
       "requirements": {
         "image": true,
@@ -6192,14 +6205,17 @@
       },
       "basics_attempted": "2026-11-02T17:00:04.916577+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:33.593547+00:00"
     },
     "Switch:13795": {
       "title": "Bish Bash Bots",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 76.0,
+          "score": 78.0,
           "scale": 100,
           "sources": [
             {
@@ -6208,10 +6224,18 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bish-bash-bots-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-bish-bash-bots-nintendo-switch/",
+              "date": "2023-11-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -6220,7 +6244,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:53:46.082356+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:33.202102+00:00"
       },
       "requirements": {
         "image": true,
@@ -6240,8 +6272,10 @@
       "basics_attempted": "2026-11-02T18:53:46.082356+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
-      }
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:34.464247+00:00"
     },
     "Switch:10763": {
       "title": "Black Heart",
@@ -6261,7 +6295,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:53:46.082593+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:40.789056+00:00"
       },
       "requirements": {
         "image": true,
@@ -6272,7 +6314,8 @@
       "version": 3,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden; HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-BLACK-HEART-2072329.html",
@@ -6286,7 +6329,8 @@
       },
       "aliases": [
         "Arcade Archives BLACK HEART"
-      ]
+      ],
+      "full_attempted": "2026-11-02T19:53:41.290722+00:00"
     },
     "PS5:10655": {
       "title": "Black Widow: Recharged",
@@ -6313,15 +6357,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.37,
-              "count": 87,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.37,
               "scale": 5,
-              "source": "PSN",
+              "count": 87,
               "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA05256_00-7896645191841920",
-              "checked": "2026-11-02T17:00:41.671598+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 9.327379053088816,
               "normalized": 8.74
             }
@@ -6329,7 +6370,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:00:40.034154+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:55.017632+00:00"
       },
       "requirements": {
         "image": true,
@@ -6367,14 +6415,17 @@
       },
       "basics_attempted": "2026-11-02T17:00:40.034154+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:55.680892+00:00"
     },
     "Switch:10650": {
       "title": "Black Widow: Recharged",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 63.3,
+          "score": 66.2,
           "scale": 100,
           "sources": [
             {
@@ -6384,6 +6435,13 @@
               "date": "2021-11-22",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=black-widow-recharged-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             },
             {
               "name": "Pure Nintendo",
@@ -6403,7 +6461,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 3
+          "source_count": 4
         },
         "user": {
           "score": 6.0,
@@ -6423,7 +6481,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:00:41.683298+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:54.292622+00:00"
       },
       "requirements": {
         "image": true,
@@ -6442,7 +6508,10 @@
       },
       "basics_attempted": "2026-11-02T17:00:41.683298+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:54.728310+00:00"
     },
     "PS5:11064": {
       "title": "Blackwind",
@@ -63170,15 +63239,12 @@
           "scale": 10,
           "sources": [
             {
-              "score": 2.46,
-              "count": 24,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 2.46,
               "scale": 5,
-              "source": "PSN",
+              "count": 24,
               "url": "https://store.playstation.com/pt-pt/product/EP6718-PPSA22504_00-0943621751180811",
-              "checked": "2026-11-02T17:02:11.211969+00:00",
-              "platform": "PSN · PS5",
+              "platform": "PlayStation 5",
               "weight": 4.898979485566356,
               "normalized": 4.92
             }
@@ -63186,7 +63252,16 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:02:10.219561+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 301: Moved Permanently",
+          "Metacritic users: HTTP Error 301: Moved Permanently",
+          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:34.249420+00:00"
       },
       "requirements": {
         "image": true,
@@ -63224,7 +63299,10 @@
       },
       "basics_attempted": "2026-11-02T17:02:10.219561+00:00",
       "version": 1,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:35.830774+00:00"
     },
     "Switch:15355": {
       "title": "Bread & Fred",
@@ -118884,31 +118962,63 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 71.7,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GamingTrend",
+              "score": 65,
+              "url": "https://gamingtrend.com/feature/reviews/neon-lights-bright-starry-nights-and-tough-boss-fights-black-paradox-review/",
+              "date": "2020-05-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=black-paradox-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 75,
+              "url": "https://www.spaziogames.it/black-paradox-navicelle-spaziali-allo-sbaraglio-recensione/",
+              "date": "2019-05-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
-          "score": 7.3,
+          "score": 6.4,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 7.3,
-              "scale": 10.0,
-              "count": 9,
-              "url": "https://www.nintendolife.com/games/switch-eshop/black_paradox",
+              "name": "Metacritic users",
+              "score": 6.4,
+              "scale": 10,
+              "count": 19,
+              "url": "https://www.metacritic.com/game/black-paradox/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 3.0,
-              "normalized": 7.3
+              "weight": 4.358898943540674,
+              "normalized": 6.4
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:26:44.239533+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:43.014170+00:00"
       },
       "requirements": {
         "image": true,
@@ -118927,7 +119037,10 @@
       },
       "basics_attempted": "2026-11-02T17:26:44.239533+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:43.719364+00:00"
     },
     "Switch:5788": {
       "title": "Bloodstained: Ritual of the Night",
@@ -123805,19 +123918,67 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 62.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/bite_the_bullet",
+              "name": "God is a Geek",
+              "score": 65,
+              "url": "https://www.godisageek.com/reviews/bite-the-bullet-review/",
+              "date": "2020-08-14",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 64.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bite-the-bullet-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/bite_the_bullet",
+              "date": "2020-08-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 55,
+              "url": "https://www.nintendoworldreport.com/review/55251/bite-the-bullet-switch-review",
+              "date": "2020-10-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 65,
+              "url": "https://purenintendo.com/review-bite-the-bullet-nintendo-switch/",
+              "date": "2020-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 70,
+              "url": "https://screenrant.com/bite-the-bullet-game-review/",
+              "date": "2020-08-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/interesting-indie-games-part-3#bite-the-bullet",
+              "date": "2020-08-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
           "score": null,
@@ -123826,7 +123987,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:28:52.840168+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:38.578064+00:00"
       },
       "requirements": {
         "image": true,
@@ -123845,7 +124014,10 @@
       },
       "basics_attempted": "2026-11-02T17:28:52.840168+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:39.200104+00:00"
     },
     "Switch:6579": {
       "title": "Blazing Beaks",
@@ -132346,39 +132518,199 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 74.8,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/black_future_88",
+              "name": "COGconnected",
+              "score": 88,
+              "url": "https://cogconnected.com/review/black-future-88-review/",
+              "date": "2019-11-21",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 70,
+              "url": "http://www.digitallydownloaded.net/2019/11/review-black-future-88-nintendo-switch.html",
+              "date": "2019-11-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 70,
+              "url": "https://gamecritics.com/jeff-ortloff/black-future-88-review/",
+              "date": "2020-02-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 75,
+              "url": "https://gamer.nl/artikelen/review/black-future-88-knalt-je-door-een-dystopische-toekomst/",
+              "date": "2019-11-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 75,
+              "url": "https://gamingtrend.com/feature/reviews/tower-of-terror-black-future-88-review/",
+              "date": "2019-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "https://www.godisageek.com/reviews/black-future-88-review/",
+              "date": "2019-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 80,
+              "url": "https://www.hardcoregamer.com/2019/11/21/review-black-future-88/362343/",
+              "date": "2019-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 78,
+              "url": "https://it.ign.com/black-future-88-nintendo-switch-1/163493/review/black-future-88-la-recensione",
+              "date": "2019-11-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 65,
+              "url": "http://www.jeuxvideo.com/test/1148156/black-future-88-quand-the-binding-of-isaac-se-tourne-vers-le-cyberpunk.htm",
+              "date": "2020-02-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=black-future-88-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/black-future-88-review/",
+              "date": "2019-11-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/black_future_88",
+              "date": "2019-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/52230/black-future-88-switch-review",
+              "date": "2019-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-black-future-88-nintendo-switch/",
+              "date": "2019-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 70,
+              "url": "https://screenrant.com/black-future-88-switch-review/",
+              "date": "2019-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 60,
+              "url": "https://www.shacknews.com/article/115155/black-future-88-review-failure-is-imminent",
+              "date": "2019-11-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2019/12/11/black-future-88-review/",
+              "date": "2019-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Indie Game Website",
+              "score": 80,
+              "url": "https://www.indiegamewebsite.com/2019/11/21/black-future-88-review/",
+              "date": "2019-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 70,
+              "url": "https://www.thesixthaxis.com/2019/11/26/black-future-88-review/",
+              "date": "2019-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/miscellaneous-console-games-extravaganza-2019#black-future-88",
+              "date": "2019-11-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 20
         },
         "user": {
-          "score": 5.8,
+          "score": 7.4,
           "scale": 10,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 5.8,
-              "scale": 10.0,
-              "count": 10,
-              "url": "https://www.nintendolife.com/games/switch-eshop/black_future_88",
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 11,
+              "url": "https://www.metacritic.com/game/black-future-88/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 3.1622776601683795,
-              "normalized": 5.8
+              "weight": 3.3166247903554,
+              "normalized": 7.4
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:32:25.116874+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 19,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:45.180372+00:00"
       },
       "requirements": {
         "image": true,
@@ -132397,7 +132729,10 @@
       },
       "basics_attempted": "2026-11-02T17:32:25.116874+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:45.857881+00:00"
     },
     "Switch:7350": {
       "title": "Blackmoor 2: The Traitor King",
@@ -145834,7 +146169,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:38:04.854286+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
+          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:53:36.394790+00:00"
       },
       "requirements": {
         "image": true,
@@ -145853,7 +146198,11 @@
       },
       "basics_attempted": "2026-11-02T17:38:04.854286+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:53:36.816955+00:00"
     },
     "Switch:9070": {
       "title": "Bleep Bloop",
