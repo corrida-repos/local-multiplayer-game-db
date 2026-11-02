@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T16:57:43.305297+00:00",
+  "updated": "2026-11-02T16:58:04.139662+00:00",
   "version": 1,
   "coverage": {
     "total": 794,
-    "attempted": 12,
-    "ready": 60,
-    "missing_image": 718,
-    "missing_store": 715,
-    "missing_rating": 691,
+    "attempted": 22,
+    "ready": 66,
+    "missing_image": 709,
+    "missing_store": 706,
+    "missing_rating": 689,
     "full_attempted": 0
   },
   "games": {
@@ -1169,44 +1169,84 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 3,
-        "errors": [
-          "www.nintendolife.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:41:07.089615+00:00"
+        "attempted": "2026-11-02T16:57:49.503083+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/aniquilation-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:57:50.926686+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000044083/10e8e9ba309e1af22d213e6e97d9db589862c5f4a2fd9533740c017c59575bd5",
+        "source": "https://www.nintendo.com/us/store/products/aniquilation-switch/",
+        "checked": "2026-11-02T16:57:50.927016+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:57:49.503083+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:13846": {
       "title": "Abathor",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/abathor",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 5.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 5.7,
+              "scale": 10.0,
+              "count": 6,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/abathor",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 5.700000000000001
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T16:57:49.503269+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/abathor-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:57:51.731187+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000068726/32c8bc772664e2083800ad60a04fce620f4d6e0f11882458ca99d9b9c191d755",
+        "source": "https://www.nintendo.com/us/store/products/abathor-switch/",
+        "checked": "2026-11-02T16:57:51.731652+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:57:49.503269+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:10593": {
       "title": "Aeon Drive",
@@ -1245,26 +1285,65 @@
           "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 8.16,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.08,
+              "count": 13,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP7173-PPSA04671_00-5620316938950592",
+              "checked": "2026-11-02T16:57:50.600587+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 3.605551275463989,
+              "normalized": 8.16
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 3,
-        "errors": [
-          "www.pushsquare.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "PlayStation 5",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:41:11.766453+00:00"
+        "attempted": "2026-11-02T16:57:49.503601+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
-      }
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP7173-PPSA04671_00-5620316938950592",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T16:57:50.600587+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202109/1309/BECKeYpPduWstyYNGTdScv5T.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP7173-PPSA04671_00-5620316938950592",
+        "checked": "2026-11-02T16:57:50.600587+00:00"
+      },
+      "user": {
+        "score": 4.08,
+        "count": 13,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP7173-PPSA04671_00-5620316938950592",
+        "checked": "2026-11-02T16:57:50.600587+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP7173-PPSA04671_00-5620316938950592",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP7173-PPSA04671_00-5620316938950592",
+        "checked": "2026-11-02T16:57:50.600587+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:57:49.503601+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:12279": {
       "title": "After Wave: Downfall",
@@ -1284,21 +1363,19 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 404: Not Found",
-          "Metacritic users: HTTP Error 404: Not Found",
-          "www.pushsquare.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "PlayStation 5",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:41:14.493752+00:00"
+        "attempted": "2026-11-02T16:57:49.503928+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T16:57:49.503928+00:00",
+      "version": 1,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 404: Not Found"
       }
     },
     "Switch:12276": {
@@ -1328,20 +1405,26 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 1,
-        "errors": [
-          "www.nintendolife.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:41:18.190116+00:00"
+        "attempted": "2026-11-02T16:57:50.608122+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/after-wave-downfall-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:57:53.223052+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000041800/630a3ae9225f8a358e5b3739b7f810f5e334c3b42977352811c667859b41e230",
+        "source": "https://www.nintendo.com/us/store/products/after-wave-downfall-switch/",
+        "checked": "2026-11-02T16:57:53.223378+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:57:50.608122+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:13067": {
       "title": "Akai Katana Shin",
@@ -1380,21 +1463,26 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 301: Moved Permanently",
-          "Metacritic users: HTTP Error 301: Moved Permanently"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:41:20.354453+00:00"
+        "attempted": "2026-11-02T16:57:50.927177+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/akai-katana-shin-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:57:53.617421+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000051332/b89f4241bb6d5f3d00a70a8aa0dd4521b0c3d199deb31b40b651ae737b739410",
+        "source": "https://www.nintendo.com/us/store/products/akai-katana-shin-switch/",
+        "checked": "2026-11-02T16:57:53.617749+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:57:50.927177+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:13193": {
       "title": "Albacete Warrior",
@@ -1408,26 +1496,65 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.7,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.85,
+              "count": 33,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP2005-PPSA09597_00-ALBACETEWARRIOR0",
+              "checked": "2026-11-02T16:57:53.848951+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 5.744562646538029,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 0,
-        "errors": [
-          "www.pushsquare.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "PlayStation 5",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:41:22.498093+00:00"
+        "attempted": "2026-11-02T16:57:52.154992+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP2005-PPSA09597_00-ALBACETEWARRIOR0",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T16:57:53.848951+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1110/rLXTntfRE9QhPr6pvhOWqY3b.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP2005-PPSA09597_00-ALBACETEWARRIOR0",
+        "checked": "2026-11-02T16:57:53.848951+00:00"
+      },
+      "user": {
+        "score": 3.85,
+        "count": 33,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP2005-PPSA09597_00-ALBACETEWARRIOR0",
+        "checked": "2026-11-02T16:57:53.848951+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP2005-PPSA09597_00-ALBACETEWARRIOR0",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP2005-PPSA09597_00-ALBACETEWARRIOR0",
+        "checked": "2026-11-02T16:57:53.848951+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:57:52.154992+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:13191": {
       "title": "Albacete Warrior",
@@ -1447,20 +1574,26 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 0,
-        "errors": [
-          "www.nintendolife.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:41:24.679299+00:00"
+        "attempted": "2026-11-02T16:57:53.223511+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/albacete-warrior-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:57:54.792005+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000057604/5915ca23a81a358c8bfc6feaef751285678a9db527f9d03e9cba7d35a58abed2",
+        "source": "https://www.nintendo.com/us/store/products/albacete-warrior-switch/",
+        "checked": "2026-11-02T16:57:54.792257+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:57:53.223511+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:13823": {
       "title": "Alice Sisters",
@@ -1469,22 +1602,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T16:57:53.617905+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/alice-sisters-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:57:56.044771+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000064075/ffd2891bcddd9771fe63bc310280f41f2d9c3204cb00c6328bc316c22a76b5b6",
+        "source": "https://www.nintendo.com/us/store/products/alice-sisters-switch/",
+        "checked": "2026-11-02T16:57:56.045106+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:57:53.617905+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:14299": {
       "title": "Alien Hominid HD",
@@ -1493,22 +1641,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T16:57:53.856816+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/alien-hominid-hd-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T16:57:58.438497+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000059177/b74c5151415cf23edf99684bceb54c3863073906ee866390a8791a03106b5078",
+        "source": "https://www.nintendo.com/us/store/products/alien-hominid-hd-switch/",
+        "checked": "2026-11-02T16:57:58.439029+00:00"
+      },
+      "basics_attempted": "2026-11-02T16:57:53.856816+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:11902": {
       "title": "Ampersat",
