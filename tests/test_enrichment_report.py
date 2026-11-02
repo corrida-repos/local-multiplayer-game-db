@@ -14,3 +14,14 @@ class Reporting(unittest.TestCase):
         self.assertEqual(failure_kind('HTTP Error 403: Forbidden'),'blocked or throttled')
         self.assertEqual(failure_kind('Different game/edition'),'identity or console rejected')
         self.assertEqual(failure_kind('No review profile indexed for this game'),'not found or no published score')
+
+    def test_new_upstream_image_removal_is_reported_without_hiding_code_regressions(self):
+        url='https://images.test/game.jpg';before={'games':{'PS5:1':{'image':{'url':url}}}}
+        after={'games':{'PS5:1':{'image':{'url':url,'validation':'invalid'},'invalidations':[{'field':'image','url':url,'at':'2026-01-01'}]}}}
+        summary,regressions=report(before,after);self.assertEqual(regressions,[]);self.assertIn('Confirmed upstream removals: 1',summary)
+        before['games']['PS5:1']['invalidations']=after['games']['PS5:1']['invalidations']
+        _,regressions=report(before,after);self.assertEqual(regressions,[('PS5:1','image')])
+    def test_store_policy_migration_does_not_excuse_lost_images(self):
+        before={'coverage_policy':'old','games':{'PS5:1':{'image':{'url':'https://images.test/game.jpg'}}}}
+        after={'coverage_policy':'new','games':{'PS5:1':{}}}
+        summary,regressions=report(before,after);self.assertIn('new baseline',summary);self.assertEqual(regressions,[('PS5:1','image')])

@@ -31,7 +31,7 @@ def classify(exc):
 
 def record(entry,source,fields,revision,status,reason='',url=None,clock=None,exc=None):
     clock=clock or utc();delay=dt.timedelta(hours=1 if status=='retryable_error' else 24)
-    if status=='verified':delay=dt.timedelta(days=7 if fields==['image'] else 1)
+    if status=='verified':delay=dt.timedelta(days=7 if source=='image_health' else 1)
     if isinstance(exc,urllib.error.HTTPError) and exc.headers:
         import email.utils
         value=exc.headers.get('Retry-After','')

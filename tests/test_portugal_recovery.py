@@ -52,6 +52,11 @@ class Attempts(unittest.TestCase):
         self.assertFalse(rs.due(entry,'nintendo',['store'],'v1',clock+dt.timedelta(hours=23)))
         self.assertTrue(rs.due(entry,'nintendo',['store'],'v1',clock+dt.timedelta(days=1)))
         self.assertTrue(rs.due(entry,'nintendo',['store'],'v2',clock))
+    def test_newly_missing_source_image_is_not_stuck_on_health_weekly_cadence(self):
+        clock=dt.datetime(2026,1,1,tzinfo=dt.timezone.utc);entry={};rs.record(entry,'nintendo',['image'],'v1','verified',clock=clock)
+        self.assertTrue(rs.due(entry,'nintendo',['image'],'v1',clock+dt.timedelta(days=1)))
+        rs.record(entry,'image_health',['image'],'v1','verified',clock=clock)
+        self.assertFalse(rs.due(entry,'image_health',['image'],'v1',clock+dt.timedelta(days=1)))
     def test_retries_are_field_specific_and_survive_json_roundtrip(self):
         clock=dt.datetime(2026,1,1,tzinfo=dt.timezone.utc);entry={};rs.record(entry,'community',['rating'],'v1','not_found',clock=clock);entry=json.loads(json.dumps(entry))
         self.assertTrue(rs.due(entry,'community',['image'],'v1',clock));self.assertFalse(rs.due(entry,'community',['rating'],'v1',clock))
