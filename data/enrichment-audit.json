@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-02T23:58:06.222001+00:00",
+  "updated": "2026-11-02T23:59:25.632732+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1921,
+    "ready": 1924,
     "missing_image": 109,
-    "missing_store": 445,
+    "missing_store": 437,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -30471,24 +30471,29 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T21:18:49.683741+00:00",
+      "attempted": "2026-11-02T23:58:10.415749+00:00",
       "reasons": {
-        "store": "Official Nintendo lookup: HTTP Error 404: Not Found; HTTP Error 503: first byte timeout"
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found; HTTP Error 503: first byte timeout",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:16662",
-      "title": "Shikhondo: Youkai Rampage",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:18:49.683982+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:58:11.114189+00:00",
+              "next_attempt": "2026-11-03T23:58:11.114189+00:00",
+              "revision": "cf6dde62407e2ad1:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Shikhondo+Soul+Eater%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Shikhondo+Soul+Eater%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T23:58:11.114189+00:00"
     },
     {
       "key": "Switch:10731",
@@ -30497,14 +30502,83 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T21:18:49.684583+00:00",
+      "attempted": "2026-11-02T23:58:10.416302+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:05.767844+00:00",
+              "next_attempt": "2026-11-03T23:59:05.767844+00:00",
+              "revision": "9e04bfc424af676e:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/sky_kid",
+                "https://www.nintendolife.com/games/switch-eshop/sky_kid",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_sky_kid"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_sky_kid"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:06.429748+00:00",
+              "next_attempt": "2026-11-03T23:59:06.429748+00:00",
+              "revision": "9e04bfc424af676e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=sky-kid-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=sky-kid-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:15.716452+00:00",
+              "next_attempt": "2026-11-03T23:59:15.716452+00:00",
+              "revision": "9e04bfc424af676e:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-sky-kid/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-sky-kid/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-sky-kid/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-sky-kid/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:15.748499+00:00",
+              "next_attempt": "2026-11-03T23:59:15.748499+00:00",
+              "revision": "9e04bfc424af676e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Sky+Kid&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Sky+Kid&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:59:15.748611+00:00",
+              "next_attempt": "2026-11-03T00:59:15.748611+00:00",
+              "revision": "9e04bfc424af676e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:59:15.748669+00:00",
+              "next_attempt": "2026-11-03T00:59:15.748669+00:00",
+              "revision": "9e04bfc424af676e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:59:15.748611+00:00"
     },
     {
       "key": "Switch:13389",
@@ -30613,67 +30687,304 @@
       "next_retry": "2026-11-03T00:53:32.188335+00:00"
     },
     {
-      "key": "Switch:8046",
-      "title": "Sky Mercenaries Redux",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:18:49.684918+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:18586",
       "title": "Sky Reach",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:18:49.685156+00:00",
+      "attempted": "2026-11-02T23:58:10.418432+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:58:11.820821+00:00",
+              "next_attempt": "2026-11-03T23:58:11.820821+00:00",
+              "revision": "ed1147186d1946c7:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:58:11.820821+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sky-Reach-3119931.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sky-Reach-3119931.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:58:50.636524+00:00",
+              "next_attempt": "2026-11-03T23:58:50.636524+00:00",
+              "revision": "ed1147186d1946c7:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/sky_reach",
+                "https://www.nintendolife.com/games/nintendo-switch/sky_reach"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/sky_reach"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:58:51.568333+00:00",
+              "next_attempt": "2026-11-03T23:58:51.568333+00:00",
+              "revision": "ed1147186d1946c7:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=sky-reach-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=sky-reach-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:58:54.388345+00:00",
+              "next_attempt": "2026-11-03T23:58:54.388345+00:00",
+              "revision": "ed1147186d1946c7:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/sky-reach/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/sky-reach/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/sky-reach/"
+              ],
+              "url": "https://www.metacritic.com/game/sky-reach/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:58:54.420518+00:00",
+              "next_attempt": "2026-11-03T23:58:54.420518+00:00",
+              "revision": "ed1147186d1946c7:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Sky+Reach&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Sky+Reach&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:58:54.420613+00:00",
+              "next_attempt": "2026-11-03T00:58:54.420613+00:00",
+              "revision": "ed1147186d1946c7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:58:54.420669+00:00",
+              "next_attempt": "2026-11-03T00:58:54.420669+00:00",
+              "revision": "ed1147186d1946c7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:58:54.420613+00:00"
     },
     {
       "key": "Switch:9028",
       "title": "Smash Club: Streets of Shmeenis",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:18:49.686074+00:00",
+      "attempted": "2026-11-02T23:58:10.419587+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:58:14.194388+00:00",
+              "next_attempt": "2026-11-03T23:58:14.194388+00:00",
+              "revision": "0f779eff0454158b:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:58:14.194388+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Smash-Club-Streets-of-Shmeenis-1933585.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Smash-Club-Streets-of-Shmeenis-1933585.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:58:55.768309+00:00",
+              "next_attempt": "2026-11-03T23:58:55.768309+00:00",
+              "revision": "0f779eff0454158b:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/smash_club_streets_of_shmeenis",
+                "https://www.nintendolife.com/games/switch-eshop/smash_club_streets_of_shmeenis"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/smash_club_streets_of_shmeenis"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:58:56.633607+00:00",
+              "next_attempt": "2026-11-03T23:58:56.633607+00:00",
+              "revision": "0f779eff0454158b:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=smash-club-streets-of-shmeenis-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=smash-club-streets-of-shmeenis-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:01.693627+00:00",
+              "next_attempt": "2026-11-03T23:59:01.693627+00:00",
+              "revision": "0f779eff0454158b:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/smash-club-streets-of-shmeenis/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/smash-club-streets-of-shmeenis/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/smash-club-streets-of-shmeenis/"
+              ],
+              "url": "https://www.metacritic.com/game/smash-club-streets-of-shmeenis/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:01.749513+00:00",
+              "next_attempt": "2026-11-03T23:59:01.749513+00:00",
+              "revision": "0f779eff0454158b:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Smash+Club%3A+Streets+of+Shmeenis&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Smash+Club%3A+Streets+of+Shmeenis&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:59:01.749630+00:00",
+              "next_attempt": "2026-11-03T00:59:01.749630+00:00",
+              "revision": "0f779eff0454158b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:59:01.749697+00:00",
+              "next_attempt": "2026-11-03T00:59:01.749697+00:00",
+              "revision": "0f779eff0454158b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:59:01.749630+00:00"
     },
     {
       "key": "Switch:12920",
       "title": "Snow Madness",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:18:49.686693+00:00",
+      "attempted": "2026-11-02T23:58:10.437062+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:58:15.088665+00:00",
+              "next_attempt": "2026-11-03T23:58:15.088665+00:00",
+              "revision": "c0d3ceddbc7675a3:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:58:15.088665+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Snow-Madness-2294276.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Snow-Madness-2294276.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:00.632651+00:00",
+              "next_attempt": "2026-11-03T23:59:00.632651+00:00",
+              "revision": "c0d3ceddbc7675a3:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/snow_madness",
+                "https://www.nintendolife.com/games/switch-eshop/snow_madness"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/snow_madness"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:01.307152+00:00",
+              "next_attempt": "2026-11-03T23:59:01.307152+00:00",
+              "revision": "c0d3ceddbc7675a3:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=snow-madness-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=snow-madness-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:06.370506+00:00",
+              "next_attempt": "2026-11-03T23:59:06.370506+00:00",
+              "revision": "c0d3ceddbc7675a3:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/snow-madness/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/snow-madness/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/snow-madness/"
+              ],
+              "url": "https://www.metacritic.com/game/snow-madness/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:06.408611+00:00",
+              "next_attempt": "2026-11-03T23:59:06.408611+00:00",
+              "revision": "c0d3ceddbc7675a3:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Snow+Madness&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Snow+Madness&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:59:06.408700+00:00",
+              "next_attempt": "2026-11-03T00:59:06.408700+00:00",
+              "revision": "c0d3ceddbc7675a3:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:59:06.408755+00:00",
+              "next_attempt": "2026-11-03T00:59:06.408755+00:00",
+              "revision": "c0d3ceddbc7675a3:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:59:06.408700+00:00"
     },
     {
       "key": "Switch:8551",
@@ -30713,34 +31024,200 @@
       "title": "Solo Shift!",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:19:10.509518+00:00",
+      "attempted": "2026-11-02T23:58:10.438413+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:58:16.298987+00:00",
+              "next_attempt": "2026-11-03T23:58:16.298987+00:00",
+              "revision": "9c66c420f26389dc:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:58:16.298987+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Solo-Shift--3092348.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Solo-Shift--3092348.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:10.789021+00:00",
+              "next_attempt": "2026-11-03T23:59:10.789021+00:00",
+              "revision": "9c66c420f26389dc:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/solo_shift",
+                "https://www.nintendolife.com/games/nintendo-switch/solo_shift"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/solo_shift"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:11.457770+00:00",
+              "next_attempt": "2026-11-03T23:59:11.457770+00:00",
+              "revision": "9c66c420f26389dc:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=solo-shift-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=solo-shift-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:20.960267+00:00",
+              "next_attempt": "2026-11-03T23:59:20.960267+00:00",
+              "revision": "9c66c420f26389dc:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/solo-shift/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/solo-shift/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/solo-shift/"
+              ],
+              "url": "https://www.metacritic.com/game/solo-shift/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:20.995153+00:00",
+              "next_attempt": "2026-11-03T23:59:20.995153+00:00",
+              "revision": "9c66c420f26389dc:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Solo+Shift%21&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Solo+Shift%21&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:59:20.995292+00:00",
+              "next_attempt": "2026-11-03T00:59:20.995292+00:00",
+              "revision": "9c66c420f26389dc:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:59:20.995351+00:00",
+              "next_attempt": "2026-11-03T00:59:20.995351+00:00",
+              "revision": "9c66c420f26389dc:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:59:20.995292+00:00"
     },
     {
       "key": "Switch:19072",
       "title": "Solo Shift! Karaoke",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:19:25.404443+00:00",
+      "attempted": "2026-11-02T23:58:10.679853+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:58:17.390218+00:00",
+              "next_attempt": "2026-11-03T23:58:17.390218+00:00",
+              "revision": "835f5898b4786c6e:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:58:17.390218+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Solo-Shift-Karaoke-3217694.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Solo-Shift-Karaoke-3217694.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:15.772470+00:00",
+              "next_attempt": "2026-11-03T23:59:15.772470+00:00",
+              "revision": "835f5898b4786c6e:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/solo_shift_karaoke",
+                "https://www.nintendolife.com/games/nintendo-switch/solo_shift_karaoke"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/solo_shift_karaoke"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:18.708609+00:00",
+              "next_attempt": "2026-11-03T23:59:18.708609+00:00",
+              "revision": "835f5898b4786c6e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=solo-shift-karaoke-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=solo-shift-karaoke-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:25.100357+00:00",
+              "next_attempt": "2026-11-03T23:59:25.100357+00:00",
+              "revision": "835f5898b4786c6e:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/solo-shift-karaoke/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/solo-shift-karaoke/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/solo-shift-karaoke/"
+              ],
+              "url": "https://www.metacritic.com/game/solo-shift-karaoke/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:25.131265+00:00",
+              "next_attempt": "2026-11-03T23:59:25.131265+00:00",
+              "revision": "835f5898b4786c6e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Solo+Shift%21+Karaoke&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Solo+Shift%21+Karaoke&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:59:25.131404+00:00",
+              "next_attempt": "2026-11-03T00:59:25.131404+00:00",
+              "revision": "835f5898b4786c6e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:59:25.131482+00:00",
+              "next_attempt": "2026-11-03T00:59:25.131482+00:00",
+              "revision": "835f5898b4786c6e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T00:59:25.131404+00:00"
     },
     {
       "key": "Switch:5558",
@@ -30900,18 +31377,6 @@
         }
       },
       "next_retry": "2026-11-03T00:33:06.589654+00:00"
-    },
-    {
-      "key": "Switch:8961",
-      "title": "Son of a Witch",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:20:38.636853+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
     },
     {
       "key": "Switch:9741",
