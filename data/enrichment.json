@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-02T22:47:31.515272+00:00",
+  "updated": "2026-11-02T22:47:44.551841+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1374,
+    "ready": 1383,
     "missing_image": 112,
-    "missing_store": 1105,
+    "missing_store": 1096,
     "missing_rating": 477,
     "full_attempted": 1042,
     "image_health_pending": 2430
@@ -58965,7 +58965,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:15:41.497098+00:00"
+        "attempted": "2026-11-02T22:47:35.282317+00:00"
       },
       "requirements": {
         "image": true,
@@ -58977,10 +58977,11 @@
         "source": "https://www.nintendo.com/us/store/products/samurai-riot-switch/",
         "checked": "2026-11-02T18:15:43.187533+00:00"
       },
-      "basics_attempted": "2026-11-02T18:15:41.497098+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T22:47:35.282317+00:00",
+      "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
       "store_evidence": [
         {
@@ -58989,7 +58990,24 @@
           "checked": "2026-11-02T18:15:43.186993+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T22:47:35.906098+00:00",
+              "next_attempt": "2026-11-03T22:47:35.906098+00:00",
+              "revision": "9362b321c87d28ff:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Samurai+Riot%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Samurai+Riot%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "Switch:10087": {
       "title": "Samurai-Fighter Shingen",
@@ -59129,17 +59147,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/sea_of_stars",
               "platform": "Nintendo Switch",
               "weight": 12.649110640673518,
-              "normalized": 8.4
+              "normalized": 8.4,
+              "checked": "2026-11-02T18:16:10.190802+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:16:10.190802+00:00"
+        "attempted": "2026-11-02T22:47:35.587648+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -59147,8 +59166,8 @@
         "source": "https://www.nintendo.com/us/store/products/sea-of-stars-switch/",
         "checked": "2026-11-02T18:16:14.532246+00:00"
       },
-      "basics_attempted": "2026-11-02T18:16:10.190802+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T22:47:35.587648+00:00",
+      "version": 7,
       "errors": {},
       "store_evidence": [
         {
@@ -59157,7 +59176,35 @@
           "checked": "2026-11-02T18:16:14.531843+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Sea-of-Stars-2090490.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T22:47:43.290488+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Sea of Stars"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T22:47:43.290807+00:00",
+              "next_attempt": "2026-11-03T22:47:43.290807+00:00",
+              "revision": "54af40710c54eaff:7",
+              "reason": "",
+              "last_success": "2026-11-02T22:47:43.290807+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Sea-of-Stars-2090490.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Sea-of-Stars-2090490.html"
+            }
+          }
+        }
+      }
     },
     "PS5:13461": {
       "title": "Seeker: My Shadow",
@@ -116538,11 +116585,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:15:21.890241+00:00"
+        "attempted": "2026-11-02T22:47:35.282048+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -116550,8 +116597,8 @@
         "source": "https://www.nintendo.com/us/store/products/samurai-academy-paws-of-fury-switch/",
         "checked": "2026-11-02T18:15:27.507964+00:00"
       },
-      "basics_attempted": "2026-11-02T18:15:21.890241+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T22:47:35.282048+00:00",
+      "version": 7,
       "errors": {},
       "store_evidence": [
         {
@@ -116560,7 +116607,35 @@
           "checked": "2026-11-02T18:15:27.507658+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Samurai-Academy-Paws-of-Fury-2919713.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T22:47:35.586643+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Samurai Academy: Paws of Fury"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T22:47:35.586974+00:00",
+              "next_attempt": "2026-11-03T22:47:35.586974+00:00",
+              "revision": "6592a2c43078c1b4:7",
+              "reason": "",
+              "last_success": "2026-11-02T22:47:35.586974+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Samurai-Academy-Paws-of-Fury-2919713.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Samurai-Academy-Paws-of-Fury-2919713.html"
+            }
+          }
+        }
+      }
     },
     "PS5:17493": {
       "title": "Slime Heroes",
@@ -137961,11 +138036,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:15:41.497891+00:00"
+        "attempted": "2026-11-02T22:47:35.282956+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -137973,8 +138048,8 @@
         "source": "https://www.nintendo.com/us/store/products/sausage-sports-club-switch/",
         "checked": "2026-11-02T18:15:46.914992+00:00"
       },
-      "basics_attempted": "2026-11-02T18:15:41.497891+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T22:47:35.282956+00:00",
+      "version": 7,
       "errors": {},
       "store_evidence": [
         {
@@ -137983,7 +138058,35 @@
           "checked": "2026-11-02T18:15:46.914582+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sausage-Sports-Club-1404393.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T22:47:37.781958+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Sausage Sports Club"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T22:47:37.782287+00:00",
+              "next_attempt": "2026-11-03T22:47:37.782287+00:00",
+              "revision": "8083f9535c889e37:7",
+              "reason": "",
+              "last_success": "2026-11-02T22:47:37.782287+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sausage-Sports-Club-1404393.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sausage-Sports-Club-1404393.html"
+            }
+          }
+        }
+      }
     },
     "Switch:5211": {
       "title": "Shikhondo Soul Eater",
@@ -173481,7 +173584,8 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/scott_pilgrim_vs_the_world_the_game_-_complete_edition",
               "platform": "Nintendo Switch",
               "weight": 11.789826122551595,
-              "normalized": 7.5
+              "normalized": 7.5,
+              "checked": "2026-11-02T21:00:28.620945+00:00"
             }
           ],
           "source_count": 1,
@@ -173497,11 +173601,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T21:00:28.620945+00:00"
+        "attempted": "2026-11-02T22:47:35.284137+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -173509,8 +173613,8 @@
         "source": "https://www.nintendo.com/us/store/products/scott-pilgrim-vs-the-world-the-game-complete-edition-switch/",
         "checked": "2026-11-02T18:15:52.115117+00:00"
       },
-      "basics_attempted": "2026-11-02T18:15:47.333528+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T22:47:35.284137+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "Not a Switch 1 review",
@@ -173528,7 +173632,36 @@
           "checked": "2026-11-02T18:15:52.114639+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Scott-Pilgrim-vs-The-World-The-Game-Complete-Edition-1899257.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T22:47:40.124391+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Scott Pilgrim Vs. The World: The Game Complete Edition",
+        "Scott Pilgrim vs. The World™: The Game – Complete Edition"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T22:47:40.124709+00:00",
+              "next_attempt": "2026-11-03T22:47:40.124709+00:00",
+              "revision": "98ef2dff5f1590c8:7",
+              "reason": "",
+              "last_success": "2026-11-02T22:47:40.124709+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Scott-Pilgrim-vs-The-World-The-Game-Complete-Edition-1899257.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Scott-Pilgrim-vs-The-World-The-Game-Complete-Edition-1899257.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7332": {
       "title": "Sea King Hunter",
@@ -173556,11 +173689,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:16:10.189938+00:00"
+        "attempted": "2026-11-02T22:47:35.286629+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -173568,8 +173701,8 @@
         "source": "https://www.nintendo.com/us/store/products/sea-king-hunter-switch/",
         "checked": "2026-11-02T18:16:13.390708+00:00"
       },
-      "basics_attempted": "2026-11-02T18:16:10.189938+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T22:47:35.286629+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "Not a Switch 1 review"
@@ -173581,7 +173714,36 @@
           "checked": "2026-11-02T18:16:13.390425+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Seaking-Hunter-1697654.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T22:47:42.191095+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Sea King Hunter",
+        "Seaking Hunter"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T22:47:42.191405+00:00",
+              "next_attempt": "2026-11-03T22:47:42.191405+00:00",
+              "revision": "119119b1a6cdb9fb:7",
+              "reason": "",
+              "last_success": "2026-11-02T22:47:42.191405+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Seaking-Hunter-1697654.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Seaking-Hunter-1697654.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7585": {
       "title": "Sky Rogue",
@@ -180160,17 +180322,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/serious_sam_collection",
               "platform": "Nintendo Switch",
               "weight": 3.7416573867739413,
-              "normalized": 7.199999999999999
+              "normalized": 7.199999999999999,
+              "checked": "2026-11-02T18:16:33.538984+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:16:33.538984+00:00"
+        "attempted": "2026-11-02T22:47:35.906655+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -180178,8 +180341,8 @@
         "source": "https://www.nintendo.com/us/store/products/serious-sam-collection-switch/",
         "checked": "2026-11-02T18:16:39.941345+00:00"
       },
-      "basics_attempted": "2026-11-02T18:16:33.538984+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T22:47:35.906655+00:00",
+      "version": 7,
       "errors": {},
       "store_evidence": [
         {
@@ -180188,7 +180351,35 @@
           "checked": "2026-11-02T18:16:39.940997+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Serious-Sam-Collection-1874126.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T22:47:44.370621+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Serious Sam Collection"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T22:47:44.370948+00:00",
+              "next_attempt": "2026-11-03T22:47:44.370948+00:00",
+              "revision": "5de7841bcd0a7947:7",
+              "reason": "",
+              "last_success": "2026-11-02T22:47:44.370948+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Serious-Sam-Collection-1874126.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Serious-Sam-Collection-1874126.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7876": {
       "title": "Shakes on a Plane",
@@ -193342,17 +193533,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/samurai_warriors_5",
               "platform": "Nintendo Switch",
               "weight": 9.539392014169456,
-              "normalized": 6.7
+              "normalized": 6.7,
+              "checked": "2026-11-02T18:15:41.497279+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:15:41.497279+00:00"
+        "attempted": "2026-11-02T22:47:35.282653+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -193360,8 +193552,8 @@
         "source": "https://www.nintendo.com/us/store/products/samurai-warriors-5-switch/",
         "checked": "2026-11-02T18:15:46.126124+00:00"
       },
-      "basics_attempted": "2026-11-02T18:15:41.497279+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T22:47:35.282653+00:00",
+      "version": 7,
       "errors": {},
       "store_evidence": [
         {
@@ -193370,7 +193562,36 @@
           "checked": "2026-11-02T18:15:46.125606+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/SAMURAI-WARRIORS-5-1923278.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T22:47:38.850252+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Samurai Warriors 5",
+        "SAMURAI WARRIORS 5"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T22:47:38.850585+00:00",
+              "next_attempt": "2026-11-03T22:47:38.850585+00:00",
+              "revision": "654e3b70470c5072:7",
+              "reason": "",
+              "last_success": "2026-11-02T22:47:38.850585+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/SAMURAI-WARRIORS-5-1923278.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/SAMURAI-WARRIORS-5-1923278.html"
+            }
+          }
+        }
+      }
     },
     "Switch:8985": {
       "title": "Sky Force Anniversary",
@@ -200160,17 +200381,18 @@
               "url": "https://www.metacritic.com/game/savage-halloween/user-reviews/?platform=nintendo-switch",
               "platform": "Switch",
               "weight": 2.8284271247461903,
-              "normalized": 5.6
+              "normalized": 5.6,
+              "checked": "2026-11-02T18:15:41.498150+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:15:41.498150+00:00"
+        "attempted": "2026-11-02T22:47:35.283226+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -200178,8 +200400,8 @@
         "source": "https://www.nintendo.com/us/store/products/savage-halloween-switch/",
         "checked": "2026-11-02T18:15:48.018156+00:00"
       },
-      "basics_attempted": "2026-11-02T18:15:41.498150+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T22:47:35.283226+00:00",
+      "version": 7,
       "errors": {
         "nindie": "Not a Switch 1 review"
       },
@@ -200190,7 +200412,35 @@
           "checked": "2026-11-02T18:15:48.017729+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Savage-Halloween-1957340.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T22:47:36.652996+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Savage Halloween"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T22:47:36.653321+00:00",
+              "next_attempt": "2026-11-03T22:47:36.653321+00:00",
+              "revision": "f313c030d6cf5954:7",
+              "reason": "",
+              "last_success": "2026-11-02T22:47:36.653321+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Savage-Halloween-1957340.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Savage-Halloween-1957340.html"
+            }
+          }
+        }
+      }
     },
     "Switch:9093": {
       "title": "Scribblenauts Mega Pack",
@@ -200223,17 +200473,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/scribblenauts_mega_pack",
               "platform": "Nintendo Switch",
               "weight": 5.916079783099616,
-              "normalized": 7.7
+              "normalized": 7.7,
+              "checked": "2026-11-02T18:16:10.189682+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:16:10.189682+00:00"
+        "attempted": "2026-11-02T22:47:35.286220+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -200241,8 +200492,8 @@
         "source": "https://www.nintendo.com/us/store/products/scribblenauts-mega-pack-switch/",
         "checked": "2026-11-02T18:16:12.134153+00:00"
       },
-      "basics_attempted": "2026-11-02T18:16:10.189682+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T22:47:35.286220+00:00",
+      "version": 7,
       "errors": {},
       "store_evidence": [
         {
@@ -200251,7 +200502,36 @@
           "checked": "2026-11-02T18:16:12.133749+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Scribblenauts-Mega-Pack-1442451.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T22:47:41.063343+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Scribblenauts Mega Pack",
+        "Scribblenauts Mega Pack "
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T22:47:41.063665+00:00",
+              "next_attempt": "2026-11-03T22:47:41.063665+00:00",
+              "revision": "5fcff68949013df1:7",
+              "reason": "",
+              "last_success": "2026-11-02T22:47:41.063665+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Scribblenauts-Mega-Pack-1442451.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Scribblenauts-Mega-Pack-1442451.html"
+            }
+          }
+        }
+      }
     },
     "PS5:9238": {
       "title": "Shing!",
