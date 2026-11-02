@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:14:48.979887+00:00",
+  "updated": "2026-11-02T18:15:17.481631+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
-    "attempted": 1752,
-    "ready": 1118,
-    "missing_image": 964,
-    "missing_store": 1039,
-    "missing_rating": 1327,
+    "attempted": 1762,
+    "ready": 1124,
+    "missing_image": 956,
+    "missing_store": 1031,
+    "missing_rating": 1321,
     "full_attempted": 0
   },
   "games": {
@@ -45953,21 +45953,42 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:14:51.780267+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/sunsoft-mahjong-solitaire-shanghai-legend-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:14:54.787941+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000072676/a2d3580ddf9bc4fa78e14e15242491758894fd18e412f372743e90da8af6f350",
+        "source": "https://www.nintendo.com/us/store/products/sunsoft-mahjong-solitaire-shanghai-legend-switch/",
+        "checked": "2026-11-02T18:14:54.788234+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:14:51.780267+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "PS5:12485": {
@@ -45977,22 +45998,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.96,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.48,
+              "count": 120,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP2005-PPSA08297_00-SUPERCHICKENJUMP",
+              "checked": "2026-11-02T18:14:54.982029+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 10.954451150103322,
+              "normalized": 8.96
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:14:51.781175+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP2005-PPSA08297_00-SUPERCHICKENJUMP",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:14:54.982029+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202210/1310/gjUjq6idptJ5THCPwmdSXjrL.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP2005-PPSA08297_00-SUPERCHICKENJUMP",
+        "checked": "2026-11-02T18:14:54.982029+00:00"
+      },
+      "user": {
+        "score": 4.48,
+        "count": 120,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP2005-PPSA08297_00-SUPERCHICKENJUMP",
+        "checked": "2026-11-02T18:14:54.982029+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP2005-PPSA08297_00-SUPERCHICKENJUMP",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP2005-PPSA08297_00-SUPERCHICKENJUMP",
+        "checked": "2026-11-02T18:14:54.982029+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:14:51.781175+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:12482": {
       "title": "SUPER CHICKEN JUMPER",
@@ -46001,36 +46070,52 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:14:51.781378+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/super-chicken-jumper-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:14:57.188545+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000053900/2f285b212dae1278a2c5b216188196381c788ba24ff80813a3e3655030642a39",
+        "source": "https://www.nintendo.com/us/store/products/super-chicken-jumper-switch/",
+        "checked": "2026-11-02T18:14:57.188854+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:14:51.781378+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:6147": {
       "title": "Sackboy: A Big Adventure",
       "platform": "PS5",
       "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/b/bc/Sackboy_-_A_Big_Adventure_cover_art.jpg",
-        "page": "https://en.wikipedia.org/wiki/Sackboy%3A_A_Big_Adventure"
+        "url": "https://image.api.playstation.com/vulcan/img/rnd/202010/1614/QeorUUNJVInkK3jmwDkHgK9t.png",
+        "source": "https://store.playstation.com/pt-pt/concept/10000177",
+        "checked": "2026-11-02T18:14:56.248426+00:00"
       },
       "store": {
         "url": "https://store.playstation.com/pt-pt/concept/10000177",
         "label": "Abrir na PlayStation Store",
-        "checked": "2026-11-02T13:11:42.975860+00:00",
-        "error": null,
-        "attempted": "2026-11-02T15:59:25.914544+00:00"
+        "checked": "2026-11-02T18:14:56.248426+00:00"
       },
       "trailer": {
         "id": "ZOk3fj5ujNM",
@@ -46046,56 +46131,67 @@
         "in_catalog": true,
         "tier": "Extra",
         "product_id": "EP9000-PPSA01288_00-SACKBOYADVENTURE",
-        "source": "https://store.playstation.com/pt-pt/concept/10000177",
         "region": "PT",
-        "checked": "2026-11-02T16:00:04.400861+00:00",
-        "error": null,
-        "attempted": "2026-11-02T16:00:04.400876+00:00"
+        "source": "https://store.playstation.com/pt-pt/concept/10000177",
+        "checked": "2026-11-02T18:14:56.248426+00:00"
       },
       "ratings": {
         "critic": {
           "score": 79.0,
           "scale": 100,
-          "source_count": 1,
-          "method": "single-source",
           "sources": [
             {
-              "score": 79,
-              "scale": 100,
-              "source": "Metacritic",
-              "url": "https://www.metacritic.com/game/sackboy-a-big-adventure/critic-reviews/?platform=playstation-5",
-              "checked": "2026-11-02T13:11:40.932136+00:00",
               "name": "Metacritic",
+              "score": 79,
+              "url": "https://www.metacritic.com/game/sackboy-a-big-adventure/critic-reviews/?platform=playstation-5",
               "platform": "PS5"
             }
-          ]
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": 8.64,
           "scale": 10,
-          "source_count": 1,
-          "method": "single-source",
           "sources": [
             {
               "score": 4.32,
-              "count": 30025,
+              "count": 30030,
               "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
               "scale": 5,
               "source": "PSN",
               "url": "https://store.playstation.com/pt-pt/concept/10000177",
-              "checked": "2026-11-02T13:11:42.975860+00:00",
-              "name": "PSN",
-              "platform": "PSN · PS4/PS5"
+              "checked": "2026-11-02T18:14:56.248426+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 8.64
             }
-          ]
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T13:11:42.975882+00:00"
+        "attempted": "2026-11-02T18:14:54.989636+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
         "rating": true
-      }
+      },
+      "user": {
+        "score": 4.32,
+        "count": 30030,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/concept/10000177",
+        "checked": "2026-11-02T18:14:56.248426+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "basics_attempted": "2026-11-02T18:14:54.989636+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:14517": {
       "title": "Sagaia",
@@ -70860,21 +70956,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:14:51.779548+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:14:51.779548+00:00",
+      "version": 3,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "Switch:16795": {
@@ -70882,23 +70986,49 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/steam-hearts-saturn-tribute",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:14:51.780001+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/steam-hearts-saturn-tribute-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:14:53.151687+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000090666/c66e8671269597247d29d477ee556c43c47acb4723c12773be79a000e72effcb",
+        "source": "https://www.nintendo.com/us/store/products/steam-hearts-saturn-tribute-switch/",
+        "checked": "2026-11-02T18:14:53.151986+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:14:51.780001+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:16999": {
@@ -81010,45 +81140,118 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.62,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.81,
+              "count": 441,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/JP0101-PPSA30553_00-SUPERBOMBERMANCO",
+              "checked": "2026-11-02T18:14:53.863657+00:00",
+              "platform": "PSN · PS5",
+              "weight": 21.0,
+              "normalized": 9.62
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:14:51.780629+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/JP0101-PPSA30553_00-SUPERBOMBERMANCO",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:14:53.863657+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202601/2206/39e07032f1a69fa5767178f50cbe7ae94d321b7a851d15f8.png",
+        "source": "https://store.playstation.com/pt-pt/product/JP0101-PPSA30553_00-SUPERBOMBERMANCO",
+        "checked": "2026-11-02T18:14:53.863657+00:00"
+      },
+      "user": {
+        "score": 4.81,
+        "count": 441,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/JP0101-PPSA30553_00-SUPERBOMBERMANCO",
+        "checked": "2026-11-02T18:14:53.863657+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "JP0101-PPSA30553_00-SUPERBOMBERMANCO",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/JP0101-PPSA30553_00-SUPERBOMBERMANCO",
+        "checked": "2026-11-02T18:14:53.863657+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:14:51.780629+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:17935": {
       "title": "SUPER BOMBERMAN COLLECTION",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Universo Nintendo",
+              "score": 80,
+              "url": "https://universonintendo.com/analise-super-bomberman-collection/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:14:51.780986+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/super-bomberman-collection-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:14:55.504316+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000099268/6d24a983f8adc65528262beca39112d921c1dfaa7dafbf6279a6c4245db53bdd",
+        "source": "https://www.nintendo.com/us/store/products/super-bomberman-collection-switch/",
+        "checked": "2026-11-02T18:14:55.504727+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:14:51.780986+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:17676": {
@@ -121491,24 +121694,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-metboy-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:14:51.781518+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/super-metboy-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:14:57.894297+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000033317/3b85ccab589aad8fda74da2e907ea58b2b95b02373b87d648202449dd80d8e1c",
+        "source": "https://www.nintendo.com/us/store/products/super-metboy-switch/",
+        "checked": "2026-11-02T18:14:57.894591+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:14:51.781518+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:8869": {
       "title": "Samurai Warriors 5",
@@ -125179,23 +125405,51 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 65.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Video Chums",
+              "score": 65,
+              "url": "https://videochums.com/review/arcade-archives-saboten-bombers",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:14:53.871840+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-SABOTEN-BOMBERS-1952432.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:14:59.053344+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ArcadeArchivesSabotenBombers_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-SABOTEN-BOMBERS-1952432.html",
+        "checked": "2026-11-02T18:14:59.053344+00:00"
+      },
+      "aliases": [
+        "Arcade Archives SABOTEN BOMBERS"
+      ],
+      "basics_attempted": "2026-11-02T18:14:53.871840+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:9458": {
