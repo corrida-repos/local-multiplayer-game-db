@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:09:10.510877+00:00",
+  "updated": "2026-11-02T18:09:30.985342+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
-    "attempted": 1622,
-    "ready": 1020,
-    "missing_image": 1082,
-    "missing_store": 1156,
-    "missing_rating": 1427,
+    "attempted": 1632,
+    "ready": 1028,
+    "missing_image": 1072,
+    "missing_store": 1146,
+    "missing_rating": 1419,
     "full_attempted": 0
   },
   "games": {
@@ -44019,45 +44019,125 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.3,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.65,
+              "count": 110,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP1465-PPSA03460_00-7520853534785112",
+              "checked": "2026-11-02T18:09:19.518603+00:00",
+              "platform": "PSN · PS5",
+              "weight": 10.488088481701515,
+              "normalized": 7.3
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:09:14.112887+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP1465-PPSA03460_00-7520853534785112",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:09:19.518603+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202109/0803/b6i6vP9rQm3AqETKpcFswjVV.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP1465-PPSA03460_00-7520853534785112",
+        "checked": "2026-11-02T18:09:19.518603+00:00"
+      },
+      "user": {
+        "score": 3.65,
+        "count": 110,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP1465-PPSA03460_00-7520853534785112",
+        "checked": "2026-11-02T18:09:19.518603+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP1465-PPSA03460_00-7520853534785112",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP1465-PPSA03460_00-7520853534785112",
+        "checked": "2026-11-02T18:09:19.518603+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:09:14.112887+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:11805": {
       "title": "RESEARCH and DESTROY",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 65.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Cubed3",
+              "score": 60,
+              "url": "http://www.cubed3.com/review/6634/1/research-and-destroy-nintendo-switch.html",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-research-and-destroy-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 2
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:09:15.325109+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/research-and-destroy-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:09:19.184463+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000040109/ba30f6c6f17cf93f15e2ad85b94d2a9c8ce576009216ac2e107a712599aa81ac",
+        "source": "https://www.nintendo.com/us/store/products/research-and-destroy-switch/",
+        "checked": "2026-11-02T18:09:19.184791+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:09:15.325109+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:10368": {
@@ -59446,22 +59526,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.56,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.28,
+              "count": 18296,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP4389-PPSA23372_00-ANIMALGAMEGLOBAL",
+              "checked": "2026-11-02T18:09:17.797984+00:00",
+              "platform": "PSN · PS5",
+              "weight": 31.622776601683793,
+              "normalized": 8.56
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:09:13.290125+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP4389-PPSA23372_00-ANIMALGAMEGLOBAL",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:09:17.797984+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2109/25422d8bda53b48e35f690b9d68590ab3f5eb4df8755c84f.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP4389-PPSA23372_00-ANIMALGAMEGLOBAL",
+        "checked": "2026-11-02T18:09:17.797984+00:00"
+      },
+      "user": {
+        "score": 4.28,
+        "count": 18296,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP4389-PPSA23372_00-ANIMALGAMEGLOBAL",
+        "checked": "2026-11-02T18:09:17.797984+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP4389-PPSA23372_00-ANIMALGAMEGLOBAL",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP4389-PPSA23372_00-ANIMALGAMEGLOBAL",
+        "checked": "2026-11-02T18:09:17.797984+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:09:13.290125+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:15820": {
       "title": "Revenge of the Savage Planet",
@@ -78122,21 +78250,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:09:13.288088+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/raiden-fighters-2-remix-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:09:14.801005+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000094696/2df8e9e10795073c32b4650299db821553e293ec1f8990d282c6246d01691795",
+        "source": "https://www.nintendo.com/us/store/products/raiden-fighters-2-remix-switch/",
+        "checked": "2026-11-02T18:09:14.801294+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:09:13.288088+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:17981": {
@@ -78146,22 +78291,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.62,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.31,
+              "count": 13,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28756_00-0798622566175268",
+              "checked": "2026-11-02T18:09:14.105894+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 3.605551275463989,
+              "normalized": 8.62
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:09:13.288298+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28756_00-0798622566175268",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:09:14.105894+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202601/2102/347c23d3ef6538224cb88265ccd77c2b7f416199ad742118.png",
+        "source": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28756_00-0798622566175268",
+        "checked": "2026-11-02T18:09:14.105894+00:00"
+      },
+      "user": {
+        "score": 4.31,
+        "count": 13,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28756_00-0798622566175268",
+        "checked": "2026-11-02T18:09:14.105894+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "HP5035-PPSA28756_00-0798622566175268",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28756_00-0798622566175268",
+        "checked": "2026-11-02T18:09:14.105894+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:09:13.288298+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:17993": {
       "title": "RAIDEN FIGHTERS JET REMIX",
@@ -78170,21 +78363,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:09:13.288583+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/raiden-fighters-jet-remix-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:09:15.499801+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000094700/b96ae72038b0082daccebbe110bb5169be9317b5b027b958b8867938a424ca8e",
+        "source": "https://www.nintendo.com/us/store/products/raiden-fighters-jet-remix-switch/",
+        "checked": "2026-11-02T18:09:15.500090+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:09:13.288583+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:17979": {
@@ -78194,45 +78404,125 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.0,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4,
+              "count": 9,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28761_00-0272864766810005",
+              "checked": "2026-11-02T18:09:15.318282+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 3.0,
+              "normalized": 8.0
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:09:13.289144+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28761_00-0272864766810005",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:09:15.318282+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202510/2204/5f15464603cbc4e63b132ba9e0859f4e007e7a0993ef7fef.png",
+        "source": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28761_00-0272864766810005",
+        "checked": "2026-11-02T18:09:15.318282+00:00"
+      },
+      "user": {
+        "score": 4,
+        "count": 9,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28761_00-0272864766810005",
+        "checked": "2026-11-02T18:09:15.318282+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "HP5035-PPSA28761_00-0272864766810005",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28761_00-0272864766810005",
+        "checked": "2026-11-02T18:09:15.318282+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:09:13.289144+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:17992": {
       "title": "RAIDEN FIGHTERS REMIX",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 74.5,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Tech-Gaming",
+              "score": 69,
+              "url": "https://www.tech-gaming.com/raiden-fighters-remix-collection/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 80,
+              "url": "https://ztgd.com/reviews/raiden-fighters-remix-collection-switch/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 2
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:09:13.289429+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/raiden-fighters-remix-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:09:16.484025+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000094704/2c0dfb9ef9795b0ad5eac5803a35bc8366f0f8523b8850a333cda90c7dee7849",
+        "source": "https://www.nintendo.com/us/store/products/raiden-fighters-remix-switch/",
+        "checked": "2026-11-02T18:09:16.484317+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:09:13.289429+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:17986": {
@@ -78242,45 +78532,118 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.74,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.37,
+              "count": 92,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28754_00-0957590466546733",
+              "checked": "2026-11-02T18:09:16.501240+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 9.591663046625438,
+              "normalized": 8.74
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:09:13.289631+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28754_00-0957590466546733",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:09:16.501240+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202510/2204/f6ee5f91228ebb9999f56634926bdf8595527f5bca533d7f.png",
+        "source": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28754_00-0957590466546733",
+        "checked": "2026-11-02T18:09:16.501240+00:00"
+      },
+      "user": {
+        "score": 4.37,
+        "count": 92,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28754_00-0957590466546733",
+        "checked": "2026-11-02T18:09:16.501240+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "HP5035-PPSA28754_00-0957590466546733",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28754_00-0957590466546733",
+        "checked": "2026-11-02T18:09:16.501240+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:09:13.289631+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:17987": {
       "title": "RAIDEN FIGHTERS REMIX COLLECTION",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 88.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 88.00000000000001,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=raiden-fighters-remix-collection-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:09:13.289922+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/raiden-fighters-remix-collection-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:09:18.502236+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000094691/76ebe40b252aa0f14e911e3ca24555b17c258348561f77a1b32e7b36370b2aa1",
+        "source": "https://www.nintendo.com/us/store/products/raiden-fighters-remix-collection-switch/",
+        "checked": "2026-11-02T18:09:18.502523+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:09:13.289922+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone"
       }
     },
     "PS5:17942": {
