@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:47:21.998118+00:00",
+  "updated": "2026-11-02T18:47:42.534749+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
-    "attempted": 2442,
-    "ready": 1566,
-    "missing_image": 373,
-    "missing_store": 475,
-    "missing_rating": 836,
+    "attempted": 2452,
+    "ready": 1571,
+    "missing_image": 367,
+    "missing_store": 469,
+    "missing_rating": 829,
     "full_attempted": 0
   },
   "games": {
@@ -56675,21 +56675,32 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:47:25.785624+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:47:25.785624+00:00",
+      "version": 3,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 403: Forbidden",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "PS5:12492": {
@@ -68311,23 +68322,53 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 86.7,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Gaming Nexus",
+              "score": 90,
+              "url": "https://www.gamingnexus.com/Article/14130/Wildermyth-Console-Edition/",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "https://www.godisageek.com/reviews/wildermyth-console-review/",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 80,
+              "url": "https://psxbrasil.com.br/analise/wildermyth-console-edition-review/",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 3
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:47:25.787575+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "basics_attempted": "2026-11-02T18:47:25.787575+00:00",
+      "version": 3,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 403: Forbidden"
       }
     },
     "Switch:15752": {
@@ -68335,23 +68376,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 76.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 76.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=wildermyth-console-edition-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:47:27.907282+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/wildermyth-console-edition-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:47:31.924097+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000066482/a9afa2fe1a92eaa85a7763334371dbed7d46cfd1c58dafd6b31551175c008346",
+        "source": "https://www.nintendo.com/us/store/products/wildermyth-console-edition-switch/",
+        "checked": "2026-11-02T18:47:31.924562+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:47:27.907282+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:15757": {
@@ -80523,22 +80589,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.3,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.65,
+              "count": 17,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP6718-PPSA30458_00-0709094391680399",
+              "checked": "2026-11-02T18:47:29.521830+00:00",
+              "platform": "PSN · PS5",
+              "weight": 4.123105625617661,
+              "normalized": 7.3
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:47:25.787341+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP6718-PPSA30458_00-0709094391680399",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:47:29.521830+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0211/39a37d787f73981aff4c965029a1f4d525e8b97e76c39ce8.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP6718-PPSA30458_00-0709094391680399",
+        "checked": "2026-11-02T18:47:29.521830+00:00"
+      },
+      "user": {
+        "score": 3.65,
+        "count": 17,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP6718-PPSA30458_00-0709094391680399",
+        "checked": "2026-11-02T18:47:29.521830+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP6718-PPSA30458_00-0709094391680399",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP6718-PPSA30458_00-0709094391680399",
+        "checked": "2026-11-02T18:47:29.521830+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:47:25.787341+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:17083": {
       "title": "Wizard of Legend II",
@@ -92401,22 +92515,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.58,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.29,
+              "count": 7,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP3024-PPSA33329_00-WHOOWASITRAPS5WW",
+              "checked": "2026-11-02T18:47:27.893891+00:00",
+              "platform": "PSN · PS5",
+              "weight": 2.6457513110645907,
+              "normalized": 6.58
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:47:25.786080+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP3024-PPSA33329_00-WHOOWASITRAPS5WW",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:47:27.893891+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2711/fd6a7771a68fe3dd02cafb4d2f20e353e1c35e5ea9bea937.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP3024-PPSA33329_00-WHOOWASITRAPS5WW",
+        "checked": "2026-11-02T18:47:27.893891+00:00"
+      },
+      "user": {
+        "score": 3.29,
+        "count": 7,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP3024-PPSA33329_00-WHOOWASITRAPS5WW",
+        "checked": "2026-11-02T18:47:27.893891+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP3024-PPSA33329_00-WHOOWASITRAPS5WW",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP3024-PPSA33329_00-WHOOWASITRAPS5WW",
+        "checked": "2026-11-02T18:47:27.893891+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:47:25.786080+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:17825": {
       "title": "Whoowasit?",
@@ -92425,21 +92587,41 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:47:25.786548+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/whoowasit-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:47:29.188202+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000093674/6a00e04eae9752f432c94b268e37956cc07ea42f9c1049d4c148eec75f10ae91",
+        "source": "https://www.nintendo.com/us/store/products/whoowasit-switch/",
+        "checked": "2026-11-02T18:47:29.188486+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:47:25.786548+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 301: Moved Permanently",
+        "metacritic_reviews": "HTTP Error 301: Moved Permanently"
       }
     },
     "PS5:17647": {
@@ -107298,23 +107480,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 75.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=wild-guns-reloaded-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:47:25.787102+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/wild-guns-reloaded-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:47:30.596537+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000007982/c84361b3050040fed84ef26c44b567bc9ec99316351b82f72e68c902ff4eb271",
+        "source": "https://www.nintendo.com/us/store/products/wild-guns-reloaded-switch/",
+        "checked": "2026-11-02T18:47:30.596969+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:47:25.787102+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:5203": {
@@ -131740,23 +131947,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 65.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "GameCritics",
+              "score": 60,
+              "url": "https://gamecritics.com/gc-staff/what-the-fork-review/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-what-the-fork-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 2
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:47:25.785412+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "basics_attempted": "2026-11-02T18:47:25.785412+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:7994": {
@@ -131764,23 +131995,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 85.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 85.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=wildfire-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:47:28.272040+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/wildfire-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:47:33.209897+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000030993/0257f64abbecea6035f3fe329c375671ce2609001d99ac7a1e17d87989993747",
+        "source": "https://www.nintendo.com/us/store/products/wildfire-switch/",
+        "checked": "2026-11-02T18:47:33.210285+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:47:28.272040+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:8044": {
@@ -135971,21 +136227,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:47:25.786846+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:47:25.786846+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:8381": {
