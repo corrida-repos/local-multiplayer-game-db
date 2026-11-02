@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-02T23:12:04.399799+00:00",
+  "updated": "2026-11-02T23:14:55.351233+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
     "ready": 1829,
     "missing_image": 111,
-    "missing_store": 614,
+    "missing_store": 607,
     "missing_rating": 464,
     "full_attempted": 1042,
     "image_health_pending": 2431
@@ -39289,23 +39289,26 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:39:26.156201+00:00"
+        "attempted": "2026-11-02T23:12:08.523017+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T19:30:46.257192+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:12:08.523017+00:00",
+      "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "The read operation timed out",
         "metacritic_critics": "HTTP Error 404: Not Found",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:39:28.932457+00:00",
       "store_evidence": [
@@ -39316,7 +39319,105 @@
           "note": "Incluído na aplicação Super Nintendo do Nintendo Switch Online."
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Nintendo-Entertainment-System-Nintendo-Classics-1632515.html",
+        "label": "Ver no Nintendo Switch Online",
+        "checked": "2026-11-02T23:12:10.036543+00:00",
+        "region": "PT",
+        "verified": true,
+        "note": "Incluído na aplicação Super Nintendo do Nintendo Switch Online."
+      },
+      "aliases": [
+        "Kirby Super Star",
+        "Super Nintendo Entertainment System Nintendo Switch Online",
+        "Super Nintendo Entertainment System Nintendo Classics",
+        "Super Nintendo Entertainment System – Nintendo Classics"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:12:10.036989+00:00",
+              "next_attempt": "2026-11-03T23:12:10.036989+00:00",
+              "revision": "78949be27a382ef3:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:12:10.036989+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Nintendo-Entertainment-System-Nintendo-Classics-1632515.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Nintendo-Entertainment-System-Nintendo-Classics-1632515.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:38.743095+00:00",
+              "next_attempt": "2026-11-03T23:14:38.743095+00:00",
+              "revision": "78949be27a382ef3:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/super_nintendo_entertainment_system_nintendo_switch_online",
+                "https://www.nintendolife.com/games/nintendo-switch/super_nintendo_entertainment_system_nintendo_classics",
+                "https://www.nintendolife.com/games/switch-eshop/super_nintendo_entertainment_system_nintendo_classics"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/super_nintendo_entertainment_system_nintendo_classics"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:39.398271+00:00",
+              "next_attempt": "2026-11-03T23:14:39.398271+00:00",
+              "revision": "78949be27a382ef3:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=kirby-super-star-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=kirby-super-star-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:47.059375+00:00",
+              "next_attempt": "2026-11-03T23:14:47.059375+00:00",
+              "revision": "78949be27a382ef3:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/super-nintendo-entertainment-system-nintendo-classics/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/super-nintendo-entertainment-system-nintendo-classics/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/super-nintendo-entertainment-system-nintendo-classics/"
+              ],
+              "url": "https://www.metacritic.com/game/super-nintendo-entertainment-system-nintendo-classics/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:47.120496+00:00",
+              "next_attempt": "2026-11-03T23:14:47.120496+00:00",
+              "revision": "78949be27a382ef3:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Kirby+Super+Star&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Kirby+Super+Star&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:14:47.120697+00:00",
+              "next_attempt": "2026-11-03T00:14:47.120697+00:00",
+              "revision": "78949be27a382ef3:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:14:47.120845+00:00",
+              "next_attempt": "2026-11-03T00:14:47.120845+00:00",
+              "revision": "78949be27a382ef3:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:11198": {
       "title": "Kirby and the Forgotten Land",
@@ -40541,23 +40642,26 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:39:31.508582+00:00"
+        "attempted": "2026-11-02T23:12:08.524063+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T19:31:26.270952+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:12:08.524063+00:00",
+      "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:39:34.126877+00:00",
       "store_evidence": [
@@ -40568,7 +40672,105 @@
           "note": "Incluído na aplicação Super Nintendo do Nintendo Switch Online."
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Nintendo-Entertainment-System-Nintendo-Classics-1632515.html",
+        "label": "Ver no Nintendo Switch Online",
+        "checked": "2026-11-02T23:12:11.874279+00:00",
+        "region": "PT",
+        "verified": true,
+        "note": "Incluído na aplicação Super Nintendo do Nintendo Switch Online."
+      },
+      "aliases": [
+        "Kirby's Dream Land 3",
+        "Super Nintendo Entertainment System Nintendo Switch Online",
+        "Super Nintendo Entertainment System Nintendo Classics",
+        "Super Nintendo Entertainment System – Nintendo Classics"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:12:11.874684+00:00",
+              "next_attempt": "2026-11-03T23:12:11.874684+00:00",
+              "revision": "0604025d93538b97:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:12:11.874684+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Nintendo-Entertainment-System-Nintendo-Classics-1632515.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Nintendo-Entertainment-System-Nintendo-Classics-1632515.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:43.721072+00:00",
+              "next_attempt": "2026-11-03T23:14:43.721072+00:00",
+              "revision": "0604025d93538b97:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/super_nintendo_entertainment_system_nintendo_switch_online",
+                "https://www.nintendolife.com/games/nintendo-switch/super_nintendo_entertainment_system_nintendo_classics",
+                "https://www.nintendolife.com/games/switch-eshop/super_nintendo_entertainment_system_nintendo_classics"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/super_nintendo_entertainment_system_nintendo_classics"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:49.189744+00:00",
+              "next_attempt": "2026-11-03T23:14:49.189744+00:00",
+              "revision": "0604025d93538b97:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=kirbys-dream-land-3-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=kirbys-dream-land-3-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:55.069322+00:00",
+              "next_attempt": "2026-11-03T23:14:55.069322+00:00",
+              "revision": "0604025d93538b97:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/super-nintendo-entertainment-system-nintendo-classics/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/super-nintendo-entertainment-system-nintendo-classics/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/super-nintendo-entertainment-system-nintendo-classics/"
+              ],
+              "url": "https://www.metacritic.com/game/super-nintendo-entertainment-system-nintendo-classics/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:55.157006+00:00",
+              "next_attempt": "2026-11-03T23:14:55.157006+00:00",
+              "revision": "0604025d93538b97:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Kirby%27s+Dream+Land+3&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Kirby%27s+Dream+Land+3&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:14:55.157209+00:00",
+              "next_attempt": "2026-11-03T00:14:55.157209+00:00",
+              "revision": "0604025d93538b97:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:14:55.157413+00:00",
+              "next_attempt": "2026-11-03T00:14:55.157413+00:00",
+              "revision": "0604025d93538b97:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:12520": {
       "title": "Kirby's Return to Dream Land Deluxe",
@@ -41729,11 +41931,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:39:45.887642+00:00"
+        "attempted": "2026-11-02T23:12:08.526045+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -41741,12 +41943,14 @@
         "source": "https://www.nintendo.com/us/store/products/knightout-switch/",
         "checked": "2026-11-02T19:31:29.665638+00:00"
       },
-      "basics_attempted": "2026-11-02T19:31:26.271368+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:12:08.526045+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:39:49.057338+00:00",
       "store_evidence": [
@@ -41756,7 +41960,100 @@
           "checked": "2026-11-02T19:31:29.665389+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/KnightOut-2218229.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:12:08.830584+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "KnightOut"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:12:08.830893+00:00",
+              "next_attempt": "2026-11-03T23:12:08.830893+00:00",
+              "revision": "3c8641b5ec7a4dbf:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:12:08.830893+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/KnightOut-2218229.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/KnightOut-2218229.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:12:48.891494+00:00",
+              "next_attempt": "2026-11-03T23:12:48.891494+00:00",
+              "revision": "3c8641b5ec7a4dbf:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/knightout",
+                "https://www.nintendolife.com/games/nintendo-switch/knightout"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/knightout"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:12:52.736175+00:00",
+              "next_attempt": "2026-11-03T23:12:52.736175+00:00",
+              "revision": "3c8641b5ec7a4dbf:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=knightout-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=knightout-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:12:55.733577+00:00",
+              "next_attempt": "2026-11-03T23:12:55.733577+00:00",
+              "revision": "3c8641b5ec7a4dbf:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/knightout/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/knightout/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/knightout/"
+              ],
+              "url": "https://www.metacritic.com/game/knightout/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:12:55.820177+00:00",
+              "next_attempt": "2026-11-03T23:12:55.820177+00:00",
+              "revision": "3c8641b5ec7a4dbf:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=KnightOut&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=KnightOut&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:12:55.820291+00:00",
+              "next_attempt": "2026-11-03T00:12:55.820291+00:00",
+              "revision": "3c8641b5ec7a4dbf:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:12:55.820346+00:00",
+              "next_attempt": "2026-11-03T00:12:55.820346+00:00",
+              "revision": "3c8641b5ec7a4dbf:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:10255": {
       "title": "Knights & Guns",
@@ -42017,11 +42314,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:39:39.350695+00:00"
+        "attempted": "2026-11-02T23:12:08.532677+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -42029,13 +42326,15 @@
         "source": "https://www.nintendo.com/us/store/products/kumi-daiko-beatoff-switch/",
         "checked": "2026-11-02T19:31:32.767684+00:00"
       },
-      "basics_attempted": "2026-11-02T19:31:26.271822+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:12:08.532677+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:39:42.334477+00:00",
       "store_evidence": [
@@ -42045,7 +42344,100 @@
           "checked": "2026-11-02T19:31:32.767425+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Kumi-Daiko-Beatoff-2478673.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:12:14.476452+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Kumi-Daiko Beatoff"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:12:14.476775+00:00",
+              "next_attempt": "2026-11-03T23:12:14.476775+00:00",
+              "revision": "dfef4d4166b3941f:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:12:14.476775+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Kumi-Daiko-Beatoff-2478673.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Kumi-Daiko-Beatoff-2478673.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:28.738050+00:00",
+              "next_attempt": "2026-11-03T23:13:28.738050+00:00",
+              "revision": "dfef4d4166b3941f:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/kumi_daiko_beatoff",
+                "https://www.nintendolife.com/games/switch-eshop/kumi_daiko_beatoff"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/kumi_daiko_beatoff"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:31.141428+00:00",
+              "next_attempt": "2026-11-03T23:13:31.141428+00:00",
+              "revision": "dfef4d4166b3941f:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=kumi-daiko-beatoff-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=kumi-daiko-beatoff-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:33.255184+00:00",
+              "next_attempt": "2026-11-03T23:13:33.255184+00:00",
+              "revision": "dfef4d4166b3941f:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/kumi-daiko-beatoff/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/kumi-daiko-beatoff/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/kumi-daiko-beatoff/"
+              ],
+              "url": "https://www.metacritic.com/game/kumi-daiko-beatoff/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:33.338980+00:00",
+              "next_attempt": "2026-11-03T23:13:33.338980+00:00",
+              "revision": "dfef4d4166b3941f:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Kumi-Daiko+Beatoff&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Kumi-Daiko+Beatoff&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:13:33.339105+00:00",
+              "next_attempt": "2026-11-03T00:13:33.339105+00:00",
+              "revision": "dfef4d4166b3941f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:13:33.339164+00:00",
+              "next_attempt": "2026-11-03T00:13:33.339164+00:00",
+              "revision": "dfef4d4166b3941f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:13400": {
       "title": "Kung Fury: Street Rage - ULTIMATE EDITION",
@@ -42284,11 +42676,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:40:11.485869+00:00"
+        "attempted": "2026-11-02T23:13:08.005867+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -42296,15 +42688,19 @@
         "source": "https://www.nintendo.com/us/store/products/l-o-l-surprise-b-b-s-born-to-travel-switch/",
         "checked": "2026-11-02T19:32:19.132148+00:00"
       },
-      "basics_attempted": "2026-11-02T19:32:18.030918+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:13:08.005867+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:40:14.455367+00:00",
       "store_evidence": [
@@ -42314,7 +42710,102 @@
           "checked": "2026-11-02T19:32:19.131750+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/L-O-L-Surprise-B-B-s-BORN-TO-TRAVEL--2267584.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:13:08.270109+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "L.O.L. Surprise! B.B.s BORN TO TRAVEL",
+        "L.O.L. Surprise! B.B.s BORN TO TRAVEL™"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:13:08.270437+00:00",
+              "next_attempt": "2026-11-03T23:13:08.270437+00:00",
+              "revision": "43248bd058b8497c:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:13:08.270437+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/L-O-L-Surprise-B-B-s-BORN-TO-TRAVEL--2267584.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/L-O-L-Surprise-B-B-s-BORN-TO-TRAVEL--2267584.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:33.752362+00:00",
+              "next_attempt": "2026-11-03T23:14:33.752362+00:00",
+              "revision": "43248bd058b8497c:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/l_o_l_surprise_b_b_s_born_to_travel",
+                "https://www.nintendolife.com/games/nintendo-switch/l_o_l_surprise_b_b_s_born_to_traveltm",
+                "https://www.nintendolife.com/games/switch-eshop/l_o_l_surprise_b_b_s_born_to_traveltm"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/l_o_l_surprise_b_b_s_born_to_traveltm"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:34.872729+00:00",
+              "next_attempt": "2026-11-03T23:14:34.872729+00:00",
+              "revision": "43248bd058b8497c:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=l-o-l-surprise-b-b-s-born-to-travel-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=l-o-l-surprise-b-b-s-born-to-travel-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:42.142742+00:00",
+              "next_attempt": "2026-11-03T23:14:42.142742+00:00",
+              "revision": "43248bd058b8497c:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/l-o-l-surprise-b-b-s-born-to-traveltm/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/l-o-l-surprise-b-b-s-born-to-traveltm/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/l-o-l-surprise-b-b-s-born-to-traveltm/"
+              ],
+              "url": "https://www.metacritic.com/game/l-o-l-surprise-b-b-s-born-to-traveltm/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:42.174688+00:00",
+              "next_attempt": "2026-11-03T23:14:42.174688+00:00",
+              "revision": "43248bd058b8497c:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=L.O.L.+Surprise%21+B.B.s+BORN+TO+TRAVEL&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=L.O.L.+Surprise%21+B.B.s+BORN+TO+TRAVEL&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:14:42.174863+00:00",
+              "next_attempt": "2026-11-03T00:14:42.174863+00:00",
+              "revision": "43248bd058b8497c:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:14:42.175030+00:00",
+              "next_attempt": "2026-11-03T00:14:42.175030+00:00",
+              "revision": "43248bd058b8497c:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:13416": {
       "title": "LASERPITIUM",
@@ -79241,7 +79732,7 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:39:34.041090+00:00"
+        "attempted": "2026-11-02T23:12:08.530655+00:00"
       },
       "requirements": {
         "image": true,
@@ -79253,12 +79744,16 @@
         "source": "https://www.nintendo.com/us/store/products/knights-of-braveland-switch/",
         "checked": "2026-11-02T19:31:31.086457+00:00"
       },
-      "basics_attempted": "2026-11-02T19:31:26.271525+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:12:08.530655+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:39:36.854378+00:00",
       "store_evidence": [
@@ -79268,7 +79763,89 @@
           "checked": "2026-11-02T19:31:31.086184+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:12:09.185508+00:00",
+              "next_attempt": "2026-11-03T23:12:09.185508+00:00",
+              "revision": "92a2aa6d038d6706:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Knights+of+Braveland%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Knights+of+Braveland%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:03.879696+00:00",
+              "next_attempt": "2026-11-03T23:13:03.879696+00:00",
+              "revision": "92a2aa6d038d6706:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/knights_of_braveland",
+                "https://www.nintendolife.com/games/nintendo-switch/knights_of_braveland"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/knights_of_braveland"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:05.232103+00:00",
+              "next_attempt": "2026-11-03T23:13:05.232103+00:00",
+              "revision": "92a2aa6d038d6706:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=knights-of-braveland-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=knights-of-braveland-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:07.904837+00:00",
+              "next_attempt": "2026-11-03T23:13:07.904837+00:00",
+              "revision": "92a2aa6d038d6706:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/knights-of-braveland/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/knights-of-braveland/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/knights-of-braveland/"
+              ],
+              "url": "https://www.metacritic.com/game/knights-of-braveland/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:08.005571+00:00",
+              "next_attempt": "2026-11-03T23:13:08.005571+00:00",
+              "revision": "92a2aa6d038d6706:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Knights+of+Braveland&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Knights+of+Braveland&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:13:08.005665+00:00",
+              "next_attempt": "2026-11-03T00:13:08.005665+00:00",
+              "revision": "92a2aa6d038d6706:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:13:08.005713+00:00",
+              "next_attempt": "2026-11-03T00:13:08.005713+00:00",
+              "revision": "92a2aa6d038d6706:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:15005": {
       "title": "Last 4 Survive: The Outbreak",
@@ -85048,7 +85625,7 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:39:43.759703+00:00"
+        "attempted": "2026-11-02T23:12:55.820530+00:00"
       },
       "requirements": {
         "image": true,
@@ -85067,22 +85644,92 @@
         "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Kyukyoku-TigerHeli-TOAPLAN-ARCADE-GARAGE-3034249.html",
         "checked": "2026-11-02T19:31:38.565825+00:00"
       },
-      "basics_attempted": "2026-11-02T19:31:29.562848+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:12:55.820530+00:00",
+      "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "The read operation timed out",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "aliases": [
         "Kyukyoku TigerHeli -TOAPLAN ARCADE GARAGE-"
       ],
       "full_attempted": "2026-11-02T20:39:47.147316+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:58.762171+00:00",
+              "next_attempt": "2026-11-03T23:13:58.762171+00:00",
+              "revision": "1a8eef4bebd419d2:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/kyukyoku_tigerheli_toaplan_arcade_garage",
+                "https://www.nintendolife.com/games/switch-eshop/kyukyoku_tigerheli_toaplan_arcade_garage"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/kyukyoku_tigerheli_toaplan_arcade_garage"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:02.077799+00:00",
+              "next_attempt": "2026-11-03T23:14:02.077799+00:00",
+              "revision": "1a8eef4bebd419d2:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=kyukyoku-tigerheli-toaplan-arcade-garage-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=kyukyoku-tigerheli-toaplan-arcade-garage-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:06.190602+00:00",
+              "next_attempt": "2026-11-03T23:14:06.190602+00:00",
+              "revision": "1a8eef4bebd419d2:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/kyukyoku-tigerheli-toaplan-arcade-garage/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/kyukyoku-tigerheli-toaplan-arcade-garage/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/kyukyoku-tigerheli-toaplan-arcade-garage/"
+              ],
+              "url": "https://www.metacritic.com/game/kyukyoku-tigerheli-toaplan-arcade-garage/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:14:06.224103+00:00",
+              "next_attempt": "2026-11-03T23:14:06.224103+00:00",
+              "revision": "1a8eef4bebd419d2:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Kyukyoku+TigerHeli+-TOAPLAN+ARCADE+GARAGE-&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Kyukyoku+TigerHeli+-TOAPLAN+ARCADE+GARAGE-&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:14:06.224222+00:00",
+              "next_attempt": "2026-11-03T00:14:06.224222+00:00",
+              "revision": "1a8eef4bebd419d2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:14:06.224295+00:00",
+              "next_attempt": "2026-11-03T00:14:06.224295+00:00",
+              "revision": "1a8eef4bebd419d2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:15362": {
       "title": "Legion",
@@ -103504,11 +104151,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:39:09.705536+00:00"
+        "attempted": "2026-11-02T23:12:08.522695+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -103516,12 +104163,15 @@
         "source": "https://www.nintendo.com/us/store/products/kingdom-of-asteborg-switch/",
         "checked": "2026-11-02T19:30:44.581900+00:00"
       },
-      "basics_attempted": "2026-11-02T19:30:39.733807+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:12:08.522695+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:39:12.516834+00:00",
       "store_evidence": [
@@ -103531,7 +104181,100 @@
           "checked": "2026-11-02T19:30:44.581637+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Kingdom-of-Asteborg-2738876.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:12:11.033641+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Kingdom of Asteborg"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:12:11.033977+00:00",
+              "next_attempt": "2026-11-03T23:12:11.033977+00:00",
+              "revision": "940b0666a363b800:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:12:11.033977+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Kingdom-of-Asteborg-2738876.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Kingdom-of-Asteborg-2738876.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:13.793954+00:00",
+              "next_attempt": "2026-11-03T23:13:13.793954+00:00",
+              "revision": "940b0666a363b800:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/kingdom_of_asteborg",
+                "https://www.nintendolife.com/games/nintendo-switch/kingdom_of_asteborg"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/kingdom_of_asteborg"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:15.161336+00:00",
+              "next_attempt": "2026-11-03T23:13:15.161336+00:00",
+              "revision": "940b0666a363b800:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=kingdom-of-asteborg-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=kingdom-of-asteborg-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:19.496890+00:00",
+              "next_attempt": "2026-11-03T23:13:19.496890+00:00",
+              "revision": "940b0666a363b800:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/kingdom-of-asteborg/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/kingdom-of-asteborg/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/kingdom-of-asteborg/"
+              ],
+              "url": "https://www.metacritic.com/game/kingdom-of-asteborg/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:19.558279+00:00",
+              "next_attempt": "2026-11-03T23:13:19.558279+00:00",
+              "revision": "940b0666a363b800:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Kingdom+of+Asteborg&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Kingdom+of+Asteborg&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:13:19.558408+00:00",
+              "next_attempt": "2026-11-03T00:13:19.558408+00:00",
+              "revision": "940b0666a363b800:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:13:19.558486+00:00",
+              "next_attempt": "2026-11-03T00:13:19.558486+00:00",
+              "revision": "940b0666a363b800:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:16462": {
       "title": "Kitten Kaboodle",
@@ -103559,7 +104302,7 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:39:28.224001+00:00"
+        "attempted": "2026-11-02T23:12:08.524801+00:00"
       },
       "requirements": {
         "image": true,
@@ -103578,18 +104321,89 @@
         "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-KITTEN-KABOODLE-2746937.html",
         "checked": "2026-11-02T19:31:35.260099+00:00"
       },
-      "basics_attempted": "2026-11-02T19:31:26.271194+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:12:08.524801+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "aliases": [
         "Arcade Archives KITTEN KABOODLE"
       ],
       "full_attempted": "2026-11-02T20:39:31.172408+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:38.872387+00:00",
+              "next_attempt": "2026-11-03T23:13:38.872387+00:00",
+              "revision": "f8e9eeaaf8245c21:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/kitten_kaboodle",
+                "https://www.nintendolife.com/games/switch-eshop/kitten_kaboodle",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_kitten_kaboodle"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_kitten_kaboodle"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:40.090218+00:00",
+              "next_attempt": "2026-11-03T23:13:40.090218+00:00",
+              "revision": "f8e9eeaaf8245c21:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=kitten-kaboodle-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=kitten-kaboodle-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:46.747979+00:00",
+              "next_attempt": "2026-11-03T23:13:46.747979+00:00",
+              "revision": "f8e9eeaaf8245c21:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-kitten-kaboodle/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-kitten-kaboodle/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-kitten-kaboodle/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-kitten-kaboodle/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:46.780345+00:00",
+              "next_attempt": "2026-11-03T23:13:46.780345+00:00",
+              "revision": "f8e9eeaaf8245c21:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Kitten+Kaboodle&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Kitten+Kaboodle&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:13:46.780454+00:00",
+              "next_attempt": "2026-11-03T00:13:46.780454+00:00",
+              "revision": "f8e9eeaaf8245c21:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:13:46.780517+00:00",
+              "next_attempt": "2026-11-03T00:13:46.780517+00:00",
+              "revision": "f8e9eeaaf8245c21:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:16642": {
       "title": "MARVEL Cosmic Invasion",
@@ -139307,11 +140121,11 @@
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T20:39:08.622230+00:00"
+        "attempted": "2026-11-02T23:12:08.522429+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -139319,12 +140133,15 @@
         "source": "https://www.nintendo.com/us/store/products/kings-blade-switch/",
         "checked": "2026-11-02T19:30:54.599415+00:00"
       },
-      "basics_attempted": "2026-11-02T19:30:34.960535+00:00",
-      "version": 3,
+      "basics_attempted": "2026-11-02T23:12:08.522429+00:00",
+      "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:39:11.411158+00:00",
       "store_evidence": [
@@ -139334,7 +140151,100 @@
           "checked": "2026-11-02T19:30:54.599162+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/King-s-Blade-3199680.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:12:13.182138+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "King's Blade"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:12:13.182451+00:00",
+              "next_attempt": "2026-11-03T23:12:13.182451+00:00",
+              "revision": "2ceff1abf6a1f739:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:12:13.182451+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/King-s-Blade-3199680.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/King-s-Blade-3199680.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:23.881241+00:00",
+              "next_attempt": "2026-11-03T23:13:23.881241+00:00",
+              "revision": "2ceff1abf6a1f739:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/kings_blade",
+                "https://www.nintendolife.com/games/nintendo-switch/kings_blade"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/kings_blade"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:24.966352+00:00",
+              "next_attempt": "2026-11-03T23:13:24.966352+00:00",
+              "revision": "2ceff1abf6a1f739:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=kings-blade-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=kings-blade-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:30.612878+00:00",
+              "next_attempt": "2026-11-03T23:13:30.612878+00:00",
+              "revision": "2ceff1abf6a1f739:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/kings-blade/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/kings-blade/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/kings-blade/"
+              ],
+              "url": "https://www.metacritic.com/game/kings-blade/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:13:30.669241+00:00",
+              "next_attempt": "2026-11-03T23:13:30.669241+00:00",
+              "revision": "2ceff1abf6a1f739:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=King%27s+Blade&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=King%27s+Blade&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:13:30.669407+00:00",
+              "next_attempt": "2026-11-03T00:13:30.669407+00:00",
+              "revision": "2ceff1abf6a1f739:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-02T23:13:30.669490+00:00",
+              "next_attempt": "2026-11-03T00:13:30.669490+00:00",
+              "revision": "2ceff1abf6a1f739:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:4527": {
       "title": "Kingdom Two Crowns",
