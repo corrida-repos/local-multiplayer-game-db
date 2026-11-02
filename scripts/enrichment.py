@@ -1,39 +1,59 @@
 """Continuous per-game enrichment: all basics first, then composite scores and trailers.
 Each result owns its provenance and missing-field reasons. No synthetic ratings.
 """
-import argparse, concurrent.futures, datetime as dt, html, json, re, sqlite3, subprocess, threading, time, urllib.parse, urllib.request, urllib.error
+import argparse, concurrent.futures, datetime as dt, html, json, re, sqlite3, subprocess, threading, time, socket, email.utils, urllib.parse, urllib.request, urllib.error
 from pathlib import Path
 from scripts import composites, ratings, stores, trailers, psplus
 ROOT=Path(__file__).resolve().parents[1]
-VERSION=4
+VERSION=5
 SEARCH_HASH='4df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa'
 locks={};last={};guard=threading.Lock()
 def now():return dt.datetime.now(dt.timezone.utc).isoformat()
+def retry_delay(exc,attempt):
+    """Retry transport failures and throttling, never missing or forbidden pages."""
+    if isinstance(exc,urllib.error.HTTPError):
+        if exc.code not in [408,429,500,502,503,504]:return None
+        value=exc.headers.get('Retry-After','') if exc.headers else ''
+        try:delay=float(value)
+        except ValueError:
+            try:delay=(email.utils.parsedate_to_datetime(value)-dt.datetime.now(dt.timezone.utc)).total_seconds()
+            except (ValueError,TypeError):delay=2**attempt
+        # Do not ignore a server's long cooldown by retrying too early.
+        return max(0,delay) if delay<=30 else None
+    if isinstance(exc,(urllib.error.URLError,TimeoutError,ConnectionError,socket.timeout)):return 2**attempt
+    return None
+
 def get(url,headers=None,_redirects=0):
     host=urllib.parse.urlparse(url).hostname
     with guard:lock=locks.setdefault(host,threading.Lock())
-    with lock:
-        time.sleep(max(0,1.1-(time.monotonic()-last.get(host,0))));last[host]=time.monotonic()
-    request=urllib.request.Request(url,headers={'User-Agent':ratings.AGENT,**(headers or {})})
-    try:
-        with urllib.request.urlopen(request,timeout=18) as response:return response.geturl(),response.read().decode('utf-8')
-    except urllib.error.HTTPError as exc:
-        # This API reports canonical slugs in JSON rather than a Location header.
-        if exc.code!=301 or host!='backend.metacritic.com' or _redirects>=2:raise
-        body=exc.read()
+    for attempt in range(3):
+        with lock:
+            time.sleep(max(0,1.1-(time.monotonic()-last.get(host,0))));last[host]=time.monotonic()
+        request=urllib.request.Request(url,headers={'User-Agent':ratings.AGENT,**(headers or {})})
         try:
-            data=json.loads(body);platform=re.search(r'/platform/([^/]+)/',url)[1]
-            choices=[item['slug'] for error in data.get('errors',[]) for item in error.get('context',{}).get('availableOn',[]) if item.get('slug','').endswith('/'+platform)]
-            target=choices[0].rsplit('/',1)[0] if len(choices)==1 else None
-            old=re.search(r'/games/([^/]+)/platform/',url)[1]
-            if not target or target==old or not re.fullmatch(r'[a-z0-9-]+',target):raise ValueError('No unique canonical slug on the requested console')
-        except (ValueError,KeyError,TypeError,IndexError):raise exc
-        return get(url.replace('/games/'+old+'/platform/','/games/'+target+'/platform/',1),headers,_redirects+1)
+            with urllib.request.urlopen(request,timeout=18) as response:return response.geturl(),response.read().decode('utf-8')
+        except urllib.error.HTTPError as exc:
+            if exc.code==301 and host=='backend.metacritic.com' and _redirects<2:
+                try:
+                    data=json.loads(exc.read());platform=re.search(r'/platform/([^/]+)/',url)[1]
+                    choices=list(dict.fromkeys(item['slug'] for error in data.get('errors',[]) for item in error.get('context',{}).get('availableOn',[]) if item.get('slug','').endswith('/'+platform)))
+                    target=choices[0].rsplit('/',1)[0] if len(choices)==1 else None
+                    old=re.search(r'/games/([^/]+)/platform/',url)[1]
+                    if not target or target==old or not re.fullmatch(r'[a-z0-9-]+',target):raise ValueError('No unique canonical slug on the requested console')
+                except (ValueError,KeyError,TypeError,IndexError):raise exc
+                return get(url.replace('/games/'+old+'/platform/','/games/'+target+'/platform/',1),headers,_redirects+1)
+            delay=retry_delay(exc,attempt)
+            if attempt==2 or delay is None:raise
+            time.sleep(delay)
+        except (urllib.error.URLError,TimeoutError,ConnectionError,socket.timeout) as exc:
+            if attempt==2:raise
+            time.sleep(retry_delay(exc,attempt))
+
 def read(name,default=None):
     path=ROOT/'data'/name
     return json.loads(path.read_text()) if path.exists() else (default if default is not None else {'games':{}})
 def identity(value):
-    value=value.replace('™','').replace('®','').replace('©','')
+    value=(value or '').replace('™','').replace('®','').replace('©','')
     value=re.sub(r'\s*[-:|–—]?\s*(?:Standard Edition|Cross[- ]Gen Bundle)\s*$','',value,flags=re.I)
     value=re.sub(r"^(?:arcade[ -]+archives(?:[ -]+2)?|console[ -]+archives|aca[ -]+neogeo|sega[ -]+ages|johnny[ -]+turbo['’]?s[ -]+arcade)[ :\-]+",'',value,flags=re.I)
     value=value.replace('&',' and ')
@@ -43,7 +63,7 @@ def identity(value):
     return stores.normal(value)
 def source_match(game):
     return read('source-aliases.json',{}).get(game.get('platform','')+':'+game.get('title',''),{})
-def known_names(game):return [game['title'],ratings.MC_ALIASES.get(game['title'],'')]+source_match(game).get('names',[])+game.get('aliases',[])
+def known_names(game):return list(dict.fromkeys(name for name in [game['title'],ratings.MC_ALIASES.get(game['title'],'')]+source_match(game).get('names',[])+game.get('aliases',[]) if name))
 def matches_name(game,name):
     return bool(identity(name)) and identity(name) in {identity(value) for value in known_names(game)}
 def image_from_media(media):
@@ -79,19 +99,25 @@ def resolve_psn(game,legacy,known_store):
     for url in candidates:
         try:final,page=get(url);return psn_metadata(game,final,page)
         except Exception as exc:errors.append(str(exc)[:120])
-    for country,language in [('PT','pt'),('GB','en')]:
-        results=psn_search(game['title'],country,language)
-        for item in results:
-            if not matches_name(game,item.get('name','')):continue
-            if item.get('__typename')=='Product':
-                if 'PS5' not in item.get('platforms',[]):continue
-                urls=['https://store.playstation.com/pt-pt/product/'+item['id']]
-            else:
-                products=sorted(item.get('products',[]),key=lambda p:'PPSA' not in p['id'])
-                urls=['https://store.playstation.com/pt-pt/concept/'+item['id']]+['https://store.playstation.com/pt-pt/product/'+p['id'] for p in products[:8]]
-            for url in urls:
-                try:final,page=get(url);return psn_metadata(game,final,page)
-                except Exception as exc:errors.append(str(exc)[:120])
+    tried=set(candidates)
+    for title in known_names(game)[:4]:
+        for country,language in [('PT','pt'),('GB','en')]:
+            try:results=psn_search(title,country,language)
+            except Exception as exc:
+                errors.append(str(exc)[:120]);continue
+            for item in results:
+                if not matches_name(game,item.get('name','')):continue
+                if item.get('__typename')=='Product':
+                    if 'PS5' not in (item.get('platforms') or []):continue
+                    urls=['https://store.playstation.com/pt-pt/product/'+item['id']]
+                else:
+                    products=sorted(item.get('products') or [],key=lambda p:'PPSA' not in p['id'])
+                    urls=['https://store.playstation.com/pt-pt/concept/'+item['id']]+['https://store.playstation.com/pt-pt/product/'+p['id'] for p in products[:8]]
+                for url in urls:
+                    if url in tried:continue
+                    tried.add(url)
+                    try:final,page=get(url);return psn_metadata(game,final,page)
+                    except Exception as exc:errors.append(str(exc)[:120])
     raise ValueError('No exact Portugal PS5 product verified'+(': '+'; '.join(errors[:2]) if errors else ''))
 
 def meta_image(page):
@@ -107,46 +133,60 @@ def nintendo_index_match(game,doc):
     return canonical(doc.get('title','')) in {canonical(value) for value in known_names(game)+stores.NINTENDO_NAMES.get(game['title'],[])}
 
 def resolve_nintendo(game,known_store):
-    title=game['title'];url=known_store.get('url') or source_match(game).get('store_url') or 'https://www.nintendo.com/us/store/products/'+stores.NINTENDO_SLUGS.get(title,stores.slug(title))+'-switch/'
-    if title in stores.NSO:url='https://www.nintendo.com/us/store/products/super-nintendo-entertainment-system-nintendo-switch-online-switch/'
-    try:
-        final,page=get(url)
-        if not stores.official_url('Switch',final) or not stores.nintendo_match(page,title,known_names(game)):raise ValueError('Exact Nintendo Switch store identity not verified')
-        store={'url':final,'label':'Abrir na Nintendo eShop','checked':now()}
-        if title in stores.NSO:store.update(label='Ver no Nintendo Switch Online',note='Incluído na aplicação Super Nintendo do Nintendo Switch Online.')
-        return {'store':store,'image':{'url':meta_image(page),'source':final,'checked':now()}}
-    except Exception as original_error:
-        # Official European search supplies real product URLs instead of guessing slugs.
+    title=game['title'];errors=[]
+    candidates=[known_store.get('url'),source_match(game).get('store_url')]
+    if title in stores.NSO:candidates.append('https://www.nintendo.com/us/store/products/super-nintendo-entertainment-system-nintendo-switch-online-switch/')
+    else:candidates.extend('https://www.nintendo.com/us/store/products/'+stores.NINTENDO_SLUGS.get(name,stores.slug(name))+'-switch/' for name in known_names(game)[:4])
+    tried=set()
+    for url in dict.fromkeys(candidate for candidate in candidates if candidate):
+        tried.add(url)
+        try:
+            final,page=get(url)
+            if not stores.official_url('Switch',final) or not stores.nintendo_match(page,title,known_names(game)):raise ValueError('Exact Nintendo Switch store identity not verified')
+            store={'url':final,'label':'Abrir na Nintendo eShop','checked':now()}
+            if title in stores.NSO:store.update(label='Ver no Nintendo Switch Online',note='Incluído na aplicação Super Nintendo do Nintendo Switch Online.')
+            return {'store':store,'image':{'url':meta_image(page),'source':final,'checked':now()}}
+        except Exception as exc:errors.append(str(exc)[:120])
+    for name in known_names(game)[:4]:
         for language in ['pt','en']:
-            params=urllib.parse.urlencode({'q':'"'+title.replace('"','\\"')+'"','fq':'type:GAME AND system_type:nintendoswitch*','rows':24,'wt':'json'})
+            params=urllib.parse.urlencode({'q':'"'+name.replace('"','')+'"','fq':'type:GAME AND system_type:nintendoswitch*','rows':100,'wt':'json'})
             try:
                 _,page=get('https://searching.nintendo-europe.com/'+language+'/select?'+params)
-                for doc in json.loads(page)['response']['docs']:
-                    if not nintendo_index_match(game,doc):continue
-                    candidate=urllib.parse.urljoin('https://www.nintendo.com',doc['url'])
-                    if not stores.official_url('Switch',candidate):continue
+                docs=json.loads(page)['response']['docs']
+            except Exception as exc:errors.append(str(exc)[:120]);continue
+            for doc in docs:
+                if not nintendo_index_match(game,doc):continue
+                candidate=urllib.parse.urljoin('https://www.nintendo.com',doc.get('url',''))
+                if candidate in tried or not stores.official_url('Switch',candidate):continue
+                tried.add(candidate)
+                try:
                     final,page=get(candidate)
-                    if not stores.official_url('Switch',final):continue
+                    if not stores.official_url('Switch',final) or not stores.nintendo_match(page,title,known_names(game)+[doc['title']]):raise ValueError('Official product page does not match the indexed game')
                     checked=now();image=meta_image(page) or doc.get('image_url_sq_s')
-                    return {'store':{'url':final,'label':'Abrir na Nintendo eShop','checked':checked},'image':{'url':image,'source':final,'checked':checked},'aliases':[doc['title']]}
-            except Exception:continue
-        raise ValueError('Official Nintendo lookup: '+str(original_error)[:150])
+                    return {'store':{'url':final,'label':'Abrir na Nintendo eShop','checked':checked},'image':{'url':image,'source':final,'checked':checked},'aliases':list(dict.fromkeys(game.get('aliases',[])+[doc['title']]))}
+                except Exception as exc:errors.append(str(exc)[:120])
+    raise ValueError('Official Nintendo lookup: '+'; '.join(errors[-2:]))
 
 def community(game):
     expected='PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch';name=ratings.MC_ALIASES.get(game['title'],ratings.slug(game['title'])).replace('-','_');domain='www.pushsquare.com' if game['platform']=='PS5' else 'www.nintendolife.com'
     folders=['ps5'] if game['platform']=='PS5' else ['nintendo-switch','switch-eshop']
     errors=[]
-    candidates=[(folder,name) for folder in folders]+[(folder,ratings.slug(alias).replace('-','_')) for alias in game.get('aliases',[]) for folder in folders]
+    candidates=list(dict.fromkeys((folder,ratings.slug(alias).replace('-','_')) for alias in [name]+known_names(game) for folder in folders));fallback=None
     for folder,name in candidates:
         url=f'https://{domain}/games/{folder}/{name}'
         try:
             final,page=get(url);critics,users=composites.community_data(page,final,game,expected)
-            return critics,users,{'url':meta_image(page),'source':final,'checked':now()}
+            found=(critics,users,{'url':meta_image(page),'source':final,'checked':now()})
+            if critics or users:return found
+            if not fallback and found[2].get('url'):fallback=found
         except Exception as exc:errors.append(str(exc)[:100])
+    if fallback:return fallback
     raise ValueError('; '.join(errors))
 
 def nindie_data(page,url,game):
-    parsed=urllib.parse.urlparse(url);game_slug=urllib.parse.parse_qs(parsed.query).get('game',[''])[0]
+    parsed=urllib.parse.urlparse(url)
+    if parsed.path.endswith('/error.cfm'):raise ValueError('No review profile indexed for this game')
+    game_slug=urllib.parse.parse_qs(parsed.query).get('game',[''])[0]
     if game['platform']!='Switch' or parsed.hostname not in ['www.nindiespotlight.com','nindiespotlight.com'] or not game_slug.endswith('-switch'):raise ValueError('Not a Switch 1 review')
     heading=re.search(r'<title[^>]*>(.*?)</title>',page,re.S|re.I)
     if not heading or not re.search(r'on Nintendo Switch\s*[-–]',html.unescape(heading[1])):raise ValueError('Nintendo Switch review identity missing')
@@ -284,8 +324,8 @@ def seed(games,entries,legacy,known_stores,old_composites,old_trailers,artwork,o
     # Audit existing verified data too; unattempted enrichment is not missing data.
     for game in games:
         key=game['platform']+':'+game['id'];entry=entries.setdefault(key,{'title':game['title'],'platform':game['platform']})
-        if artwork.get(game['title'],{}).get('url'):entry.setdefault('image',artwork[game['title']])
-        if known_stores.get(key,{}).get('url'):entry.setdefault('store',known_stores[key])
+        if artwork.get(game['title'],{}).get('url') and not entry.get('image',{}).get('url'):entry['image']=artwork[game['title']]
+        if known_stores.get(key,{}).get('url') and not entry.get('store',{}).get('url'):entry['store']=known_stores[key]
         if old_trailers.get(key,{}).get('id'):entry.setdefault('trailer',old_trailers[key])
         if old_plus.get(key,{}).get('checked'):entry.setdefault('psplus',old_plus[key])
         if 'ratings' not in entry:
@@ -308,11 +348,12 @@ def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
     match=source_match(game)
     if not result.get('image',{}).get('url') and match.get('image_url','').startswith('https://www.nintendo.com/'):
         result['image']={'url':match['image_url'],'source':match['source'],'checked':stamp,'method':'official-product-index'}
-    if artwork.get('url'):result.setdefault('image',artwork)
+    if artwork.get('url') and not result.get('image',{}).get('url'):result['image']=artwork
     source_game={**game,'aliases':result.get('aliases',[])+source_match(game).get('names',[])}
     current_store=result.get('store') or known_store
     try:metadata=resolve_psn(source_game,legacy,current_store) if game['platform']=='PS5' else resolve_nintendo(source_game,current_store);result.update({k:v for k,v in metadata.items() if k!='image' or v.get('url')})
     except Exception as exc:errors['store']=str(exc)[:200]
+    source_game={**source_game,'aliases':list(dict.fromkeys(source_game['aliases']+result.get('aliases',[])))}
     critics=[];users=[]
     prior_ratings=result.get('ratings') or old_composite
     if has_score(prior_ratings.get('critic',{})):critics=list(prior_ratings['critic'].get('sources',[]))
@@ -332,10 +373,10 @@ def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
         except Exception as exc:errors['community']=str(exc)[:200]
     if game['platform']=='Switch' and ((not critics and not users) or not result.get('store',{}).get('url') or not result.get('image',{}).get('url')):
         try:
-            c,image,candidate=nindie(game);critics.extend(c)
+            c,image,candidate=nindie(source_game);critics.extend(c)
             if image.get('url') and not result.get('image',{}).get('url'):result['image']=image
             if not result.get('store',{}).get('url'):
-                try:result.update(resolve_nintendo(game,{'url':candidate}));errors.pop('store',None)
+                try:result.update(resolve_nintendo(source_game,{'url':candidate}));errors.pop('store',None)
                 except Exception as exc:errors['store']=str(exc)[:160]
         except Exception as exc:errors['nindie']=str(exc)[:160]
     if not critics and not users:
@@ -354,23 +395,33 @@ def basics(game,previous,legacy,known_store,old_composite,old_trailer,artwork):
     return result
 
 def complete(game,previous,legacy,curated):
+    from scripts.apply_recoveries import critic_merge,user_merge
     result=dict(previous);errors=dict(result.get('errors',{}));raw=dict(legacy)
+    source_game={**game,'aliases':list(dict.fromkeys(result.get('aliases',[])+source_match(game).get('names',[])))}
     if result.get('user'):raw['user']=result['user']
     try:
-        composite=composites.collect({**game,'aliases':result.get('aliases',[])+source_match(game).get('names',[])},raw)
+        composite=composites.collect(source_game,raw)
         for kind in ['critic','user']:
             if not has_score(composite.get(kind,{})) and has_score(result.get('ratings',{}).get(kind,{})):composite[kind]=result['ratings'][kind]
         if game['platform']=='Switch':
             try:
-                c,_,_=nindie(game)
+                c,_,_=nindie(source_game);errors.pop('nindie',None)
                 # Never mix an opaque aggregate with potentially overlapping reviews.
                 if not opaque_critic(composite['critic']):composite['critic']=composites.critic_composite(composite['critic'].get('sources',[])+c)
             except Exception as exc:errors['nindie']=str(exc)[:160]
         if game['platform']=='Switch' and not opaque_critic(composite['critic']) and not any('gameslushpile.com' in source.get('url','') for source in composite['critic'].get('sources',[])):
-            try:composite['critic']=composites.critic_composite(composite['critic'].get('sources',[])+[slush_review(game)])
+            try:
+                composite['critic']=composites.critic_composite(composite['critic'].get('sources',[])+[slush_review(source_game)]);errors.pop('slush',None)
             except Exception as exc:errors['slush']=str(exc)[:160]
         if not opaque_critic(composite['critic']):composite['critic']=composites.critic_composite(composite['critic'].get('sources',[])+curated_critics(game))
+        prior=result.get('ratings',{})
+        prior_critic=prior.get('critic',{})
+        replaces_aggregate=opaque_critic(prior_critic) and composite.get('critic_index_complete') and any(source.get('via')=='Metacritic review index' for source in composite['critic'].get('sources',[]))
+        if not replaces_aggregate:composite['critic']=critic_merge(prior_critic,composite['critic'])
+        composite['user']=user_merge(prior.get('user',{}),composite['user'],prior.get('attempted',''),composite.get('attempted',now()))
         result['ratings']=composite
+        errors.pop('composites',None)
+        if composite.get('errors'):errors['composites']='; '.join(composite['errors'])[:500]
     except Exception as exc:errors['composites']=str(exc)[:160]
     chosen=curated.get(game['title']) or result.get('trailer')
     if not chosen or chosen.get('kind')!='gameplay':
@@ -379,7 +430,7 @@ def complete(game,previous,legacy,curated):
             _,page=get(url);chosen=trailers.choose_video(chosen,trailers.videos_from_official_page(page,game['title'],url))
         except Exception as exc:errors['trailer']=str(exc)[:160]
     if chosen:result['trailer']=chosen
-    result.update(full_attempted=now(),errors=errors);result['requirements']=requirements(result)
+    result.update(full_attempted=now(),full_version=VERSION,errors=errors);result['requirements']=requirements(result)
     return result
 
 def export(entries,db):
@@ -394,10 +445,7 @@ def export(entries,db):
     print('COVERAGE',json.dumps(report),flush=True)
 
 def lookup_upgrade(game,entry):
-    old=entry.get('version',0)
-    if old<3:return True
-    if old>=VERSION:return False
-    return (game['platform']=='PS5' and not requirements(entry)['store']) or bool(source_match(game)) or any('301' in error for error in entry.get('errors',{}).values()) or '+' in game['title'] or ' plus' in game['title'].lower() or not requirements(entry)['image']
+    return entry.get('version',0)<VERSION and not all(requirements(entry).values())
 
 def select_work(games,entries,seen):
     unseen=[g for g in games if (g['platform']+':'+g['id'],'basics') not in seen and not entries.get(g['platform']+':'+g['id'],{}).get('basics_attempted')]
@@ -407,8 +455,8 @@ def select_work(games,entries,seen):
     retry=[g for g in games if (g['platform']+':'+g['id'],'basics') not in seen and not all(requirements(entries.get(g['platform']+':'+g['id'],{})).values()) and (lookup_upgrade(g,entries.get(g['platform']+':'+g['id'],{})) or entries.get(g['platform']+':'+g['id'],{}).get('basics_attempted','')<cutoff)]
     if retry:return 'basics',sorted(retry,key=lambda g:entries.get(g['platform']+':'+g['id'],{}).get('basics_attempted',''))
     full_cutoff=(dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=7)).isoformat()
-    full=[g for g in games if (g['platform']+':'+g['id'],'full') not in seen and entries.get(g['platform']+':'+g['id'],{}).get('full_attempted','')<full_cutoff]
-    if full:return 'full',sorted(full,key=lambda g:(requirements(entries.get(g['platform']+':'+g['id'],{}))['rating'],g['title']))
+    full=[g for g in games if (g['platform']+':'+g['id'],'full') not in seen and (entries.get(g['platform']+':'+g['id'],{}).get('full_version',0)<VERSION or entries.get(g['platform']+':'+g['id'],{}).get('full_attempted','')<full_cutoff)]
+    if full:return 'full',sorted(full,key=lambda g:(requirements(entries.get(g['platform']+':'+g['id'],{}))['rating'],entries.get(g['platform']+':'+g['id'],{}).get('full_attempted',''),g['title']))
     stale=[g for g in games if (g['platform']+':'+g['id'],'basics') not in seen and entries.get(g['platform']+':'+g['id'],{}).get('basics_attempted','')<cutoff]
     return 'basics',stale
 

@@ -64,7 +64,7 @@ def psn_product(page,url=None):
         match=re.search(r'/concept/(\d+)',url)
         if match:
             concept=cache.get('Concept:'+match[1],{})
-            return cache.get(concept.get('defaultProduct',{}).get('__ref',''))
+            return cache.get((concept.get('defaultProduct') or {}).get('__ref',''))
     # Legacy callers use only a concept's actual default product.
     for concept in cache.values():
         if concept.get('__typename')=='Concept' and isinstance(concept.get('defaultProduct'),dict):

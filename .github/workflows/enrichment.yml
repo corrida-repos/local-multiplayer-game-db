@@ -33,6 +33,9 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - name: Record coverage before this run
+        id: baseline
+        run: cp data/enrichment.json "$RUNNER_TEMP/enrichment-before.json"
       - name: Fill minimum data for every game, then finish all remaining stages
         env:
           ENRICHMENT_IDS: ${{ inputs.game_ids || '' }}
@@ -45,3 +48,6 @@ jobs:
       - name: Save remaining results
         if: always() && !cancelled()
         run: bash scripts/checkpoint-enrichment.sh
+      - name: Report coverage gains, regressions and source failures
+        if: always() && !cancelled() && steps.baseline.outcome == 'success'
+        run: python -m scripts.enrichment_report --before "$RUNNER_TEMP/enrichment-before.json"

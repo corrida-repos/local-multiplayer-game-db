@@ -55,41 +55,49 @@ def community_data(page,url,game,expected):
         if rating.get('ratingValue') is not None:critics.append({'name':name,'score':float(rating['ratingValue'])/float(rating.get('bestRating',10))*100,'url':node.get('url') or url,'platform':expected,'via':name})
     return critics,users
 
+def source_names(game):
+    return list(dict.fromkeys(slug(name) for name in [MC_ALIASES.get(game['title'],game['title']),game['title']]+game.get('aliases',[]) if name))[:4]
+
 def collect(game,legacy):
-    expected='PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch';platform='playstation-5' if game['platform']=='PS5' else 'nintendo-switch';name=MC_ALIASES.get(game['title'],slug(game['title']));critics=[];users=[];errors=[];complete=True;offset=0;total=None
+    expected='PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch';platform='playstation-5' if game['platform']=='PS5' else 'nintendo-switch'
+    names=source_names(game);critics=[];users=[];errors=[];complete=False;total=None
     base='https://backend.metacritic.com/reviews/metacritic/'
-    try:
-        while total is None or offset<total:
-            url=base+f'critic/games/{name}/platform/{platform}/web?offset={offset}&limit=10&filterBySentiment=all&sort=score'
-            _,page=get(url);data=json.loads(page)['data'];total=int(data['totalResults']);items=data['items']
-            if not items and offset<total:raise ValueError('Incomplete critic pagination')
-            for r in items:
-                if r.get('platform')!=expected:continue
-                critics.append({'name':r['publicationName'],'score':r['score'],'url':r['url'],'date':r.get('date',''),'platform':expected,'via':'Metacritic review index'})
-            offset+=len(items)
-            if total==0:break
-    except Exception as e:complete=False;errors.append('Metacritic critics: '+str(e)[:100])
-    try:
-        url=base+f'user/games/{name}/platform/{platform}/stats/web'
-        final,page=get(url);data=json.loads(page)['data']['item'];canonical=re.search(r'/games/([^/]+)/platform/',final)[1]
-        # Metacritic's unpublished averages are zero until four votes exist.
-        if data.get('reviewCount',0)>=4 and data.get('score') is not None:users.append({'name':'Metacritic users','score':data['score'],'scale':10,'count':data['reviewCount'],'url':f'https://www.metacritic.com/game/{canonical}/user-reviews/?platform={platform}','platform':expected})
-    except Exception as e:errors.append('Metacritic users: '+str(e)[:100])
+    for name in names:
+        if not critics:
+            offset=0;reviews=[]
+            try:
+                while True:
+                    url=base+f'critic/games/{name}/platform/{platform}/web?offset={offset}&limit=10&filterBySentiment=all&sort=score'
+                    _,page=get(url);data=json.loads(page)['data'];count=int(data['totalResults']);items=data['items']
+                    if not items and offset<count:raise ValueError('Incomplete critic pagination')
+                    reviews.extend({'name':r['publicationName'],'score':r['score'],'url':r['url'],'date':r.get('date',''),'platform':expected,'via':'Metacritic review index'} for r in items if r.get('platform')==expected)
+                    offset+=len(items)
+                    if offset>=count:break
+                complete=True;total=count;critics=reviews
+            except Exception as exc:errors.append('Metacritic critics: '+str(exc)[:100])
+        if not users:
+            try:
+                url=base+f'user/games/{name}/platform/{platform}/stats/web'
+                final,page=get(url);data=json.loads(page)['data']['item'];canonical=re.search(r'/games/([^/]+)/platform/',final)[1]
+                if data.get('reviewCount',0)>=4 and data.get('score') is not None:users.append({'name':'Metacritic users','score':data['score'],'scale':10,'count':data['reviewCount'],'url':f'https://www.metacritic.com/game/{canonical}/user-reviews/?platform={platform}','platform':expected})
+            except Exception as exc:errors.append('Metacritic users: '+str(exc)[:100])
+        if critics and users:break
     domain='www.pushsquare.com' if game['platform']=='PS5' else 'www.nintendolife.com'
-    folders=['ps5'] if game['platform']=='PS5' else ['nintendo-switch','switch-eshop']
-    for folder in folders:
-        url=f'https://{domain}/games/{folder}/'+name.replace('-','_')
-        try:
-            final,page=get(url);c,u=community_data(page,final,game,expected);critics.extend(c);users.extend(u);break
-        except Exception as e:errors.append(domain+'/'+folder+': '+str(e)[:100])
+    folders=['ps5'] if game['platform']=='PS5' else ['nintendo-switch','switch-eshop'];found=False
+    for name in names:
+        for folder in folders:
+            url=f'https://{domain}/games/{folder}/'+name.replace('-','_')
+            try:
+                final,page=get(url);c,u=community_data(page,final,game,expected)
+                if c or u:critics.extend(c);users.extend(u);found=True;break
+            except Exception as exc:errors.append(domain+'/'+folder+': '+str(exc)[:100])
+        if found:break
     raw=legacy.get('user') or {}
-    if game['platform']=='PS5' and raw.get('source')=='PSN':users.append({'name':'PSN'+(' (PS4/PS5 shared product)' if 'PS4/PS5' in raw.get('scope','') else ''),'score':raw.get('score'),'scale':raw.get('scale'),'count':raw.get('count'),'url':raw.get('url'),'platform':expected})
-    result=critic_composite(critics) if complete else critic_composite([])
+    if game['platform']=='PS5' and raw.get('source')=='PSN':users.append({'name':'PSN'+(' (PS4/PS5 shared product)' if 'PS4/PS5' in raw.get('scope','') else ''),'score':raw.get('score'),'scale':raw.get('scale'),'count':raw.get('count'),'url':raw.get('url'),'platform':expected,'checked':raw.get('checked','')})
+    result=critic_composite(critics)
     if not complete:
-        # Never average just the top-scoring first page or double-count an aggregate.
         raw=legacy.get('critic') or {}
         if raw.get('score') is not None:result=critic_composite([{'name':'Metacritic aggregate (fallback)','score':raw['score'],'url':raw['url'],'platform':expected}]);result['method']='single-aggregate-fallback-incomplete-index'
-        elif critics:result=critic_composite([c for c in critics if c.get('via')!='Metacritic review index'])
     return {'critic':result,'user':user_composite(users),'critic_index_complete':complete,'critic_index_review_count':total,'errors':errors,'platform':expected,'algorithm_version':VERSION,'attempted':dt.datetime.now(dt.timezone.utc).isoformat()}
 
 def main():
