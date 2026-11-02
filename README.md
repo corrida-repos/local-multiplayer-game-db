@@ -1,4 +1,4 @@
-# Sofá Duo
+# 2-Player Games Finder
 
 Catálogo em português de jogos lançados com pelo menos dois jogadores na mesma consola/ecrã para PS5 e Nintendo Switch (primeira geração). Inclui ecrã dividido. Site publicado através de Sites; fontes da interface em `website/`.
 
