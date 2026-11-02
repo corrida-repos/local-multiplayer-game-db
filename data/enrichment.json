@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:35:16.626374+00:00",
+  "updated": "2026-11-02T18:35:45.049461+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
-    "attempted": 2202,
-    "ready": 1411,
-    "missing_image": 585,
-    "missing_store": 671,
-    "missing_rating": 1011,
+    "attempted": 2212,
+    "ready": 1416,
+    "missing_image": 577,
+    "missing_store": 663,
+    "missing_rating": 1005,
     "full_attempted": 0
   },
   "games": {
@@ -53309,21 +53309,40 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.7,
+              "scale": 10,
+              "count": 343,
+              "url": "https://www.metacritic.com/game/the-quarry/user-reviews/?platform=playstation-5",
+              "platform": "PS5",
+              "weight": 18.520259177452136,
+              "normalized": 6.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:35:19.737280+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "basics_attempted": "2026-11-02T18:35:19.737280+00:00",
+      "version": 3,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "Switch:12578": {
@@ -53333,21 +53352,41 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:35:19.737889+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-The-Return-of-ISHTAR-2271947.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:35:26.575314+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/1x1_NSwitchDS_ArcadeArchivesTheReturnOfIshtar_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-The-Return-of-ISHTAR-2271947.html",
+        "checked": "2026-11-02T18:35:26.575314+00:00"
+      },
+      "aliases": [
+        "Arcade Archives The Return of ISHTAR"
+      ],
+      "basics_attempted": "2026-11-02T18:35:19.737889+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:11830": {
@@ -53357,21 +53396,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:35:19.738521+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/the-rusty-sword-vanguard-island-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:35:25.163678+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000053212/17b79d832081bdab335e0d436f7ffe27a0ab77c3c03a5663e0a063504ae699b6",
+        "source": "https://www.nintendo.com/us/store/products/the-rusty-sword-vanguard-island-switch/",
+        "checked": "2026-11-02T18:35:25.164130+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:35:19.738521+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:12871": {
@@ -53379,23 +53436,49 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "TouchArcade",
+              "score": 70,
+              "url": "https://toucharcade.com/2022/11/08/sifu-switch-review-doraemon-story-of-seasons-friends-of-the-great-kingdom-eshop-discount-price-release-date/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:35:20.667308+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/the-samurai-collection-qubyte-classics-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:35:26.096240+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000056610/72aba42fa4032887358d6779754b6b8470cfddf89a42e19f73fac1ecef13e35a",
+        "source": "https://www.nintendo.com/us/store/products/the-samurai-collection-qubyte-classics-switch/",
+        "checked": "2026-11-02T18:35:26.096532+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:35:20.667308+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "PS5:11042": {
@@ -57968,22 +58051,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 6.54,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.27,
+              "count": 119,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP8598-PPSA20821_00-0152193505250338",
+              "checked": "2026-11-02T18:35:23.949145+00:00",
+              "platform": "PSN · PS5",
+              "weight": 10.908712114635714,
+              "normalized": 6.54
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:35:19.738133+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP8598-PPSA20821_00-0152193505250338",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:35:23.949145+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202310/1917/b130add76dcab5a056a234e695f45656d169d26642a76850.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP8598-PPSA20821_00-0152193505250338",
+        "checked": "2026-11-02T18:35:23.949145+00:00"
+      },
+      "user": {
+        "score": 3.27,
+        "count": 119,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP8598-PPSA20821_00-0152193505250338",
+        "checked": "2026-11-02T18:35:23.949145+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP8598-PPSA20821_00-0152193505250338",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP8598-PPSA20821_00-0152193505250338",
+        "checked": "2026-11-02T18:35:23.949145+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:35:19.738133+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:14928": {
       "title": "Underling Uprising",
@@ -65506,22 +65637,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.3,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.65,
+              "count": 1398,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA21607_00-SMURFSDREAMPS5EU",
+              "checked": "2026-11-02T18:35:25.184707+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 7.3
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:35:21.693143+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA21607_00-SMURFSDREAMPS5EU",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:35:25.184707+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202404/2509/00c1e572d0de4274a103a5b96a0693b22100a082875ae186.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP4295-PPSA21607_00-SMURFSDREAMPS5EU",
+        "checked": "2026-11-02T18:35:25.184707+00:00"
+      },
+      "user": {
+        "score": 3.65,
+        "count": 1398,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA21607_00-SMURFSDREAMPS5EU",
+        "checked": "2026-11-02T18:35:25.184707+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP4295-PPSA21607_00-SMURFSDREAMPS5EU",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP4295-PPSA21607_00-SMURFSDREAMPS5EU",
+        "checked": "2026-11-02T18:35:25.184707+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:35:21.693143+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:15895": {
       "title": "The Smurfs - Dreams",
@@ -69937,22 +70116,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.58,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.79,
+              "count": 136,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP8674-PPSA25385_00-0391396657277326",
+              "checked": "2026-11-02T18:35:20.657611+00:00",
+              "platform": "PSN · PS5",
+              "weight": 11.661903789690601,
+              "normalized": 7.58
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:35:19.736521+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP8674-PPSA25385_00-0391396657277326",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:35:20.657611+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202501/1810/5893c493f69d1cb592b62f6d751de88579736b8a7c55f974.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP8674-PPSA25385_00-0391396657277326",
+        "checked": "2026-11-02T18:35:20.657611+00:00"
+      },
+      "user": {
+        "score": 3.79,
+        "count": 136,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP8674-PPSA25385_00-0391396657277326",
+        "checked": "2026-11-02T18:35:20.657611+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP8674-PPSA25385_00-0391396657277326",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP8674-PPSA25385_00-0391396657277326",
+        "checked": "2026-11-02T18:35:20.657611+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:35:19.736521+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:16208": {
       "title": "The Phantom",
@@ -69961,21 +70188,39 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:35:19.736787+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/the-phantom-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:35:22.556426+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000086160/df74e094463a18430e9d1c2abfbd33e6cdd62b960a5fb85e163ccf302e2d0f5e",
+        "source": "https://www.nintendo.com/us/store/products/the-phantom-switch/",
+        "checked": "2026-11-02T18:35:22.556709+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:35:19.736787+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:16191": {
@@ -97886,21 +98131,30 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:35:19.737579+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:35:19.737579+00:00",
+      "version": 3,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found",
+        "metacritic_critics": "The read operation timed out"
       }
     },
     "PS5:19045": {
@@ -113567,23 +113821,51 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 68.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 68.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-otterman-empire-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:35:19.736344+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Otterman-Empire-1758236.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:35:25.556199+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_TheOttermanEmpire_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Otterman-Empire-1758236.html",
+        "checked": "2026-11-02T18:35:25.556199+00:00"
+      },
+      "aliases": [
+        "The Otterman Empire"
+      ],
+      "basics_attempted": "2026-11-02T18:35:19.736344+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "Switch:6704": {
