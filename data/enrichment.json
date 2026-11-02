@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:01:50.848423+00:00",
+  "updated": "2026-11-02T17:02:06.883257+00:00",
   "version": 1,
   "coverage": {
     "total": 851,
-    "attempted": 122,
-    "ready": 122,
-    "missing_image": 679,
-    "missing_store": 679,
-    "missing_rating": 716,
+    "attempted": 132,
+    "ready": 129,
+    "missing_image": 671,
+    "missing_store": 671,
+    "missing_rating": 712,
     "full_attempted": 0
   },
   "games": {
@@ -9198,24 +9198,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/cassette-beasts",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.8,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.8,
+              "scale": 10.0,
+              "count": 40,
+              "url": "https://www.nintendolife.com/games/switch-eshop/cassette_beasts",
+              "platform": "Nintendo Switch",
+              "weight": 6.324555320336759,
+              "normalized": 7.800000000000001
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:01:52.699805+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/cassette-beasts-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:01:54.169808+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000061441/858324ab61f8993e5c9fd8401a057458a96bd36413e18d42d61f16637edf909e",
+        "source": "https://www.nintendo.com/us/store/products/cassette-beasts-switch/",
+        "checked": "2026-11-02T17:01:54.170316+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:01:52.699805+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:13012": {
       "title": "Cassiodora",
@@ -9246,26 +9280,65 @@
           "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.5,
+              "count": 22,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP1302-PPSA06079_00-4536488058411927",
+              "checked": "2026-11-02T17:01:53.742983+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 4.69041575982343,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 2,
-        "errors": [
-          "www.pushsquare.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "PlayStation 5",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:45:06.901889+00:00"
+        "attempted": "2026-11-02T17:01:52.700013+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
-      }
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP1302-PPSA06079_00-4536488058411927",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:01:53.742983+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202212/1408/5uThIs91ltj58U23zQ6SUj7r.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP1302-PPSA06079_00-4536488058411927",
+        "checked": "2026-11-02T17:01:53.742983+00:00"
+      },
+      "user": {
+        "score": 3.5,
+        "count": 22,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP1302-PPSA06079_00-4536488058411927",
+        "checked": "2026-11-02T17:01:53.742983+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP1302-PPSA06079_00-4536488058411927",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP1302-PPSA06079_00-4536488058411927",
+        "checked": "2026-11-02T17:01:53.742983+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:01:52.700013+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:13010": {
       "title": "Cassiodora",
@@ -9285,20 +9358,26 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 0,
-        "errors": [
-          "www.nintendolife.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:45:09.017356+00:00"
+        "attempted": "2026-11-02T17:01:52.700234+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/cassiodora-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:01:55.107145+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000049525/a63fe09393cc5e5f8e94f467df0e2c5b4f6e5122c89b664d70fe7bdf89236950",
+        "source": "https://www.nintendo.com/us/store/products/cassiodora-switch/",
+        "checked": "2026-11-02T17:01:55.107466+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:01:52.700234+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:13522": {
       "title": "Castle Shikigami 2",
@@ -9307,21 +9386,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:01:52.700707+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:01:52.700707+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "Switch:10886": {
@@ -9351,20 +9438,26 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 1,
-        "errors": [
-          "www.nintendolife.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:45:19.098265+00:00"
+        "attempted": "2026-11-02T17:01:53.751284+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/castle-on-the-coast-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:01:57.680256+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000044255/e4cc5037adeef74c537a91e9bb17b9bce3a611ad19648c6d6edd15c6320b8f48",
+        "source": "https://www.nintendo.com/us/store/products/castle-on-the-coast-switch/",
+        "checked": "2026-11-02T17:01:57.680584+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:01:53.751284+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:14400": {
       "title": "Cat Quest III",
@@ -9373,46 +9466,128 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.24,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.62,
+              "count": 6094,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP7579-PPSA15064_00-CQ300000000PS5EU",
+              "checked": "2026-11-02T17:01:57.195892+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 9.24
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:01:56.075951+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP7579-PPSA15064_00-CQ300000000PS5EU",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:01:57.195892+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202308/3013/02b1e714b0f267f2ef62fc7f0ef934de009483f4e9335713.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP7579-PPSA15064_00-CQ300000000PS5EU",
+        "checked": "2026-11-02T17:01:57.195892+00:00"
+      },
+      "user": {
+        "score": 4.62,
+        "count": 6094,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP7579-PPSA15064_00-CQ300000000PS5EU",
+        "checked": "2026-11-02T17:01:57.195892+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": true,
+        "tier": "Extra",
+        "product_id": "EP7579-PPSA15064_00-CQ300000000PS5EU",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP7579-PPSA15064_00-CQ300000000PS5EU",
+        "checked": "2026-11-02T17:01:57.195892+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:01:56.075951+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:14398": {
       "title": "Cat Quest III",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 90.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 90.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/cat-quest-iii",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 8.1,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 8.1,
+              "scale": 10.0,
+              "count": 73,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/cat_quest_iii",
+              "platform": "Nintendo Switch",
+              "weight": 8.54400374531753,
+              "normalized": 8.1
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:01:57.210978+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/cat-quest-iii-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:01:58.920579+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000067865/6abf945dc3a7ecd14edd872a1a61d4dec5c7ef2c82f04b056b0d2c441c498bcc",
+        "source": "https://www.nintendo.com/us/store/products/cat-quest-iii-switch/",
+        "checked": "2026-11-02T17:01:58.921073+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:01:57.210978+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:10620": {
       "title": "Catty & Batty: The Spirit Guide",
@@ -9426,28 +9601,65 @@
           "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.22,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.61,
+              "count": 23,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP1661-PPSA03661_00-SYPS5CATTYNBATTY",
+              "checked": "2026-11-02T17:01:58.826834+00:00",
+              "platform": "PSN · PS5",
+              "weight": 4.795831523312719,
+              "normalized": 9.22
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 301: Moved Permanently",
-          "Metacritic users: HTTP Error 301: Moved Permanently",
-          "www.pushsquare.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "PlayStation 5",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:45:21.026815+00:00"
+        "attempted": "2026-11-02T17:01:57.680707+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP1661-PPSA03661_00-SYPS5CATTYNBATTY",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:01:58.826834+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202109/0911/gz7DXNqMzWGZRqbFD1qPlfmn.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP1661-PPSA03661_00-SYPS5CATTYNBATTY",
+        "checked": "2026-11-02T17:01:58.826834+00:00"
+      },
+      "user": {
+        "score": 4.61,
+        "count": 23,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP1661-PPSA03661_00-SYPS5CATTYNBATTY",
+        "checked": "2026-11-02T17:01:58.826834+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP1661-PPSA03661_00-SYPS5CATTYNBATTY",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP1661-PPSA03661_00-SYPS5CATTYNBATTY",
+        "checked": "2026-11-02T17:01:58.826834+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:01:57.680707+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:10616": {
       "title": "Catty & Batty: The Spirit Guide",
@@ -9467,21 +9679,19 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 301: Moved Permanently",
-          "Metacritic users: HTTP Error 301: Moved Permanently",
-          "www.nintendolife.com: HTTP Error 404: Not Found"
-        ],
-        "platform": "Nintendo Switch",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:45:22.802336+00:00"
+        "attempted": "2026-11-02T17:01:58.838034+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:01:58.838034+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 301: Moved Permanently"
       }
     },
     "PS5:13218": {
@@ -9529,24 +9739,65 @@
           "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 7.92,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.96,
+              "count": 46,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA13384_00-0047751831304315",
+              "checked": "2026-11-02T17:02:02.311714+00:00",
+              "platform": "PSN · PS5",
+              "weight": 6.782329983125268,
+              "normalized": 7.92
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": true,
-        "critic_index_review_count": 4,
-        "errors": [],
-        "platform": "PlayStation 5",
-        "algorithm_version": 1,
-        "attempted": "2026-11-02T16:45:25.864685+00:00"
+        "attempted": "2026-11-02T17:02:01.221608+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": true
-      }
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA13384_00-0047751831304315",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:02:02.311714+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202303/0916/6baee7f3fcf331c894bf6d3aae56aa5bec468461b48bff40.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0182-PPSA13384_00-0047751831304315",
+        "checked": "2026-11-02T17:02:02.311714+00:00"
+      },
+      "user": {
+        "score": 3.96,
+        "count": 46,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA13384_00-0047751831304315",
+        "checked": "2026-11-02T17:02:02.311714+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP0182-PPSA13384_00-0047751831304315",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0182-PPSA13384_00-0047751831304315",
+        "checked": "2026-11-02T17:02:02.311714+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:02:01.221608+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:13221": {
       "title": "Caverns of Mars: Recharged",
