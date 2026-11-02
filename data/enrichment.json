@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T19:45:46.618821+00:00",
+  "updated": "2026-11-02T19:46:20.771164+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 253,
     "missing_store": 358,
     "missing_rating": 689,
-    "full_attempted": 80
+    "full_attempted": 90
   },
   "games": {
     "PS5:13238": {
@@ -1954,7 +1954,12 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:52:28.045804+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:46:02.957091+00:00"
       },
       "requirements": {
         "image": true,
@@ -1974,8 +1979,10 @@
       "basics_attempted": "2026-11-02T18:52:28.045804+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
-      }
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:46:03.314081+00:00"
     },
     "Switch:11485": {
       "title": "An American Werewolf in L.A.",
@@ -1995,7 +2002,16 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:52:50.744493+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: The read operation timed out",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:46:16.109439+00:00"
       },
       "requirements": {
         "image": true,
@@ -2019,8 +2035,10 @@
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
-      }
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:46:17.018966+00:00"
     },
     "Switch:12745": {
       "title": "Apré Lapli [After the rain]",
@@ -87994,7 +88012,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:15:33.190860+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:45:59.419325+00:00"
       },
       "requirements": {
         "image": true,
@@ -88014,8 +88039,10 @@
       "basics_attempted": "2026-11-02T19:15:33.190860+00:00",
       "version": 3,
       "errors": {
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:46:00.308254+00:00"
     },
     "Switch:17680": {
       "title": "BAD BOY BROTHER",
@@ -116391,9 +116418,19 @@
           "source_count": 1
         },
         "user": {
-          "score": 8.6,
+          "score": 7.3,
           "scale": 10,
           "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6,
+              "scale": 10,
+              "count": 7656,
+              "url": "https://www.metacritic.com/game/animal-crossing-new-horizons/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 31.622776601683793,
+              "normalized": 6.0
+            },
             {
               "name": "Nintendo Life",
               "score": 8.6,
@@ -116405,10 +116442,17 @@
               "normalized": 8.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:26:33.395411+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": 122,
+        "errors": [
+          "Metacritic critics: The read operation timed out"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:46:19.794166+00:00"
       },
       "requirements": {
         "image": true,
@@ -116427,7 +116471,11 @@
       },
       "basics_attempted": "2026-11-02T17:26:33.395411+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:46:20.601465+00:00"
     },
     "Switch:6093": {
       "title": "Aqua Lungers",
@@ -128848,7 +128896,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:21:51.594156+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
+          "www.nintendolife.com/switch-eshop: HTTP Error 410: Gone"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:46:08.347180+00:00"
       },
       "requirements": {
         "image": false,
@@ -128863,8 +128921,10 @@
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
-      }
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:46:09.093927+00:00"
     },
     "Switch:7310": {
       "title": "Animated Jigsaws: Beautiful Japanese Scenery",
@@ -128892,7 +128952,16 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:32:10.905032+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 301: Moved Permanently",
+          "Metacritic users: HTTP Error 301: Moved Permanently",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:46:09.614178+00:00"
       },
       "requirements": {
         "image": true,
@@ -128911,7 +128980,10 @@
       },
       "basics_attempted": "2026-11-02T17:32:10.905032+00:00",
       "version": 2,
-      "errors": {}
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:46:10.094193+00:00"
     },
     "Switch:7311": {
       "title": "Animated Jigsaws: Japanese Women",
@@ -128931,7 +129003,16 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:21:51.594317+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 301: Moved Permanently",
+          "Metacritic users: HTTP Error 301: Moved Permanently",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:46:13.819337+00:00"
       },
       "requirements": {
         "image": true,
@@ -128953,8 +129034,10 @@
       "errors": {
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 301: Moved Permanently",
-        "metacritic_reviews": "HTTP Error 301: Moved Permanently"
-      }
+        "metacritic_reviews": "HTTP Error 301: Moved Permanently",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:46:14.698673+00:00"
     },
     "Switch:7309": {
       "title": "Animated Jigsaws: Wild Animals",
@@ -128974,7 +129057,16 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:21:51.594519+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 301: Moved Permanently",
+          "Metacritic users: HTTP Error 301: Moved Permanently",
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:46:15.007768+00:00"
       },
       "requirements": {
         "image": true,
@@ -128996,8 +129088,10 @@
       "errors": {
         "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 301: Moved Permanently",
-        "metacritic_reviews": "HTTP Error 301: Moved Permanently"
-      }
+        "metacritic_reviews": "HTTP Error 301: Moved Permanently",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:46:15.878340+00:00"
     },
     "Switch:7432": {
       "title": "Bad Dudes",
@@ -133336,24 +133430,75 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 73.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/angerforce_reloaded",
+              "name": "GameCritics",
+              "score": 70,
+              "url": "https://gamecritics.com/brian-theisen/angerforce-reloaded-review/",
+              "date": "2019-06-18",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/angerforce-reloaded-review/",
+              "date": "2019-04-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/angerforce_reloaded?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2019-04-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2019/07/19/angerforce-reloaded-review/",
+              "date": "2019-07-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/cheap-indie-games-for-switch-part-3#angerforce-reloaded",
+              "date": "2019-04-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 70,
+              "url": "https://www.vooks.net/angerforce-reloaded-switch-eshop-review/",
+              "date": "2019-04-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
-          "score": 6.8,
+          "score": 7.06,
           "scale": 10,
           "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.5,
+              "scale": 10,
+              "count": 10,
+              "url": "https://www.metacritic.com/game/angerforce-reloaded/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.1622776601683795,
+              "normalized": 7.5
+            },
             {
               "name": "Nintendo Life",
               "score": 6.8,
@@ -133365,10 +133510,17 @@
               "normalized": 6.799999999999999
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:23:13.767942+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:46:01.645783+00:00"
       },
       "requirements": {
         "image": true,
@@ -133384,8 +133536,10 @@
       "version": 3,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:46:02.138203+00:00"
     },
     "Switch:7746": {
       "title": "Artifact Adventure Gaiden DX",
@@ -141872,7 +142026,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:25:17.924911+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
+          "www.nintendolife.com/switch-eshop: HTTP Error 410: Gone"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-02T19:46:06.031869+00:00"
       },
       "requirements": {
         "image": true,
@@ -141893,8 +142055,10 @@
       "version": 3,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
-        "nindie": "Not a Switch 1 review"
-      }
+        "nindie": "Not a Switch 1 review",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-02T19:46:06.820336+00:00"
     },
     "Switch:8969": {
       "title": "BROFORCE",
