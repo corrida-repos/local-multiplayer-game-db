@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:06:31.014986+00:00",
+  "updated": "2026-11-02T18:06:59.123954+00:00",
   "version": 2,
   "coverage": {
     "total": 2542,
-    "attempted": 1572,
-    "ready": 981,
-    "missing_image": 1125,
-    "missing_store": 1199,
-    "missing_rating": 1466,
+    "attempted": 1582,
+    "ready": 989,
+    "missing_image": 1117,
+    "missing_store": 1191,
+    "missing_rating": 1458,
     "full_attempted": 0
   },
   "games": {
@@ -43337,21 +43337,50 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 8.7,
+              "scale": 10,
+              "count": 289,
+              "url": "https://www.metacritic.com/game/portal-companion-collection/user-reviews/?platform=nintendo-switch",
+              "platform": "Switch",
+              "weight": 17.0,
+              "normalized": 8.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:06:38.798133+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/portal-companion-collection-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:06:41.508762+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70070000013722/ff4784d82e93dfed206cd2b3f9bb7cca37d4e4735cef790a4b8af9084816414b",
+        "source": "https://www.nintendo.com/us/store/products/portal-companion-collection-switch/",
+        "checked": "2026-11-02T18:06:41.508906+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:06:38.798133+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:11736": {
@@ -56123,45 +56152,118 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 5.56,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 2.78,
+              "count": 9,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP3945-PPSA19380_00-0072579820631109",
+              "checked": "2026-11-02T18:06:37.492420+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 3.0,
+              "normalized": 5.56
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:06:36.165174+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP3945-PPSA19380_00-0072579820631109",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:06:37.492420+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202402/2222/6951a9af799574a59913a4614345ad0a810e1f88818f27f6.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP3945-PPSA19380_00-0072579820631109",
+        "checked": "2026-11-02T18:06:37.492420+00:00"
+      },
+      "user": {
+        "score": 2.78,
+        "count": 9,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP3945-PPSA19380_00-0072579820631109",
+        "checked": "2026-11-02T18:06:37.492420+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP3945-PPSA19380_00-0072579820631109",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP3945-PPSA19380_00-0072579820631109",
+        "checked": "2026-11-02T18:06:37.492420+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:06:36.165174+00:00",
+      "version": 2,
+      "errors": {}
     },
     "Switch:15312": {
       "title": "Pool Party",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 58.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 57.99999999999999,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=pool-party-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:06:36.165639+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/pool-party-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:06:37.173743+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000072925/6ceb73302069d6601f5a3c3913e6a58210b39ba830d7a9e4b2e8b1818f221c75",
+        "source": "https://www.nintendo.com/us/store/products/pool-party-switch/",
+        "checked": "2026-11-02T18:06:37.173959+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:06:36.165639+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:15320": {
@@ -65804,22 +65906,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.32,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.66,
+              "count": 4121,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP4143-PPSA23671_00-0913383672682674",
+              "checked": "2026-11-02T18:06:48.629703+00:00",
+              "platform": "PSN · PS5",
+              "weight": 31.622776601683793,
+              "normalized": 9.32
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:06:46.610763+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP4143-PPSA23671_00-0913383672682674",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:06:48.629703+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202505/0213/5a59aa423c390345f779729e904373b64cd0d67e5270d006.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP4143-PPSA23671_00-0913383672682674",
+        "checked": "2026-11-02T18:06:48.629703+00:00"
+      },
+      "user": {
+        "score": 4.66,
+        "count": 4121,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP4143-PPSA23671_00-0913383672682674",
+        "checked": "2026-11-02T18:06:48.629703+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP4143-PPSA23671_00-0913383672682674",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP4143-PPSA23671_00-0913383672682674",
+        "checked": "2026-11-02T18:06:48.629703+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:06:46.610763+00:00",
+      "version": 2,
+      "errors": {}
     },
     "PS5:16315": {
       "title": "RoboDunk",
@@ -85391,21 +85541,29 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:06:49.676403+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:06:49.676403+00:00",
+      "version": 2,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 403: Forbidden"
       }
     },
     "Switch:19111": {
@@ -88863,23 +89021,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 75.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=portal-knights-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:06:37.496332+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/portal-knights-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:06:41.048193+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000000774/058f209bca0e2c7055ddf631862b0f59edfc1ceafa69aa316bf6c97ca9739afa",
+        "source": "https://www.nintendo.com/us/store/products/portal-knights-switch/",
+        "checked": "2026-11-02T18:06:41.048346+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:06:37.496332+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:5108": {
@@ -99331,23 +99514,48 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 59.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 59.00000000000001,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=pooplers-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:06:36.165848+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/pooplers-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:06:38.461138+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000027929/db8d920e4b8b56329e7b2e578b2c7e8dc355e2a761d1141f6992e2aa7c770a3f",
+        "source": "https://www.nintendo.com/us/store/products/pooplers-switch/",
+        "checked": "2026-11-02T18:06:38.461297+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:06:36.165848+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
       }
     },
     "Switch:6521": {
@@ -102132,21 +102340,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:06:36.165992+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:06:36.165992+00:00",
+      "version": 2,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:7015": {
@@ -102154,23 +102374,56 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/prehistoric_isle_2_neogeo?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/aca-neogeo-shoot-em-ups#prehistoric-isle-2",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 2
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:06:48.634756+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/ACA-NEOGEO-PREHISTORIC-ISLE-2-1410137.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:06:50.334897+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ACANeogeoPrehistoricIsle2_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/ACA-NEOGEO-PREHISTORIC-ISLE-2-1410137.html",
+        "checked": "2026-11-02T18:06:50.334897+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:06:48.634756+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:6995": {
@@ -119645,23 +119898,70 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 62.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "IGN Italia",
+              "score": 63,
+              "url": "https://it.ign.com/potion-party-nintendo-switch/180684/review/potion-party-la-recensione ",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 65,
+              "url": "https://noisypixel.net/potion-party-review-switch-ps4-pc/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-potion-party-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 50,
+              "url": "https://www.starbit.pt/2021/07/22/potion-party-analise/",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 4
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:06:40.774720+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/potion-party-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:06:43.552243+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000038956/18c2e92e8929ec9ca1db052945643c8e9fae6936018b6f9bb5e736858f61da38",
+        "source": "https://www.nintendo.com/us/store/products/potion-party-switch/",
+        "checked": "2026-11-02T18:06:43.552455+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:06:40.774720+00:00",
+      "version": 2,
+      "errors": {
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:9645": {
