@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:32:18.141588+00:00",
+  "updated": "2026-11-02T18:32:43.035209+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
-    "attempted": 2142,
-    "ready": 1376,
-    "missing_image": 635,
-    "missing_store": 721,
-    "missing_rating": 1049,
+    "attempted": 2152,
+    "ready": 1383,
+    "missing_image": 628,
+    "missing_store": 714,
+    "missing_rating": 1042,
     "full_attempted": 0
   },
   "games": {
@@ -52235,24 +52235,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 100.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 100.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/tetris-effect-connected",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 8.0,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 8.0,
+              "scale": 10.0,
+              "count": 260,
+              "url": "https://www.nintendolife.com/games/switch-eshop/tetris_effect_connected",
+              "platform": "Nintendo Switch",
+              "weight": 16.1245154965971,
+              "normalized": 8.0
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:32:20.765889+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/tetris-effect-connected-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:32:24.508156+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000038380/be99e87f8f668b5329d56571ebdfe1b11ea192aed77b8bfa19a9330693c2e27f",
+        "source": "https://www.nintendo.com/us/store/products/tetris-effect-connected-switch/",
+        "checked": "2026-11-02T18:32:24.508569+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:32:20.765889+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:10317": {
       "title": "The Addams Family: Mansion Mayhem",
@@ -52261,21 +52295,30 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:32:20.766781+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:32:20.766781+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:12464": {
@@ -52285,21 +52328,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:32:24.174826+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:32:24.174826+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "PS5:10511": {
@@ -72877,46 +72932,128 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.62,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 3.81,
+              "count": 276,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP7818-PPSA25646_00-0489727546626150",
+              "checked": "2026-11-02T18:32:22.819341+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 16.61324772583615,
+              "normalized": 7.62
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:32:20.766182+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP7818-PPSA25646_00-0489727546626150",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:32:22.819341+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202410/1415/4afa6dcb1141e3ba19e4c048e1fe7024cbf17618cec83f0e.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP7818-PPSA25646_00-0489727546626150",
+        "checked": "2026-11-02T18:32:22.819341+00:00"
+      },
+      "user": {
+        "score": 3.81,
+        "count": 276,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP7818-PPSA25646_00-0489727546626150",
+        "checked": "2026-11-02T18:32:22.819341+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP7818-PPSA25646_00-0489727546626150",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP7818-PPSA25646_00-0489727546626150",
+        "checked": "2026-11-02T18:32:22.819341+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:32:20.766182+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:16516": {
       "title": "Tetris Forever",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/tetris-forever",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 67,
+              "url": "https://www.nintendolife.com/games/switch-eshop/tetris_forever",
+              "platform": "Nintendo Switch",
+              "weight": 8.18535277187245,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:32:20.766501+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/tetris-forever-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:32:25.781673+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000085242/9425172f0919466273c7bfa1b1b7b6df6b728268e72a1993998d0c14946383ea",
+        "source": "https://www.nintendo.com/us/store/products/tetris-forever-switch/",
+        "checked": "2026-11-02T18:32:25.782159+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:32:20.766501+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:16386": {
       "title": "Thunder Fox",
@@ -79639,22 +79776,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.06,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.53,
+              "count": 3262,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP0082-PPSA32309_00-MILLENNIUMTALEEP",
+              "checked": "2026-11-02T18:32:24.420823+00:00",
+              "platform": "PSN · PS5",
+              "weight": 31.622776601683793,
+              "normalized": 9.06
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:32:22.826954+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP0082-PPSA32309_00-MILLENNIUMTALEEP",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:32:24.420823+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202601/1912/9cddb60efc374d029ced0e159d1db065b48b79e0fc63a704.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP0082-PPSA32309_00-MILLENNIUMTALEEP",
+        "checked": "2026-11-02T18:32:24.420823+00:00"
+      },
+      "user": {
+        "score": 4.53,
+        "count": 3262,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP0082-PPSA32309_00-MILLENNIUMTALEEP",
+        "checked": "2026-11-02T18:32:24.420823+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP0082-PPSA32309_00-MILLENNIUMTALEEP",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP0082-PPSA32309_00-MILLENNIUMTALEEP",
+        "checked": "2026-11-02T18:32:24.420823+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:32:22.826954+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:17133": {
       "title": "The Last Camp",
@@ -100890,47 +101075,106 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/tesla_vs_lovecraft",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 17,
+              "url": "https://www.nintendolife.com/games/switch-eshop/tesla_vs_lovecraft",
+              "platform": "Nintendo Switch",
+              "weight": 4.123105625617661,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:32:20.765068+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/tesla-vs-lovecraft-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:32:24.223283+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000008242/62a01146074053125a9425fd19ad64138a0d830fdf2cd62a675d6e7d93553263",
+        "source": "https://www.nintendo.com/us/store/products/tesla-vs-lovecraft-switch/",
+        "checked": "2026-11-02T18:32:24.223746+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:32:20.765068+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:5035": {
       "title": "The Adventure Pals",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 85.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 85.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-adventure-pals-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:32:20.766963+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/the-adventure-pals-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:32:28.578549+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000009864/40cf451e4794ce7dc957fd32666c21a1003135e4e8b755afb45fc8d98e964903",
+        "source": "https://www.nintendo.com/us/store/products/the-adventure-pals-switch/",
+        "checked": "2026-11-02T18:32:28.578986+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:32:20.766963+00:00",
+      "version": 3,
+      "errors": {
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
       }
     },
     "Switch:4893": {
@@ -128094,21 +128338,32 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:32:20.765263+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:32:20.765263+00:00",
+      "version": 3,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:8359": {
@@ -136016,24 +136271,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 80.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=tesla-force-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:32:20.764841+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/tesla-force-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:32:22.675826+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000025064/95e48d9ed7bbcc0ba562e315db7cb22e76727268ac432d52f271d2e3c9703eff",
+        "source": "https://www.nintendo.com/us/store/products/tesla-force-switch/",
+        "checked": "2026-11-02T18:32:22.676192+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:32:20.764841+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:9587": {
       "title": "The Astyanax",
