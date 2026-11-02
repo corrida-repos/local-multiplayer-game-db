@@ -1,0 +1,25 @@
+name: Verify enrichment source responses
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Capture public source fixtures
+        run: |
+          mkdir -p /tmp/enrichment-probe
+          python - <<'PY'
+          import urllib.request,json,pathlib,time
+          urls={'switchscores-game':'https://www.switchscores.com/games/6739/aloof','switchscores-month':'https://www.switchscores.com/c/switch-1/2021/10','nindie-aloof':'https://www.nindiespotlight.com/game_profile.cfm?game=aloof-switch'}
+          for name,url in urls.items():
+              try:
+                  with urllib.request.urlopen(url,timeout=25) as r:page=r.read().decode();pathlib.Path('/tmp/enrichment-probe/'+name+'.html').write_text(page);print(name,r.status,len(page))
+              except Exception as e:print(name,str(e))
+              time.sleep(1.1)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-enrichment-fixtures
+          path: /tmp/enrichment-probe
