@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T18:42:16.463457+00:00",
+  "updated": "2026-11-02T18:42:43.889098+00:00",
   "version": 3,
   "coverage": {
     "total": 2542,
-    "attempted": 2342,
-    "ready": 1502,
-    "missing_image": 458,
-    "missing_store": 552,
-    "missing_rating": 911,
+    "attempted": 2352,
+    "ready": 1506,
+    "missing_image": 452,
+    "missing_store": 546,
+    "missing_rating": 905,
     "full_attempted": 0
   },
   "games": {
@@ -54793,21 +54793,40 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 7.7,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.7,
+              "scale": 10,
+              "count": 26,
+              "url": "https://www.metacritic.com/game/twisted-metal-2/user-reviews/?platform=playstation-5",
+              "platform": "PS5",
+              "weight": 5.0990195135927845,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:42:20.704946+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "basics_attempted": "2026-11-02T18:42:20.704946+00:00",
+      "version": 3,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found"
       }
     },
     "Switch:10570": {
@@ -54815,24 +54834,58 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 90.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 90.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/unsighted",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.8,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.8,
+              "scale": 10.0,
+              "count": 29,
+              "url": "https://www.nintendolife.com/games/switch-eshop/unsighted",
+              "platform": "Nintendo Switch",
+              "weight": 5.385164807134504,
+              "normalized": 7.800000000000001
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:42:20.706958+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/unsighted-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:42:26.318793+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000040588/56c5dc511d3529bf5e8bdea15cca3e88c79bcc16e6843d39f3a863bacc412b82",
+        "source": "https://www.nintendo.com/us/store/products/unsighted-switch/",
+        "checked": "2026-11-02T18:42:26.319253+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:42:20.706958+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:10514": {
       "title": "USAAF Mustang",
@@ -54841,21 +54894,41 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:42:22.693075+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-USAAF-MUSTANG-2035491.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:42:27.547946+00:00"
+      },
+      "image": {
+        "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ArcadeArchivesUaaafMustang_image500w.jpg",
+        "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-USAAF-MUSTANG-2035491.html",
+        "checked": "2026-11-02T18:42:27.547946+00:00"
+      },
+      "aliases": [
+        "Arcade Archives USAAF MUSTANG"
+      ],
+      "basics_attempted": "2026-11-02T18:42:22.693075+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:12264": {
@@ -82678,22 +82751,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.76,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.38,
+              "count": 969,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP9000-PPSA27837_00-0000000000000000",
+              "checked": "2026-11-02T18:42:22.685593+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.12876483254676,
+              "normalized": 8.76
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:42:20.705174+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP9000-PPSA27837_00-0000000000000000",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:42:22.685593+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202507/0122/f3b3627921332b0ca00008d2a9096aaaeaca617c2d5501d7.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP9000-PPSA27837_00-0000000000000000",
+        "checked": "2026-11-02T18:42:22.685593+00:00"
+      },
+      "user": {
+        "score": 4.38,
+        "count": 969,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP9000-PPSA27837_00-0000000000000000",
+        "checked": "2026-11-02T18:42:22.685593+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP9000-PPSA27837_00-0000000000000000",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP9000-PPSA27837_00-0000000000000000",
+        "checked": "2026-11-02T18:42:22.685593+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:42:20.705174+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:17203": {
       "title": "Twisted Metal 4",
@@ -82702,46 +82823,128 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 8.52,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.26,
+              "count": 1315,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UP9000-PPSA27839_00-0000000000000000",
+              "checked": "2026-11-02T18:42:23.697609+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 8.52
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:42:20.705388+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UP9000-PPSA27839_00-0000000000000000",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T18:42:23.697609+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202507/0122/5756d1c967fd24b74981396f1ebdb69639cd78c4e860f2fa.png",
+        "source": "https://store.playstation.com/pt-pt/product/UP9000-PPSA27839_00-0000000000000000",
+        "checked": "2026-11-02T18:42:23.697609+00:00"
+      },
+      "user": {
+        "score": 4.26,
+        "count": 1315,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UP9000-PPSA27839_00-0000000000000000",
+        "checked": "2026-11-02T18:42:23.697609+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UP9000-PPSA27839_00-0000000000000000",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UP9000-PPSA27839_00-0000000000000000",
+        "checked": "2026-11-02T18:42:23.697609+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:42:20.705388+00:00",
+      "version": 3,
+      "errors": {}
     },
     "Switch:17346": {
       "title": "UFO 50",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 90.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 90.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/ufo-50",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 8.0,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 8.0,
+              "scale": 10.0,
+              "count": 116,
+              "url": "https://www.nintendolife.com/games/switch-eshop/ufo_50",
+              "platform": "Nintendo Switch",
+              "weight": 10.770329614269007,
+              "normalized": 8.0
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:42:20.706720+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/ufo-50-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:42:25.056786+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000098422/a114057ff62030c85cdfab5fd3384e6913bd716f44164f147d95100a29efd872",
+        "source": "https://www.nintendo.com/us/store/products/ufo-50-switch/",
+        "checked": "2026-11-02T18:42:25.057248+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:42:20.706720+00:00",
+      "version": 3,
+      "errors": {}
     },
     "PS5:17172": {
       "title": "Upin & Ipin Universe",
@@ -97471,21 +97674,32 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:42:20.706109+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:42:20.706109+00:00",
+      "version": 3,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified",
+        "community": "HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:18756": {
@@ -97495,21 +97709,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:42:20.706513+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T18:42:20.706513+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_reviews": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:18593": {
@@ -125202,23 +125428,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/johnny_turbos_arcade_two_crude_dudes",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/johnny-turbos-arcade-heavy-burger-and-more#two-crude-dudes",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 2
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:42:20.705886+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "basics_attempted": "2026-11-02T18:42:20.705886+00:00",
+      "version": 3,
+      "errors": {
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:7313": {
@@ -125228,21 +125478,38 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T18:42:21.578276+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/uoris-dx-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T18:42:27.417562+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000027126/02f8535f99c99f2fe759dacbd44e00c3200a652e659afa68e8b7a62b4dd62f7e",
+        "source": "https://www.nintendo.com/us/store/products/uoris-dx-switch/",
+        "checked": "2026-11-02T18:42:27.417862+00:00"
+      },
+      "basics_attempted": "2026-11-02T18:42:21.578276+00:00",
+      "version": 3,
+      "errors": {
+        "nindie": "Not a Switch 1 review"
       }
     },
     "Switch:7409": {
