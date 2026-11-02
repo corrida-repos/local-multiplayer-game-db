@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-02T17:06:25.564778+00:00",
+  "updated": "2026-11-02T17:06:43.186811+00:00",
   "version": 1,
   "coverage": {
     "total": 1085,
-    "attempted": 262,
-    "ready": 195,
-    "missing_image": 800,
-    "missing_store": 803,
-    "missing_rating": 880,
+    "attempted": 272,
+    "ready": 198,
+    "missing_image": 793,
+    "missing_store": 798,
+    "missing_rating": 876,
     "full_attempted": 0
   },
   "games": {
@@ -15372,21 +15372,30 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:27.759580+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:06:27.759580+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 301: Moved Permanently"
       }
     },
     "Switch:14200": {
@@ -15396,21 +15405,33 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:29.135448+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
         "rating": false
+      },
+      "image": {
+        "url": "https://images.nintendolife.com//1280x720.jpg",
+        "source": "https://www.nintendolife.com/games/nintendo-switch/double_dragon_collection",
+        "checked": "2026-11-02T17:06:34.689734+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:29.135448+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found"
       }
     },
     "PS5:13653": {
@@ -15420,46 +15441,128 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 9.04,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 4.52,
+              "count": 1113,
+              "scope": "PSN · PS4/PS5",
+              "name": "PSN (PS4/PS5 shared product)",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/EP2955-PPSA16019_00-DDGBASEGAME00000",
+              "checked": "2026-11-02T17:06:33.207236+00:00",
+              "platform": "PSN · PS4/PS5",
+              "weight": 31.622776601683793,
+              "normalized": 9.04
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:32.087958+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/EP2955-PPSA16019_00-DDGBASEGAME00000",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:06:33.207236+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202510/2318/ee14425b5a3e5ef018e9baed56d6442f4b5594852898ac03.png",
+        "source": "https://store.playstation.com/pt-pt/product/EP2955-PPSA16019_00-DDGBASEGAME00000",
+        "checked": "2026-11-02T17:06:33.207236+00:00"
+      },
+      "user": {
+        "score": 4.52,
+        "count": 1113,
+        "scope": "PSN · PS4/PS5",
+        "name": "PSN (PS4/PS5 shared product)",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/EP2955-PPSA16019_00-DDGBASEGAME00000",
+        "checked": "2026-11-02T17:06:33.207236+00:00",
+        "platform": "PSN · PS4/PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "EP2955-PPSA16019_00-DDGBASEGAME00000",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/EP2955-PPSA16019_00-DDGBASEGAME00000",
+        "checked": "2026-11-02T17:06:33.207236+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:32.087958+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:13654": {
       "title": "Double Dragon Gaiden: Rise Of The Dragons",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/double-dragon-gaiden-rise-of-the-dragons",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 29,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/double_dragon_gaiden_rise_of_the_dragons",
+              "platform": "Nintendo Switch",
+              "weight": 5.385164807134504,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:33.216976+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/double-dragon-gaiden-rise-of-the-dragons-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:06:34.688515+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000065367/fd65f337121b4623b3a2b11d5ad505efadbe7c53df53ab4bf66be08d86d368f2",
+        "source": "https://www.nintendo.com/us/store/products/double-dragon-gaiden-rise-of-the-dragons-switch/",
+        "checked": "2026-11-02T17:06:34.688975+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:33.216976+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:10182": {
       "title": "Downtown Special: Kunio-kun no Jidaigeki da yo - Zenin Shūgō!",
@@ -15468,21 +15571,31 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:36.927588+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:06:36.927588+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "Switch:12228": {
@@ -15492,21 +15605,31 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:37.752327+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": false
+      },
+      "basics_attempted": "2026-11-02T17:06:37.752327+00:00",
+      "version": 1,
+      "errors": {
+        "store": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "metacritic_users": "HTTP Error 404: Not Found",
+        "metacritic_critics": "HTTP Error 404: Not Found"
       }
     },
     "PS5:14653": {
@@ -37998,45 +38121,79 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:27.759894+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/doomsday-paradise-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:06:30.717562+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000073766/356da98efc5a6be9ea1508ef5c3634c4f5057a0207b85e9aeb9599b02d9a0646",
+        "source": "https://www.nintendo.com/us/store/products/doomsday-paradise-switch/",
+        "checked": "2026-11-02T17:06:30.717814+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:27.759894+00:00",
+      "version": 1,
+      "errors": {}
     },
     "PS5:15664": {
       "title": "Double Dragon Revive",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "Metacritic aggregate",
+              "score": 60,
+              "url": "https://www.metacritic.com/game/double-dragon-revive/critic-reviews/?platform=playstation-5",
+              "platform": "PS5"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 1
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:36.911410+00:00"
       },
       "requirements": {
-        "image": false,
+        "image": true,
         "store": false,
-        "rating": false
+        "rating": true
+      },
+      "image": {
+        "url": "https://images.pushsquare.com//1280x720.jpg",
+        "source": "https://www.pushsquare.com/games/ps5/double_dragon_revive",
+        "checked": "2026-11-02T17:06:38.038621+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:36.911410+00:00",
+      "version": 1,
+      "errors": {
+        "store": "No exact Portugal PS5 product verified"
       }
     },
     "Switch:15758": {
@@ -40431,22 +40588,70 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
-          "score": null,
+          "score": 10.0,
           "scale": 10,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "score": 5,
+              "count": 6,
+              "scope": "PSN · PS5",
+              "name": "PSN",
+              "scale": 5,
+              "source": "PSN",
+              "url": "https://store.playstation.com/pt-pt/product/UB0946-PPSA24261_00-DORFS00000000PS4",
+              "checked": "2026-11-02T17:06:29.125164+00:00",
+              "platform": "PSN · PS5",
+              "weight": 2.449489742783178,
+              "normalized": 10.0
+            }
+          ],
+          "source_count": 1,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:27.760094+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
-        "rating": false
-      }
+        "image": true,
+        "store": true,
+        "rating": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/pt-pt/product/UB0946-PPSA24261_00-DORFS00000000PS4",
+        "label": "Abrir na PlayStation Store",
+        "checked": "2026-11-02T17:06:29.125164+00:00"
+      },
+      "image": {
+        "url": "https://image.api.playstation.com/vulcan/ap/rnd/202410/1718/9491ba283a878f93f73e9f14f0bc3265e3efcc43be2febe7.png",
+        "source": "https://store.playstation.com/pt-pt/product/UB0946-PPSA24261_00-DORFS00000000PS4",
+        "checked": "2026-11-02T17:06:29.125164+00:00"
+      },
+      "user": {
+        "score": 5,
+        "count": 6,
+        "scope": "PSN · PS5",
+        "name": "PSN",
+        "scale": 5,
+        "source": "PSN",
+        "url": "https://store.playstation.com/pt-pt/product/UB0946-PPSA24261_00-DORFS00000000PS4",
+        "checked": "2026-11-02T17:06:29.125164+00:00",
+        "platform": "PSN · PS5"
+      },
+      "psplus": {
+        "in_catalog": false,
+        "tier": null,
+        "product_id": "UB0946-PPSA24261_00-DORFS00000000PS4",
+        "region": "PT",
+        "source": "https://store.playstation.com/pt-pt/product/UB0946-PPSA24261_00-DORFS00000000PS4",
+        "checked": "2026-11-02T17:06:29.125164+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:27.760094+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:16126": {
       "title": "Dorfs: Hammers for Hire",
@@ -40455,22 +40660,37 @@
         "critic": {
           "score": null,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [],
+          "method": "equal-weight-unique-publications",
+          "source_count": 0
         },
         "user": {
           "score": null,
           "scale": 10,
+          "sources": [],
           "source_count": 0,
-          "sources": []
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": ""
+        "attempted": "2026-11-02T17:06:27.760528+00:00"
       },
       "requirements": {
-        "image": false,
-        "store": false,
+        "image": true,
+        "store": true,
         "rating": false
-      }
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/dorfs-hammers-for-hire-switch/",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T17:06:30.941845+00:00"
+      },
+      "image": {
+        "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000084270/6313b0718706ad3f3ae978eea1ad3d2bc4e2c7cb1c1f304364d3e124a40ecd26",
+        "source": "https://www.nintendo.com/us/store/products/dorfs-hammers-for-hire-switch/",
+        "checked": "2026-11-02T17:06:30.942180+00:00"
+      },
+      "basics_attempted": "2026-11-02T17:06:27.760528+00:00",
+      "version": 1,
+      "errors": {}
     },
     "Switch:16171": {
       "title": "Dunk Dunk",
