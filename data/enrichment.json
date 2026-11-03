@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T00:09:11.946830+00:00",
+  "updated": "2026-11-03T00:11:46.390937+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1939,
+    "ready": 1941,
     "missing_image": 109,
-    "missing_store": 394,
+    "missing_store": 389,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -81602,7 +81602,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:31:27.644636+00:00"
+        "attempted": "2026-11-03T00:09:16.431135+00:00"
       },
       "requirements": {
         "image": true,
@@ -81624,15 +81624,85 @@
       "aliases": [
         "Arcade Archives THUNDER DRAGON 2"
       ],
-      "basics_attempted": "2026-11-02T21:31:27.644636+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:09:16.431135+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:56:10.954908+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:21.659891+00:00",
+              "next_attempt": "2026-11-04T00:11:21.659891+00:00",
+              "revision": "bb5145f5bffcbc93:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/thunder_dragon_2",
+                "https://www.nintendolife.com/games/switch-eshop/thunder_dragon_2",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_thunder_dragon_2"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_thunder_dragon_2"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:22.988603+00:00",
+              "next_attempt": "2026-11-04T00:11:22.988603+00:00",
+              "revision": "bb5145f5bffcbc93:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=thunder-dragon-2-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=thunder-dragon-2-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:40.777760+00:00",
+              "next_attempt": "2026-11-04T00:11:40.777760+00:00",
+              "revision": "bb5145f5bffcbc93:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-thunder-dragon-2/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-thunder-dragon-2/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-thunder-dragon-2/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-thunder-dragon-2/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:40.810494+00:00",
+              "next_attempt": "2026-11-04T00:11:40.810494+00:00",
+              "revision": "bb5145f5bffcbc93:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Thunder+Dragon+2&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Thunder+Dragon+2&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:11:40.810619+00:00",
+              "next_attempt": "2026-11-03T01:11:40.810619+00:00",
+              "revision": "bb5145f5bffcbc93:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:11:40.810681+00:00",
+              "next_attempt": "2026-11-03T01:11:40.810681+00:00",
+              "revision": "bb5145f5bffcbc93:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:12393": {
       "title": "Timberman: The Big Adventure",
@@ -106260,11 +106330,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:31:27.642487+00:00"
+        "attempted": "2026-11-03T00:09:16.430604+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -106272,12 +106342,14 @@
         "source": "https://www.nintendo.com/us/store/products/throw-it-dinosaur-panic-switch/",
         "checked": "2026-11-02T21:31:28.818814+00:00"
       },
-      "basics_attempted": "2026-11-02T21:31:27.642487+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:09:16.430604+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:55:50.821832+00:00",
       "store_evidence": [
@@ -106287,7 +106359,100 @@
           "checked": "2026-11-02T21:31:28.818490+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Throw-it-Dinosaur-Panic-2616966.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:09:16.795820+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Throw it! Dinosaur Panic"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:09:16.796141+00:00",
+              "next_attempt": "2026-11-04T00:09:16.796141+00:00",
+              "revision": "b394d1675f78db21:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:09:16.796141+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Throw-it-Dinosaur-Panic-2616966.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Throw-it-Dinosaur-Panic-2616966.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:10:21.798189+00:00",
+              "next_attempt": "2026-11-04T00:10:21.798189+00:00",
+              "revision": "b394d1675f78db21:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/throw_it_dinosaur_panic",
+                "https://www.nintendolife.com/games/switch-eshop/throw_it_dinosaur_panic"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/throw_it_dinosaur_panic"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:10:22.585347+00:00",
+              "next_attempt": "2026-11-04T00:10:22.585347+00:00",
+              "revision": "b394d1675f78db21:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=throw-it-dinosaur-panic-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=throw-it-dinosaur-panic-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:10:25.258110+00:00",
+              "next_attempt": "2026-11-04T00:10:25.258110+00:00",
+              "revision": "b394d1675f78db21:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/throw-it-dinosaur-panic/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/throw-it-dinosaur-panic/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/throw-it-dinosaur-panic/"
+              ],
+              "url": "https://www.metacritic.com/game/throw-it-dinosaur-panic/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:10:25.288835+00:00",
+              "next_attempt": "2026-11-04T00:10:25.288835+00:00",
+              "revision": "b394d1675f78db21:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Throw+it%21+Dinosaur+Panic&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Throw+it%21+Dinosaur+Panic&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:10:25.288958+00:00",
+              "next_attempt": "2026-11-03T01:10:25.288958+00:00",
+              "revision": "b394d1675f78db21:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:10:25.289025+00:00",
+              "next_attempt": "2026-11-03T01:10:25.289025+00:00",
+              "revision": "b394d1675f78db21:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:15830": {
       "title": "TimeSplitters",
@@ -106532,7 +106697,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:31:27.647880+00:00"
+        "attempted": "2026-11-03T00:09:16.431759+00:00"
       },
       "requirements": {
         "image": true,
@@ -106554,15 +106719,85 @@
       "aliases": [
         "Arcade Archives TINKLE PIT"
       ],
-      "basics_attempted": "2026-11-02T21:31:27.647880+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:09:16.431759+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:56:20.507180+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:16.816716+00:00",
+              "next_attempt": "2026-11-04T00:11:16.816716+00:00",
+              "revision": "eaad714fa474e466:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/tinkle_pit",
+                "https://www.nintendolife.com/games/switch-eshop/tinkle_pit",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_tinkle_pit"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_tinkle_pit"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:18.238422+00:00",
+              "next_attempt": "2026-11-04T00:11:18.238422+00:00",
+              "revision": "eaad714fa474e466:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=tinkle-pit-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=tinkle-pit-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:42.722974+00:00",
+              "next_attempt": "2026-11-04T00:11:42.722974+00:00",
+              "revision": "eaad714fa474e466:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-tinkle-pit/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-tinkle-pit/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-tinkle-pit/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-tinkle-pit/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:42.797186+00:00",
+              "next_attempt": "2026-11-04T00:11:42.797186+00:00",
+              "revision": "eaad714fa474e466:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Tinkle+Pit&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Tinkle+Pit&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:11:42.797322+00:00",
+              "next_attempt": "2026-11-03T01:11:42.797322+00:00",
+              "revision": "eaad714fa474e466:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:11:42.797383+00:00",
+              "next_attempt": "2026-11-03T01:11:42.797383+00:00",
+              "revision": "eaad714fa474e466:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:15939": {
       "title": "Totally Spies! - Cyber Mission",
@@ -120930,7 +121165,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:31:27.647534+00:00"
+        "attempted": "2026-11-03T00:09:16.431483+00:00"
       },
       "requirements": {
         "image": true,
@@ -120952,15 +121187,85 @@
       "aliases": [
         "Arcade Archives THUNDER FOX"
       ],
-      "basics_attempted": "2026-11-02T21:31:27.647534+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:09:16.431483+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:56:11.979445+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:26.819344+00:00",
+              "next_attempt": "2026-11-04T00:11:26.819344+00:00",
+              "revision": "91f8bc763f74675f:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/thunder_fox",
+                "https://www.nintendolife.com/games/switch-eshop/thunder_fox",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_thunder_fox"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_thunder_fox"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:28.151351+00:00",
+              "next_attempt": "2026-11-04T00:11:28.151351+00:00",
+              "revision": "91f8bc763f74675f:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=thunder-fox-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=thunder-fox-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:46.141198+00:00",
+              "next_attempt": "2026-11-04T00:11:46.141198+00:00",
+              "revision": "91f8bc763f74675f:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-thunder-fox/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-thunder-fox/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-thunder-fox/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-thunder-fox/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:46.178837+00:00",
+              "next_attempt": "2026-11-04T00:11:46.178837+00:00",
+              "revision": "91f8bc763f74675f:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Thunder+Fox&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Thunder+Fox&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:11:46.179017+00:00",
+              "next_attempt": "2026-11-03T01:11:46.179017+00:00",
+              "revision": "91f8bc763f74675f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:11:46.179166+00:00",
+              "next_attempt": "2026-11-03T01:11:46.179166+00:00",
+              "revision": "91f8bc763f74675f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:16363": {
       "title": "Tilting Tiles: Micro Challenge",
@@ -133012,11 +133317,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:31:54.154194+00:00"
+        "attempted": "2026-11-03T00:09:16.433108+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -133024,12 +133329,14 @@
         "source": "https://www.nintendo.com/us/store/products/tools-up-ultimate-edition-switch/",
         "checked": "2026-11-02T21:31:55.679975+00:00"
       },
-      "basics_attempted": "2026-11-02T21:31:54.154194+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:09:16.433108+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:56:26.069783+00:00",
       "store_evidence": [
@@ -133039,7 +133346,100 @@
           "checked": "2026-11-02T21:31:55.679503+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Tools-Up-Ultimate-Edition-2499293.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:09:19.205468+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Tools Up! Ultimate Edition"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:09:19.205774+00:00",
+              "next_attempt": "2026-11-04T00:09:19.205774+00:00",
+              "revision": "74a2ff0224a57adf:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:09:19.205774+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Tools-Up-Ultimate-Edition-2499293.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Tools-Up-Ultimate-Edition-2499293.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:10:31.794370+00:00",
+              "next_attempt": "2026-11-04T00:10:31.794370+00:00",
+              "revision": "74a2ff0224a57adf:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/tools_up_ultimate_edition",
+                "https://www.nintendolife.com/games/nintendo-switch/tools_up_ultimate_edition"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/tools_up_ultimate_edition"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:10:32.870749+00:00",
+              "next_attempt": "2026-11-04T00:10:32.870749+00:00",
+              "revision": "74a2ff0224a57adf:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=tools-up-ultimate-edition-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=tools-up-ultimate-edition-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:10:46.127819+00:00",
+              "next_attempt": "2026-11-04T00:10:46.127819+00:00",
+              "revision": "74a2ff0224a57adf:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/tools-up-ultimate-edition/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/tools-up-ultimate-edition/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/tools-up-ultimate-edition/"
+              ],
+              "url": "https://www.metacritic.com/game/tools-up-ultimate-edition/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:10:46.230654+00:00",
+              "next_attempt": "2026-11-04T00:10:46.230654+00:00",
+              "revision": "74a2ff0224a57adf:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Tools+Up%21+Ultimate+Edition&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Tools+Up%21+Ultimate+Edition&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:10:46.230818+00:00",
+              "next_attempt": "2026-11-03T01:10:46.230818+00:00",
+              "revision": "74a2ff0224a57adf:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:10:46.230917+00:00",
+              "next_attempt": "2026-11-03T01:10:46.230917+00:00",
+              "revision": "74a2ff0224a57adf:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:17341": {
       "title": "Trasmoz Legends",
@@ -145544,7 +145944,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:31:40.959553+00:00"
+        "attempted": "2026-11-03T00:09:16.432771+00:00"
       },
       "requirements": {
         "image": true,
@@ -145566,15 +145966,85 @@
       "aliases": [
         "Arcade Archives TOKYO WARS"
       ],
-      "basics_attempted": "2026-11-02T21:31:40.959553+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:09:16.432771+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:56:24.753863+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:01.657423+00:00",
+              "next_attempt": "2026-11-04T00:11:01.657423+00:00",
+              "revision": "0fdd98151a55ded1:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/tokyo_wars",
+                "https://www.nintendolife.com/games/switch-eshop/tokyo_wars",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_tokyo_wars"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_tokyo_wars"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:04.925651+00:00",
+              "next_attempt": "2026-11-04T00:11:04.925651+00:00",
+              "revision": "0fdd98151a55ded1:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=tokyo-wars-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=tokyo-wars-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:17.662257+00:00",
+              "next_attempt": "2026-11-04T00:11:17.662257+00:00",
+              "revision": "0fdd98151a55ded1:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-tokyo-wars/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-tokyo-wars/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-tokyo-wars/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-tokyo-wars/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:17.715703+00:00",
+              "next_attempt": "2026-11-04T00:11:17.715703+00:00",
+              "revision": "0fdd98151a55ded1:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Tokyo+Wars&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Tokyo+Wars&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:11:17.715810+00:00",
+              "next_attempt": "2026-11-03T01:11:17.715810+00:00",
+              "revision": "0fdd98151a55ded1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:11:17.715871+00:00",
+              "next_attempt": "2026-11-03T01:11:17.715871+00:00",
+              "revision": "0fdd98151a55ded1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:17984": {
       "title": "Top Cop - Police Training",
@@ -145594,11 +146064,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:34:12.018334+00:00"
+        "attempted": "2026-11-03T00:09:20.030683+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -145606,12 +146076,14 @@
         "source": "https://www.nintendo.com/us/store/products/top-cop-police-training-switch/",
         "checked": "2026-11-02T21:34:14.449783+00:00"
       },
-      "basics_attempted": "2026-11-02T21:34:12.018334+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:09:20.030683+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:56:51.046712+00:00",
       "store_evidence": [
@@ -145621,7 +146093,101 @@
           "checked": "2026-11-02T21:34:14.449462+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Top-Cop-Police-Training-3034572.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:09:21.132772+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Top Cop - Police Training"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:09:21.133092+00:00",
+              "next_attempt": "2026-11-04T00:09:21.133092+00:00",
+              "revision": "b4e26c0bb6953bc2:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:09:21.133092+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Top-Cop-Police-Training-3034572.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Top-Cop-Police-Training-3034572.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:06.659566+00:00",
+              "next_attempt": "2026-11-04T00:11:06.659566+00:00",
+              "revision": "b4e26c0bb6953bc2:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/top_cop_-_police_training",
+                "https://www.nintendolife.com/games/nintendo-switch/top_cop_police_training",
+                "https://www.nintendolife.com/games/switch-eshop/top_cop_police_training"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/top_cop_police_training"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:07.450844+00:00",
+              "next_attempt": "2026-11-04T00:11:07.450844+00:00",
+              "revision": "b4e26c0bb6953bc2:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=top-cop-police-training-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=top-cop-police-training-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:13.275147+00:00",
+              "next_attempt": "2026-11-04T00:11:13.275147+00:00",
+              "revision": "b4e26c0bb6953bc2:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/top-cop-police-training/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/top-cop-police-training/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/top-cop-police-training/"
+              ],
+              "url": "https://www.metacritic.com/game/top-cop-police-training/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:13.361633+00:00",
+              "next_attempt": "2026-11-04T00:11:13.361633+00:00",
+              "revision": "b4e26c0bb6953bc2:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Top+Cop+-+Police+Training&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Top+Cop+-+Police+Training&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:11:13.361769+00:00",
+              "next_attempt": "2026-11-03T01:11:13.361769+00:00",
+              "revision": "b4e26c0bb6953bc2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:11:13.361837+00:00",
+              "next_attempt": "2026-11-03T01:11:13.361837+00:00",
+              "revision": "b4e26c0bb6953bc2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:17627": {
       "title": "Totally Reliable Delivery Service",
@@ -215675,17 +216241,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.4142135623730951,
-              "normalized": 5.5
+              "normalized": 5.5,
+              "checked": "2026-11-02T21:31:27.649434+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:31:27.649434+00:00"
+        "attempted": "2026-11-03T00:09:16.432484+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -215693,8 +216260,8 @@
         "source": "https://www.nintendo.com/us/store/products/tiny-gladiators-switch/",
         "checked": "2026-11-02T21:31:34.882269+00:00"
       },
-      "basics_attempted": "2026-11-02T21:31:27.649434+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:09:16.432484+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:56:08.369516+00:00",
       "store_evidence": [
@@ -215704,7 +216271,35 @@
           "checked": "2026-11-02T21:31:34.881812+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Tiny-Gladiators-1682735.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:09:17.816582+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Tiny Gladiators"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:09:17.816892+00:00",
+              "next_attempt": "2026-11-04T00:09:17.816892+00:00",
+              "revision": "5828c75fd983a3aa:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:09:17.816892+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Tiny-Gladiators-1682735.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Tiny-Gladiators-1682735.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7312": {
       "title": "Tower of Babel - no mercy",
@@ -224478,17 +225073,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.0,
-              "normalized": 1.0
+              "normalized": 1.0,
+              "checked": "2026-11-02T21:34:12.018104+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:34:12.018104+00:00"
+        "attempted": "2026-11-03T00:09:17.817573+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -224496,8 +225092,8 @@
         "source": "https://www.nintendo.com/us/store/products/toon-war-switch/",
         "checked": "2026-11-02T21:34:16.340197+00:00"
       },
-      "basics_attempted": "2026-11-02T21:34:12.018104+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:09:17.817573+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:56:48.680296+00:00",
       "store_evidence": [
@@ -224507,7 +225103,35 @@
           "checked": "2026-11-02T21:34:16.339696+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Toon-War-1574388.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:09:20.029705+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Toon War"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:09:20.030008+00:00",
+              "next_attempt": "2026-11-04T00:09:20.030008+00:00",
+              "revision": "e00810e4b4272bad:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:09:20.030008+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Toon-War-1574388.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Toon-War-1574388.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7818": {
       "title": "Tricky Spider",
@@ -242240,7 +242864,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:31:27.643955+00:00"
+        "attempted": "2026-11-03T00:09:16.430856+00:00"
       },
       "requirements": {
         "image": true,
@@ -242262,15 +242886,85 @@
       "aliases": [
         "Arcade Archives THUNDER CROSS"
       ],
-      "basics_attempted": "2026-11-02T21:31:27.643955+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:09:16.430856+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:55:47.080734+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:11.684524+00:00",
+              "next_attempt": "2026-11-04T00:11:11.684524+00:00",
+              "revision": "4d6fa98564afdae5:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/thunder_cross",
+                "https://www.nintendolife.com/games/switch-eshop/thunder_cross",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_thunder_cross"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_thunder_cross"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:12.900543+00:00",
+              "next_attempt": "2026-11-04T00:11:12.900543+00:00",
+              "revision": "4d6fa98564afdae5:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=thunder-cross-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=thunder-cross-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:37.488736+00:00",
+              "next_attempt": "2026-11-04T00:11:37.488736+00:00",
+              "revision": "4d6fa98564afdae5:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-thunder-cross/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-thunder-cross/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-thunder-cross/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-thunder-cross/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:37.562449+00:00",
+              "next_attempt": "2026-11-04T00:11:37.562449+00:00",
+              "revision": "4d6fa98564afdae5:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Thunder+Cross&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Thunder+Cross&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:11:37.562588+00:00",
+              "next_attempt": "2026-11-03T01:11:37.562588+00:00",
+              "revision": "4d6fa98564afdae5:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:11:37.562647+00:00",
+              "next_attempt": "2026-11-03T01:11:37.562647+00:00",
+              "revision": "4d6fa98564afdae5:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:8978": {
       "title": "Thunderflash",
