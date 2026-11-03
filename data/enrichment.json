@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:27:43.106058+00:00",
+  "updated": "2026-11-03T08:29:05.487006+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2281,
+    "full_attempted": 2291,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -128254,45 +128254,107 @@
         "id": "ItPsQhpPXR8",
         "title": "The LEGO Ninjago Movie Video Game – Launch Trailer",
         "kind": "trailer",
-        "source": "https://www.youtube.com/watch?v=ItPsQhpPXR8",
-        "url": "https://www.youtube.com/watch?v=ItPsQhpPXR8",
-        "checked": "2026-11-02T15:47:00.447713+00:00",
-        "error": null,
-        "attempted": "2026-11-02T15:47:00.447714+00:00"
+        "source": "https://www.youtube.com/watch?v=ItPsQhpPXR8"
       },
       "ratings": {
         "critic": {
-          "score": 66.0,
+          "score": 66.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Metacritic",
-              "score": 66,
-              "url": "https://www.metacritic.com/game/the-lego-ninjago-movie-video-game/critic-reviews/?platform=nintendo-switch",
-              "platform": "Switch"
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=lego-ninjago-movie-video-game-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 80,
+              "url": "",
+              "date": "2018-01-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 50,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/the_lego_ninjago_movie_video_game?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2017-10-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 65,
+              "url": "http://www.nintendoworldreport.com/review/45606/the-lego-ninjago-movie-video-game-switch-review",
+              "date": "2017-10-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 65.0,
+              "url": "https://purenintendo.com/review-lego-ninjago-movie-video-game-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 6.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 64,
+              "url": "http://switchplayer.net/2017/10/13/lego-the-ninjago-movie-videogame-review/",
+              "date": "2017-10-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 70,
+              "url": "https://www.xgn.nl/review/lego-ninjago-movie-video-game-review",
+              "date": "2017-10-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
-          "score": 6.6,
+          "score": 6.55,
           "scale": 10,
-          "source_count": 1,
-          "method": "single-source",
           "sources": [
             {
+              "name": "Metacritic users",
               "score": 6.6,
               "scale": 10,
-              "source": "Metacritic",
+              "count": 29,
               "url": "https://www.metacritic.com/game/the-lego-ninjago-movie-video-game/user-reviews/?platform=nintendo-switch",
-              "checked": "2026-11-02T13:13:26.263680+00:00",
-              "name": "Metacritic",
-              "platform": "Switch"
+              "platform": "Nintendo Switch",
+              "weight": 5.385164807134504,
+              "normalized": 6.6
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 6.5,
+              "scale": 10.0,
+              "count": 31,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/lego_ninjago_movie_video_game",
+              "platform": "Nintendo Switch",
+              "weight": 5.5677643628300215,
+              "normalized": 6.5
             }
-          ]
+          ],
+          "source_count": 2,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:22.438581+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:28:07.454544+00:00"
       },
       "requirements": {
         "image": true,
@@ -128301,7 +128363,10 @@
       },
       "basics_attempted": "2026-11-02T22:52:22.438581+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lego-ninjago-movie-video-game-switch/",
@@ -128352,18 +128417,117 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:28:10.967681+00:00",
+      "full_version": 7
     },
     "Switch:13930": {
       "title": "The Lara Croft Collection",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 79.4,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/6865/1/the-lara-croft-collection-nintendo-switch.html",
+              "date": "2023-06-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Germany",
+              "score": 80,
+              "url": "https://www.eurogamer.de/the-lara-croft-collection-nintendo-switch-im-test-kann-ich-bitte-mehr-davon-haben",
+              "date": "2023-08-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 75,
+              "url": "https://gaming-age.com/2023/07/the-lara-croft-collection-review-for-nintendo-switch/",
+              "date": "2023-07-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 85,
+              "url": "https://www.godisageek.com/reviews/the-lara-croft-collection-review/",
+              "date": "2023-06-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 80,
+              "url": "https://www.impulsegamer.com/lara-croft-collection-nintendo-switch-game-review-feralgames/",
+              "date": "2023-07-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/the-lara-croft-collection",
+              "date": "2023-06-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 85,
+              "url": "https://purenintendo.com/review-the-lara-croft-collection-nintendo-switch/",
+              "date": "2023-07-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 60,
+              "url": "https://screenrant.com/lara-croft-collection-switch-review/",
+              "date": "2023-06-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 65,
+              "url": "https://www.spaziogames.it/articoli/the-lara-croft-collection-recensione",
+              "date": "2023-06-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 90,
+              "url": "https://toucharcade.com/2023/07/10/gimmick-special-edition-switch-review-lara-croft-collection-eshop-discount/",
+              "date": "2023-07-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 85,
+              "url": "https://universonintendo.com/analise-the-lara-croft-collection/",
+              "date": "2023-07-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 88,
+              "url": "https://videochums.com/review/the-lara-croft-collection",
+              "date": "2023-07-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 12
         },
         "user": {
           "score": 5.5,
@@ -128375,16 +128539,23 @@
               "scale": 10,
               "count": 10,
               "url": "https://www.metacritic.com/game/the-lara-croft-collection/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 3.1622776601683795,
-              "normalized": 5.5,
-              "checked": "2026-11-02T18:34:10.964304+00:00"
+              "normalized": 5.5
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:22.438983+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 13,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:28:37.244921+00:00"
       },
       "requirements": {
         "image": true,
@@ -128402,7 +128573,11 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -128452,7 +128627,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:28:39.947238+00:00",
+      "full_version": 7
     },
     "Switch:13524": {
       "title": "The Last Dragon Slayer",
@@ -128617,28 +128794,103 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 85.0,
+          "score": 86.2,
           "scale": 100,
           "sources": [
+            {
+              "name": "But Why Tho?",
+              "score": 90,
+              "url": "https://butwhythopodcast.com/2022/04/20/review-the-last-friend-is-all-bark-and-bite-switch/",
+              "date": "2022-04-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 80,
+              "url": "https://www.gamespace.com/all-articles/news/the-last-friend-nintendo-switch-review/",
+              "date": "2022-05-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 85,
+              "url": "https://www.gamingnexus.com/Article/7571/The-Last-Friend/",
+              "date": "2022-04-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 80,
+              "url": "https://gamingtrend.com/feature/reviews/the-last-friend-the-new-way-to-play-tower-defense/",
+              "date": "2022-05-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Movies Games and Tech",
+              "score": 95,
+              "url": "https://moviesgamesandtech.com/2022/06/11/review-the-last-friend/",
+              "date": "2022-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 85.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-last-friend-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/the-last-friend",
+              "date": "2022-04-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 85,
+              "url": "https://worthplaying.com/article/2022/11/2/reviews/134509-switch-review-the-last-friend/",
+              "date": "2022-11-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 8
         },
         "user": {
-          "score": null,
+          "score": 6.4,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.4,
+              "scale": 10,
+              "count": 8,
+              "url": "https://www.metacritic.com/game/the-last-friend/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.8284271247461903,
+              "normalized": 6.4
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:22.439367+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:28:12.379065+00:00"
       },
       "requirements": {
         "image": true,
@@ -128655,7 +128907,12 @@
       "basics_attempted": "2026-11-02T22:52:22.439367+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -128705,7 +128962,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:28:14.990286+00:00",
+      "full_version": 7
     },
     "Switch:11784": {
       "title": "The Legend of Valkyrie",
@@ -178650,15 +178909,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.28,
-              "count": 58,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.28,
               "scale": 5,
-              "source": "PSN",
+              "count": 58,
               "url": "https://store.playstation.com/pt-pt/product/UP8408-PPSA23069_00-0562520711252135",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:34:39.115638+00:00",
-              "platform": "PSN · PS5",
               "weight": 7.615773105863909,
               "normalized": 6.559999999999999
             }
@@ -178666,7 +178923,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:34:37.046166+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:28:11.294054+00:00"
       },
       "requirements": {
         "image": true,
@@ -178708,7 +178972,11 @@
       },
       "basics_attempted": "2026-11-02T18:34:37.046166+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -178724,7 +178992,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:28:12.215762+00:00",
+      "full_version": 7
     },
     "Switch:15984": {
       "title": "The Legend of Santa",
@@ -209374,26 +209644,33 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 55.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "PSX Brasil",
+              "score": 55,
+              "url": "https://psxbrasil.com.br/the-last-camp-review/",
+              "date": "2025-07-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 5.1,
           "scale": 10,
           "sources": [
             {
-              "score": 2.55,
-              "count": 139,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 2.55,
               "scale": 5,
-              "source": "PSN",
+              "count": 139,
               "url": "https://store.playstation.com/pt-pt/product/HP8406-PPSA26287_00-PS501THELASTCAMP",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:34:13.113537+00:00",
-              "platform": "PSN · PS5",
               "weight": 11.789826122551595,
               "normalized": 5.1
             }
@@ -209401,7 +209678,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:34:10.964532+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:28:01.371494+00:00"
       },
       "requirements": {
         "image": true,
@@ -209443,7 +209727,11 @@
       },
       "basics_attempted": "2026-11-02T18:34:10.964532+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -209459,7 +209747,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:28:01.782103+00:00",
+      "full_version": 7
     },
     "Switch:17401": {
       "title": "Tiny Lands 2",
@@ -246937,15 +247227,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.55,
-              "count": 3458,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.55,
               "scale": 5,
-              "source": "PSN",
+              "count": 3458,
               "url": "https://store.playstation.com/pt-pt/product/UP1032-PPSA22721_00-LORWARINNORTH325",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:34:40.205573+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 9.1
             }
@@ -246953,7 +247241,16 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:34:37.047205+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:28:06.330509+00:00"
       },
       "requirements": {
         "image": true,
@@ -246995,7 +247292,11 @@
       },
       "basics_attempted": "2026-11-02T18:34:37.047205+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -247011,7 +247312,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:28:06.672331+00:00",
+      "full_version": 7
     },
     "PS5:18813": {
       "title": "Tiny Tanks Showdown",
@@ -292766,11 +293069,84 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 57.8,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Atomix",
+              "score": 60,
+              "url": "https://atomix.vg/review-the-lego-movie-2-videogame/",
+              "date": "2019-03-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 50,
+              "url": "https://fnintendo.net/article/12261-the-lego-movie-2-videogame",
+              "date": "2019-03-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 55,
+              "url": "http://www.jeuxvideo.com/test/1011194/la-grande-aventure-lego-2-le-jeu-video-une-ouverture-du-monde-reussie.htm",
+              "date": "2019-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 50,
+              "url": "https://www.nintendoenthusiast.com/2019/03/13/the-lego-movie-2-videogame-review-nintendo-switch/",
+              "date": "2019-03-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/lego_movie_2_videogame?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2019-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 40,
+              "url": "http://www.nintendoworldreport.com/review/50200/the-lego-movie-2-videogame-switch-review",
+              "date": "2019-04-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-the-lego-movie-2-videogame-nintendo-switch/",
+              "date": "2019-03-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 65,
+              "url": "https://vandal.elespanol.com/analisis/ps4/la-lego-pelicula-2-el-videojuego/68315#p-73",
+              "date": "2019-03-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 50,
+              "url": "https://www.vooks.net/the-lego-movie-2-videogame-switch-review/",
+              "date": "2019-03-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 9
         },
         "user": {
           "score": 4.9,
@@ -292784,14 +293160,25 @@
               "url": "https://www.metacritic.com/game/the-lego-movie-2-videogame/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 3.872983346207417,
-              "normalized": 4.9,
-              "checked": "2026-11-02T20:03:27.404969+00:00"
+              "normalized": 4.9
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:36:03.883811+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:29:02.399616+00:00"
       },
       "requirements": {
         "image": true,
@@ -292802,10 +293189,13 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "metacritic_critics": "HTTP Error 404: Not Found"
+        "metacritic_critics": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_TheLegoMovie2Videogame_enGB_image500w.jpg",
@@ -292864,7 +293254,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:29:05.230152+00:00",
+      "full_version": 7
     },
     "Switch:5476": {
       "title": "The Walking Vegetables",
@@ -305170,28 +305562,263 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 75.0,
+          "score": 79.4,
           "scale": 100,
           "sources": [
+            {
+              "name": "CGMagazine",
+              "score": 95,
+              "url": "https://www.cgmagonline.com/reviews/the-ninja-saviors-return-of-the-warriors-review/",
+              "date": "2019-10-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 70,
+              "url": "https://www.criticalhit.net/review/the-ninja-saviors-return-of-the-warriors-review-scratches-a-kunoichi/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 90,
+              "url": "http://www.cubed3.com/review/5581/1/the-ninja-saviors-return-of-the-warriors-nintendo-switch.html",
+              "date": "2019-08-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 90,
+              "url": "https://fnintendo.net/article/13303-the-ninja-saviors-return-of-the-warriors",
+              "date": "2019-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 70,
+              "url": "https://gamecritics.com/darren-forman/the-ninja-saviors-return-of-the-warriors-review/",
+              "date": "2019-10-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 78,
+              "url": "https://www.gamespace.com/featured/the-ninja-saviors-return-of-the-warrior-review-ninjas-return/",
+              "date": "2019-11-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2019/08/the-ninja-saviors-return-of-the-warriors-review/",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamers' Temple",
+              "score": 80,
+              "url": "https://www.gamerstemple.com/game-reviews/switch/12051/the-ninja-saviors-return-of-the-warriors-review",
+              "date": "2019-11-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 100,
+              "url": "http://www.gaming-age.com/2019/10/the-ninja-saviors-return-of-the-warriors-review-for-nintendo-switch-ps4/",
+              "date": "2019-10-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 90,
+              "url": "https://gamingtrend.com/feature/reviews/slicing-and-dicing-side-scrolling-mayhem-the-ninja-saviors-return-of-the-warriors-switch-review/#",
+              "date": "2019-10-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "https://www.godisageek.com/reviews/the-ninja-saviors-return-of-the-warriors-review/",
+              "date": "2019-09-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 79,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-ninja-saviors-return-warriors-ps4-nintendo-switch-485115",
+              "date": "2019-09-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 80,
+              "url": "https://metro.co.uk/2019/08/29/the-ninja-saviors-return-of-the-warriors-review-robot-ninjas-beat-em-all-10653417/",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 75.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-ninja-saviors-return-of-the-warriors-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2019/09/analisis-the-ninja-saviors-return-of-the-warriors-para-nintendo-switch/",
+              "date": "2019-09-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 70,
+              "url": "",
+              "date": "2020-04-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/the-ninja-saviors-return-of-the-warriors-review/",
+              "date": "2019-09-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/ninja_saviors_return_of_the_warriors?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2019-08-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/51850/the-ninja-saviors-return-of-the-warriors-switch-review",
+              "date": "2019-10-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 75,
+              "url": "http://www.nintendojo.com/reviews/review-the-ninja-saviors-return-of-the-warriors-switch",
+              "date": "2019-11-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-the-ninja-saviors-return-of-the-warriors-nintendo-switch/",
+              "date": "2019-10-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 70,
+              "url": "https://www.shacknews.com/article/114866/the-ninja-saviors-return-of-the-warriors-review",
+              "date": "2019-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 80,
+              "url": "https://www.spaziogames.it/the-ninja-saviors-return-of-the-warriors-recensione/",
+              "date": "2019-09-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2019/09/16/the-ninja-saviors-return-of-the-warriors-review/",
+              "date": "2019-09-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 80,
+              "url": "https://www.thedigitalfix.com/gaming/content/21066/the-ninja-saviors-return-of-the-warriors/",
+              "date": "2019-09-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 70,
+              "url": "https://www.thesixthaxis.com/2019/09/17/the-ninja-saviors-return-of-the-warriors-review/",
+              "date": "2019-09-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 77,
+              "url": "https://vandal.elespanol.com/analisis/ps4/the-ninja-saviors-return-of-the-warriors/72644#p-73",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 85,
+              "url": "https://worthplaying.com/article/2019/11/28/reviews/117155/",
+              "date": "2019-12-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 28
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 31,
+              "url": "https://www.metacritic.com/game/the-ninja-saviors-return-of-the-warriors/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 5.5677643628300215,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:22.440130+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 28,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:28:52.252828+00:00"
       },
       "requirements": {
         "image": true,
@@ -305208,7 +305835,10 @@
       "basics_attempted": "2026-11-02T22:52:22.440130+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -305259,7 +305889,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:28:55.129632+00:00",
+      "full_version": 7
     },
     "Switch:5923": {
       "title": "The Stretchers",
@@ -318405,7 +319037,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 68.0,
+          "score": 52.0,
           "scale": 100,
           "sources": [
             {
@@ -318414,10 +319046,34 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-otterman-empire-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 40,
+              "url": "https://purenintendo.com/review-the-otterman-empire-nintendo-switch/",
+              "date": "2020-07-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 60,
+              "url": "https://www.thegamer.com/the-otterman-empire-review/",
+              "date": "2020-07-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 40,
+              "url": "https://videochums.com/article/challenging-indie-games-part-2#the-otterman-empire",
+              "date": "2020-07-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
           "score": null,
@@ -318426,7 +319082,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:35:19.736344+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:28:22.395830+00:00"
       },
       "requirements": {
         "image": true,
@@ -318453,7 +319117,11 @@
       "basics_attempted": "2026-11-02T18:35:19.736344+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -318470,7 +319138,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:28:24.658085+00:00",
+      "full_version": 7
     },
     "Switch:6704": {
       "title": "The TakeOver",
@@ -401829,11 +402499,100 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 56.6,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Checkpoint Gaming",
+              "score": 65,
+              "url": "https://checkpointgaming.net/reviews/2022/10/the-last-oricru-review-the-journey-you-pave-yourself/",
+              "date": "2022-10-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Finger Guns",
+              "score": 40,
+              "url": "https://fingerguns.net/reviews/2022/10/18/the-last-oricru-review-ps5-stay-dead-please/",
+              "date": "2022-10-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GRYOnline.pl",
+              "score": 65,
+              "url": "https://www.gry-online.pl/S020.asp?ID=14674",
+              "date": "2022-10-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamersRD",
+              "score": 78,
+              "url": "https://gamersrd.com/the-last-oricru-review/",
+              "date": "2022-10-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 60,
+              "url": "https://games.tiscali.cz/recenze/the-last-oricru-recenze-ceske-soulsovky-544024",
+              "date": "2022-10-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 45,
+              "url": "https://gamingtrend.com/feature/reviews/the-last-oricru-review-an-rpg-that-doesnt-understand-itself/",
+              "date": "2022-10-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 50,
+              "url": "https://www.godisageek.com/reviews/the-last-oricru-review/",
+              "date": "2022-10-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 65,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-last-oricru-soulslike-decisiones-importan-1140357",
+              "date": "2022-10-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 50,
+              "url": "https://it.ign.com/the-last-oricru/197653/review/the-last-oricru-recensione",
+              "date": "2022-10-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 50,
+              "url": "https://multiplayer.it/recensioni/the-last-oricru-recensione.html",
+              "date": "2022-10-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 55,
+              "url": "https://www.psu.com/reviews/the-last-oricru-review-ps5/",
+              "date": "2022-10-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 11
         },
         "user": {
           "score": 7.4,
@@ -401845,16 +402604,22 @@
               "scale": 10,
               "count": 17,
               "url": "https://www.metacritic.com/game/the-last-oricru/user-reviews/?platform=playstation-5",
-              "platform": "PS5",
+              "platform": "PlayStation 5",
               "weight": 4.123105625617661,
-              "normalized": 7.4,
-              "checked": "2026-11-02T20:03:29.119337+00:00"
+              "normalized": 7.4
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:36:03.884161+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 12,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:28:16.156352+00:00"
       },
       "requirements": {
         "image": true,
@@ -401866,7 +402631,9 @@
       "errors": {
         "store": "No exact Portugal PS5 product verified",
         "community": "HTTP Error 404: Not Found",
-        "psn": "No exact Portugal PS5 product verified"
+        "psn": "No exact Portugal PS5 product verified",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/7/78/The_Last_Oricru_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
@@ -401908,7 +402675,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:28:16.399276+00:00",
+      "full_version": 7
     },
     "PS5:9864": {
       "title": "Tiny Tina’s Wonderlands",
