@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T00:11:46.390937+00:00",
+  "updated": "2026-11-03T00:13:09.836185+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1941,
+    "ready": 1943,
     "missing_image": 109,
-    "missing_store": 389,
+    "missing_store": 385,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -82230,7 +82230,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:34:12.019669+00:00"
+        "attempted": "2026-11-03T00:11:50.971752+00:00"
       },
       "requirements": {
         "image": true,
@@ -82242,15 +82242,100 @@
         "source": "https://www.nintendolife.com/games/switch-eshop/toxic_crusaders",
         "checked": "2026-11-02T18:40:33.981955+00:00"
       },
-      "basics_attempted": "2026-11-02T21:34:12.019669+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:11:50.971752+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:56:54.422538+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:51.605558+00:00",
+              "next_attempt": "2026-11-04T00:11:51.605558+00:00",
+              "revision": "e06cebc10d46379c:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Toxic+Crusaders%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Toxic+Crusaders%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:41.386369+00:00",
+              "next_attempt": "2026-11-04T00:12:41.386369+00:00",
+              "revision": "e06cebc10d46379c:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/toxic_crusaders",
+                "https://www.nintendolife.com/games/nintendo-switch/toxic_crusaders"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/toxic_crusaders"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:42.238700+00:00",
+              "next_attempt": "2026-11-04T00:12:42.238700+00:00",
+              "revision": "e06cebc10d46379c:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=toxic-crusaders-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=toxic-crusaders-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:47.094750+00:00",
+              "next_attempt": "2026-11-04T00:12:47.094750+00:00",
+              "revision": "e06cebc10d46379c:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/toxic-crusaders/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/toxic-crusaders/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/toxic-crusaders/"
+              ],
+              "url": "https://www.metacritic.com/game/toxic-crusaders/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:47.127374+00:00",
+              "next_attempt": "2026-11-04T00:12:47.127374+00:00",
+              "revision": "e06cebc10d46379c:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Toxic+Crusaders&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Toxic+Crusaders&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:12:47.127467+00:00",
+              "next_attempt": "2026-11-03T01:12:47.127467+00:00",
+              "revision": "e06cebc10d46379c:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:12:47.127514+00:00",
+              "next_attempt": "2026-11-03T01:12:47.127514+00:00",
+              "revision": "e06cebc10d46379c:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:12791": {
       "title": "Toy Pop",
@@ -82270,7 +82355,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:34:12.020724+00:00"
+        "attempted": "2026-11-03T00:11:50.972016+00:00"
       },
       "requirements": {
         "image": true,
@@ -82292,15 +82377,85 @@
       "aliases": [
         "Arcade Archives TOY POP"
       ],
-      "basics_attempted": "2026-11-02T21:34:12.020724+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:11:50.972016+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:56:55.746539+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:56.358108+00:00",
+              "next_attempt": "2026-11-04T00:12:56.358108+00:00",
+              "revision": "d52db38520852f3e:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/toy_pop",
+                "https://www.nintendolife.com/games/switch-eshop/toy_pop",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_toy_pop"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_toy_pop"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:57.311376+00:00",
+              "next_attempt": "2026-11-04T00:12:57.311376+00:00",
+              "revision": "d52db38520852f3e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=toy-pop-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=toy-pop-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:13:06.536673+00:00",
+              "next_attempt": "2026-11-04T00:13:06.536673+00:00",
+              "revision": "d52db38520852f3e:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-toy-pop/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-toy-pop/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-toy-pop/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-toy-pop/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:13:06.573528+00:00",
+              "next_attempt": "2026-11-04T00:13:06.573528+00:00",
+              "revision": "d52db38520852f3e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Toy+Pop&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Toy+Pop&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:13:06.573617+00:00",
+              "next_attempt": "2026-11-03T01:13:06.573617+00:00",
+              "revision": "d52db38520852f3e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:13:06.573675+00:00",
+              "next_attempt": "2026-11-03T01:13:06.573675+00:00",
+              "revision": "d52db38520852f3e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:11711": {
       "title": "Trailblazers",
@@ -146432,11 +146587,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:35:55.884221+00:00"
+        "attempted": "2026-11-03T00:11:52.708276+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -146444,12 +146599,14 @@
         "source": "https://www.nintendo.com/us/store/products/twins-of-the-sun-switch/",
         "checked": "2026-11-02T21:35:57.643456+00:00"
       },
-      "basics_attempted": "2026-11-02T21:35:55.884221+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:11:52.708276+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:57:30.711634+00:00",
       "store_evidence": [
@@ -146459,7 +146616,100 @@
           "checked": "2026-11-02T21:35:57.643104+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Twins-of-the-Sun-2935562.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:11:54.753090+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Twins of the Sun"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:11:54.753391+00:00",
+              "next_attempt": "2026-11-04T00:11:54.753391+00:00",
+              "revision": "59abe6443bcbfb5b:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:11:54.753391+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Twins-of-the-Sun-2935562.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Twins-of-the-Sun-2935562.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:46.323352+00:00",
+              "next_attempt": "2026-11-04T00:12:46.323352+00:00",
+              "revision": "59abe6443bcbfb5b:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/twins_of_the_sun",
+                "https://www.nintendolife.com/games/nintendo-switch/twins_of_the_sun"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/twins_of_the_sun"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:46.908440+00:00",
+              "next_attempt": "2026-11-04T00:12:46.908440+00:00",
+              "revision": "59abe6443bcbfb5b:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=twins-of-the-sun-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=twins-of-the-sun-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:54.518319+00:00",
+              "next_attempt": "2026-11-04T00:12:54.518319+00:00",
+              "revision": "59abe6443bcbfb5b:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/twins-of-the-sun/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/twins-of-the-sun/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/twins-of-the-sun/"
+              ],
+              "url": "https://www.metacritic.com/game/twins-of-the-sun/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:54.551975+00:00",
+              "next_attempt": "2026-11-04T00:12:54.551975+00:00",
+              "revision": "59abe6443bcbfb5b:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Twins+of+the+Sun&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Twins+of+the+Sun&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:12:54.552124+00:00",
+              "next_attempt": "2026-11-03T01:12:54.552124+00:00",
+              "revision": "59abe6443bcbfb5b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:12:54.552202+00:00",
+              "next_attempt": "2026-11-03T01:12:54.552202+00:00",
+              "revision": "59abe6443bcbfb5b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:17834": {
       "title": "Whoowasit?",
@@ -164842,11 +165092,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:34:12.020982+00:00"
+        "attempted": "2026-11-03T00:11:50.972319+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -164854,12 +165104,14 @@
         "source": "https://www.nintendo.com/us/store/products/toy-rhythm-beat-switch/",
         "checked": "2026-11-02T21:34:21.262787+00:00"
       },
-      "basics_attempted": "2026-11-02T21:34:12.020982+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:11:50.972319+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:56:53.251687+00:00",
       "store_evidence": [
@@ -164869,7 +165121,100 @@
           "checked": "2026-11-02T21:34:21.262469+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Toy-Rhythm-Beat-3217594.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:11:51.257390+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Toy Rhythm Beat"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:11:51.257710+00:00",
+              "next_attempt": "2026-11-04T00:11:51.257710+00:00",
+              "revision": "4d436cb5931b3f49:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:11:51.257710+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Toy-Rhythm-Beat-3217594.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Toy-Rhythm-Beat-3217594.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:31.337422+00:00",
+              "next_attempt": "2026-11-04T00:12:31.337422+00:00",
+              "revision": "4d436cb5931b3f49:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/toy_rhythm_beat",
+                "https://www.nintendolife.com/games/nintendo-switch/toy_rhythm_beat"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/toy_rhythm_beat"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:32.373106+00:00",
+              "next_attempt": "2026-11-04T00:12:32.373106+00:00",
+              "revision": "4d436cb5931b3f49:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=toy-rhythm-beat-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=toy-rhythm-beat-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:37.416278+00:00",
+              "next_attempt": "2026-11-04T00:12:37.416278+00:00",
+              "revision": "4d436cb5931b3f49:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/toy-rhythm-beat/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/toy-rhythm-beat/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/toy-rhythm-beat/"
+              ],
+              "url": "https://www.metacritic.com/game/toy-rhythm-beat/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:37.498615+00:00",
+              "next_attempt": "2026-11-04T00:12:37.498615+00:00",
+              "revision": "4d436cb5931b3f49:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Toy+Rhythm+Beat&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Toy+Rhythm+Beat&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:12:37.498745+00:00",
+              "next_attempt": "2026-11-03T01:12:37.498745+00:00",
+              "revision": "4d436cb5931b3f49:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:12:37.498852+00:00",
+              "next_attempt": "2026-11-03T01:12:37.498852+00:00",
+              "revision": "4d436cb5931b3f49:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:18997": {
       "title": "Viractal: Will You Trust Your Party?",
@@ -207993,7 +208338,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:34:12.018613+00:00"
+        "attempted": "2026-11-03T00:11:50.971543+00:00"
       },
       "requirements": {
         "image": true,
@@ -208015,18 +208360,89 @@
       "aliases": [
         "ACA NEOGEO TOP HUNTER RODDY & CATHY"
       ],
-      "basics_attempted": "2026-11-02T21:34:12.018613+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:11:50.971543+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:56:45.671589+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:13:01.413797+00:00",
+              "next_attempt": "2026-11-04T00:13:01.413797+00:00",
+              "revision": "9bd06295358b8927:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/top_hunter_roddy_and_cathy",
+                "https://www.nintendolife.com/games/nintendo-switch/aca_neogeo_top_hunter_roddy_and_cathy",
+                "https://www.nintendolife.com/games/switch-eshop/aca_neogeo_top_hunter_roddy_and_cathy"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/aca_neogeo_top_hunter_roddy_and_cathy"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:13:02.674278+00:00",
+              "next_attempt": "2026-11-04T00:13:02.674278+00:00",
+              "revision": "9bd06295358b8927:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=top-hunter-roddy-and-cathy-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=top-hunter-roddy-and-cathy-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:13:09.572388+00:00",
+              "next_attempt": "2026-11-04T00:13:09.572388+00:00",
+              "revision": "9bd06295358b8927:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/aca-neogeo-top-hunter-roddy-and-cathy/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/aca-neogeo-top-hunter-roddy-and-cathy/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/aca-neogeo-top-hunter-roddy-and-cathy/"
+              ],
+              "url": "https://www.metacritic.com/game/aca-neogeo-top-hunter-roddy-and-cathy/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:13:09.626830+00:00",
+              "next_attempt": "2026-11-04T00:13:09.626830+00:00",
+              "revision": "9bd06295358b8927:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Top+Hunter%3A+Roddy+%26+Cathy&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Top+Hunter%3A+Roddy+%26+Cathy&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:13:09.627001+00:00",
+              "next_attempt": "2026-11-03T01:13:09.627001+00:00",
+              "revision": "9bd06295358b8927:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:13:09.627130+00:00",
+              "next_attempt": "2026-11-03T01:13:09.627130+00:00",
+              "revision": "9bd06295358b8927:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:7230": {
       "title": "Towertale",
@@ -208109,6 +208525,7 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/troubleshooter",
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
+              "checked": "2026-11-03T00:12:21.406250+00:00",
               "weight": 1.0,
               "normalized": 1.0
             }
@@ -208116,22 +208533,89 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:34:38.371627+00:00"
+        "attempted": "2026-11-03T00:11:50.977008+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T21:34:38.371627+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:11:50.977008+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "image": "No unique matching video-game article with artwork"
+        "image": "No unique matching video-game article with artwork",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
       "full_attempted": "2026-11-02T20:57:22.385721+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:54.754674+00:00",
+              "next_attempt": "2026-11-04T00:11:54.754674+00:00",
+              "revision": "910e66015121f312:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Troubleshooter%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Troubleshooter%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:54.754674+00:00",
+              "next_attempt": "2026-11-04T00:11:54.754674+00:00",
+              "revision": "910e66015121f312:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Troubleshooter%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Troubleshooter%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:21.406314+00:00",
+              "next_attempt": "2026-11-04T00:12:21.406314+00:00",
+              "revision": "910e66015121f312:7",
+              "reason": "No qualifying image found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/troubleshooter"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/troubleshooter"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:22.905872+00:00",
+              "next_attempt": "2026-11-04T00:12:22.905872+00:00",
+              "revision": "910e66015121f312:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=troubleshooter-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=troubleshooter-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:12:23.088553+00:00",
+              "next_attempt": "2026-11-04T00:12:23.088553+00:00",
+              "revision": "910e66015121f312:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Troubleshooter%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Troubleshooter%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        }
+      }
     },
     "Switch:7027": {
       "title": "TwinBee",
@@ -225157,17 +225641,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.0,
-              "normalized": 1.0
+              "normalized": 1.0,
+              "checked": "2026-11-02T21:34:12.021604+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:34:12.021604+00:00"
+        "attempted": "2026-11-03T00:11:50.974542+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -225175,8 +225660,8 @@
         "source": "https://www.nintendo.com/us/store/products/tricky-spider-switch/",
         "checked": "2026-11-02T21:34:18.828143+00:00"
       },
-      "basics_attempted": "2026-11-02T21:34:12.021604+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:11:50.974542+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:57:20.070021+00:00",
       "store_evidence": [
@@ -225186,7 +225671,35 @@
           "checked": "2026-11-02T21:34:18.827835+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Tricky-Spider-1859372.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:11:52.352872+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Tricky Spider"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:11:52.353233+00:00",
+              "next_attempt": "2026-11-04T00:11:52.353233+00:00",
+              "revision": "febd5c27fae23b7f:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:11:52.353233+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Tricky-Spider-1859372.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Tricky-Spider-1859372.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7679": {
       "title": "Twin Breaker: A Sacred Symbols Adventure",
@@ -225212,17 +225725,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.7320508075688772,
-              "normalized": 5.33
+              "normalized": 5.33,
+              "checked": "2026-11-02T21:35:55.883988+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:35:55.883988+00:00"
+        "attempted": "2026-11-03T00:11:52.353905+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -225230,8 +225744,8 @@
         "source": "https://www.nintendo.com/us/store/products/twin-breaker-a-sacred-symbols-adventure-switch/",
         "checked": "2026-11-02T21:35:59.592306+00:00"
       },
-      "basics_attempted": "2026-11-02T21:35:55.883988+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:11:52.353905+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:57:21.259285+00:00",
       "store_evidence": [
@@ -225241,7 +225755,35 @@
           "checked": "2026-11-02T21:35:59.591976+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Twin-Breaker-A-Sacred-Symbols-Adventure-1844931.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:11:53.437773+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Twin Breaker: A Sacred Symbols Adventure"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:11:53.438104+00:00",
+              "next_attempt": "2026-11-04T00:11:53.438104+00:00",
+              "revision": "fcee790353604580:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:11:53.438104+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Twin-Breaker-A-Sacred-Symbols-Adventure-1844931.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Twin-Breaker-A-Sacred-Symbols-Adventure-1844931.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7974": {
       "title": "Unit 4",
@@ -234072,7 +234614,7 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:34:32.682277+00:00"
+        "attempted": "2026-11-03T00:11:50.975969+00:00"
       },
       "requirements": {
         "image": true,
@@ -234084,13 +234626,31 @@
         "source": "https://www.nintendolife.com/games/nintendo-switch/troll_and_i",
         "checked": "2026-11-02T18:41:37.907665+00:00"
       },
-      "basics_attempted": "2026-11-02T21:34:32.682277+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:11:50.975969+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:53.651946+00:00",
+              "next_attempt": "2026-11-04T00:11:53.651946+00:00",
+              "revision": "c7e5e9b278c079dd:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Troll+and+I%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Troll+and+I%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "PS5:8157": {
       "title": "Twin Robots: Ultimate Edition",
@@ -243402,7 +243962,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:35:55.883796+00:00"
+        "attempted": "2026-11-03T00:11:50.977434+00:00"
       },
       "requirements": {
         "image": true,
@@ -243414,12 +243974,30 @@
         "source": "https://www.nintendolife.com/games/switch-eshop/turtlepop_journey_to_freedom",
         "checked": "2026-11-02T18:41:49.840926+00:00"
       },
-      "basics_attempted": "2026-11-02T21:35:55.883796+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:11:50.977434+00:00",
+      "version": 7,
       "errors": {
-        "store": "Official Nintendo lookup: HTTP Error 404: Not Found"
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:11:52.707582+00:00",
+              "next_attempt": "2026-11-04T00:11:52.707582+00:00",
+              "revision": "084cab590260b3ba:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22TurtlePop%3A+Journey+to+Freedom%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22TurtlePop%3A+Journey+to+Freedom%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "Switch:8973": {
       "title": "UTOPIA 9 - A Volatile Vacation",
