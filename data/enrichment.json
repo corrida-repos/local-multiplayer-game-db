@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-02T23:59:25.337381+00:00",
+  "updated": "2026-11-03T00:00:50.884682+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1924,
+    "ready": 1929,
     "missing_image": 109,
-    "missing_store": 437,
+    "missing_store": 429,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -71189,11 +71189,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:20:38.637042+00:00"
+        "attempted": "2026-11-02T23:59:30.627549+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -71201,12 +71201,14 @@
         "source": "https://www.nintendo.com/us/store/products/sorcerer-knights-switch/",
         "checked": "2026-11-02T21:20:41.252841+00:00"
       },
-      "basics_attempted": "2026-11-02T21:20:38.637042+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-02T23:59:30.627549+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:51:15.796657+00:00",
       "store_evidence": [
@@ -71216,7 +71218,100 @@
           "checked": "2026-11-02T21:20:41.252551+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sorcerer-Knights-2087122.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:59:33.282779+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Sorcerer Knights"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:59:33.283104+00:00",
+              "next_attempt": "2026-11-03T23:59:33.283104+00:00",
+              "revision": "9992ddbbbce922b7:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:59:33.283104+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sorcerer-Knights-2087122.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sorcerer-Knights-2087122.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:06.263761+00:00",
+              "next_attempt": "2026-11-04T00:00:06.263761+00:00",
+              "revision": "9992ddbbbce922b7:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/sorcerer_knights",
+                "https://www.nintendolife.com/games/nintendo-switch/sorcerer_knights"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/sorcerer_knights"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:06.853584+00:00",
+              "next_attempt": "2026-11-04T00:00:06.853584+00:00",
+              "revision": "9992ddbbbce922b7:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=sorcerer-knights-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=sorcerer-knights-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:30.661351+00:00",
+              "next_attempt": "2026-11-04T00:00:30.661351+00:00",
+              "revision": "9992ddbbbce922b7:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/sorcerer-knights/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/sorcerer-knights/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/sorcerer-knights/"
+              ],
+              "url": "https://www.metacritic.com/game/sorcerer-knights/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:30.698171+00:00",
+              "next_attempt": "2026-11-04T00:00:30.698171+00:00",
+              "revision": "9992ddbbbce922b7:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Sorcerer+Knights&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Sorcerer+Knights&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:00:30.698322+00:00",
+              "next_attempt": "2026-11-03T01:00:30.698322+00:00",
+              "revision": "9992ddbbbce922b7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:00:30.698396+00:00",
+              "next_attempt": "2026-11-03T01:00:30.698396+00:00",
+              "revision": "9992ddbbbce922b7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:11844": {
       "title": "Soundfall",
@@ -72373,11 +72468,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:20:41.565779+00:00"
+        "attempted": "2026-11-02T23:59:30.630767+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -72385,12 +72480,14 @@
         "source": "https://www.nintendo.com/us/store/products/squeakers-ii-switch/",
         "checked": "2026-11-02T21:20:49.199981+00:00"
       },
-      "basics_attempted": "2026-11-02T21:20:41.565779+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-02T23:59:30.630767+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:52:00.090978+00:00",
       "store_evidence": [
@@ -72400,7 +72497,100 @@
           "checked": "2026-11-02T21:20:49.199695+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Squeakers-II-2006360.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:59:35.274142+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Squeakers II"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:59:35.274458+00:00",
+              "next_attempt": "2026-11-03T23:59:35.274458+00:00",
+              "revision": "bdf515ba091d9696:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:59:35.274458+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Squeakers-II-2006360.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Squeakers-II-2006360.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:16.331227+00:00",
+              "next_attempt": "2026-11-04T00:00:16.331227+00:00",
+              "revision": "bdf515ba091d9696:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/squeakers_ii",
+                "https://www.nintendolife.com/games/nintendo-switch/squeakers_ii"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/squeakers_ii"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:17.229870+00:00",
+              "next_attempt": "2026-11-04T00:00:17.229870+00:00",
+              "revision": "bdf515ba091d9696:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=squeakers-ii-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=squeakers-ii-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:21.003975+00:00",
+              "next_attempt": "2026-11-04T00:00:21.003975+00:00",
+              "revision": "bdf515ba091d9696:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/squeakers-ii/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/squeakers-ii/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/squeakers-ii/"
+              ],
+              "url": "https://www.metacritic.com/game/squeakers-ii/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:21.039992+00:00",
+              "next_attempt": "2026-11-04T00:00:21.039992+00:00",
+              "revision": "bdf515ba091d9696:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Squeakers+II&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Squeakers+II&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:00:21.040215+00:00",
+              "next_attempt": "2026-11-03T01:00:21.040215+00:00",
+              "revision": "bdf515ba091d9696:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:00:21.040296+00:00",
+              "next_attempt": "2026-11-03T01:00:21.040296+00:00",
+              "revision": "bdf515ba091d9696:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:14583": {
       "title": "Squid Commando",
@@ -72426,17 +72616,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.7320508075688772,
-              "normalized": 7.33
+              "normalized": 7.33,
+              "checked": "2026-11-02T21:20:51.439245+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:20:51.439245+00:00"
+        "attempted": "2026-11-02T23:59:30.968539+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -72444,8 +72635,8 @@
         "source": "https://www.nintendo.com/us/store/products/squid-commando-switch/",
         "checked": "2026-11-02T21:20:53.987795+00:00"
       },
-      "basics_attempted": "2026-11-02T21:20:51.439245+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-02T23:59:30.968539+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:51:56.120570+00:00",
       "store_evidence": [
@@ -72455,7 +72646,36 @@
           "checked": "2026-11-02T21:20:53.987501+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/SQUID-COMMANDO-2463943.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:59:37.680427+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Squid Commando",
+        "SQUID COMMANDO"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:59:37.680736+00:00",
+              "next_attempt": "2026-11-03T23:59:37.680736+00:00",
+              "revision": "b17ee39f7a4745e7:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:59:37.680736+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/SQUID-COMMANDO-2463943.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/SQUID-COMMANDO-2463943.html"
+            }
+          }
+        }
+      }
     },
     "PS5:12503": {
       "title": "Star Trek Prodigy: Supernova",
@@ -123792,7 +124012,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:20:38.640686+00:00"
+        "attempted": "2026-11-02T23:59:30.629208+00:00"
       },
       "requirements": {
         "image": true,
@@ -123814,15 +124034,85 @@
       "aliases": [
         "Arcade Archives SPINAL BREAKERS"
       ],
-      "basics_attempted": "2026-11-02T21:20:38.640686+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-02T23:59:30.629208+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:51:27.016162+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:21.085719+00:00",
+              "next_attempt": "2026-11-04T00:00:21.085719+00:00",
+              "revision": "f49b58f9b50d4950:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/spinal_breakers",
+                "https://www.nintendolife.com/games/switch-eshop/spinal_breakers",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_spinal_breakers"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_spinal_breakers"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:21.702504+00:00",
+              "next_attempt": "2026-11-04T00:00:21.702504+00:00",
+              "revision": "f49b58f9b50d4950:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=spinal-breakers-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=spinal-breakers-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:50.633601+00:00",
+              "next_attempt": "2026-11-04T00:00:50.633601+00:00",
+              "revision": "f49b58f9b50d4950:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-spinal-breakers/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-spinal-breakers/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-spinal-breakers/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-spinal-breakers/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:50.665817+00:00",
+              "next_attempt": "2026-11-04T00:00:50.665817+00:00",
+              "revision": "f49b58f9b50d4950:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Spinal+Breakers&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Spinal+Breakers&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:00:50.665975+00:00",
+              "next_attempt": "2026-11-03T01:00:50.665975+00:00",
+              "revision": "f49b58f9b50d4950:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:00:50.666053+00:00",
+              "next_attempt": "2026-11-03T01:00:50.666053+00:00",
+              "revision": "f49b58f9b50d4950:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:16704": {
       "title": "StarLightRiders: HyperJump",
@@ -149118,11 +149408,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:20:38.637561+00:00"
+        "attempted": "2026-11-02T23:59:30.628151+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -149130,12 +149420,14 @@
         "source": "https://www.nintendo.com/us/store/products/space-dragons-switch/",
         "checked": "2026-11-02T21:20:43.274977+00:00"
       },
-      "basics_attempted": "2026-11-02T21:20:38.637561+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-02T23:59:30.628151+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:51:24.755483+00:00",
       "store_evidence": [
@@ -149145,7 +149437,100 @@
           "checked": "2026-11-02T21:20:43.274683+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Space-Dragons-3119131.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:59:34.179111+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Space Dragons"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:59:34.179415+00:00",
+              "next_attempt": "2026-11-03T23:59:34.179415+00:00",
+              "revision": "05f7320466843578:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:59:34.179415+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Space-Dragons-3119131.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Space-Dragons-3119131.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:11.472351+00:00",
+              "next_attempt": "2026-11-04T00:00:11.472351+00:00",
+              "revision": "05f7320466843578:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/space_dragons",
+                "https://www.nintendolife.com/games/nintendo-switch/space_dragons"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/space_dragons"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:12.199821+00:00",
+              "next_attempt": "2026-11-04T00:00:12.199821+00:00",
+              "revision": "05f7320466843578:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=space-dragons-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=space-dragons-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:16.077804+00:00",
+              "next_attempt": "2026-11-04T00:00:16.077804+00:00",
+              "revision": "05f7320466843578:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/space-dragons/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/space-dragons/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/space-dragons/"
+              ],
+              "url": "https://www.metacritic.com/game/space-dragons/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:16.110455+00:00",
+              "next_attempt": "2026-11-04T00:00:16.110455+00:00",
+              "revision": "05f7320466843578:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Space+Dragons&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Space+Dragons&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:00:16.110584+00:00",
+              "next_attempt": "2026-11-03T01:00:16.110584+00:00",
+              "revision": "05f7320466843578:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:00:16.110642+00:00",
+              "next_attempt": "2026-11-03T01:00:16.110642+00:00",
+              "revision": "05f7320466843578:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18387": {
       "title": "Springbot: The Last Spark",
@@ -202733,6 +203118,7 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/space_elite_force",
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
+              "checked": "2026-11-02T23:59:41.193178+00:00",
               "weight": 1.4142135623730951,
               "normalized": 3.5
             }
@@ -202740,21 +203126,88 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:20:38.637811+00:00"
+        "attempted": "2026-11-02T23:59:30.628449+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T21:20:38.637811+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-02T23:59:30.628449+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "image": "No unique matching video-game article with artwork"
+        "image": "No unique matching video-game article with artwork",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:31.324032+00:00",
+              "next_attempt": "2026-11-03T23:59:31.324032+00:00",
+              "revision": "6dd2e5e95315c90c:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Space+Elite+Force%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Space+Elite+Force%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:31.324032+00:00",
+              "next_attempt": "2026-11-03T23:59:31.324032+00:00",
+              "revision": "6dd2e5e95315c90c:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Space+Elite+Force%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Space+Elite+Force%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:41.193244+00:00",
+              "next_attempt": "2026-11-03T23:59:41.193244+00:00",
+              "revision": "6dd2e5e95315c90c:7",
+              "reason": "No qualifying image found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/space_elite_force"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/space_elite_force"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:41.902541+00:00",
+              "next_attempt": "2026-11-03T23:59:41.902541+00:00",
+              "revision": "6dd2e5e95315c90c:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=space-elite-force-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=space-elite-force-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-02T23:59:42.031176+00:00",
+              "next_attempt": "2026-11-03T23:59:42.031176+00:00",
+              "revision": "6dd2e5e95315c90c:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Space+Elite+Force%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Space+Elite+Force%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        }
+      }
     },
     "Switch:6912": {
       "title": "Spinmaster",
@@ -202860,17 +203313,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.0,
-              "normalized": 1.0
+              "normalized": 1.0,
+              "checked": "2026-11-02T21:22:11.021511+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:22:11.021511+00:00"
+        "attempted": "2026-11-02T23:59:32.062700+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -202878,8 +203332,8 @@
         "source": "https://www.nintendo.com/us/store/products/steel-rain-switch/",
         "checked": "2026-11-02T21:22:14.026934+00:00"
       },
-      "basics_attempted": "2026-11-02T21:22:11.021511+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-02T23:59:32.062700+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:52:02.356388+00:00",
       "store_evidence": [
@@ -202889,7 +203343,35 @@
           "checked": "2026-11-02T21:22:14.026635+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Steel-Rain-1783019.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:59:38.630332+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Steel Rain"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:59:38.630638+00:00",
+              "next_attempt": "2026-11-03T23:59:38.630638+00:00",
+              "revision": "35c2dd813c8bb8ed:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:59:38.630638+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Steel-Rain-1783019.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Steel-Rain-1783019.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7236": {
       "title": "Stones of the Revenant",
@@ -211439,17 +211921,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.0,
-              "normalized": 1.0
+              "normalized": 1.0,
+              "checked": "2026-11-02T21:20:38.637275+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:20:38.637275+00:00"
+        "attempted": "2026-11-02T23:59:30.627815+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -211457,8 +211940,8 @@
         "source": "https://www.nintendo.com/us/store/products/space-blaze-switch/",
         "checked": "2026-11-02T21:20:42.557539+00:00"
       },
-      "basics_attempted": "2026-11-02T21:20:38.637275+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-02T23:59:30.627815+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:51:19.938433+00:00",
       "store_evidence": [
@@ -211468,7 +211951,35 @@
           "checked": "2026-11-02T21:20:42.557241+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Space-Blaze-1690794.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:59:36.447515+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Space Blaze"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:59:36.447832+00:00",
+              "next_attempt": "2026-11-03T23:59:36.447832+00:00",
+              "revision": "06b067a5cfdce8b3:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:59:36.447832+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Space-Blaze-1690794.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Space-Blaze-1690794.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7345": {
       "title": "Space Pioneer",
@@ -211584,17 +212095,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.0,
-              "normalized": 1.0
+              "normalized": 1.0,
+              "checked": "2026-11-02T21:20:38.638069+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:20:38.638069+00:00"
+        "attempted": "2026-11-02T23:59:30.628744+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -211602,8 +212114,8 @@
         "source": "https://www.nintendo.com/us/store/products/spacecolorsrunner-switch/",
         "checked": "2026-11-02T21:20:47.102437+00:00"
       },
-      "basics_attempted": "2026-11-02T21:20:38.638069+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-02T23:59:30.628744+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:51:30.569469+00:00",
       "store_evidence": [
@@ -211613,7 +212125,35 @@
           "checked": "2026-11-02T21:20:47.102135+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/SpaceColorsRunner-1631319.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:59:32.061652+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "SpaceColorsRunner"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:59:32.061974+00:00",
+              "next_attempt": "2026-11-03T23:59:32.061974+00:00",
+              "revision": "66d53e2414ab376b:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:59:32.061974+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/SpaceColorsRunner-1631319.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/SpaceColorsRunner-1631319.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7607": {
       "title": "Story of a Gladiator",
@@ -220317,17 +220857,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.0,
-              "normalized": 1.0
+              "normalized": 1.0,
+              "checked": "2026-11-02T21:20:38.642943+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:20:38.642943+00:00"
+        "attempted": "2026-11-02T23:59:30.630364+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -220335,8 +220876,8 @@
         "source": "https://www.nintendo.com/us/store/products/squeakers-switch/",
         "checked": "2026-11-02T21:20:48.854038+00:00"
       },
-      "basics_attempted": "2026-11-02T21:20:38.642943+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-02T23:59:30.630364+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:51:36.531865+00:00",
       "store_evidence": [
@@ -220346,7 +220887,35 @@
           "checked": "2026-11-02T21:20:48.853742+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Squeakers-1870320.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-02T23:59:30.967555+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Squeakers"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-02T23:59:30.967860+00:00",
+              "next_attempt": "2026-11-03T23:59:30.967860+00:00",
+              "revision": "982a0d611b015e95:7",
+              "reason": "",
+              "last_success": "2026-11-02T23:59:30.967860+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Squeakers-1870320.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Squeakers-1870320.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7870": {
       "title": "Super Puzzle Pack",
