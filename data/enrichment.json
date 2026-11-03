@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:08:37.291470+00:00",
+  "updated": "2026-11-03T08:09:41.662925+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2111,
+    "full_attempted": 2121,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -213956,15 +213956,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 5,
-              "count": 1,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 5,
               "scale": 5,
-              "source": "PSN",
+              "count": 1,
               "url": "https://store.playstation.com/pt-pt/product/UP8188-PPSA25186_00-0908249910554407",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:25:00.861466+00:00",
-              "platform": "PSN · PS5",
               "weight": 1.0,
               "normalized": 10.0
             }
@@ -213972,7 +213970,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:24:59.685596+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:08:59.457699+00:00"
       },
       "requirements": {
         "image": true,
@@ -214014,7 +214019,11 @@
       },
       "basics_attempted": "2026-11-02T18:24:59.685596+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -214030,7 +214039,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:08:59.709349+00:00",
+      "full_version": 7
     },
     "Switch:17822": {
       "title": "Synth Riders",
@@ -231400,6 +231411,7 @@
               "name": "Movies Games and Tech",
               "score": 90,
               "url": "https://moviesgamesandtech.com/2026/08/07/review-stuck-together/",
+              "date": "2026-08-07",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -231407,6 +231419,7 @@
               "name": "Video Chums",
               "score": 80,
               "url": "https://videochums.com/article/local-multiplayer-indie-games-for-switch#stuck-together",
+              "date": "2026-06-23",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -231421,7 +231434,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:57.608319+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:09:39.025310+00:00"
       },
       "requirements": {
         "image": true,
@@ -231438,7 +231458,12 @@
       "basics_attempted": "2026-11-02T22:49:57.608319+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -231488,7 +231513,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:09:41.417714+00:00",
+      "full_version": 7
     },
     "PS5:18697": {
       "title": "Super Bunny Man",
@@ -261231,22 +261258,54 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 78.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
+              "name": "Nindie Spotlight",
               "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/streets_of_red_-_devils_dare_deluxe",
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=streets-of-red-devils-dare-deluxe-switch",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 70,
+              "url": "https://www.nintenderos.com/2018/09/analisis-streets-of-red-devils-dare-deluxe/",
+              "date": "2018-09-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 75,
+              "url": "",
+              "date": "2018-09-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/streets_of_red_-_devils_dare_deluxe?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-04-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/46974/streets-of-red-devils-dare-deluxe-switch-review",
+              "date": "2018-04-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": 6.3,
+          "score": 7.13,
           "scale": 10,
           "sources": [
             {
@@ -261258,12 +261317,27 @@
               "platform": "Nintendo Switch",
               "weight": 4.358898943540674,
               "normalized": 6.3
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.9,
+              "scale": 10,
+              "count": 22,
+              "url": "https://www.metacritic.com/game/streets-of-red-devils-dare-deluxe/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.69041575982343,
+              "normalized": 7.9
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:24:32.300099+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:08:59.183965+00:00"
       },
       "requirements": {
         "image": true,
@@ -261289,7 +261363,11 @@
       ],
       "basics_attempted": "2026-11-02T18:24:32.300099+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -261305,7 +261383,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:09:01.437844+00:00",
+      "full_version": 7
     },
     "Switch:5163": {
       "title": "Tales of Vesperia: Definitive Edition",
@@ -275033,14 +275113,55 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 76.6,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/12663-strikey-sisters",
+              "date": "2019-07-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 80,
+              "url": "https://www.nintendoenthusiast.com/2019/02/24/strikey-sisters-review-nintendo-switch/",
+              "date": "2019-02-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/strikey-sisters-review/",
+              "date": "2019-04-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 83,
+              "url": "http://www.nintendojo.com/reviews/review-strikey-sisters",
+              "date": "2019-03-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/cheap-indie-games-for-switch-part-2#strikey-sisters",
+              "date": "2019-02-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 5
         },
         "user": {
-          "score": 7.1,
+          "score": 7.4,
           "scale": 10,
           "sources": [
             {
@@ -275051,14 +275172,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/strikey_sisters",
               "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
-              "normalized": 7.1,
-              "checked": "2026-11-02T18:24:59.685356+00:00"
+              "normalized": 7.1
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.6,
+              "scale": 10,
+              "count": 17,
+              "url": "https://www.metacritic.com/game/strikey-sisters/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.123105625617661,
+              "normalized": 7.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:42.830341+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:09:09.048740+00:00"
       },
       "requirements": {
         "image": true,
@@ -275074,7 +275209,13 @@
       },
       "basics_attempted": "2026-11-02T22:49:42.830341+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No exact scored Nintendo Switch review",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/strikey-sisters-switch/",
@@ -275123,7 +275264,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:09:11.421732+00:00",
+      "full_version": 7
     },
     "Switch:5444": {
       "title": "Sundered: Eldritch Edition",
@@ -287295,22 +287438,150 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 89.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/streets_of_rage_4",
+              "name": "Cubed3",
+              "score": 90,
+              "url": "http://www.cubed3.com/review/5944/1/streets-of-rage-4-nintendo-switch.html",
+              "date": "2020-06-01",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cultured Vultures",
+              "score": 90,
+              "url": "https://culturedvultures.com/streets-of-rage-4-switch-review/",
+              "date": "2020-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameMAG",
+              "score": 80,
+              "url": "https://gamemag.ru/reviews/streets-of-rage-4-nintendo-switch",
+              "date": "2020-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.no",
+              "score": 80,
+              "url": "https://www.gamer.no/artikler/anmeldelse-streets-of-rage-4/491696",
+              "date": "2020-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 95,
+              "url": "https://www.godisageek.com/reviews/streets-of-rage-4-nintendo-switch-review/",
+              "date": "2020-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 70,
+              "url": "https://www.ign.com/articles/streets-of-rage-4-review",
+              "date": "2020-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 100.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=streets-of-rage-4-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 90,
+              "url": "https://www.nintenderos.com/2020/05/analisis-streets-of-rage-4-para-nintendo-switch/",
+              "date": "2020-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 90,
+              "url": "https://www.nintendoenthusiast.com/streets-of-rage-4-review-nintendo-switch/",
+              "date": "2020-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 90,
+              "url": "",
+              "date": "2020-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 90,
+              "url": "https://www.nintendo-insider.com/streets-of-rage-4-review/",
+              "date": "2020-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/streets_of_rage_4",
+              "date": "2020-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/53617/streets-of-rage-4-switch-review",
+              "date": "2020-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 91,
+              "url": "https://www.nintendojo.com/reviews/review-streets-of-rage-4-switch",
+              "date": "2020-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 100,
+              "url": "https://purenintendo.com/review-streets-of-rage-4-nintendo-switch/",
+              "date": "2020-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 80,
+              "url": "https://twinfinite.net/2020/04/streets-of-rage-4-review/",
+              "date": "2020-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 100,
+              "url": "https://switch-brasil.com/analise-streets-of-rage-4/",
+              "date": "2020-12-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 17
         },
         "user": {
-          "score": 8.1,
+          "score": 8.29,
           "scale": 10,
           "sources": [
             {
@@ -287321,14 +287592,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/streets_of_rage_4",
               "platform": "Nintendo Switch",
               "weight": 15.968719422671311,
-              "normalized": 8.1,
-              "checked": "2026-11-02T18:24:31.503861+00:00"
+              "normalized": 8.1
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.5,
+              "scale": 10,
+              "count": 193,
+              "url": "https://www.metacritic.com/game/streets-of-rage-4/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 13.892443989449804,
+              "normalized": 8.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:42.829261+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 17,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:09:19.169545+00:00"
       },
       "requirements": {
         "image": true,
@@ -287344,7 +287629,9 @@
       },
       "basics_attempted": "2026-11-02T22:49:42.829261+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/streets-of-rage-4-switch/",
@@ -287393,29 +287680,63 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:09:21.963018+00:00",
+      "full_version": 7
     },
     "Switch:5806": {
       "title": "Streets of Rogue",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 73.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/streets_of_rogue",
+              "name": "FNintendo",
+              "score": 80,
+              "url": "https://fnintendo.net/article/12858-streets-of-rogue",
+              "date": "2019-08-30",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 65.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=streets-of-rogue-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/streets_of_rogue",
+              "date": "2019-07-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2019/08/26/streets-of-rogue-review/",
+              "date": "2019-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 80,
+              "url": "https://vandal.elespanol.com/analisis/pc/streets-of-rogue/42594#p-13",
+              "date": "2019-07-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": 7.7,
+          "score": 8.0,
           "scale": 10,
           "sources": [
             {
@@ -287426,14 +287747,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/streets_of_rogue",
               "platform": "Nintendo Switch",
               "weight": 5.5677643628300215,
-              "normalized": 7.7,
-              "checked": "2026-11-02T18:24:38.784676+00:00"
+              "normalized": 7.7
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.5,
+              "scale": 10,
+              "count": 11,
+              "url": "https://www.metacritic.com/game/streets-of-rogue/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.3166247903554,
+              "normalized": 8.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:42.830016+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:08:54.174826+00:00"
       },
       "requirements": {
         "image": true,
@@ -287449,7 +287784,12 @@
       },
       "basics_attempted": "2026-11-02T22:49:42.830016+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/streets-of-rogue-switch/",
@@ -287498,7 +287838,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:08:56.518213+00:00",
+      "full_version": 7
     },
     "Switch:5694": {
       "title": "Super Cane Magic ZERO",
@@ -311435,22 +311777,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 72.8,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/strikers_1945",
+              "name": "FNintendo",
+              "score": 70,
+              "url": "http://fnintendo.net/article/9882-strikers1945-for-nintendo-switch",
+              "date": "2017-10-08",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/strikers_1945",
+              "date": "2017-08-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2017/09/04/strikers1945-for-nintendo-switch-review/",
+              "date": "2017-09-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 71,
+              "url": "https://videochums.com/review/strikers-1945",
+              "date": "2017-08-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": 7.4,
+          "score": 7.47,
           "scale": 10,
           "sources": [
             {
@@ -311461,14 +311828,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/strikers_1945",
               "platform": "Nintendo Switch",
               "weight": 5.477225575051661,
-              "normalized": 7.4,
-              "checked": "2026-11-02T18:24:59.684008+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.6,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/strikers-1945/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 7.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T00:00:57.248334+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:09:24.073471+00:00"
       },
       "requirements": {
         "image": true,
@@ -311487,7 +311868,11 @@
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -311519,26 +311904,45 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:09:26.772281+00:00",
+      "full_version": 7
     },
     "Switch:6902": {
       "title": "Strikers 1945 II",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 76.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/strikers_1945_ii",
+              "name": "Nintenderos",
+              "score": 65,
+              "url": "http://www.nintenderos.com/2018/02/analisis-strikers-1945-ii/",
+              "date": "2018-02-07",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/strikers_1945_ii",
+              "date": "2018-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 74,
+              "url": "https://videochums.com/review/strikers-1945-ii",
+              "date": "2018-01-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
           "score": 7.4,
@@ -311552,14 +311956,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/strikers_1945_ii",
               "platform": "Nintendo Switch",
               "weight": 4.898979485566356,
-              "normalized": 7.4,
-              "checked": "2026-11-02T18:24:59.684369+00:00"
+              "normalized": 7.4
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T00:00:57.248602+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:09:04.122937+00:00"
       },
       "requirements": {
         "image": true,
@@ -311578,7 +311986,11 @@
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -311610,7 +312022,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:09:06.314491+00:00",
+      "full_version": 7
     },
     "Switch:6894": {
       "title": "Strikers 1945 Plus",
@@ -325615,28 +326029,86 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 50.0,
+          "score": 59.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 50.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/struggling",
+              "name": "GameCritics",
+              "score": 80,
+              "url": "https://gamecritics.com/brad-gallaway/struggling-review/",
+              "date": "2020-09-10",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "https://www.godisageek.com/reviews/struggling-review/",
+              "date": "2020-08-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 55,
+              "url": "https://www.jeuxvideo.com/test/1278736/struggling-un-concept-rigolo-entache-par-des-mecaniques-frustrantes.htm",
+              "date": "2020-08-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 40,
+              "url": "https://www.nintendo-insider.com/struggling-review/",
+              "date": "2020-09-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 50,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/struggling",
+              "date": "2020-09-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 50,
+              "url": "http://switchplayer.net/2020/09/23/struggling-review/",
+              "date": "2020-09-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
-          "score": null,
+          "score": 3.33,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.33,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/struggling",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 3.33
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:43.151672+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:09:14.206456+00:00"
       },
       "requirements": {
         "image": true,
@@ -325652,7 +326124,13 @@
       },
       "basics_attempted": "2026-11-02T22:49:43.151672+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/struggling-switch/",
@@ -325701,7 +326179,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:09:17.310015+00:00",
+      "full_version": 7
     },
     "Switch:7445": {
       "title": "Super Box Land Demake",
@@ -362966,22 +363446,102 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 30.0,
+          "score": 54.4,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 30.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/stubbs_the_zombie_in_rebel_without_a_pulse",
+              "name": "GAMINGbible",
+              "score": 60,
+              "url": "https://www.gamingbible.co.uk/reviews/games-stubbs-the-zombie-halo-engine-remaster-review-for-xbox-ps4-switch-20210315",
+              "date": "2021-03-15",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 83,
+              "url": "https://gaming-age.com/2021/04/stubbs-the-zombie-in-rebel-without-a-pulse-review-for-nintendo-switch-ps4-xbox-one/",
+              "date": "2021-04-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 68.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=stubbs-the-zombie-in-rebel-without-a-pulse-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 60,
+              "url": "https://www.nintendo-insider.com/stubbs-the-zombie-in-rebel-without-a-pulse-review/",
+              "date": "2021-03-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 30,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/stubbs_the_zombie_in_rebel_without_a_pulse",
+              "date": "2021-03-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 65,
+              "url": "https://www.nintendoworldreport.com/review/56576/stubbs-the-zombie-in-rebel-without-a-pulse-switch-review",
+              "date": "2021-03-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 40,
+              "url": "https://screenrant.com/stubbs-zombie-rebel-without-pulse-switch-review/",
+              "date": "2021-03-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 50,
+              "url": "https://www.shacknews.com/article/123279/stubbs-the-zombie-in-rebel-without-a-pulse-review-brainless",
+              "date": "2021-03-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 40,
+              "url": "http://switchplayer.net/2021/03/21/stubbs-the-zombie-in-rebel-without-a-pulse-review/",
+              "date": "2021-03-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 42,
+              "url": "https://vandal.elespanol.com/analisis/switch/stubbs-the-zombie-in-rebel-without-a-pulse/96501#p-83",
+              "date": "2021-03-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 60,
+              "url": "https://worthplaying.com/article/2021/3/15/reviews/124711/",
+              "date": "2021-03-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 11
         },
         "user": {
-          "score": 6.3,
+          "score": 6.41,
           "scale": 10,
           "sources": [
             {
@@ -362992,14 +363552,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/stubbs_the_zombie_in_rebel_without_a_pulse",
               "platform": "Nintendo Switch",
               "weight": 3.7416573867739413,
-              "normalized": 6.3,
-              "checked": "2026-11-02T18:25:33.624930+00:00"
+              "normalized": 6.3
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.6,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/stubbs-the-zombie-in-rebel-without-a-pulse/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.23606797749979,
+              "normalized": 6.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:44.195491+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:09:29.082978+00:00"
       },
       "requirements": {
         "image": true,
@@ -363015,7 +363589,11 @@
       },
       "basics_attempted": "2026-11-02T22:49:44.195491+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/stubbs-the-zombie-in-rebel-without-a-pulse-switch/",
@@ -363065,7 +363643,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:09:31.439462+00:00",
+      "full_version": 7
     },
     "Switch:8611": {
       "title": "Summer Catchers",
