@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:20:53.089477+00:00",
+  "updated": "2026-11-03T08:21:42.684031+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2221,
+    "full_attempted": 2231,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -122324,15 +122324,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.96,
-              "count": 27,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.96,
               "scale": 5,
-              "source": "PSN",
+              "count": 27,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA07073_00-RATALAIKATAQOBAN",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:31:14.037257+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 5.196152422706632,
               "normalized": 7.92
             }
@@ -122340,7 +122338,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:31:13.112015+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:21:17.038566+00:00"
       },
       "requirements": {
         "image": true,
@@ -122382,7 +122387,11 @@
       },
       "basics_attempted": "2026-11-02T18:31:13.112015+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -122398,7 +122407,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:21:17.325702+00:00",
+      "full_version": 7
     },
     "Switch:11687": {
       "title": "Taqoban",
@@ -122426,7 +122437,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:23.306894+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:21:14.972976+00:00"
       },
       "requirements": {
         "image": true,
@@ -122442,7 +122460,13 @@
       },
       "basics_attempted": "2026-11-02T22:51:23.306894+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/taqoban-switch/",
@@ -122491,7 +122515,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:21:19.597568+00:00",
+      "full_version": 7
     },
     "Switch:13648": {
       "title": "Tecmo Knight",
@@ -122661,11 +122687,7 @@
         "id": "iIomr5vOVAk",
         "title": "TMNT Arcade: Wrath of the Mutants – Official Console and PC Trailer",
         "kind": "trailer",
-        "source": "https://www.youtube.com/watch?v=iIomr5vOVAk",
-        "url": "https://www.youtube.com/watch?v=iIomr5vOVAk",
-        "checked": "2026-11-02T16:01:27.752833+00:00",
-        "attempted": "2026-11-02T16:01:27.752852+00:00",
-        "error": null
+        "source": "https://www.youtube.com/watch?v=iIomr5vOVAk"
       },
       "psplus": {
         "in_catalog": false,
@@ -122677,34 +122699,186 @@
       },
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 51.9,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Finger Guns",
+              "score": 40,
+              "url": "https://fingerguns.net/reviews/2024/07/26/tmnt-wrath-of-the-mutants-review-one-for-the-sewers/",
+              "date": "2024-07-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 55,
+              "url": "https://www.gameinformer.com/review/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants/better-left-in-the-sewers",
+              "date": "2024-04-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 50,
+              "url": "https://www.gamespew.com/2024/04/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-review/",
+              "date": "2024-04-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingBolt",
+              "score": 40,
+              "url": "https://gamingbolt.com/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-review-entirely-forgettable",
+              "date": "2024-04-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 50,
+              "url": "https://gamingtrend.com/feature/reviews/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-review-sloppy-sewer-surfin/",
+              "date": "2024-04-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 60,
+              "url": "https://hardcoregamer.com/review-teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants/",
+              "date": "2024-04-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 60,
+              "url": "https://www.ign.com/articles/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-review",
+              "date": "2024-04-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Adria",
+              "score": 50,
+              "url": "https://adria.ign.com/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants/43847/review/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-recenzija",
+              "date": "2024-06-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 66,
+              "url": "https://www.impulsegamer.com/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-review-ps5/",
+              "date": "2024-04-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 60,
+              "url": "https://psxbrasil.com.br/analise/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-review/",
+              "date": "2024-04-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 50,
+              "url": "https://www.playstationcountry.com/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-ps5-review/",
+              "date": "2024-04-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 50,
+              "url": "https://press-start.com.au/reviews/ps5-reviews/2024/04/23/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-review-a-repetitive-romp/",
+              "date": "2024-04-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 60,
+              "url": "https://stevivor.com/reviews/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-review/",
+              "date": "2024-04-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 40,
+              "url": "https://www.thegamer.com/teenage-mutant-ninja-turtles-wrath-of-the-mutants-review/",
+              "date": "2024-04-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 30,
+              "url": "https://www.thesixthaxis.com/2024/04/23/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-review/",
+              "date": "2024-04-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 56,
+              "url": "https://videochums.com/review/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants",
+              "date": "2024-04-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "WellPlayed",
+              "score": 65,
+              "url": "https://www.well-played.com.au/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-review/",
+              "date": "2024-04-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 17
         },
         "user": {
-          "score": 7.6,
+          "score": 7.25,
           "scale": 10,
           "sources": [
             {
-              "score": 3.8,
-              "count": 536,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.8,
               "scale": 5,
-              "source": "PSN",
+              "count": 536,
               "url": "https://store.playstation.com/pt-pt/concept/10009199",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:31:16.473816+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 23.15167380558045,
               "normalized": 7.6
+            },
+            {
+              "name": "Metacritic users",
+              "score": 5.5,
+              "scale": 10,
+              "count": 22,
+              "url": "https://www.metacritic.com/game/teenage-mutant-ninja-turtles-arcade-wrath-of-the/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 4.69041575982343,
+              "normalized": 5.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:31:15.360619+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 17,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:21:34.820455+00:00"
       },
       "requirements": {
         "image": true,
@@ -122724,7 +122898,11 @@
       },
       "basics_attempted": "2026-11-02T18:31:15.360619+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -122740,7 +122918,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:21:35.374962+00:00",
+      "full_version": 7
     },
     "Switch:15077": {
       "title": "Teenage Mutant Ninja Turtles Arcade: Wrath of the Mutants",
@@ -122756,27 +122936,63 @@
         "id": "iIomr5vOVAk",
         "title": "TMNT Arcade: Wrath of the Mutants – Official Console and PC Trailer",
         "kind": "trailer",
-        "source": "https://www.youtube.com/watch?v=iIomr5vOVAk",
-        "url": "https://www.youtube.com/watch?v=iIomr5vOVAk",
-        "checked": "2026-11-02T16:01:27.755338+00:00",
-        "attempted": "2026-11-02T16:01:27.755344+00:00",
-        "error": null
+        "source": "https://www.youtube.com/watch?v=iIomr5vOVAk"
       },
       "ratings": {
         "critic": {
-          "score": 50.0,
+          "score": 58.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 50.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants",
+              "name": "CGMagazine",
+              "score": 50,
+              "url": "https://www.cgmagonline.com/review/game/tmnt-arcade-wrath-of-the-mutants/",
+              "date": "2024-04-23",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 60,
+              "url": "https://www.cubed3.com/games/reviews/nintendo-switch/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants",
+              "date": "2025-06-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 71.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 50,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants",
+              "date": "2024-04-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 60,
+              "url": "https://www.nintendoworldreport.com/reviewmini/66992/tmnt-wrath-of-the-mutants-switch-review",
+              "date": "2024-04-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 60,
+              "url": "https://toucharcade.com/2024/04/29/lunar-lander-beyond-switch-review-tmnt-wrath-of-the-mutants-eshop-price-nintendo/",
+              "date": "2024-04-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
           "score": 6.6,
@@ -122790,14 +123006,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/teenage_mutant_ninja_turtles_arcade_wrath_of_the_mutants",
               "platform": "Nintendo Switch",
               "weight": 3.3166247903554,
-              "normalized": 6.6,
-              "checked": "2026-11-02T18:31:51.414367+00:00"
+              "normalized": 6.6
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:37.675184+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:21:40.180165+00:00"
       },
       "requirements": {
         "image": true,
@@ -122806,7 +123026,11 @@
       },
       "basics_attempted": "2026-11-02T22:51:37.675184+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-switch/",
@@ -122855,7 +123079,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:21:42.426926+00:00",
+      "full_version": 7
     },
     "PS5:15110": {
       "title": "Teenage Mutant Ninja Turtles: Mutants Unleashed",
@@ -122878,11 +123104,7 @@
         "id": "UNnX8qhhd68",
         "title": "Teenage Mutant Ninja Turtles: Mutants Unleashed – Gameplay Trailer | PS5 & PS4",
         "kind": "gameplay",
-        "source": "https://www.youtube.com/watch?v=UNnX8qhhd68",
-        "url": "https://www.youtube.com/watch?v=UNnX8qhhd68",
-        "checked": "2026-11-02T16:01:27.756591+00:00",
-        "attempted": "2026-11-02T16:01:27.756598+00:00",
-        "error": null
+        "source": "https://www.youtube.com/watch?v=UNnX8qhhd68"
       },
       "psplus": {
         "in_catalog": false,
@@ -122894,41 +123116,104 @@
       },
       "ratings": {
         "critic": {
-          "score": 66.0,
+          "score": 65.9,
           "scale": 100,
           "sources": [
             {
-              "name": "Metacritic",
+              "name": "Atomix",
+              "score": 70,
+              "url": "https://atomix.vg/review-teenage-mutant-ninja-turtles-mutants-unleashed/",
+              "date": "2024-10-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameliner",
+              "score": 60,
+              "url": "https://gameliner.nl/reviews/teenage-mutant-ninja-turtles-mutants-unleashed-review-diepvries-pizza/6738-29-1-5",
+              "date": "2024-10-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 70,
+              "url": "https://gamingtrend.com/feature/reviews/teenage-mutant-ninja-turtles-mutants-unleashed-review-our-heroes-in-a-half-shell-return-in-a-light-rpg/",
+              "date": "2024-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
               "score": 66,
-              "url": "https://www.metacritic.com/game/teenage-mutant-ninja-turtles-mutants-unleashed/critic-reviews/?platform=playstation-5",
-              "platform": "PS5"
+              "url": "https://www.impulsegamer.com/teenage-mutant-ninja-turtles-mutants-unleashed/",
+              "date": "2024-11-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 50,
+              "url": "https://www.thegamesmachine.it/teenage-mutant-ninja-turtles-mutants-unleashed/teenage-mutant-ninja-turtles-recensione/",
+              "date": "2024-11-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 70,
+              "url": "https://www.thegamer.com/teenage-mutant-ninja-turtles-tmnt-mutants-unleashed-review/",
+              "date": "2024-10-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 75,
+              "url": "https://videochums.com/review/teenage-mutant-ninja-turtles-mutants-unleashed",
+              "date": "2024-10-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
-          "score": 6.8,
+          "score": 6.3,
           "scale": 10,
           "sources": [
             {
-              "score": 3.4,
-              "count": 689,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.4,
               "scale": 5,
-              "source": "PSN",
+              "count": 689,
               "url": "https://store.playstation.com/pt-pt/concept/10008636",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:31:52.416947+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 26.248809496813376,
               "normalized": 6.799999999999999
+            },
+            {
+              "name": "Metacritic users",
+              "score": 4.6,
+              "scale": 10,
+              "count": 60,
+              "url": "https://www.metacritic.com/game/teenage-mutant-ninja-turtles-mutants-unleashed/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 7.745966692414834,
+              "normalized": 4.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:31:51.414575+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:21:22.358998+00:00"
       },
       "requirements": {
         "image": true,
@@ -122948,7 +123233,9 @@
       },
       "basics_attempted": "2026-11-02T18:31:51.414575+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -122964,7 +123251,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:21:22.359535+00:00",
+      "full_version": 7
     },
     "Switch:15108": {
       "title": "Teenage Mutant Ninja Turtles: Mutants Unleashed",
@@ -122980,35 +123269,74 @@
         "id": "UNnX8qhhd68",
         "title": "Teenage Mutant Ninja Turtles: Mutants Unleashed – Gameplay Trailer | PS5 & PS4",
         "kind": "gameplay",
-        "source": "https://www.youtube.com/watch?v=UNnX8qhhd68",
-        "url": "https://www.youtube.com/watch?v=UNnX8qhhd68",
-        "checked": "2026-11-02T16:01:27.757775+00:00",
-        "attempted": "2026-11-02T16:01:27.757783+00:00",
-        "error": null
+        "source": "https://www.youtube.com/watch?v=UNnX8qhhd68"
       },
       "ratings": {
         "critic": {
-          "score": 61.0,
+          "score": 61.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Metacritic",
-              "score": 61,
-              "url": "https://www.metacritic.com/game/teenage-mutant-ninja-turtles-mutants-unleashed/critic-reviews/?platform=nintendo-switch",
-              "platform": "Switch"
+              "name": "GameGrin",
+              "score": 70,
+              "url": "https://www.gamegrin.com/reviews/teenage-mutant-ninja-turtles-mutants-unleashed-review/",
+              "date": "2024-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 50,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/teenage-mutant-ninja-turtles-mutants-unleashed",
+              "date": "2024-10-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 60,
+              "url": "https://www.nintendoworldreport.com/review/69040/tmnt-mutants-unleashed-switch-review",
+              "date": "2024-11-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 65,
+              "url": "https://purenintendo.com/review-teenage-mutant-ninja-turtles-mutants-unleashed-nintendo-switch/",
+              "date": "2024-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/nintendo-switch/teenage_mutant_ninja_turtles_mutants_unleashed",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:37.675463+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:21:30.199897+00:00"
       },
       "requirements": {
         "image": true,
@@ -123017,7 +123345,10 @@
       },
       "basics_attempted": "2026-11-02T22:51:37.675463+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/teenage-mutant-ninja-turtles-mutants-unleashed-switch/",
@@ -123066,7 +123397,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:21:32.450574+00:00",
+      "full_version": 7
     },
     "PS5:12960": {
       "title": "Teenage Mutant Ninja Turtles: Shredder's Revenge",
@@ -123112,27 +123445,50 @@
           "source_count": 0
         },
         "user": {
-          "score": 9.18,
+          "score": 8.92,
           "scale": 10,
           "sources": [
             {
-              "score": 4.59,
-              "count": 13795,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.59,
               "scale": 5,
-              "source": "PSN",
+              "count": 13795,
               "url": "https://store.playstation.com/pt-pt/concept/10003986",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:31:53.094316+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 9.18
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.6,
+              "scale": 10,
+              "count": 17,
+              "url": "https://www.metacritic.com/game/teenage-mutant-ninja-turtles-shredders-revenge/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 4.123105625617661,
+              "normalized": 7.6
+            },
+            {
+              "name": "Push Square",
+              "score": 8.5,
+              "scale": 10.0,
+              "count": 47,
+              "url": "https://www.pushsquare.com/games/ps5/teenage_mutant_ninja_turtles_shredders_revenge",
+              "platform": "PlayStation 5",
+              "weight": 6.855654600401044,
+              "normalized": 8.5
             }
           ],
-          "source_count": 1,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:31:51.415339+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:21:27.366124+00:00"
       },
       "requirements": {
         "image": true,
@@ -123152,7 +123508,9 @@
       },
       "basics_attempted": "2026-11-02T18:31:51.415339+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -123168,7 +123526,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:21:27.765616+00:00",
+      "full_version": 7
     },
     "Switch:9465": {
       "title": "Teenage Mutant Ninja Turtles: Shredder's Revenge",
@@ -242902,15 +243262,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.46,
-              "count": 37,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.46,
               "scale": 5,
-              "source": "PSN",
+              "count": 37,
               "url": "https://store.playstation.com/pt-pt/product/EB2644-PPSA37196_00-0058494629800652",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:31:15.351757+00:00",
-              "platform": "PSN · PS5",
               "weight": 6.082762530298219,
               "normalized": 8.92
             }
@@ -242918,7 +243276,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:31:13.113331+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:21:12.170213+00:00"
       },
       "requirements": {
         "image": true,
@@ -242960,7 +243325,11 @@
       },
       "basics_attempted": "2026-11-02T18:31:13.113331+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -242976,7 +243345,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:21:12.447948+00:00",
+      "full_version": 7
     },
     "Switch:18758": {
       "title": "Tearscape",
@@ -242988,10 +243359,11 @@
           "sources": [
             {
               "name": "Nindie Spotlight",
-              "score": 81.0,
-              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=tearscape-switch",
+              "score": 81,
+              "url": "https://nindiespotlight.com/game_profile.cfm?game=tearscape-switch",
+              "date": "2026-08-28",
               "platform": "Nintendo Switch",
-              "via": "Direct console-specific review"
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
@@ -243004,7 +243376,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:37.674929+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:21:34.851841+00:00"
       },
       "requirements": {
         "image": true,
@@ -243020,7 +243399,13 @@
       },
       "basics_attempted": "2026-11-02T22:51:37.674929+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/tearscape-switch/",
@@ -243069,7 +243454,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:21:37.148464+00:00",
+      "full_version": 7
     },
     "Switch:18534": {
       "title": "Tentacle Tango",
@@ -273139,22 +273526,159 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 71.1,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/team_sonic_racing",
+              "name": "App Trigger",
+              "score": 60,
+              "url": "https://apptrigger.com/2019/05/23/team-sonic-racing-review-not-rolling-speed-sound/ ",
+              "date": "2019-05-23",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 70,
+              "url": "https://cogconnected.com/review/team-sonic-racing-review/",
+              "date": "2019-05-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/12466-team-sonic-racing",
+              "date": "2019-06-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 75,
+              "url": "https://www.gamespace.com/reviews/team-sonic-racing-switch-review/",
+              "date": "2019-05-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 60,
+              "url": "https://games.tiscali.cz/recenze/team-sonic-racing-recenze-328853 ",
+              "date": "2019-06-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 67,
+              "url": "http://www.gaming-age.com/2019/05/team-sonic-racing-review-for-nintendo-switch-ps4-xbox-one/",
+              "date": "2019-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 60,
+              "url": "https://www.godisageek.com/reviews/switch-report-review-46-saints-row-full-package-deponia-resident-evil-4-team-sonic-racing/",
+              "date": "2019-06-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 83,
+              "url": "https://www.nintenderos.com/2019/06/analisis-team-sonic-racing/",
+              "date": "2019-06-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 75,
+              "url": "https://www.nintendoenthusiast.com/2019/05/29/team-sonic-racing-review-for-nintendo-switch-green-light-ride/",
+              "date": "2019-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 85,
+              "url": "",
+              "date": "2020-04-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/team-sonic-racing-review/",
+              "date": "2019-05-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/team_sonic_racing",
+              "date": "2019-05-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/50587/team-sonic-racing-switch-review",
+              "date": "2019-05-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 70,
+              "url": "http://play.co.rs/2019/06/review-team-sonic-racing/ ",
+              "date": "2019-07-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-team-sonic-racing-nintendo-switch/",
+              "date": "2019-06-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 70,
+              "url": "https://screenrant.com/team-sonic-racing-review/",
+              "date": "2019-05-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2019/05/23/team-sonic-racing-review/",
+              "date": "2019-05-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 60,
+              "url": "https://www.vooks.net/team-sonic-racing-switch-review/",
+              "date": "2019-06-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 18
         },
         "user": {
-          "score": 7.1,
+          "score": 7.15,
           "scale": 10,
           "sources": [
             {
@@ -273165,14 +273689,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/team_sonic_racing",
               "platform": "Nintendo Switch",
               "weight": 10.816653826391969,
-              "normalized": 7.1,
-              "checked": "2026-11-02T18:31:13.113058+00:00"
+              "normalized": 7.1
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.2,
+              "scale": 10,
+              "count": 155,
+              "url": "https://www.metacritic.com/game/team-sonic-racing/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 12.449899597988733,
+              "normalized": 7.199999999999999
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:24.382472+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 18,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:21:20.237433+00:00"
       },
       "requirements": {
         "image": true,
@@ -273188,7 +273726,10 @@
       },
       "basics_attempted": "2026-11-02T22:51:24.382472+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/team-sonic-racing-switch/",
@@ -273238,7 +273779,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "0w7am-tyNMs",
+        "title": "Team Sonic Racing - E3 2018 Gameplay Trailer | PS4",
+        "kind": "gameplay",
+        "source": "https://www.playstation.com/en-us/games/team-sonic-racing/"
+      },
+      "full_attempted": "2026-11-03T08:21:22.763746+00:00",
+      "full_version": 7
     },
     "Switch:4920": {
       "title": "Tesla vs Lovecraft",
