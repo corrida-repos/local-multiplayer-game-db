@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:58:12.802747+00:00",
+  "updated": "2026-11-03T08:59:02.620523+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -1823,13 +1823,12 @@
         "critic_index_complete": true,
         "critic_index_review_count": 1,
         "errors": [
-          "Metacritic users: The read operation timed out",
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
-          "www.nintendolife.com/switch-eshop: HTTP Error 404: Not Found"
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:55:44.848431+00:00"
+        "attempted": "2026-11-03T08:58:54.783314+00:00"
       },
       "requirements": {
         "image": true,
@@ -1847,11 +1846,15 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "trailer": "HTTP Error 404: Not Found",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:43:09.138851+00:00",
+      "full_attempted": "2026-11-03T08:58:57.707297+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/animality-switch/",
@@ -1889,7 +1892,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:12306": {
       "title": "ANIQUILATION",
@@ -2055,8 +2059,7 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/abathor",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 5.700000000000001,
-              "checked": "2026-11-02T19:42:55.500184+00:00"
+              "normalized": 5.700000000000001
             }
           ],
           "source_count": 1,
@@ -2067,7 +2070,7 @@
         "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:30:59.023892+00:00"
+        "attempted": "2026-11-03T08:58:29.889041+00:00"
       },
       "requirements": {
         "image": true,
@@ -2084,9 +2087,12 @@
       "basics_attempted": "2026-11-02T22:30:59.023892+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:42:56.744083+00:00",
+      "full_attempted": "2026-11-03T08:58:32.504187+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/abathor-switch/",
@@ -2135,7 +2141,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "PS5:10593": {
       "title": "Aeon Drive",
@@ -2194,11 +2201,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 3,
         "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 404: Not Found"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:43:32.510573+00:00"
+        "attempted": "2026-11-03T08:58:46.560896+00:00"
       },
       "requirements": {
         "image": true,
@@ -2240,14 +2247,17 @@
       },
       "basics_attempted": "2026-11-02T16:57:49.503601+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
+      },
       "trailer": {
         "id": "VbcpUTRyEnk",
         "title": "Aeon Drive - Launch Trailer | PS5, PS4",
         "kind": "trailer",
         "source": "https://www.playstation.com/en-us/games/aeon-drive/"
       },
-      "full_attempted": "2026-11-02T19:43:32.841016+00:00",
+      "full_attempted": "2026-11-03T08:58:46.868199+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -2263,7 +2273,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "PS5:12279": {
       "title": "After Wave: Downfall",
@@ -187736,7 +187747,7 @@
           "source_count": 22
         },
         "user": {
-          "score": 9.49,
+          "score": 9.48,
           "scale": 10,
           "sources": [
             {
@@ -187758,9 +187769,20 @@
               "platform": "PlayStation 5",
               "weight": 31.622776601683793,
               "normalized": 9.58
+            },
+            {
+              "score": 9.25,
+              "scale": 10,
+              "count": 4,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/absolum",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 2.0,
+              "normalized": 9.25
             }
           ],
-          "source_count": 2,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -187768,7 +187790,7 @@
         "errors": [],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:43:02.122476+00:00"
+        "attempted": "2026-11-03T08:58:41.891133+00:00"
       },
       "requirements": {
         "image": true,
@@ -187817,7 +187839,7 @@
         "kind": "trailer",
         "source": "https://www.playstation.com/en-us/games/absolum/"
       },
-      "full_attempted": "2026-11-02T19:43:02.347152+00:00",
+      "full_attempted": "2026-11-03T08:58:43.624351+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -187833,16 +187855,49 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:16533": {
       "title": "Absolum",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 95.0,
+          "score": 90.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "Atomix",
+              "score": 95,
+              "url": "",
+              "date": "2025-10-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "https://www.cubed3.com/games/reviews/nintendo-switch/absolum",
+              "date": "2026-04-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameliner",
+              "score": 80,
+              "url": "https://gameliner.nl/reviews/absolum-review-een-vermakelijke-roguelite/7251-32-1-220",
+              "date": "2025-10-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamepressure",
+              "score": 90,
+              "url": "https://www.gamepressure.com/editorials/reviews/absolum-review-how-i-learned-to-love-a-co-op-beat-em-up-roguelike/za7a2",
+              "date": "2025-10-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 100.0,
@@ -187851,15 +187906,64 @@
               "via": "Direct console-specific review"
             },
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/absolum",
+              "name": "Nintendo Insider",
+              "score": 90,
+              "url": "https://www.nintendo-insider.com/absolum-nintendo-switch-2-review-online-port-performance/",
+              "date": "2025-10-14",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/absolum",
+              "date": "2025-10-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "https://www.nintendoworldreport.com/review/72837/absolum-switch-review",
+              "date": "2025-10-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 100,
+              "url": "https://www.nintendojo.com/reviews/review-absolum-switch",
+              "date": "2025-10-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 90,
+              "url": "https://purenintendo.com/review-absolum-nintendo-switch-2/",
+              "date": "2026-01-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 90,
+              "url": "https://www.starbit.pt/2025/12/16/absolum-analise/",
+              "date": "2025-12-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 90,
+              "url": "https://universonintendo.com/analise-absolum/",
+              "date": "2025-10-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 2
+          "source_count": 12
         },
         "user": {
           "score": 8.48,
@@ -187873,8 +187977,7 @@
               "url": "https://www.metacritic.com/game/absolum/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 4.242640687119285,
-              "normalized": 9.3,
-              "checked": "2026-11-02T19:43:15.553318+00:00"
+              "normalized": 9.3
             },
             {
               "name": "Nintendo Life",
@@ -187884,21 +187987,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/absolum",
               "platform": "Nintendo Switch",
               "weight": 9.1104335791443,
-              "normalized": 8.1,
-              "checked": "2026-11-02T19:43:15.553318+00:00"
+              "normalized": 8.1
             }
           ],
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: The read operation timed out"
-        ],
+        "critic_index_complete": true,
+        "critic_index_review_count": 11,
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:32:09.979221+00:00"
+        "attempted": "2026-11-03T08:59:00.006945+00:00"
       },
       "requirements": {
         "image": true,
@@ -187914,14 +188014,16 @@
       },
       "basics_attempted": "2026-11-02T22:32:09.979221+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed"
+      },
       "trailer": {
         "id": "FiDO41Sziss",
         "title": "Absolum - Launch Trailer | PS5 & PS4 Games",
         "kind": "trailer",
         "source": "https://www.playstation.com/en-us/games/absolum/"
       },
-      "full_attempted": "2026-11-02T19:43:16.024004+00:00",
+      "full_attempted": "2026-11-03T08:59:02.351000+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/absolum-switch/",
@@ -187970,7 +188072,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "PS5:16359": {
       "title": "Agent Fall",
@@ -248427,11 +248530,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 0,
         "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 404: Not Found"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:43:29.137330+00:00"
+        "attempted": "2026-11-03T08:58:34.988300+00:00"
       },
       "requirements": {
         "image": true,
@@ -248474,9 +248577,11 @@
       "basics_attempted": "2026-11-02T17:19:00.989459+00:00",
       "version": 2,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:43:29.507302+00:00",
+      "full_attempted": "2026-11-03T08:58:35.342829+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -248492,7 +248597,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:18538": {
       "title": "Acorn Avengers",
@@ -248693,11 +248799,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 0,
         "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 404: Not Found"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:43:34.534901+00:00"
+        "attempted": "2026-11-03T08:58:51.536569+00:00"
       },
       "requirements": {
         "image": true,
@@ -248740,9 +248846,11 @@
       "basics_attempted": "2026-11-02T17:19:00.989939+00:00",
       "version": 2,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:43:35.186200+00:00",
+      "full_attempted": "2026-11-03T08:58:51.941632+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -248758,7 +248866,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:18715": {
       "title": "AereA",
@@ -291955,7 +292064,7 @@
           "source_count": 8
         },
         "user": {
-          "score": 6.4,
+          "score": 6.45,
           "scale": 10,
           "sources": [
             {
@@ -291966,22 +292075,28 @@
               "url": "https://www.metacritic.com/game/aces-of-the-luftwaffe-squadron/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 3.4641016151377544,
-              "normalized": 6.4,
-              "checked": "2026-11-02T19:43:30.580836+00:00"
+              "normalized": 6.4
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 6.5,
+              "scale": 10.0,
+              "count": 13,
+              "url": "https://www.nintendolife.com/games/switch-eshop/aces_of_the_luftwaffe_-_squadron",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 6.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 7,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found",
-          "www.nintendolife.com/switch-eshop: HTTP Error 404: Not Found"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:34:16.812640+00:00"
+        "attempted": "2026-11-03T08:58:49.969154+00:00"
       },
       "requirements": {
         "image": true,
@@ -291999,9 +292114,11 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:43:31.290237+00:00",
+      "full_attempted": "2026-11-03T08:58:53.055609+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/aces-of-the-luftwaffe-squadron-switch/",
@@ -292050,7 +292167,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:5610": {
       "title": "AlienCruise",
@@ -387389,20 +387507,30 @@
           "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 5.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 5.0,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/ace_of_seafood",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 5.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 3,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:37:50.071473+00:00"
+        "attempted": "2026-11-03T08:58:39.997397+00:00"
       },
       "requirements": {
         "image": true,
@@ -387419,9 +387547,11 @@
       "basics_attempted": "2026-11-02T22:37:50.071473+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:43:03.575866+00:00",
+      "full_attempted": "2026-11-03T08:58:42.181366+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/ace-of-seafood-switch/",
@@ -387470,7 +387600,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:8899": {
       "title": "Airheart - Tales of broken Wings",
@@ -402865,8 +402996,7 @@
               "url": "https://www.metacritic.com/game/ao-tennis-2/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 6.244997998398398,
-              "normalized": 5.700000000000001,
-              "checked": "2026-11-02T19:42:54.309441+00:00"
+              "normalized": 5.700000000000001
             },
             {
               "name": "Nintendo Life",
@@ -402876,8 +403006,7 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/ao_tennis_2",
               "platform": "Nintendo Switch",
               "weight": 3.872983346207417,
-              "normalized": 5.5,
-              "checked": "2026-11-02T19:42:54.309441+00:00"
+              "normalized": 5.5
             }
           ],
           "source_count": 2,
@@ -402885,12 +403014,10 @@
         },
         "critic_index_complete": true,
         "critic_index_review_count": 7,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:38:18.790095+00:00"
+        "attempted": "2026-11-03T08:58:44.768691+00:00"
       },
       "requirements": {
         "image": true,
@@ -402907,9 +403034,12 @@
       "basics_attempted": "2026-11-02T22:38:18.790095+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:42:55.864926+00:00",
+      "full_attempted": "2026-11-03T08:58:47.930373+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/ao-tennis-2-switch/",
@@ -402958,7 +403088,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:9640": {
       "title": "Alchemist Adventure",
