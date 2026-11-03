@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-03T00:23:54.347135+00:00",
+  "updated": "2026-11-03T00:25:50.570263+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1958,
+    "ready": 1960,
     "missing_image": 109,
-    "missing_store": 343,
+    "missing_store": 335,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -2272,18 +2272,6 @@
         }
       },
       "next_retry": "2026-11-03T00:04:52.789621+00:00"
-    },
-    {
-      "key": "Switch:15693",
-      "title": "Barbie Project Friendship",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:48:10.802113+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
     },
     {
       "key": "PS5:16329",
@@ -5864,34 +5852,201 @@
       "title": "Chippy",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:46:03.068814+00:00",
+      "attempted": "2026-11-03T00:23:58.711063+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:24:01.222650+00:00",
+              "next_attempt": "2026-11-04T00:24:01.222650+00:00",
+              "revision": "f294563915b83748:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:24:01.222650+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Chippy-2181792.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Chippy-2181792.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:04.067508+00:00",
+              "next_attempt": "2026-11-04T00:25:04.067508+00:00",
+              "revision": "f294563915b83748:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/chippy",
+                "https://www.nintendolife.com/games/nintendo-switch/chippy"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/chippy"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:06.509819+00:00",
+              "next_attempt": "2026-11-04T00:25:06.509819+00:00",
+              "revision": "f294563915b83748:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=chippy-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=chippy-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:10.330064+00:00",
+              "next_attempt": "2026-11-04T00:25:10.330064+00:00",
+              "revision": "f294563915b83748:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/chippy/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/chippy/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/chippy/"
+              ],
+              "url": "https://www.metacritic.com/game/chippy/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:12.008381+00:00",
+              "next_attempt": "2026-11-04T00:25:12.008381+00:00",
+              "revision": "f294563915b83748:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Chippy&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Chippy&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:12.008511+00:00",
+              "next_attempt": "2026-11-03T01:25:12.008511+00:00",
+              "revision": "f294563915b83748:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:12.008540+00:00",
+              "next_attempt": "2026-11-03T01:25:12.008540+00:00",
+              "revision": "f294563915b83748:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:25:12.008511+00:00"
     },
     {
       "key": "Switch:13391",
       "title": "Chippy & Noppo",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:46:03.069043+00:00",
+      "attempted": "2026-11-03T00:23:58.711221+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:23:59.189634+00:00",
+              "next_attempt": "2026-11-04T00:23:59.189634+00:00",
+              "revision": "76d8fc006a59ee6c:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:23:59.189634+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Chippy-Noppo-2676956.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Chippy-Noppo-2676956.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:14.020174+00:00",
+              "next_attempt": "2026-11-04T00:25:14.020174+00:00",
+              "revision": "76d8fc006a59ee6c:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/chippyandnoppo",
+                "https://www.nintendolife.com/games/nintendo-switch/chippy_and_noppo",
+                "https://www.nintendolife.com/games/switch-eshop/chippy_and_noppo"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/chippy_and_noppo"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:14.517774+00:00",
+              "next_attempt": "2026-11-04T00:25:14.517774+00:00",
+              "revision": "76d8fc006a59ee6c:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=chippy-and-noppo-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=chippy-and-noppo-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:16.666865+00:00",
+              "next_attempt": "2026-11-04T00:25:16.666865+00:00",
+              "revision": "76d8fc006a59ee6c:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/chippy-and-noppo/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/chippy-and-noppo/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/chippy-and-noppo/"
+              ],
+              "url": "https://www.metacritic.com/game/chippy-and-noppo/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:18.065188+00:00",
+              "next_attempt": "2026-11-04T00:25:18.065188+00:00",
+              "revision": "76d8fc006a59ee6c:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Chippy+%26+Noppo&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Chippy+%26+Noppo&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:18.065328+00:00",
+              "next_attempt": "2026-11-03T01:25:18.065328+00:00",
+              "revision": "76d8fc006a59ee6c:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:18.065364+00:00",
+              "next_attempt": "2026-11-03T01:25:18.065364+00:00",
+              "revision": "76d8fc006a59ee6c:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:25:18.065328+00:00"
     },
     {
       "key": "Switch:16391",
@@ -6065,17 +6220,100 @@
       "title": "Collab Ball",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:46:03.069844+00:00",
+      "attempted": "2026-11-03T00:23:58.711377+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:24:00.117290+00:00",
+              "next_attempt": "2026-11-04T00:24:00.117290+00:00",
+              "revision": "673ceef4f7cc98e7:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:24:00.117290+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Collab-Ball-2325643.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Collab-Ball-2325643.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:24:58.936378+00:00",
+              "next_attempt": "2026-11-04T00:24:58.936378+00:00",
+              "revision": "673ceef4f7cc98e7:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/collab_ball",
+                "https://www.nintendolife.com/games/switch-eshop/collab_ball"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/collab_ball"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:01.242906+00:00",
+              "next_attempt": "2026-11-04T00:25:01.242906+00:00",
+              "revision": "673ceef4f7cc98e7:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=collab-ball-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=collab-ball-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:05.844970+00:00",
+              "next_attempt": "2026-11-04T00:25:05.844970+00:00",
+              "revision": "673ceef4f7cc98e7:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/collab-ball/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/collab-ball/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/collab-ball/"
+              ],
+              "url": "https://www.metacritic.com/game/collab-ball/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:07.616915+00:00",
+              "next_attempt": "2026-11-04T00:25:07.616915+00:00",
+              "revision": "673ceef4f7cc98e7:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Collab+Ball&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Collab+Ball&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:07.616988+00:00",
+              "next_attempt": "2026-11-03T01:25:07.616988+00:00",
+              "revision": "673ceef4f7cc98e7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:07.617016+00:00",
+              "next_attempt": "2026-11-03T01:25:07.617016+00:00",
+              "revision": "673ceef4f7cc98e7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:25:07.616988+00:00"
     },
     {
       "key": "Switch:17505",
@@ -6095,18 +6333,6 @@
       "next_retry": ""
     },
     {
-      "key": "Switch:14555",
-      "title": "CometStriker DX",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:46:03.070553+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:12066",
       "title": "Contract Killer",
       "platform": "Switch",
@@ -6114,14 +6340,98 @@
         "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:46:03.071082+00:00",
+      "attempted": "2026-11-03T00:23:58.712071+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:59.191147+00:00",
+              "next_attempt": "2026-11-04T00:23:59.191147+00:00",
+              "revision": "2eab28164aa84f23:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Contract+Killer%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Contract+Killer%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:24:48.938199+00:00",
+              "next_attempt": "2026-11-04T00:24:48.938199+00:00",
+              "revision": "2eab28164aa84f23:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/contract_killer",
+                "https://www.nintendolife.com/games/nintendo-switch/contract_killer"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/contract_killer"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:24:49.383838+00:00",
+              "next_attempt": "2026-11-04T00:24:49.383838+00:00",
+              "revision": "2eab28164aa84f23:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=contract-killer-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=contract-killer-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:24:52.346338+00:00",
+              "next_attempt": "2026-11-04T00:24:52.346338+00:00",
+              "revision": "2eab28164aa84f23:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/contract-killer/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/contract-killer/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/contract-killer/"
+              ],
+              "url": "https://www.metacritic.com/game/contract-killer/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:24:53.619172+00:00",
+              "next_attempt": "2026-11-04T00:24:53.619172+00:00",
+              "revision": "2eab28164aa84f23:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Contract+Killer&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Contract+Killer&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:24:53.619250+00:00",
+              "next_attempt": "2026-11-03T01:24:53.619250+00:00",
+              "revision": "2eab28164aa84f23:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:24:53.619275+00:00",
+              "next_attempt": "2026-11-03T01:24:53.619275+00:00",
+              "revision": "2eab28164aa84f23:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:24:53.619250+00:00"
     },
     {
       "key": "Switch:13607",
@@ -6130,34 +6440,187 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T21:46:23.983186+00:00",
+      "attempted": "2026-11-03T00:23:58.712773+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:29.016627+00:00",
+              "next_attempt": "2026-11-04T00:25:29.016627+00:00",
+              "revision": "870d9994d81fa1b1:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/cosmo_gang_the_video",
+                "https://www.nintendolife.com/games/switch-eshop/cosmo_gang_the_video",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_cosmo_gang_the_video"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_cosmo_gang_the_video"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:29.671221+00:00",
+              "next_attempt": "2026-11-04T00:25:29.671221+00:00",
+              "revision": "870d9994d81fa1b1:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=cosmo-gang-the-video-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cosmo-gang-the-video-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:48.880519+00:00",
+              "next_attempt": "2026-11-04T00:25:48.880519+00:00",
+              "revision": "870d9994d81fa1b1:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-cosmo-gang-the-video/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-cosmo-gang-the-video/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-cosmo-gang-the-video/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-cosmo-gang-the-video/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:50.231677+00:00",
+              "next_attempt": "2026-11-04T00:25:50.231677+00:00",
+              "revision": "870d9994d81fa1b1:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Cosmo+Gang%3A+The+Video&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Cosmo+Gang%3A+The+Video&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:50.231789+00:00",
+              "next_attempt": "2026-11-03T01:25:50.231789+00:00",
+              "revision": "870d9994d81fa1b1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:50.231822+00:00",
+              "next_attempt": "2026-11-03T01:25:50.231822+00:00",
+              "revision": "870d9994d81fa1b1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:25:50.231789+00:00"
     },
     {
       "key": "Switch:13483",
       "title": "Crime Busters: Strike Area",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:47:03.056480+00:00",
+      "attempted": "2026-11-03T00:23:58.713282+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:24:02.322025+00:00",
+              "next_attempt": "2026-11-04T00:24:02.322025+00:00",
+              "revision": "c49b58af1859953d:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:24:02.322025+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Crime-Busters-Strike-Area-2361845.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Crime-Busters-Strike-Area-2361845.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:08.964554+00:00",
+              "next_attempt": "2026-11-04T00:25:08.964554+00:00",
+              "revision": "c49b58af1859953d:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/crime_busters_strike_area",
+                "https://www.nintendolife.com/games/nintendo-switch/crime_busters_strike_area"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/crime_busters_strike_area"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:09.615251+00:00",
+              "next_attempt": "2026-11-04T00:25:09.615251+00:00",
+              "revision": "c49b58af1859953d:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=crime-busters-strike-area-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=crime-busters-strike-area-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:22.570323+00:00",
+              "next_attempt": "2026-11-04T00:25:22.570323+00:00",
+              "revision": "c49b58af1859953d:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/crime-busters-strike-area/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/crime-busters-strike-area/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/crime-busters-strike-area/"
+              ],
+              "url": "https://www.metacritic.com/game/crime-busters-strike-area/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:23.895849+00:00",
+              "next_attempt": "2026-11-04T00:25:23.895849+00:00",
+              "revision": "c49b58af1859953d:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Crime+Busters%3A+Strike+Area&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Crime+Busters%3A+Strike+Area&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:23.895997+00:00",
+              "next_attempt": "2026-11-03T01:25:23.895997+00:00",
+              "revision": "c49b58af1859953d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:23.896031+00:00",
+              "next_attempt": "2026-11-03T01:25:23.896031+00:00",
+              "revision": "c49b58af1859953d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:25:23.895997+00:00"
     },
     {
       "key": "Switch:15923",
@@ -6268,17 +6731,100 @@
       "title": "Cry Babies Magic Tears: The Big Game",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:48:10.801684+00:00",
+      "attempted": "2026-11-03T00:23:58.713950+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:24:04.505632+00:00",
+              "next_attempt": "2026-11-04T00:24:04.505632+00:00",
+              "revision": "828a6ff7d1ded51d:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:24:04.505632+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Cry-Babies-Magic-Tears-The-Big-Game-2442852.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Cry-Babies-Magic-Tears-The-Big-Game-2442852.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:19.033660+00:00",
+              "next_attempt": "2026-11-04T00:25:19.033660+00:00",
+              "revision": "828a6ff7d1ded51d:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/cry_babies_magic_tears_the_big_game",
+                "https://www.nintendolife.com/games/nintendo-switch/cry_babies_magic_tears_the_big_game"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/cry_babies_magic_tears_the_big_game"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:19.507091+00:00",
+              "next_attempt": "2026-11-04T00:25:19.507091+00:00",
+              "revision": "828a6ff7d1ded51d:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=cry-babies-magic-tears-the-big-game-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cry-babies-magic-tears-the-big-game-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:33.129776+00:00",
+              "next_attempt": "2026-11-04T00:25:33.129776+00:00",
+              "revision": "828a6ff7d1ded51d:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/cry-babies-magic-tears-the-big-game/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/cry-babies-magic-tears-the-big-game/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/cry-babies-magic-tears-the-big-game/"
+              ],
+              "url": "https://www.metacritic.com/game/cry-babies-magic-tears-the-big-game/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:34.295662+00:00",
+              "next_attempt": "2026-11-04T00:25:34.295662+00:00",
+              "revision": "828a6ff7d1ded51d:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Cry+Babies+Magic+Tears%3A+The+Big+Game&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Cry+Babies+Magic+Tears%3A+The+Big+Game&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:34.295775+00:00",
+              "next_attempt": "2026-11-03T01:25:34.295775+00:00",
+              "revision": "828a6ff7d1ded51d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:34.295812+00:00",
+              "next_attempt": "2026-11-03T01:25:34.295812+00:00",
+              "revision": "828a6ff7d1ded51d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:25:34.295775+00:00"
     },
     {
       "key": "Switch:15141",
@@ -6440,17 +6986,100 @@
       "title": "Crystorld",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:48:10.801887+00:00",
+      "attempted": "2026-11-03T00:24:03.393661+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:24:05.636141+00:00",
+              "next_attempt": "2026-11-04T00:24:05.636141+00:00",
+              "revision": "a0a9f4799a9093cf:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:24:05.636141+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/CRYSTORLD-2323534.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/CRYSTORLD-2323534.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:24.022159+00:00",
+              "next_attempt": "2026-11-04T00:25:24.022159+00:00",
+              "revision": "a0a9f4799a9093cf:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/crystorld",
+                "https://www.nintendolife.com/games/switch-eshop/crystorld"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/crystorld"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:24.525822+00:00",
+              "next_attempt": "2026-11-04T00:25:24.525822+00:00",
+              "revision": "a0a9f4799a9093cf:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=crystorld-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=crystorld-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:30.973020+00:00",
+              "next_attempt": "2026-11-04T00:25:30.973020+00:00",
+              "revision": "a0a9f4799a9093cf:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/crystorld/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/crystorld/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/crystorld/"
+              ],
+              "url": "https://www.metacritic.com/game/crystorld/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:32.249455+00:00",
+              "next_attempt": "2026-11-04T00:25:32.249455+00:00",
+              "revision": "a0a9f4799a9093cf:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Crystorld&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Crystorld&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:32.249545+00:00",
+              "next_attempt": "2026-11-03T01:25:32.249545+00:00",
+              "revision": "a0a9f4799a9093cf:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:25:32.249576+00:00",
+              "next_attempt": "2026-11-03T01:25:32.249576+00:00",
+              "revision": "a0a9f4799a9093cf:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:25:32.249545+00:00"
     },
     {
       "key": "Switch:8035",
