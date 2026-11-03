@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T00:25:50.393718+00:00",
+  "updated": "2026-11-03T00:28:01.982953+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
     "ready": 1960,
     "missing_image": 109,
-    "missing_store": 335,
+    "missing_store": 329,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -21002,11 +21002,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:48:10.804793+00:00"
+        "attempted": "2026-11-03T00:25:55.504254+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -21014,12 +21014,14 @@
         "source": "https://www.nintendo.com/us/store/products/cybertd-switch/",
         "checked": "2026-11-02T21:48:20.607606+00:00"
       },
-      "basics_attempted": "2026-11-02T21:48:10.804793+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:25:55.504254+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:29:18.544625+00:00",
       "store_evidence": [
@@ -21029,7 +21031,100 @@
           "checked": "2026-11-02T21:48:20.607286+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/CyberTD-2451643.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:25:56.858564+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "CyberTD"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:25:56.858728+00:00",
+              "next_attempt": "2026-11-04T00:25:56.858728+00:00",
+              "revision": "2895216f75d5959e:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:25:56.858728+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/CyberTD-2451643.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/CyberTD-2451643.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:26:55.802158+00:00",
+              "next_attempt": "2026-11-04T00:26:55.802158+00:00",
+              "revision": "2895216f75d5959e:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/cybertd",
+                "https://www.nintendolife.com/games/nintendo-switch/cybertd"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/cybertd"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:26:56.359745+00:00",
+              "next_attempt": "2026-11-04T00:26:56.359745+00:00",
+              "revision": "2895216f75d5959e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=cybertd-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cybertd-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:01.972421+00:00",
+              "next_attempt": "2026-11-04T00:27:01.972421+00:00",
+              "revision": "2895216f75d5959e:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/cybertd/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/cybertd/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/cybertd/"
+              ],
+              "url": "https://www.metacritic.com/game/cybertd/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:03.796420+00:00",
+              "next_attempt": "2026-11-04T00:27:03.796420+00:00",
+              "revision": "2895216f75d5959e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=CyberTD&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=CyberTD&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:27:03.796542+00:00",
+              "next_attempt": "2026-11-03T01:27:03.796542+00:00",
+              "revision": "2895216f75d5959e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:27:03.796573+00:00",
+              "next_attempt": "2026-11-03T01:27:03.796573+00:00",
+              "revision": "2895216f75d5959e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:14090": {
       "title": "D-Corp",
@@ -21329,7 +21424,7 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:48:10.805509+00:00"
+        "attempted": "2026-11-03T00:25:55.504930+00:00"
       },
       "requirements": {
         "image": true,
@@ -21341,11 +21436,12 @@
         "source": "https://www.nintendolife.com/games/nintendo-switch/dcs_justice_league_cosmic_chaos",
         "checked": "2026-11-02T17:04:45.713519+00:00"
       },
-      "basics_attempted": "2026-11-02T21:48:10.805509+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:25:55.504930+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
       "trailer": {
         "id": "63W45yvfrlU",
@@ -21354,7 +21450,24 @@
         "source": "https://www.playstation.com/en-us/games/dcs-justice-league-cosmic-chaos/"
       },
       "full_attempted": "2026-11-02T21:10:51.944686+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:56.009421+00:00",
+              "next_attempt": "2026-11-04T00:25:56.009421+00:00",
+              "revision": "515be003363cdd2c:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22DC%27s+Justice+League%3A+Cosmic+Chaos%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22DC%27s+Justice+League%3A+Cosmic+Chaos%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "Switch:14171": {
       "title": "DELTAZEAL",
@@ -21980,19 +22093,21 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:48:10.807419+00:00"
+        "attempted": "2026-11-03T00:25:55.505428+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T21:48:10.807419+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:25:55.505428+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "store": {
         "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-DAIOH-2476103.html",
@@ -22010,7 +22125,75 @@
         "Arcade Archives DAIOH"
       ],
       "full_attempted": "2026-11-02T20:29:45.520492+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:35.712714+00:00",
+              "next_attempt": "2026-11-04T00:27:35.712714+00:00",
+              "revision": "1f293ab35a27158d:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/daioh",
+                "https://www.nintendolife.com/games/switch-eshop/daioh",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_daioh"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_daioh"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:36.066290+00:00",
+              "next_attempt": "2026-11-04T00:27:36.066290+00:00",
+              "revision": "1f293ab35a27158d:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=daioh-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=daioh-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:28:00.437798+00:00",
+              "next_attempt": "2026-11-04T00:28:00.437798+00:00",
+              "revision": "1f293ab35a27158d:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-daioh/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-daioh/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-daioh/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-daioh/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:28:01.817727+00:00",
+              "next_attempt": "2026-11-04T00:28:01.817727+00:00",
+              "revision": "1f293ab35a27158d:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Daioh&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Daioh&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:28:01.817809+00:00",
+              "next_attempt": "2026-11-03T01:28:01.817809+00:00",
+              "revision": "1f293ab35a27158d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:28:01.817837+00:00",
+              "next_attempt": "2026-11-03T01:28:01.817837+00:00",
+              "revision": "1f293ab35a27158d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:11855": {
       "title": "Dandy & Randy DX",
@@ -22732,11 +22915,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:48:22.776958+00:00"
+        "attempted": "2026-11-03T00:25:55.506653+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -22744,15 +22927,18 @@
         "source": "https://www.nintendo.com/us/store/products/deathsmiles-iii-switch/",
         "checked": "2026-11-02T21:48:24.535094+00:00"
       },
-      "basics_attempted": "2026-11-02T21:48:22.776958+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:25:55.506653+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:29:51.690924+00:00",
       "store_evidence": [
@@ -22762,7 +22948,100 @@
           "checked": "2026-11-02T21:48:24.534605+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Deathsmiles-I-II-2094619.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:25:59.058664+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Deathsmiles I･II"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:25:59.058824+00:00",
+              "next_attempt": "2026-11-04T00:25:59.058824+00:00",
+              "revision": "d23f316a26193cc9:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:25:59.058824+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Deathsmiles-I-II-2094619.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Deathsmiles-I-II-2094619.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:10.803694+00:00",
+              "next_attempt": "2026-11-04T00:27:10.803694+00:00",
+              "revision": "d23f316a26193cc9:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/deathsmiles_iii",
+                "https://www.nintendolife.com/games/switch-eshop/deathsmiles_iii"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/deathsmiles_iii"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:11.482867+00:00",
+              "next_attempt": "2026-11-04T00:27:11.482867+00:00",
+              "revision": "d23f316a26193cc9:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=deathsmiles-iii-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=deathsmiles-iii-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:14.048432+00:00",
+              "next_attempt": "2026-11-04T00:27:14.048432+00:00",
+              "revision": "d23f316a26193cc9:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/deathsmiles-iii/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/deathsmiles-iii/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/deathsmiles-iii/"
+              ],
+              "url": "https://www.metacritic.com/game/deathsmiles-iii/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:15.427093+00:00",
+              "next_attempt": "2026-11-04T00:27:15.427093+00:00",
+              "revision": "d23f316a26193cc9:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Deathsmiles+I%EF%BD%A5II&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Deathsmiles+I%EF%BD%A5II&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:27:15.427195+00:00",
+              "next_attempt": "2026-11-03T01:27:15.427195+00:00",
+              "revision": "d23f316a26193cc9:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:27:15.427225+00:00",
+              "next_attempt": "2026-11-03T01:27:15.427225+00:00",
+              "revision": "d23f316a26193cc9:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:12001": {
       "title": "Deathwish Enforcers",
@@ -23210,11 +23489,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:48:26.473387+00:00"
+        "attempted": "2026-11-03T00:25:55.507709+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -23222,12 +23501,14 @@
         "source": "https://www.nintendo.com/us/store/products/desktop-bowling-switch/",
         "checked": "2026-11-02T21:48:27.990649+00:00"
       },
-      "basics_attempted": "2026-11-02T21:48:26.473387+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:25:55.507709+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:30:22.913649+00:00",
       "store_evidence": [
@@ -23237,7 +23518,100 @@
           "checked": "2026-11-02T21:48:27.990313+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Desktop-Bowling-1595194.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:25:57.955645+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Desktop Bowling"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:25:57.955815+00:00",
+              "next_attempt": "2026-11-04T00:25:57.955815+00:00",
+              "revision": "3e13fd9993ee84fb:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:25:57.955815+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Desktop-Bowling-1595194.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Desktop-Bowling-1595194.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:05.796361+00:00",
+              "next_attempt": "2026-11-04T00:27:05.796361+00:00",
+              "revision": "3e13fd9993ee84fb:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/desktop_bowling",
+                "https://www.nintendolife.com/games/switch-eshop/desktop_bowling"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/desktop_bowling"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:06.431762+00:00",
+              "next_attempt": "2026-11-04T00:27:06.431762+00:00",
+              "revision": "3e13fd9993ee84fb:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=desktop-bowling-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=desktop-bowling-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:08.714899+00:00",
+              "next_attempt": "2026-11-04T00:27:08.714899+00:00",
+              "revision": "3e13fd9993ee84fb:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/desktop-bowling/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/desktop-bowling/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/desktop-bowling/"
+              ],
+              "url": "https://www.metacritic.com/game/desktop-bowling/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:10.146111+00:00",
+              "next_attempt": "2026-11-04T00:27:10.146111+00:00",
+              "revision": "3e13fd9993ee84fb:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Desktop+Bowling&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Desktop+Bowling&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:27:10.146226+00:00",
+              "next_attempt": "2026-11-03T01:27:10.146226+00:00",
+              "revision": "3e13fd9993ee84fb:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:27:10.146257+00:00",
+              "next_attempt": "2026-11-03T01:27:10.146257+00:00",
+              "revision": "3e13fd9993ee84fb:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:10580": {
       "title": "Destroy All Humans! 2 - Reprobed",
@@ -24697,22 +25071,90 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:50:03.869464+00:00"
+        "attempted": "2026-11-03T00:25:55.507973+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T21:50:03.869464+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:25:55.507973+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "image": "No unique matching video-game article with artwork"
+        "image": "No unique matching video-game article with artwork",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:57.086986+00:00",
+              "next_attempt": "2026-11-04T00:25:57.086986+00:00",
+              "revision": "826e1e157df2b2f1:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Dogfight%3A+A+Sausage+Bomber+Story%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Dogfight%3A+A+Sausage+Bomber+Story%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:25:57.086986+00:00",
+              "next_attempt": "2026-11-04T00:25:57.086986+00:00",
+              "revision": "826e1e157df2b2f1:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Dogfight%3A+A+Sausage+Bomber+Story%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Dogfight%3A+A+Sausage+Bomber+Story%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:00.760303+00:00",
+              "next_attempt": "2026-11-04T00:27:00.760303+00:00",
+              "revision": "826e1e157df2b2f1:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/dogfight_a_sausage_bomber_story",
+                "https://www.nintendolife.com/games/nintendo-switch/dogfight_a_sausage_bomber_story"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/dogfight_a_sausage_bomber_story"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:01.199800+00:00",
+              "next_attempt": "2026-11-04T00:27:01.199800+00:00",
+              "revision": "826e1e157df2b2f1:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=dogfight-a-sausage-bomber-story-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=dogfight-a-sausage-bomber-story-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:01.372411+00:00",
+              "next_attempt": "2026-11-04T00:27:01.372411+00:00",
+              "revision": "826e1e157df2b2f1:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Dogfight%3A+A+Sausage+Bomber+Story%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Dogfight%3A+A+Sausage+Bomber+Story%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        }
+      }
     },
     "Switch:13369": {
       "title": "Don Doko Don",
@@ -98747,11 +99189,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:48:10.804377+00:00"
+        "attempted": "2026-11-03T00:25:55.504029+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -98759,12 +99201,14 @@
         "source": "https://www.nintendo.com/us/store/products/cyber-mission-switch/",
         "checked": "2026-11-02T21:48:16.613494+00:00"
       },
-      "basics_attempted": "2026-11-02T21:48:10.804377+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:25:55.504029+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:29:17.504839+00:00",
       "store_evidence": [
@@ -98774,7 +99218,101 @@
           "checked": "2026-11-02T21:48:16.613167+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cyber-Mission-2600594.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:25:55.887087+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Cyber mission",
+        "Cyber Mission"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:25:55.887261+00:00",
+              "next_attempt": "2026-11-04T00:25:55.887261+00:00",
+              "revision": "ccb5d782119b9631:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:25:55.887261+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cyber-Mission-2600594.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cyber-Mission-2600594.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:26:45.762834+00:00",
+              "next_attempt": "2026-11-04T00:26:45.762834+00:00",
+              "revision": "ccb5d782119b9631:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/cyber_mission",
+                "https://www.nintendolife.com/games/nintendo-switch/cyber_mission"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/cyber_mission"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:26:46.408355+00:00",
+              "next_attempt": "2026-11-04T00:26:46.408355+00:00",
+              "revision": "ccb5d782119b9631:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=cyber-mission-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cyber-mission-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:26:55.372590+00:00",
+              "next_attempt": "2026-11-04T00:26:55.372590+00:00",
+              "revision": "ccb5d782119b9631:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/cyber-mission/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/cyber-mission/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/cyber-mission/"
+              ],
+              "url": "https://www.metacritic.com/game/cyber-mission/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:26:56.885692+00:00",
+              "next_attempt": "2026-11-04T00:26:56.885692+00:00",
+              "revision": "ccb5d782119b9631:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Cyber+mission&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Cyber+mission&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:26:56.885757+00:00",
+              "next_attempt": "2026-11-03T01:26:56.885757+00:00",
+              "revision": "ccb5d782119b9631:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:26:56.885788+00:00",
+              "next_attempt": "2026-11-03T01:26:56.885788+00:00",
+              "revision": "ccb5d782119b9631:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:15580": {
       "title": "Donkey Kong Country Returns HD",
@@ -105208,21 +105746,24 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:48:10.802564+00:00"
+        "attempted": "2026-11-03T00:25:55.503887+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T21:48:10.802564+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:25:55.503887+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "store": {
         "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-CRIME-CITY-2662066.html",
@@ -105240,7 +105781,75 @@
         "Arcade Archives CRIME CITY"
       ],
       "full_attempted": "2026-11-02T20:28:32.907823+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:25.805999+00:00",
+              "next_attempt": "2026-11-04T00:27:25.805999+00:00",
+              "revision": "12f4843697236a11:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/crime_city",
+                "https://www.nintendolife.com/games/switch-eshop/crime_city",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_crime_city"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_crime_city"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:26.127376+00:00",
+              "next_attempt": "2026-11-04T00:27:26.127376+00:00",
+              "revision": "12f4843697236a11:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=crime-city-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=crime-city-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:55.790925+00:00",
+              "next_attempt": "2026-11-04T00:27:55.790925+00:00",
+              "revision": "12f4843697236a11:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-crime-city/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/crime-city-1989/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-crime-city/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-crime-city/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:57.125446+00:00",
+              "next_attempt": "2026-11-04T00:27:57.125446+00:00",
+              "revision": "12f4843697236a11:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Crime+City&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Crime+City&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:27:57.125535+00:00",
+              "next_attempt": "2026-11-03T01:27:57.125535+00:00",
+              "revision": "12f4843697236a11:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:27:57.125564+00:00",
+              "next_attempt": "2026-11-03T01:27:57.125564+00:00",
+              "revision": "12f4843697236a11:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:15836": {
       "title": "Crossy Road: Castle",
@@ -111555,11 +112164,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:50:03.869650+00:00"
+        "attempted": "2026-11-03T00:25:56.009760+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -111567,12 +112176,14 @@
         "source": "https://www.nintendo.com/us/store/products/beardbarians-switch/",
         "checked": "2026-11-02T21:50:06.082864+00:00"
       },
-      "basics_attempted": "2026-11-02T21:50:03.869650+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:25:56.009760+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:52:17.418086+00:00",
       "store_evidence": [
@@ -111582,7 +112193,100 @@
           "checked": "2026-11-02T21:50:06.082561+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Beardbarians-2662443.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:26:00.170119+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Beardbarians"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:26:00.170280+00:00",
+              "next_attempt": "2026-11-04T00:26:00.170280+00:00",
+              "revision": "222d206a1893a6b1:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:26:00.170280+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Beardbarians-2662443.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Beardbarians-2662443.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:15.705688+00:00",
+              "next_attempt": "2026-11-04T00:27:15.705688+00:00",
+              "revision": "222d206a1893a6b1:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/beardbarians",
+                "https://www.nintendolife.com/games/nintendo-switch/beardbarians"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/beardbarians"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:18.626353+00:00",
+              "next_attempt": "2026-11-04T00:27:18.626353+00:00",
+              "revision": "222d206a1893a6b1:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=beardbarians-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=beardbarians-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:43.164932+00:00",
+              "next_attempt": "2026-11-04T00:27:43.164932+00:00",
+              "revision": "222d206a1893a6b1:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/beardbarians/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/beardbarians/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/beardbarians/"
+              ],
+              "url": "https://www.metacritic.com/game/beardbarians/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:44.566253+00:00",
+              "next_attempt": "2026-11-04T00:27:44.566253+00:00",
+              "revision": "222d206a1893a6b1:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Beardbarians&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Beardbarians&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:27:44.566350+00:00",
+              "next_attempt": "2026-11-03T01:27:44.566350+00:00",
+              "revision": "222d206a1893a6b1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:27:44.566379+00:00",
+              "next_attempt": "2026-11-03T01:27:44.566379+00:00",
+              "revision": "222d206a1893a6b1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:16238": {
       "title": "Big Helmet Heroes",
@@ -112301,11 +113005,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:50:03.869857+00:00"
+        "attempted": "2026-11-03T00:26:56.885886+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -112313,12 +113017,14 @@
         "source": "https://www.nintendo.com/us/store/products/cell-scientist-beyond-switch/",
         "checked": "2026-11-02T21:50:05.204434+00:00"
       },
-      "basics_attempted": "2026-11-02T21:50:03.869857+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:26:56.885886+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:27:30.605762+00:00",
       "store_evidence": [
@@ -112328,7 +113034,100 @@
           "checked": "2026-11-02T21:50:05.204107+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cell-Scientist-Beyond-2678034.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:26:57.228277+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Cell Scientist: Beyond"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:26:57.228433+00:00",
+              "next_attempt": "2026-11-04T00:26:57.228433+00:00",
+              "revision": "70dca139a92f3362:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:26:57.228433+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cell-Scientist-Beyond-2678034.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cell-Scientist-Beyond-2678034.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:40.783925+00:00",
+              "next_attempt": "2026-11-04T00:27:40.783925+00:00",
+              "revision": "70dca139a92f3362:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/cell_scientist_beyond",
+                "https://www.nintendolife.com/games/nintendo-switch/cell_scientist_beyond"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/cell_scientist_beyond"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:41.228027+00:00",
+              "next_attempt": "2026-11-04T00:27:41.228027+00:00",
+              "revision": "70dca139a92f3362:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=cell-scientist-beyond-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cell-scientist-beyond-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:45.972988+00:00",
+              "next_attempt": "2026-11-04T00:27:45.972988+00:00",
+              "revision": "70dca139a92f3362:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/cell-scientist-beyond/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/cell-scientist-beyond/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/cell-scientist-beyond/"
+              ],
+              "url": "https://www.metacritic.com/game/cell-scientist-beyond/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:27:47.362874+00:00",
+              "next_attempt": "2026-11-04T00:27:47.362874+00:00",
+              "revision": "70dca139a92f3362:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Cell+Scientist%3A+Beyond&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Cell+Scientist%3A+Beyond&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:27:47.362981+00:00",
+              "next_attempt": "2026-11-03T01:27:47.362981+00:00",
+              "revision": "70dca139a92f3362:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:27:47.363012+00:00",
+              "next_attempt": "2026-11-03T01:27:47.363012+00:00",
+              "revision": "70dca139a92f3362:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:15974": {
       "title": "Coffee, Plis",
