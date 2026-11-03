@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:30:53.108747+00:00",
+  "updated": "2026-11-03T06:31:42.859205+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1461,
+    "full_attempted": 1471,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -58395,15 +58395,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.23,
-              "count": 26,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.23,
               "scale": 5,
-              "source": "PSN",
+              "count": 26,
               "url": "https://store.playstation.com/pt-pt/product/EP2005-PPSA10519_00-LASERPITIUM00000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:49:05.572057+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 5.0990195135927845,
               "normalized": 6.46
             }
@@ -58411,7 +58409,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:49:04.554912+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:31:11.012448+00:00"
       },
       "requirements": {
         "image": true,
@@ -58453,7 +58458,11 @@
       },
       "basics_attempted": "2026-11-02T17:49:04.554912+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -58469,7 +58478,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:31:11.467545+00:00",
+      "full_version": 7
     },
     "Switch:13417": {
       "title": "LASERPITIUM",
@@ -59346,10 +59357,10 @@
               "name": "Metacritic users",
               "score": 8.3,
               "scale": 10,
-              "count": 764,
+              "count": 765,
               "url": "https://www.metacritic.com/game/lego-batman-legacy-of-the-dark-knight/user-reviews/?platform=playstation-5",
               "platform": "PlayStation 5",
-              "weight": 27.640549922170507,
+              "weight": 27.65863337187866,
               "normalized": 8.3
             },
             {
@@ -59363,15 +59374,13 @@
               "normalized": 8.6
             },
             {
-              "score": 4.81,
-              "count": 15029,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.81,
               "scale": 5,
-              "source": "PSN",
+              "count": 15029,
               "url": "https://store.playstation.com/pt-pt/concept/10008537",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:49:11.439455+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 9.62
             }
@@ -59379,7 +59388,12 @@
           "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:49:08.432967+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 89,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:31:36.672280+00:00"
       },
       "requirements": {
         "image": true,
@@ -59415,7 +59429,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:31:36.942753+00:00",
+      "full_version": 7
     },
     "PS5:12457": {
       "title": "LEGO Brawls",
@@ -59550,7 +59566,7 @@
           "source_count": 11
         },
         "user": {
-          "score": 7.23,
+          "score": 7.06,
           "scale": 10,
           "sources": [
             {
@@ -59564,23 +59580,37 @@
               "normalized": 4.0
             },
             {
-              "score": 3.92,
-              "count": 443,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.92,
               "scale": 5,
-              "source": "PSN",
+              "count": 443,
               "url": "https://store.playstation.com/pt-pt/concept/10004343",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:49:12.368687+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 21.047565179849187,
               "normalized": 7.84
+            },
+            {
+              "score": 3.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/lego_brawls",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 3.0
             }
           ],
-          "source_count": 2,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:49:11.446151+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 11,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:31:21.442470+00:00"
       },
       "requirements": {
         "image": true,
@@ -59600,7 +59630,9 @@
       },
       "basics_attempted": "2026-11-02T17:49:11.446151+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -59616,7 +59648,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:31:22.417166+00:00",
+      "full_version": 7
     },
     "Switch:12456": {
       "title": "LEGO Brawls",
@@ -59683,14 +59717,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/lego_brawls",
               "platform": "Nintendo Switch",
               "weight": 3.0,
-              "normalized": 5.2,
-              "checked": "2026-11-02T17:49:12.373065+00:00"
+              "normalized": 5.2
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:26.722859+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:31:09.707263+00:00"
       },
       "requirements": {
         "image": true,
@@ -59699,7 +59737,12 @@
       },
       "basics_attempted": "2026-11-02T22:40:26.722859+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lego-brawls-switch/",
@@ -59749,7 +59792,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:31:16.849071+00:00",
+      "full_version": 7
     },
     "Switch:4541": {
       "title": "LEGO City: Undercover",
@@ -59765,15 +59810,11 @@
         "id": "rhqAglRp8vc",
         "title": "LEGO CITY Undercover – Launch Trailer",
         "kind": "trailer",
-        "source": "https://www.youtube.com/watch?v=rhqAglRp8vc",
-        "url": "https://www.youtube.com/watch?v=rhqAglRp8vc",
-        "checked": "2026-11-02T16:00:42.667285+00:00",
-        "attempted": "2026-11-02T16:00:42.667302+00:00",
-        "error": null
+        "source": "https://www.youtube.com/watch?v=rhqAglRp8vc"
       },
       "ratings": {
         "critic": {
-          "score": 77.5,
+          "score": 77.9,
           "scale": 100,
           "sources": [
             {
@@ -59881,6 +59922,15 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Pure Nintendo",
+              "score": 85.0,
+              "url": "https://purenintendo.com/review-lego-city-undercover-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 8.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "SpazioGames",
               "score": 80,
               "url": "http://www.spaziogames.it/recensioni_videogiochi/console_multi_piattaforma/20670/lego-city-undercover.aspx",
@@ -59914,7 +59964,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 17
+          "source_count": 18
         },
         "user": {
           "score": 7.8,
@@ -59928,8 +59978,7 @@
               "url": "https://www.metacritic.com/game/lego-city-undercover/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 14.142135623730951,
-              "normalized": 7.9,
-              "checked": "2026-11-02T17:49:26.581635+00:00"
+              "normalized": 7.9
             },
             {
               "name": "Nintendo Life",
@@ -59939,14 +59988,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/lego_city_undercover",
               "platform": "Nintendo Switch",
               "weight": 14.422205101855956,
-              "normalized": 7.7,
-              "checked": "2026-11-02T17:49:26.581635+00:00"
+              "normalized": 7.7
             }
           ],
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:26.723276+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 17,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:31:24.714710+00:00"
       },
       "requirements": {
         "image": true,
@@ -59955,7 +60008,10 @@
       },
       "basics_attempted": "2026-11-02T22:40:26.723276+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lego-city-undercover-switch/",
@@ -60007,7 +60063,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:31:29.347783+00:00",
+      "full_version": 7
     },
     "Switch:5132": {
       "title": "LEGO DC Super-Villains",
@@ -60024,7 +60082,7 @@
       },
       "ratings": {
         "critic": {
-          "score": 74.8,
+          "score": 74.4,
           "scale": 100,
           "sources": [
             {
@@ -60100,6 +60158,15 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Pure Nintendo",
+              "score": 70.0,
+              "url": "https://purenintendo.com/review-lego-dc-super-villains-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 7.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "Vooks",
               "score": 70,
               "url": "https://www.vooks.net/lego-dc-super-villains-switch-review/",
@@ -60109,7 +60176,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 10
+          "source_count": 11
         },
         "user": {
           "score": 7.45,
@@ -60123,8 +60190,7 @@
               "url": "https://www.metacritic.com/game/lego-dc-super-villains/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 6.855654600401044,
-              "normalized": 7.4,
-              "checked": "2026-11-02T17:49:26.581784+00:00"
+              "normalized": 7.4
             },
             {
               "name": "Nintendo Life",
@@ -60134,14 +60200,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/lego_dc_super-villains",
               "platform": "Nintendo Switch",
               "weight": 8.306623862918075,
-              "normalized": 7.5,
-              "checked": "2026-11-02T17:49:26.581784+00:00"
+              "normalized": 7.5
             }
           ],
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:26.723598+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:31:14.625433+00:00"
       },
       "requirements": {
         "image": true,
@@ -60157,7 +60227,10 @@
       },
       "basics_attempted": "2026-11-02T22:40:26.723598+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lego-dc-super-villains-switch/",
@@ -60207,7 +60280,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:31:17.491887+00:00",
+      "full_version": 7
     },
     "PS5:15886": {
       "title": "LEGO Harry Potter Collection",
@@ -60230,11 +60305,7 @@
         "id": "xxHLvTgwl-s",
         "title": "LEGO Harry Potter Collection – Trailer de lançamento | PS5",
         "kind": "trailer",
-        "source": "https://www.youtube.com/watch?v=xxHLvTgwl-s",
-        "url": "https://www.youtube.com/watch?v=xxHLvTgwl-s",
-        "checked": "2026-11-02T16:00:44.553023+00:00",
-        "attempted": "2026-11-02T16:00:44.553028+00:00",
-        "error": null
+        "source": "https://www.youtube.com/watch?v=xxHLvTgwl-s"
       },
       "psplus": {
         "in_catalog": false,
@@ -60270,7 +60341,7 @@
           "source_count": 2
         },
         "user": {
-          "score": 8.69,
+          "score": 8.56,
           "scale": 10,
           "sources": [
             {
@@ -60284,23 +60355,37 @@
               "normalized": 7.5
             },
             {
-              "score": 4.38,
-              "count": 14605,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.38,
               "scale": 5,
-              "source": "PSN",
+              "count": 14605,
               "url": "https://store.playstation.com/pt-pt/concept/223683",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:49:27.367502+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 8.76
+            },
+            {
+              "score": 5.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/lego_harry_potter_collection",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 5.5
             }
           ],
-          "source_count": 2,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:49:26.582048+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:31:16.556558+00:00"
       },
       "requirements": {
         "image": true,
@@ -60320,7 +60405,9 @@
       },
       "basics_attempted": "2026-11-02T17:49:26.582048+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -60336,7 +60423,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:31:17.988207+00:00",
+      "full_version": 7
     },
     "Switch:5341": {
       "title": "LEGO Harry Potter Collection",
@@ -60352,11 +60441,7 @@
         "id": "xxHLvTgwl-s",
         "title": "LEGO Harry Potter Collection – Trailer de lançamento | PS5",
         "kind": "trailer",
-        "source": "https://www.youtube.com/watch?v=xxHLvTgwl-s",
-        "url": "https://www.youtube.com/watch?v=xxHLvTgwl-s",
-        "checked": "2026-11-02T16:00:25.969462+00:00",
-        "attempted": "2026-11-02T16:00:25.969482+00:00",
-        "error": null
+        "source": "https://www.youtube.com/watch?v=xxHLvTgwl-s"
       },
       "ratings": {
         "critic": {
@@ -60459,8 +60544,7 @@
               "url": "https://www.metacritic.com/game/lego-harry-potter-collection/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 7.14142842854285,
-              "normalized": 7.199999999999999,
-              "checked": "2026-11-02T17:49:26.582179+00:00"
+              "normalized": 7.199999999999999
             },
             {
               "name": "Nintendo Life",
@@ -60470,14 +60554,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/lego_harry_potter_collection",
               "platform": "Nintendo Switch",
               "weight": 8.774964387392123,
-              "normalized": 7.4,
-              "checked": "2026-11-02T17:49:26.582179+00:00"
+              "normalized": 7.4
             }
           ],
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:26.723992+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:31:19.804636+00:00"
       },
       "requirements": {
         "image": true,
@@ -60486,7 +60574,11 @@
       },
       "basics_attempted": "2026-11-02T22:40:26.723992+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lego-harry-potter-collection-switch/",
@@ -60536,7 +60628,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:31:21.245401+00:00",
+      "full_version": 7
     },
     "PS5:15476": {
       "title": "LEGO Horizon Adventures",
@@ -61375,15 +61469,13 @@
               "normalized": 6.2
             },
             {
-              "score": 3.6,
-              "count": 10267,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.6,
               "scale": 5,
-              "source": "PSN",
+              "count": 10267,
               "url": "https://store.playstation.com/pt-pt/concept/10007722",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:49:28.420131+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 7.199999999999999
             }
@@ -61391,7 +61483,12 @@
           "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:49:27.372255+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 99,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:31:42.347650+00:00"
       },
       "requirements": {
         "image": true,
@@ -61427,7 +61524,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:31:42.604236+00:00",
+      "full_version": 7
     },
     "Switch:15477": {
       "title": "LEGO Horizon Adventures",
@@ -61451,9 +61550,16 @@
       },
       "ratings": {
         "critic": {
-          "score": 61.2,
+          "score": 64.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=lego-horizon-adventures-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
             {
               "name": "Nintendo Life",
               "score": 60,
@@ -61488,7 +61594,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 4
+          "source_count": 5
         },
         "user": {
           "score": 6.2,
@@ -61502,8 +61608,7 @@
               "url": "https://www.metacritic.com/game/lego-horizon-adventures/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 2.8284271247461903,
-              "normalized": 6.5,
-              "checked": "2026-11-02T17:49:28.202555+00:00"
+              "normalized": 6.5
             },
             {
               "name": "Nintendo Life",
@@ -61513,14 +61618,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/lego_horizon_adventures",
               "platform": "Nintendo Switch",
               "weight": 8.717797887081348,
-              "normalized": 6.1,
-              "checked": "2026-11-02T17:49:28.202555+00:00"
+              "normalized": 6.1
             }
           ],
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:26.724388+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:31:29.702727+00:00"
       },
       "requirements": {
         "image": true,
@@ -61529,7 +61638,10 @@
       },
       "basics_attempted": "2026-11-02T22:40:26.724388+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lego-horizon-adventures-switch/",
@@ -61579,7 +61691,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:31:31.296494+00:00",
+      "full_version": 7
     },
     "Switch:10646": {
       "title": "LEGO Marvel Super Heroes",
