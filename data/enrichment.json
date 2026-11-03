@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:33:39.431599+00:00",
+  "updated": "2026-11-03T06:34:27.011068+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1491,
+    "full_attempted": 1501,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -64866,26 +64866,49 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 63.3,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Finger Guns",
+              "score": 50,
+              "url": "https://fingerguns.net/reviews/2021/12/07/lets-sing-2022-review-ps5-same-old-song/",
+              "date": "2021-12-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2021/11/lets-sing-2022-review/",
+              "date": "2021-11-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 70,
+              "url": "https://www.impulsegamer.com/lets-sing-2022-ps5-review-playstation5/",
+              "date": "2021-12-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 5.5,
           "scale": 10,
           "sources": [
             {
-              "score": 2.75,
-              "count": 75,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 2.75,
               "scale": 5,
-              "source": "PSN",
+              "count": 75,
               "url": "https://store.playstation.com/pt-pt/product/EP3617-PPSA03673_00-LS2022INTBUNDLE0",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:51:04.603319+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 8.660254037844387,
               "normalized": 5.5
             }
@@ -64893,7 +64916,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:51:03.517669+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:34:16.015730+00:00"
       },
       "requirements": {
         "image": true,
@@ -64935,7 +64965,11 @@
       },
       "basics_attempted": "2026-11-02T17:51:03.517669+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -64951,35 +64985,71 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:34:16.226411+00:00",
+      "full_version": 7
     },
     "Switch:10827": {
       "title": "Let's Sing 2022",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 72.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/lets-sing-2022",
+              "name": "GAMES.CH",
+              "score": 77,
+              "url": "https://www.games.ch/lets-sing-2022/test/review-k1gf/",
+              "date": "2022-01-19",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG",
+              "score": 70,
+              "url": "https://www.millenium.org/test/384845.html",
+              "date": "2021-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/lets-sing-2022?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2021-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.4,
+              "scale": 10,
+              "count": 5,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/nintendo-switch/lets_sing_2022",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.23606797749979,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:51:03.517848+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:34:19.809292+00:00"
       },
       "requirements": {
         "image": true,
@@ -65002,7 +65072,13 @@
       },
       "basics_attempted": "2026-11-02T17:51:03.517848+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -65018,33 +65094,42 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:34:22.192017+00:00",
+      "full_version": 7
     },
     "PS5:12383": {
       "title": "Let's Sing 2023",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 55.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GamingTrend",
+              "score": 55,
+              "url": "https://gamingtrend.com/feature/reviews/lets-sing-2023-review-tone-deaf-again/",
+              "date": "2022-12-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 5.1,
           "scale": 10,
           "sources": [
             {
-              "score": 2.55,
-              "count": 87,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 2.55,
               "scale": 5,
-              "source": "PSN",
+              "count": 87,
               "url": "https://store.playstation.com/pt-pt/product/EP3617-PPSA05585_00-LS2023INTBUNDLE0",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:51:05.921898+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 9.327379053088816,
               "normalized": 5.1
             }
@@ -65052,7 +65137,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:51:03.518101+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:33:59.129622+00:00"
       },
       "requirements": {
         "image": true,
@@ -65094,7 +65186,11 @@
       },
       "basics_attempted": "2026-11-02T17:51:03.518101+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -65110,7 +65206,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:33:59.429827+00:00",
+      "full_version": 7
     },
     "Switch:12381": {
       "title": "Let's Sing 2023",
@@ -65225,6 +65323,7 @@
               "name": "Finger Guns",
               "score": 70,
               "url": "https://fingerguns.net/reviews/2023/11/29/lets-sing-2024-review-ps5-its-about-damn-time/",
+              "date": "2023-11-29",
               "platform": "PlayStation 5",
               "via": "Metacritic review index"
             },
@@ -65232,6 +65331,7 @@
               "name": "GamingTrend",
               "score": 75,
               "url": "https://gamingtrend.com/feature/reviews/lets-sing-2024-review-more-on-key-than-not/",
+              "date": "2023-11-20",
               "platform": "PlayStation 5",
               "via": "Metacritic review index"
             },
@@ -65239,6 +65339,7 @@
               "name": "Impulsegamer",
               "score": 72,
               "url": "https://www.impulsegamer.com/lets-sing-2024-switch-review-ps5/",
+              "date": "2023-11-13",
               "platform": "PlayStation 5",
               "via": "Metacritic review index"
             }
@@ -65253,7 +65354,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:16:59.409149+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:34:04.204276+00:00"
       },
       "requirements": {
         "image": true,
@@ -65265,7 +65373,10 @@
       "errors": {
         "store": "No exact Portugal PS5 product verified",
         "community": "HTTP Error 404: Not Found",
-        "psn": "No exact Portugal PS5 product verified"
+        "psn": "No exact Portugal PS5 product verified",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000053714/84104ffd412f02114210b6b1ec85e894fc9ed0c6fac6c58ca9494b1a1a5cf20e",
@@ -65309,7 +65420,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:34:04.382292+00:00",
+      "full_version": 7
     },
     "Switch:14379": {
       "title": "Let's Sing 2024",
@@ -122538,7 +122651,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:55.369141+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:34:24.742477+00:00"
       },
       "requirements": {
         "image": true,
@@ -122554,7 +122674,13 @@
       },
       "basics_attempted": "2026-11-02T22:40:55.369141+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lesson-learned-switch/",
@@ -122603,7 +122729,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:34:26.763906+00:00",
+      "full_version": 7
     },
     "PS5:15596": {
       "title": "Looney Tunes: Wacky World of Sports",
@@ -140920,11 +141048,36 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.3,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Finger Guns",
+              "score": 60,
+              "url": "https://fingerguns.net/reviews/2024/12/22/lets-sing-2025-review-ps5-what-was-i-made-for/",
+              "date": "2025-01-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 81,
+              "url": "https://www.games.ch/elden-ring/test/review-liiah/",
+              "date": "2024-11-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameliner",
+              "score": 70,
+              "url": "https://gameliner.nl/reviews/lets-sing-2025-review-toont-zich-weer-vermakelijk/6867-29-1-194",
+              "date": "2024-11-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 2.4,
@@ -140936,16 +141089,22 @@
               "scale": 10,
               "count": 5,
               "url": "https://www.metacritic.com/game/lets-sing-2025/user-reviews/?platform=playstation-5",
-              "platform": "PS5",
+              "platform": "PlayStation 5",
               "weight": 2.23606797749979,
-              "normalized": 2.4,
-              "checked": "2026-11-02T19:32:57.773455+00:00"
+              "normalized": 2.4
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:16:59.409709+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:34:09.207329+00:00"
       },
       "requirements": {
         "image": true,
@@ -140957,7 +141116,10 @@
       "errors": {
         "store": "No exact Portugal PS5 product verified",
         "community": "HTTP Error 404: Not Found",
-        "psn": "No exact Portugal PS5 product verified"
+        "psn": "No exact Portugal PS5 product verified",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000080164/30052dbe3c15a0d0b9585c979fdd96c6f0056fa80ca89c5524b526d7b68fad9a",
@@ -141001,7 +141163,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:34:09.470550+00:00",
+      "full_version": 7
     },
     "Switch:15968": {
       "title": "Let's Sing 2025",
@@ -260510,6 +260674,7 @@
               "name": "Cubed3",
               "score": 80,
               "url": "http://www.cubed3.com/review/5671/1/lets-go-nuts-nintendo-switch.html",
+              "date": "2019-11-04",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -260517,6 +260682,7 @@
               "name": "Pure Nintendo",
               "score": 40,
               "url": "https://purenintendo.com/review-lets-go-nuts-nintendo-switch/",
+              "date": "2019-08-02",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -260524,6 +260690,7 @@
               "name": "The Digital Fix",
               "score": 10,
               "url": "https://www.thedigitalfix.com/gaming/content/18714/lets-go-nuts/",
+              "date": "2019-07-24",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -260531,6 +260698,7 @@
               "name": "Video Chums",
               "score": 40,
               "url": "https://videochums.com/article/switch-exclusive-indie-games-part-5#let-s-go-nuts",
+              "date": "2019-07-29",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -260539,13 +260707,30 @@
           "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/lets_go_nuts",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:55.369409+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:34:04.814884+00:00"
       },
       "requirements": {
         "image": true,
@@ -260562,7 +260747,10 @@
       "basics_attempted": "2026-11-02T22:40:55.369409+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -260613,7 +260801,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:34:06.863369+00:00",
+      "full_version": 7
     },
     "Switch:6159": {
       "title": "Magic Twins",
@@ -293416,6 +293606,7 @@
               "name": "Multiplayer.it",
               "score": 65,
               "url": "https://multiplayer.it/recensioni/lets-sing-2019-recensione-karaoke.html",
+              "date": "2018-12-09",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -293423,6 +293614,7 @@
               "name": "Nintenderos",
               "score": 57,
               "url": "https://www.nintenderos.com/2018/12/analisis-lets-sing-11/",
+              "date": "2018-12-04",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -293430,6 +293622,7 @@
               "name": "The Digital Fix",
               "score": 80,
               "url": "https://www.thedigitalfix.com/gaming/content/11842/lets-sing-2019/",
+              "date": "2018-12-04",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -293438,13 +293631,30 @@
           "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/nintendo-switch/lets_sing_2019",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:55.370070+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:33:59.887996+00:00"
       },
       "requirements": {
         "image": true,
@@ -293461,7 +293671,11 @@
       "basics_attempted": "2026-11-02T22:40:55.370070+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -293511,7 +293725,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:34:02.075209+00:00",
+      "full_version": 7
     },
     "Switch:8009": {
       "title": "Let's Sing 2021",
@@ -293525,6 +293741,7 @@
               "name": "Hey Poor Player",
               "score": 70,
               "url": "https://www.heypoorplayer.com/2020/11/28/lets-sing-2021-review-switch/",
+              "date": "2020-11-30",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -293532,6 +293749,7 @@
               "name": "Nintenderos",
               "score": 72,
               "url": "https://www.nintenderos.com/2020/12/analisis-lets-sing-13-para-nintendo-switch/",
+              "date": "2020-12-20",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -293540,13 +293758,30 @@
           "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 3.33,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.33,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/nintendo-switch/lets_sing_2021",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 3.33
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:55.370438+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:33:54.902513+00:00"
       },
       "requirements": {
         "image": true,
@@ -293563,7 +293798,11 @@
       "basics_attempted": "2026-11-02T22:40:55.370438+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -293613,7 +293852,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:33:56.908193+00:00",
+      "full_version": 7
     },
     "Switch:7930": {
       "title": "M.A.C.E. Space Shooter",
@@ -315342,6 +315583,7 @@
               "name": "IGN Italia",
               "score": 67,
               "url": "https://it.ign.com/lets-sing-2019-nintendo-switch/146565/review/lets-sing-2019-la-recensione",
+              "date": "2018-10-26",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -315349,6 +315591,7 @@
               "name": "Switch Player",
               "score": 60,
               "url": "http://switchplayer.net/2018/04/23/lets-sing-2018-review/",
+              "date": "2018-04-23",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -315356,6 +315599,7 @@
               "name": "XGN",
               "score": 70,
               "url": "https://www.xgn.nl/review/lets-sing-2018-review",
+              "date": "2017-12-21",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -315364,13 +315608,30 @@
           "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 6.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 6.0,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/nintendo-switch/lets_sing_2018",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 6.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:55.369733+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:34:09.809351+00:00"
       },
       "requirements": {
         "image": true,
@@ -315387,7 +315648,11 @@
       "basics_attempted": "2026-11-02T22:40:55.369733+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -315437,7 +315702,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:34:11.876703+00:00",
+      "full_version": 7
     },
     "Switch:8642": {
       "title": "Little Triangle",
