@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-03T00:41:10.091578+00:00",
+  "updated": "2026-11-03T00:42:54.728381+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1960,
+    "ready": 1961,
     "missing_image": 109,
-    "missing_store": 277,
+    "missing_store": 273,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -9952,7 +9952,7 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T22:57:23.540548+00:00",
+      "attempted": "2026-11-03T00:41:13.855010+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
@@ -10014,22 +10014,22 @@
             },
             "nwr": {
               "status": "retryable_error",
-              "last_attempt": "2026-11-02T22:57:55.492102+00:00",
-              "next_attempt": "2026-11-02T23:57:55.492102+00:00",
+              "last_attempt": "2026-11-03T00:41:13.875250+00:00",
+              "next_attempt": "2026-11-03T01:41:13.875250+00:00",
               "revision": "0c798fe7371831d2:7",
               "reason": "Review archive discovery still queued; exact profile not indexed yet"
             },
             "pure": {
               "status": "retryable_error",
-              "last_attempt": "2026-11-02T22:57:55.492187+00:00",
-              "next_attempt": "2026-11-02T23:57:55.492187+00:00",
+              "last_attempt": "2026-11-03T00:41:13.875305+00:00",
+              "next_attempt": "2026-11-03T01:41:13.875305+00:00",
               "revision": "0c798fe7371831d2:7",
               "reason": "Review archive discovery still queued; exact profile not indexed yet"
             }
           }
         }
       },
-      "next_retry": "2026-11-02T23:57:55.492102+00:00"
+      "next_retry": "2026-11-03T01:41:13.875250+00:00"
     },
     {
       "key": "Switch:13948",
@@ -14007,13 +14007,30 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T22:04:15.202353+00:00",
+      "attempted": "2026-11-03T00:41:13.854665+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:41:14.359380+00:00",
+              "next_attempt": "2026-11-04T00:41:14.359380+00:00",
+              "revision": "c18ab56b6cd7ac54:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Dragon+Blaze%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Dragon+Blaze%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-04T00:41:14.359380+00:00"
     },
     {
       "key": "Switch:12228",
@@ -18847,17 +18864,100 @@
       "title": "Gravityscape DX",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T22:04:01.857466+00:00",
+      "attempted": "2026-11-03T00:41:13.850217+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:41:14.162782+00:00",
+              "next_attempt": "2026-11-04T00:41:14.162782+00:00",
+              "revision": "b5d41f3b06f6832f:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:41:14.162782+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Gravityscape-DX-2520386.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Gravityscape-DX-2520386.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:04.087395+00:00",
+              "next_attempt": "2026-11-04T00:42:04.087395+00:00",
+              "revision": "b5d41f3b06f6832f:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/gravityscape_dx",
+                "https://www.nintendolife.com/games/nintendo-switch/gravityscape_dx"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/gravityscape_dx"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:06.903891+00:00",
+              "next_attempt": "2026-11-04T00:42:06.903891+00:00",
+              "revision": "b5d41f3b06f6832f:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=gravityscape-dx-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=gravityscape-dx-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:09.826305+00:00",
+              "next_attempt": "2026-11-04T00:42:09.826305+00:00",
+              "revision": "b5d41f3b06f6832f:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/gravityscape-dx/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/gravityscape-dx/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/gravityscape-dx/"
+              ],
+              "url": "https://www.metacritic.com/game/gravityscape-dx/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:11.488399+00:00",
+              "next_attempt": "2026-11-04T00:42:11.488399+00:00",
+              "revision": "b5d41f3b06f6832f:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Gravityscape+DX&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Gravityscape+DX&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:42:11.488548+00:00",
+              "next_attempt": "2026-11-03T01:42:11.488548+00:00",
+              "revision": "b5d41f3b06f6832f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:42:11.488579+00:00",
+              "next_attempt": "2026-11-03T01:42:11.488579+00:00",
+              "revision": "b5d41f3b06f6832f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:42:11.488548+00:00"
     },
     {
       "key": "Switch:14153",
@@ -18866,14 +18966,83 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T22:04:01.857883+00:00",
+      "attempted": "2026-11-03T00:41:13.850377+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:39.096187+00:00",
+              "next_attempt": "2026-11-04T00:42:39.096187+00:00",
+              "revision": "9b00b591399d1dc0:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/growl",
+                "https://www.nintendolife.com/games/switch-eshop/growl",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_growl"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_growl"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:39.392592+00:00",
+              "next_attempt": "2026-11-04T00:42:39.392592+00:00",
+              "revision": "9b00b591399d1dc0:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=growl-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=growl-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:52.864028+00:00",
+              "next_attempt": "2026-11-04T00:42:52.864028+00:00",
+              "revision": "9b00b591399d1dc0:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-growl/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-growl/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-growl/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-growl/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:54.373645+00:00",
+              "next_attempt": "2026-11-04T00:42:54.373645+00:00",
+              "revision": "9b00b591399d1dc0:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Growl&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Growl&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:42:54.373779+00:00",
+              "next_attempt": "2026-11-03T01:42:54.373779+00:00",
+              "revision": "9b00b591399d1dc0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:42:54.373809+00:00",
+              "next_attempt": "2026-11-03T01:42:54.373809+00:00",
+              "revision": "9b00b591399d1dc0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:42:54.373779+00:00"
     },
     {
       "key": "Switch:11201",
@@ -18882,31 +19051,183 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T22:04:01.860915+00:00",
+      "attempted": "2026-11-03T00:41:13.850515+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:34.102079+00:00",
+              "next_attempt": "2026-11-04T00:42:34.102079+00:00",
+              "revision": "11cdf7b86222ffc0:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/gunnail",
+                "https://www.nintendolife.com/games/switch-eshop/gunnail",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_gunnail"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_gunnail"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:39.256405+00:00",
+              "next_attempt": "2026-11-04T00:42:39.256405+00:00",
+              "revision": "11cdf7b86222ffc0:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=gunnail-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=gunnail-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:50.234083+00:00",
+              "next_attempt": "2026-11-04T00:42:50.234083+00:00",
+              "revision": "11cdf7b86222ffc0:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-gunnail/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-gunnail/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-gunnail/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-gunnail/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:51.673470+00:00",
+              "next_attempt": "2026-11-04T00:42:51.673470+00:00",
+              "revision": "11cdf7b86222ffc0:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Gunnail&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Gunnail&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:42:51.673606+00:00",
+              "next_attempt": "2026-11-03T01:42:51.673606+00:00",
+              "revision": "11cdf7b86222ffc0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:42:51.673636+00:00",
+              "next_attempt": "2026-11-03T01:42:51.673636+00:00",
+              "revision": "11cdf7b86222ffc0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:42:51.673606+00:00"
     },
     {
       "key": "Switch:16232",
       "title": "Guns And Draguns",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T22:04:01.861733+00:00",
+      "attempted": "2026-11-03T00:41:13.850915+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:41:15.259209+00:00",
+              "next_attempt": "2026-11-04T00:41:15.259209+00:00",
+              "revision": "7ab2c686e77de0b8:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:41:15.259209+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Guns-And-Draguns-2714280.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Guns-And-Draguns-2714280.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:19.070646+00:00",
+              "next_attempt": "2026-11-04T00:42:19.070646+00:00",
+              "revision": "7ab2c686e77de0b8:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/guns_and_draguns",
+                "https://www.nintendolife.com/games/nintendo-switch/guns_and_draguns"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/guns_and_draguns"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:19.348104+00:00",
+              "next_attempt": "2026-11-04T00:42:19.348104+00:00",
+              "revision": "7ab2c686e77de0b8:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=guns-and-draguns-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=guns-and-draguns-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:23.619485+00:00",
+              "next_attempt": "2026-11-04T00:42:23.619485+00:00",
+              "revision": "7ab2c686e77de0b8:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/guns-and-draguns/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/guns-and-draguns/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/guns-and-draguns/"
+              ],
+              "url": "https://www.metacritic.com/game/guns-and-draguns/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:24.897722+00:00",
+              "next_attempt": "2026-11-04T00:42:24.897722+00:00",
+              "revision": "7ab2c686e77de0b8:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Guns+And+Draguns&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Guns+And+Draguns&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:42:24.897864+00:00",
+              "next_attempt": "2026-11-03T01:42:24.897864+00:00",
+              "revision": "7ab2c686e77de0b8:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:42:24.897895+00:00",
+              "next_attempt": "2026-11-03T01:42:24.897895+00:00",
+              "revision": "7ab2c686e77de0b8:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:42:24.897864+00:00"
     },
     {
       "key": "Switch:8898",
@@ -19010,33 +19331,104 @@
       "next_retry": "2026-11-03T00:04:08.856505+00:00"
     },
     {
-      "key": "Switch:12980",
-      "title": "Gyro Boss DX",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T22:04:01.866736+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:10713",
       "title": "HOLY COW! Milking Simulator",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T22:04:14.417229+00:00",
+      "attempted": "2026-11-03T00:41:13.852089+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:41:17.536993+00:00",
+              "next_attempt": "2026-11-04T00:41:17.536993+00:00",
+              "revision": "eaf0682ad38d62ef:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:41:17.536993+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/HOLY-COW-Milking-Simulator-2066170.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/HOLY-COW-Milking-Simulator-2066170.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:24.080114+00:00",
+              "next_attempt": "2026-11-04T00:42:24.080114+00:00",
+              "revision": "eaf0682ad38d62ef:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/holy_cow_milking_simulator",
+                "https://www.nintendolife.com/games/switch-eshop/holy_cow_milking_simulator"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/holy_cow_milking_simulator"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:24.415881+00:00",
+              "next_attempt": "2026-11-04T00:42:24.415881+00:00",
+              "revision": "eaf0682ad38d62ef:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=holy-cow-milking-simulator-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=holy-cow-milking-simulator-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:28.985847+00:00",
+              "next_attempt": "2026-11-04T00:42:28.985847+00:00",
+              "revision": "eaf0682ad38d62ef:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/holy-cow-milking-simulator/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/holy-cow-milking-simulator/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/holy-cow-milking-simulator/"
+              ],
+              "url": "https://www.metacritic.com/game/holy-cow-milking-simulator/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:42:30.502740+00:00",
+              "next_attempt": "2026-11-04T00:42:30.502740+00:00",
+              "revision": "eaf0682ad38d62ef:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=HOLY+COW%21+Milking+Simulator&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=HOLY+COW%21+Milking+Simulator&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:42:30.502888+00:00",
+              "next_attempt": "2026-11-03T01:42:30.502888+00:00",
+              "revision": "eaf0682ad38d62ef:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:42:30.502922+00:00",
+              "next_attempt": "2026-11-03T01:42:30.502922+00:00",
+              "revision": "eaf0682ad38d62ef:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:42:30.502888+00:00"
     },
     {
       "key": "Switch:9776",
@@ -19131,7 +19523,7 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T22:57:59.553602+00:00",
+      "attempted": "2026-11-03T00:41:14.359724+00:00",
       "reasons": {
         "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
@@ -19161,9 +19553,9 @@
           "sources": {
             "community": {
               "status": "not_found",
-              "last_attempt": "2026-11-02T22:58:31.121414+00:00",
-              "next_attempt": "2026-11-03T22:58:31.121414+00:00",
-              "revision": "f94530b88bf86cb6:7",
+              "last_attempt": "2026-11-03T00:42:14.071526+00:00",
+              "next_attempt": "2026-11-04T00:42:14.071526+00:00",
+              "revision": "48d1646c39c94be3:7",
               "reason": "HTTP Error 404: Not Found",
               "attempted_urls": [
                 "https://www.nintendolife.com/games/switch-eshop/haunted_zombie_slaughter",
@@ -19173,9 +19565,9 @@
             },
             "nindie": {
               "status": "not_found",
-              "last_attempt": "2026-11-02T22:58:32.207118+00:00",
-              "next_attempt": "2026-11-03T22:58:32.207118+00:00",
-              "revision": "f94530b88bf86cb6:7",
+              "last_attempt": "2026-11-03T00:42:16.624687+00:00",
+              "next_attempt": "2026-11-04T00:42:16.624687+00:00",
+              "revision": "48d1646c39c94be3:7",
               "reason": "No review profile indexed for this game",
               "attempted_urls": [
                 "https://www.nindiespotlight.com/game_profile.cfm?game=haunted-zombie-slaughter-switch"
@@ -19184,9 +19576,9 @@
             },
             "metacritic": {
               "status": "not_found",
-              "last_attempt": "2026-11-02T22:58:37.640341+00:00",
-              "next_attempt": "2026-11-03T22:58:37.640341+00:00",
-              "revision": "f94530b88bf86cb6:7",
+              "last_attempt": "2026-11-03T00:42:20.270948+00:00",
+              "next_attempt": "2026-11-04T00:42:20.270948+00:00",
+              "revision": "48d1646c39c94be3:7",
               "reason": "No qualifying rating found on this source",
               "attempted_urls": [
                 "https://backend.metacritic.com/reviews/metacritic/user/games/haunted-zombie-slaughter/platform/nintendo-switch/stats/web",
@@ -19197,9 +19589,9 @@
             },
             "slush": {
               "status": "not_found",
-              "last_attempt": "2026-11-02T22:58:37.723501+00:00",
-              "next_attempt": "2026-11-03T22:58:37.723501+00:00",
-              "revision": "f94530b88bf86cb6:7",
+              "last_attempt": "2026-11-03T00:42:21.553524+00:00",
+              "next_attempt": "2026-11-04T00:42:21.553524+00:00",
+              "revision": "48d1646c39c94be3:7",
               "reason": "No scored Switch review indexed",
               "attempted_urls": [
                 "https://gameslushpile.com/wp-json/wp/v2/search?search=Haunted+Zombie+Slaughter&per_page=5"
@@ -19208,22 +19600,22 @@
             },
             "nwr": {
               "status": "retryable_error",
-              "last_attempt": "2026-11-02T22:58:37.723627+00:00",
-              "next_attempt": "2026-11-02T23:58:37.723627+00:00",
-              "revision": "f94530b88bf86cb6:7",
+              "last_attempt": "2026-11-03T00:42:21.553661+00:00",
+              "next_attempt": "2026-11-03T01:42:21.553661+00:00",
+              "revision": "48d1646c39c94be3:7",
               "reason": "Review archive discovery still queued; exact profile not indexed yet"
             },
             "pure": {
               "status": "retryable_error",
-              "last_attempt": "2026-11-02T22:58:37.723696+00:00",
-              "next_attempt": "2026-11-02T23:58:37.723696+00:00",
-              "revision": "f94530b88bf86cb6:7",
+              "last_attempt": "2026-11-03T00:42:21.553693+00:00",
+              "next_attempt": "2026-11-03T01:42:21.553693+00:00",
+              "revision": "48d1646c39c94be3:7",
               "reason": "Review archive discovery still queued; exact profile not indexed yet"
             }
           }
         }
       },
-      "next_retry": "2026-11-02T23:58:37.723627+00:00"
+      "next_retry": "2026-11-03T01:42:21.553661+00:00"
     },
     {
       "key": "Switch:14461",
@@ -19465,7 +19857,7 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T22:57:59.555456+00:00",
+      "attempted": "2026-11-03T00:41:13.875465+00:00",
       "reasons": {
         "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
@@ -19495,9 +19887,9 @@
           "sources": {
             "community": {
               "status": "not_found",
-              "last_attempt": "2026-11-02T22:58:06.277899+00:00",
-              "next_attempt": "2026-11-03T22:58:06.277899+00:00",
-              "revision": "81a76398844c9db8:7",
+              "last_attempt": "2026-11-03T00:41:59.076807+00:00",
+              "next_attempt": "2026-11-04T00:41:59.076807+00:00",
+              "revision": "0c91b03eabd71ba0:7",
               "reason": "HTTP Error 404: Not Found",
               "attempted_urls": [
                 "https://www.nintendolife.com/games/switch-eshop/hellgunner",
@@ -19507,9 +19899,9 @@
             },
             "nindie": {
               "status": "not_found",
-              "last_attempt": "2026-11-02T22:58:06.925159+00:00",
-              "next_attempt": "2026-11-03T22:58:06.925159+00:00",
-              "revision": "81a76398844c9db8:7",
+              "last_attempt": "2026-11-03T00:41:59.580178+00:00",
+              "next_attempt": "2026-11-04T00:41:59.580178+00:00",
+              "revision": "0c91b03eabd71ba0:7",
               "reason": "No review profile indexed for this game",
               "attempted_urls": [
                 "https://www.nindiespotlight.com/game_profile.cfm?game=hellgunner-switch"
@@ -19518,9 +19910,9 @@
             },
             "metacritic": {
               "status": "not_found",
-              "last_attempt": "2026-11-02T22:58:16.476996+00:00",
-              "next_attempt": "2026-11-03T22:58:16.476996+00:00",
-              "revision": "81a76398844c9db8:7",
+              "last_attempt": "2026-11-03T00:42:03.393740+00:00",
+              "next_attempt": "2026-11-04T00:42:03.393740+00:00",
+              "revision": "0c91b03eabd71ba0:7",
               "reason": "No qualifying rating found on this source",
               "attempted_urls": [
                 "https://backend.metacritic.com/reviews/metacritic/user/games/hellgunner/platform/nintendo-switch/stats/web",
@@ -19531,9 +19923,9 @@
             },
             "slush": {
               "status": "not_found",
-              "last_attempt": "2026-11-02T22:58:16.579020+00:00",
-              "next_attempt": "2026-11-03T22:58:16.579020+00:00",
-              "revision": "81a76398844c9db8:7",
+              "last_attempt": "2026-11-03T00:42:04.735650+00:00",
+              "next_attempt": "2026-11-04T00:42:04.735650+00:00",
+              "revision": "0c91b03eabd71ba0:7",
               "reason": "No scored Switch review indexed",
               "attempted_urls": [
                 "https://gameslushpile.com/wp-json/wp/v2/search?search=HellGunner&per_page=5"
@@ -19542,22 +19934,22 @@
             },
             "nwr": {
               "status": "retryable_error",
-              "last_attempt": "2026-11-02T22:58:16.579183+00:00",
-              "next_attempt": "2026-11-02T23:58:16.579183+00:00",
-              "revision": "81a76398844c9db8:7",
+              "last_attempt": "2026-11-03T00:42:04.735781+00:00",
+              "next_attempt": "2026-11-03T01:42:04.735781+00:00",
+              "revision": "0c91b03eabd71ba0:7",
               "reason": "Review archive discovery still queued; exact profile not indexed yet"
             },
             "pure": {
               "status": "retryable_error",
-              "last_attempt": "2026-11-02T22:58:16.579268+00:00",
-              "next_attempt": "2026-11-02T23:58:16.579268+00:00",
-              "revision": "81a76398844c9db8:7",
+              "last_attempt": "2026-11-03T00:42:04.735809+00:00",
+              "next_attempt": "2026-11-03T01:42:04.735809+00:00",
+              "revision": "0c91b03eabd71ba0:7",
               "reason": "Review archive discovery still queued; exact profile not indexed yet"
             }
           }
         }
       },
-      "next_retry": "2026-11-02T23:58:16.579183+00:00"
+      "next_retry": "2026-11-03T01:42:04.735781+00:00"
     },
     {
       "key": "Switch:15332",
