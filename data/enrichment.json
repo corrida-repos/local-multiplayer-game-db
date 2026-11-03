@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T05:40:18.699567+00:00",
+  "updated": "2026-11-03T05:41:18.590907+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1051,
+    "full_attempted": 1061,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -26187,15 +26187,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.04,
-              "count": 277,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.04,
               "scale": 5,
-              "source": "PSN",
+              "count": 277,
               "url": "https://store.playstation.com/pt-pt/product/EP6890-PPSA10945_00-9473206885981246",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:05:29.335068+00:00",
-              "platform": "PSN · PS5",
               "weight": 16.64331697709324,
               "normalized": 8.08
             }
@@ -26203,7 +26201,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:05:28.292252+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:40:34.627317+00:00"
       },
       "requirements": {
         "image": true,
@@ -26245,7 +26250,11 @@
       },
       "basics_attempted": "2026-11-02T17:05:28.292252+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -26261,7 +26270,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:40:35.184080+00:00",
+      "full_version": 7
     },
     "Switch:12000": {
       "title": "Deathwish Enforcers",
@@ -26284,7 +26295,7 @@
           "source_count": 1
         },
         "user": {
-          "score": 8.3,
+          "score": 7.78,
           "scale": 10,
           "sources": [
             {
@@ -26295,14 +26306,29 @@
               "url": "https://www.metacritic.com/game/deathwish-enforcers/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 2.0,
-              "normalized": 8.3,
-              "checked": "2026-11-02T17:05:28.292488+00:00"
+              "normalized": 8.3
+            },
+            {
+              "score": 7.25,
+              "scale": 10,
+              "count": 4,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/deathwish_enforcers",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.0,
+              "normalized": 7.25
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:31:57.233782+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:40:49.304275+00:00"
       },
       "requirements": {
         "image": true,
@@ -26318,7 +26344,13 @@
       },
       "basics_attempted": "2026-11-02T22:31:57.233782+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/deathwish-enforcers-switch/",
@@ -26367,7 +26399,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:40:51.792420+00:00",
+      "full_version": 7
     },
     "PS5:11968": {
       "title": "Demon's Tier+",
@@ -219619,28 +219653,77 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 72.2,
           "scale": 100,
           "sources": [
+            {
+              "name": "4P.de",
+              "score": 76,
+              "url": "http://www.4players.de/4players.php/dispbericht/Switch/Test/34700/83643/0/Defense_Grid_2.html",
+              "date": "2019-02-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 70.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=defense-grid-2-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 75,
+              "url": "https://www.nintendoenthusiast.com/2019/02/21/defense-grid-2-review-for-nintendo-switch/",
+              "date": "2019-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 60,
+              "url": "https://screenrant.com/defense-grid-2-review/",
+              "date": "2019-02-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Indie Game Website",
+              "score": 80,
+              "url": "https://www.indiegamewebsite.com/2019/02/28/review-roundup-5-new-switch-ports-worth-checking-out/",
+              "date": "2019-02-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": null,
+          "score": 4.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/defense_grid_2",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:34:29.806813+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:40:59.153850+00:00"
       },
       "requirements": {
         "image": true,
@@ -219656,7 +219739,12 @@
       },
       "basics_attempted": "2026-11-02T22:34:29.806813+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/defense-grid-2-switch/",
@@ -219705,21 +219793,80 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:41:01.584806+00:00",
+      "full_version": 7
     },
     "Switch:5432": {
       "title": "Degrees of Separation",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 68.6,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameSpace",
+              "score": 75,
+              "url": "https://www.gamespace.com/reviews/switch-reviews/our-degrees-of-separation-review/",
+              "date": "2019-02-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 70,
+              "url": "http://www.impulsegamer.com/degrees-of-separation-review/",
+              "date": "2019-04-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=degrees-of-separation-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 65,
+              "url": "http://www.nintendoworldreport.com/review/49917/degrees-of-separation-switch-review",
+              "date": "2019-03-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70.0,
+              "url": "https://purenintendo.com/review-degrees-of-separation-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 7.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Softpedia",
+              "score": 80,
+              "url": "https://www.softpedia.com/reviews/games/nintendo-switch/degrees-of-separation-review-525113.shtml",
+              "date": "2019-02-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 50,
+              "url": "https://www.thedigitalfix.com/gaming/content/12689/degrees-of-separation-review/",
+              "date": "2019-03-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 7
         },
         "user": {
-          "score": 6.6,
+          "score": 6.87,
           "scale": 10,
           "sources": [
             {
@@ -219730,14 +219877,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/degrees_of_separation",
               "platform": "Nintendo Switch",
               "weight": 3.0,
-              "normalized": 6.6,
-              "checked": "2026-11-02T17:26:00.193998+00:00"
+              "normalized": 6.6
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.1,
+              "scale": 10,
+              "count": 13,
+              "url": "https://www.metacritic.com/game/degrees-of-separation/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 7.1
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:34:29.807239+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:41:14.229880+00:00"
       },
       "requirements": {
         "image": true,
@@ -219753,7 +219914,10 @@
       },
       "basics_attempted": "2026-11-02T22:34:29.807239+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/degrees-of-separation-switch/",
@@ -219802,7 +219966,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:41:18.351599+00:00",
+      "full_version": 7
     },
     "Switch:5407": {
       "title": "Deru",
@@ -257366,11 +257532,20 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/arcade-style-console-games-part-3#death-s-hangover",
+              "date": "2020-09-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 5.3,
@@ -257384,14 +257559,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/deaths_hangover",
               "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
-              "normalized": 5.300000000000001,
-              "checked": "2026-11-02T17:33:15.798305+00:00"
+              "normalized": 5.300000000000001
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:36:38.554049+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:40:34.281299+00:00"
       },
       "requirements": {
         "image": true,
@@ -257407,7 +257586,13 @@
       },
       "basics_attempted": "2026-11-02T22:36:38.554049+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/deaths-hangover-switch/",
@@ -257456,29 +257641,87 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:40:36.937364+00:00",
+      "full_version": 7
     },
     "Switch:7602": {
       "title": "Debris Infinity",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 75.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/12093-debris-infinity",
+              "date": "2019-02-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 80,
+              "url": "https://www.gamegrin.com/reviews/debris-infinity-review/",
+              "date": "2018-11-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 80.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=debris-infinity-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 75,
+              "url": "https://www.nintenderos.com/2018/12/analisis-debris-infinity/",
+              "date": "2018-12-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nintendo Life",
               "score": 70.0,
               "url": "https://www.nintendolife.com/reviews/switch-eshop/debris-infinity",
               "platform": "Nintendo Switch",
               "via": "Nintendo Life"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/48667/debris-infinity-switch-review",
+              "date": "2018-10-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 65.0,
+              "url": "https://purenintendo.com/review-debris-infinity-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 6.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 80,
+              "url": "https://worthplaying.com/article/2019/2/14/reviews/112925/",
+              "date": "2019-02-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 8
         },
         "user": {
-          "score": 7.4,
+          "score": 7.56,
           "scale": 10,
           "sources": [
             {
@@ -257489,14 +257732,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/debris_infinity",
               "platform": "Nintendo Switch",
               "weight": 3.4641016151377544,
-              "normalized": 7.4,
-              "checked": "2026-11-02T17:33:21.998317+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.7,
+              "scale": 10,
+              "count": 15,
+              "url": "https://www.metacritic.com/game/debris-infinity/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.872983346207417,
+              "normalized": 7.7
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:36:38.554365+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:40:44.170023+00:00"
       },
       "requirements": {
         "image": true,
@@ -257512,7 +257769,10 @@
       },
       "basics_attempted": "2026-11-02T22:36:38.554365+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/debris-infinity-switch/",
@@ -257561,14 +257821,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:40:47.601691+00:00",
+      "full_version": 7
     },
     "Switch:7369": {
       "title": "Delta Squad",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 63.0,
+          "score": 47.7,
           "scale": 100,
           "sources": [
             {
@@ -257577,10 +257839,26 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=delta-squad-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 40,
+              "url": "https://purenintendo.com/review-delta-squad-nintendo-switch/",
+              "date": "2019-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 40,
+              "url": "http://switchplayer.net/2019/11/12/delta-squad-review/",
+              "date": "2019-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
           "score": 1.0,
@@ -257594,7 +257872,6 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/delta_squad",
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
-              "checked": "2026-11-02T22:59:48.997993+00:00",
               "weight": 1.0,
               "normalized": 1.0
             }
@@ -257602,7 +257879,12 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:59:47.866603+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:40:54.218245+00:00"
       },
       "requirements": {
         "image": true,
@@ -257613,7 +257895,10 @@
       "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -257686,7 +257971,9 @@
         "checked": "2026-11-02T22:59:49.453163+00:00",
         "validation": "verified",
         "validated_at": "2026-11-03T02:06:46.751643+00:00"
-      }
+      },
+      "full_attempted": "2026-11-03T05:40:56.633159+00:00",
+      "full_version": 7
     },
     "Switch:7566": {
       "title": "Duke of Defense",
@@ -268344,13 +268631,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 3.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/death_tales",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 3.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:37:07.000295+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:40:39.301276+00:00"
       },
       "requirements": {
         "image": true,
@@ -268366,7 +268670,12 @@
       },
       "basics_attempted": "2026-11-02T22:37:07.000295+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/death-tales-switch/",
@@ -268415,7 +268724,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:40:41.958716+00:00",
+      "full_version": 7
     },
     "Switch:7792": {
       "title": "Dungreed",
@@ -287738,6 +288049,7 @@
               "name": "Switch Player",
               "score": 60,
               "url": "http://switchplayer.net/2019/01/16/demons-crystals-review/",
+              "date": "2019-01-16",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -287746,13 +288058,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/demons_crystals",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:38:04.374650+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:41:09.150369+00:00"
       },
       "requirements": {
         "image": true,
@@ -287769,7 +288098,11 @@
       "basics_attempted": "2026-11-02T22:38:04.374650+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -287819,7 +288152,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:41:11.803107+00:00",
+      "full_version": 7
     },
     "Switch:9063": {
       "title": "Destruction",
@@ -307311,10 +307646,9 @@
               "scale": 10,
               "count": 6,
               "url": "https://www.metacritic.com/game/demon-throttle/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 8.2,
-              "checked": "2026-11-02T19:27:03.023369+00:00"
+              "normalized": 8.2
             },
             {
               "score": 7.0,
@@ -307324,7 +307658,6 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/demon_throttle",
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
-              "checked": "2026-11-02T23:04:58.190932+00:00",
               "weight": 1.0,
               "normalized": 7.0
             }
@@ -307332,7 +307665,12 @@
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:04:42.603454+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:41:04.239353+00:00"
       },
       "requirements": {
         "image": false,
@@ -307345,7 +307683,11 @@
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
         "nintendo": "No exact Portuguese Switch listing verified",
-        "wikipedia": "No unique matching video-game article with artwork"
+        "wikipedia": "No unique matching video-game article with artwork",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -307412,7 +307754,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:41:06.523138+00:00",
+      "full_version": 7
     },
     "Switch:9703": {
       "title": "Donuts'n'Justice",
