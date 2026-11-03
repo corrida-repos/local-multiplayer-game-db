@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T07:34:03.257014+00:00",
+  "updated": "2026-11-03T07:35:10.999739+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1781,
+    "full_attempted": 1791,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -90004,15 +90004,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.09,
-              "count": 152,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.09,
               "scale": 5,
-              "source": "PSN",
+              "count": 152,
               "url": "https://store.playstation.com/pt-pt/product/EP7182-PPSA10681_00-2244758333959402",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:06:15.249453+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 12.328828005937952,
               "normalized": 8.18
             }
@@ -90020,7 +90018,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:06:12.620149+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:34:24.367296+00:00"
       },
       "requirements": {
         "image": true,
@@ -90062,7 +90067,11 @@
       },
       "basics_attempted": "2026-11-02T18:06:12.620149+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -90078,14 +90087,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:34:26.059302+00:00",
+      "full_version": 7
     },
     "Switch:12470": {
       "title": "Plunder Panic",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 65.0,
+          "score": 62.5,
           "scale": 100,
           "sources": [
             {
@@ -90094,10 +90105,18 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=plunder-panic-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 60,
+              "url": "https://purenintendo.com/review-plunder-panic-nintendo-switch/",
+              "date": "2022-10-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -90106,7 +90125,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:56.492003+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:34:28.146203+00:00"
       },
       "requirements": {
         "image": true,
@@ -90123,7 +90149,11 @@
       "basics_attempted": "2026-11-02T22:44:56.492003+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -90173,7 +90203,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:34:31.327328+00:00",
+      "full_version": 7
     },
     "Switch:11405": {
       "title": "Portal: Companion Collection",
@@ -135637,26 +135669,41 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 52.5,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "PSX Brasil",
+              "score": 45,
+              "url": "https://psxbrasil.com.br/analise/pool-party-review/",
+              "date": "2024-05-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/console-games-grab-bag-cook-hop-and-compete#pool-party",
+              "date": "2024-05-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 5.56,
           "scale": 10,
           "sources": [
             {
-              "score": 2.78,
-              "count": 9,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 2.78,
               "scale": 5,
-              "source": "PSN",
+              "count": 9,
               "url": "https://store.playstation.com/pt-pt/product/EP3945-PPSA19380_00-0072579820631109",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:06:37.492420+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 3.0,
               "normalized": 5.56
             }
@@ -135664,7 +135711,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:06:36.165174+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:34:41.396042+00:00"
       },
       "requirements": {
         "image": true,
@@ -135706,7 +135760,11 @@
       },
       "basics_attempted": "2026-11-02T18:06:36.165174+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -135722,7 +135780,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:34:42.041925+00:00",
+      "full_version": 7
     },
     "Switch:15312": {
       "title": "Pool Party",
@@ -183230,28 +183290,61 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 77.0,
+          "score": 79.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "Hey Poor Player",
+              "score": 80,
+              "url": "https://www.heypoorplayer.com/2025/09/21/platypus-reclayed-review-nintendo-switch/",
+              "date": "2025-09-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 77.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=platypus-reclayed-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "https://www.nintendoworldreport.com/reviewmini/72855/platypus-reclayed-switch-review-mini",
+              "date": "2025-10-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 8.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 8.0,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/platypus_reclayed",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 8.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:56.491637+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:34:18.474971+00:00"
       },
       "requirements": {
         "image": true,
@@ -183268,7 +183361,10 @@
       "basics_attempted": "2026-11-02T22:44:56.491637+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -183318,7 +183414,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:34:24.088443+00:00",
+      "full_version": 7
     },
     "Switch:17441": {
       "title": "QQQbeats!!!",
@@ -199518,26 +199616,65 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 77.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameBlast",
+              "score": 75,
+              "url": "https://www.gameblast.com.br/2025/09/analise-platypus-reclayed-review.html",
+              "date": "2025-10-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2025/09/platypus-reclayed-review/",
+              "date": "2025-09-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 90,
+              "url": "https://gaming-age.com/2025/10/platypus-reclayed-review-for-ps5-xbox-series-x-switch-pc/",
+              "date": "2025-10-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 70,
+              "url": "https://www.playstationcountry.com/platypus-reclayed/",
+              "date": "2025-10-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/6-great-indie-revivals-for-playstation-5#platypus-reclayed",
+              "date": "2025-09-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 5
         },
         "user": {
           "score": 9.32,
           "scale": 10,
           "sources": [
             {
-              "score": 4.66,
-              "count": 123,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.66,
               "scale": 5,
-              "source": "PSN",
+              "count": 123,
               "url": "https://store.playstation.com/pt-pt/product/UB0997-PPSA26974_00-0653816367879174",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:06:13.527002+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 11.090536506409418,
               "normalized": 9.32
             }
@@ -199545,7 +199682,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:06:12.619648+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:34:19.391065+00:00"
       },
       "requirements": {
         "image": true,
@@ -199587,7 +199731,11 @@
       },
       "basics_attempted": "2026-11-02T18:06:12.619648+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -199603,7 +199751,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:34:19.861034+00:00",
+      "full_version": 7
     },
     "Switch:17973": {
       "title": "Primal Planet",
@@ -227074,28 +227224,183 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 75.0,
+          "score": 76.8,
           "scale": 100,
           "sources": [
+            {
+              "name": "Critical Hit",
+              "score": 65,
+              "url": "https://www.criticalhit.net/review/pode/",
+              "date": "2018-06-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 80,
+              "url": "https://gamecritics.com/andrew-king/pode-review/",
+              "date": "2018-08-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.no",
+              "score": 70,
+              "url": "https://www.gamer.no/artikler/anmeldelse-pode/440568",
+              "date": "2018-07-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 85,
+              "url": "https://www.gamingnexus.com/Article/5721/Pode/",
+              "date": "2018-07-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 95,
+              "url": "http://gamingtrend.com/feature/reviews/two-souls-one-breathtaking-journey-pode-review/",
+              "date": "2018-06-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "http://www.godisageek.com/reviews/pode-review/",
+              "date": "2018-07-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 75.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=pode-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 72,
+              "url": "http://www.nintenderos.com/2018/07/analisis-pode/",
+              "date": "2018-07-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/pode-review/",
+              "date": "2018-07-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/pode?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-06-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 65,
+              "url": "http://www.nintendoworldreport.com/review/47607/pode-switch-review",
+              "date": "2018-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 80,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/Pode/review.asp?c=77907",
+              "date": "2018-06-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 85.0,
+              "url": "https://purenintendo.com/review-pode-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 8.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2018/07/25/pode-review/",
+              "date": "2018-07-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 70,
+              "url": "http://www.thesixthaxis.com/2018/06/21/pode-review/",
+              "date": "2018-06-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 83,
+              "url": "https://vandal.elespanol.com/analisis/switch/pode/58995",
+              "date": "2018-06-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 71,
+              "url": "https://videochums.com/review/pode",
+              "date": "2018-06-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 17
         },
         "user": {
-          "score": null,
+          "score": 7.24,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 27,
+              "url": "https://www.metacritic.com/game/pode/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 5.196152422706632,
+              "normalized": 7.4
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.0,
+              "scale": 10.0,
+              "count": 11,
+              "url": "https://www.nintendolife.com/games/switch-eshop/pode",
+              "platform": "Nintendo Switch",
+              "weight": 3.3166247903554,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:56.756924+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 15,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:34:43.371499+00:00"
       },
       "requirements": {
         "image": true,
@@ -227112,7 +227417,9 @@
       "basics_attempted": "2026-11-02T22:44:56.756924+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -227162,7 +227469,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:34:46.475146+00:00",
+      "full_version": 7
     },
     "PS5:19113": {
       "title": "Prehistoric Isle in 1930",
@@ -242335,11 +242644,636 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 79.6,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "3DJuegos",
+              "score": 85,
+              "url": "https://www.3djuegos.com/juegos/analisis/29790/0/pokemon-lets-go-pikachu-pokemon-lets-go-eevee/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "4P.de",
+              "score": 85,
+              "url": "http://www.4players.de/4players.php/dispbericht/Switch/Test/38868/83491/0/Pokemon_Lets_Go_Pikachu__Lets_Go_Evoli.html",
+              "date": "2018-11-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "App Trigger",
+              "score": 80,
+              "url": "https://apptrigger.com/2018/11/26/pokemon-lets-go-review-familiar-fresh/",
+              "date": "2018-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 87,
+              "url": "https://areajugones.sport.es/pokemon-lets-go-pikachu-evee/analisis/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 84,
+              "url": "https://atomix.vg/review-pokemon-lets-go-pikachu-y-lets-go-eevee/",
+              "date": "2018-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 60,
+              "url": "https://attackofthefanboy.com/reviews/pokemon-lets-go-review/",
+              "date": "2018-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 70,
+              "url": "",
+              "date": "2019-02-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 90,
+              "url": "https://www.cgmagonline.com/reviews/pokemon-lets-go-eevee-switch-review/",
+              "date": "2018-11-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 83,
+              "url": "https://cogconnected.com/review/pokemon-lets-go-pikachu-review/",
+              "date": "2018-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cheat Code Central",
+              "score": 90,
+              "url": "http://cheatcc.com/switch/rev/pokemonletsgoeeveereview.html",
+              "date": "2018-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 85,
+              "url": "https://www.criticalhit.net/review/pokemon-lets-go-pikachu-and-eevee-review-perfect-exeggution/",
+              "date": "2018-11-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 80,
+              "url": "https://www.darkstation.com/reviews/pokmon-lets-go-pikachueevee-review",
+              "date": "2018-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 75,
+              "url": "https://www.destructoid.com/review-pokemon-let-s-go-pikachu-eevee-529514.phtml",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Trends",
+              "score": 90,
+              "url": "https://www.digitaltrends.com/game-reviews/pokemon-lets-go-review/",
+              "date": "2018-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 90,
+              "url": "http://www.digitallydownloaded.net/2018/11/review-pokemon-lets-go-eevee-nintendo.html",
+              "date": "2018-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "EGM",
+              "score": 85,
+              "url": "http://www.egmnow.com/articles/reviews/pokemon-lets-go-eevee-review/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Easy Allies",
+              "score": 75,
+              "url": "https://easyallies.com/#!/review/pokmon-lets-go-pikachu-and-lets-go-eevee",
+              "date": "2018-11-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 70,
+              "url": "",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 80,
+              "url": "https://www.eurogamer.it/articles/2018-11-13-pokemon-lets-go-pikachu-e-lets-go-eevee-recensione",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 80,
+              "url": "https://www.everyeye.it/articoli/recensione-pokemon-let-s-go-pikachu-eevee-acchiappali-tutti-switch-41544.html",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FANDOM",
+              "score": 80,
+              "url": "http://fandom.wikia.com/articles/pokemon-lets-go-review",
+              "date": "2018-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/11720-pokemon-lets-go-pikachu-lets-go-eevee",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Forbes",
+              "score": 80,
+              "url": "https://www.forbes.com/sites/games/2018/11/18/pokemon-lets-go-review-its-time-to-go-back-to-a-rather-different-kanto/#703e21dc6110",
+              "date": "2018-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 85,
+              "url": "https://www.gameinformer.com/index.php/review/pokemon-lets-go-pikachu-pokemon-lets-go-eevee/a-classic-evolved",
+              "date": "2018-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Revolution",
+              "score": 60,
+              "url": "https://www.gamerevolution.com/review/461391-pokemon-lets-go-review-more-like-pokemon-maybe-lets-not",
+              "date": "2018-11-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game World Navigator Magazine",
+              "score": 78,
+              "url": "",
+              "date": "2019-02-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCrate",
+              "score": 73,
+              "url": "https://www.gamecrate.com/reviews/review-pokemon-lets-go-pokemon-bare-bones-beginner/21425",
+              "date": "2018-11-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 40,
+              "url": "https://gamecritics.com/gc-staff/pokemon-lets-go-eevee-review/",
+              "date": "2018-12-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 75,
+              "url": "https://www.gamegrin.com/reviews/pokemon-lets-go-eevee-review/",
+              "date": "2019-08-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/pokemon-lets-go-pikachu-lets-go-eevee-review/1900-6417036/",
+              "date": "2018-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 80,
+              "url": "http://www.gameblog.fr/tests/3220-pokemon-let-s-go-pikachu-evoli-switch",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameplanet",
+              "score": 80,
+              "url": "https://www.gameplanet.com.au/nintendo-switch/reviews/g5bf5ac2d71f69/Pok-mon-Lets-Go-Pikachu-and-Eevee-Review/",
+              "date": "2018-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 70,
+              "url": "https://gamer.nl/artikelen/review/pokemon-lets-go-eevee-en-pikachu-zijn-voor-nostalgiezoekers-en-nieuwkomers",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamersky",
+              "score": 82,
+              "url": "https://www.gamersky.com/review/201812/1130674.shtml",
+              "date": "2018-12-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 50,
+              "url": "https://games.tiscali.cz/recenze/pokemon-lets-go-pikachu-eevee-recenze-322129",
+              "date": "2019-01-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 90,
+              "url": "https://www.gamesradar.com/pokemon-lets-go-review/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "https://www.godisageek.com/reviews/pokemon-lets-go-eevee-review/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 80,
+              "url": "https://www.hardcoregamer.com/2018/11/19/review-pokemon-lets-go-pikachu-and-eevee/318351/",
+              "date": "2018-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 89,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-pokemon-lets-go-pikachu-eevee-nintendo-switch-328163",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 83,
+              "url": "https://www.ign.com/articles/2018/11/13/pokemon-lets-go-pikachu-and-eevee-review",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 80,
+              "url": "http://www.impulsegamer.com/pokemon-lets-go-eevee-with-poke-ball-plus-review-nintendo-switch/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "InsideGamer.nl",
+              "score": 70,
+              "url": "http://www.insidegamer.nl/artikel/pokemon-lets-go-pikachu-en-eevee-review-voor-een-nieuwe-generatie-trainers/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 75,
+              "url": " http://www.jeuxactu.com/test-pokemon-lets-go-evoli-pikachu-le-remake-qui-ne-s-assume-pas-116051.htm",
+              "date": "2018-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 75,
+              "url": "http://www.jeuxvideo.com/test/956013/pokemon-let-s-go-pikachu-evoli-un-bon-titre-pour-les-neophytes-et-les-nostalgiques.htm",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 80,
+              "url": "https://www.levelup.com/Nintendo-Switch/juegos/480789/Pokemon-Let-s-Go-Pikachu/review",
+              "date": "2018-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 80,
+              "url": "https://as.com/meristation/2018/11/13/analisis/1542111992_675446.html",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/pokemon-lets-go-pikachu-eevee-recensione.html",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "My Nintendo News",
+              "score": 80,
+              "url": "https://mynintendonews.com/2018/11/21/review-pokemon-lets-go-eevee-for-nintendo-switch/",
+              "date": "2018-11-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New Game Network",
+              "score": 68,
+              "url": "https://www.newgamenetwork.com/article/2043/pokemon-lets-go-pikachu-review/",
+              "date": "2018-11-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 70,
+              "url": "https://www.nintendoenthusiast.com/2018/11/13/pokemon-lets-go-eevee-review-for-nintendo-switch/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 85,
+              "url": "",
+              "date": "2019-02-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/pokemon-lets-go-pikachu-and-eevee-review/",
+              "date": "2018-11-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/pokemon_lets_go_pikachu_and_lets_go_eevee",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/48672/pokemon-lets-go-eevee-switch-review",
+              "date": "2018-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 91,
+              "url": "http://www.nintendojo.com/reviews/review-pokemon-lets-go",
+              "date": "2018-12-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 80,
+              "url": "https://www.pocketgamer.com/articles/079315/pokemon-lets-go-eevee-switch-review/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 90,
+              "url": "https://press-start.com.au/reviews/nintendo-switch/2018/11/14/pokemon-lets-go-pikachu-eevee-review-back-to-basics/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 80,
+              "url": "http://www.rpgfan.com/reviews/Pokemon_Lets_Go_Pikachu_Lets_Go_Evee/index.html",
+              "date": "2018-12-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Site",
+              "score": 80,
+              "url": "https://www.rpgsite.net/review/8029-pokemon-let-s-go-pikachu-let-s-go-eevee-review",
+              "date": "2018-11-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 90,
+              "url": "https://screenrant.com/pokemon-lets-go-pikachu-eevee-review/",
+              "date": "2018-12-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 73,
+              "url": "https://www.spaziogames.it/pokemon-lets-go-eevee-lets-go-pikachu-recensione/",
+              "date": "2018-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 80,
+              "url": "https://stevivor.com/reviews/pokemon-lets-go-review-in-progress-for-better-or-worse/",
+              "date": "2018-11-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 100,
+              "url": "http://switchplayer.net/2018/11/19/pokemon-lets-go-pikachu-lets-go-eevee-review/",
+              "date": "2018-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Telegraph",
+              "score": 80,
+              "url": "https://www.telegraph.co.uk/gaming/reviews/pokemon-go-review-new-switch-game-next-step-forpokemon-go-players/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Daily Dot",
+              "score": 80,
+              "url": "https://www.dailydot.com/parsec/pokemon-lets-go-review/",
+              "date": "2018-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 90,
+              "url": "https://www.thedigitalfix.com/gaming/content/11731/pokemon-lets-go-pikachu/",
+              "date": "2018-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Sydney Morning Herald",
+              "score": 85,
+              "url": "https://www.smh.com.au/technology/pokemon-let-s-go-pikachu-and-let-s-go-eevee-review-catch-em-one-handed-20181113-p50fnj.html",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 80,
+              "url": "https://www.thesixthaxis.com/2018/11/13/pokemon-lets-go-pikachu-and-lets-go-eevee-review/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TrueGaming",
+              "score": 70,
+              "url": "https://www.true-gaming.net/home/383608/",
+              "date": "2018-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 80,
+              "url": "https://www.trustedreviews.com/reviews/pokemon-lets-go-pikachu-and-eevee",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 90,
+              "url": "https://twinfinite.net/2018/11/pokemon-lets-go-pikachu-eevee-review/",
+              "date": "2018-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "USgamer",
+              "score": 80,
+              "url": "https://www.usgamer.net/articles/pokemon-lets-go-review-15-11-18",
+              "date": "2018-11-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 84,
+              "url": "https://vandal.elespanol.com/analisis/switch/pokemon-lets-go-pikachu-lets-go-eevee/45005",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Variety",
+              "score": 70,
+              "url": "https://variety.com/2018/gaming/reviews/pokemon-lets-go-eevee-review-1203034834/",
+              "date": "2018-11-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vgames",
+              "score": 85,
+              "url": "https://www.vgames.co.il/article/26263.html",
+              "date": "2018-11-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/review/pokemon-lets-go-eevee-plus-poke-ball-plus-pack",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 88,
+              "url": "https://wccftech.com/review/pokemon-lets-go-pikachu-and-eevee/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 70,
+              "url": "https://wegotthiscovered.com/gaming/pokemon-lets-go-pikachu-lets-go-eevee-review/",
+              "date": "2018-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 78
         },
         "user": {
           "score": 6.5,
@@ -242351,16 +243285,23 @@
               "scale": 10,
               "count": 1342,
               "url": "https://www.metacritic.com/game/pokemon-lets-go-eevee/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 31.622776601683793,
-              "normalized": 6.5,
-              "checked": "2026-11-02T18:06:18.519695+00:00"
+              "normalized": 6.5
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:57.892120+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 86,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:34:55.901031+00:00"
       },
       "requirements": {
         "image": true,
@@ -242378,7 +243319,11 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -242429,18 +243374,693 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:34:59.220840+00:00",
+      "full_version": 7
     },
     "Switch:5185": {
       "title": "Pokemon Let's Go Pikachu",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 79.1,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "3DJuegos",
+              "score": 85,
+              "url": "https://www.3djuegos.com/juegos/analisis/29790/0/pokemon-lets-go-pikachu-pokemon-lets-go-eevee/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "4P.de",
+              "score": 85,
+              "url": "http://www.4players.de/4players.php/dispbericht/Switch/Test/38868/83491/0/Pokemon_Lets_Go_Pikachu__Lets_Go_Evoli.html",
+              "date": "2018-11-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "App Trigger",
+              "score": 80,
+              "url": "https://apptrigger.com/2018/11/26/pokemon-lets-go-review-familiar-fresh/",
+              "date": "2018-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 87,
+              "url": "https://areajugones.sport.es/pokemon-lets-go-pikachu-evee/analisis/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 84,
+              "url": "https://atomix.vg/review-pokemon-lets-go-pikachu-y-lets-go-eevee/",
+              "date": "2018-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 60,
+              "url": "https://attackofthefanboy.com/reviews/pokemon-lets-go-review/",
+              "date": "2018-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 83,
+              "url": "https://cogconnected.com/review/pokemon-lets-go-pikachu-review/",
+              "date": "2018-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cheat Code Central",
+              "score": 90,
+              "url": "http://cheatcc.com/switch/rev/pokemonletsgoeeveereview.html",
+              "date": "2018-11-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 85,
+              "url": "https://www.criticalhit.net/review/pokemon-lets-go-pikachu-and-eevee-review-perfect-exeggution/",
+              "date": "2018-11-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/5188/1/pokemon-lets-go-pikachu-nintendo-switch.html",
+              "date": "2018-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 80,
+              "url": "https://www.darkstation.com/reviews/pokmon-lets-go-pikachueevee-review",
+              "date": "2018-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 75,
+              "url": "https://www.destructoid.com/review-pokemon-let-s-go-pikachu-eevee-529514.phtml",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Trends",
+              "score": 90,
+              "url": "https://www.digitaltrends.com/game-reviews/pokemon-lets-go-review/",
+              "date": "2018-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 80,
+              "url": "https://www.dualshockers.com/pokemon-lets-go-pikachu-review-switch/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Easy Allies",
+              "score": 75,
+              "url": "https://easyallies.com/#!/review/pokmon-lets-go-pikachu-and-lets-go-eevee",
+              "date": "2018-11-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 70,
+              "url": "",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 80,
+              "url": "https://www.eurogamer.it/articles/2018-11-13-pokemon-lets-go-pikachu-e-lets-go-eevee-recensione",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 80,
+              "url": "https://www.everyeye.it/articoli/recensione-pokemon-let-s-go-pikachu-eevee-acchiappali-tutti-switch-41544.html",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FANDOM",
+              "score": 80,
+              "url": "http://fandom.wikia.com/articles/pokemon-lets-go-review",
+              "date": "2018-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/11720-pokemon-lets-go-pikachu-lets-go-eevee",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Forbes",
+              "score": 80,
+              "url": "https://www.forbes.com/sites/games/2018/11/18/pokemon-lets-go-review-its-time-to-go-back-to-a-rather-different-kanto/#703e21dc6110",
+              "date": "2018-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 85,
+              "url": "https://www.gameinformer.com/index.php/review/pokemon-lets-go-pikachu-pokemon-lets-go-eevee/a-classic-evolved",
+              "date": "2018-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 70,
+              "url": "https://gamerant.com/pokemon-lets-go-pikachu-review/",
+              "date": "2018-12-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Revolution",
+              "score": 60,
+              "url": "https://www.gamerevolution.com/review/461391-pokemon-lets-go-review-more-like-pokemon-maybe-lets-not",
+              "date": "2018-11-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game World Navigator Magazine",
+              "score": 78,
+              "url": "",
+              "date": "2019-02-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCrate",
+              "score": 73,
+              "url": "https://www.gamecrate.com/reviews/review-pokemon-lets-go-pokemon-bare-bones-beginner/21425",
+              "date": "2018-11-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 70,
+              "url": "https://gameover.gr/reviews/38481-pokemon-lets-go-review",
+              "date": "2018-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 85,
+              "url": "https://www.gamepro.de/artikel/pokemon-lets-go-pikachu-switch-abenteuer-mit-ganz-viel-herz,3337035.html",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 95,
+              "url": "https://www.gamespace.com/reviews/pokemon-lets-go-pikachu-pika-review/",
+              "date": "2018-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/pokemon-lets-go-pikachu-lets-go-eevee-review/1900-6417036/",
+              "date": "2018-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 80,
+              "url": "http://www.gameblog.fr/tests/3220-pokemon-let-s-go-pikachu-evoli-switch",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameplanet",
+              "score": 80,
+              "url": "https://www.gameplanet.com.au/nintendo-switch/reviews/g5bf5ac2d71f69/Pok-mon-Lets-Go-Pikachu-and-Eevee-Review/",
+              "date": "2018-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 70,
+              "url": "https://gamer.nl/artikelen/review/pokemon-lets-go-eevee-en-pikachu-zijn-voor-nostalgiezoekers-en-nieuwkomers",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.no",
+              "score": 70,
+              "url": "https://www.gamer.no/artikler/anmeldelse-pokemon-let-s-go-pikachu/452817",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamersky",
+              "score": 82,
+              "url": "https://www.gamersky.com/review/201812/1130674.shtml",
+              "date": "2018-12-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 50,
+              "url": "https://games.tiscali.cz/recenze/pokemon-lets-go-pikachu-eevee-recenze-322129",
+              "date": "2019-01-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 90,
+              "url": "https://www.gamesradar.com/pokemon-lets-go-review/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 80,
+              "url": "http://gamingtrend.com/feature/reviews/nintendo-switch-i-choose-you-pokemon-lets-go-pikachu-review/",
+              "date": "2018-11-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 80,
+              "url": "https://www.hardcoregamer.com/2018/11/19/review-pokemon-lets-go-pikachu-and-eevee/318351/",
+              "date": "2018-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 89,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-pokemon-lets-go-pikachu-eevee-nintendo-switch-328163",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 83,
+              "url": "https://www.ign.com/articles/2018/11/13/pokemon-lets-go-pikachu-and-eevee-review",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 75,
+              "url": "https://es.ign.com/pokemon-lets-go-pikachu-nintendo-switch/141712/review/analisis-de-pokemon-lets-go-pikachu-y-lets-go-eevee-para-nin",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "InsideGamer.nl",
+              "score": 70,
+              "url": "http://www.insidegamer.nl/artikel/pokemon-lets-go-pikachu-en-eevee-review-voor-een-nieuwe-generatie-trainers/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 75,
+              "url": " http://www.jeuxactu.com/test-pokemon-lets-go-evoli-pikachu-le-remake-qui-ne-s-assume-pas-116051.htm",
+              "date": "2018-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 75,
+              "url": "http://www.jeuxvideo.com/test/956013/pokemon-let-s-go-pikachu-evoli-un-bon-titre-pour-les-neophytes-et-les-nostalgiques.htm",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 80,
+              "url": "https://www.levelup.com/Nintendo-Switch/juegos/480789/Pokemon-Let-s-Go-Pikachu/review",
+              "date": "2018-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "M3",
+              "score": 70,
+              "url": " https://m3.idg.se/2.1022/1.710831/pokemon-lets-go",
+              "date": "2018-11-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 80,
+              "url": "https://as.com/meristation/2018/11/13/analisis/1542111992_675446.html",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Merlin'in Kazanı (Turkey)",
+              "score": 81,
+              "url": "http://www.merlininkazani.com/Pokemon_Lets_Go-oyun_inceleme-104623p1.html",
+              "date": "2018-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 80,
+              "url": "https://metro.co.uk/2018/11/13/pokemon-lets-go-pikachu-review-nintendo-used-nostalgia-its-super-effective-8134907/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/pokemon-lets-go-pikachu-eevee-recensione.html",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New Game Network",
+              "score": 68,
+              "url": "https://www.newgamenetwork.com/article/2043/pokemon-lets-go-pikachu-review/",
+              "date": "2018-11-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2018/11/analisis-pokemon-lets-go-pikachu/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 85,
+              "url": "",
+              "date": "2019-02-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/pokemon-lets-go-pikachu-and-eevee-review/",
+              "date": "2018-11-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/pokemon_lets_go_pikachu_and_lets_go_eevee",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 65,
+              "url": "http://www.nintendoworldreport.com/review/48970/pokemon-lets-go-pikachu-switch-review",
+              "date": "2018-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 91,
+              "url": "http://www.nintendojo.com/reviews/review-pokemon-lets-go",
+              "date": "2018-12-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 85,
+              "url": "http://play.co.rs/2018/12/review-pokemon-lets-go-pikachu/",
+              "date": "2019-03-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 80,
+              "url": "https://www.pocketgamer.com/articles/079315/pokemon-lets-go-eevee-switch-review/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 90,
+              "url": "https://press-start.com.au/reviews/nintendo-switch/2018/11/14/pokemon-lets-go-pikachu-eevee-review-back-to-basics/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 80,
+              "url": "http://www.rpgfan.com/reviews/Pokemon_Lets_Go_Pikachu_Lets_Go_Evee/index.html",
+              "date": "2018-12-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Site",
+              "score": 80,
+              "url": "https://www.rpgsite.net/review/8029-pokemon-let-s-go-pikachu-let-s-go-eevee-review",
+              "date": "2018-11-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPGamer",
+              "score": 50,
+              "url": "https://rpgamer.com/review/pokemon-lets-go-pikachu-review/",
+              "date": "2018-12-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 90,
+              "url": "https://screenrant.com/pokemon-lets-go-pikachu-eevee-review/",
+              "date": "2018-12-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 73,
+              "url": "https://www.spaziogames.it/pokemon-lets-go-eevee-lets-go-pikachu-recensione/",
+              "date": "2018-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 80,
+              "url": "https://stevivor.com/reviews/pokemon-lets-go-review-in-progress-for-better-or-worse/",
+              "date": "2018-11-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 100,
+              "url": "http://switchplayer.net/2018/11/19/pokemon-lets-go-pikachu-lets-go-eevee-review/",
+              "date": "2018-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Telegraph",
+              "score": 80,
+              "url": "https://www.telegraph.co.uk/gaming/reviews/pokemon-go-review-new-switch-game-next-step-forpokemon-go-players/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Daily Dot",
+              "score": 80,
+              "url": "https://www.dailydot.com/parsec/pokemon-lets-go-review/",
+              "date": "2018-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 90,
+              "url": "https://www.thedigitalfix.com/gaming/content/11731/pokemon-lets-go-pikachu/",
+              "date": "2018-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Escapist",
+              "score": 80,
+              "url": "https://www.escapistmagazine.com/v2/2018/11/30/review-pokemon-lets-go-pikachu/",
+              "date": "2018-12-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 80,
+              "url": "https://www.thegamesmachine.it/pokemon-lets-go-pikachu-lets-go-eevee/pokemon-lets-go-pikachu-eevee-recensione-switch/",
+              "date": "2018-12-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Sydney Morning Herald",
+              "score": 85,
+              "url": "https://www.smh.com.au/technology/pokemon-let-s-go-pikachu-and-let-s-go-eevee-review-catch-em-one-handed-20181113-p50fnj.html",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 80,
+              "url": "https://www.thesixthaxis.com/2018/11/13/pokemon-lets-go-pikachu-and-lets-go-eevee-review/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TrueGaming",
+              "score": 70,
+              "url": "https://www.true-gaming.net/home/383608/",
+              "date": "2018-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 80,
+              "url": "https://www.trustedreviews.com/reviews/pokemon-lets-go-pikachu-and-eevee",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 90,
+              "url": "https://twinfinite.net/2018/11/pokemon-lets-go-pikachu-eevee-review/",
+              "date": "2018-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "USgamer",
+              "score": 80,
+              "url": "https://www.usgamer.net/articles/pokemon-lets-go-review",
+              "date": "2018-11-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 84,
+              "url": "https://vandal.elespanol.com/analisis/switch/pokemon-lets-go-pikachu-lets-go-eevee/45005",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 90,
+              "url": "https://www.vooks.net/pokemon-lets-go-pikachu-switch-review/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 88,
+              "url": "https://wccftech.com/review/pokemon-lets-go-pikachu-and-eevee/",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 70,
+              "url": "https://wegotthiscovered.com/gaming/pokemon-lets-go-pikachu-lets-go-eevee-review/",
+              "date": "2018-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 75,
+              "url": "https://www.xgn.nl/review/pokemon-lets-go-pikachu-review",
+              "date": "2018-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 84
         },
         "user": {
           "score": 6.4,
@@ -242452,16 +244072,23 @@
               "scale": 10,
               "count": 2183,
               "url": "https://www.metacritic.com/game/pokemon-lets-go-pikachu/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 31.622776601683793,
-              "normalized": 6.4,
-              "checked": "2026-11-02T18:06:19.638831+00:00"
+              "normalized": 6.4
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:11.520881+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 92,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:35:06.063048+00:00"
       },
       "requirements": {
         "image": true,
@@ -242479,7 +244106,11 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -242530,7 +244161,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:35:10.784725+00:00",
+      "full_version": 7
     },
     "Switch:4924": {
       "title": "Portal Knights",
@@ -281044,28 +282677,71 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 65.0,
+          "score": 68.3,
           "scale": 100,
           "sources": [
+            {
+              "name": "DualShockers",
+              "score": 70,
+              "url": "https://www.dualshockers.com/police-stories-review/",
+              "date": "2019-10-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 65.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=police-stories-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-police-stories-nintendo-switch/",
+              "date": "2019-10-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 4.51,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 3.6,
+              "scale": 10,
+              "count": 12,
+              "url": "https://www.metacritic.com/game/police-stories/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.4641016151377544,
+              "normalized": 3.5999999999999996
+            },
+            {
+              "score": 6.33,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/police_stories",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 6.33
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:11.521164+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:34:38.464616+00:00"
       },
       "requirements": {
         "image": true,
@@ -281082,7 +282758,10 @@
       "basics_attempted": "2026-11-02T22:45:11.521164+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -281132,7 +282811,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:34:40.991431+00:00",
+      "full_version": 7
     },
     "Switch:6572": {
       "title": "Pooplers",
@@ -350390,28 +352071,126 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 67.0,
+          "score": 81.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "Destructoid",
+              "score": 75,
+              "url": "https://www.destructoid.com/reviews/review-pocky-rocky-reshrined-switch-ps4-run-and-gun/",
+              "date": "2022-06-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "EGM",
+              "score": 100,
+              "url": "https://egmnow.com/pocky-rocky-reshrined-review/",
+              "date": "2022-06-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Finger Guns",
+              "score": 70,
+              "url": "https://fingerguns.net/reviews/2022/06/24/pocky-rocky-reshrined-review-switch-number-of-the-oni-by-shrine-maiden/",
+              "date": "2022-06-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 80,
+              "url": "https://www.heypoorplayer.com/2022/06/29/pocky-rocky-reshrined-review-switch/",
+              "date": "2022-06-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "INVEN",
+              "score": 78,
+              "url": "https://www.inven.co.kr/webzine/news/?news=271197",
+              "date": "2022-05-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 67.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=pocky-and-rocky-reshrined-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/pocky-and-rocky-reshrined",
+              "date": "2022-04-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/60776/pocky-n-rocky-reshrined-switch-review",
+              "date": "2022-06-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 90,
+              "url": "https://noisypixel.net/pocky-rocky-reshrined-review/",
+              "date": "2022-06-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Mako Reactor",
+              "score": 90,
+              "url": "https://themakoreactor.com/featured/pocky-and-rocky-reshrined-switch-review-ps4-nintendo-physical-inin-games-natsume/37429/",
+              "date": "2022-06-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 10
         },
         "user": {
-          "score": null,
+          "score": 7.7,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.7,
+              "scale": 10,
+              "count": 23,
+              "url": "https://www.metacritic.com/game/pocky-and-rocky-reshrined/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.795831523312719,
+              "normalized": 7.7
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 65,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/pocky_and_rocky_reshrined",
+              "platform": "Nintendo Switch",
+              "weight": 8.06225774829855,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:56.494184+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:34:33.481276+00:00"
       },
       "requirements": {
         "image": true,
@@ -350428,7 +352207,10 @@
       "basics_attempted": "2026-11-02T22:44:56.494184+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -350478,7 +352260,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:34:36.517543+00:00",
+      "full_version": 7
     },
     "Switch:9353": {
       "title": "Potion Party",
