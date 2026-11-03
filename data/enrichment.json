@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T00:21:17.406537+00:00",
+  "updated": "2026-11-03T00:23:54.102561+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
     "ready": 1958,
     "missing_image": 109,
-    "missing_store": 348,
+    "missing_store": 343,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -7976,19 +7976,21 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:43:32.366618+00:00"
+        "attempted": "2026-11-03T00:21:21.443162+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T21:43:32.366618+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:21:21.443162+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "store": {
         "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-BIO-SHIP-PALADIN-2020524.html",
@@ -8006,7 +8008,75 @@
         "Arcade Archives BIO-SHIP PALADIN"
       ],
       "full_attempted": "2026-11-02T19:53:16.915879+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:31.755273+00:00",
+              "next_attempt": "2026-11-04T00:23:31.755273+00:00",
+              "revision": "fdca36fcbaa1a57b:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/bio_ship_paladin",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_bio_ship_paladin",
+                "https://www.nintendolife.com/games/switch-eshop/arcade_archives_bio_ship_paladin"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/arcade_archives_bio_ship_paladin"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:36.908660+00:00",
+              "next_attempt": "2026-11-04T00:23:36.908660+00:00",
+              "revision": "fdca36fcbaa1a57b:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bio-ship-paladin-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bio-ship-paladin-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:46.561899+00:00",
+              "next_attempt": "2026-11-04T00:23:46.561899+00:00",
+              "revision": "fdca36fcbaa1a57b:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-bio-ship-paladin/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-bio-ship-paladin/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-bio-ship-paladin/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-bio-ship-paladin/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:47.837884+00:00",
+              "next_attempt": "2026-11-04T00:23:47.837884+00:00",
+              "revision": "fdca36fcbaa1a57b:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bio-Ship+Paladin&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bio-Ship+Paladin&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:23:47.838110+00:00",
+              "next_attempt": "2026-11-03T01:23:47.838110+00:00",
+              "revision": "fdca36fcbaa1a57b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:23:47.838145+00:00",
+              "next_attempt": "2026-11-03T01:23:47.838145+00:00",
+              "revision": "fdca36fcbaa1a57b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:14607": {
       "title": "Bish Bash Bots",
@@ -8215,19 +8285,21 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:43:32.366998+00:00"
+        "attempted": "2026-11-03T00:21:21.443334+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T21:43:32.366998+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:21:21.443334+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "store": {
         "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-BLACK-HEART-2072329.html",
@@ -8245,7 +8317,75 @@
         "Arcade Archives BLACK HEART"
       ],
       "full_attempted": "2026-11-02T19:53:41.290722+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:56.658322+00:00",
+              "next_attempt": "2026-11-04T00:22:56.658322+00:00",
+              "revision": "ef1712fe35965d48:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/black_heart",
+                "https://www.nintendolife.com/games/switch-eshop/black_heart",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_black_heart"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_black_heart"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:58.816320+00:00",
+              "next_attempt": "2026-11-04T00:22:58.816320+00:00",
+              "revision": "ef1712fe35965d48:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=black-heart-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=black-heart-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:06.105721+00:00",
+              "next_attempt": "2026-11-04T00:23:06.105721+00:00",
+              "revision": "ef1712fe35965d48:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-black-heart/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-black-heart/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-black-heart/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-black-heart/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:07.928755+00:00",
+              "next_attempt": "2026-11-04T00:23:07.928755+00:00",
+              "revision": "ef1712fe35965d48:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Black+Heart&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Black+Heart&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:23:07.928849+00:00",
+              "next_attempt": "2026-11-03T01:23:07.928849+00:00",
+              "revision": "ef1712fe35965d48:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:23:07.928878+00:00",
+              "next_attempt": "2026-11-03T01:23:07.928878+00:00",
+              "revision": "ef1712fe35965d48:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:10655": {
       "title": "Black Widow: Recharged",
@@ -9291,11 +9431,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:43:32.367353+00:00"
+        "attempted": "2026-11-03T00:21:21.444227+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -9303,11 +9443,13 @@
         "source": "https://www.nintendo.com/us/store/products/bones-cafe-switch/",
         "checked": "2026-11-02T21:43:38.290966+00:00"
       },
-      "basics_attempted": "2026-11-02T21:43:32.367353+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:21:21.444227+00:00",
+      "version": 7,
       "errors": {
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:56:30.995476+00:00",
       "store_evidence": [
@@ -9317,7 +9459,100 @@
           "checked": "2026-11-02T21:43:38.290532+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bone-s-Cafe-2363646.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:21:21.846018+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Bone's Cafe"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:21:21.846239+00:00",
+              "next_attempt": "2026-11-04T00:21:21.846239+00:00",
+              "revision": "eca379087ac33b28:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:21:21.846239+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bone-s-Cafe-2363646.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bone-s-Cafe-2363646.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:26.781247+00:00",
+              "next_attempt": "2026-11-04T00:22:26.781247+00:00",
+              "revision": "eca379087ac33b28:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/bones_cafe",
+                "https://www.nintendolife.com/games/nintendo-switch/bones_cafe"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/bones_cafe"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:29.433136+00:00",
+              "next_attempt": "2026-11-04T00:22:29.433136+00:00",
+              "revision": "eca379087ac33b28:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bones-cafe-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bones-cafe-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:35.872014+00:00",
+              "next_attempt": "2026-11-04T00:22:35.872014+00:00",
+              "revision": "eca379087ac33b28:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/bones-cafe/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/bones-cafe/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/bones-cafe/"
+              ],
+              "url": "https://www.metacritic.com/game/bones-cafe/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:37.629793+00:00",
+              "next_attempt": "2026-11-04T00:22:37.629793+00:00",
+              "revision": "eca379087ac33b28:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bone%27s+Cafe&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bone%27s+Cafe&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:22:37.629919+00:00",
+              "next_attempt": "2026-11-03T01:22:37.629919+00:00",
+              "revision": "eca379087ac33b28:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:22:37.629948+00:00",
+              "next_attempt": "2026-11-03T01:22:37.629948+00:00",
+              "revision": "eca379087ac33b28:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:11213": {
       "title": "Boomerang Fu",
@@ -11740,11 +11975,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:43:32.368952+00:00"
+        "attempted": "2026-11-03T00:21:21.444599+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -11752,12 +11987,14 @@
         "source": "https://www.nintendo.com/us/store/products/bullet-soul-switch/",
         "checked": "2026-11-02T21:43:41.584866+00:00"
       },
-      "basics_attempted": "2026-11-02T21:43:32.368952+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:21:21.444599+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:26:01.373713+00:00",
       "store_evidence": [
@@ -11767,7 +12004,100 @@
           "checked": "2026-11-02T21:43:41.584558+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bullet-Soul-2277684.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:21:23.358090+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Bullet Soul"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:21:23.358299+00:00",
+              "next_attempt": "2026-11-04T00:21:23.358299+00:00",
+              "revision": "c40e37ab27fd6c08:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:21:23.358299+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bullet-Soul-2277684.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bullet-Soul-2277684.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:31.649758+00:00",
+              "next_attempt": "2026-11-04T00:22:31.649758+00:00",
+              "revision": "c40e37ab27fd6c08:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/bullet_soul",
+                "https://www.nintendolife.com/games/nintendo-switch/bullet_soul"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/bullet_soul"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:34.695227+00:00",
+              "next_attempt": "2026-11-04T00:22:34.695227+00:00",
+              "revision": "c40e37ab27fd6c08:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bullet-soul-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bullet-soul-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:37.534543+00:00",
+              "next_attempt": "2026-11-04T00:22:37.534543+00:00",
+              "revision": "c40e37ab27fd6c08:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/bullet-soul/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/bullet-soul/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/bullet-soul/"
+              ],
+              "url": "https://www.metacritic.com/game/bullet-soul/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:39.195907+00:00",
+              "next_attempt": "2026-11-04T00:22:39.195907+00:00",
+              "revision": "c40e37ab27fd6c08:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bullet+Soul&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bullet+Soul&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:22:39.196033+00:00",
+              "next_attempt": "2026-11-03T01:22:39.196033+00:00",
+              "revision": "c40e37ab27fd6c08:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:22:39.196093+00:00",
+              "next_attempt": "2026-11-03T01:22:39.196093+00:00",
+              "revision": "c40e37ab27fd6c08:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:12654": {
       "title": "Bullet Soul Infinite Burst",
@@ -12399,19 +12729,21 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:43:32.370332+00:00"
+        "attempted": "2026-11-03T00:21:21.445045+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T21:43:32.370332+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:21:21.445045+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "store": {
         "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-CADASH-2440430.html",
@@ -12429,7 +12761,75 @@
         "Arcade Archives CADASH"
       ],
       "full_attempted": "2026-11-02T20:26:17.662872+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:16.737463+00:00",
+              "next_attempt": "2026-11-04T00:23:16.737463+00:00",
+              "revision": "6bbb9c039a620e11:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/cadash",
+                "https://www.nintendolife.com/games/switch-eshop/cadash",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_cadash"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_cadash"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:17.208729+00:00",
+              "next_attempt": "2026-11-04T00:23:17.208729+00:00",
+              "revision": "6bbb9c039a620e11:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=cadash-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cadash-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:33.491719+00:00",
+              "next_attempt": "2026-11-04T00:23:33.491719+00:00",
+              "revision": "6bbb9c039a620e11:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-cadash/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-cadash/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-cadash/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-cadash/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:34.958703+00:00",
+              "next_attempt": "2026-11-04T00:23:34.958703+00:00",
+              "revision": "6bbb9c039a620e11:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Cadash&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Cadash&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:23:34.958830+00:00",
+              "next_attempt": "2026-11-03T01:23:34.958830+00:00",
+              "revision": "6bbb9c039a620e11:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:23:34.958859+00:00",
+              "next_attempt": "2026-11-03T01:23:34.958859+00:00",
+              "revision": "6bbb9c039a620e11:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:12007": {
       "title": "Call of Duty: Modern Warfare II",
@@ -13674,7 +14074,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:43:39.202661+00:00"
+        "attempted": "2026-11-03T00:21:21.445453+00:00"
       },
       "requirements": {
         "image": true,
@@ -13686,12 +14086,15 @@
         "source": "https://www.nintendo.com/us/store/products/canceled-super-puzzles-dream-switch/",
         "checked": "2026-11-02T21:43:42.206060+00:00"
       },
-      "basics_attempted": "2026-11-02T21:43:39.202661+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:21:21.445453+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:26:46.248217+00:00",
       "store_evidence": [
@@ -13701,7 +14104,89 @@
           "checked": "2026-11-02T21:43:42.205755+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:21:21.649403+00:00",
+              "next_attempt": "2026-11-04T00:21:21.649403+00:00",
+              "revision": "3d34de9028e2ef26:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Canceled%21+Super+Puzzles+Dream%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Canceled%21+Super+Puzzles+Dream%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:16.670640+00:00",
+              "next_attempt": "2026-11-04T00:22:16.670640+00:00",
+              "revision": "3d34de9028e2ef26:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/canceled_super_puzzles_dream",
+                "https://www.nintendolife.com/games/switch-eshop/canceled_super_puzzles_dream"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/canceled_super_puzzles_dream"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:19.041439+00:00",
+              "next_attempt": "2026-11-04T00:22:19.041439+00:00",
+              "revision": "3d34de9028e2ef26:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=canceled-super-puzzles-dream-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=canceled-super-puzzles-dream-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:23.176588+00:00",
+              "next_attempt": "2026-11-04T00:22:23.176588+00:00",
+              "revision": "3d34de9028e2ef26:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/canceled-super-puzzles-dream/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/canceled-super-puzzles-dream/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/canceled-super-puzzles-dream/"
+              ],
+              "url": "https://www.metacritic.com/game/canceled-super-puzzles-dream/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:24.633676+00:00",
+              "next_attempt": "2026-11-04T00:22:24.633676+00:00",
+              "revision": "3d34de9028e2ef26:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Canceled%21+Super+Puzzles+Dream&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Canceled%21+Super+Puzzles+Dream&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:22:24.633801+00:00",
+              "next_attempt": "2026-11-03T01:22:24.633801+00:00",
+              "revision": "3d34de9028e2ef26:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:22:24.633837+00:00",
+              "next_attempt": "2026-11-03T01:22:24.633837+00:00",
+              "revision": "3d34de9028e2ef26:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:11185": {
       "title": "Cannibal Cuisine",
@@ -14271,11 +14756,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:44:41.628767+00:00"
+        "attempted": "2026-11-03T00:21:21.446129+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -14283,12 +14768,14 @@
         "source": "https://www.nintendo.com/us/store/products/cassiodora-switch/",
         "checked": "2026-11-02T21:44:43.158578+00:00"
       },
-      "basics_attempted": "2026-11-02T21:44:41.628767+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:21:21.446129+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:26:43.583237+00:00",
       "store_evidence": [
@@ -14298,7 +14785,100 @@
           "checked": "2026-11-02T21:44:43.158260+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cassiodora-2301549.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:21:23.949517+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Cassiodora"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:21:23.949716+00:00",
+              "next_attempt": "2026-11-04T00:21:23.949716+00:00",
+              "revision": "dbafe867a7cc4110:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:21:23.949716+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cassiodora-2301549.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cassiodora-2301549.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:36.644151+00:00",
+              "next_attempt": "2026-11-04T00:22:36.644151+00:00",
+              "revision": "dbafe867a7cc4110:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/cassiodora",
+                "https://www.nintendolife.com/games/nintendo-switch/cassiodora"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/cassiodora"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:40.938599+00:00",
+              "next_attempt": "2026-11-04T00:22:40.938599+00:00",
+              "revision": "dbafe867a7cc4110:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=cassiodora-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cassiodora-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:45.894890+00:00",
+              "next_attempt": "2026-11-04T00:22:45.894890+00:00",
+              "revision": "dbafe867a7cc4110:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/cassiodora/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/cassiodora/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/cassiodora/"
+              ],
+              "url": "https://www.metacritic.com/game/cassiodora/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:47.547354+00:00",
+              "next_attempt": "2026-11-04T00:22:47.547354+00:00",
+              "revision": "dbafe867a7cc4110:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Cassiodora&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Cassiodora&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:22:47.547482+00:00",
+              "next_attempt": "2026-11-03T01:22:47.547482+00:00",
+              "revision": "dbafe867a7cc4110:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:22:47.547509+00:00",
+              "next_attempt": "2026-11-03T01:22:47.547509+00:00",
+              "revision": "dbafe867a7cc4110:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:13522": {
       "title": "Castle Shikigami 2",
@@ -15028,19 +15608,21 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:46:03.068205+00:00"
+        "attempted": "2026-11-03T00:21:21.447318+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T21:46:03.068205+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:21:21.447318+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000040472/82b1591977e361e61b1974d20ece3443789b837b6ce66f73527c0ce7c2ae9b43",
@@ -15055,7 +15637,100 @@
           "checked": "2026-11-02T21:46:10.788716+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Catty-Batty-The-Spirit-Guide-2048917.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:21:25.062375+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Catty & Batty: The Spirit Guide"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:21:25.062626+00:00",
+              "next_attempt": "2026-11-04T00:21:25.062626+00:00",
+              "revision": "8e0d3c362a1b3328:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:21:25.062626+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Catty-Batty-The-Spirit-Guide-2048917.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Catty-Batty-The-Spirit-Guide-2048917.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:41.645115+00:00",
+              "next_attempt": "2026-11-04T00:22:41.645115+00:00",
+              "revision": "8e0d3c362a1b3328:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/catty_and_batty_the_spirit_guide",
+                "https://www.nintendolife.com/games/switch-eshop/catty_and_batty_the_spirit_guide"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/catty_and_batty_the_spirit_guide"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:42.248119+00:00",
+              "next_attempt": "2026-11-04T00:22:42.248119+00:00",
+              "revision": "8e0d3c362a1b3328:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=catty-and-batty-the-spirit-guide-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=catty-and-batty-the-spirit-guide-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:52.566015+00:00",
+              "next_attempt": "2026-11-04T00:22:52.566015+00:00",
+              "revision": "8e0d3c362a1b3328:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/catty-and-batty-the-spirit-guide/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/catty-and-batty-the-spirit-guide/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/catty-and-batty-the-spirit-guide/"
+              ],
+              "url": "https://www.metacritic.com/game/catty-and-batty-the-spirit-guide/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:22:54.351365+00:00",
+              "next_attempt": "2026-11-04T00:22:54.351365+00:00",
+              "revision": "8e0d3c362a1b3328:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Catty+%26+Batty%3A+The+Spirit+Guide&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Catty+%26+Batty%3A+The+Spirit+Guide&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:22:54.351507+00:00",
+              "next_attempt": "2026-11-03T01:22:54.351507+00:00",
+              "revision": "8e0d3c362a1b3328:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:22:54.351543+00:00",
+              "next_attempt": "2026-11-03T01:22:54.351543+00:00",
+              "revision": "8e0d3c362a1b3328:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:13218": {
       "title": "Caverns of Mars: Recharged",
@@ -95191,11 +95866,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:46:03.068399+00:00"
+        "attempted": "2026-11-03T00:22:24.633931+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -95203,12 +95878,14 @@
         "source": "https://www.nintendo.com/us/store/products/baking-time-switch/",
         "checked": "2026-11-02T21:46:07.594557+00:00"
       },
-      "basics_attempted": "2026-11-02T21:46:03.068399+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:22:24.633931+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:50:46.249248+00:00",
       "store_evidence": [
@@ -95218,7 +95895,100 @@
           "checked": "2026-11-02T21:46:07.594114+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Baking-Time-2565273.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:22:25.088171+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Baking Time"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:22:25.088377+00:00",
+              "next_attempt": "2026-11-04T00:22:25.088377+00:00",
+              "revision": "43056d6482fc3c56:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:22:25.088377+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Baking-Time-2565273.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Baking-Time-2565273.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:21.739438+00:00",
+              "next_attempt": "2026-11-04T00:23:21.739438+00:00",
+              "revision": "43056d6482fc3c56:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/baking_time",
+                "https://www.nintendolife.com/games/nintendo-switch/baking_time"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/baking_time"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:24.920936+00:00",
+              "next_attempt": "2026-11-04T00:23:24.920936+00:00",
+              "revision": "43056d6482fc3c56:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=baking-time-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=baking-time-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:28.108771+00:00",
+              "next_attempt": "2026-11-04T00:23:28.108771+00:00",
+              "revision": "43056d6482fc3c56:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/baking-time/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/baking-time/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/baking-time/"
+              ],
+              "url": "https://www.metacritic.com/game/baking-time/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:29.578634+00:00",
+              "next_attempt": "2026-11-04T00:23:29.578634+00:00",
+              "revision": "43056d6482fc3c56:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Baking+Time&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Baking+Time&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:23:29.578717+00:00",
+              "next_attempt": "2026-11-03T01:23:29.578717+00:00",
+              "revision": "43056d6482fc3c56:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:23:29.578743+00:00",
+              "next_attempt": "2026-11-03T01:23:29.578743+00:00",
+              "revision": "43056d6482fc3c56:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:15252": {
       "title": "Bit Dungeon Plus",
@@ -95896,19 +96666,21 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:46:03.068604+00:00"
+        "attempted": "2026-11-03T00:22:37.630083+00:00"
       },
       "requirements": {
         "image": true,
         "store": true,
         "rating": false
       },
-      "basics_attempted": "2026-11-02T21:46:03.068604+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:22:37.630083+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "store": {
         "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-CHAMPION-WRESTLER-2265842.html",
@@ -95926,7 +96698,75 @@
         "Arcade Archives CHAMPION WRESTLER"
       ],
       "full_attempted": "2026-11-02T20:27:13.254904+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:41.708029+00:00",
+              "next_attempt": "2026-11-04T00:23:41.708029+00:00",
+              "revision": "411b655b570e62d1:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/champion_wrestler",
+                "https://www.nintendolife.com/games/switch-eshop/champion_wrestler",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_champion_wrestler"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_champion_wrestler"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:42.057773+00:00",
+              "next_attempt": "2026-11-04T00:23:42.057773+00:00",
+              "revision": "411b655b570e62d1:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=champion-wrestler-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=champion-wrestler-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:52.451647+00:00",
+              "next_attempt": "2026-11-04T00:23:52.451647+00:00",
+              "revision": "411b655b570e62d1:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-champion-wrestler/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-champion-wrestler/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-champion-wrestler/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-champion-wrestler/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:23:53.936831+00:00",
+              "next_attempt": "2026-11-04T00:23:53.936831+00:00",
+              "revision": "411b655b570e62d1:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Champion+Wrestler&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Champion+Wrestler&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:23:53.936978+00:00",
+              "next_attempt": "2026-11-03T01:23:53.936978+00:00",
+              "revision": "411b655b570e62d1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:23:53.937010+00:00",
+              "next_attempt": "2026-11-03T01:23:53.937010+00:00",
+              "revision": "411b655b570e62d1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:15565": {
       "title": "Chef Chen: Fantasy Cook",
