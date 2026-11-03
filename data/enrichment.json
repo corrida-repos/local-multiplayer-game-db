@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T00:30:07.477401+00:00",
+  "updated": "2026-11-03T00:31:37.663287+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
     "ready": 1960,
     "missing_image": 109,
-    "missing_store": 321,
+    "missing_store": 315,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -27994,7 +27994,7 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:51:58.739318+00:00"
+        "attempted": "2026-11-03T00:30:11.628109+00:00"
       },
       "requirements": {
         "image": true,
@@ -28006,13 +28006,31 @@
         "source": "https://www.nintendolife.com/games/switch-eshop/espgaluda_ii",
         "checked": "2026-11-02T17:07:27.945585+00:00"
       },
-      "basics_attempted": "2026-11-02T21:51:58.739318+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:30:11.628109+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:30:12.223639+00:00",
+              "next_attempt": "2026-11-04T00:30:12.223639+00:00",
+              "revision": "82e107eb8e72c39c:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Espgaluda+II%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Espgaluda+II%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "Switch:11010": {
       "title": "Everafter Falls",
@@ -29549,11 +29567,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:51:58.747747+00:00"
+        "attempted": "2026-11-03T00:30:11.629496+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -29561,12 +29579,14 @@
         "source": "https://www.nintendo.com/us/store/products/farmers-co-op-out-of-this-world-switch/",
         "checked": "2026-11-02T21:52:07.258547+00:00"
       },
-      "basics_attempted": "2026-11-02T21:51:58.747747+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:30:11.629496+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:32:55.889266+00:00",
       "store_evidence": [
@@ -29576,7 +29596,100 @@
           "checked": "2026-11-02T21:52:07.258235+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Farmers-Co-op-Out-of-This-World-2028070.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:30:11.963477+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Farmers Co-op: Out of This World"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:30:11.963656+00:00",
+              "next_attempt": "2026-11-04T00:30:11.963656+00:00",
+              "revision": "3e5a6fec6a250468:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:30:11.963656+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Farmers-Co-op-Out-of-This-World-2028070.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Farmers-Co-op-Out-of-This-World-2028070.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:30:17.247864+00:00",
+              "next_attempt": "2026-11-04T00:30:17.247864+00:00",
+              "revision": "3e5a6fec6a250468:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/farmers_co_op_out_of_this_world",
+                "https://www.nintendolife.com/games/switch-eshop/farmers_co_op_out_of_this_world"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/farmers_co_op_out_of_this_world"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:30:17.556216+00:00",
+              "next_attempt": "2026-11-04T00:30:17.556216+00:00",
+              "revision": "3e5a6fec6a250468:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=farmers-co-op-out-of-this-world-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=farmers-co-op-out-of-this-world-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:30:22.874534+00:00",
+              "next_attempt": "2026-11-04T00:30:22.874534+00:00",
+              "revision": "3e5a6fec6a250468:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/farmers-co-op-out-of-this-world/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/farmers-co-op-out-of-this-world/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/farmers-co-op-out-of-this-world/"
+              ],
+              "url": "https://www.metacritic.com/game/farmers-co-op-out-of-this-world/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:30:24.534227+00:00",
+              "next_attempt": "2026-11-04T00:30:24.534227+00:00",
+              "revision": "3e5a6fec6a250468:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Farmers+Co-op%3A+Out+of+This+World&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Farmers+Co-op%3A+Out+of+This+World&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:30:24.534358+00:00",
+              "next_attempt": "2026-11-03T01:30:24.534358+00:00",
+              "revision": "3e5a6fec6a250468:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:30:24.534392+00:00",
+              "next_attempt": "2026-11-03T01:30:24.534392+00:00",
+              "revision": "3e5a6fec6a250468:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:10323": {
       "title": "Fhtagn! - Tales of the Creeping Madness",
@@ -29596,11 +29709,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:52:06.167065+00:00"
+        "attempted": "2026-11-03T00:30:11.630508+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -29608,12 +29721,14 @@
         "source": "https://www.nintendo.com/us/store/products/fhtagn-tales-of-the-creeping-madness-switch/",
         "checked": "2026-11-02T21:52:08.849147+00:00"
       },
-      "basics_attempted": "2026-11-02T21:52:06.167065+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:30:11.630508+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:33:02.214978+00:00",
       "store_evidence": [
@@ -29623,7 +29738,101 @@
           "checked": "2026-11-02T21:52:08.848765+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Fhtagn-Tales-of-the-Creeping-Madness-2016659.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:30:16.360237+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Fhtagn! - Tales of the Creeping Madness"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:30:16.360428+00:00",
+              "next_attempt": "2026-11-04T00:30:16.360428+00:00",
+              "revision": "be477c578a774de2:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:30:16.360428+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Fhtagn-Tales-of-the-Creeping-Madness-2016659.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Fhtagn-Tales-of-the-Creeping-Madness-2016659.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:32.164153+00:00",
+              "next_attempt": "2026-11-04T00:31:32.164153+00:00",
+              "revision": "be477c578a774de2:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/fhtagn_-_tales_of_the_creeping_madness",
+                "https://www.nintendolife.com/games/nintendo-switch/fhtagn_tales_of_the_creeping_madness",
+                "https://www.nintendolife.com/games/switch-eshop/fhtagn_tales_of_the_creeping_madness"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/fhtagn_tales_of_the_creeping_madness"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:32.926800+00:00",
+              "next_attempt": "2026-11-04T00:31:32.926800+00:00",
+              "revision": "be477c578a774de2:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=fhtagn-tales-of-the-creeping-madness-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=fhtagn-tales-of-the-creeping-madness-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:34.876572+00:00",
+              "next_attempt": "2026-11-04T00:31:34.876572+00:00",
+              "revision": "be477c578a774de2:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/fhtagn-tales-of-the-creeping-madness/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/fhtagn-tales-of-the-creeping-madness/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/fhtagn-tales-of-the-creeping-madness/"
+              ],
+              "url": "https://www.metacritic.com/game/fhtagn-tales-of-the-creeping-madness/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:36.469008+00:00",
+              "next_attempt": "2026-11-04T00:31:36.469008+00:00",
+              "revision": "be477c578a774de2:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Fhtagn%21+-+Tales+of+the+Creeping+Madness&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Fhtagn%21+-+Tales+of+the+Creeping+Madness&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:36.469172+00:00",
+              "next_attempt": "2026-11-03T01:31:36.469172+00:00",
+              "revision": "be477c578a774de2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:36.469208+00:00",
+              "next_attempt": "2026-11-03T01:31:36.469208+00:00",
+              "revision": "be477c578a774de2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:13382": {
       "title": "Fight N Rage",
@@ -31506,11 +31715,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:52:10.232552+00:00"
+        "attempted": "2026-11-03T00:30:11.630906+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -31518,12 +31727,14 @@
         "source": "https://www.nintendo.com/us/store/products/flewfies-adventure-switch/",
         "checked": "2026-11-02T21:52:12.542386+00:00"
       },
-      "basics_attempted": "2026-11-02T21:52:10.232552+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:30:11.630906+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:33:49.941217+00:00",
       "store_evidence": [
@@ -31533,7 +31744,100 @@
           "checked": "2026-11-02T21:52:12.542057+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Flewfie-s-Adventure-2213584.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:30:15.462513+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Flewfie's Adventure"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:30:15.462686+00:00",
+              "next_attempt": "2026-11-04T00:30:15.462686+00:00",
+              "revision": "58f035441d453a1b:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:30:15.462686+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Flewfie-s-Adventure-2213584.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Flewfie-s-Adventure-2213584.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:17.176675+00:00",
+              "next_attempt": "2026-11-04T00:31:17.176675+00:00",
+              "revision": "58f035441d453a1b:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/flewfies_adventure",
+                "https://www.nintendolife.com/games/nintendo-switch/flewfies_adventure"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/flewfies_adventure"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:17.511395+00:00",
+              "next_attempt": "2026-11-04T00:31:17.511395+00:00",
+              "revision": "58f035441d453a1b:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=flewfies-adventure-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=flewfies-adventure-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:23.035115+00:00",
+              "next_attempt": "2026-11-04T00:31:23.035115+00:00",
+              "revision": "58f035441d453a1b:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/flewfies-adventure/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/flewfies-adventure/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/flewfies-adventure/"
+              ],
+              "url": "https://www.metacritic.com/game/flewfies-adventure/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:24.465748+00:00",
+              "next_attempt": "2026-11-04T00:31:24.465748+00:00",
+              "revision": "58f035441d453a1b:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Flewfie%27s+Adventure&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Flewfie%27s+Adventure&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:24.465889+00:00",
+              "next_attempt": "2026-11-03T01:31:24.465889+00:00",
+              "revision": "58f035441d453a1b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:24.465923+00:00",
+              "next_attempt": "2026-11-03T01:31:24.465923+00:00",
+              "revision": "58f035441d453a1b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:13514": {
       "title": "Fort Boyard",
@@ -121030,18 +121334,19 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:51:58.739674+00:00"
+        "attempted": "2026-11-03T00:30:11.628248+00:00"
       },
       "requirements": {
         "image": true,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T21:51:58.739674+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:30:11.628248+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
       "full_attempted": "2026-11-02T19:51:45.141926+00:00",
       "image": {
@@ -121049,7 +121354,24 @@
         "source": "https://www.nindiespotlight.com/game_profile.cfm?game=basureroes-invasion-switch",
         "checked": "2026-11-02T21:52:07.411888+00:00"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:30:13.312406+00:00",
+              "next_attempt": "2026-11-04T00:30:13.312406+00:00",
+              "revision": "4c175d7bd38c92cb:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Basureroes%3A+Invasion%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Basureroes%3A+Invasion%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "PS5:16592": {
       "title": "Bee Simulator: The Hive",
@@ -121639,7 +121961,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:51:58.741607+00:00"
+        "attempted": "2026-11-03T00:30:11.628412+00:00"
       },
       "requirements": {
         "image": true,
@@ -121651,12 +121973,15 @@
         "source": "https://www.nintendo.com/us/store/products/chained-towards-heaven-switch/",
         "checked": "2026-11-02T21:52:02.649502+00:00"
       },
-      "basics_attempted": "2026-11-02T21:51:58.741607+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:30:11.628412+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:27:21.703044+00:00",
       "store_evidence": [
@@ -121666,7 +121991,89 @@
           "checked": "2026-11-02T21:52:02.649195+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:30:14.304521+00:00",
+              "next_attempt": "2026-11-04T00:30:14.304521+00:00",
+              "revision": "3ebde86cb6acd19b:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Chained+Towards+Heaven%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Chained+Towards+Heaven%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:07.200918+00:00",
+              "next_attempt": "2026-11-04T00:31:07.200918+00:00",
+              "revision": "3ebde86cb6acd19b:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/chained_towards_heaven",
+                "https://www.nintendolife.com/games/switch-eshop/chained_towards_heaven"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/chained_towards_heaven"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:07.575140+00:00",
+              "next_attempt": "2026-11-04T00:31:07.575140+00:00",
+              "revision": "3ebde86cb6acd19b:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=chained-towards-heaven-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=chained-towards-heaven-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:12.083173+00:00",
+              "next_attempt": "2026-11-04T00:31:12.083173+00:00",
+              "revision": "3ebde86cb6acd19b:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/chained-towards-heaven/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/chained-towards-heaven/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/chained-towards-heaven/"
+              ],
+              "url": "https://www.metacritic.com/game/chained-towards-heaven/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:14.249132+00:00",
+              "next_attempt": "2026-11-04T00:31:14.249132+00:00",
+              "revision": "3ebde86cb6acd19b:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Chained+Towards+Heaven&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Chained+Towards+Heaven&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:14.249275+00:00",
+              "next_attempt": "2026-11-03T01:31:14.249275+00:00",
+              "revision": "3ebde86cb6acd19b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:14.249302+00:00",
+              "next_attempt": "2026-11-03T01:31:14.249302+00:00",
+              "revision": "3ebde86cb6acd19b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:16483": {
       "title": "Chip ‘n Clawz vs. The Brainioids",
@@ -121809,11 +122216,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:51:58.745856+00:00"
+        "attempted": "2026-11-03T00:30:11.628834+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -121821,12 +122228,14 @@
         "source": "https://www.nintendo.com/us/store/products/cho-aniki-collection-switch/",
         "checked": "2026-11-02T21:52:08.351280+00:00"
       },
-      "basics_attempted": "2026-11-02T21:51:58.745856+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:30:11.628834+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No exact scored Nintendo Switch review"
+        "slush": "No exact scored Nintendo Switch review",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:27:50.393448+00:00",
       "store_evidence": [
@@ -121836,7 +122245,101 @@
           "checked": "2026-11-02T21:52:08.350949+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cho-Aniki-Collection-2741188.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:30:14.122579+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Cho Aniki Collection"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:30:14.122762+00:00",
+              "next_attempt": "2026-11-04T00:30:14.122762+00:00",
+              "revision": "9c4a08e36a68c8cb:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:30:14.122762+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cho-Aniki-Collection-2741188.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cho-Aniki-Collection-2741188.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:02.274984+00:00",
+              "next_attempt": "2026-11-04T00:31:02.274984+00:00",
+              "revision": "9c4a08e36a68c8cb:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/cho_aniki_collection",
+                "https://www.nintendolife.com/games/switch-eshop/cho_aniki_collection"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/cho_aniki_collection"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:06.166162+00:00",
+              "next_attempt": "2026-11-04T00:31:06.166162+00:00",
+              "revision": "9c4a08e36a68c8cb:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=cho-aniki-collection-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cho-aniki-collection-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:09.868829+00:00",
+              "next_attempt": "2026-11-04T00:31:09.868829+00:00",
+              "revision": "9c4a08e36a68c8cb:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/cho-aniki-collection/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/cho-aniki-collection/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/cho-aniki-collection/"
+              ],
+              "url": "https://www.metacritic.com/game/cho-aniki-collection/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:14.048047+00:00",
+              "next_attempt": "2026-11-04T00:31:14.048047+00:00",
+              "revision": "9c4a08e36a68c8cb:7",
+              "reason": "No exact scored Nintendo Switch review",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Cho+Aniki+Collection&per_page=5",
+                "https://gameslushpile.com/2025/02/04/cho-aniki-collection-switch-review/"
+              ],
+              "url": "https://gameslushpile.com/2025/02/04/cho-aniki-collection-switch-review/"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:14.048143+00:00",
+              "next_attempt": "2026-11-03T01:31:14.048143+00:00",
+              "revision": "9c4a08e36a68c8cb:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:14.048173+00:00",
+              "next_attempt": "2026-11-03T01:31:14.048173+00:00",
+              "revision": "9c4a08e36a68c8cb:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:16612": {
       "title": "DESERTED",
@@ -128492,11 +128995,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:53:47.076135+00:00"
+        "attempted": "2026-11-03T00:30:11.631078+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -128504,12 +129007,14 @@
         "source": "https://www.nintendo.com/us/store/products/bloom-paradise-switch/",
         "checked": "2026-11-02T21:53:49.685603+00:00"
       },
-      "basics_attempted": "2026-11-02T21:53:47.076135+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:30:11.631078+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:55:23.647317+00:00",
       "store_evidence": [
@@ -128519,7 +129024,100 @@
           "checked": "2026-11-02T21:53:49.685294+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bloom-Paradise-2849193.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:30:13.057130+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Bloom Paradise"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:30:13.057311+00:00",
+              "next_attempt": "2026-11-04T00:30:13.057311+00:00",
+              "revision": "21c7f9b14f705405:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:30:13.057311+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bloom-Paradise-2849193.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bloom-Paradise-2849193.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:30:57.171443+00:00",
+              "next_attempt": "2026-11-04T00:30:57.171443+00:00",
+              "revision": "21c7f9b14f705405:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/bloom_paradise",
+                "https://www.nintendolife.com/games/nintendo-switch/bloom_paradise"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/bloom_paradise"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:30:59.974141+00:00",
+              "next_attempt": "2026-11-04T00:30:59.974141+00:00",
+              "revision": "21c7f9b14f705405:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bloom-paradise-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bloom-paradise-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:02.147504+00:00",
+              "next_attempt": "2026-11-04T00:31:02.147504+00:00",
+              "revision": "21c7f9b14f705405:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/bloom-paradise/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/bloom-paradise/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/bloom-paradise/"
+              ],
+              "url": "https://www.metacritic.com/game/bloom-paradise/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:03.656924+00:00",
+              "next_attempt": "2026-11-04T00:31:03.656924+00:00",
+              "revision": "21c7f9b14f705405:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bloom+Paradise&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bloom+Paradise&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:03.657072+00:00",
+              "next_attempt": "2026-11-03T01:31:03.657072+00:00",
+              "revision": "21c7f9b14f705405:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:03.657105+00:00",
+              "next_attempt": "2026-11-03T01:31:03.657105+00:00",
+              "revision": "21c7f9b14f705405:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:16736": {
       "title": "Bosorka",
@@ -128539,11 +129137,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:53:47.076396+00:00"
+        "attempted": "2026-11-03T00:30:12.224147+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -128551,12 +129149,14 @@
         "source": "https://www.nintendo.com/us/store/products/bosorka-switch/",
         "checked": "2026-11-02T21:53:51.382487+00:00"
       },
-      "basics_attempted": "2026-11-02T21:53:47.076396+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:30:12.224147+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:57:14.546255+00:00",
       "store_evidence": [
@@ -128566,7 +129166,100 @@
           "checked": "2026-11-02T21:53:51.382153+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bosorka-2807586.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:30:17.401242+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Bosorka"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:30:17.401417+00:00",
+              "next_attempt": "2026-11-04T00:30:17.401417+00:00",
+              "revision": "8ea9012a9b535143:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:30:17.401417+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bosorka-2807586.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bosorka-2807586.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:27.157688+00:00",
+              "next_attempt": "2026-11-04T00:31:27.157688+00:00",
+              "revision": "8ea9012a9b535143:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/bosorka",
+                "https://www.nintendolife.com/games/nintendo-switch/bosorka"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/bosorka"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:29.467440+00:00",
+              "next_attempt": "2026-11-04T00:31:29.467440+00:00",
+              "revision": "8ea9012a9b535143:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bosorka-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bosorka-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:36.054179+00:00",
+              "next_attempt": "2026-11-04T00:31:36.054179+00:00",
+              "revision": "8ea9012a9b535143:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/bosorka/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/bosorka/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/bosorka/"
+              ],
+              "url": "https://www.metacritic.com/game/bosorka/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:37.489006+00:00",
+              "next_attempt": "2026-11-04T00:31:37.489006+00:00",
+              "revision": "8ea9012a9b535143:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bosorka&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bosorka&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:37.489145+00:00",
+              "next_attempt": "2026-11-03T01:31:37.489145+00:00",
+              "revision": "8ea9012a9b535143:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:37.489172+00:00",
+              "next_attempt": "2026-11-03T01:31:37.489172+00:00",
+              "revision": "8ea9012a9b535143:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:16983": {
       "title": "Bratz: Rhythm & Style",
@@ -128804,7 +129497,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:53:47.076623+00:00"
+        "attempted": "2026-11-03T00:30:13.312879+00:00"
       },
       "requirements": {
         "image": true,
@@ -128816,15 +129509,100 @@
         "source": "https://www.nintendolife.com/games/switch-eshop/bubble_trouble_3",
         "checked": "2026-11-02T17:09:54.294141+00:00"
       },
-      "basics_attempted": "2026-11-02T21:53:47.076623+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:30:13.312879+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:26:15.501170+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:30:15.391900+00:00",
+              "next_attempt": "2026-11-04T00:30:15.391900+00:00",
+              "revision": "d653e8efa9193f63:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Bubble+Trouble+3%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Bubble+Trouble+3%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:12.268690+00:00",
+              "next_attempt": "2026-11-04T00:31:12.268690+00:00",
+              "revision": "d653e8efa9193f63:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/bubble_trouble_3",
+                "https://www.nintendolife.com/games/nintendo-switch/bubble_trouble_3"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/bubble_trouble_3"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:12.673243+00:00",
+              "next_attempt": "2026-11-04T00:31:12.673243+00:00",
+              "revision": "d653e8efa9193f63:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bubble-trouble-3-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bubble-trouble-3-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:15.098528+00:00",
+              "next_attempt": "2026-11-04T00:31:15.098528+00:00",
+              "revision": "d653e8efa9193f63:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/bubble-trouble-3/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/bubble-trouble-3/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/bubble-trouble-3/"
+              ],
+              "url": "https://www.metacritic.com/game/bubble-trouble-3/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:16.576939+00:00",
+              "next_attempt": "2026-11-04T00:31:16.576939+00:00",
+              "revision": "d653e8efa9193f63:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bubble+Trouble+3&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bubble+Trouble+3&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:16.577097+00:00",
+              "next_attempt": "2026-11-03T01:31:16.577097+00:00",
+              "revision": "d653e8efa9193f63:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:16.577128+00:00",
+              "next_attempt": "2026-11-03T01:31:16.577128+00:00",
+              "revision": "d653e8efa9193f63:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:16789": {
       "title": "CATO: Buttered Cat",
