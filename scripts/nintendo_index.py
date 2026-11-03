@@ -67,17 +67,23 @@ def editions():
             if key:index.setdefault(key,set()).add(pid)
     return index
 
-def matching_ids(names):
-    """Exact titles first, then platform-port/qualifier variants, then one unique standard edition."""
+def reserved_product(pid,reserved):
+    """True when an official product is named exactly like a different catalog game."""
+    from scripts.stores import identity
+    return any(identity(name) in reserved for name in load().get('products',{}).get(pid,{}).get('names',[]))
+
+def matching_ids(names,reserved=frozenset()):
+    """Exact titles first, then platform-port/qualifier variants, then one unique standard edition.
+    Loose tiers never take a product named exactly like another catalog game (e.g. a separate Deluxe entry)."""
     from scripts.stores import identity,name_keys,edition_key
     ids=set().union(*[titles().get(identity(name),set()) for name in names])
     if ids:return ids
-    ids=set().union(*[variants().get(key,set()) for name in names for key in name_keys(name)])
+    ids={pid for pid in set().union(*[variants().get(key,set()) for name in names for key in name_keys(name)]) if not reserved_product(pid,reserved)}
     if ids:return ids
-    ids=set().union(*[editions().get(edition_key(name),set()) for name in names if edition_key(name)])
+    ids={pid for pid in set().union(*[editions().get(edition_key(name),set()) for name in names if edition_key(name)]) if not reserved_product(pid,reserved)}
     return ids if len(ids)==1 else set()
 
-def candidates(game,names,store_evidence):
+def candidates(game,names,store_evidence,reserved=frozenset()):
     from scripts.stores import portugal_url
     products=load().get('products',{})
-    return [{**products[pid],'id':pid} for pid in sorted(matching_ids(names)) if portugal_url('Switch',products[pid].get('pt_url',''))]
+    return [{**products[pid],'id':pid} for pid in sorted(matching_ids(names,reserved)) if portugal_url('Switch',products[pid].get('pt_url',''))]

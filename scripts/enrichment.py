@@ -84,10 +84,22 @@ def psn_search(title,country='PT',language='pt'):
         if not items or not following or following in seen:raise ValueError('Incomplete or repeating PSN search pagination')
         seen.add(following);cursor=following;offset+=len(items)
 
-def psn_metadata(game,url,page):
+EDITION_TAIL=re.compile(r"(?:[^\s:]+\s+){0,2}(?:edition|edição|cut)|(?:edição|edition)\s+[^\s:]+|(?:versão|version)\s+(?:do|of the)\s+(?:diretor|director)",re.I)
+def psn_edition_tier(game,name):
+    """A PS5 product sold under an edition name of this exact title ("X: Console Edition", "X - Final Cut"),
+    or this catalog title is a standard edition of the product's plain name. Never another catalog game."""
+    clean=stores.PLATFORM_SUFFIX.sub('',(name or '').replace('™','').replace('®','')).strip()
+    if not clean or identity(clean) in reserved_titles(game):return False
+    known={identity(value) for value in known_names(game)}
+    for found in re.finditer(r'\s*(?::|\s[-–—]|[-–—]\s)\s*',clean):
+        if identity(clean[:found.start()]) in known and EDITION_TAIL.fullmatch(clean[found.end():].strip()):return True
+    return any(stores.edition_key(value) and stores.edition_key(value)!=identity(value) and stores.edition_key(value)==identity(clean) for value in known_names(game))
+
+def psn_metadata(game,url,page,edition=False):
     if not url.startswith('https://store.playstation.com/pt-pt/'):raise ValueError('Portugal PSN URL required')
     product=ratings.psn_product(page,url)
-    if not product or 'PS5' not in product.get('platforms',[]) or not any(matches_name(game,name) for name in [product.get('name',''),product.get('invariantName','')]):raise ValueError('Exact PS5 product identity not verified')
+    names=[product.get('name',''),product.get('invariantName','')] if product else []
+    if not product or 'PS5' not in product.get('platforms',[]) or not any(matches_name(game,name) or (edition and psn_edition_tier(game,name)) for name in names):raise ValueError('Exact PS5 product identity not verified')
     if product.get('storeDisplayClassification') in ['ADD_ON','DEMO','TRIAL'] or product.get('topCategory')=='ADD_ON':raise ValueError('Not the full game')
     checked=now();result={'store':{'url':url,'label':'Abrir na PlayStation Store','checked':checked,'region':'PT','verified':True},'image':{'url':image_from_media(product.get('media')),'source':url,'checked':checked}}
     user=ratings.psn_rating(page,url)
@@ -105,13 +117,14 @@ def resolve_psn(game,legacy,known_store):
     for url in candidates:
         try:final,page=get(url);return psn_metadata(game,final,page)
         except Exception as exc:errors.append(str(exc)[:120])
-    tried=set(candidates);ps4_only=False
+    tried=set(candidates);ps4_only=False;editions=[]
     for title in known_names(game)[:4]:
         for country,language in [('PT','pt'),('GB','en')]:
             try:results=psn_search(title,country,language)
             except Exception as exc:
                 errors.append(str(exc)[:120]);continue
             ranked=[(tier,i,item) for i,item in enumerate(results) for tier in [name_tier(game,item.get('name',''))] if tier is not None]
+            editions.extend(item for item in results if item.get('__typename')=='Product' and 'PS5' in (item.get('platforms') or []) and name_tier(game,item.get('name','')) is None and psn_edition_tier(game,item.get('name','')))
             for _,_,item in sorted(ranked,key=lambda value:value[:2]):
                 if item.get('__typename')=='Product':
                     if 'PS5' not in (item.get('platforms') or []):
@@ -126,6 +139,13 @@ def resolve_psn(game,legacy,known_store):
                     tried.add(url)
                     try:final,page=get(url);return psn_metadata(game,final,page)
                     except Exception as exc:errors.append(str(exc)[:120])
+    # Only when no exact product exists: a full PS5 game sold under an edition name of the same title.
+    for item in editions:
+        url='https://store.playstation.com/pt-pt/product/'+item['id']
+        if url in tried:continue
+        tried.add(url)
+        try:final,page=get(url);return psn_metadata(game,final,page,edition=True)
+        except Exception as exc:errors.append(str(exc)[:120])
     raise ValueError(('PS4-only listings found; native PS5 identity requires review. ' if ps4_only else '')+'No exact Portugal PS5 product verified'+(': '+'; '.join(errors[:2]) if errors else ''))
 
 def valid_image(url):
@@ -149,9 +169,62 @@ def nintendo_index_match(game,doc):
     if canonical(doc.get('title','')) in {canonical(value) for value in names}:return True
     return bool(set(stores.name_keys(doc.get('title',''))).intersection(key for value in names for key in stores.name_keys(value)))
 
+NSO_APP=re.compile(r'Nintendo Classics|Nintendo Switch Online',re.I);nso_lock=threading.Lock();nso_cache={}
+def nso_listing(page):
+    """Included games on an official Nintendo Switch Online app page: title and the game's own artwork."""
+    games=[]
+    for item in re.finditer(r'<li\b[^>]*data-nt-item-title-master="([^"]+)"[^>]*>(.*?)</li>',page,re.S):
+        image=re.search(r'data-xs="(https://[^"]+)"',item[2])
+        games.append({'title':html.unescape(item[1]).strip().rstrip('*').strip(),'image':image[1] if image and valid_image(image[1]) else None})
+    return games
+def nso_catalog():
+    """Games listed on every Portuguese Nintendo Switch Online / Nintendo Classics app page, fetched once per run."""
+    with nso_lock:
+        if 'games' in nso_cache:return nso_cache['games']
+        apps=[(pid,p) for pid,p in nintendo_index.load().get('products',{}).items() if any(NSO_APP.search(n) for n in p['names']) and stores.portugal_url('Switch',p.get('pt_url',''))]
+        if not apps:raise ValueError('No Nintendo Switch Online app listings indexed')
+        games=[]
+        for pid,product in sorted(apps):
+            final,page=get(product['pt_url'])
+            if not stores.portugal_url('Switch',final) or not urllib.parse.urlparse(final).path.endswith('-'+pid+'.html'):raise ValueError('Nintendo Switch Online app page identity not verified')
+            app=re.split(r'\s+[–-]\s+',product.get('pt_title') or product['names'][0])[0]
+            games.extend({**game,'url':final,'app':app} for game in nso_listing(page))
+        nso_cache['games']=games;return games
+def resolve_nso(game):
+    matches=[item for item in nso_catalog() if matches_name(game,item['title'])]
+    if len({item['url'] for item in matches})!=1:raise ValueError('Not listed on one Nintendo Switch Online app' if not matches else 'Listed on several Nintendo Switch Online apps')
+    item=matches[0];checked=now()
+    store={'url':item['url'],'label':'Ver no Nintendo Switch Online','checked':checked,'region':'PT','verified':True,'note':'Incluído na aplicação '+item['app']+' do Nintendo Switch Online.','nso_title':item['title']}
+    return {'store':store,'image':{'url':item['image'],'source':item['url'],'checked':checked,'method':'nintendo-switch-online-listing'}}
+
+catalog_lock=threading.Lock();catalog_cache={}
+def reserved_titles(game):
+    """Identities of other catalog games on the same console, which loose title matching must not claim."""
+    with catalog_lock:
+        if 'titles' not in catalog_cache:
+            index={}
+            for item in read('catalog.json',{'games':[]}).get('games',[]):index.setdefault(item.get('platform'),set()).add(identity(item.get('title','')))
+            catalog_cache['titles']=index
+    own={identity(name) for name in known_names(game)}
+    return frozenset(catalog_cache['titles'].get(game.get('platform'),set())-own)
+
+def release_reserved_store(game,entry,reserved):
+    """Drop a Switch link whose official product is named after a different catalog game, not this one."""
+    url=(entry.get('store') or {}).get('url','')
+    found=re.search(r'-(\d+)\.html$',url)
+    product=nintendo_index.load().get('products',{}).get(found[1] if found else '',{})
+    if game['platform']!='Switch' or not product or (entry.get('store') or {}).get('nso_title'):return False
+    names={identity(name) for name in product.get('names',[])}
+    if names & {identity(game['title'])} or not names & reserved:return False
+    entry['store_released']={'url':url,'checked':now(),'reason':'Official product is a separate catalog game: '+product['names'][0]}
+    entry.pop('store',None);entry.get('field_status',{}).pop('store',None)
+    if (entry.get('image') or {}).get('source')==url:entry.pop('image',None);entry.get('field_status',{}).pop('image',None)
+    if entry.get('aliases'):entry['aliases']=[name for name in entry['aliases'] if identity(name) not in names]
+    return True
+
 def resolve_nintendo(game,known_store):
     names=known_names(game)+stores.NINTENDO_NAMES.get(game['title'],[]);errors=[];tried=set()
-    products=nintendo_index.candidates(game,names,known_store)
+    products=nintendo_index.candidates(game,names,known_store,reserved_titles(game))
     candidates=[]
     for url in [known_store.get('url'),source_match(game).get('store_url')]:
         if url and stores.portugal_url('Switch',url):candidates.append((url,names,''))
@@ -177,6 +250,7 @@ def resolve_nintendo(game,known_store):
         except Exception as exc:errors.append(str(exc)[:160]);continue
         for doc in docs:
             if not nintendo_index_match(game,doc):continue
+            if identity(doc.get('title','')) in reserved_titles(game) and identity(doc.get('title',''))!=identity(game['title']):continue
             candidate=urllib.parse.urljoin('https://www.nintendo.com',doc.get('url',''))
             if candidate in tried or not stores.portugal_url('Switch',candidate):continue
             tried.add(candidate)
@@ -186,6 +260,9 @@ def resolve_nintendo(game,known_store):
                 checked=now()
                 return {'store':{'url':final,'label':'Abrir na Nintendo eShop','checked':checked,'region':'PT','verified':True},'image':{'url':meta_image(page) or doc.get('image_url_sq_s'),'source':final,'checked':checked},'aliases':list(dict.fromkeys(names+[doc['title']]))}
             except Exception as exc:errors.append(str(exc)[:160])
+    # Classic games sold only inside a Nintendo Switch Online app link to that official app, as Kirby Super Star does.
+    try:return resolve_nso(game)
+    except Exception as exc:errors.append(str(exc)[:160])
     raise ValueError('No exact Portuguese Switch listing verified'+(': '+'; '.join(errors[-2:]) if errors else ''))
 
 def community(game):
@@ -396,6 +473,7 @@ def seed(games,entries,legacy,known_stores,old_composites,old_trailers,artwork,o
         if valid_image(artwork.get(game['title'],{}).get('url')) and not entry.get('image',{}).get('url'):entry['image']=artwork[game['title']]
         if known_stores.get(key,{}).get('url') and not entry.get('store',{}).get('url'):entry['store']=known_stores[key]
         migrate_entry(game,entry)
+        if release_reserved_store(game,entry,reserved_titles({**game,'aliases':[]})):entry['requirements']=requirements(entry)
         if old_trailers.get(key,{}).get('id'):entry.setdefault('trailer',old_trailers[key])
         if old_plus.get(key,{}).get('checked'):entry.setdefault('psplus',old_plus[key])
         if 'ratings' not in entry:

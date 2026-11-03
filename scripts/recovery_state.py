@@ -1,6 +1,6 @@
 """Durable per-field source attempts; unresolved fields never leave recovery."""
 import datetime as dt,hashlib,json,urllib.error
-VERSION=2  # 2: tiered platform-suffix, qualifier and unique-edition title matching
+VERSION=3  # 2: tiered title matching; 3: NSO app listings, PSN edition names, Metacritic search, catalog-reserved titles
 POLICY='portugal-minimum-v1'
 FIELDS=('image','store','rating')
 def utc():return dt.datetime.now(dt.timezone.utc)

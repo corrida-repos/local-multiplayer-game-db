@@ -138,6 +138,12 @@ Existing image links receive a weekly HTTP health check, including an initial sw
 
 Title matching is tiered. Exact identity is tried first. Next, platform-port labels ("for Nintendo Switch", "para a PS5™", "Nintendo Switch™ Version") and trailing descriptive qualifiers without digits ("(QUByte Classics)", "(Classic)", "(Enhanced)") are ignored; qualifiers containing years or numbers are kept, and sequels never merge. Only in the official Nintendo index, and only when exactly one product matches, a standard edition name (Definitive, Ultimate, Deluxe, Complete, Anniversary, Game of the Year, Reloaded, Remastered, HD) may resolve the base title. A Portuguese Nintendo page whose localized title adds a regional subtitle is accepted when the final URL keeps the name-matched product's official ID. A self-redirect loop (bot protection) is recorded as `blocked` and retried later, never bypassed.
 
+Further bridges for unresolved entries:
+- Classic Switch games sold only inside a Nintendo Switch Online app link to that official Portuguese app page (as Kirby Super Star already did), but only when the game appears in that app's own published list. The listed game's own NSO artwork supplies the image.
+- PS5 games with no exact product may match a native full-game PS5 product sold under an edition name of the same title ("X: Console Edition", "X - Final Cut", "X - Versão do Diretor"). Expansions and other subtitled products are rejected.
+- Metacritic's own search supplies console-matched slugs when guessed slugs fail.
+- Loose matches never claim a product named exactly like a different catalog game on the same console. Any existing link that does is released at the start of each run.
+
 `data/enrichment-public.json` is the compact app feed, excluding recovery journals and internal evidence. The full `enrichment.json`, SQLite records and completeness audit retain maintenance state. The app's bundled `enrichment.json` is refreshed from the compact feed for offline fallback. The hourly Actions workflow runs Python regressions and frontend store-policy checks, applies the migration under its single writer lock, resumes recovery for up to 50 minutes, and checkpoints every ten games.
 
 
