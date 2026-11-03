@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:02:14.272791+00:00",
+  "updated": "2026-11-03T08:03:24.614209+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2051,
+    "full_attempted": 2061,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -104775,7 +104775,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 86.0,
+          "score": 74.0,
           "scale": 100,
           "sources": [
             {
@@ -104784,19 +104784,61 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=speed-crew-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/speed-crew-review-nintendo-switch/",
+              "date": "2023-07-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 80,
+              "url": "https://screenrant.com/speed-crew-switch-review/?newsletter_popup=1",
+              "date": "2023-07-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/miscellaneous-console-games-extravaganza-2023#speed-crew",
+              "date": "2023-06-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 8.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/speed-crew/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.0,
+              "normalized": 8.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:48:47.676720+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:02:36.601249+00:00"
       },
       "requirements": {
         "image": true,
@@ -104812,7 +104854,12 @@
       },
       "basics_attempted": "2026-11-02T22:48:47.676720+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/speed-crew-switch/",
@@ -104861,33 +104908,50 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:02:38.824351+00:00",
+      "full_version": 7
     },
     "PS5:13109": {
       "title": "Spells & Secrets",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "PSX Brasil",
+              "score": 70,
+              "url": "https://psxbrasil.com.br/analise/spells-secrets-review/",
+              "date": "2023-12-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 70,
+              "url": "https://www.playstationcountry.com/spells-secrets-ps5-review/",
+              "date": "2023-11-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 6.36,
           "scale": 10,
           "sources": [
             {
-              "score": 3.18,
-              "count": 79,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.18,
               "scale": 5,
-              "source": "PSN",
+              "count": 79,
               "url": "https://store.playstation.com/pt-pt/product/EP1121-PPSA09348_00-6952557700643514",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:22:09.848883+00:00",
-              "platform": "PSN · PS5",
               "weight": 8.888194417315589,
               "normalized": 6.36
             }
@@ -104895,7 +104959,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:22:06.617577+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:02:37.395202+00:00"
       },
       "requirements": {
         "image": true,
@@ -104937,7 +105008,11 @@
       },
       "basics_attempted": "2026-11-02T18:22:06.617577+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -104953,14 +105028,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:02:38.020637+00:00",
+      "full_version": 7
     },
     "Switch:11927": {
       "title": "Spells & Secrets",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 76.0,
+          "score": 68.0,
           "scale": 100,
           "sources": [
             {
@@ -104969,10 +105046,18 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=spells-and-secrets-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 60,
+              "url": "https://purenintendo.com/review-spells-secrets-nintendo-switch/",
+              "date": "2024-02-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -104981,7 +105066,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:00.392977+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:03:16.571959+00:00"
       },
       "requirements": {
         "image": true,
@@ -104997,7 +105089,12 @@
       },
       "basics_attempted": "2026-11-02T22:49:00.392977+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/spells-and-secrets-switch/",
@@ -105046,26 +105143,76 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:03:19.442511+00:00",
+      "full_version": 7
     },
     "Switch:10343": {
       "title": "Spelunker HD Deluxe",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 53.0,
+          "score": 68.4,
           "scale": 100,
           "sources": [
+            {
+              "name": "Gamezebo",
+              "score": 60,
+              "url": "https://www.gamezebo.com/2021/09/15/spelunker-hd-deluxe-switch-review-war-of-mine/",
+              "date": "2021-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 60,
+              "url": "https://www.heypoorplayer.com/2021/08/13/spelunker-hd-deluxe-review-switch/",
+              "date": "2021-08-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 86,
+              "url": "https://www.impulsegamer.com/spelunker-hd-deluxe-review-switch/",
+              "date": "2021-08-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 53.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=spelunker-hd-deluxe-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 50,
+              "url": "https://noisypixel.net/spelunker-hd-deluxe-review-ps4-switch/",
+              "date": "2021-08-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 90,
+              "url": "https://purenintendo.com/review-spelunker-hd-deluxe-nintendo-switch/",
+              "date": "2021-09-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 80,
+              "url": "https://toucharcade.com/2021/08/10/switcharcade-round-up-reviews-featuring-spelunker-hd-deluxe-plus-shadowverse-and-todays-other-new-releases-news-and-sales/",
+              "date": "2021-08-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
           "score": null,
@@ -105074,7 +105221,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:00.393318+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:03:21.448880+00:00"
       },
       "requirements": {
         "image": true,
@@ -105090,7 +105244,12 @@
       },
       "basics_attempted": "2026-11-02T22:49:00.393318+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/spelunker-hd-deluxe-switch/",
@@ -105139,7 +105298,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:03:24.386681+00:00",
+      "full_version": 7
     },
     "PS5:12535": {
       "title": "SpiderHeck",
@@ -130698,26 +130859,33 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 75.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Digital Chumps",
+              "score": 75,
+              "url": "https://digitalchumps.com/speed-crew-review-ps5/",
+              "date": "2024-02-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 8.7,
           "scale": 10,
           "sources": [
             {
-              "score": 4.35,
-              "count": 74,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.35,
               "scale": 5,
-              "source": "PSN",
+              "count": 74,
               "url": "https://store.playstation.com/pt-pt/product/EB0160-PPSA17424_00-0920507048639298",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:21:47.884288+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 8.602325267042627,
               "normalized": 8.7
             }
@@ -130725,7 +130893,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:21:46.919509+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:02:32.321070+00:00"
       },
       "requirements": {
         "image": true,
@@ -130767,7 +130942,11 @@
       },
       "basics_attempted": "2026-11-02T18:21:46.919509+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -130783,7 +130962,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:02:32.653454+00:00",
+      "full_version": 7
     },
     "Switch:14901": {
       "title": "Splatter - Zombiecalypse Now",
@@ -142741,7 +142922,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:00.392687+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:03:01.590055+00:00"
       },
       "requirements": {
         "image": true,
@@ -142757,7 +142945,13 @@
       },
       "basics_attempted": "2026-11-02T22:49:00.392687+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/spellbearers-switch/",
@@ -142806,7 +143000,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:03:04.560073+00:00",
+      "full_version": 7
     },
     "PS5:15543": {
       "title": "Star Wars: The Clone Wars",
@@ -173455,27 +173651,41 @@
           "source_count": 0
         },
         "user": {
-          "score": 8.98,
+          "score": 8.93,
           "scale": 10,
           "sources": [
             {
-              "score": 4.49,
-              "count": 2742,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.49,
               "scale": 5,
-              "source": "PSN",
+              "count": 2742,
               "url": "https://store.playstation.com/pt-pt/product/EP4407-PPSA05579_00-SPELUNKY20000000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:22:09.775171+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 8.98
+            },
+            {
+              "score": 8.0,
+              "scale": 10,
+              "count": 3,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/spelunky_2",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:22:06.619226+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:02:43.829570+00:00"
       },
       "requirements": {
         "image": true,
@@ -173517,7 +173727,9 @@
       },
       "basics_attempted": "2026-11-02T18:22:06.619226+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -173533,7 +173745,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "DW9DNI9vOYw",
+        "title": "Spelunky 2 - Launch Trailer | PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/spelunky-2/"
+      },
+      "full_attempted": "2026-11-03T08:02:44.438200+00:00",
+      "full_version": 7
     },
     "PS5:16588": {
       "title": "Star Wars: Demolition",
@@ -344610,22 +344830,62 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 84.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/spelunky",
+              "name": "Nindie Spotlight",
+              "score": 85.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=spelunky-switch",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 90,
+              "url": "https://www.nintenderos.com/2021/08/analisis-spelunky-para-nintendo-switch/",
+              "date": "2021-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 100,
+              "url": "https://www.nintendo-insider.com/spelunky-review/",
+              "date": "2021-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/spelunky",
+              "date": "2021-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "https://www.nintendoworldreport.com/review/58172/spelunky-switch-review",
+              "date": "2021-08-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 81,
+              "url": "https://videochums.com/review/spelunky-1",
+              "date": "2021-09-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
-          "score": 7.0,
+          "score": 7.4,
           "scale": 10,
           "sources": [
             {
@@ -344636,14 +344896,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/spelunky",
               "platform": "Nintendo Switch",
               "weight": 7.810249675906654,
-              "normalized": 7.0,
-              "checked": "2026-11-02T18:22:06.618988+00:00"
+              "normalized": 7.0
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.8,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/spelunky/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.23606797749979,
+              "normalized": 8.8
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:00.395014+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:02:56.864073+00:00"
       },
       "requirements": {
         "image": true,
@@ -344659,7 +344933,11 @@
       },
       "basics_attempted": "2026-11-02T22:49:00.395014+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/spelunky-switch/",
@@ -344708,29 +344986,63 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:02:59.621944+00:00",
+      "full_version": 7
     },
     "Switch:8207": {
       "title": "Spelunky 2",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 93.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
+              "name": "Nindie Spotlight",
               "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/spelunky_2",
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=spelunky-2-switch",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 100,
+              "url": "https://www.nintenderos.com/2021/08/analisis-spelunky-2-para-nintendo-switch/",
+              "date": "2021-08-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 100,
+              "url": "https://www.nintendo-insider.com/spelunky-2-review/",
+              "date": "2021-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/spelunky_2",
+              "date": "2021-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "https://www.nintendoworldreport.com/review/58174/spelunky-2-switch-review",
+              "date": "2021-08-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": 7.4,
+          "score": 7.37,
           "scale": 10,
           "sources": [
             {
@@ -344741,14 +345053,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/spelunky_2",
               "platform": "Nintendo Switch",
               "weight": 8.12403840463596,
-              "normalized": 7.4,
-              "checked": "2026-11-02T18:22:09.782192+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.3,
+              "scale": 10,
+              "count": 16,
+              "url": "https://www.metacritic.com/game/spelunky-2/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.0,
+              "normalized": 7.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:00.395376+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:03:06.804632+00:00"
       },
       "requirements": {
         "image": true,
@@ -344764,7 +345090,10 @@
       },
       "basics_attempted": "2026-11-02T22:49:00.395376+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/spelunky-2-switch/",
@@ -344813,7 +345142,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "DW9DNI9vOYw",
+        "title": "Spelunky 2 - Launch Trailer | PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/spelunky-2/"
+      },
+      "full_attempted": "2026-11-03T08:03:09.600429+00:00",
+      "full_version": 7
     },
     "Switch:8141": {
       "title": "Spirit Arena",
@@ -357887,22 +358224,216 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 65.8,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/spelunker_party",
+              "name": "3DJuegos",
+              "score": 65,
+              "url": "http://www.3djuegos.com/juegos/analisis/30514/0/spelunker-party/",
+              "date": "2017-10-26",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 65,
+              "url": "http://atomix.vg/review-spelunker-party/",
+              "date": "2017-11-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 90,
+              "url": "http://www.cgmagonline.com/reviews/spelunker-party-switch-review-explore-caves-friends-pets/",
+              "date": "2017-10-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 65,
+              "url": "http://cogconnected.com/review/spelunker-party-review/",
+              "date": "2017-10-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/4640/1/spelunker-party-nintendo-switch.html",
+              "date": "2018-02-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 72,
+              "url": "http://digitalchumps.com/spelunker-party/",
+              "date": "2017-11-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 85,
+              "url": "http://www.gameover.gr/reviews/36701-spelunker-party-nintendo-switch-review",
+              "date": "2017-11-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 85,
+              "url": "https://www.gamespace.com/featured/our-spelunker-party-switch-review/",
+              "date": "2017-10-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 60,
+              "url": "https://www.gamespot.com/reviews/spelunker-party-review/1900-6416807/",
+              "date": "2017-11-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 75,
+              "url": "http://www.gaming-age.com/2017/10/spelunker-party-review-nintendo-switch-pc/",
+              "date": "2017-10-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 55,
+              "url": "http://it.ign.com/spelunker-party-nintendo-switch/132523/review/spelunker-party-la-recensione",
+              "date": "2017-10-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 70,
+              "url": "http://es.ign.com/spelunker-party-ps4/124784/review/spelunker-party-analisis-para-nintendo-switch-y-pc",
+              "date": "2017-10-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 70,
+              "url": "http://www.impulsegamer.com/spelunker-party-nintendo-switch-review/",
+              "date": "2017-10-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 70,
+              "url": "http://meristation.as.com/nintendo-switch/spelunker-party/analisis-juego/2235908",
+              "date": "2017-12-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 65,
+              "url": "http://multiplayer.it/recensioni/190302-spelunker-party-speleologi-in-festa-nella-recensione-di-spelunker-party.html",
+              "date": "2017-10-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/spelunker_party",
+              "date": "2017-10-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 60,
+              "url": "http://www.nintendoworldreport.com/review/45716/spelunker-party-switch-review",
+              "date": "2017-10-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 58,
+              "url": "http://www.nintendojo.com/reviews/review-spelunker-party",
+              "date": "2017-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 50,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/Spelunker+Party%21/review.asp?c=75881",
+              "date": "2017-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80.0,
+              "url": "https://purenintendo.com/review-spelunker-party-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 8.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 56,
+              "url": "http://switchplayer.net/2017/10/27/spelunker-party-review/",
+              "date": "2017-10-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 75,
+              "url": "http://www.vandal.net/analisis/switch/spelunker-party/52904",
+              "date": "2017-10-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 34,
+              "url": "https://videochums.com/review/spelunker-party",
+              "date": "2017-10-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 70,
+              "url": "https://www.vooks.net/spelunker-party-switch-eshop-review/",
+              "date": "2017-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 40,
+              "url": "http://www.ztgd.com/spelunker-party/review/",
+              "date": "2017-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 25
         },
         "user": {
-          "score": 6.4,
+          "score": 6.6,
           "scale": 10,
           "sources": [
             {
@@ -357913,14 +358444,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/spelunker_party",
               "platform": "Nintendo Switch",
               "weight": 4.0,
-              "normalized": 6.4,
-              "checked": "2026-11-02T18:22:06.618689+00:00"
+              "normalized": 6.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.8,
+              "scale": 10,
+              "count": 15,
+              "url": "https://www.metacritic.com/game/spelunker-party/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.872983346207417,
+              "normalized": 6.799999999999999
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:00.393599+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 25,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:03:11.801255+00:00"
       },
       "requirements": {
         "image": true,
@@ -357936,7 +358481,11 @@
       },
       "basics_attempted": "2026-11-02T22:49:00.393599+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/spelunker-party-switch/",
@@ -357985,7 +358534,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:03:17.262313+00:00",
+      "full_version": 7
     },
     "Switch:8760": {
       "title": "Stealth",
