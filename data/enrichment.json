@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:17:40.967913+00:00",
+  "updated": "2026-11-03T06:18:43.209257+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1321,
+    "full_attempted": 1331,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -46196,7 +46196,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 58.3,
+          "score": 59.8,
           "scale": 100,
           "sources": [
             {
@@ -46206,6 +46206,13 @@
               "date": "2021-11-15",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 64.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=hoplegs-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             },
             {
               "name": "Pure Nintendo",
@@ -46225,7 +46232,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 3
+          "source_count": 4
         },
         "user": {
           "score": null,
@@ -46234,7 +46241,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:36:24.613687+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:18:31.399138+00:00"
       },
       "requirements": {
         "image": true,
@@ -46250,7 +46264,12 @@
       },
       "basics_attempted": "2026-11-02T22:36:24.613687+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hoplegs-switch/",
@@ -46299,29 +46318,80 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:18:33.428896+00:00",
+      "full_version": 7
     },
     "Switch:14422": {
       "title": "Horizon Chase 2",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 71.9,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/horizon-chase-2",
+              "name": "Gamezebo",
+              "score": 70,
+              "url": "https://www.gamezebo.com/reviews/switch-review-round-up-animal-well-just-crow-things-paper-trail-and-more/",
+              "date": "2025-01-31",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 68,
+              "url": "https://www.nintenderos.com/2023/12/analisis-horizon-chase-2-para-nintendo-switch/",
+              "date": "2023-12-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/horizon-chase-2",
+              "date": "2023-10-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "https://www.nintendoworldreport.com/review/67338/horizon-chase-2-switch-eshop-review",
+              "date": "2024-06-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 80,
+              "url": "https://www.starbit.pt/2023/10/13/horizon-chase-2-analise/",
+              "date": "2023-10-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 65,
+              "url": "https://universonintendo.com/analise-horizon-chase-2/",
+              "date": "2023-10-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/challenging-indie-games-part-5#horizon-chase-2",
+              "date": "2023-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
-          "score": 7.2,
+          "score": 6.59,
           "scale": 10,
           "sources": [
             {
@@ -46332,14 +46402,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/horizon_chase_2",
               "platform": "Nintendo Switch",
               "weight": 5.0990195135927845,
-              "normalized": 7.199999999999999,
-              "checked": "2026-11-02T17:31:57.378192+00:00"
+              "normalized": 7.199999999999999
+            },
+            {
+              "name": "Metacritic users",
+              "score": 5.2,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/horizon-chase-2/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.23606797749979,
+              "normalized": 5.2
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:36:24.614584+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:18:11.505141+00:00"
       },
       "requirements": {
         "image": true,
@@ -46355,7 +46439,12 @@
       },
       "basics_attempted": "2026-11-02T22:36:24.614584+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/horizon-chase-2-switch/",
@@ -46404,7 +46493,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:18:14.971888+00:00",
+      "full_version": 7
     },
     "PS5:9527": {
       "title": "Human Fall Flat",
@@ -46442,15 +46533,13 @@
               "normalized": 6.1
             },
             {
-              "score": 4.14,
-              "count": 54958,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.14,
               "scale": 5,
-              "source": "PSN",
+              "count": 54958,
               "url": "https://store.playstation.com/pt-pt/product/EP4395-CUSA07208_00-HFFGAMEANDTHEME0",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:32:07.167818+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 8.28
             }
@@ -46458,7 +46547,12 @@
           "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:32:05.912590+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:18:09.791053+00:00"
       },
       "requirements": {
         "image": true,
@@ -46500,7 +46594,9 @@
       },
       "basics_attempted": "2026-11-02T17:32:05.912590+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -46516,14 +46612,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:18:10.045997+00:00",
+      "full_version": 7
     },
     "Switch:4901": {
       "title": "Human Fall Flat",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 62.8,
+          "score": 63.5,
           "scale": 100,
           "sources": [
             {
@@ -46583,6 +46681,15 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Pure Nintendo",
+              "score": 70.0,
+              "url": "https://purenintendo.com/review-human-fall-flat-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 7.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "Switch Player",
               "score": 70,
               "url": "http://switchplayer.net/2018/01/12/human-fall-flat-review/",
@@ -46600,10 +46707,10 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 9
+          "source_count": 10
         },
         "user": {
-          "score": 6.7,
+          "score": 6.96,
           "scale": 10,
           "sources": [
             {
@@ -46614,14 +46721,28 @@
               "url": "https://www.metacritic.com/game/human-fall-flat/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 7.14142842854285,
-              "normalized": 6.7,
-              "checked": "2026-11-02T17:35:38.431451+00:00"
+              "normalized": 6.7
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.2,
+              "scale": 10.0,
+              "count": 63,
+              "url": "https://www.nintendolife.com/games/switch-eshop/human_fall_flat",
+              "platform": "Nintendo Switch",
+              "weight": 7.937253933193772,
+              "normalized": 7.199999999999999
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:37:21.629125+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:18:36.374107+00:00"
       },
       "requirements": {
         "image": true,
@@ -46637,7 +46758,10 @@
       },
       "basics_attempted": "2026-11-02T22:37:21.629125+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/human-fall-flat-switch/",
@@ -46687,7 +46811,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:18:40.397227+00:00",
+      "full_version": 7
     },
     "Switch:11846": {
       "title": "Hyper Echelon",
@@ -119982,34 +120108,171 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 75.4,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GAMINGbible",
+              "score": 50,
+              "url": "https://www.gamingbible.com/reviews/horizon-chase-2-review-270337-20240701",
+              "date": "2024-07-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 85,
+              "url": "https://gamecritics.com/c-j-salcedo/horizon-chase-2-review/",
+              "date": "2024-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2024/05/horizon-chase-2-review-ps5/",
+              "date": "2024-05-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 65,
+              "url": "https://www.gamingnexus.com/Article/14045/Horizon-Chase-2/",
+              "date": "2024-05-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 80,
+              "url": "https://es.ign.com/horizon-chase-2/203577/review/horizon-chase-2-velocidad-y-reflejos",
+              "date": "2024-05-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 80,
+              "url": "https://www.impulsegamer.com/horizon-chase-2-review-ps5/",
+              "date": "2024-05-31",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MeuPlayStation",
+              "score": 84,
+              "url": "https://meups.com.br/review/horizon-chase-2-vale-a-pena/",
+              "date": "2024-05-31",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Movies Games and Tech",
+              "score": 70,
+              "url": "https://moviesgamesandtech.com/2024/06/24/review-horizon-chase-2/",
+              "date": "2024-06-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 75,
+              "url": "https://psxbrasil.com.br/analise/horizon-chase-2-review/",
+              "date": "2024-05-31",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 70,
+              "url": "https://www.playstationcountry.com/horizon-chase-2-ps5-review/",
+              "date": "2024-06-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 90,
+              "url": "https://www.psu.com/reviews/horizon-chase-2-ps5-review/",
+              "date": "2024-05-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 67,
+              "url": "https://www.player2.net.au/2024/05/horizon-chase-2-review-still-chasing-memories/",
+              "date": "2024-05-31",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "https://www.pushsquare.com/reviews/ps5/horizon-chase-2",
+              "date": "2024-05-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 90,
+              "url": "https://www.thesixthaxis.com/2024/06/27/horizon-chase-2-review/",
+              "date": "2024-06-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 14
         },
         "user": {
-          "score": 8.64,
+          "score": 8.5,
           "scale": 10,
           "sources": [
             {
-              "score": 4.32,
-              "count": 1057,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.32,
               "scale": 5,
-              "source": "PSN",
+              "count": 1057,
               "url": "https://store.playstation.com/pt-pt/product/EP1464-PPSA12772_00-HORIZONCHASE2000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:31:57.373354+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 8.64
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 34,
+              "url": "https://www.metacritic.com/game/horizon-chase-2/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 5.830951894845301,
+              "normalized": 8.0
+            },
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/horizon_chase_2",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 7.0
             }
           ],
-          "source_count": 1,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:31:56.139974+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 14,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:18:04.795181+00:00"
       },
       "requirements": {
         "image": true,
@@ -120051,7 +120314,9 @@
       },
       "basics_attempted": "2026-11-02T17:31:56.139974+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -120067,7 +120332,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:18:05.030317+00:00",
+      "full_version": 7
     },
     "Switch:15292": {
       "title": "Hotel Hustle",
@@ -120095,7 +120362,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:36:24.616016+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:18:41.315913+00:00"
       },
       "requirements": {
         "image": true,
@@ -120111,7 +120385,13 @@
       },
       "basics_attempted": "2026-11-02T22:36:24.616016+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hotel-hustle-switch/",
@@ -120160,7 +120440,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:18:42.963683+00:00",
+      "full_version": 7
     },
     "PS5:15288": {
       "title": "Kinduo 2 - Frostbite",
@@ -254202,9 +254484,57 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 91.0,
+          "score": 83.8,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 90,
+              "url": "http://www.cubed3.com/review/5332/1/horizon-chase-turbo--nintendo-switch.html",
+              "date": "2019-01-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 50,
+              "url": "http://www.digitallydownloaded.net/2018/11/review-horizon-chase-turbo-nintendo.html",
+              "date": "2018-11-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "https://fnintendo.net/article/11959-horizon-chase-turbo",
+              "date": "2019-01-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 100,
+              "url": "https://www.gamespace.com/reviews/horizon-chase-turbo-review-switch/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "https://www.godisageek.com/reviews/switch-report-review-35-windjammers-horizon-chase-battlezone-sega-mega-drive/",
+              "date": "2018-11-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 70,
+              "url": "https://metro.co.uk/2018/11/30/horizon-chase-turbo-switch-review-old-school-racer-8195215/",
+              "date": "2018-11-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 92.0,
@@ -254213,18 +254543,91 @@
               "via": "Direct console-specific review"
             },
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/horizon_chase_turbo",
+              "name": "Nintenderos",
+              "score": 88,
+              "url": "https://www.nintenderos.com/2018/12/analisis-horizon-chase-turbo/",
+              "date": "2018-12-17",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 90,
+              "url": "https://www.nintendoenthusiast.com/2018/11/30/horizon-chase-turbo-review-for-nintendo-switch/",
+              "date": "2019-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/horizon-chase-turbo-review/",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/horizon_chase_turbo?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-11-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/49014/horizon-chase-turbo-switch-review",
+              "date": "2018-11-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 80,
+              "url": "https://www.pocketgamer.com/articles/079510/horizon-chase-turbo/",
+              "date": "2018-12-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 90,
+              "url": "http://switchplayer.net/2019/01/07/horizon-chase-turbo-review/",
+              "date": "2019-01-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 85,
+              "url": "https://www.thegamesmachine.it/horizon-chase-turbo-pc-ps4-xbox-one-switch/horizon-chase-turbo-recensione-switch/",
+              "date": "2018-12-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 90,
+              "url": "https://switch-brasil.com/analise-horizon-chase-turbo/",
+              "date": "2019-03-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 80,
+              "url": "https://www.vooks.net/horizon-chase-turbo-switch-eshop-review/",
+              "date": "2019-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 2
+          "source_count": 17
         },
         "user": {
-          "score": 7.8,
+          "score": 7.94,
           "scale": 10,
           "sources": [
             {
@@ -254235,14 +254638,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/horizon_chase_turbo",
               "platform": "Nintendo Switch",
               "weight": 13.856406460551018,
-              "normalized": 7.800000000000001,
-              "checked": "2026-11-02T19:21:51.593886+00:00"
+              "normalized": 7.800000000000001
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.1,
+              "scale": 10,
+              "count": 147,
+              "url": "https://www.metacritic.com/game/horizon-chase-turbo/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 12.12435565298214,
+              "normalized": 8.1
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:58:53.695945+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 16,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:18:26.504800+00:00"
       },
       "requirements": {
         "image": true,
@@ -254260,7 +254677,10 @@
       "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -254292,7 +254712,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:18:28.375710+00:00",
+      "full_version": 7
     },
     "Switch:6378": {
       "title": "Ikari III: The Rescue",
@@ -273902,7 +274324,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 74.0,
+          "score": 79.5,
           "scale": 100,
           "sources": [
             {
@@ -273911,19 +274333,54 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=home-sheep-home-farmageddon-party-edition-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 85,
+              "url": "https://purenintendo.com/review-home-sheep-home-farmageddon-party-edition-nintendo-switch/",
+              "date": "2020-07-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 6.34,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.2,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/home-sheep-home-farmageddon-party-edition/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.23606797749979,
+              "normalized": 6.2
+            },
+            {
+              "score": 6.5,
+              "scale": 10,
+              "count": 4,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/home_sheep_home_farmageddon_party_edition",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.0,
+              "normalized": 6.5
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:37:08.339685+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:18:21.438547+00:00"
       },
       "requirements": {
         "image": true,
@@ -273939,7 +274396,11 @@
       },
       "basics_attempted": "2026-11-02T22:37:08.339685+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/home-sheep-home-farmageddon-party-edition-switch/",
@@ -273988,7 +274449,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:18:23.300373+00:00",
+      "full_version": 7
     },
     "Switch:7652": {
       "title": "Hyperlight Ultimate",
@@ -284863,6 +285326,7 @@
               "name": "Cubed3",
               "score": 80,
               "url": "http://www.cubed3.com/review/6395/1/hide-and-dance-nintendo-switch.html",
+              "date": "2021-06-21",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -284870,6 +285334,7 @@
               "name": "Gamezebo",
               "score": 80,
               "url": "https://www.gamezebo.com/2020/10/15/hide-dance-switch-review-fast-on-your-feet/",
+              "date": "2020-10-25",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -284877,6 +285342,7 @@
               "name": "Pure Nintendo",
               "score": 70,
               "url": "https://purenintendo.com/review-hide-dance-nintendo-switch/",
+              "date": "2020-10-16",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -284885,13 +285351,30 @@
           "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 6.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 6.0,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/hide_and_dance",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 6.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:37:07.004377+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:18:01.590103+00:00"
       },
       "requirements": {
         "image": true,
@@ -284908,7 +285391,10 @@
       "basics_attempted": "2026-11-02T22:37:07.004377+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -284958,35 +285444,112 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:18:03.574876+00:00",
+      "full_version": 7
     },
     "Switch:7720": {
       "title": "Hive Jump",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 67.9,
           "scale": 100,
           "sources": [
+            {
+              "name": "DualShockers",
+              "score": 65,
+              "url": "https://www.dualshockers.com/hive-jump-review-switch/",
+              "date": "2019-01-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=hive-jump-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
             {
               "name": "Nintendo Life",
               "score": 70.0,
               "url": "https://www.nintendolife.com/reviews/switch-eshop/hive-jump",
               "platform": "Nintendo Switch",
               "via": "Nintendo Life"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 65,
+              "url": "http://www.nintendoworldreport.com/review/49439/hive-jump-switch-review",
+              "date": "2019-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 70,
+              "url": "http://play.co.rs/2019/02/review-hive-jump/",
+              "date": "2019-03-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 60.0,
+              "url": "https://purenintendo.com/review-hive-jump-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 6.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "The Indie Game Website",
+              "score": 70,
+              "url": "https://www.indiegamewebsite.com/2019/01/30/double-cross-elli-hopiko-hive-jump-octahedron-review/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
-          "score": null,
+          "score": 5.58,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.4,
+              "scale": 10,
+              "count": 7,
+              "url": "https://www.metacritic.com/game/hive-jump/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.6457513110645907,
+              "normalized": 6.4
+            },
+            {
+              "score": 4.6,
+              "scale": 10,
+              "count": 5,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/hive_jump",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.23606797749979,
+              "normalized": 4.6
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:37:07.275070+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:17:56.556198+00:00"
       },
       "requirements": {
         "image": true,
@@ -285002,7 +285565,10 @@
       },
       "basics_attempted": "2026-11-02T22:37:07.275070+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hive-jump-switch/",
@@ -285051,7 +285617,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:17:58.832504+00:00",
+      "full_version": 7
     },
     "Switch:7749": {
       "title": "Home Escape",
