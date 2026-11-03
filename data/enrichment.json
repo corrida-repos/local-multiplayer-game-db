@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T00:04:50.026486+00:00",
+  "updated": "2026-11-03T00:07:02.706261+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
     "ready": 1937,
     "missing_image": 109,
-    "missing_store": 408,
+    "missing_store": 402,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -77437,7 +77437,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:26:34.970830+00:00"
+        "attempted": "2026-11-03T00:04:54.666525+00:00"
       },
       "requirements": {
         "image": true,
@@ -77459,15 +77459,85 @@
       "aliases": [
         "Arcade Archives TECMO KNIGHT"
       ],
-      "basics_attempted": "2026-11-02T21:26:34.970830+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:04:54.666525+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:54:17.120487+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:29.900373+00:00",
+              "next_attempt": "2026-11-04T00:06:29.900373+00:00",
+              "revision": "ce78e76b933b23e7:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/tecmo_knight",
+                "https://www.nintendolife.com/games/switch-eshop/tecmo_knight",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_tecmo_knight"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_tecmo_knight"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:30.792148+00:00",
+              "next_attempt": "2026-11-04T00:06:30.792148+00:00",
+              "revision": "ce78e76b933b23e7:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=tecmo-knight-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=tecmo-knight-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:07:02.464988+00:00",
+              "next_attempt": "2026-11-04T00:07:02.464988+00:00",
+              "revision": "ce78e76b933b23e7:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-tecmo-knight/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-tecmo-knight/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-tecmo-knight/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-tecmo-knight/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:07:02.500790+00:00",
+              "next_attempt": "2026-11-04T00:07:02.500790+00:00",
+              "revision": "ce78e76b933b23e7:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Tecmo+Knight&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Tecmo+Knight&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:07:02.500919+00:00",
+              "next_attempt": "2026-11-03T01:07:02.500919+00:00",
+              "revision": "ce78e76b933b23e7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:07:02.500996+00:00",
+              "next_attempt": "2026-11-03T01:07:02.500996+00:00",
+              "revision": "ce78e76b933b23e7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:15078": {
       "title": "Teenage Mutant Ninja Turtles Arcade: Wrath of the Mutants",
@@ -80301,7 +80371,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:28:00.683420+00:00"
+        "attempted": "2026-11-03T00:04:54.670992+00:00"
       },
       "requirements": {
         "image": true,
@@ -80313,12 +80383,15 @@
         "source": "https://www.nintendo.com/us/store/products/the-last-dragon-slayer-switch/",
         "checked": "2026-11-02T21:28:02.209987+00:00"
       },
-      "basics_attempted": "2026-11-02T21:28:00.683420+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:04:54.670992+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:54:51.359036+00:00",
       "store_evidence": [
@@ -80328,7 +80401,89 @@
           "checked": "2026-11-02T21:28:02.209695+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:56.269929+00:00",
+              "next_attempt": "2026-11-04T00:04:56.269929+00:00",
+              "revision": "0256de71bd6353c4:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22The+Last+Dragon+Slayer%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22The+Last+Dragon+Slayer%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:04.914435+00:00",
+              "next_attempt": "2026-11-04T00:06:04.914435+00:00",
+              "revision": "0256de71bd6353c4:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_last_dragon_slayer",
+                "https://www.nintendolife.com/games/switch-eshop/the_last_dragon_slayer"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/the_last_dragon_slayer"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:05.638784+00:00",
+              "next_attempt": "2026-11-04T00:06:05.638784+00:00",
+              "revision": "0256de71bd6353c4:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-last-dragon-slayer-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-last-dragon-slayer-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:10.758429+00:00",
+              "next_attempt": "2026-11-04T00:06:10.758429+00:00",
+              "revision": "0256de71bd6353c4:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/the-last-dragon-slayer/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/the-last-dragon-slayer/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/the-last-dragon-slayer/"
+              ],
+              "url": "https://www.metacritic.com/game/the-last-dragon-slayer/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:10.792609+00:00",
+              "next_attempt": "2026-11-04T00:06:10.792609+00:00",
+              "revision": "0256de71bd6353c4:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Last+Dragon+Slayer&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Last+Dragon+Slayer&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:10.792718+00:00",
+              "next_attempt": "2026-11-03T01:06:10.792718+00:00",
+              "revision": "0256de71bd6353c4:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:10.792770+00:00",
+              "next_attempt": "2026-11-03T01:06:10.792770+00:00",
+              "revision": "0256de71bd6353c4:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:11776": {
       "title": "The Last Friend",
@@ -144658,7 +144813,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:26:34.975130+00:00"
+        "attempted": "2026-11-03T00:04:54.669184+00:00"
       },
       "requirements": {
         "image": true,
@@ -144670,15 +144825,19 @@
         "source": "https://www.nintendo.com/us/store/products/the-grinch-christmas-adventures-merry-and-mischievous-edition-switch/",
         "checked": "2026-11-02T21:26:41.474340+00:00"
       },
-      "basics_attempted": "2026-11-02T21:26:34.975130+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:04:54.669184+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:54:32.115973+00:00",
       "store_evidence": [
@@ -144688,7 +144847,89 @@
           "checked": "2026-11-02T21:26:41.474001+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:55.385214+00:00",
+              "next_attempt": "2026-11-04T00:04:55.385214+00:00",
+              "revision": "7d5bb5c3257fc19f:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22The+Grinch%3A+Christmas+Adventures+-+Merry+%26+Mischievous+Edition%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22The+Grinch%3A+Christmas+Adventures+-+Merry+%26+Mischievous+Edition%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:05:55.036534+00:00",
+              "next_attempt": "2026-11-04T00:05:55.036534+00:00",
+              "revision": "7d5bb5c3257fc19f:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_grinch_christmas_adventures_merry_and_mischievous_edition",
+                "https://www.nintendolife.com/games/switch-eshop/the_grinch_christmas_adventures_merry_and_mischievous_edition"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/the_grinch_christmas_adventures_merry_and_mischievous_edition"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:05:55.969705+00:00",
+              "next_attempt": "2026-11-04T00:05:55.969705+00:00",
+              "revision": "7d5bb5c3257fc19f:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-grinch-christmas-adventures-merry-and-mischievous-edition-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-grinch-christmas-adventures-merry-and-mischievous-edition-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:05:58.433489+00:00",
+              "next_attempt": "2026-11-04T00:05:58.433489+00:00",
+              "revision": "7d5bb5c3257fc19f:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/the-grinch-christmas-adventures-merry-and-mischievous-edition/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/the-grinch-christmas-adventures-merry-and-mischievous-edition/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/the-grinch-christmas-adventures-merry-and-mischievous-edition/"
+              ],
+              "url": "https://www.metacritic.com/game/the-grinch-christmas-adventures-merry-and-mischievous-edition/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:05:58.466722+00:00",
+              "next_attempt": "2026-11-04T00:05:58.466722+00:00",
+              "revision": "7d5bb5c3257fc19f:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Grinch%3A+Christmas+Adventures+-+Merry+%26+Mischievous+Edition&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Grinch%3A+Christmas+Adventures+-+Merry+%26+Mischievous+Edition&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:05:58.466862+00:00",
+              "next_attempt": "2026-11-03T01:05:58.466862+00:00",
+              "revision": "7d5bb5c3257fc19f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:05:58.466937+00:00",
+              "next_attempt": "2026-11-03T01:05:58.466937+00:00",
+              "revision": "7d5bb5c3257fc19f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:17668": {
       "title": "Tokyo Wars",
@@ -151239,11 +151480,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:26:34.971896+00:00"
+        "attempted": "2026-11-03T00:04:54.666924+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -151251,12 +151492,14 @@
         "source": "https://www.nintendo.com/us/store/products/the-artifactory-switch/",
         "checked": "2026-11-02T21:26:40.374460+00:00"
       },
-      "basics_attempted": "2026-11-02T21:26:34.971896+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:04:54.666924+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:54:26.473747+00:00",
       "store_evidence": [
@@ -151266,7 +151509,100 @@
           "checked": "2026-11-02T21:26:40.374152+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Artifactory-3099706.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:04:54.983459+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "The Artifactory"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:04:54.983784+00:00",
+              "next_attempt": "2026-11-04T00:04:54.983784+00:00",
+              "revision": "e26bd3e39610af49:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:04:54.983784+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Artifactory-3099706.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Artifactory-3099706.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:05:44.893599+00:00",
+              "next_attempt": "2026-11-04T00:05:44.893599+00:00",
+              "revision": "e26bd3e39610af49:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_artifactory",
+                "https://www.nintendolife.com/games/switch-eshop/the_artifactory"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/the_artifactory"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:05:45.536623+00:00",
+              "next_attempt": "2026-11-04T00:05:45.536623+00:00",
+              "revision": "e26bd3e39610af49:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-artifactory-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-artifactory-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:05:49.364601+00:00",
+              "next_attempt": "2026-11-04T00:05:49.364601+00:00",
+              "revision": "e26bd3e39610af49:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/the-artifactory/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/the-artifactory/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/the-artifactory/"
+              ],
+              "url": "https://www.metacritic.com/game/the-artifactory/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:05:49.399957+00:00",
+              "next_attempt": "2026-11-04T00:05:49.399957+00:00",
+              "revision": "e26bd3e39610af49:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Artifactory&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Artifactory&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:05:49.400144+00:00",
+              "next_attempt": "2026-11-03T01:05:49.400144+00:00",
+              "revision": "e26bd3e39610af49:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:05:49.400242+00:00",
+              "next_attempt": "2026-11-03T01:05:49.400242+00:00",
+              "revision": "e26bd3e39610af49:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:18153": {
       "title": "The Hero of Destiny was killed by the final boss",
@@ -151286,11 +151622,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:27:44.633401+00:00"
+        "attempted": "2026-11-03T00:04:54.670379+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -151298,12 +151634,14 @@
         "source": "https://www.nintendo.com/us/store/products/the-hero-of-destiny-was-killed-by-the-final-boss-switch/",
         "checked": "2026-11-02T21:27:46.383133+00:00"
       },
-      "basics_attempted": "2026-11-02T21:27:44.633401+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:04:54.670379+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:54:57.428775+00:00",
       "store_evidence": [
@@ -151313,7 +151651,100 @@
           "checked": "2026-11-02T21:27:46.382837+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Hero-of-Destiny-was-killed-by-the-final-boss-3060959.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:04:58.401893+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "The Hero of Destiny was killed by the final boss"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:04:58.402222+00:00",
+              "next_attempt": "2026-11-04T00:04:58.402222+00:00",
+              "revision": "98eb1d1e5b3d3e51:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:04:58.402222+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Hero-of-Destiny-was-killed-by-the-final-boss-3060959.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Hero-of-Destiny-was-killed-by-the-final-boss-3060959.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:14.923281+00:00",
+              "next_attempt": "2026-11-04T00:06:14.923281+00:00",
+              "revision": "98eb1d1e5b3d3e51:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_hero_of_destiny_was_killed_by_the_final_boss",
+                "https://www.nintendolife.com/games/switch-eshop/the_hero_of_destiny_was_killed_by_the_final_boss"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/the_hero_of_destiny_was_killed_by_the_final_boss"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:15.677809+00:00",
+              "next_attempt": "2026-11-04T00:06:15.677809+00:00",
+              "revision": "98eb1d1e5b3d3e51:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-hero-of-destiny-was-killed-by-the-final-boss-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-hero-of-destiny-was-killed-by-the-final-boss-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:19.690013+00:00",
+              "next_attempt": "2026-11-04T00:06:19.690013+00:00",
+              "revision": "98eb1d1e5b3d3e51:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/the-hero-of-destiny-was-killed-by-the-final-boss/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/the-hero-of-destiny-was-killed-by-the-final-boss/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/the-hero-of-destiny-was-killed-by-the-final-boss/"
+              ],
+              "url": "https://www.metacritic.com/game/the-hero-of-destiny-was-killed-by-the-final-boss/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:19.748476+00:00",
+              "next_attempt": "2026-11-04T00:06:19.748476+00:00",
+              "revision": "98eb1d1e5b3d3e51:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Hero+of+Destiny+was+killed+by+the+final+boss&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Hero+of+Destiny+was+killed+by+the+final+boss&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:19.748630+00:00",
+              "next_attempt": "2026-11-03T01:06:19.748630+00:00",
+              "revision": "98eb1d1e5b3d3e51:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:19.748711+00:00",
+              "next_attempt": "2026-11-03T01:06:19.748711+00:00",
+              "revision": "98eb1d1e5b3d3e51:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18323": {
       "title": "Tiny Lands 2",
@@ -156571,11 +157002,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:26:34.973906+00:00"
+        "attempted": "2026-11-03T00:04:54.668846+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -156583,12 +157014,14 @@
         "source": "https://www.nintendo.com/us/store/products/the-grinch-2-saving-christmas-switch/",
         "checked": "2026-11-02T21:26:43.694809+00:00"
       },
-      "basics_attempted": "2026-11-02T21:26:34.973906+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:04:54.668846+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:54:30.700706+00:00",
       "store_evidence": [
@@ -156598,7 +157031,101 @@
           "checked": "2026-11-02T21:26:43.694502+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/The-Grinch-2-Saving-Christmas-3128989.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:04:57.171752+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "The Grinch 2: Saving Christmas",
+        "The Grinch 2: Saving Christmas "
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:04:57.172080+00:00",
+              "next_attempt": "2026-11-04T00:04:57.172080+00:00",
+              "revision": "3482c70ba79e991d:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:04:57.172080+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/The-Grinch-2-Saving-Christmas-3128989.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/The-Grinch-2-Saving-Christmas-3128989.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:10.053642+00:00",
+              "next_attempt": "2026-11-04T00:06:10.053642+00:00",
+              "revision": "3482c70ba79e991d:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_grinch_2_saving_christmas",
+                "https://www.nintendolife.com/games/switch-eshop/the_grinch_2_saving_christmas"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/the_grinch_2_saving_christmas"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:10.660613+00:00",
+              "next_attempt": "2026-11-04T00:06:10.660613+00:00",
+              "revision": "3482c70ba79e991d:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-grinch-2-saving-christmas-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-grinch-2-saving-christmas-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:14.818147+00:00",
+              "next_attempt": "2026-11-04T00:06:14.818147+00:00",
+              "revision": "3482c70ba79e991d:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/the-grinch-2-saving-christmas/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/the-grinch-2-saving-christmas/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/the-grinch-2-saving-christmas/"
+              ],
+              "url": "https://www.metacritic.com/game/the-grinch-2-saving-christmas/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:14.871869+00:00",
+              "next_attempt": "2026-11-04T00:06:14.871869+00:00",
+              "revision": "3482c70ba79e991d:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Grinch+2%3A+Saving+Christmas&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Grinch+2%3A+Saving+Christmas&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:14.872165+00:00",
+              "next_attempt": "2026-11-03T01:06:14.872165+00:00",
+              "revision": "3482c70ba79e991d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:14.872281+00:00",
+              "next_attempt": "2026-11-03T01:06:14.872281+00:00",
+              "revision": "3482c70ba79e991d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18726": {
       "title": "The Lord of the Rings: War in the North - Legacy Edition",
@@ -223051,11 +223578,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:29:14.478675+00:00"
+        "attempted": "2026-11-03T00:05:58.467118+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -223063,11 +223590,14 @@
         "source": "https://www.nintendo.com/us/store/products/the-legend-of-the-blue-warrior-switch/",
         "checked": "2026-11-02T21:29:18.796187+00:00"
       },
-      "basics_attempted": "2026-11-02T21:29:14.478675+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:05:58.467118+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:55:02.124556+00:00",
       "store_evidence": [
@@ -223077,7 +223607,99 @@
           "checked": "2026-11-02T21:29:18.795867+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Legend-Of-The-Blue-Warrior-1852173.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:05:58.744020+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "The Legend Of The Blue Warrior"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:05:58.744371+00:00",
+              "next_attempt": "2026-11-04T00:05:58.744371+00:00",
+              "revision": "aa79334f4cf23376:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:05:58.744371+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Legend-Of-The-Blue-Warrior-1852173.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Legend-Of-The-Blue-Warrior-1852173.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:50.052045+00:00",
+              "next_attempt": "2026-11-04T00:06:50.052045+00:00",
+              "revision": "aa79334f4cf23376:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_legend_of_the_blue_warrior",
+                "https://www.nintendolife.com/games/switch-eshop/the_legend_of_the_blue_warrior"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/the_legend_of_the_blue_warrior"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:50.938401+00:00",
+              "next_attempt": "2026-11-04T00:06:50.938401+00:00",
+              "revision": "aa79334f4cf23376:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-legend-of-the-blue-warrior-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-legend-of-the-blue-warrior-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:53.426308+00:00",
+              "next_attempt": "2026-11-04T00:06:53.426308+00:00",
+              "revision": "aa79334f4cf23376:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/the-legend-of-the-blue-warrior/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/the-legend-of-the-blue-warrior/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score"
+              ],
+              "url": "https://backend.metacritic.com/reviews/metacritic/critic/games/the-legend-of-the-blue-warrior/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:53.462251+00:00",
+              "next_attempt": "2026-11-04T00:06:53.462251+00:00",
+              "revision": "aa79334f4cf23376:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Legend+Of+The+Blue+Warrior&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Legend+Of+The+Blue+Warrior&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:53.462456+00:00",
+              "next_attempt": "2026-11-03T01:06:53.462456+00:00",
+              "revision": "aa79334f4cf23376:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:53.462536+00:00",
+              "next_attempt": "2026-11-03T01:06:53.462536+00:00",
+              "revision": "aa79334f4cf23376:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:7895": {
       "title": "The Swords of Ditto: Mormo's Curse",
@@ -248676,11 +249298,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:26:34.970601+00:00"
+        "attempted": "2026-11-03T00:04:54.666245+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -248688,12 +249310,14 @@
         "source": "https://www.nintendo.com/us/store/products/techno-tanks-switch/",
         "checked": "2026-11-02T21:26:38.472528+00:00"
       },
-      "basics_attempted": "2026-11-02T21:26:34.970601+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:04:54.666245+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:54:22.945769+00:00",
       "store_evidence": [
@@ -248703,7 +249327,100 @@
           "checked": "2026-11-02T21:26:38.472228+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Techno-Tanks-1960880.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:04:56.053136+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Techno Tanks"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:04:56.053460+00:00",
+              "next_attempt": "2026-11-04T00:04:56.053460+00:00",
+              "revision": "758359e51eac6556:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:04:56.053460+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Techno-Tanks-1960880.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Techno-Tanks-1960880.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:05:59.916978+00:00",
+              "next_attempt": "2026-11-04T00:05:59.916978+00:00",
+              "revision": "758359e51eac6556:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/techno_tanks",
+                "https://www.nintendolife.com/games/nintendo-switch/techno_tanks"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/techno_tanks"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:00.614934+00:00",
+              "next_attempt": "2026-11-04T00:06:00.614934+00:00",
+              "revision": "758359e51eac6556:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=techno-tanks-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=techno-tanks-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:03.024515+00:00",
+              "next_attempt": "2026-11-04T00:06:03.024515+00:00",
+              "revision": "758359e51eac6556:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/techno-tanks/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/techno-tanks/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/techno-tanks/"
+              ],
+              "url": "https://www.metacritic.com/game/techno-tanks/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:03.064911+00:00",
+              "next_attempt": "2026-11-04T00:06:03.064911+00:00",
+              "revision": "758359e51eac6556:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Techno+Tanks&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Techno+Tanks&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:03.065104+00:00",
+              "next_attempt": "2026-11-03T01:06:03.065104+00:00",
+              "revision": "758359e51eac6556:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:03.065183+00:00",
+              "next_attempt": "2026-11-03T01:06:03.065183+00:00",
+              "revision": "758359e51eac6556:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:9222": {
       "title": "Tesla Force",
@@ -248801,7 +249518,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:26:34.972459+00:00"
+        "attempted": "2026-11-03T00:04:54.667658+00:00"
       },
       "requirements": {
         "image": true,
@@ -248823,15 +249540,85 @@
       "aliases": [
         "Arcade Archives THE ASTYANAX"
       ],
-      "basics_attempted": "2026-11-02T21:26:34.972459+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:04:54.667658+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:54:28.582705+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:40.035003+00:00",
+              "next_attempt": "2026-11-04T00:06:40.035003+00:00",
+              "revision": "a8a1c47b90a8a252:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_astyanax",
+                "https://www.nintendolife.com/games/switch-eshop/the_astyanax",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_the_astyanax"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_the_astyanax"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:40.868752+00:00",
+              "next_attempt": "2026-11-04T00:06:40.868752+00:00",
+              "revision": "a8a1c47b90a8a252:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-astyanax-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-astyanax-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:51.552831+00:00",
+              "next_attempt": "2026-11-04T00:06:51.552831+00:00",
+              "revision": "a8a1c47b90a8a252:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-the-astyanax/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-the-astyanax/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-the-astyanax/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-the-astyanax/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:51.633947+00:00",
+              "next_attempt": "2026-11-04T00:06:51.633947+00:00",
+              "revision": "a8a1c47b90a8a252:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Astyanax&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Astyanax&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:51.634182+00:00",
+              "next_attempt": "2026-11-03T01:06:51.634182+00:00",
+              "revision": "a8a1c47b90a8a252:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:51.634274+00:00",
+              "next_attempt": "2026-11-03T01:06:51.634274+00:00",
+              "revision": "a8a1c47b90a8a252:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:9681": {
       "title": "The Dark Pictures Anthology: House of Ashes",
@@ -249007,11 +249794,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:29:14.478473+00:00"
+        "attempted": "2026-11-03T00:05:49.400399+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -249019,12 +249806,14 @@
         "source": "https://www.nintendo.com/us/store/products/the-last-kids-on-earth-and-the-staff-of-doom-switch/",
         "checked": "2026-11-02T21:29:17.511312+00:00"
       },
-      "basics_attempted": "2026-11-02T21:29:14.478473+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:05:49.400399+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:54:49.142415+00:00",
       "store_evidence": [
@@ -249034,7 +249823,101 @@
           "checked": "2026-11-02T21:29:17.510827+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/The-Last-Kids-on-Earth-and-the-Staff-of-Doom-1968443.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:05:49.697607+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "The Last Kids on Earth and the Staff of Doom",
+        "The Last Kids on Earth and the Staff of Doom"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:05:49.697934+00:00",
+              "next_attempt": "2026-11-04T00:05:49.697934+00:00",
+              "revision": "b31a72b5a8884ca5:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:05:49.697934+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/The-Last-Kids-on-Earth-and-the-Staff-of-Doom-1968443.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/The-Last-Kids-on-Earth-and-the-Staff-of-Doom-1968443.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:44.897570+00:00",
+              "next_attempt": "2026-11-04T00:06:44.897570+00:00",
+              "revision": "b31a72b5a8884ca5:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_last_kids_on_earth_and_the_staff_of_doom",
+                "https://www.nintendolife.com/games/switch-eshop/the_last_kids_on_earth_and_the_staff_of_doom"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/the_last_kids_on_earth_and_the_staff_of_doom"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:45.597433+00:00",
+              "next_attempt": "2026-11-04T00:06:45.597433+00:00",
+              "revision": "b31a72b5a8884ca5:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-last-kids-on-earth-and-the-staff-of-doom-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-last-kids-on-earth-and-the-staff-of-doom-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:48.446901+00:00",
+              "next_attempt": "2026-11-04T00:06:48.446901+00:00",
+              "revision": "b31a72b5a8884ca5:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/the-last-kids-on-earth-and-the-staff-of-doom/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/the-last-kids-on-earth-and-the-staff-of-doom/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/the-last-kids-on-earth-and-the-staff-of-doom/"
+              ],
+              "url": "https://www.metacritic.com/game/the-last-kids-on-earth-and-the-staff-of-doom/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:06:48.479334+00:00",
+              "next_attempt": "2026-11-04T00:06:48.479334+00:00",
+              "revision": "b31a72b5a8884ca5:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Last+Kids+on+Earth+and+the+Staff+of+Doom&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Last+Kids+on+Earth+and+the+Staff+of+Doom&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:48.479482+00:00",
+              "next_attempt": "2026-11-03T01:06:48.479482+00:00",
+              "revision": "b31a72b5a8884ca5:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:06:48.479581+00:00",
+              "next_attempt": "2026-11-03T01:06:48.479581+00:00",
+              "revision": "b31a72b5a8884ca5:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:9407": {
       "title": "Throw it! Animal Park",
