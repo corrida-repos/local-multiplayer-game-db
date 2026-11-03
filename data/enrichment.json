@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:36:19.978321+00:00",
+  "updated": "2026-11-03T06:37:21.706972+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1521,
+    "full_attempted": 1531,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -66434,15 +66434,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 2.68,
-              "count": 37,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 2.68,
               "scale": 5,
-              "source": "PSN",
+              "count": 37,
               "url": "https://store.playstation.com/pt-pt/product/EP3111-PPSA07897_00-JANDUSOFT0000001",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:51:57.030511+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 6.082762530298219,
               "normalized": 5.36
             }
@@ -66450,7 +66448,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:51:56.115383+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:36:36.598497+00:00"
       },
       "requirements": {
         "image": true,
@@ -66492,7 +66497,11 @@
       },
       "basics_attempted": "2026-11-02T17:51:56.115383+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -66508,7 +66517,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:36:37.912159+00:00",
+      "full_version": 7
     },
     "Switch:12245": {
       "title": "LootLite",
@@ -66536,7 +66547,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:08.503363+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:36:49.434101+00:00"
       },
       "requirements": {
         "image": true,
@@ -66552,7 +66570,13 @@
       },
       "basics_attempted": "2026-11-02T22:41:08.503363+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lootlite-switch/",
@@ -66601,7 +66625,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:36:51.301073+00:00",
+      "full_version": 7
     },
     "Switch:10584": {
       "title": "Love Colors",
@@ -66629,7 +66655,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:22.914386+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 410: Gone"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:37:19.525237+00:00"
       },
       "requirements": {
         "image": true,
@@ -66646,7 +66680,12 @@
       "basics_attempted": "2026-11-02T22:41:22.914386+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone"
+        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 410: Gone",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -66696,7 +66735,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:37:21.451726+00:00",
+      "full_version": 7
     },
     "Switch:5765": {
       "title": "Luigi's Mansion 3",
@@ -66712,45 +66753,899 @@
         "id": "rgldcSmxY5o",
         "title": "Luigi’s Mansion 3 – Overview Trailer",
         "kind": "gameplay",
-        "source": "https://www.youtube.com/watch?v=rgldcSmxY5o",
-        "url": "https://www.youtube.com/watch?v=rgldcSmxY5o",
-        "checked": "2026-11-02T16:00:58.789625+00:00",
-        "attempted": "2026-11-02T16:00:58.789632+00:00",
-        "error": null
+        "source": "https://www.youtube.com/watch?v=rgldcSmxY5o"
       },
       "ratings": {
         "critic": {
-          "score": 86.0,
+          "score": 86.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Metacritic",
-              "score": 86,
-              "url": "https://www.metacritic.com/game/luigis-mansion-3/critic-reviews/?platform=nintendo-switch",
-              "platform": "Switch"
+              "name": "3DJuegos",
+              "score": 90,
+              "url": "https://www.3djuegos.com/juegos/analisis/33249/0/luigis-mansion-3/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "4P.de",
+              "score": 82,
+              "url": "https://www.4players.de/4players.php/dispbericht/Switch/Test/40002/84063/0/Luigis_Mansion_3.html",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 92,
+              "url": "https://areajugones.sport.es/videojuegos/analisis-luigis-mansion-3/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 94,
+              "url": "https://atomix.vg/review-luigis-mansion-3/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 80,
+              "url": "https://attackofthefanboy.com/reviews/luigis-mansion-3-review/",
+              "date": "2019-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "AusGamers",
+              "score": 90,
+              "url": "https://www.ausgamers.com/games/luigis-mansion-3/review/",
+              "date": "2019-10-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "BaziCenter",
+              "score": 90,
+              "url": "https://www.bazicenter.com/review/Luigis-Mansion-3/",
+              "date": "2019-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 85,
+              "url": "",
+              "date": "2020-01-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 90,
+              "url": "https://www.cgmagonline.com/reviews/luigis-mansion-3-review/   ",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 75,
+              "url": "https://cogconnected.com/review/luigis-mansion-3-review",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Carole Quintaine",
+              "score": 90,
+              "url": "http://carolequintaine.com/jai-longuement-teste-luigis-mansion-3-flippant/",
+              "date": "2020-01-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cheat Code Central",
+              "score": 96,
+              "url": "https://cheatcc.com/switch/rev/luigismansion3review.html",
+              "date": "2019-11-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 80,
+              "url": "https://www.criticalhit.net/review/luigis-mansion-3-review-luigi-bored/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/5663/1/luigis-mansion-3-nintendo-switch.html",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Daily Star",
+              "score": 80,
+              "url": "https://www.dailystar.co.uk/tech/reviews/luigis-mansion-3-review-luigi-20741886",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 90,
+              "url": "https://www.darkstation.com/reviews/luigis-mansion-3-review",
+              "date": "2019-11-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 90,
+              "url": "https://www.destructoid.com/review-luigi-s-mansion-3-570488.phtml",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 90,
+              "url": "http://www.digitallydownloaded.net/2019/10/review-luigis-mansion-3-nintendo-switch.html",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 90,
+              "url": "https://www.dualshockers.com/luigis-mansion-3-review-switch/",
+              "date": "2019-11-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "EGM",
+              "score": 80,
+              "url": "https://egmnow.com/luigis-mansion-3-review/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Easy Allies",
+              "score": 90,
+              "url": "https://easyallies.com/#!/review/luigis-mansion-3",
+              "date": "2019-11-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 70,
+              "url": "",
+              "date": "2019-11-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 90,
+              "url": "https://www.eurogamer.it/articles/2019-10-28-luigis-mansion-3-recensione",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 90,
+              "url": "https://www.everyeye.it/articoli/recensione-luigi-s-mansion-3-perla-fantasmagorica-switch-45966.html",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "https://fnintendo.net/article/13119-luigis-mansion-3",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Forbes",
+              "score": 90,
+              "url": "https://www.forbes.com/sites/games/2019/10/28/luigis-mansion-3-review-the-joy-of-sucking/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMINGbible",
+              "score": 90,
+              "url": "https://www.ladbible.com/technology/gaming-luigis-mansion-3-is-a-charming-puzzle-game-full-of-invention-20191028",
+              "date": "2019-12-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GRYOnline.pl",
+              "score": 85,
+              "url": "https://www.gry-online.pl/S020.asp?ID=13621",
+              "date": "2019-10-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 85,
+              "url": "https://www.gameinformer.com/review/luigis-mansion-3/luigis-mansion-3-review-frights-and-delights",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 80,
+              "url": "https://gamerant.com/luigis-mansion-3-review/",
+              "date": "2019-11-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game World Navigator Magazine",
+              "score": 82,
+              "url": "",
+              "date": "2019-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCrate",
+              "score": 83,
+              "url": "https://www.gamecrate.com/reviews/review-luigi-s-mansion-3-scary-good-time-hampered-poor-controls/24562",
+              "date": "2019-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 85,
+              "url": "https://www.gameover.gr/reviews/40116-luigis-mansion-3-review",
+              "date": "2019-10-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 73,
+              "url": "https://www.gamepro.de/artikel/luigis-mansion-3-im-test-geistreiche-ideen-verfluchte-steuerung,3350608.html",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 90,
+              "url": "https://www.gamespew.com/2019/11/luigis-mansion-3-review/",
+              "date": "2019-11-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/luigis-mansion-3-review-family-friendly-frights/1900-6417350/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 90,
+              "url": "http://www.gameblog.fr/tests/3538-luigi-s-mansion-3-switch",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameplanet",
+              "score": 80,
+              "url": "https://www.gameplanet.com.au/nintendo-switch/reviews/g5dae57ba5e688/Luigis-Mansion-3-Review/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 75,
+              "url": "https://gamer.nl/artikelen/review/luigis-mansion-3-is-geestig-maar-voelt-ook-uitgespookt/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.no",
+              "score": 70,
+              "url": "https://www.gamer.no/artikler/anmeldelse-luigi-s-mansion-3/478364",
+              "date": "2019-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamers Heroes",
+              "score": 80,
+              "url": "http://www.gamersheroes.com/honest-game-reviews/luigis-mansion-3-review/",
+              "date": "2019-11-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamersky",
+              "score": 85,
+              "url": "https://www.gamersky.com/review/201911/1235604.shtml",
+              "date": "2019-11-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 90,
+              "url": "https://games.tiscali.cz/recenze/luigis-mansion-3-recenze-mariovske-duchariny-335431",
+              "date": "2019-11-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesBeat",
+              "score": 92,
+              "url": "https://wp.me/p8wLEc-aFv4",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 90,
+              "url": "https://www.gamesradar.com/luigis-mansion-3-review/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 100,
+              "url": "https://www.gaming-age.com/2019/11/luigis-mansion-3-review-for-nintendo-switch/",
+              "date": "2019-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 95,
+              "url": "https://gamingtrend.com/feature/reviews/oozing-with-personality-luigis-mansion-3-review/",
+              "date": "2019-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 85,
+              "url": "http://www.godisageek.com/reviews/luigis-mansion-3-review/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Guardian",
+              "score": 80,
+              "url": "https://www.theguardian.com/games/2019/oct/31/luigis-mansion-3-nintendo-switch-review-professor-e-gadd-gooigi-mario",
+              "date": "2019-10-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 80,
+              "url": "https://www.hardcoregamer.com/2019/11/05/review-luigis-mansion-3/361362/",
+              "date": "2019-11-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 92,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-luigis-mansion-3-nintendo-switch-hotel-encantador-no-querras-salir-518529",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 83,
+              "url": "https://www.ign.com/articles/2019/10/28/luigis-mansion-3-review",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 91,
+              "url": "https://it.ign.com/luigis-mansion-3-nintendo-switch/161558/review/luigis-mansion-3-la-recensione",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 90,
+              "url": "https://es.ign.com/luigis-mansion-3-nintendo-switch/157076/review/analisis-de-luigis-mansion-3-para-nintendo-switch",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 90,
+              "url": "http://www.impulsegamer.com/luigis-mansion-3-review/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "InsideGamer.nl",
+              "score": 80,
+              "url": "https://www.insidegamer.nl/artikel/luigis-mansion-3-review-doet-sidderen-van-plezier/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 90,
+              "url": "https://www.jeuxactu.com/test-luigis-mansion-3-c-est-le-meilleur-episode-de-la-serie-119960.htm",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 90,
+              "url": "http://www.jeuxvideo.com/test/1132562/luigi-s-mansion-3-la-surprise-spooky-de-cette-fin-d-annee.htm",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LEVEL (Czech Republic)",
+              "score": 80,
+              "url": "",
+              "date": "2020-02-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 85,
+              "url": "https://www.levelup.com/Nintendo-Switch/juegos/497254/Luigi-s-Mansion-3/review",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "M3",
+              "score": 70,
+              "url": "https://m3.idg.se/2.1022/1.720164/luigis-mansion-3",
+              "date": "2019-11-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG",
+              "score": 90,
+              "url": "https://www.millenium.org/test/349182.html",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 92,
+              "url": "https://as.com/meristation/2019/10/27/analisis/1572157013_558718.html",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 80,
+              "url": "https://metro.co.uk/2019/10/28/luigis-mansion-3-review-supernatural-beauty-10997948/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 90,
+              "url": "https://multiplayer.it/recensioni/luigis-mansion-3-recensione.html",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "My Nintendo News",
+              "score": 80,
+              "url": "https://mynintendonews.com/2019/10/28/review-luigis-mansion-3-for-nintendo-switch/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New Game Network",
+              "score": 80,
+              "url": "https://www.newgamenetwork.com/article/2222/luigis-mansion-3-review/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 95,
+              "url": "https://www.nintenderos.com/2019/10/analisis-luigis-mansion-3-para-nintendo-switch/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 90,
+              "url": "https://www.nintendoenthusiast.com/luigis-mansion-3-review/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 90,
+              "url": "",
+              "date": "2020-04-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/luigis-mansion-3-review/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/luigis_mansion_3 ",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/52065/luigis-mansion-3-switch-review",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 100,
+              "url": "http://www.nintendojo.com/reviews/review-luigis-mansion-3-switch",
+              "date": "2019-11-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 100,
+              "url": "http://play.co.rs/2019/11/review-luigis-mansion-3/",
+              "date": "2019-12-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 90,
+              "url": "https://www.pocketgamer.com/articles/081409/luigis-mansion-3-review/",
+              "date": "2019-10-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Post Arcade (National Post)",
+              "score": 90,
+              "url": "https://business.financialpost.com/technology/gaming/luigis-mansion-3-review-more-personality-than-most-people",
+              "date": "2019-10-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Power Unlimited",
+              "score": 92,
+              "url": "https://pu.nl/artikelen/review/luigis-mansion-3-review/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 85,
+              "url": "https://press-start.com.au/reviews/nintendo-switch/2019/10/28/luigis-mansion-3-review-a-spooky-good-time/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 95,
+              "url": "https://purenintendo.com/review-luigis-mansion-3-nintendo-switch/",
+              "date": "2019-12-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 90,
+              "url": "https://screenrant.com/luigis-mansion-3-review-gooigi-nintendo-switch/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 90,
+              "url": "https://www.shacknews.com/article/114670/luigis-mansion-3-review-local-haunts ",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Slant Magazine",
+              "score": 80,
+              "url": "https://www.slantmagazine.com/games/review-luigis-mansion-3-is-a-blast-of-slapstick-hilarity-and-cooperative-play/",
+              "date": "2019-11-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 80,
+              "url": "https://www.spaziogames.it/luigis-mansion-3-paurosamente-divertente-recensione/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 80,
+              "url": "https://stevivor.com/reviews/luigis-mansion-3-review-gooigis-lot-like-mogwai/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 100,
+              "url": "http://switchplayer.net/2019/10/28/luigis-mansion-3-review/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 90,
+              "url": "https://www.thedigitalfix.com/gaming/content/23251/luigis-mansion-3/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 90,
+              "url": "https://www.thegamesmachine.it/luigis-mansion-3-switch/luigis-mansion-3-recensione/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Sydney Morning Herald",
+              "score": 90,
+              "url": "https://www.smh.com.au/technology/video-games/mario-s-braver-brother-is-back-in-his-most-superb-spooktacular-yet-20191028-p5350n.html",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 90,
+              "url": "https://www.thesixthaxis.com/2019/10/28/luigis-mansion-3-review-nintendo-switch/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 80,
+              "url": "https://www.trustedreviews.com/reviews/luigis-mansion-3",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 80,
+              "url": "https://twinfinite.net/2019/10/luigis-mansion-3-review-ghostly-good-time/‎",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "USgamer",
+              "score": 80,
+              "url": "https://www.usgamer.net/articles/luigis-mansion-3-review-only-the-poltergust-sucks",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 90,
+              "url": "https://switch-brasil.com/analise-luigis-mansion-3/",
+              "date": "2020-06-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VGC",
+              "score": 100,
+              "url": "https://www.videogameschronicle.com/reviews/luigis-mansion-3/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 93,
+              "url": "https://vandal.elespanol.com/analisis/switch/luigis-mansion-3/65548/1#p-83",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vgames",
+              "score": 85,
+              "url": "https://www.vgames.co.il/article/26504.html",
+              "date": "2019-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 87,
+              "url": "https://videochums.com/review/luigis-mansion-iii",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VideoGamer",
+              "score": 80,
+              "url": "https://www.videogamer.com/reviews/luigis-mansion-3-review",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 90,
+              "url": "http://vooks.net/luigis-mansion-3-switch-review",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Washington Post",
+              "score": 70,
+              "url": "https://www.washingtonpost.com/video-games/reviews/luigis-mansion-is-diverting-fall-treat/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 90,
+              "url": "https://wccftech.com/review/luigis-mansion-3-bustin-good/",
+              "date": "2019-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 90,
+              "url": "https://wegotthiscovered.com/gaming/luigis-mansion-3-review/",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 85,
+              "url": "https://worthplaying.com/article/2019/11/4/reviews/116799/",
+              "date": "2019-11-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 75,
+              "url": "https://www.xgn.nl/review/luigis-mansion-3-review",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 80,
+              "url": "http://www.ztgd.com/reviews/luigis-mansion-3-switch/",
+              "date": "2019-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 106
         },
         "user": {
-          "score": 8.4,
+          "score": 8.5,
           "scale": 10,
-          "source_count": 1,
-          "method": "single-source",
           "sources": [
             {
+              "name": "Metacritic users",
               "score": 8.4,
               "scale": 10,
-              "source": "Metacritic",
+              "count": 1970,
               "url": "https://www.metacritic.com/game/luigis-mansion-3/user-reviews/?platform=nintendo-switch",
-              "checked": "2026-11-02T13:10:45.169432+00:00",
-              "name": "Metacritic",
-              "platform": "Switch"
+              "platform": "Nintendo Switch",
+              "weight": 31.622776601683793,
+              "normalized": 8.4
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 8.6,
+              "scale": 10.0,
+              "count": 1239,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/luigis_mansion_3",
+              "platform": "Nintendo Switch",
+              "weight": 31.622776601683793,
+              "normalized": 8.6
             }
-          ]
+          ],
+          "source_count": 2,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:22.915021+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 112,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:37:14.573596+00:00"
       },
       "requirements": {
         "image": true,
@@ -66759,7 +67654,10 @@
       },
       "basics_attempted": "2026-11-02T22:41:22.915021+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/luigis-mansion-3-switch/",
@@ -66808,7 +67706,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:37:16.063137+00:00",
+      "full_version": 7
     },
     "Switch:10132": {
       "title": "MARIOZZA COPS",
@@ -160890,15 +161790,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 2.68,
-              "count": 22,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 2.68,
               "scale": 5,
-              "source": "PSN",
+              "count": 22,
               "url": "https://store.playstation.com/pt-pt/product/UB0867-PPSA28140_00-0376423800153179",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:52:14.909374+00:00",
-              "platform": "PSN · PS5",
               "weight": 4.69041575982343,
               "normalized": 5.36
             }
@@ -160906,7 +161804,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:52:13.820603+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:36:51.836694+00:00"
       },
       "requirements": {
         "image": true,
@@ -160948,7 +161853,11 @@
       },
       "basics_attempted": "2026-11-02T17:52:13.820603+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -160964,7 +161873,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:36:52.552398+00:00",
+      "full_version": 7
     },
     "Switch:16905": {
       "title": "Luminaria: Dark Echoes",
@@ -169630,15 +170541,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.47,
-              "count": 153,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.47,
               "scale": 5,
-              "source": "PSN",
+              "count": 153,
               "url": "https://store.playstation.com/pt-pt/product/UP7892-PPSA23552_00-0550496421809705",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:52:04.997106+00:00",
-              "platform": "PSN · PS5",
               "weight": 12.36931687685298,
               "normalized": 6.94
             }
@@ -169646,7 +170555,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:52:03.421634+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:36:41.668858+00:00"
       },
       "requirements": {
         "image": true,
@@ -169688,7 +170604,11 @@
       },
       "basics_attempted": "2026-11-02T17:52:03.421634+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -169704,7 +170624,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:36:42.043983+00:00",
+      "full_version": 7
     },
     "PS5:17229": {
       "title": "Mai: Child of Ages",
@@ -196936,10 +197858,11 @@
           "sources": [
             {
               "name": "Nindie Spotlight",
-              "score": 57.99999999999999,
-              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=lost-twins-2-switch",
+              "score": 58,
+              "url": "https://nindiespotlight.com/game_profile.cfm?game=lost-twins-2-switch",
+              "date": "2026-05-06",
               "platform": "Nintendo Switch",
-              "via": "Direct console-specific review"
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
@@ -196952,7 +197875,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:22.914108+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:36:59.424376+00:00"
       },
       "requirements": {
         "image": true,
@@ -196968,7 +197898,13 @@
       },
       "basics_attempted": "2026-11-02T22:41:22.914108+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lost-twins-2-switch/",
@@ -197017,7 +197953,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:37:01.461222+00:00",
+      "full_version": 7
     },
     "Switch:18109": {
       "title": "MARVEL MaXimum Collection",
@@ -238953,22 +239891,94 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 84.1,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/lovers_in_a_dangerous_spacetime",
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/5120/1/lovers-in-a-dangerous-spacetime-nintendo-switch.html",
+              "date": "2018-10-08",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "http://fnintendo.net/article/10022-lovers-in-a-dangerous-spacetime",
+              "date": "2017-11-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 90,
+              "url": "https://www.gamingnexus.com/Article/5506/Lovers-in-a-Dangerous-Spacetime/",
+              "date": "2017-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 90.99999999999999,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=lovers-in-a-dangerous-spacetime-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 90,
+              "url": "",
+              "date": "2017-10-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/lovers_in_a_dangerous_spacetime",
+              "date": "2017-10-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/45577/lovers-in-a-dangerous-spacetime-switch-review",
+              "date": "2017-10-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 80,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/Lovers+in+a+Dangerous+Spacetime/review.asp?c=75547",
+              "date": "2017-10-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2017/10/13/lovers-in-a-dangerous-spacetime-review/",
+              "date": "2017-10-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 80,
+              "url": "https://www.vooks.net/lovers-dangerous-spacetime-switch-review/",
+              "date": "2017-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 10
         },
         "user": {
-          "score": 7.4,
+          "score": 7.69,
           "scale": 10,
           "sources": [
             {
@@ -238979,14 +239989,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/lovers_in_a_dangerous_spacetime",
               "platform": "Nintendo Switch",
               "weight": 8.06225774829855,
-              "normalized": 7.4,
-              "checked": "2026-11-02T17:52:06.499052+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 57,
+              "url": "https://www.metacritic.com/game/lovers-in-a-dangerous-spacetime/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 7.54983443527075,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:22.914702+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:36:54.598738+00:00"
       },
       "requirements": {
         "image": true,
@@ -239002,7 +240026,10 @@
       },
       "basics_attempted": "2026-11-02T22:41:22.914702+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lovers-in-a-dangerous-spacetime-switch/",
@@ -239051,7 +240078,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:36:56.623892+00:00",
+      "full_version": 7
     },
     "Switch:5449": {
       "title": "MARVEL ULTIMATE ALLIANCE 3: The Black Order",
@@ -250714,13 +251743,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 4.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/lost_castle",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:09.594191+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:36:34.581356+00:00"
       },
       "requirements": {
         "image": true,
@@ -250736,7 +251782,12 @@
       },
       "basics_attempted": "2026-11-02T22:41:09.594191+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lost-castle-switch/",
@@ -250785,7 +251836,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:36:36.874004+00:00",
+      "full_version": 7
     },
     "Switch:6065": {
       "title": "Mecho Tales",
@@ -328141,7 +329194,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 62.0,
+          "score": 54.0,
           "scale": 100,
           "sources": [
             {
@@ -328150,19 +329203,52 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=lumberhill-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 60,
+              "url": "https://purenintendo.com/review-lumberhill-nintendo-switch/",
+              "date": "2022-06-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 40,
+              "url": "https://videochums.com/article/dandy-and-randy-dx-lumberhill-and-rifftrax-review#lumberhill",
+              "date": "2022-05-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 5.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 5.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/lumberhill",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 5.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:22.917401+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:37:04.592754+00:00"
       },
       "requirements": {
         "image": true,
@@ -328178,7 +329264,11 @@
       },
       "basics_attempted": "2026-11-02T22:41:22.917401+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lumberhill-switch/",
@@ -328227,7 +329317,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:37:06.433598+00:00",
+      "full_version": 7
     },
     "Switch:9362": {
       "title": "Moon Raider",
