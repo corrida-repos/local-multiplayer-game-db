@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:38:32.213937+00:00",
+  "updated": "2026-11-03T08:39:24.556284+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2381,
+    "full_attempted": 2391,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -133627,19 +133627,67 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 79.4,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/trombone-champ",
+              "name": "GamingTrend",
+              "score": 80,
+              "url": "https://gamingtrend.com/feature/reviews/trombone-champ-review-tootie-mctooterson/",
+              "date": "2023-10-02",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "INVEN",
+              "score": 70,
+              "url": "https://www.inven.co.kr/webzine/news/?news=289386",
+              "date": "2023-10-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 81.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=trombone-champ-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/trombone-champ",
+              "date": "2023-09-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 75,
+              "url": "https://purenintendo.com/review-trombone-champ-nintendo-switch/",
+              "date": "2023-09-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 90,
+              "url": "https://toucharcade.com/2023/10/09/fate-samurai-remnant-switch-review-performance-cocoon-nintendo-eshop-price-trombone-champ-motion-controls/",
+              "date": "2023-10-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/challenging-indie-games-part-5#trombone-champ",
+              "date": "2023-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
           "score": 7.4,
@@ -133653,14 +133701,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/trombone_champ",
               "platform": "Nintendo Switch",
               "weight": 5.830951894845301,
-              "normalized": 7.4,
-              "checked": "2026-11-02T18:41:33.846920+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 16,
+              "url": "https://www.metacritic.com/game/trombone-champ/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.0,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:53:33.450036+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:38:58.403334+00:00"
       },
       "requirements": {
         "image": true,
@@ -133676,7 +133738,11 @@
       },
       "basics_attempted": "2026-11-02T22:53:33.450036+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/trombone-champ-switch/",
@@ -133725,7 +133791,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:39:02.070120+00:00",
+      "full_version": 7
     },
     "PS5:14126": {
       "title": "Twisted Metal 2",
@@ -192626,15 +192694,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.67,
-              "count": 435,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.67,
               "scale": 5,
-              "source": "PSN",
+              "count": 435,
               "url": "https://store.playstation.com/pt-pt/product/EP5011-PPSA25958_00-0714487102198604",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:41:56.434305+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 20.85665361461421,
               "normalized": 9.34
             }
@@ -192642,7 +192708,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:41:55.422538+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:38:55.727922+00:00"
       },
       "requirements": {
         "image": true,
@@ -192684,7 +192757,11 @@
       },
       "basics_attempted": "2026-11-02T18:41:55.422538+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -192700,7 +192777,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:38:56.026629+00:00",
+      "full_version": 7
     },
     "PS5:16549": {
       "title": "Twisted Metal",
@@ -242344,26 +242423,73 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 73.2,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Cubed3",
+              "score": 60,
+              "url": "https://www.cubed3.com/games/reviews/playstation-5/truxton-extreme",
+              "date": "2026-09-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameBlast",
+              "score": 80,
+              "url": "https://www.gameblast.com.br/2026/07/analise-truxton-extreme-review.html",
+              "date": "2026-07-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2026/07/truxton-extreme-review/",
+              "date": "2026-07-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamersRD",
+              "score": 69,
+              "url": "https://gamersrd.com/truxton-extreme-review/",
+              "date": "2026-07-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 85,
+              "url": "https://www.hobbyconsolas.com/videojuegos/analisis-truxton-extreme-placer-superar-retos-dificiles-retorno-un-clasicazo_7018681_0.html",
+              "date": "2026-07-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Indigo GEEK",
+              "score": 75,
+              "url": "https://geek.reporteindigo.com/resena/resena-de-truxton-extreme---un-clasico-arcade-que-resurge-de-sus-cenizas-20260729-0017.html",
+              "date": "2026-08-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 6
         },
         "user": {
           "score": 8.74,
           "scale": 10,
           "sources": [
             {
-              "score": 4.37,
-              "count": 324,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.37,
               "scale": 5,
-              "source": "PSN",
+              "count": 324,
               "url": "https://store.playstation.com/pt-pt/product/JP4901-PPSA29104_00-TATSUJINEXTREME0",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:41:34.749352+00:00",
-              "platform": "PSN · PS5",
               "weight": 18.0,
               "normalized": 8.74
             }
@@ -242371,7 +242497,12 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:41:33.847631+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:38:50.940930+00:00"
       },
       "requirements": {
         "image": true,
@@ -242413,7 +242544,10 @@
       },
       "basics_attempted": "2026-11-02T18:41:33.847631+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -242429,7 +242563,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:38:51.351638+00:00",
+      "full_version": 7
     },
     "Switch:18335": {
       "title": "Twin Shot Deluxe",
@@ -242443,6 +242579,7 @@
               "name": "Video Chums",
               "score": 80,
               "url": "https://videochums.com/article/local-multiplayer-indie-games-for-switch#twin-shot-deluxe",
+              "date": "2026-06-23",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -242457,7 +242594,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:53:48.546735+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:39:17.930770+00:00"
       },
       "requirements": {
         "image": true,
@@ -242474,7 +242618,12 @@
       "basics_attempted": "2026-11-02T22:53:48.546735+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -242524,7 +242673,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:39:24.284350+00:00",
+      "full_version": 7
     },
     "PS5:18539": {
       "title": "Acorn Avengers",
@@ -250420,26 +250571,41 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 75.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameBlast",
+              "score": 70,
+              "url": "https://www.gameblast.com.br/2026/08/turnip-mountain-analise-review.html",
+              "date": "2026-08-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/console-games-grab-bag-quack-cooperate-and-slay#turnip-mountain",
+              "date": "2026-08-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 8.6,
           "scale": 10,
           "sources": [
             {
-              "score": 4.3,
-              "count": 10,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.3,
               "scale": 5,
-              "source": "PSN",
+              "count": 10,
               "url": "https://store.playstation.com/pt-pt/product/EP3111-PPSA37287_00-JANDUSOFT0000001",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:41:36.012067+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 3.1622776601683795,
               "normalized": 8.6
             }
@@ -250447,7 +250613,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:41:33.848145+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:39:05.593493+00:00"
       },
       "requirements": {
         "image": true,
@@ -250489,7 +250662,11 @@
       },
       "basics_attempted": "2026-11-02T18:41:33.848145+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -250505,35 +250682,63 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:39:06.063426+00:00",
+      "full_version": 7
     },
     "Switch:18699": {
       "title": "Turnip Mountain",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 74.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/turnip-mountain",
+              "name": "Nindie Spotlight",
+              "score": 78,
+              "url": "https://nindiespotlight.com/game_profile.cfm?game=turnip-mountain-switch",
+              "date": "2026-07-31",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/turnip-mountain",
+              "date": "2026-07-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 9.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 9.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/turnip_mountain",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 9.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:53:48.546260+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:39:03.244970+00:00"
       },
       "requirements": {
         "image": true,
@@ -250549,7 +250754,12 @@
       },
       "basics_attempted": "2026-11-02T22:53:48.546260+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/turnip-mountain-switch/",
@@ -250598,7 +250808,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:39:08.086123+00:00",
+      "full_version": 7
     },
     "PS5:18753": {
       "title": "U.S. Championship V'Ball",
@@ -281779,24 +281991,66 @@
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/twin_robots_ultimate_edition",
+              "name": "FNintendo",
+              "score": 70,
+              "url": "http://fnintendo.net/article/10714-twin-robots-ultimate-edition",
+              "date": "2018-04-16",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=twin-robots-ultimate-edition-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/twin_robots_ultimate_edition?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-02-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70.0,
+              "url": "https://purenintendo.com/review-twin-robots-ultimate-edition-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 7.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/twin_robots_ultimate_edition",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:53:48.546495+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:39:08.266129+00:00"
       },
       "requirements": {
         "image": true,
@@ -281812,7 +282066,11 @@
       },
       "basics_attempted": "2026-11-02T22:53:48.546495+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/twin-robots-ultimate-edition-switch/",
@@ -281861,7 +282119,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:39:13.981199+00:00",
+      "full_version": 7
     },
     "Switch:4669": {
       "title": "Ultra Street Fighter II: The Final Challengers",
@@ -324803,22 +325063,54 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 72.8,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/tunche",
+              "name": "COGconnected",
+              "score": 74,
+              "url": "https://cogconnected.com/review/tunche-review/",
+              "date": "2021-11-12",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 80.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=tunche-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/tunche",
+              "date": "2021-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 50,
+              "url": "https://play.co.rs/2021/12/03/tunche-review/",
+              "date": "2021-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 90,
+              "url": "https://switch-brasil.com/analise-tunche/",
+              "date": "2022-02-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": 6.8,
+          "score": 7.15,
           "scale": 10,
           "sources": [
             {
@@ -324829,14 +325121,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/tunche",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 6.799999999999999,
-              "checked": "2026-11-02T18:41:33.847872+00:00"
+              "normalized": 6.799999999999999
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.5,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/tunche/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 7.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:53:34.580194+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:38:48.402406+00:00"
       },
       "requirements": {
         "image": true,
@@ -324852,7 +325158,12 @@
       },
       "basics_attempted": "2026-11-02T22:53:34.580194+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/tunche-switch/",
@@ -324901,7 +325212,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:38:53.063476+00:00",
+      "full_version": 7
     },
     "PS5:6411": {
       "title": "Warhammer: Chaosbane Slayer Edition",
@@ -375392,15 +375705,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.79,
-              "count": 14,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.79,
               "scale": 5,
-              "source": "PSN",
+              "count": 14,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA02469_00-RATATWINROBOTSUE",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:41:57.472123+00:00",
-              "platform": "PSN · PS5",
               "weight": 3.7416573867739413,
               "normalized": 7.58
             }
@@ -375408,7 +375719,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:41:55.423271+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:39:00.634288+00:00"
       },
       "requirements": {
         "image": true,
@@ -375450,7 +375768,11 @@
       },
       "basics_attempted": "2026-11-02T18:41:55.423271+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -375466,7 +375788,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:39:00.886710+00:00",
+      "full_version": 7
     },
     "Switch:8104": {
       "title": "Undercat",
@@ -390462,9 +390786,25 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 65.0,
+          "score": 62.4,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 40,
+              "url": "http://www.cubed3.com/review/4986/1/turtlepop-journey-to-freedom-nintendo-switch.html",
+              "date": "2018-07-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 70,
+              "url": "https://www.gamespace.com/reviews/our-turtlepop-journey-to-freedom-review/",
+              "date": "2018-07-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 60.0,
@@ -390473,24 +390813,74 @@
               "via": "Direct console-specific review"
             },
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/turtlepop_journey_to_freedom",
+              "name": "Nintenderos",
+              "score": 70,
+              "url": "https://www.nintenderos.com/2018/07/analisis-turtlepop-viaje-a-la-libertad/",
+              "date": "2018-07-26",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/turtlepop_journey_to_freedom?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-03-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 55,
+              "url": "http://www.nintendoworldreport.com/review/46667/turtlepop-journey-to-freedom-switch-review",
+              "date": "2018-03-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 74,
+              "url": "https://videochums.com/review/turtlepop-journey-to-freedom",
+              "date": "2018-07-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 60,
+              "url": "http://worthplaying.com/article/2018/5/7/reviews/108586/",
+              "date": "2018-05-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 2
+          "source_count": 8
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/turtlepop_journey_to_freedom",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T00:11:50.977434+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:38:53.290693+00:00"
       },
       "requirements": {
         "image": true,
@@ -390508,7 +390898,10 @@
       "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -390540,7 +390933,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:38:57.136314+00:00",
+      "full_version": 7
     },
     "Switch:8973": {
       "title": "UTOPIA 9 - A Volatile Vacation",
