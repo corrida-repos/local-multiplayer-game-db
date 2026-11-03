@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T00:31:37.663287+00:00",
+  "updated": "2026-11-03T00:33:19.384849+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
     "ready": 1960,
     "missing_image": 109,
-    "missing_store": 315,
+    "missing_store": 308,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -32655,11 +32655,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:53:47.080111+00:00"
+        "attempted": "2026-11-03T00:31:41.645538+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -32667,12 +32667,14 @@
         "source": "https://www.nintendo.com/us/store/products/gungungun-switch/",
         "checked": "2026-11-02T21:53:56.507857+00:00"
       },
-      "basics_attempted": "2026-11-02T21:53:47.080111+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:31:41.645538+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:34:24.532309+00:00",
       "store_evidence": [
@@ -32682,7 +32684,100 @@
           "checked": "2026-11-02T21:53:56.507543+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/GUNGUNGUN-2164229.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:31:42.972076+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "GUNGUNGUN"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:31:42.972265+00:00",
+              "next_attempt": "2026-11-04T00:31:42.972265+00:00",
+              "revision": "bc54e4125c8a336c:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:31:42.972265+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/GUNGUNGUN-2164229.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/GUNGUNGUN-2164229.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:32.186803+00:00",
+              "next_attempt": "2026-11-04T00:32:32.186803+00:00",
+              "revision": "bc54e4125c8a336c:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/gungungun",
+                "https://www.nintendolife.com/games/switch-eshop/gungungun"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/gungungun"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:32.531957+00:00",
+              "next_attempt": "2026-11-04T00:32:32.531957+00:00",
+              "revision": "bc54e4125c8a336c:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=gungungun-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=gungungun-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:51.389165+00:00",
+              "next_attempt": "2026-11-04T00:32:51.389165+00:00",
+              "revision": "bc54e4125c8a336c:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/gungungun/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/gungungun/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/gungungun/"
+              ],
+              "url": "https://www.metacritic.com/game/gungungun/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:52.815118+00:00",
+              "next_attempt": "2026-11-04T00:32:52.815118+00:00",
+              "revision": "bc54e4125c8a336c:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=GUNGUNGUN&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=GUNGUNGUN&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:32:52.815223+00:00",
+              "next_attempt": "2026-11-03T01:32:52.815223+00:00",
+              "revision": "bc54e4125c8a336c:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:32:52.815251+00:00",
+              "next_attempt": "2026-11-03T01:32:52.815251+00:00",
+              "revision": "bc54e4125c8a336c:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:13104": {
       "title": "Gal Guardians: Demon Purge",
@@ -33107,11 +33202,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:53:47.080454+00:00"
+        "attempted": "2026-11-03T00:31:41.646459+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -33119,12 +33214,14 @@
         "source": "https://www.nintendo.com/us/store/products/galactic-wars-ex-switch/",
         "checked": "2026-11-02T21:53:53.787889+00:00"
       },
-      "basics_attempted": "2026-11-02T21:53:47.080454+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:31:41.646459+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:34:15.598451+00:00",
       "store_evidence": [
@@ -33134,7 +33231,100 @@
           "checked": "2026-11-02T21:53:53.787576+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Galactic-Wars-EX-2198154.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:31:45.228689+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Galactic Wars EX"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:31:45.228881+00:00",
+              "next_attempt": "2026-11-04T00:31:45.228881+00:00",
+              "revision": "839eaa46e658a515:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:31:45.228881+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Galactic-Wars-EX-2198154.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Galactic-Wars-EX-2198154.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:52.292251+00:00",
+              "next_attempt": "2026-11-04T00:32:52.292251+00:00",
+              "revision": "839eaa46e658a515:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/galactic_wars_ex",
+                "https://www.nintendolife.com/games/nintendo-switch/galactic_wars_ex"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/galactic_wars_ex"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:52.778590+00:00",
+              "next_attempt": "2026-11-04T00:32:52.778590+00:00",
+              "revision": "839eaa46e658a515:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=galactic-wars-ex-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=galactic-wars-ex-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:59.358183+00:00",
+              "next_attempt": "2026-11-04T00:32:59.358183+00:00",
+              "revision": "839eaa46e658a515:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/galactic-wars-ex/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/galactic-wars-ex/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/galactic-wars-ex/"
+              ],
+              "url": "https://www.metacritic.com/game/galactic-wars-ex/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:00.924778+00:00",
+              "next_attempt": "2026-11-04T00:33:00.924778+00:00",
+              "revision": "839eaa46e658a515:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Galactic+Wars+EX&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Galactic+Wars+EX&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:33:00.924924+00:00",
+              "next_attempt": "2026-11-03T01:33:00.924924+00:00",
+              "revision": "839eaa46e658a515:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:33:00.924956+00:00",
+              "next_attempt": "2026-11-03T01:33:00.924956+00:00",
+              "revision": "839eaa46e658a515:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:14156": {
       "title": "Galaxy Champions TV",
@@ -33867,23 +34057,91 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:54:03.204050+00:00"
+        "attempted": "2026-11-03T00:31:41.647179+00:00"
       },
       "requirements": {
         "image": false,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T21:54:03.204050+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:31:41.647179+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "image": "No unique matching video-game article with artwork"
+        "image": "No unique matching video-game article with artwork",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
       "full_attempted": "2026-11-02T20:34:56.548874+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:42.334950+00:00",
+              "next_attempt": "2026-11-04T00:31:42.334950+00:00",
+              "revision": "e719f110c7b9bb19:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Geometric+Feel+the+Beats%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Geometric+Feel+the+Beats%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:42.334950+00:00",
+              "next_attempt": "2026-11-04T00:31:42.334950+00:00",
+              "revision": "e719f110c7b9bb19:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Geometric+Feel+the+Beats%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Geometric+Feel+the+Beats%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:27.218336+00:00",
+              "next_attempt": "2026-11-04T00:32:27.218336+00:00",
+              "revision": "e719f110c7b9bb19:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/geometric_feel_the_beats",
+                "https://www.nintendolife.com/games/nintendo-switch/geometric_feel_the_beats"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/geometric_feel_the_beats"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:27.520898+00:00",
+              "next_attempt": "2026-11-04T00:32:27.520898+00:00",
+              "revision": "e719f110c7b9bb19:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=geometric-feel-the-beats-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=geometric-feel-the-beats-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:27.699486+00:00",
+              "next_attempt": "2026-11-04T00:32:27.699486+00:00",
+              "revision": "e719f110c7b9bb19:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Geometric+Feel+the+Beats%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Geometric+Feel+the+Beats%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        }
+      }
     },
     "Switch:13477": {
       "title": "Get Packed: Couch Chaos",
@@ -100375,11 +100633,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:53:47.079793+00:00"
+        "attempted": "2026-11-03T00:31:41.645124+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -100387,12 +100645,14 @@
         "source": "https://www.nintendo.com/us/store/products/fortress-challenge-fort-boyard-switch/",
         "checked": "2026-11-02T21:53:51.725546+00:00"
       },
-      "basics_attempted": "2026-11-02T21:53:47.079793+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:31:41.645124+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:33:41.245051+00:00",
       "store_evidence": [
@@ -100402,7 +100662,102 @@
           "checked": "2026-11-02T21:53:51.725227+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Fortress-Challenge-Fort-Boyard-2565357.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:31:46.315614+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Fortress Challenge : Fort Boyard",
+        "Fortress Challenge - Fort Boyard"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:31:46.315807+00:00",
+              "next_attempt": "2026-11-04T00:31:46.315807+00:00",
+              "revision": "ae1390afc8ee85be:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:31:46.315807+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Fortress-Challenge-Fort-Boyard-2565357.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Fortress-Challenge-Fort-Boyard-2565357.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:12.209469+00:00",
+              "next_attempt": "2026-11-04T00:33:12.209469+00:00",
+              "revision": "ae1390afc8ee85be:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/fortress_challenge_-_fort_boyard",
+                "https://www.nintendolife.com/games/nintendo-switch/fortress_challenge_fort_boyard",
+                "https://www.nintendolife.com/games/switch-eshop/fortress_challenge_fort_boyard"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/fortress_challenge_fort_boyard"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:12.629430+00:00",
+              "next_attempt": "2026-11-04T00:33:12.629430+00:00",
+              "revision": "ae1390afc8ee85be:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=fortress-challenge-fort-boyard-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=fortress-challenge-fort-boyard-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:17.693443+00:00",
+              "next_attempt": "2026-11-04T00:33:17.693443+00:00",
+              "revision": "ae1390afc8ee85be:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/fortress-challenge-fort-boyard/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/fortress-challenge-fort-boyard/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/fortress-challenge-fort-boyard/"
+              ],
+              "url": "https://www.metacritic.com/game/fortress-challenge-fort-boyard/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:19.216548+00:00",
+              "next_attempt": "2026-11-04T00:33:19.216548+00:00",
+              "revision": "ae1390afc8ee85be:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Fortress+Challenge+%3A+Fort+Boyard&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Fortress+Challenge+%3A+Fort+Boyard&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:33:19.216714+00:00",
+              "next_attempt": "2026-11-03T01:33:19.216714+00:00",
+              "revision": "ae1390afc8ee85be:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:33:19.216754+00:00",
+              "next_attempt": "2026-11-03T01:33:19.216754+00:00",
+              "revision": "ae1390afc8ee85be:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:15423": {
       "title": "Frogun Encore",
@@ -129999,11 +130354,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:53:47.077643+00:00"
+        "attempted": "2026-11-03T00:31:41.644304+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -130011,12 +130366,14 @@
         "source": "https://www.nintendo.com/us/store/products/cargo-switch/",
         "checked": "2026-11-02T21:53:54.679017+00:00"
       },
-      "basics_attempted": "2026-11-02T21:53:47.077643+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:31:41.644304+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:26:42.214200+00:00",
       "store_evidence": [
@@ -130026,7 +130383,100 @@
           "checked": "2026-11-02T21:53:54.678705+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/CarGo--2849038.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:31:44.139562+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "CarGo!"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:31:44.139759+00:00",
+              "next_attempt": "2026-11-04T00:31:44.139759+00:00",
+              "revision": "1fe0a4a9f6f74d51:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:31:44.139759+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/CarGo--2849038.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/CarGo--2849038.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:42.277218+00:00",
+              "next_attempt": "2026-11-04T00:32:42.277218+00:00",
+              "revision": "1fe0a4a9f6f74d51:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/cargo",
+                "https://www.nintendolife.com/games/nintendo-switch/cargo"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/cargo"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:42.744699+00:00",
+              "next_attempt": "2026-11-04T00:32:42.744699+00:00",
+              "revision": "1fe0a4a9f6f74d51:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=cargo-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cargo-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:12.217838+00:00",
+              "next_attempt": "2026-11-04T00:33:12.217838+00:00",
+              "revision": "1fe0a4a9f6f74d51:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/cargo/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/cargo/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/cargo/"
+              ],
+              "url": "https://www.metacritic.com/game/cargo/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:13.647615+00:00",
+              "next_attempt": "2026-11-04T00:33:13.647615+00:00",
+              "revision": "1fe0a4a9f6f74d51:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=CarGo%21&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=CarGo%21&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:33:13.647741+00:00",
+              "next_attempt": "2026-11-03T01:33:13.647741+00:00",
+              "revision": "1fe0a4a9f6f74d51:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:33:13.647770+00:00",
+              "next_attempt": "2026-11-03T01:33:13.647770+00:00",
+              "revision": "1fe0a4a9f6f74d51:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:16734": {
       "title": "Disney Illusion Island Starring Mickey & Friends",
@@ -130196,11 +130646,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:53:47.078720+00:00"
+        "attempted": "2026-11-03T00:31:41.644447+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -130208,12 +130658,14 @@
         "source": "https://www.nintendo.com/us/store/products/finnigan-fox-switch/",
         "checked": "2026-11-02T21:53:54.284676+00:00"
       },
-      "basics_attempted": "2026-11-02T21:53:47.078720+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:31:41.644447+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:33:01.229385+00:00",
       "store_evidence": [
@@ -130223,7 +130675,100 @@
           "checked": "2026-11-02T21:53:54.284365+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Finnigan-Fox-2856224.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:31:41.990534+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Finnigan Fox"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:31:41.990726+00:00",
+              "next_attempt": "2026-11-04T00:31:41.990726+00:00",
+              "revision": "04816e033d7e401f:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:31:41.990726+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Finnigan-Fox-2856224.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Finnigan-Fox-2856224.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:52.299164+00:00",
+              "next_attempt": "2026-11-04T00:31:52.299164+00:00",
+              "revision": "04816e033d7e401f:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/finnigan_fox",
+                "https://www.nintendolife.com/games/nintendo-switch/finnigan_fox"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/finnigan_fox"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:52.600790+00:00",
+              "next_attempt": "2026-11-04T00:31:52.600790+00:00",
+              "revision": "04816e033d7e401f:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=finnigan-fox-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=finnigan-fox-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:55.691286+00:00",
+              "next_attempt": "2026-11-04T00:31:55.691286+00:00",
+              "revision": "04816e033d7e401f:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/finnigan-fox/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/finnigan-fox/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/finnigan-fox/"
+              ],
+              "url": "https://www.metacritic.com/game/finnigan-fox/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:57.220738+00:00",
+              "next_attempt": "2026-11-04T00:31:57.220738+00:00",
+              "revision": "04816e033d7e401f:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Finnigan+Fox&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Finnigan+Fox&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:57.220878+00:00",
+              "next_attempt": "2026-11-03T01:31:57.220878+00:00",
+              "revision": "04816e033d7e401f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:31:57.220909+00:00",
+              "next_attempt": "2026-11-03T01:31:57.220909+00:00",
+              "revision": "04816e033d7e401f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:16717": {
       "title": "Gangbusters",
@@ -134677,11 +135222,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:54:34.962878+00:00"
+        "attempted": "2026-11-03T00:31:41.647891+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -134689,12 +135234,14 @@
         "source": "https://www.nintendo.com/us/store/products/ball-blast-switch/",
         "checked": "2026-11-02T21:54:36.466575+00:00"
       },
-      "basics_attempted": "2026-11-02T21:54:34.962878+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:31:41.647891+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:51:14.201693+00:00",
       "store_evidence": [
@@ -134704,7 +135251,100 @@
           "checked": "2026-11-02T21:54:36.466243+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Ball-Blast-2875374.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:31:47.386302+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Ball Blast"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:31:47.386484+00:00",
+              "next_attempt": "2026-11-04T00:31:47.386484+00:00",
+              "revision": "d18a467186eedf3b:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:31:47.386484+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Ball-Blast-2875374.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Ball-Blast-2875374.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:02.244328+00:00",
+              "next_attempt": "2026-11-04T00:33:02.244328+00:00",
+              "revision": "d18a467186eedf3b:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/ball_blast",
+                "https://www.nintendolife.com/games/nintendo-switch/ball_blast"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/ball_blast"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:02.742156+00:00",
+              "next_attempt": "2026-11-04T00:33:02.742156+00:00",
+              "revision": "d18a467186eedf3b:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=ball-blast-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=ball-blast-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:07.269440+00:00",
+              "next_attempt": "2026-11-04T00:33:07.269440+00:00",
+              "revision": "d18a467186eedf3b:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/ball-blast/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/ball-blast/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/ball-blast/"
+              ],
+              "url": "https://www.metacritic.com/game/ball-blast/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:08.800190+00:00",
+              "next_attempt": "2026-11-04T00:33:08.800190+00:00",
+              "revision": "d18a467186eedf3b:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Ball+Blast&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Ball+Blast&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:33:08.800282+00:00",
+              "next_attempt": "2026-11-03T01:33:08.800282+00:00",
+              "revision": "d18a467186eedf3b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:33:08.800312+00:00",
+              "next_attempt": "2026-11-03T01:33:08.800312+00:00",
+              "revision": "d18a467186eedf3b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:17168": {
       "title": "Beat 'Em Up Collection (QUByte Classics)",
@@ -134831,7 +135471,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:55:45.710792+00:00"
+        "attempted": "2026-11-03T00:31:41.648616+00:00"
       },
       "requirements": {
         "image": true,
@@ -134843,14 +135483,32 @@
         "source": "https://www.nintendolife.com/games/switch-eshop/bubble_trouble",
         "checked": "2026-11-02T17:11:34.754364+00:00"
       },
-      "basics_attempted": "2026-11-02T21:55:45.710792+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:31:41.648616+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
       "full_attempted": "2026-11-02T21:00:46.975705+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:43.326561+00:00",
+              "next_attempt": "2026-11-04T00:31:43.326561+00:00",
+              "revision": "aeb1a1caca8f6ea7:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Bubble+Trouble%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Bubble+Trouble%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "Switch:17091": {
       "title": "Bubble Trouble 2: Rebubbled",
@@ -134870,7 +135528,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:55:45.711001+00:00"
+        "attempted": "2026-11-03T00:31:43.327112+00:00"
       },
       "requirements": {
         "image": true,
@@ -134882,15 +135540,100 @@
         "source": "https://www.nintendolife.com/games/switch-eshop/bubble_trouble_2_rebubbled",
         "checked": "2026-11-02T17:11:36.952686+00:00"
       },
-      "basics_attempted": "2026-11-02T21:55:45.711001+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:31:43.327112+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:26:03.697400+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:31:44.438547+00:00",
+              "next_attempt": "2026-11-04T00:31:44.438547+00:00",
+              "revision": "3b1d2ca03816b354:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Bubble+Trouble+2%3A+Rebubbled%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Bubble+Trouble+2%3A+Rebubbled%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:47.286969+00:00",
+              "next_attempt": "2026-11-04T00:32:47.286969+00:00",
+              "revision": "3b1d2ca03816b354:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/bubble_trouble_2_rebubbled",
+                "https://www.nintendolife.com/games/nintendo-switch/bubble_trouble_2_rebubbled"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/bubble_trouble_2_rebubbled"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:49.686495+00:00",
+              "next_attempt": "2026-11-04T00:32:49.686495+00:00",
+              "revision": "3b1d2ca03816b354:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bubble-trouble-2-rebubbled-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bubble-trouble-2-rebubbled-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:57.815644+00:00",
+              "next_attempt": "2026-11-04T00:32:57.815644+00:00",
+              "revision": "3b1d2ca03816b354:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/bubble-trouble-2-rebubbled/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/bubble-trouble-2-rebubbled/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/bubble-trouble-2-rebubbled/"
+              ],
+              "url": "https://www.metacritic.com/game/bubble-trouble-2-rebubbled/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:32:59.053715+00:00",
+              "next_attempt": "2026-11-04T00:32:59.053715+00:00",
+              "revision": "3b1d2ca03816b354:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bubble+Trouble+2%3A+Rebubbled&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bubble+Trouble+2%3A+Rebubbled&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:32:59.053842+00:00",
+              "next_attempt": "2026-11-03T01:32:59.053842+00:00",
+              "revision": "3b1d2ca03816b354:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:32:59.053870+00:00",
+              "next_attempt": "2026-11-03T01:32:59.053870+00:00",
+              "revision": "3b1d2ca03816b354:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:17434": {
       "title": "Bubsy in: The Purrfect Collection",
@@ -135699,11 +136442,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:55:45.711369+00:00"
+        "attempted": "2026-11-03T00:31:57.221014+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -135711,12 +136454,14 @@
         "source": "https://www.nintendo.com/us/store/products/demons-are-coming-switch/",
         "checked": "2026-11-02T21:55:50.920230+00:00"
       },
-      "basics_attempted": "2026-11-02T21:55:45.711369+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:31:57.221014+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:29:56.870501+00:00",
       "store_evidence": [
@@ -135726,7 +136471,100 @@
           "checked": "2026-11-02T21:55:50.919872+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Demons-Are-Coming--2891237.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:31:57.500170+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Demons Are Coming!"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:31:57.500364+00:00",
+              "next_attempt": "2026-11-04T00:31:57.500364+00:00",
+              "revision": "68e8eda4b225caed:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:31:57.500364+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Demons-Are-Coming--2891237.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Demons-Are-Coming--2891237.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:07.288502+00:00",
+              "next_attempt": "2026-11-04T00:33:07.288502+00:00",
+              "revision": "68e8eda4b225caed:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/demons_are_coming",
+                "https://www.nintendolife.com/games/nintendo-switch/demons_are_coming"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/demons_are_coming"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:07.697985+00:00",
+              "next_attempt": "2026-11-04T00:33:07.697985+00:00",
+              "revision": "68e8eda4b225caed:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=demons-are-coming-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=demons-are-coming-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:09.722854+00:00",
+              "next_attempt": "2026-11-04T00:33:09.722854+00:00",
+              "revision": "68e8eda4b225caed:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/demons-are-coming/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/demons-are-coming/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/demons-are-coming/"
+              ],
+              "url": "https://www.metacritic.com/game/demons-are-coming/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:33:11.265659+00:00",
+              "next_attempt": "2026-11-04T00:33:11.265659+00:00",
+              "revision": "68e8eda4b225caed:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Demons+Are+Coming%21&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Demons+Are+Coming%21&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:33:11.265789+00:00",
+              "next_attempt": "2026-11-03T01:33:11.265789+00:00",
+              "revision": "68e8eda4b225caed:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:33:11.265820+00:00",
+              "next_attempt": "2026-11-03T01:33:11.265820+00:00",
+              "revision": "68e8eda4b225caed:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:17106": {
       "title": "Dora: Rainforest Rescue",
