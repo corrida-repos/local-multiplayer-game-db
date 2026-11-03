@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:47:48.130727+00:00",
+  "updated": "2026-11-03T08:48:52.335803+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2481,
+    "full_attempted": 2491,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -140866,28 +140866,68 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 79.0,
+          "score": 78.5,
           "scale": 100,
           "sources": [
+            {
+              "name": "Gaming Age",
+              "score": 75,
+              "url": "https://gaming-age.com/2023/01/windosill-review-for-nintendo-switch-pc/",
+              "date": "2023-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 79.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=windosill-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/windosill",
+              "date": "2022-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 70,
+              "url": "https://toucharcade.com/2022/11/14/sonic-frontiers-switch-review-tactics-ogre-reborn-eshop-discount-melty-blood-cotton-darius-taito/",
+              "date": "2022-11-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 6.3,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.3,
+              "scale": 10.0,
+              "count": 7,
+              "url": "https://www.nintendolife.com/games/switch-eshop/windosill",
+              "platform": "Nintendo Switch",
+              "weight": 2.6457513110645907,
+              "normalized": 6.3
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:48.073610+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:48:25.386428+00:00"
       },
       "requirements": {
         "image": true,
@@ -140904,7 +140944,11 @@
       "basics_attempted": "2026-11-02T22:54:48.073610+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -140954,33 +140998,50 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:48:27.925546+00:00",
+      "full_version": 7
     },
     "PS5:13154": {
       "title": "Wings Of Bluestar",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 72.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "The Outerhaven",
+              "score": 80,
+              "url": "https://www.theouterhaven.net/wings-of-bluestar-review/",
+              "date": "2026-06-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 64,
+              "url": "https://videochums.com/review/wings-of-bluestar",
+              "date": "2023-01-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 8.34,
           "scale": 10,
           "sources": [
             {
-              "score": 4.17,
-              "count": 72,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.17,
               "scale": 5,
-              "source": "PSN",
+              "count": 72,
               "url": "https://store.playstation.com/pt-pt/product/EP2005-PPSA04951_00-WINGSOFBLUESTAR0",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:47:51.325939+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 8.48528137423857,
               "normalized": 8.34
             }
@@ -140988,7 +141049,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:47:47.957193+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:48:08.957625+00:00"
       },
       "requirements": {
         "image": true,
@@ -141030,7 +141098,11 @@
       },
       "basics_attempted": "2026-11-02T18:47:47.957193+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -141046,7 +141118,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:48:09.237304+00:00",
+      "full_version": 7
     },
     "Switch:13152": {
       "title": "Wings Of Bluestar",
@@ -141060,6 +141134,7 @@
               "name": "Hey Poor Player",
               "score": 60,
               "url": "https://www.heypoorplayer.com/2023/01/18/wings-of-bluestar-review-switch/",
+              "date": "2023-01-18",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -141067,6 +141142,7 @@
               "name": "Tech-Gaming",
               "score": 68,
               "url": "https://www.tech-gaming.com/wings-of-bluestar/",
+              "date": "2023-01-23",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -141081,7 +141157,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:55:01.217071+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:48:20.212684+00:00"
       },
       "requirements": {
         "image": true,
@@ -141099,7 +141182,12 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -141150,7 +141238,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:48:22.275616+00:00",
+      "full_version": 7
     },
     "Switch:14601": {
       "title": "Witchtastic",
@@ -141178,7 +141268,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:55:01.219072+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:48:45.046825+00:00"
       },
       "requirements": {
         "image": true,
@@ -141195,7 +141292,12 @@
       "basics_attempted": "2026-11-02T22:55:01.219072+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -141245,7 +141347,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:48:47.433499+00:00",
+      "full_version": 7
     },
     "PS5:13232": {
       "title": "Wonder Boy Anniversary Collection",
@@ -238043,26 +238147,33 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "PSX Brasil",
+              "score": 70,
+              "url": "https://psxbrasil.com.br/windswept-review/",
+              "date": "2025-11-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 8.08,
           "scale": 10,
           "sources": [
             {
-              "score": 4.04,
-              "count": 267,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.04,
               "scale": 5,
-              "source": "PSN",
+              "count": 267,
               "url": "https://store.playstation.com/pt-pt/product/UP5155-PPSA31581_00-WINDSWEPT0000000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:47:51.517681+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 16.34013463836819,
               "normalized": 8.08
             }
@@ -238070,7 +238181,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:47:45.817475+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:48:04.110128+00:00"
       },
       "requirements": {
         "image": true,
@@ -238112,7 +238230,11 @@
       },
       "basics_attempted": "2026-11-02T18:47:45.817475+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -238128,14 +238250,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:48:04.594290+00:00",
+      "full_version": 7
     },
     "Switch:17645": {
       "title": "Windswept",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 83.3,
           "scale": 100,
           "sources": [
             {
@@ -238144,19 +238268,52 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=windswept-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Siliconera",
+              "score": 70,
+              "url": "https://www.siliconera.com/review-windswept-can-feel-like-classic-snes-platformers/",
+              "date": "2025-11-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 90,
+              "url": "https://universonintendo.com/analise-windswept/",
+              "date": "2025-12-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 8.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 8.0,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/windswept",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 8.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:55:01.216804+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:48:05.283959+00:00"
       },
       "requirements": {
         "image": true,
@@ -238173,7 +238330,11 @@
       "basics_attempted": "2026-11-02T22:55:01.216804+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -238224,7 +238385,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:48:07.836419+00:00",
+      "full_version": 7
     },
     "PS5:17950": {
       "title": "Winx Club: The Magic is Back",
@@ -238242,15 +238405,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 2.8,
-              "count": 160,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 2.8,
               "scale": 5,
-              "source": "PSN",
+              "count": 160,
               "url": "https://store.playstation.com/pt-pt/product/EP8208-PPSA31885_00-WINXCLUB00000001",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:48:04.610822+00:00",
-              "platform": "PSN · PS5",
               "weight": 12.649110640673518,
               "normalized": 5.6
             }
@@ -238258,7 +238419,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:48:03.638281+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:48:14.132506+00:00"
       },
       "requirements": {
         "image": true,
@@ -238300,7 +238468,11 @@
       },
       "basics_attempted": "2026-11-02T18:48:03.638281+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -238316,7 +238488,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:48:14.576444+00:00",
+      "full_version": 7
     },
     "Switch:17951": {
       "title": "Winx Club: The Magic is Back",
@@ -238328,10 +238502,11 @@
           "sources": [
             {
               "name": "Nindie Spotlight",
-              "score": 61.0,
-              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=winx-club-the-magic-is-back-switch",
+              "score": 61,
+              "url": "https://nindiespotlight.com/game_profile.cfm?game=winx-club-the-magic-is-back-switch",
+              "date": "2026-05-26",
               "platform": "Nintendo Switch",
-              "via": "Direct console-specific review"
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
@@ -238344,7 +238519,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:55:01.217375+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:48:50.221222+00:00"
       },
       "requirements": {
         "image": true,
@@ -238361,7 +238543,12 @@
       "basics_attempted": "2026-11-02T22:55:01.217375+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -238411,7 +238598,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:48:52.065877+00:00",
+      "full_version": 7
     },
     "Switch:17740": {
       "title": "Wizard of Legend II",
@@ -288878,26 +289067,37 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 62.0,
+          "score": 64.7,
           "scale": 100,
           "sources": [
             {
               "name": "Nintendo Life",
               "score": 70,
               "url": "http://www.nintendolife.com/reviews/switch-eshop/johnny_turbos_arcade_wizard_fire?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-06-27",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70.0,
+              "url": "https://purenintendo.com/review-johnny-turbos-arcade-wizard-fire-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 7.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
             },
             {
               "name": "Video Chums",
               "score": 54,
               "url": "https://videochums.com/review/johnny-turbos-arcade-wizard-fire",
+              "date": "2018-07-02",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 2
+          "source_count": 3
         },
         "user": {
           "score": 6.1,
@@ -288911,14 +289111,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/johnny_turbos_arcade_wizard_fire",
               "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
-              "normalized": 6.1,
-              "checked": "2026-11-02T20:54:38.496733+00:00"
+              "normalized": 6.1
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:38:47.200370+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:48:35.375124+00:00"
       },
       "requirements": {
         "image": true,
@@ -288930,8 +289134,11 @@
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://images.nintendolife.com/91a3a722b0c0e/1280x720.jpg",
@@ -288971,7 +289178,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:48:38.642157+00:00",
+      "full_version": 7
     },
     "Switch:4775": {
       "title": "Wulverblade",
@@ -344519,7 +344728,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 74.0,
+          "score": 62.0,
           "scale": 100,
           "sources": [
             {
@@ -344528,19 +344737,44 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=witch-and-hero-2-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 50,
+              "url": "https://purenintendo.com/review-witch-hero-2-nintendo-switch/",
+              "date": "2020-01-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 3.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/witch_and_hero_2",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 3.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:55:01.218250+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:48:15.420368+00:00"
       },
       "requirements": {
         "image": true,
@@ -344557,7 +344791,10 @@
       "basics_attempted": "2026-11-02T22:55:01.218250+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -344607,7 +344844,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:48:17.435693+00:00",
+      "full_version": 7
     },
     "Switch:6868": {
       "title": "Zed Blade",
