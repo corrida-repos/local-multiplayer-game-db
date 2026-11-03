@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T09:02:50.463994+00:00",
+  "updated": "2026-11-03T09:03:55.514106+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -3131,10 +3131,22 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.4,
+              "scale": 10,
+              "count": 5,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/nintendo-switch/ampersat",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.23606797749979,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
@@ -3142,7 +3154,7 @@
         "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:55:44.851113+00:00"
+        "attempted": "2026-11-03T09:03:07.081322+00:00"
       },
       "requirements": {
         "image": true,
@@ -3160,9 +3172,12 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:46:03.314081+00:00",
+      "full_attempted": "2026-11-03T09:03:10.016260+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/ampersat-switch/",
@@ -3211,7 +3226,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:11485": {
       "title": "An American Werewolf in L.A.",
@@ -249435,11 +249451,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 1,
         "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 404: Not Found"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:46:32.723342+00:00"
+        "attempted": "2026-11-03T09:03:14.652300+00:00"
       },
       "requirements": {
         "image": true,
@@ -249482,9 +249498,11 @@
       "basics_attempted": "2026-11-02T17:19:06.612187+00:00",
       "version": 2,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:46:33.445939+00:00",
+      "full_attempted": "2026-11-03T09:03:16.104898+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -249500,7 +249518,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:18706": {
       "title": "Apidya' Special",
@@ -249539,10 +249558,12 @@
         },
         "critic_index_complete": true,
         "critic_index_review_count": 2,
-        "errors": [],
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:33:19.924156+00:00"
+        "attempted": "2026-11-03T09:03:41.740610+00:00"
       },
       "requirements": {
         "image": true,
@@ -249559,9 +249580,13 @@
       "basics_attempted": "2026-11-02T22:33:19.924156+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:46:36.930474+00:00",
+      "full_attempted": "2026-11-03T09:03:44.304951+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/apidya-special-switch/",
@@ -249611,7 +249636,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:18656": {
       "title": "Apocalypse ? No !",
@@ -269611,7 +269637,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 75.0,
+          "score": 74.1,
           "scale": 100,
           "sources": [
             {
@@ -269678,6 +269704,15 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Pure Nintendo",
+              "score": 65.0,
+              "url": "https://purenintendo.com/review-aqua-kitty-udx-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 6.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "Switch Player",
               "score": 80,
               "url": "http://switchplayer.net/2018/03/26/aqua-kitty-udx-review/",
@@ -269695,7 +269730,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 10
+          "source_count": 11
         },
         "user": {
           "score": 7.64,
@@ -269709,8 +269744,7 @@
               "url": "https://www.metacritic.com/game/aqua-kitty-udx/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 3.872983346207417,
-              "normalized": 8.1,
-              "checked": "2026-11-02T19:46:40.626031+00:00"
+              "normalized": 8.1
             },
             {
               "name": "Nintendo Life",
@@ -269720,8 +269754,7 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/aqua_kitty_udx",
               "platform": "Nintendo Switch",
               "weight": 4.123105625617661,
-              "normalized": 7.199999999999999,
-              "checked": "2026-11-02T19:46:40.626031+00:00"
+              "normalized": 7.199999999999999
             }
           ],
           "source_count": 2,
@@ -269729,12 +269762,10 @@
         },
         "critic_index_complete": true,
         "critic_index_review_count": 9,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:33:48.802042+00:00"
+        "attempted": "2026-11-03T09:03:51.827031+00:00"
       },
       "requirements": {
         "image": true,
@@ -269751,9 +269782,10 @@
       "basics_attempted": "2026-11-02T22:33:48.802042+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed"
       },
-      "full_attempted": "2026-11-02T19:46:41.108767+00:00",
+      "full_attempted": "2026-11-03T09:03:55.240413+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/aqua-kitty-udx-switch/",
@@ -269803,7 +269835,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:4827": {
       "title": "Blaster Master Zero",
@@ -292433,7 +292466,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 66.7,
+          "score": 67.1,
           "scale": 100,
           "sources": [
             {
@@ -292476,6 +292509,15 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Pure Nintendo",
+              "score": 70.0,
+              "url": "https://purenintendo.com/review-aperion-cyberstorm-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 7.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "Vooks",
               "score": 90,
               "url": "https://www.vooks.net/aperion-cyberstorm-switch-eshop-review/",
@@ -292485,23 +292527,33 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 6
+          "source_count": 7
         },
         "user": {
-          "score": null,
+          "score": 5.33,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 5.33,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/aperion_cyberstorm",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 5.33
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 5,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:34:16.813002+00:00"
+        "attempted": "2026-11-03T09:03:17.035987+00:00"
       },
       "requirements": {
         "image": true,
@@ -292518,9 +292570,10 @@
       "basics_attempted": "2026-11-02T22:34:16.813002+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed"
       },
-      "full_attempted": "2026-11-02T19:46:35.657707+00:00",
+      "full_attempted": "2026-11-03T09:03:22.893976+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/aperion-cyberstorm-switch/",
@@ -292569,7 +292622,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:5590": {
       "title": "Arcade Classics Anniversary Collection",
@@ -308618,19 +308672,900 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 100.0,
+          "score": 90.6,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 100.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/animal-crossing-new-horizons",
+              "name": "3DJuegos",
+              "score": 85,
+              "url": "https://www.3djuegos.com/juegos/analisis/33252/0/animal-crossing-new-horizons/",
+              "date": "2020-03-16",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "4P.de",
+              "score": 80,
+              "url": "https://www.4players.de/4players.php/dispbericht/Switch/Test/40001/84292/0/Animal_Crossing_New_Horizons.html",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "App Trigger",
+              "score": 90,
+              "url": "https://apptrigger.com/2020/03/30/animal-crossing-new-horizons-review/",
+              "date": "2020-04-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 93,
+              "url": "https://areajugones.sport.es/videojuegos/analisis-animal-crossing-new-horizons/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 92,
+              "url": "https://atomix.vg/review-animal-crossing-new-horizons/",
+              "date": "2020-03-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 90,
+              "url": "https://attackofthefanboy.com/reviews/animal-crossing-new-horizons-review/",
+              "date": "2020-04-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "AusGamers",
+              "score": 80,
+              "url": "https://www.ausgamers.com/games/animal-crossing-new-horizons/review/",
+              "date": "2020-04-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "BaziCenter",
+              "score": 90,
+              "url": "https://www.bazicenter.com/review/animal-crossing-new-horizons/ ",
+              "date": "2020-03-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 95,
+              "url": "",
+              "date": "2020-05-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 100,
+              "url": "https://www.cgmagonline.com/reviews/animal-crossing-new-horizons-review/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 92,
+              "url": "https://cogconnected.com/review/animal-crossing-new-horizons-review/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Carole Quintaine",
+              "score": 90,
+              "url": "http://carolequintaine.com/animal-crossing-new-horizons-le-coup-de-foudre-test-nintendo-switch/  ",
+              "date": "2020-03-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cheat Code Central",
+              "score": 98,
+              "url": "",
+              "date": "2020-03-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 85,
+              "url": "https://www.criticalhit.net/review/animal-crossing-new-horizons-review-whats-nookin-good-lookin",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 100,
+              "url": "http://www.cubed3.com/review/5829/1/animal-crossing-new-horizons-nintendo-switch.html",
+              "date": "2020-03-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cultured Vultures",
+              "score": 90,
+              "url": "https://culturedvultures.com/animal-crossing-new-horizons-review/",
+              "date": "2020-04-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Daily Star",
+              "score": 100,
+              "url": "https://www.dailystar.co.uk/tech/reviews/animal-crossing-new-horizons-review-21699781",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 100,
+              "url": "https://www.darkstation.com/reviews/animal-crossing-new-horizons-review",
+              "date": "2020-03-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 85,
+              "url": "https://www.destructoid.com/review-animal-crossing-new-horizons-583381.phtml",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Trends",
+              "score": 80,
+              "url": "https://www.digitaltrends.com/game-reviews/animal-crossing-new-horizons-review/",
+              "date": "2020-03-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 90,
+              "url": "http://www.digitallydownloaded.net/2020/03/review-animal-crossing-new-horizons.html",
+              "date": "2020-03-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 90,
+              "url": "https://www.dualshockers.com/animal-crossing-new-horizons-review-nintendo-switch/",
+              "date": "2020-04-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Easy Allies",
+              "score": 90,
+              "url": "https://easyallies.com/#!/review/animal-crossing-new-horizons",
+              "date": "2020-04-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 90,
+              "url": "",
+              "date": "2020-03-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 90,
+              "url": "https://www.eurogamer.it/articles/2020-03-16-animal-crossing-new-horizons-recensione",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 85,
+              "url": "https://www.everyeye.it/articoli/recensione-animal-crossing-new-horizons-nuova-esclusiva-switch-47746.html",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 90,
+              "url": "https://fnintendo.net/article/13614-animal-crossing-new-horizons",
+              "date": "2020-04-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Forbes",
+              "score": 100,
+              "url": "https://www.forbes.com/sites/games/2020/03/16/animal-crossing-new-horizons-review-the-game-we-all-need-right-now/#7c4376d839c0",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMINGbible",
+              "score": 80,
+              "url": "https://www.ladbible.com/technology/gaming-animal-crossing-new-horizons-review-the-wholesome-game-2020-needs-20200313",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GRYOnline.pl",
+              "score": 90,
+              "url": "https://www.gry-online.pl/S020.asp?ID=13836",
+              "date": "2020-03-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 90,
+              "url": "https://www.gameinformer.com/index.php/review/animal-crossing-new-horizons/a-wholesome-island-oasis-animal-crossing-new-horizons-review",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 90,
+              "url": "https://gamerant.com/animal-crossing-new-horizons-review/",
+              "date": "2020-04-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Revolution",
+              "score": 90,
+              "url": "https://www.gamerevolution.com/review/640189-animal-crossing-new-horizons-review-nintendo-switch",
+              "date": "2020-03-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game World Navigator Magazine",
+              "score": 88,
+              "url": "",
+              "date": "2020-04-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCrate",
+              "score": 80,
+              "url": "https://www.gamecrate.com/reviews/review-animal-crossing-new-horizons-island-chores-have-never-been-fun/25536",
+              "date": "2020-03-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 95,
+              "url": "https://www.gamegrin.com/reviews/animal-crossing-new-horizons-review/",
+              "date": "2020-04-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 90,
+              "url": "https://www.gameover.gr/reviews/40781-animal-crossing-new-horizons-review",
+              "date": "2020-04-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 90,
+              "url": "https://www.gamepro.de/artikel/animal-crossing-new-horizons-test,3355506.html",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSkinny",
+              "score": 100,
+              "url": "https://www.gameskinny.com/jr342/animal-crossing-new-horizons-review-the-bell-of-the-ball",
+              "date": "2020-04-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 90,
+              "url": "https://www.gamespace.com/featured/animal-crossing-new-horizon-review/",
+              "date": "2020-05-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 90,
+              "url": "https://www.gamespew.com/2020/03/animal-crossing-new-horizons-review/",
+              "date": "2020-03-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 90,
+              "url": "https://www.gamespot.com/reviews/animal-crossing-new-horizons-review/1900-6417431/",
+              "date": "2020-04-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 90,
+              "url": "http://www.gameblog.fr/tests/3622-animal-crossing-new-horizons-switch",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameplanet",
+              "score": 90,
+              "url": "https://www.gameplanet.com.au/nintendo-switch/reviews/g5e8a387b4d47b/Animal-Crossing-New-Horizons-Review/",
+              "date": "2020-04-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 90,
+              "url": "https://gamer.nl/artikelen/review/animal-crossing-new-horizons-mengt-bekende-charme-met-frisse-wind/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.no",
+              "score": 90,
+              "url": "https://www.gamer.no/artikler/anmeldelse-animal-crossing-new-horizons/488580",
+              "date": "2020-03-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 90,
+              "url": "https://games.tiscali.cz/recenze/animal-crossing-new-horizons-recenze-341472",
+              "date": "2020-03-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesBeat",
+              "score": 95,
+              "url": "https://wp.me/p8wLEc-aQYi",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 90,
+              "url": "https://www.gamesradar.com/animal-crossing-new-horizons-review/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 100,
+              "url": "https://gaming-age.com/2020/04/animal-crossing-new-horizons-review-for-nintendo-switch/",
+              "date": "2020-04-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 95,
+              "url": "https://gamingtrend.com/feature/reviews/current-temperature-is-pleasant-animal-crossing-new-horizons-review/",
+              "date": "2020-03-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 100,
+              "url": "http://www.godisageek.com/reviews/animal-crossing-new-horizons-review/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 90,
+              "url": "https://hardcoregamer.com/2020/04/05/review-animal-crossing-new-horizons/375315/",
+              "date": "2020-04-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 88,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-animal-crossing-new-horizons-nintendo-switch-596257",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 90,
+              "url": "https://www.ign.com/articles/animal-crossing-new-horizons-review-for-switch",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 92,
+              "url": "https://it.ign.com/animal-crossing-new-horizons-nintendo-switch/167248/review/animal-crossing-new-horizons-la-recensione",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 82,
+              "url": "https://es.ign.com/animal-crossing-new-horizons-nintendo-switch/161266/review/analisis-de-animal-crossing-new-horizons-para-nintendo-switch ",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 90,
+              "url": "https://www.impulsegamer.com/animal-crossing-new-horizons-review/",
+              "date": "2020-04-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 80,
+              "url": "https://www.jeuxactu.com/test-animal-crossing-new-horizons-pour-chill-pendant-le-confinement-121403.htm",
+              "date": "2020-03-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 85,
+              "url": "http://www.jeuxvideo.com/test/1194207/animal-crossing-new-horizons-le-paradis-existe.htm",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 93,
+              "url": "https://www.levelup.com/Nintendo-Switch/juegos/497256/Animal-Crossing-New-Horizons/review",
+              "date": "2020-03-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "M3",
+              "score": 80,
+              "url": "https://m3.idg.se/2.1022/1.732285/animal-crossing-new-horizons",
+              "date": "2020-04-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG",
+              "score": 90,
+              "url": "https://www.millenium.org/test/361029.html",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MMORPG.com",
+              "score": 80,
+              "url": "https://www.mmorpg.com/animal-crossing-new-horizons/reviews/animal-crossing-new-horizons-review-2000117838",
+              "date": "2020-04-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Malditos Nerds",
+              "score": 90,
+              "url": "https://malditosnerds.com/analisis/Analisis--Animal-Crossing-New-Horizons-es-tu-isla-de-la-fantasia-20200327-0005.html",
+              "date": "2020-04-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 90,
+              "url": "https://as.com/meristation/2020/03/16/analisis/1584368621_769941.html",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Merlin'in Kazanı (Turkey)",
+              "score": 90,
+              "url": "http://www.merlininkazani.com/Animal_Crossing_New_Horizons-oyun_inceleme-110402p1.html",
+              "date": "2020-04-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 90,
+              "url": "https://metro.co.uk/2020/03/16/animal-crossing-new-horizons-review-island-paradise-12405488/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 95,
+              "url": "https://multiplayer.it/recensioni/animal-crossing-new-horizons-recensione.html",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "My Nintendo News",
+              "score": 90,
+              "url": "https://mynintendonews.com/2020/03/16/review-animal-crossing-new-horizons-for-nintendo-switch/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New Game Network",
+              "score": 80,
+              "url": "https://www.newgamenetwork.com/article/2290/animal-crossing-new-horizons-review/",
+              "date": "2020-04-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 91,
+              "url": "https://www.nintenderos.com/2020/03/analisis-animal-crossing-new-horizons-para-nintendo-switch/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 95,
+              "url": "https://www.nintendoenthusiast.com/animal-crossing-new-horizons-review-for-nintendo-switch/",
+              "date": "2020-04-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 90,
+              "url": "",
+              "date": "2020-05-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 100,
+              "url": "https://www.nintendo-insider.com/animal-crossing-new-horizons-review/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 100,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/animal_crossing_new_horizons  ",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/53204/animal-crossing-new-horizons-switch-review",
+              "date": "2020-03-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 91,
+              "url": "https://www.nintendojo.com/reviews/review-animal-crossing-new-horizons-switch",
+              "date": "2020-04-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 90,
+              "url": "https://noisypixel.net/animal-crossing-new-horizons-review-switch/",
+              "date": "2020-04-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PCMag",
+              "score": 80,
+              "url": "https://www.pcmag.com/reviews/animal-crossing-new-horizons-for-nintendo-switch",
+              "date": "2020-05-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 90,
+              "url": "http://play.co.rs/2020/04/review-animal-crossing-new-horizons/",
+              "date": "2020-04-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 100,
+              "url": "https://www.player2.net.au/2020/04/animal-crossing-new-horizons-the-game-the-world-needs/",
+              "date": "2020-04-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 100,
+              "url": "https://www.pocketgamer.com/articles/082468/animal-crossing-new-horizons-is-the-best-form-of-escapism-to-date-games-review/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Post Arcade (National Post)",
+              "score": 80,
+              "url": "https://business.financialpost.com/technology/gaming/animal-crossing-new-horizons-review-a-much-needed-bit-of-happy-in-a-time-of-big-scary",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Power Unlimited",
+              "score": 86,
+              "url": "https://pu.nl/artikelen/review/animal-crossing-new-horizons-review/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 95,
+              "url": "https://purenintendo.com/review-animal-crossing-new-horizons/",
+              "date": "2020-03-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 90,
+              "url": "https://screenrant.com/animal-crossing-new-horizons-review/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 90,
+              "url": "https://www.shacknews.com/article/117153/animal-crossing-new-horizons-review-almost-perfect",
+              "date": "2020-03-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Slant Magazine",
+              "score": 70,
+              "url": "https://www.slantmagazine.com/games/review-animal-crossing-new-horizons-makes-you-the-god-of-the-sandbox/",
+              "date": "2020-04-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 93,
+              "url": "https://www.spaziogames.it/animal-crossing-new-horizons-recensione/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 100,
+              "url": "http://switchplayer.net/2020/03/26/animal-crossing-new-horizons-review/",
+              "date": "2020-03-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Telegraph",
+              "score": 100,
+              "url": "https://www.telegraph.co.uk/gaming/features/animal-crossing-new-horizons-review-chilled-out-life-simulator/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 80,
+              "url": "https://www.thedigitalfix.com/gaming/review/animal-crossing-new-horizons-the-three-month-review/",
+              "date": "2020-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 94,
+              "url": "https://www.thegamesmachine.it/animal-crossing-new-horizons-switch/animal-crossing-new-horizons-recensione-switch/ ",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Sydney Morning Herald",
+              "score": 90,
+              "url": "https://www.smh.com.au/technology/video-games/animal-crossing-is-the-perfect-antidote-to-a-life-indoors-20200407-p54huz.html",
+              "date": "2020-04-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 100,
+              "url": "https://www.thegamer.com/animal-crossing-new-horizons-review/",
+              "date": "2020-03-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 90,
+              "url": "https://www.thesixthaxis.com/2020/03/16/animal-crossing-new-horizons-review/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 100,
+              "url": "https://www.trustedreviews.com/reviews/animal-crossing-new-horizons",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 90,
+              "url": "https://twinfinite.net/2020/03/animal-crossing-new-horizons-review/",
+              "date": "2020-03-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "USgamer",
+              "score": 90,
+              "url": "https://www.usgamer.net/articles/animal-crossing-new-horizons-review",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 95,
+              "url": "https://switch-brasil.com/analise-animal-crossing-new-horizons/",
+              "date": "2020-12-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VG247",
+              "score": 100,
+              "url": "https://www.vg247.com/2020/03/16/animal-crossing-new-horizons-review/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VGC",
+              "score": 100,
+              "url": "https://www.videogameschronicle.com/reviews/animal-crossing-switch/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 90,
+              "url": "https://vandal.elespanol.com/analisis/switch/animal-crossing-new-horizons/65557#p-83",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vgames",
+              "score": 90,
+              "url": "https://www.vgames.co.il/article/26583.html",
+              "date": "2020-03-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 81,
+              "url": "https://videochums.com/review/animal-crossing-new-horizons",
+              "date": "2020-03-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VideoGamer",
+              "score": 90,
+              "url": "https://www.videogamer.com/reviews/animal-crossing-new-horizons-review",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 94,
+              "url": "https://wccftech.com/review/animal-crossing-new-horizons-essential-social-sim/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 100,
+              "url": "https://wegotthiscovered.com/gaming/animal-crossing-new-horizons-review/",
+              "date": "2020-03-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 90,
+              "url": "https://worthplaying.com/article/2020/3/26/reviews/118699/",
+              "date": "2020-03-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 90,
+              "url": "https://www.xgn.nl/review/animal-crossing-new-horizons-review",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 111
         },
         "user": {
           "score": 7.3,
@@ -308644,8 +309579,7 @@
               "url": "https://www.metacritic.com/game/animal-crossing-new-horizons/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 31.622776601683793,
-              "normalized": 6.0,
-              "checked": "2026-11-02T19:46:19.794166+00:00"
+              "normalized": 6.0
             },
             {
               "name": "Nintendo Life",
@@ -308655,21 +309589,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/animal_crossing_new_horizons",
               "platform": "Nintendo Switch",
               "weight": 31.622776601683793,
-              "normalized": 8.6,
-              "checked": "2026-11-02T19:46:19.794166+00:00"
+              "normalized": 8.6
             }
           ],
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
+        "critic_index_complete": true,
         "critic_index_review_count": 122,
-        "errors": [
-          "Metacritic critics: The read operation timed out"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:34:44.625868+00:00"
+        "attempted": "2026-11-03T09:03:47.100284+00:00"
       },
       "requirements": {
         "image": true,
@@ -308686,10 +309617,11 @@
       "basics_attempted": "2026-11-02T22:34:44.625868+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed"
       },
-      "full_attempted": "2026-11-02T19:46:20.601465+00:00",
+      "full_attempted": "2026-11-03T09:03:50.541890+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch/",
@@ -308738,7 +309670,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:6093": {
       "title": "Aqua Lungers",
@@ -348261,37 +349194,77 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 46.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 20,
+              "url": "http://www.cubed3.com/review/4983/1/animated-jigsaws-beautiful-japanese-scenery-nintendo-switch.html",
+              "date": "2018-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 30,
+              "url": "http://fnintendo.net/article/10881-animated-jigsaws-beautiful-japanese-scenery",
+              "date": "2018-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 70.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=animated-jigsaws-beautiful-japanese-scenery-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 50,
+              "url": "https://www.nintendo-insider.com/animated-jigsaws-beautiful-japanese-scenery-review/",
+              "date": "2018-04-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 60,
+              "url": "http://www.nintendoworldreport.com/review/47024/animated-jigsaws-beautiful-japanese-scenery-switch-review",
+              "date": "2018-04-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": null,
+          "score": 4.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/animated_jigsaws_beautiful_japanese_scenery",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 301: Moved Permanently",
-          "Metacritic users: HTTP Error 301: Moved Permanently",
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
-        ],
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:36:25.041040+00:00"
+        "attempted": "2026-11-03T09:03:21.928571+00:00"
       },
       "requirements": {
         "image": true,
@@ -348308,9 +349281,11 @@
       "basics_attempted": "2026-11-02T22:36:25.041040+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:46:10.094193+00:00",
+      "full_attempted": "2026-11-03T09:03:25.610249+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/animated-jigsaws-beautiful-japanese-scenery-switch/",
@@ -348359,7 +349334,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:7311": {
       "title": "Animated Jigsaws: Japanese Women",
@@ -348373,6 +349349,7 @@
               "name": "Switch Player",
               "score": 60,
               "url": "http://switchplayer.net/2019/02/19/animated-jigsaws-japanese-women-review/",
+              "date": "2019-02-20",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -348381,22 +349358,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/animated_jigsaws_japanese_women",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 301: Moved Permanently",
-          "Metacritic users: HTTP Error 301: Moved Permanently",
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
-        ],
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:59:47.868699+00:00"
+        "attempted": "2026-11-03T09:03:27.049181+00:00"
       },
       "requirements": {
         "image": true,
@@ -348413,12 +349398,15 @@
       "basics_attempted": "2026-11-02T22:59:47.868699+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 301: Moved Permanently",
         "metacritic_reviews": "HTTP Error 301: Moved Permanently",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:46:14.698673+00:00",
+      "full_attempted": "2026-11-03T09:03:30.776010+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/animated-jigsaws-japanese-women-switch/",
@@ -348467,7 +349455,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:7309": {
       "title": "Animated Jigsaws: Wild Animals",
@@ -348493,23 +349482,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.4142135623730951,
-              "normalized": 4.5,
-              "checked": "2026-11-02T21:04:58.632299+00:00"
+              "normalized": 4.5
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 301: Moved Permanently",
-          "Metacritic users: HTTP Error 301: Moved Permanently",
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
-        ],
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:59:47.869393+00:00"
+        "attempted": "2026-11-03T09:03:37.083589+00:00"
       },
       "requirements": {
         "image": true,
@@ -348526,13 +349510,16 @@
       "basics_attempted": "2026-11-02T22:59:47.869393+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 301: Moved Permanently",
         "metacritic_reviews": "HTTP Error 301: Moved Permanently",
         "trailer": "HTTP Error 404: Not Found",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:46:15.878340+00:00",
+      "full_attempted": "2026-11-03T09:03:40.078502+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/animated-jigsaws-wild-animals-switch/",
@@ -348570,7 +349557,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:7432": {
       "title": "Bad Dudes",
@@ -362870,8 +363858,7 @@
               "url": "https://www.metacritic.com/game/angerforce-reloaded/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 3.1622776601683795,
-              "normalized": 7.5,
-              "checked": "2026-11-02T20:59:28.979141+00:00"
+              "normalized": 7.5
             },
             {
               "name": "Nintendo Life",
@@ -362881,14 +363868,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/angerforce_reloaded",
               "platform": "Nintendo Switch",
               "weight": 5.477225575051661,
-              "normalized": 6.799999999999999,
-              "checked": "2026-11-02T20:59:28.979141+00:00"
+              "normalized": 6.799999999999999
             }
           ],
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:51:11.142157+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T09:03:12.061151+00:00"
       },
       "requirements": {
         "image": true,
@@ -362904,8 +363895,14 @@
       },
       "basics_attempted": "2026-11-02T23:51:11.142157+00:00",
       "version": 7,
-      "errors": {},
-      "full_attempted": "2026-11-02T19:46:02.138203+00:00",
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-03T09:03:15.282583+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/AngerForce-Reloaded-for-Nintendo-Switch-1549488.html",
@@ -362955,7 +363952,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:7746": {
       "title": "Artifact Adventure Gaiden DX",
