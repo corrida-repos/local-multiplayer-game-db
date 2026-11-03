@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T07:39:09.684515+00:00",
+  "updated": "2026-11-03T07:40:18.147507+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1831,
+    "full_attempted": 1841,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -92397,26 +92397,33 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "PSX Brasil",
+              "score": 80,
+              "url": "https://psxbrasil.com.br/analise/research-and-destroy-review/",
+              "date": "2022-05-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 7.3,
           "scale": 10,
           "sources": [
             {
-              "score": 3.65,
-              "count": 110,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.65,
               "scale": 5,
-              "source": "PSN",
+              "count": 110,
               "url": "https://store.playstation.com/pt-pt/product/EP1465-PPSA03460_00-7520853534785112",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:09:19.518603+00:00",
-              "platform": "PSN · PS5",
               "weight": 10.488088481701515,
               "normalized": 7.3
             }
@@ -92424,7 +92431,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:09:14.112887+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:39:29.526152+00:00"
       },
       "requirements": {
         "image": true,
@@ -92466,7 +92480,11 @@
       },
       "basics_attempted": "2026-11-02T18:09:14.112887+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -92482,7 +92500,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:39:30.083207+00:00",
+      "full_version": 7
     },
     "Switch:11805": {
       "title": "RESEARCH and DESTROY",
@@ -92496,6 +92516,7 @@
               "name": "Cubed3",
               "score": 60,
               "url": "http://www.cubed3.com/review/6634/1/research-and-destroy-nintendo-switch.html",
+              "date": "2022-05-16",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -92503,6 +92524,7 @@
               "name": "Pure Nintendo",
               "score": 70,
               "url": "https://purenintendo.com/review-research-and-destroy-nintendo-switch/",
+              "date": "2022-05-25",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -92517,7 +92539,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:53.415439+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:40:10.478682+00:00"
       },
       "requirements": {
         "image": true,
@@ -92534,7 +92563,11 @@
       "basics_attempted": "2026-11-02T22:45:53.415439+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -92584,16 +92617,34 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:40:12.798967+00:00",
+      "full_version": 7
     },
     "Switch:10368": {
       "title": "RICO: London",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 51.0,
+          "score": 38.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "GameSpew",
+              "score": 30,
+              "url": "https://www.gamespew.com/2021/09/rico-london-review/",
+              "date": "2021-09-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 33,
+              "url": "https://gaming-age.com/2022/01/rico-london-review-for-nintendo-switch-ps4-pc/",
+              "date": "2022-01-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 51.0,
@@ -92603,7 +92654,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
           "score": null,
@@ -92612,7 +92663,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:53.417784+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:40:15.587646+00:00"
       },
       "requirements": {
         "image": true,
@@ -92628,7 +92686,13 @@
       },
       "basics_attempted": "2026-11-02T22:45:53.417784+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/rico-london-switch/",
@@ -92677,7 +92741,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:40:17.938897+00:00",
+      "full_version": 7
     },
     "PS5:12823": {
       "title": "RUNOUT",
@@ -145146,34 +145212,579 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.1,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "4P.de",
+              "score": 85,
+              "url": "https://www.4p.de/test/reanimal-im-test-unrat-gedaerme-verwahrlosung-und-trotzdem-wollt-ihr-es/3371418",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 90,
+              "url": "https://areajugones.sport.es/videojuegos/analisis-de-reanimal-grotesco-perturbador-terrorifico-y-absolutamente-maravilloso/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 90,
+              "url": "https://atomix.vg/review-reanimal",
+              "date": "2026-02-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "BaziCenter",
+              "score": 85,
+              "url": "https://www.bazicenter.com/review/game/reanimal/ ",
+              "date": "2026-02-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "But Why Tho?",
+              "score": 85,
+              "url": "https://butwhytho.net/2026/02/reanimal-review/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 85,
+              "url": "https://cdaction.pl/recenzje/reanimal-recenzja-stary-mistrz-nauczyl-sie-nowych-sztuczek/",
+              "date": "2026-03-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 75,
+              "url": "https://www.cgmagonline.com/review/game/reanimal-ps5/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Carole Quintaine",
+              "score": 80,
+              "url": "https://youtu.be/WCR_BJgGm3k",
+              "date": "2026-02-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ComicBook",
+              "score": 80,
+              "url": "https://comicbook.com/gaming/review/reanimal-review/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Console Creatures",
+              "score": 80,
+              "url": "https://www.consolecreatures.com/reanimal-review/",
+              "date": "2026-02-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hits",
+              "score": 80,
+              "url": "https://criticalhits.com.br/reviews/reanimal-analise-vale-a-pena-review/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 80,
+              "url": "https://www.dualshockers.com/reanimal-review/",
+              "date": "2026-02-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 80,
+              "url": "https://www.everyeye.it/articoli/recensione-reanimal-violento-crudele-little-nightmares-66752.html",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Final Weapon",
+              "score": 80,
+              "url": "https://finalweapon.net/2026/02/11/reanimal-review/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Finger Guns",
+              "score": 70,
+              "url": "https://fingerguns.net/reviews/2026/02/11/reanimal-review-ps5-a-new-nightmare/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 80,
+              "url": "https://www.games.ch/reanimal/test/review-mL9/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMINGbible",
+              "score": 80,
+              "url": "https://www.gamingbible.com/reviews/reanimal-review-worthy-little-nightmares-successor-998801-20260211",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GIGA",
+              "score": 80,
+              "url": "https://www.giga.de/games/reanimal-im-test-duesterer-brutaler-und-ganz-typisch-tarsier--01KH69ZPQBVTJADCARJYDSAZ5D",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GRYOnline.pl",
+              "score": 80,
+              "url": "https://www.gry-online.pl/recenzje/recenzja-reanimal-najbardziej-niepokojaca-gra-roku/z748d7",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 83,
+              "url": "https://gameinformer.com/review/reanimal/macabre-merit",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game8",
+              "score": 86,
+              "url": "https://game8.co/articles/reviews/reanimal-review",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameBlast",
+              "score": 75,
+              "url": "https://www.gameblast.com.br/2026/02/reanimal-analise-review.html",
+              "date": "2026-02-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 70,
+              "url": "https://gameover.gr/2026/02/16/reanimal-review/",
+              "date": "2026-02-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 65,
+              "url": "https://www.gamepro.de/artikel/reanimal-test,3447808.html",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2026/02/reanimal-review/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/reanimal-review/1900-6418461/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 80,
+              "url": "https://www.gameblog.fr/jeu-video/jeux/tests/test-reanimal-ps5-711246",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamekult",
+              "score": 70,
+              "url": "https://www.gamekult.com/jeux/reanimal-3050887841/test.html",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer Social Club",
+              "score": 90,
+              "url": "https://gamersocialclub.ca/2026/02/11/reanimal-review/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.no",
+              "score": 50,
+              "url": "https://www.gamer.no/artikler/minimalistisk-miks-av-hattemenn-gardsdyr-og-slemme-skolebarn/520015",
+              "date": "2026-02-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamersRD",
+              "score": 85,
+              "url": "https://gamersrd.com/reanimal-review/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamesurf",
+              "score": 85,
+              "url": "https://www.gamesurf.it/recensioni/gioco/reanimal-recensione-videogioco-tarsier-little-nightmares",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingBolt",
+              "score": 90,
+              "url": "https://gamingbolt.com/reanimal-review-children-of-the-city",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 80,
+              "url": "https://gamingtrend.com/reviews/reanimal-review/",
+              "date": "2026-02-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Guardian",
+              "score": 60,
+              "url": "https://www.theguardian.com/games/2026/feb/11/reanimal-review",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 78,
+              "url": "https://www.hobbyconsolas.com/videojuegos/analisis-reanimal-hermano-gemelo-little-nightmares_6931796_0.html",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ID",
+              "score": 78,
+              "url": "https://id.nl/huis-en-entertainment/computer-en-gaming/nintendo/review-in-reanimal-mag-je-samen-naar-de-gemuteerde-kinderboerderij ",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 90,
+              "url": "https://www.ign.com/articles/reanimal-review",
+              "date": "2026-02-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Adria",
+              "score": 80,
+              "url": "https://adria.ign.com/reanimal/50249/review/reanimal-recenzija",
+              "date": "2026-02-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Benelux",
+              "score": 85,
+              "url": "https://nl.ign.com/reanimal/162592/review/review-reanimal",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN France",
+              "score": 80,
+              "url": "https://fr.ign.com/reanimal/85347/review/test-reanimal-les-petits-cauchemars-ont-bien-grandi",
+              "date": "2026-02-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Turkey",
+              "score": 75,
+              "url": "https://tr.ign.com/reanimal/132805/review/reanimal-inceleme",
+              "date": "2026-02-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 85,
+              "url": "https://as.com/meristation/analisis/analisis-de-reanimal-la-evolucion-de-little-nightmares-a-algo-mucho-mas-turbio-y-aterrador-f202602-n/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 60,
+              "url": "https://metro.co.uk/2026/02/11/reanimal-review-dark-gothic-co-op-terror-26835430/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MeuPlayStation",
+              "score": 86,
+              "url": "https://meups.com.br/review/reanimal-vale-a-pena",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Movies Games and Tech",
+              "score": 84,
+              "url": "https://moviesgamesandtech.com/2026/02/11/review-reanimal/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/reanimal-recensione.html",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NME",
+              "score": 80,
+              "url": "https://www.nme.com/reviews/game-reviews/reanimal-review-little-nightmares-3929350",
+              "date": "2026-02-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 85,
+              "url": "https://noisypixel.net/reanimal-review-tarsier-studios-horror/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 76,
+              "url": "https://play.co.rs/kad-hororcic-zasija-pa-se-saplete-reanimal-recenzija/",
+              "date": "2026-03-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 85,
+              "url": "https://psxbrasil.com.br/reanimal-review/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 85,
+              "url": "https://www.psu.com/reviews/reanimal-ps5-review/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayUA",
+              "score": 83,
+              "url": "https://playua.net/little-nighmares-iii-zdorovoyi-lyudyny-oglyad-reanimal/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 75,
+              "url": "https://www.player2.net.au/2026/04/reanimal-review-a-brooding-landscape-lacking-depth/",
+              "date": "2026-04-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 80,
+              "url": "https://www.pushsquare.com/reviews/ps5/reanimal",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Radio Times",
+              "score": 80,
+              "url": "https://www.radiotimes.com/technology/gaming/reanimal-review/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Saudi Gamer",
+              "score": 60,
+              "url": "https://www.saudigamer.com/review/reanimal/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 80,
+              "url": "https://www.thegamer.com/reanimal-review-an-evolution-of-nightmares/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 90,
+              "url": "https://www.thesixthaxis.com/2026/02/12/reanimal-review/",
+              "date": "2026-02-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TierraGamer",
+              "score": 90,
+              "url": "https://tierragamer.com/resenas/videojuegos/reanimal-es-perturbador-grotesco-y-primeras-joyas-2026/",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TrueGaming",
+              "score": 90,
+              "url": "https://www.true-gaming.net/home/?p=626571",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 84,
+              "url": "https://vandal.elespanol.com/analisis/ps5/reanimal/182453#p-89",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/2-scary-2-silly-and-2-chill-indie-games#reanimal",
+              "date": "2026-02-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Voxel",
+              "score": 85,
+              "url": "https://www.tecmundo.com.br/voxel/503494-review-reanimal-e-o-que-little-nightmares-3-deveria-ter-sido.htm",
+              "date": "2026-02-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "WellPlayed",
+              "score": 85,
+              "url": "https://www.well-played.com.au/reanimal-review/",
+              "date": "2026-02-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 65
         },
         "user": {
-          "score": 8.56,
+          "score": 8.24,
           "scale": 10,
           "sources": [
             {
-              "score": 4.28,
-              "count": 18296,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.28,
               "scale": 5,
-              "source": "PSN",
+              "count": 18296,
               "url": "https://store.playstation.com/pt-pt/product/EP4389-PPSA23372_00-ANIMALGAMEGLOBAL",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:09:17.797984+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 8.56
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.8,
+              "scale": 10,
+              "count": 582,
+              "url": "https://www.metacritic.com/game/reanimal/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 24.124676163629637,
+              "normalized": 7.800000000000001
+            },
+            {
+              "score": 8.5,
+              "scale": 10,
+              "count": 4,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/reanimal",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 2.0,
+              "normalized": 8.5
             }
           ],
-          "source_count": 1,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:09:13.290125+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 67,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:39:42.261652+00:00"
       },
       "requirements": {
         "image": true,
@@ -145231,7 +145842,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "mUymvhAXOnM",
+        "title": "Reanimal - Announcement Trailer | PS5 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/reanimal/"
+      },
+      "full_attempted": "2026-11-03T07:39:43.243602+00:00",
+      "full_version": 7
     },
     "PS5:15820": {
       "title": "Revenge of the Savage Planet",
@@ -201577,6 +202196,7 @@
               "name": "Tech-Gaming",
               "score": 69,
               "url": "https://www.tech-gaming.com/raiden-fighters-remix-collection/",
+              "date": "2026-02-27",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -201584,6 +202204,7 @@
               "name": "ZTGD",
               "score": 80,
               "url": "https://ztgd.com/reviews/raiden-fighters-remix-collection-switch/",
+              "date": "2026-03-12",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -201598,7 +202219,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:53.414864+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:39:30.477498+00:00"
       },
       "requirements": {
         "image": true,
@@ -201615,7 +202243,12 @@
       "basics_attempted": "2026-11-02T22:45:53.414864+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -201665,7 +202298,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:39:34.575430+00:00",
+      "full_version": 7
     },
     "PS5:17986": {
       "title": "RAIDEN FIGHTERS REMIX COLLECTION",
@@ -201683,15 +202318,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.37,
-              "count": 92,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.37,
               "scale": 5,
-              "source": "PSN",
+              "count": 92,
               "url": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28754_00-0957590466546733",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:09:16.501240+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 9.591663046625438,
               "normalized": 8.74
             }
@@ -201699,7 +202332,12 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:09:13.289631+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:39:24.701604+00:00"
       },
       "requirements": {
         "image": true,
@@ -201741,7 +202379,10 @@
       },
       "basics_attempted": "2026-11-02T18:09:13.289631+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -201757,26 +202398,37 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:39:25.259630+00:00",
+      "full_version": 7
     },
     "Switch:17987": {
       "title": "RAIDEN FIGHTERS REMIX COLLECTION",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 88.0,
+          "score": 79.5,
           "scale": 100,
           "sources": [
             {
               "name": "Nindie Spotlight",
-              "score": 88.00000000000001,
+              "score": 88,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=raiden-fighters-remix-collection-switch",
+              "date": "2026-03-31",
               "platform": "Nintendo Switch",
-              "via": "Direct console-specific review"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 71,
+              "url": "https://videochums.com/review/raiden-fighters-remix-collection",
+              "date": "2026-03-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -201785,7 +202437,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:53.415156+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 410: Gone"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:39:55.570500+00:00"
       },
       "requirements": {
         "image": true,
@@ -201802,7 +202462,12 @@
       "basics_attempted": "2026-11-02T22:45:53.415156+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone"
+        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 410: Gone",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -201852,7 +202517,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:39:58.032284+00:00",
+      "full_version": 7
     },
     "PS5:17942": {
       "title": "Ren & Stimpy Happy, Happy, Joy, Joy, Collection",
@@ -259003,22 +259670,102 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 69.6,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/rico",
+              "name": "Digitally Downloaded",
+              "score": 50,
+              "url": "http://www.digitallydownloaded.net/2019/03/review-rico-nintendo-switch.html",
+              "date": "2019-03-18",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/12347-rico",
+              "date": "2019-04-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=rico-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 56,
+              "url": "https://www.nintenderos.com/2019/10/analisis-rico-para-nintendo-switch/",
+              "date": "2019-11-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 75,
+              "url": "https://www.nintendoenthusiast.com/2019/03/16/rico-review-nintendo-switch/",
+              "date": "2019-03-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/rico",
+              "date": "2019-03-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/50040/rico-switch-eshop-review",
+              "date": "2019-03-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 50,
+              "url": "http://www.nintendojo.com/reviews/review-rico",
+              "date": "2019-03-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 80,
+              "url": "https://www.pocketgamer.com/articles/080069/rico-switch-review/",
+              "date": "2019-03-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 95,
+              "url": "https://purenintendo.com/review-rico-nintendo-switch/",
+              "date": "2019-03-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2019/04/17/rico-review/",
+              "date": "2019-04-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 11
         },
         "user": {
-          "score": 6.6,
+          "score": 6.51,
           "scale": 10,
           "sources": [
             {
@@ -259029,14 +259776,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/rico",
               "platform": "Nintendo Switch",
               "weight": 4.358898943540674,
-              "normalized": 6.6,
-              "checked": "2026-11-02T18:09:33.880659+00:00"
+              "normalized": 6.6
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.4,
+              "scale": 10,
+              "count": 15,
+              "url": "https://www.metacritic.com/game/rico/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.872983346207417,
+              "normalized": 6.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:53.417063+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:39:40.663300+00:00"
       },
       "requirements": {
         "image": true,
@@ -259052,7 +259813,10 @@
       },
       "basics_attempted": "2026-11-02T22:45:53.417063+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/rico-switch/",
@@ -259101,7 +259865,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:39:43.790390+00:00",
+      "full_version": 7
     },
     "Switch:5456": {
       "title": "Rad Rodgers: Radical Edition",
@@ -284351,28 +285117,93 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 50.0,
+          "score": 65.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 50.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/rez_plz",
+              "name": "Gaming Nexus",
+              "score": 80,
+              "url": "https://www.gamingnexus.com/Article/6137/REZ-PLZ-Review/",
+              "date": "2020-07-21",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=rez-plz-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 50,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/rez_plz",
+              "date": "2020-07-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/54348/rez-plz-switch-review",
+              "date": "2020-07-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-rez-plz-nintendo-switch/",
+              "date": "2020-07-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 50,
+              "url": "http://switchplayer.net/2020/09/15/rez-plz-review/",
+              "date": "2020-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/challenging-indie-games-part-2#rez-plz",
+              "date": "2020-07-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
-          "score": null,
+          "score": 4.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/rez_plz",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:53.415783+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:39:45.794545+00:00"
       },
       "requirements": {
         "image": true,
@@ -284388,7 +285219,10 @@
       },
       "basics_attempted": "2026-11-02T22:45:53.415783+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/rez-plz-switch/",
@@ -284437,7 +285271,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:39:48.447873+00:00",
+      "full_version": 7
     },
     "Switch:6133": {
       "title": "Rogue Robots",
@@ -342969,22 +343805,127 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 80.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/rive_ultimate_edition",
+              "name": "3DJuegos",
+              "score": 80,
+              "url": "http://www.3djuegos.com/juegos/analisis/28759/0/rive/",
+              "date": "2017-11-22",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 85,
+              "url": "https://areajugones.sport.es/analisis-rive-ultimate-edition/",
+              "date": "2017-11-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 90,
+              "url": "http://www.cubed3.com/review/4378/1/rive-ultimate-edition-nintendo-switch.html",
+              "date": "2017-11-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 90,
+              "url": "http://fnintendo.net/article/10427-rive-ultimate-edition",
+              "date": "2018-01-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/rive-review/1900-6416519/",
+              "date": "2017-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 80,
+              "url": "http://www.hardcoregamer.com/2017/11/20/review-rive-ultimate-edition/279772/",
+              "date": "2017-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 79,
+              "url": "http://meristation.as.com/nintendo-switch/rive/analisis-juego/2243944",
+              "date": "2017-11-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 81.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=rive-ultimate-edition-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/rive_ultimate_edition",
+              "date": "2017-11-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/45870/rive-ultimate-edition-switch-review",
+              "date": "2017-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 65.0,
+              "url": "https://purenintendo.com/review-rive-ultimate-edition-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 6.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2017/11/17/rive-ultimate-edition-review/",
+              "date": "2017-11-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 60,
+              "url": "https://www.vooks.net/rive-ultimate-edition-switch-eshop-review/",
+              "date": "2018-01-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 90,
+              "url": "http://worthplaying.com/article/2018/1/2/reviews/106607/",
+              "date": "2018-01-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 14
         },
         "user": {
-          "score": 7.4,
+          "score": 7.59,
           "scale": 10,
           "sources": [
             {
@@ -342995,14 +343936,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/rive_ultimate_edition",
               "platform": "Nintendo Switch",
               "weight": 7.211102550927978,
-              "normalized": 7.4,
-              "checked": "2026-11-02T18:09:33.881265+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.8,
+              "scale": 10,
+              "count": 40,
+              "url": "https://www.metacritic.com/game/rive/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 6.324555320336759,
+              "normalized": 7.800000000000001
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:53.418127+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 12,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:40:05.832685+00:00"
       },
       "requirements": {
         "image": true,
@@ -343018,7 +343973,10 @@
       },
       "basics_attempted": "2026-11-02T22:45:53.418127+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/rive-ultimate-edition-switch/",
@@ -343067,7 +344025,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:40:10.105535+00:00",
+      "full_version": 7
     },
     "Switch:9031": {
       "title": "Rampage Knights",
