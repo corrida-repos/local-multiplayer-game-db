@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:03:24.614209+00:00",
+  "updated": "2026-11-03T08:04:30.397809+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2061,
+    "full_attempted": 2071,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -105314,27 +105314,41 @@
           "source_count": 0
         },
         "user": {
-          "score": 8.64,
+          "score": 8.55,
           "scale": 10,
           "sources": [
             {
-              "score": 4.32,
-              "count": 950,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.32,
               "scale": 5,
-              "source": "PSN",
+              "count": 950,
               "url": "https://store.playstation.com/pt-pt/product/EP0096-PPSA07240_00-1770654870627972",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:22:10.818365+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 30.822070014844883,
               "normalized": 8.64
+            },
+            {
+              "score": 6.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/spiderheck",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 6.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:22:09.856228+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:03:46.349316+00:00"
       },
       "requirements": {
         "image": true,
@@ -105376,7 +105390,10 @@
       },
       "basics_attempted": "2026-11-02T18:22:09.856228+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -105392,35 +105409,88 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:03:47.393478+00:00",
+      "full_version": 7
     },
     "Switch:12536": {
       "title": "SpiderHeck",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 81.2,
           "scale": 100,
           "sources": [
+            {
+              "name": "COGconnected",
+              "score": 95,
+              "url": "https://cogconnected.com/review/spiderheck-review/",
+              "date": "2022-09-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamezebo",
+              "score": 60,
+              "url": "https://www.gamezebo.com/reviews/spiderheck-switch-review-spider-brawl/",
+              "date": "2022-11-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 90.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=spiderheck-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-spiderheck-nintendo-switch/",
+              "date": "2022-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 8.16,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 8.8,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/spiderheck/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.23606797749979,
+              "normalized": 8.8
+            },
+            {
+              "score": 7.33,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/spiderheck",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 7.33
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:00.395650+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:03:39.243524+00:00"
       },
       "requirements": {
         "image": true,
@@ -105436,7 +105506,11 @@
       },
       "basics_attempted": "2026-11-02T22:49:00.395650+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/spiderheck-switch/",
@@ -105485,33 +105559,58 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:03:42.549584+00:00",
+      "full_version": 7
     },
     "PS5:11584": {
       "title": "Spidersaurs",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2022/07/spidersaurs-review/",
+              "date": "2022-07-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 70,
+              "url": "https://www.godisageek.com/reviews/spidersaurs-review/",
+              "date": "2022-07-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/cool-indie-games-2022#spidersaurs",
+              "date": "2022-07-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 8.06,
           "scale": 10,
           "sources": [
             {
-              "score": 4.03,
-              "count": 75,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.03,
               "scale": 5,
-              "source": "PSN",
+              "count": 75,
               "url": "https://store.playstation.com/pt-pt/product/EP8916-PPSA06613_00-6560682653835874",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:22:25.361007+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 8.660254037844387,
               "normalized": 8.06
             }
@@ -105519,7 +105618,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:22:24.508574+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:03:41.001853+00:00"
       },
       "requirements": {
         "image": true,
@@ -105561,7 +105667,11 @@
       },
       "basics_attempted": "2026-11-02T18:22:24.508574+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -105577,26 +105687,92 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:03:41.286144+00:00",
+      "full_version": 7
     },
     "Switch:11582": {
       "title": "Spidersaurs",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 72.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/spidersaurs",
+              "name": "Hey Poor Player",
+              "score": 70,
+              "url": "https://www.heypoorplayer.com/2022/07/13/spidersaurs-review-switch/",
+              "date": "2022-07-14",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 78,
+              "url": "https://www.impulsegamer.com/spidersaurs-switch-review/",
+              "date": "2022-07-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 70,
+              "url": "https://as.com/meristation/2022/12/21/analisis/1671614255_109303.html",
+              "date": "2022-12-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 81.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=spidersaurs-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 65,
+              "url": "",
+              "date": "2022-11-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/spidersaurs",
+              "date": "2022-07-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/60979/spidersaurs-switch-eshop-review",
+              "date": "2022-07-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-spidersaurs-nintendo-switch/",
+              "date": "2022-08-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 70,
+              "url": "https://toucharcade.com/2022/07/19/spidersaurs-switch-review-eshop-discount-dmc-dragons-dogma-lowest-price-sales-list/",
+              "date": "2022-07-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
           "score": 6.9,
@@ -105610,14 +105786,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/spidersaurs",
               "platform": "Nintendo Switch",
               "weight": 2.8284271247461903,
-              "normalized": 6.9,
-              "checked": "2026-11-02T18:22:24.508989+00:00"
+              "normalized": 6.9
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:00.397206+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:03:49.182843+00:00"
       },
       "requirements": {
         "image": true,
@@ -105633,7 +105813,10 @@
       },
       "basics_attempted": "2026-11-02T22:49:00.397206+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/spidersaurs-switch/",
@@ -105682,7 +105865,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:03:51.350775+00:00",
+      "full_version": 7
     },
     "PS5:16273": {
       "title": "Split Fiction",
@@ -162382,26 +162567,41 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 58.5,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Digital Chumps",
+              "score": 67,
+              "url": "https://digitalchumps.com/spirit-mancer-review/",
+              "date": "2024-12-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Finger Guns",
+              "score": 50,
+              "url": "https://fingerguns.net/games/2024/12/03/spirit-mancer-review-ps5-seb-the-skiver/",
+              "date": "2024-12-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 8.04,
           "scale": 10,
           "sources": [
             {
-              "score": 4.02,
-              "count": 52,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.02,
               "scale": 5,
-              "source": "PSN",
+              "count": 52,
               "url": "https://store.playstation.com/pt-pt/product/UB0045-PPSA24065_00-SPIRITMANCERBASE",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:22:26.922227+00:00",
-              "platform": "PSN · PS5",
               "weight": 7.211102550927978,
               "normalized": 8.04
             }
@@ -162409,7 +162609,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:22:24.510111+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:03:51.429572+00:00"
       },
       "requirements": {
         "image": true,
@@ -162451,7 +162658,11 @@
       },
       "basics_attempted": "2026-11-02T18:22:24.510111+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -162467,35 +162678,70 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:03:52.582340+00:00",
+      "full_version": 7
     },
     "Switch:16179": {
       "title": "Spirit Mancer",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 62.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/spirit-mancer",
+              "name": "GamingTrend",
+              "score": 60,
+              "url": "https://gamingtrend.com/feature/reviews/spirit-mancer-review-gotta-seal-em-all/",
+              "date": "2024-12-12",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 68.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=spirit-mancer-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/spirit-mancer",
+              "date": "2024-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 4.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/spirit_mancer",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:01.748631+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:03:54.049190+00:00"
       },
       "requirements": {
         "image": true,
@@ -162511,7 +162757,12 @@
       },
       "basics_attempted": "2026-11-02T22:49:01.748631+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/spirit-mancer-switch/",
@@ -162560,7 +162811,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:03:56.396121+00:00",
+      "full_version": 7
     },
     "PS5:16012": {
       "title": "Star Wars: Episode I: Jedi Power Battles",
@@ -282607,22 +282860,206 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 85.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/spiritfarer",
+              "name": "4P.de",
+              "score": 39,
+              "url": "https://www.4players.de/4players.php/spielinfo/Switch/40812/Spiritfarer.html",
+              "date": "2020-09-23",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/6169/1/spiritfarer-nintendo-switch.html",
+              "date": "2020-11-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameMAG",
+              "score": 80,
+              "url": "https://gamemag.ru/reviews/spiritfarer",
+              "date": "2021-04-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSkinny",
+              "score": 100,
+              "url": "https://www.gameskinny.com/zo2jf/spiritfarer-review-never-to-be-forgotten",
+              "date": "2020-08-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gfinity",
+              "score": 80,
+              "url": "https://www.gfinityesports.com/reviews/spiritfarer-review/",
+              "date": "2021-08-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 95,
+              "url": "https://www.godisageek.com/reviews/spiritfarer-review/",
+              "date": "2020-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 90,
+              "url": "https://www.impulsegamer.com/spiritfarer-review-nintendoswitch/",
+              "date": "2021-08-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "KeenGamer",
+              "score": 90,
+              "url": "https://www.keengamer.com/articles/reviews/switch-reviews/spiritfarer-review-of-oceans-and-afterlife-switch/",
+              "date": "2020-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 90,
+              "url": "https://www.levelup.com/Nintendo-Switch/juegos/589812/Spiritfarer/review",
+              "date": "2020-09-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 95.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=spiritfarer-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2020/08/analisis-spiritfarer-para-nintendo-switch/",
+              "date": "2020-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 85,
+              "url": "https://www.nintendoenthusiast.com/spiritfarer-review-for-nintendo-switch/",
+              "date": "2020-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 90,
+              "url": "",
+              "date": "2022-05-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/spiritfarer",
+              "date": "2020-08-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 95,
+              "url": "https://www.nintendoworldreport.com/review/54959/spiritfarer-switch-review",
+              "date": "2020-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 75,
+              "url": "https://noisypixel.net/spiritfarer-review-switch-ps4-xbox-one-pc/",
+              "date": "2020-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Tactics",
+              "score": 90,
+              "url": "https://www.pockettactics.com/spiritfarer/review",
+              "date": "2021-08-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-spiritfarer-nintendo-switch/",
+              "date": "2020-09-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Siliconera",
+              "score": 100,
+              "url": "https://www.siliconera.com/review-spiritfarer-is-a-moving-gaming-about-moving-lost-souls/",
+              "date": "2020-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 88,
+              "url": "https://www.spaziogames.it/spiritfarer-recensione-viaggiamo-per-accettare-la-morte/",
+              "date": "2020-09-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 90,
+              "url": "http://switchplayer.net/2020/09/08/spiritfarer-review/",
+              "date": "2020-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Indie Game Website",
+              "score": 90,
+              "url": "https://www.indiegamewebsite.com/2021/09/06/spiritfarer-review/",
+              "date": "2021-09-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 90,
+              "url": "https://worthplaying.com/article/2020/9/10/reviews/121684/",
+              "date": "2020-09-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "iMore",
+              "score": 90,
+              "url": "https://www.imore.com/spiritfarer-review",
+              "date": "2021-03-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 24
         },
         "user": {
-          "score": 8.0,
+          "score": 8.15,
           "scale": 10,
           "sources": [
             {
@@ -282633,14 +283070,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/spiritfarer",
               "platform": "Nintendo Switch",
               "weight": 10.723805294763608,
-              "normalized": 8.0,
-              "checked": "2026-11-02T18:22:25.368366+00:00"
+              "normalized": 8.0
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.3,
+              "scale": 10,
+              "count": 127,
+              "url": "https://www.metacritic.com/game/spiritfarer/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 11.269427669584644,
+              "normalized": 8.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:15.321610+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 23,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:04:09.169639+00:00"
       },
       "requirements": {
         "image": true,
@@ -282657,7 +283108,8 @@
       "basics_attempted": "2026-11-02T22:49:15.321610+00:00",
       "version": 7,
       "errors": {
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed"
       },
       "store_evidence": [
         {
@@ -282696,35 +283148,86 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:04:11.729149+00:00",
+      "full_version": 7
     },
     "Switch:5634": {
       "title": "Spitlings",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 65.6,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/spitlings",
+              "name": "Cultured Vultures",
+              "score": 80,
+              "url": "https://culturedvultures.com/spitlings-switch-review/",
+              "date": "2020-08-12",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=spitlings-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/spitlings",
+              "date": "2020-08-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 58,
+              "url": "https://www.player2.net.au/2020/08/spitlings-chaos-with-a-short-lifespan/",
+              "date": "2020-08-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 60,
+              "url": "https://www.starbit.pt/2020/09/07/spitlings-analise/",
+              "date": "2020-09-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/spitlings",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:15.321871+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:04:04.292789+00:00"
       },
       "requirements": {
         "image": true,
@@ -282740,7 +283243,12 @@
       },
       "basics_attempted": "2026-11-02T22:49:15.321871+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/spitlings-switch/",
@@ -282789,7 +283297,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:04:07.123907+00:00",
+      "full_version": 7
     },
     "Switch:5722": {
       "title": "SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated",
@@ -306895,19 +307405,29 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 77.5,
           "scale": 100,
           "sources": [
             {
               "name": "Nintendo Life",
               "score": 70,
               "url": "http://www.nintendolife.com/reviews/switch-eshop/spinmaster_neogeo",
+              "date": "2017-09-17",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 85.0,
+              "url": "https://purenintendo.com/review-aca-neogeo-spin-master-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 8.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -306916,7 +307436,18 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:32:31.412393+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:04:23.932908+00:00"
       },
       "requirements": {
         "image": true,
@@ -306925,7 +307456,13 @@
       },
       "basics_attempted": "2026-11-02T23:32:31.412393+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "image": {
         "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_AcaNeogeoSpinMaster_image500w.jpg",
         "source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/ACA-NEOGEO-SPIN-MASTER-1275782.html",
@@ -306983,7 +307520,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:04:30.162633+00:00",
+      "full_version": 7
     },
     "Switch:7227": {
       "title": "Steel Rain",
@@ -345172,13 +345711,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/spirit_arena",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:00.672287+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:03:44.265347+00:00"
       },
       "requirements": {
         "image": true,
@@ -345194,7 +345750,12 @@
       },
       "basics_attempted": "2026-11-02T22:49:00.672287+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/spirit-arena-switch/",
@@ -345243,7 +345804,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:03:46.635093+00:00",
+      "full_version": 7
     },
     "Switch:8509": {
       "title": "Super Chariot",
