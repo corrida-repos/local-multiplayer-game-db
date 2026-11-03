@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:23:37.855398+00:00",
+  "updated": "2026-11-03T06:24:24.366933+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1381,
+    "full_attempted": 1391,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -50002,34 +50002,82 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2023/09/jets-n-guns-2-review/",
+              "date": "2023-09-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 70,
+              "url": "https://www.heypoorplayer.com/2023/09/29/jetsnguns-2-review-ps5/",
+              "date": "2023-09-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 90,
+              "url": "https://www.playstationcountry.com/jetsnguns-2-ps5-review/",
+              "date": "2023-08-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/retro-inspired-indie-games-part-10#jets-n-guns-2",
+              "date": "2023-09-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 4
         },
         "user": {
-          "score": 9.0,
+          "score": 8.54,
           "scale": 10,
           "sources": [
             {
-              "score": 4.5,
-              "count": 142,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.5,
               "scale": 5,
-              "source": "PSN",
+              "count": 142,
               "url": "https://store.playstation.com/pt-pt/product/EP5098-PPSA17163_00-0959201449924357",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:45:01.855039+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 11.916375287812984,
               "normalized": 9.0
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.3,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/jetsnguns-2/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.449489742783178,
+              "normalized": 6.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:45:00.704221+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:24:10.010813+00:00"
       },
       "requirements": {
         "image": true,
@@ -50071,7 +50119,11 @@
       },
       "basics_attempted": "2026-11-02T17:45:00.704221+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -50087,7 +50139,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:24:10.299397+00:00",
+      "full_version": 7
     },
     "Switch:10656": {
       "title": "Jigsaw Fun: Amazing Animals",
@@ -138780,15 +138834,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.89,
-              "count": 19,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.89,
               "scale": 5,
-              "source": "PSN",
+              "count": 19,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA24298_00-JETPACKKIWIRAGAM",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T19:24:46.374140+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 4.358898943540674,
               "normalized": 7.78
             }
@@ -138796,7 +138848,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:28:44.893142+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:24:04.932884+00:00"
       },
       "requirements": {
         "image": true,
@@ -138806,7 +138865,10 @@
       "basics_attempted": "2026-11-02T19:28:44.893142+00:00",
       "version": 4,
       "errors": {
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA24298_00-JETPACKKIWIRAGAM",
@@ -138856,7 +138918,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:24:05.539493+00:00",
+      "full_version": 7
     },
     "Switch:16059": {
       "title": "Jetpack Kiwi",
@@ -138884,7 +138948,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:31.021352+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:24:22.705684+00:00"
       },
       "requirements": {
         "image": true,
@@ -138900,7 +138971,13 @@
       },
       "basics_attempted": "2026-11-02T22:39:31.021352+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/jetpack-kiwi-switch/",
@@ -138949,7 +139026,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:24:24.125467+00:00",
+      "full_version": 7
     },
     "Switch:16187": {
       "title": "KUUKIYOMI 4: Consider It",
@@ -181626,34 +181705,82 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 62.5,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "COGconnected",
+              "score": 70,
+              "url": "https://cogconnected.com/review/jay-and-silent-bob-chronic-blunt-punch-review/",
+              "date": "2026-04-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 50,
+              "url": "https://www.gamespew.com/2026/04/jay-and-silent-bob-chronic-blunt-punch-review/",
+              "date": "2026-04-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 70,
+              "url": "https://psxbrasil.com.br/jay-and-silent-bob-chronic-blunt-punch-review/",
+              "date": "2026-04-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Uagna.it",
+              "score": 60,
+              "url": "https://www.uagna.it/videogiochi/jay-and-silent-bob-chronic-blunt-punch-recensione-213777",
+              "date": "2026-04-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 4
         },
         "user": {
-          "score": 7.76,
+          "score": 7.59,
           "scale": 10,
           "sources": [
             {
-              "score": 3.88,
-              "count": 240,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.88,
               "scale": 5,
-              "source": "PSN",
+              "count": 240,
               "url": "https://store.playstation.com/pt-pt/product/UP0182-PPSA34438_00-SNOOCHTOTHENOOCH",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:44:37.588072+00:00",
-              "platform": "PSN · PS5",
               "weight": 15.491933384829668,
               "normalized": 7.76
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.4,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/jay-and-silent-bob-chronic-blunt-punch/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.23606797749979,
+              "normalized": 6.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:44:36.323055+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:24:00.020456+00:00"
       },
       "requirements": {
         "image": true,
@@ -181695,7 +181822,11 @@
       },
       "basics_attempted": "2026-11-02T17:44:36.323055+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -181711,7 +181842,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:24:00.645663+00:00",
+      "full_version": 7
     },
     "Switch:18041": {
       "title": "Jay and Silent Bob: Chronic Blunt Punch",
@@ -181725,6 +181858,7 @@
               "name": "Nintendo News PL",
               "score": 60,
               "url": "https://nintendonews.pl/recenzja-jay-and-silent-bob-chronic-blunt-punch-na-nintendo-switch-2",
+              "date": "2026-05-15",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -181732,6 +181866,7 @@
               "name": "NintendoWorldReport",
               "score": 75,
               "url": "https://www.nintendoworldreport.com/review/75243/jay-and-silent-bob-chronic-blunt-punch-switch-review",
+              "date": "2026-04-20",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -181739,6 +181874,7 @@
               "name": "SECTOR.sk",
               "score": 40,
               "url": " https://www.sector.sk/recenzia/40570/jay-and-silent-bob-chronic-blunt-punch.htm",
+              "date": "2026-07-09",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -181747,13 +181883,30 @@
           "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 8.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 8.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/nintendo-switch/jay_and_silent_bob_chronic_blunt_punch",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 8.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:30.766657+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:23:52.762576+00:00"
       },
       "requirements": {
         "image": true,
@@ -181770,7 +181923,10 @@
       "basics_attempted": "2026-11-02T22:39:30.766657+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -181820,7 +181976,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:23:54.760551+00:00",
+      "full_version": 7
     },
     "PS5:17866": {
       "title": "Jelly & Toast",
@@ -181838,15 +181996,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.92,
-              "count": 13,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.92,
               "scale": 5,
-              "source": "PSN",
+              "count": 13,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA28093_00-JELLYANDTOASTRAG",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T19:24:45.214242+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 3.605551275463989,
               "normalized": 7.84
             }
@@ -181854,7 +182010,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:28:44.892928+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:23:54.915092+00:00"
       },
       "requirements": {
         "image": true,
@@ -181864,7 +182027,10 @@
       "basics_attempted": "2026-11-02T19:28:44.892928+00:00",
       "version": 4,
       "errors": {
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA28093_00-JELLYANDTOASTRAG",
@@ -181914,7 +182080,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:23:55.890882+00:00",
+      "full_version": 7
     },
     "Switch:17836": {
       "title": "Jelly & Toast",
@@ -181926,10 +182094,11 @@
           "sources": [
             {
               "name": "Nindie Spotlight",
-              "score": 76.0,
+              "score": 76,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jelly-and-toast-switch",
+              "date": "2026-04-02",
               "platform": "Nintendo Switch",
-              "via": "Direct console-specific review"
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
@@ -181942,7 +182111,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:30.767651+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:24:17.921907+00:00"
       },
       "requirements": {
         "image": true,
@@ -181958,7 +182134,13 @@
       },
       "basics_attempted": "2026-11-02T22:39:30.767651+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/jelly-and-toast-switch/",
@@ -182007,7 +182189,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:24:20.035020+00:00",
+      "full_version": 7
     },
     "PS5:17774": {
       "title": "JellyCar Worlds",
@@ -182025,15 +182209,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.71,
-              "count": 21,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.71,
               "scale": 5,
-              "source": "PSN",
+              "count": 21,
               "url": "https://store.playstation.com/pt-pt/product/EP6097-PPSA33746_00-0464463379506793",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:44:46.188314+00:00",
-              "platform": "PSN · PS5",
               "weight": 4.58257569495584,
               "normalized": 9.42
             }
@@ -182041,7 +182223,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:44:44.198417+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:24:20.299052+00:00"
       },
       "requirements": {
         "image": true,
@@ -182083,7 +182272,11 @@
       },
       "basics_attempted": "2026-11-02T17:44:44.198417+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -182099,7 +182292,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:24:21.004393+00:00",
+      "full_version": 7
     },
     "PS5:17534": {
       "title": "KIBORG",
@@ -257111,22 +257306,87 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 72.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/jay_and_silent_bob_mall_brawl",
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/5927/1/review-jay-and-silent-bob-mall-brawl-nintendo-switch.html",
+              "date": "2020-05-07",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 80,
+              "url": "https://www.gamegrin.com/reviews/jay-and-silent-bob-mall-brawl-review/",
+              "date": "2020-05-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 70,
+              "url": "https://hardcoregamer.com/2020/05/07/review-jay-and-silent-bob-mall-brawl/377631/",
+              "date": "2020-05-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 65,
+              "url": "",
+              "date": "2020-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/jay_and_silent_bob_mall_brawl",
+              "date": "2020-05-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/53669/jay-and-silent-bob-mall-brawl-switch-review",
+              "date": "2020-05-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/jay-and-silent-bob-mall-brawl-nintendo-switch-review/",
+              "date": "2020-05-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 60,
+              "url": "https://www.thegamer.com/jay-and-silent-bob-mall-brawl-review/",
+              "date": "2020-05-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/retro-inspired-indie-games-part-6#jay-and-silent-bob-mall-brawl",
+              "date": "2020-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
-          "score": 4.7,
+          "score": 6.19,
           "scale": 10,
           "sources": [
             {
@@ -257137,14 +257397,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/jay_and_silent_bob_mall_brawl",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 4.7,
-              "checked": "2026-11-02T17:44:37.592223+00:00"
+              "normalized": 4.7
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/jay-and-silent-bob-mall-brawl/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:30.766984+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:24:02.785360+00:00"
       },
       "requirements": {
         "image": true,
@@ -257160,7 +257434,11 @@
       },
       "basics_attempted": "2026-11-02T22:39:30.766984+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/jay-and-silent-bob-mall-brawl-switch/",
@@ -257209,7 +257487,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:24:04.477945+00:00",
+      "full_version": 7
     },
     "Switch:6538": {
       "title": "Let's Go Nuts!",
@@ -288821,7 +289101,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 75.0,
+          "score": 72.5,
           "scale": 100,
           "sources": [
             {
@@ -288830,19 +289110,44 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=jet-set-knights-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-jet-set-knights-nintendo-switch/",
+              "date": "2020-11-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/jet_set_knights",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:30.773005+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:23:57.674483+00:00"
       },
       "requirements": {
         "image": true,
@@ -288858,7 +289163,11 @@
       },
       "basics_attempted": "2026-11-02T22:39:30.773005+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/jet-set-knights-switch/",
@@ -288907,7 +289216,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:23:59.546088+00:00",
+      "full_version": 7
     },
     "Switch:7982": {
       "title": "Joe & Mac 2: Lost in the Tropics",
