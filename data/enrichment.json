@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T05:39:21.728604+00:00",
+  "updated": "2026-11-03T05:40:18.699567+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1042,
+    "full_attempted": 1051,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -25733,15 +25733,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.63,
-              "count": 192,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.63,
               "scale": 5,
-              "source": "PSN",
+              "count": 192,
               "url": "https://store.playstation.com/pt-pt/product/EP8916-PPSA04267_00-7155363858038661",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:05:11.833854+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 13.856406460551018,
               "normalized": 9.26
             }
@@ -25749,7 +25747,12 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:05:10.358687+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:39:36.752981+00:00"
       },
       "requirements": {
         "image": true,
@@ -25791,7 +25794,10 @@
       },
       "basics_attempted": "2026-11-02T17:05:10.358687+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -25807,14 +25813,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:39:37.523495+00:00",
+      "full_version": 7
     },
     "Switch:11336": {
       "title": "Dawn of the Monsters",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.7,
+          "score": 81.9,
           "scale": 100,
           "sources": [
             {
@@ -25824,6 +25832,13 @@
               "date": "2022-03-16",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 90.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=dawn-of-the-monsters-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             },
             {
               "name": "Nintendo Force Magazine",
@@ -25875,10 +25890,10 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 7
+          "source_count": 8
         },
         "user": {
-          "score": 7.0,
+          "score": 7.6,
           "scale": 10,
           "sources": [
             {
@@ -25889,14 +25904,28 @@
               "url": "https://www.metacritic.com/game/dawn-of-the-monsters/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 7.0,
-              "checked": "2026-11-02T17:05:11.847130+00:00"
+              "normalized": 7.0
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.9,
+              "scale": 10.0,
+              "count": 23,
+              "url": "https://www.nintendolife.com/games/switch-eshop/dawn_of_the_monsters",
+              "platform": "Nintendo Switch",
+              "weight": 4.795831523312719,
+              "normalized": 7.9
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:31:56.155390+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:39:57.646661+00:00"
       },
       "requirements": {
         "image": true,
@@ -25912,7 +25941,10 @@
       },
       "basics_attempted": "2026-11-02T22:31:56.155390+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/dawn-of-the-monsters-switch/",
@@ -25961,7 +25993,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:40:00.365721+00:00",
+      "full_version": 7
     },
     "Switch:11046": {
       "title": "Deathsmiles I･II",
@@ -138938,7 +138972,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T05:07:33.227701+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:39:42.685912+00:00"
       },
       "requirements": {
         "image": true,
@@ -138959,9 +139000,11 @@
         "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
         "nwr": "No exact console review indexed",
-        "pure": "Review archive discovery still queued; exact profile not indexed yet"
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T21:00:54.369634+00:00",
+      "full_attempted": "2026-11-03T05:39:44.326940+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/zombie-slaughter-dead-zone-switch/",
@@ -139075,7 +139118,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "PS5:16535": {
       "title": "Absolum",
@@ -198384,15 +198428,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.95,
-              "count": 110,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.95,
               "scale": 5,
-              "source": "PSN",
+              "count": 110,
               "url": "https://store.playstation.com/pt-pt/product/HB2401-PPSA39196_00-0152213603779273",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:21:08.657917+00:00",
-              "platform": "PSN · PS5",
               "weight": 10.488088481701515,
               "normalized": 9.9
             }
@@ -198400,7 +198442,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:21:07.130192+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:39:41.613360+00:00"
       },
       "requirements": {
         "image": true,
@@ -198442,7 +198491,11 @@
       },
       "basics_attempted": "2026-11-02T17:21:07.130192+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -198458,7 +198511,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:39:42.285340+00:00",
+      "full_version": 7
     },
     "PS5:19100": {
       "title": "DuneCrawl",
@@ -207146,22 +207201,134 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 79.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/death_road_to_canada",
+              "name": "AusGamers",
+              "score": 65,
+              "url": "https://www.ausgamers.com/games/death-road-to-canada/review/",
+              "date": "2018-05-15",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 81,
+              "url": "http://cogconnected.com/review/death-road-canada-review-aint-no-peaceful-drive/",
+              "date": "2018-05-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 80,
+              "url": "https://www.dualshockers.com/death-road-to-canada-review/",
+              "date": "2018-05-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "http://fnintendo.net/article/10873-death-road-to-canada",
+              "date": "2018-05-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 80,
+              "url": "https://www.gamespace.com/reviews/death-road-to-canada-switch-review/",
+              "date": "2018-05-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "http://www.godisageek.com/reviews/switch-report-15-saturday-morning-rpg-death-road-canada-battle-chasers-nightwar/",
+              "date": "2018-05-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=death-road-to-canada-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 90,
+              "url": "http://www.nintenderos.com/2018/05/analisis-death-road-to-canada/",
+              "date": "2018-05-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/death-road-to-canada-review/",
+              "date": "2018-06-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/death_road_to_canada?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-05-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/47165/death-road-to-canada-switch-review",
+              "date": "2018-05-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 100,
+              "url": "http://www.nintendojo.com/reviews/review-death-road-to-canada-switch",
+              "date": "2018-05-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2018/06/07/death-road-to-canada-review/",
+              "date": "2018-06-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 80,
+              "url": "https://switch-brasil.com/analise-death-road-to-canada/",
+              "date": "2018-05-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 71,
+              "url": "http://worthplaying.com/article/2018/5/14/reviews/108701/",
+              "date": "2018-05-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 15
         },
         "user": {
-          "score": 7.4,
+          "score": 7.45,
           "scale": 10,
           "sources": [
             {
@@ -207172,14 +207339,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/death_road_to_canada",
               "platform": "Nintendo Switch",
               "weight": 6.6332495807108,
-              "normalized": 7.4,
-              "checked": "2026-11-02T17:23:43.547343+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.5,
+              "scale": 10,
+              "count": 61,
+              "url": "https://www.metacritic.com/game/death-road-to-canada/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 7.810249675906654,
+              "normalized": 7.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:33:49.053720+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 14,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:40:12.649763+00:00"
       },
       "requirements": {
         "image": true,
@@ -207195,7 +207376,10 @@
       },
       "basics_attempted": "2026-11-02T22:33:49.053720+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/death-road-to-canada-switch/",
@@ -207244,29 +207428,232 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:40:18.455861+00:00",
+      "full_version": 7
     },
     "Switch:4681": {
       "title": "Death Squared",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 78.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/death_squared",
+              "name": "4P.de",
+              "score": 80,
+              "url": "http://www.4players.de/4players.php/dispbericht/Switch/Test/38670/82643/0/Death_Squared.html",
+              "date": "2017-07-12",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 70,
+              "url": "http://cogconnected.com/review/death-squared/",
+              "date": "2017-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/4021/1/death-squared-nintendo-switch.html",
+              "date": "2017-07-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 80,
+              "url": "http://www.darkstation.com/reviews/death-squared-review-switch",
+              "date": "2017-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 70,
+              "url": "http://www.digitallydownloaded.net/2017/08/review-death-squared-nintendo-switch.html",
+              "date": "2017-08-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 70,
+              "url": "http://www.dualshockers.com/death-squared-review-nintendo-switch-puzzle/",
+              "date": "2017-09-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "http://fnintendo.net/article/9528-death-squared",
+              "date": "2017-07-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 80,
+              "url": "https://www.gamegrin.com/reviews/death-squared-review/",
+              "date": "2017-08-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamers' Temple",
+              "score": 85,
+              "url": "https://www.gamerstemple.com/game-reviews/switch/10987/death-squared-review",
+              "date": "2017-10-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 90,
+              "url": "https://www.gamingnexus.com/Article/5440/Death-Squared/",
+              "date": "2017-08-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 70,
+              "url": "http://gamingtrend.com/reviews/co-op-story-memento-mori-death-squared-review/",
+              "date": "2017-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 55,
+              "url": "http://www.godisageek.com/reviews/death-squared-nintendo-switch-review/",
+              "date": "2017-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 77,
+              "url": "http://multiplayer.it/recensioni/186620-death-squared-death-squared-compagni-di-morte.html",
+              "date": "2017-07-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 86.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=death-squared-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 90,
+              "url": "http://nintendoenthusiast.com/blog/2017/07/12/death-squared-review-switch/",
+              "date": "2017-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 80,
+              "url": "",
+              "date": "2017-08-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/death_squared",
+              "date": "2017-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/44982/death-squared-switch-review",
+              "date": "2017-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 58,
+              "url": "http://www.nintendojo.com/reviews/review-death-squared-switch",
+              "date": "2017-08-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 90,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/Death+Squared/review.asp?c=74666",
+              "date": "2017-07-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 90.0,
+              "url": "https://purenintendo.com/review-death-squared-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 9.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 82,
+              "url": "http://switchplayer.net/2017/07/12/death-squared/",
+              "date": "2017-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 80,
+              "url": "http://www.thedigitalfix.com/gaming/content/4162/death-squared/",
+              "date": "2017-07-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 78,
+              "url": "https://www.thegamesmachine.it/death-squared/death-squared-recensione-pc-ps4-switch/",
+              "date": "2017-07-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 80,
+              "url": "http://www.vooks.net/death-squared-switch-eshop-review/",
+              "date": "2017-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 85,
+              "url": "http://worthplaying.com/article/2017/8/16/reviews/104799/",
+              "date": "2017-08-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 26
         },
         "user": {
-          "score": 7.4,
+          "score": 7.5,
           "scale": 10,
           "sources": [
             {
@@ -207277,14 +207664,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/death_squared",
               "platform": "Nintendo Switch",
               "weight": 7.211102550927978,
-              "normalized": 7.4,
-              "checked": "2026-11-02T17:23:48.488645+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.6,
+              "scale": 10,
+              "count": 51,
+              "url": "https://www.metacritic.com/game/death-squared/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 7.14142842854285,
+              "normalized": 7.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:33:50.242664+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 25,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:40:07.849746+00:00"
       },
       "requirements": {
         "image": true,
@@ -207300,7 +207701,9 @@
       },
       "basics_attempted": "2026-11-02T22:33:50.242664+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/death-squared-switch/",
@@ -207349,7 +207752,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "b2Jmr5gnzVM",
+        "title": "Death Squared - Reaction Launch Trailer | PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/death-squared/"
+      },
+      "full_attempted": "2026-11-03T05:40:14.879046+00:00",
+      "full_version": 7
     },
     "Switch:4706": {
       "title": "Dimension Drive",
@@ -219034,22 +219445,70 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 75.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/de_blob_2",
+              "name": "FNintendo",
+              "score": 60,
+              "url": "https://fnintendo.net/article/11605-de-blob-2",
+              "date": "2018-10-21",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 91,
+              "url": "http://www.gaming-age.com/2018/11/de-blob-2-review-for-nintendo-switch/",
+              "date": "2018-11-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=de-blob-2-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 74,
+              "url": "https://www.nintenderos.com/2020/05/analisis-de-blob-2-para-nintendo-switch/",
+              "date": "2020-05-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/de_blob_2?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-08-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/48307/de-blob-2-switch-review",
+              "date": "2018-09-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2018/09/24/de-blob-2-review/",
+              "date": "2018-09-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
-          "score": 7.4,
+          "score": 7.36,
           "scale": 10,
           "sources": [
             {
@@ -219060,14 +219519,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/de_blob_2",
               "platform": "Nintendo Switch",
               "weight": 4.0,
-              "normalized": 7.4,
-              "checked": "2026-11-02T17:25:54.630276+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.3,
+              "scale": 10,
+              "count": 10,
+              "url": "https://www.metacritic.com/game/de-blob-2/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.1622776601683795,
+              "normalized": 7.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:34:29.805574+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:39:47.879107+00:00"
       },
       "requirements": {
         "image": true,
@@ -219083,7 +219556,11 @@
       },
       "basics_attempted": "2026-11-02T22:34:29.805574+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "Different game or console in review heading",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/de-blob-2-switch/",
@@ -219133,7 +219610,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:39:51.404782+00:00",
+      "full_version": 7
     },
     "Switch:5557": {
       "title": "Defense Grid 2",
@@ -229571,28 +230050,77 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 61.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "COGconnected",
+              "score": 65,
+              "url": "https://cogconnected.com/review/dead-end-job-review/",
+              "date": "2020-01-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 50,
+              "url": "https://fnintendo.net/article/13359-dead-end-job",
+              "date": "2019-12-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 80.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=dead-end-job-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 50,
+              "url": "http://www.nintendoworldreport.com/review/52364/dead-end-job-switch-review",
+              "date": "2019-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2020/01/12/dead-end-job-review/",
+              "date": "2020-01-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": null,
+          "score": 2.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 2.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/dead_end_job",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 2.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:34:59.220127+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:39:52.874114+00:00"
       },
       "requirements": {
         "image": true,
@@ -229608,7 +230136,11 @@
       },
       "basics_attempted": "2026-11-02T22:34:59.220127+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/dead-end-job-switch/",
@@ -229657,7 +230189,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:39:55.599354+00:00",
+      "full_version": 7
     },
     "Switch:5997": {
       "title": "Double Dragon and Kunio-Kun: Retro Brawler Bundle",
@@ -287105,15 +287639,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.61,
-              "count": 101,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.61,
               "scale": 5,
-              "source": "PSN",
+              "count": 101,
               "url": "https://store.playstation.com/pt-pt/product/EP1580-PPSA02659_00-5830848773442383",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:38:33.003900+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 10.04987562112089,
               "normalized": 7.22
             }
@@ -287121,7 +287653,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:38:31.776374+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:39:49.644050+00:00"
       },
       "requirements": {
         "image": true,
@@ -287163,7 +287702,11 @@
       },
       "basics_attempted": "2026-11-02T17:38:31.776374+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -287179,7 +287722,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:39:50.196039+00:00",
+      "full_version": 7
     },
     "Switch:8957": {
       "title": "Demon's Crystals",
@@ -298707,9 +299252,17 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 63.0,
+          "score": 46.5,
           "scale": 100,
           "sources": [
+            {
+              "name": "Digitally Downloaded",
+              "score": 30,
+              "url": "http://www.digitallydownloaded.net/2021/05/review-death-crown-nintendo-switch.html",
+              "date": "2021-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 63.0,
@@ -298719,16 +299272,33 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 4.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/death_crown",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:38:47.529359+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:40:02.758324+00:00"
       },
       "requirements": {
         "image": true,
@@ -298744,7 +299314,12 @@
       },
       "basics_attempted": "2026-11-02T22:38:47.529359+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/death-crown-switch/",
@@ -298793,7 +299368,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:40:04.830726+00:00",
+      "full_version": 7
     },
     "PS5:9472": {
       "title": "F1 2021",
