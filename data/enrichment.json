@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T05:45:11.046592+00:00",
+  "updated": "2026-11-03T05:45:59.639920+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1101,
+    "full_attempted": 1111,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -30255,34 +30255,66 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 55.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Gaming Age",
+              "score": 65,
+              "url": "https://gaming-age.com/2023/11/dreamworks-trolls-remix-rescue/",
+              "date": "2023-11-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 45,
+              "url": "https://psxbrasil.com.br/analise/dreamworks-trolls-remix-rescue-review/",
+              "date": "2023-11-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
-          "score": 5.96,
+          "score": 5.65,
           "scale": 10,
           "sources": [
             {
-              "score": 2.98,
-              "count": 113,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 2.98,
               "scale": 5,
-              "source": "PSN",
+              "count": 113,
               "url": "https://store.playstation.com/pt-pt/product/EP0281-PPSA13625_00-TROLLSTHEGAME000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:06:46.551115+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 10.63014581273465,
               "normalized": 5.96
+            },
+            {
+              "name": "Metacritic users",
+              "score": 4.2,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/dreamworks-trolls-remix-rescue/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.23606797749979,
+              "normalized": 4.2
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:06:45.142050+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:45:48.272473+00:00"
       },
       "requirements": {
         "image": true,
@@ -30324,7 +30356,11 @@
       },
       "basics_attempted": "2026-11-02T17:06:45.142050+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -30340,7 +30376,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:45:49.168506+00:00",
+      "full_version": 7
     },
     "Switch:14656": {
       "title": "DreamWorks Trolls Remix Rescue",
@@ -125083,41 +125121,137 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 60.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Metacritic aggregate",
+              "name": "Atomix",
+              "score": 65,
+              "url": "",
+              "date": "2025-11-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 65,
+              "url": "https://cogconnected.com/review/double-dragon-revive-review/",
+              "date": "2025-10-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Final Weapon",
+              "score": 40,
+              "url": "https://finalweapon.net/2025/10/27/double-dragon-revive-review/",
+              "date": "2025-10-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameBlast",
+              "score": 65,
+              "url": "https://www.gameblast.com.br/2025/11/analise-double-dragon-revive-review.html",
+              "date": "2025-11-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
               "score": 60,
-              "url": "https://www.metacritic.com/game/double-dragon-revive/critic-reviews/?platform=playstation-5",
-              "platform": "PS5"
+              "url": "https://www.gamespew.com/2025/10/double-dragon-revive-review/",
+              "date": "2025-10-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamekult",
+              "score": 60,
+              "url": "https://www.gamekult.com/jeux/double-dragon-3d-2025-3050887786/test.html",
+              "date": "2025-10-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameliner",
+              "score": 40,
+              "url": "https://gameliner.nl/reviews/double-dragon-revive-review-terug-het-graf-in/6735-29-1-5",
+              "date": "2025-10-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamersRD",
+              "score": 70,
+              "url": "https://gamersrd.com/double-dragon-revive-review",
+              "date": "2025-11-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 80,
+              "url": "https://gaming-age.com/2025/11/double-dragon-revive-review-for-playstation-xbox-switch-pc/",
+              "date": "2025-11-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 70,
+              "url": "https://psxbrasil.com.br/double-dragon-revive-review/",
+              "date": "2025-11-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 50,
+              "url": "https://www.psu.com/reviews/double-dragon-revive-review-ps5/",
+              "date": "2025-10-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 11
         },
         "user": {
-          "score": 7.54,
+          "score": 7.52,
           "scale": 10,
           "sources": [
             {
-              "score": 3.77,
-              "count": 646,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.77,
               "scale": 5,
-              "source": "PSN",
+              "count": 646,
               "url": "https://store.playstation.com/pt-pt/product/JP0036-PPSA23000_00-DDRAGONREVIVE000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T20:08:09.225926+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 25.41653005427767,
               "normalized": 7.54
+            },
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/double_dragon_revive",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 7.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:08:06.106355+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 11,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:45:43.562555+00:00"
       },
       "requirements": {
         "image": true,
@@ -125133,7 +125267,9 @@
       },
       "basics_attempted": "2026-11-02T20:08:06.106355+00:00",
       "version": 4,
-      "errors": {},
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/JP0036-PPSA23000_00-DDRAGONREVIVE000",
         "label": "Abrir na PlayStation Store",
@@ -125175,7 +125311,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:45:43.814594+00:00",
+      "full_version": 7
     },
     "Switch:15758": {
       "title": "Fitness Boxing feat. HATSUNE MIKU",
@@ -159714,6 +159852,7 @@
               "name": "GameSpew",
               "score": 80,
               "url": "https://www.gamespew.com/2025/09/dreamworks-gabbys-dollhouse-ready-to-party-review/",
+              "date": "2025-09-24",
               "platform": "PlayStation 5",
               "via": "Metacritic review index"
             },
@@ -159721,6 +159860,7 @@
               "name": "Impulsegamer",
               "score": 80,
               "url": "https://www.impulsegamer.com/gabbys-dollhouse-ready-to-party-review-ps5/",
+              "date": "2025-09-30",
               "platform": "PlayStation 5",
               "via": "Metacritic review index"
             }
@@ -159733,15 +159873,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.95,
-              "count": 65,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.95,
               "scale": 5,
-              "source": "PSN",
+              "count": 65,
               "url": "https://store.playstation.com/pt-pt/product/HP3768-PPSA26016_00-GABBYBASEGAME000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T20:09:27.857057+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 8.06225774829855,
               "normalized": 7.9
             }
@@ -159749,7 +159887,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:09:20.352649+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:45:33.399787+00:00"
       },
       "requirements": {
         "image": true,
@@ -159758,7 +159903,11 @@
       },
       "basics_attempted": "2026-11-02T20:09:20.352649+00:00",
       "version": 4,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/HP3768-PPSA26016_00-GABBYBASEGAME000",
         "label": "Abrir na PlayStation Store",
@@ -159807,7 +159956,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:45:33.930962+00:00",
+      "full_version": 7
     },
     "Switch:17279": {
       "title": "DreamWorks Gabby’s Dollhouse: Ready to Party",
@@ -159821,6 +159972,7 @@
               "name": "Vooks",
               "score": 80,
               "url": "https://www.vooks.net/dreamworks-gabbys-dollhouse-ready-to-party-switch-review/",
+              "date": "2025-10-28",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -159835,7 +159987,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:57:22.899871+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:45:56.784704+00:00"
       },
       "requirements": {
         "image": true,
@@ -159852,7 +160011,12 @@
       "basics_attempted": "2026-11-02T22:57:22.899871+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -159902,7 +160066,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:45:59.406890+00:00",
+      "full_version": 7
     },
     "PS5:17273": {
       "title": "Esophaguys",
@@ -172255,19 +172421,52 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 56.6,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/double-dragon-revive",
+              "name": "ElDesmarque",
+              "score": 60,
+              "url": "https://www.eldesmarque.com/videojuegos/20251031/double-dragon-revive-un-regreso-al-barrio-que-no-da-el-golpe-definitivo_300797983.html",
+              "date": "2025-10-31",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 68,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-double-dragon-revive-correctita-resurreccion-clasicazo-beat-em-1488025",
+              "date": "2025-10-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/double-dragon-revive",
+              "date": "2025-11-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Jimquisition",
+              "score": 45,
+              "url": "https://www.thejimquisition.com/post/double-dragon-revive-about-to-get-ugly-review",
+              "date": "2025-11-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 50,
+              "url": "https://universonintendo.com/analise-double-dragon-revive/",
+              "date": "2025-11-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
           "score": 5.7,
@@ -172281,14 +172480,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/double_dragon_revive",
               "platform": "Nintendo Switch",
               "weight": 5.656854249492381,
-              "normalized": 5.700000000000001,
-              "checked": "2026-11-02T17:20:12.560594+00:00"
+              "normalized": 5.700000000000001
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:33:19.928809+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:45:32.006550+00:00"
       },
       "requirements": {
         "image": true,
@@ -172304,7 +172507,13 @@
       },
       "basics_attempted": "2026-11-02T22:33:19.928809+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/double-dragon-revive-switch/",
@@ -172353,41 +172562,91 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:45:35.060080+00:00",
+      "full_version": 7
     },
     "PS5:17947": {
       "title": "Dragonkin: The Banished",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 77.5,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Finger Guns",
+              "score": 80,
+              "url": "https://fingerguns.net/reviews/2026/03/24/dragonkin-the-banished-review-ps5-diablos-kindred-spirit/",
+              "date": "2026-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2026/04/dragonkin-the-banished-review/",
+              "date": "2026-04-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation LifeStyle",
+              "score": 80,
+              "url": "https://www.playstationlifestyle.net/review/930893-dragonkin-the-banished-ps5-review-hack-and-slash-rpg/",
+              "date": "2026-04-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 70,
+              "url": "https://www.thesixthaxis.com/2026/03/20/dragonkin-the-banished-review/",
+              "date": "2026-03-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 4
         },
         "user": {
-          "score": 8.68,
+          "score": 8.33,
           "scale": 10,
           "sources": [
             {
-              "score": 4.34,
-              "count": 1239,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.34,
               "scale": 5,
-              "source": "PSN",
+              "count": 1239,
               "url": "https://store.playstation.com/pt-pt/product/EP6665-PPSA21601_00-DKB0000000000000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:20:17.169675+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 8.68
+            },
+            {
+              "name": "Metacritic users",
+              "score": 5.6,
+              "scale": 10,
+              "count": 16,
+              "url": "https://www.metacritic.com/game/dragonkin-the-banished/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 4.0,
+              "normalized": 5.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:20:16.119478+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:45:38.377136+00:00"
       },
       "requirements": {
         "image": true,
@@ -172429,7 +172688,11 @@
       },
       "basics_attempted": "2026-11-02T17:20:16.119478+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -172445,7 +172708,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:45:39.477782+00:00",
+      "full_version": 7
     },
     "Switch:17767": {
       "title": "EGGCONSOLE SUPER LAYDOCK MISSION STRIKER MSX",
@@ -210773,7 +211038,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 51.2,
           "scale": 100,
           "sources": [
             {
@@ -210782,19 +211047,60 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=dragodino-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 40,
+              "url": "https://www.nintendo-insider.com/dragodino-review/",
+              "date": "2018-05-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 65,
+              "url": "http://www.nintendoworldreport.com/review/47059/dragodino-switch-review",
+              "date": "2018-04-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 30,
+              "url": "http://switchplayer.net/2018/07/06/drago-dino-review/",
+              "date": "2018-07-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/dragodino",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:34:03.337722+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:45:41.885813+00:00"
       },
       "requirements": {
         "image": true,
@@ -210810,7 +211116,11 @@
       },
       "basics_attempted": "2026-11-02T22:34:03.337722+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/dragodino-switch/",
@@ -210859,14 +211169,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:45:45.269518+00:00",
+      "full_version": 7
     },
     "Switch:5054": {
       "title": "Dragon Blaze",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 82.5,
           "scale": 100,
           "sources": [
             {
@@ -210875,10 +211187,19 @@
               "url": "https://www.nintendolife.com/reviews/switch-eshop/dragon_blaze",
               "platform": "Nintendo Switch",
               "via": "Nintendo Life"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 75.0,
+              "url": "https://purenintendo.com/review-dragon-blaze-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 7.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": 7.4,
@@ -210892,14 +211213,21 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/dragon_blaze",
               "platform": "Nintendo Switch",
               "weight": 4.242640687119285,
-              "normalized": 7.4,
-              "checked": "2026-11-02T19:18:51.336902+00:00"
+              "normalized": 7.4
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T00:41:13.854665+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:45:36.966219+00:00"
       },
       "requirements": {
         "image": true,
@@ -210918,7 +211246,11 @@
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -210950,7 +211282,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:45:40.456305+00:00",
+      "full_version": 7
     },
     "Switch:5055": {
       "title": "Eternal Edge",
@@ -233203,28 +233537,166 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 75.0,
+          "score": 77.7,
           "scale": 100,
           "sources": [
+            {
+              "name": "CGMagazine",
+              "score": 80,
+              "url": "https://www.cgmagonline.com/reviews/double-dragon-kunio-kun-retro-brawler-bundle-review/",
+              "date": "2020-03-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 60,
+              "url": "http://www.cubed3.com/review/5891/1/double-dragon-and-kunio-kun-retro-brawler-bundle-nintendo-switch.html",
+              "date": "2020-04-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 80,
+              "url": "https://gamecritics.com/jeff-ortloff/double-dragon-kunio-kun-retro-brawler-bundle-review/",
+              "date": "2020-04-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 50,
+              "url": "https://www.gamespew.com/2020/02/double-dragon-kunio-kun-retro-brawler-bundle-review/",
+              "date": "2020-02-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 100,
+              "url": "https://gaming-age.com/2020/02/double-dragon-kunio-kun-retro-brawler-bundle-review-for-nintendo-switch/",
+              "date": "2020-02-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 75.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=double-dragon-and-kunio-kun-retro-brawler-bundle-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 80,
+              "url": "",
+              "date": "2020-05-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/double-dragon-kunio-kun-retro-brawler-bundle-review/",
+              "date": "2020-03-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/double_dragon_and_kunio-kun_retro_brawler_bundle?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2020-03-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/52918/double-dragon-n-kunio-kun-retro-brawler-bundle-switch-review",
+              "date": "2020-02-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2020/04/18/double-dragon-kunio-kun-retro-brawler-bundle-review/",
+              "date": "2020-04-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 100,
+              "url": "https://www.thegamer.com/double-dragon-kunio-kun-retro-brawler-bundle-review/",
+              "date": "2020-02-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 70,
+              "url": "https://www.thesixthaxis.com/2020/02/21/double-dragon-kunio-kun-retro-brawler-bundle-review/",
+              "date": "2020-02-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 75,
+              "url": "https://vandal.elespanol.com/analisis/switch/double-dragon-kuniokun-retro-brawler-bundle/81884#p-83",
+              "date": "2020-02-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 80,
+              "url": "https://worthplaying.com/article/2020/4/30/reviews/119278/",
+              "date": "2020-04-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 15
         },
         "user": {
-          "score": null,
+          "score": 7.3,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 13,
+              "url": "https://www.metacritic.com/game/double-dragon-and-kunio-kun-retro-brawler-bundle/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 7.4
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.2,
+              "scale": 10.0,
+              "count": 11,
+              "url": "https://www.nintendolife.com/games/switch-eshop/double_dragon_and_kunio-kun_retro_brawler_bundle",
+              "platform": "Nintendo Switch",
+              "weight": 3.3166247903554,
+              "normalized": 7.199999999999999
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:30:01.481665+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 14,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:45:52.059179+00:00"
       },
       "requirements": {
         "image": true,
@@ -233241,7 +233713,10 @@
       "basics_attempted": "2026-11-02T23:30:01.481665+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -233292,7 +233767,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:45:54.501598+00:00",
+      "full_version": 7
     },
     "Switch:5638": {
       "title": "Enter the Gungeon",
@@ -281844,19 +282321,59 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 75.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/double_dragon_neon",
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/6382/1/double-dragon-neon-nintendo-switch.html",
+              "date": "2021-05-25",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 65.99999999999999,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=double-dragon-neon-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 80,
+              "url": "",
+              "date": "2021-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/double_dragon_neon",
+              "date": "2021-01-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "https://www.nintendoworldreport.com/review/55986/double-dragon-neon-switch-eshop-review",
+              "date": "2021-01-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 75,
+              "url": "https://purenintendo.com/review-double-dragon-neon-nintendo-switch/",
+              "date": "2021-01-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
           "score": 6.9,
@@ -281870,14 +282387,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/double_dragon_neon",
               "platform": "Nintendo Switch",
               "weight": 3.3166247903554,
-              "normalized": 6.9,
-              "checked": "2026-11-02T17:37:15.409963+00:00"
+              "normalized": 6.9
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:37:35.807817+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:45:27.204195+00:00"
       },
       "requirements": {
         "image": true,
@@ -281893,7 +282414,10 @@
       },
       "basics_attempted": "2026-11-02T22:37:35.807817+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/double-dragon-neon-switch/",
@@ -281942,7 +282466,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:45:29.601272+00:00",
+      "full_version": 7
     },
     "Switch:8091": {
       "title": "Dungeonoid",
