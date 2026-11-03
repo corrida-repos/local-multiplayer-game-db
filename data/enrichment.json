@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:06:32.936914+00:00",
+  "updated": "2026-11-03T06:07:58.154271+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1251,
+    "full_attempted": 1261,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -41951,9 +41951,16 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 45.0,
+          "score": 58.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 71.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=golazo-2-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
             {
               "name": "NintendoWorldReport",
               "score": 45,
@@ -41964,7 +41971,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -41973,7 +41980,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:52.238513+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:07:03.713563+00:00"
       },
       "requirements": {
         "image": true,
@@ -41989,7 +42003,12 @@
       },
       "basics_attempted": "2026-11-02T22:32:52.238513+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/golazo-2-switch/",
@@ -42038,7 +42057,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:07:05.962401+00:00",
+      "full_version": 7
     },
     "Switch:12914": {
       "title": "Golazo! Soccer League",
@@ -42255,7 +42276,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:33:34.005592+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 410: Gone"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:07:43.690617+00:00"
       },
       "requirements": {
         "image": true,
@@ -42272,7 +42301,12 @@
       "basics_attempted": "2026-11-02T22:33:34.005592+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone"
+        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 410: Gone",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -42322,7 +42356,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:07:45.240260+00:00",
+      "full_version": 7
     },
     "Switch:14294": {
       "title": "Gourmet Warriors",
@@ -118713,14 +118749,47 @@
           "scale": 100,
           "sources": [
             {
-              "name": "Metacritic aggregate",
-              "score": 79,
-              "url": "https://www.metacritic.com/game/goliath-depot/critic-reviews/?platform=nintendo-switch",
-              "platform": "Switch"
+              "name": "Nindie Spotlight",
+              "score": 79.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=goliath-depot-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 75,
+              "url": "https://purenintendo.com/review-goliath-depot-nintendo-switch/",
+              "date": "2024-05-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Tech-Gaming",
+              "score": 81,
+              "url": "https://www.tech-gaming.com/goliath-depot/",
+              "date": "2024-06-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 80,
+              "url": "https://toucharcade.com/2024/06/03/umbraclaw-switch-review-bethesda-eshop-discount-sale-wizardry-remake-port/",
+              "date": "2024-06-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/console-games-grab-bag-slash-pave-and-meow#goliath-depot",
+              "date": "2024-05-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
           "score": null,
@@ -118729,7 +118798,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:53.522079+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:07:18.768509+00:00"
       },
       "requirements": {
         "image": true,
@@ -118745,7 +118821,12 @@
       },
       "basics_attempted": "2026-11-02T22:32:53.522079+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/goliath-depot-switch/",
@@ -118794,7 +118875,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:07:20.374458+00:00",
+      "full_version": 7
     },
     "PS5:15220": {
       "title": "Goons: Legends & Mayhem",
@@ -118812,15 +118895,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.47,
-              "count": 49,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.47,
               "scale": 5,
-              "source": "PSN",
+              "count": 49,
               "url": "https://store.playstation.com/pt-pt/product/EP7678-PPSA11505_00-3850245898559099",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:21:54.095792+00:00",
-              "platform": "PSN · PS5",
               "weight": 7.0,
               "normalized": 6.94
             }
@@ -118828,7 +118909,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:21:52.190599+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:07:03.601868+00:00"
       },
       "requirements": {
         "image": true,
@@ -118870,7 +118958,11 @@
       },
       "basics_attempted": "2026-11-02T17:21:52.190599+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -118886,7 +118978,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:07:03.892730+00:00",
+      "full_version": 7
     },
     "Switch:15221": {
       "title": "Goons: Legends & Mayhem",
@@ -127967,9 +128061,17 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 71.0,
+          "score": 68.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "Movies Games and Tech",
+              "score": 65,
+              "url": "https://moviesgamesandtech.com/2025/04/30/review-goobnballoonsdx/",
+              "date": "2025-05-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 71.0,
@@ -127979,7 +128081,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -127988,7 +128090,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:57:22.901407+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:07:53.680216+00:00"
       },
       "requirements": {
         "image": true,
@@ -128004,7 +128116,13 @@
       },
       "basics_attempted": "2026-11-02T22:57:22.901407+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/goobnballoonsdx-switch/",
@@ -128054,7 +128172,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:07:57.914535+00:00",
+      "full_version": 7
     },
     "Switch:15893": {
       "title": "I Got Isekai'd Into a Shmup",
@@ -177795,34 +177915,714 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 65.1,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Adrenaline",
+              "score": 60,
+              "url": "https://www.adrenaline.com.br/analise/games/god-of-war-sons-of-sparta-review/",
+              "date": "2026-05-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 65,
+              "url": "https://areajugones.sport.es/videojuegos/analisis-de-god-of-war-sons-of-sparta-kratos-golpea-flojo-por-primera-vez-en-todos-los-sentidos/",
+              "date": "2026-02-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 70,
+              "url": "https://atomix.vg/review-god-of-war-sons-of-sparta",
+              "date": "2026-02-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "But Why Tho?",
+              "score": 65,
+              "url": "https://butwhytho.net/2026/02/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 70,
+              "url": "https://cdaction.pl/recenzje/zlosliwosci-wobec-god-of-war-sons-of-sparta-sa-przesadzone-to-naprawde-udany-powrot-do-greckich-korzeni-serii-recenzja/",
+              "date": "2026-03-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 75,
+              "url": "https://www.cgmagonline.com/review/game/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 80,
+              "url": "https://cogconnected.com/review/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Checkpoint Gaming",
+              "score": 50,
+              "url": "https://checkpointgaming.net/reviews/2026/02/god-of-war-sons-of-sparta-review-for-sparta/",
+              "date": "2026-02-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ComicBook",
+              "score": 50,
+              "url": "https://comicbook.com/gaming/review/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Console Creatures",
+              "score": 60,
+              "url": "https://www.consolecreatures.com/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hits",
+              "score": 65,
+              "url": "https://criticalhits.com.br/reviews/god-of-war-sons-of-sparta-analise-vale-a-pena-review/",
+              "date": "2026-02-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 50,
+              "url": "https://www.cubed3.com/games/reviews/playstation-5/god-of-war-sons-of-sparta",
+              "date": "2026-03-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Daily Star",
+              "score": 60,
+              "url": "https://www.dailystar.co.uk/tech/gaming/god-war-sons-sparta-review-36736675",
+              "date": "2026-02-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 75,
+              "url": "https://digitalchumps.com/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 50,
+              "url": "",
+              "date": "2026-03-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Germany",
+              "score": 60,
+              "url": "https://www.eurogamer.de/god-of-war-sons-of-sparta-test-kratos-schwaechstes-abenteuer-metroidvania",
+              "date": "2026-02-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 72,
+              "url": "https://www.everyeye.it/articoli/recensione-god-of-war-sons-of-sparta-convince-delude-metroidvania-2d-divide-66782.html",
+              "date": "2026-02-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Final Weapon",
+              "score": 50,
+              "url": "https://finalweapon.net/2026/02/20/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 68,
+              "url": "https://www.games.ch/god-of-war-sons-of-sparta/test/review-mNab/",
+              "date": "2026-02-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 65,
+              "url": "https://gameinformer.com/review/god-of-war-sons-of-sparta/fighting-in-the-shade-of-greater-games",
+              "date": "2026-02-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 50,
+              "url": "https://gamerant.com/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game8",
+              "score": 80,
+              "url": "https://game8.co/articles/reviews/god-of-war-sons-of-sparta-review",
+              "date": "2026-02-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameBlast",
+              "score": 80,
+              "url": "https://www.gameblast.com.br/2026/03/god-of-war-sons-of-sparta-analise-review.html",
+              "date": "2026-03-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 60,
+              "url": "https://gameover.gr/2026/03/05/god-of-war-sons-of-sparta-review/",
+              "date": "2026-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2026/02/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 50,
+              "url": "https://www.gamespot.com/reviews/god-of-war-sons-of-sparta-review-the-mildly-amusing-adventures-of-teen-kratos/1900-6418466/",
+              "date": "2026-03-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamekult",
+              "score": 60,
+              "url": "https://www.gamekult.com/jeux/god-of-war-sons-of-sparta-3050889130/test.html",
+              "date": "2026-02-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameliner",
+              "score": 70,
+              "url": "https://gameliner.nl/reviews/god-of-war-sons-of-sparta-review-prima-god-of-war-gemiddelde-metroidvania/7565-29-1-5",
+              "date": "2026-02-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer Social Club",
+              "score": 70,
+              "url": "https://gamersocialclub.ca/2026/02/18/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamereactor UK",
+              "score": 60,
+              "url": "https://www.gamereactor.eu/god-of-war-sons-of-sparta-1677913/",
+              "date": "2026-02-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamersRD",
+              "score": 75,
+              "url": "https://gamersrd.com/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 60,
+              "url": "https://games.tiscali.cz/recenze/god-of-war-sons-of-sparta-recenze-veskrze-prumerne-metroidvanie-623946",
+              "date": "2026-04-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 60,
+              "url": "https://www.gamesradar.com/games/god-of-war/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamesurf",
+              "score": 70,
+              "url": "https://www.gamesurf.it/recensioni/gioco/god-of-war-sons-of-sparta-recensione",
+              "date": "2026-02-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 60,
+              "url": "https://gaming-age.com/2026/02/god-of-war-sons-of-sparta-review-for-ps5/",
+              "date": "2026-02-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Boulevard",
+              "score": 75,
+              "url": "https://gamingboulevard.com/2026/02/review-god-of-war-sons-of-sparta/",
+              "date": "2026-02-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingBolt",
+              "score": 90,
+              "url": "https://gamingbolt.com/god-of-war-sons-of-sparta-review-a-tale-of-two-brothers",
+              "date": "2026-02-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 75,
+              "url": "https://gamingtrend.com/reviews/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 70,
+              "url": "https://hardcoregamer.com/review-god-of-war-sons-of-sparta/",
+              "date": "2026-02-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Het Nieuwsblad",
+              "score": 70,
+              "url": "http://nieuwsblad.be/extra/recensie-god-of-war-sons-of-sparta-de-wonderjaren-van-een-halfgod/134417637.html",
+              "date": "2026-02-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 70,
+              "url": "https://www.hobbyconsolas.com/videojuegos/analisis-god-of-war-sons-of-sparta-una-precuela-metroidvania-con-que-kratos-no-alcanza-gloria-espartana_6934702_0.html",
+              "date": "2026-02-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 60,
+              "url": "https://www.ign.com/articles/god-of-war-sons-of-sparta-review",
+              "date": "2026-02-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Benelux",
+              "score": 80,
+              "url": "https://nl.ign.com/god-of-war-sons-of-sparta/162684/review/god-of-war-sons-of-sparta-review ",
+              "date": "2026-02-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN France",
+              "score": 70,
+              "url": "https://fr.ign.com/god-of-war-sons-of-sparta/85606/review/test-god-of-war-sons-of-sparta-petit-kratos-a-encore-du-chemin",
+              "date": "2026-02-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 60,
+              "url": "https://it.ign.com/god-of-war-sons-of-sparta/223749/review/god-of-war-sons-of-sparta-recensione",
+              "date": "2026-02-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 70,
+              "url": "https://es.ign.com/god-of-war-sons-of-sparta/226684/review/analisis-de-god-of-war-ghost-of-sparta-una-dimension-menos-para-el-kratos-que-todos-conocemos",
+              "date": "2026-02-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Turkey",
+              "score": 60,
+              "url": "https://tr.ign.com/god-of-war-sons-of-sparta/133038/review/god-of-war-sons-of-sparta-inceleme",
+              "date": "2026-03-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "INVEN",
+              "score": 60,
+              "url": "https://www.inven.co.kr/webzine/news/?news=313821",
+              "date": "2026-02-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 60,
+              "url": "https://www.impulsegamer.com/god-of-war-sons-of-sparta-review-ps5/",
+              "date": "2026-02-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Indigo GEEK",
+              "score": 75,
+              "url": "https://geek.reporteindigo.com/resena/god-of-war-sons-of-sparta-review-20260216-0018.html",
+              "date": "2026-02-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Insider Gaming",
+              "score": 70,
+              "url": "https://insider-gaming.com/reviews/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Irish Independent",
+              "score": 60,
+              "url": "https://www.independent.ie/entertainment/games/god-of-war-sons-of-sparta-review-a-young-blade-who-lacks-sharpness/a1606990424.html",
+              "date": "2026-03-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 50,
+              "url": "https://www.jeuxvideo.com/test/2064368/god-of-war-sons-of-sparta-kratos-chute-du-pantheon-la-route-est-longue-avant-de-devenir-un-dieu.htm",
+              "date": "2026-02-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Loot Level Chill",
+              "score": 60,
+              "url": "https://lootlevelchill.com/reviews/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG",
+              "score": 70,
+              "url": "https://www.millenium.org/test/429377.html",
+              "date": "2026-02-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 50,
+              "url": "https://as.com/meristation/analisis/analisis-de-sons-of-sparta-un-pesimo-god-of-war-y-un-metroidvania-mediocre-f202602-n/",
+              "date": "2026-02-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 50,
+              "url": "https://metro.co.uk/2026/02/18/god-war-sons-sparta-review-boy-now-kratos-26970955/",
+              "date": "2026-02-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MeuPlayStation",
+              "score": 70,
+              "url": "https://meups.com.br/review/god-of-war-sons-of-sparta-vale-a-pena/",
+              "date": "2026-03-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 65,
+              "url": "https://multiplayer.it/recensioni/god-of-war-sons-of-sparta-recensione.html",
+              "date": "2026-02-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 70,
+              "url": "https://psxbrasil.com.br/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 75,
+              "url": "https://www.psu.com/reviews/god-of-war-sons-of-sparta-review-ps5/",
+              "date": "2026-02-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "https://www.pushsquare.com/reviews/ps5/god-of-war-sons-of-sparta?utm_source=pushsquare.com&utm_medium=email&utm_campaign=review-notification",
+              "date": "2026-02-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Retcon",
+              "score": 70,
+              "url": "https://retconmagazine.com/god-of-war-sons-of-sparta-the-retcon-review/",
+              "date": "2026-02-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RogerEbert.com",
+              "score": 50,
+              "url": "https://www.rogerebert.com/video-games/god-of-war-sons-of-sparta-ps5-video-game-review",
+              "date": "2026-10-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SECTOR.sk",
+              "score": 60,
+              "url": " https://www.sector.sk/recenzia/40463/god-of-war-sons-of-sparta.htm",
+              "date": "2026-02-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 40,
+              "url": "https://www.shacknews.com/article/148274/god-of-war-sons-of-sparta-review",
+              "date": "2026-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 60,
+              "url": "https://www.spaziogames.it/articoli/recensione-god-of-war-sons-of-sparta",
+              "date": "2026-02-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TechRadar Gaming",
+              "score": 70,
+              "url": "https://www.techradar.com/gaming/god-of-war-sons-of-sparta-review",
+              "date": "2026-03-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 68,
+              "url": "https://www.thegamesmachine.it/god-of-war-sons-of-sparta-ps5-2/god-of-war-sons-of-sparta-recensione/",
+              "date": "2026-02-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Outerhaven",
+              "score": 70,
+              "url": "https://www.theouterhaven.net/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 60,
+              "url": "https://www.thesixthaxis.com/2026/03/05/god-of-war-sons-of-sparta-review/",
+              "date": "2026-03-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TierraGamer",
+              "score": 65,
+              "url": "https://tierragamer.com/resenas/videojuegos/god-of-war-sons-of-sparta-metroidvania-solo-para-fans-kratos/",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 75,
+              "url": "https://vandal.elespanol.com/analisis/ps5/god-of-war-sons-of-sparta/229001",
+              "date": "2026-02-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vgames",
+              "score": 60,
+              "url": "https://www.vgames.co.il/article/32164.html",
+              "date": "2026-03-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 76,
+              "url": "https://videochums.com/review/god-of-war-sons-of-sparta",
+              "date": "2026-02-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Voxel",
+              "score": 60,
+              "url": "https://www.tecmundo.com.br/voxel/503575-review-god-of-war-sons-of-sparta-seria-muito-legal-de-jogar-no-celular.htm",
+              "date": "2026-02-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 70,
+              "url": "https://wccftech.com/review/god-of-war-sons-of-sparta-review-with-it-or-on-it/",
+              "date": "2026-02-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 75,
+              "url": "https://worthplaying.com/article/2026/3/10/reviews/149257-ps5-review-god-of-war-sons-of-sparta/",
+              "date": "2026-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 75,
+              "url": "https://www.xgn.nl/review/god-of-war-sons-of-sparta-review-episch-verhaal",
+              "date": "2026-02-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XboxEra",
+              "score": 70,
+              "url": "https://xboxera.com/2026/02/15/god-of-war-sons-of-sparta-review/",
+              "date": "2026-02-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 65,
+              "url": "https://ztgd.com/reviews/god-of-war-sons-of-sparta-ps5/",
+              "date": "2026-03-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "covergeek",
+              "score": 60,
+              "url": "https://covergeek.com/review-god-of-war-sons-of-sparta-is-a-middling-metroidvania/",
+              "date": "2026-09-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 82
         },
         "user": {
-          "score": 8.16,
+          "score": 6.91,
           "scale": 10,
           "sources": [
             {
-              "score": 4.08,
-              "count": 10532,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.08,
               "scale": 5,
-              "source": "PSN",
+              "count": 10532,
               "url": "https://store.playstation.com/pt-pt/product/UP9000-PPSA28997_00-SONSOFSPARTAPS50",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:21:50.529880+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 8.16
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6,
+              "scale": 10,
+              "count": 895,
+              "url": "https://www.metacritic.com/game/god-of-war-sons-of-sparta/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 29.916550603303182,
+              "normalized": 6.0
+            },
+            {
+              "name": "Push Square",
+              "score": 5.8,
+              "scale": 10.0,
+              "count": 119,
+              "url": "https://www.pushsquare.com/games/ps5/god_of_war_sons_of_sparta",
+              "platform": "PlayStation 5",
+              "weight": 10.908712114635714,
+              "normalized": 5.8
             }
           ],
-          "source_count": 1,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:21:49.438914+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 84,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:07:26.446568+00:00"
       },
       "requirements": {
         "image": true,
@@ -177880,7 +178680,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "eFhOo6NTt70",
+        "title": "God of War Sons of Sparta - Reveal Trailer | PS5 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/god-of-war-sons-of-sparta/"
+      },
+      "full_attempted": "2026-11-03T06:07:26.594907+00:00",
+      "full_version": 7
     },
     "PS5:17638": {
       "title": "Halo: Campaign Evolved",
@@ -190194,10 +191002,11 @@
           "sources": [
             {
               "name": "Nintendo Life",
-              "score": 80.0,
+              "score": 80,
               "url": "https://www.nintendolife.com/reviews/switch-eshop/goodboy-galaxy",
+              "date": "2026-10-28",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
@@ -190210,7 +191019,12 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:33:34.005257+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:07:08.846334+00:00"
       },
       "requirements": {
         "image": true,
@@ -190226,7 +191040,13 @@
       },
       "basics_attempted": "2026-11-02T22:33:34.005257+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/goodboy-galaxy-switch/",
@@ -190275,7 +191095,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:07:13.869284+00:00",
+      "full_version": 7
     },
     "PS5:18287": {
       "title": "Greedland",
@@ -258235,22 +259057,239 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 77.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/good_job",
+              "name": "3DJuegos",
+              "score": 80,
+              "url": "https://www.3djuegos.com/juegos/analisis/36440/0/good-job/",
+              "date": "2020-04-07",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 90,
+              "url": "https://areajugones.sport.es/videojuegos/analisis-de-good-job/",
+              "date": "2020-04-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 70,
+              "url": "",
+              "date": "2020-05-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 90,
+              "url": "http://www.cubed3.com/review/5908/1/good-job-nintendo-switch.html",
+              "date": "2020-04-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 80,
+              "url": "https://www.destructoid.com/review-good-job--585148.phtml",
+              "date": "2020-03-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 73,
+              "url": "https://www.everyeye.it/articoli/recensione-good-job-professione-tuttofare-nintendo-switch-48136.html",
+              "date": "2020-04-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameMAG",
+              "score": 70,
+              "url": "https://gamemag.ru/reviews/good-job-nintendo-switch",
+              "date": "2020-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 70,
+              "url": "https://www.gamespot.com/reviews/good-job-review-office-space/1900-6417443/",
+              "date": "2020-04-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 80,
+              "url": "http://www.gameblog.fr/tests/3641-good-job-switch",
+              "date": "2020-04-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 75,
+              "url": "https://gamer.nl/artikelen/review/good-job-is-de-werksimulator-die-de-wereld-nu-nodig-heeft/",
+              "date": "2020-04-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "https://www.godisageek.com/reviews/good-job-review/",
+              "date": "2020-04-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 82,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-good-job-nintendo-switch-dice-trabajo-bien-hecho-611505",
+              "date": "2020-03-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Japan",
+              "score": 70,
+              "url": "https://jp.ign.com/good-job/42767/review/good-job",
+              "date": "2020-04-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 65,
+              "url": "https://www.jeuxactu.com/test-good-job-un-puzzle-game-qui-fait-le-taff-sur-nintendo-switch-121570.htm",
+              "date": "2020-04-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 70,
+              "url": "http://www.jeuxvideo.com/test/1202745/good-job-faites-un-carnage-au-bureau-depuis-chez-vous.htm",
+              "date": "2020-03-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/good-job-recensione.html",
+              "date": "2020-03-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 75,
+              "url": "https://www.nintenderos.com/2020/04/analisis-good-job-para-nintendo-switch/",
+              "date": "2020-04-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 90,
+              "url": "https://www.nintendoenthusiast.com/good-job-review-for-nintendo-switch-making-work-fun/",
+              "date": "2020-04-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 75,
+              "url": "",
+              "date": "2020-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/good-job-review/",
+              "date": "2020-04-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/good_job",
+              "date": "2020-03-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/53370/good-job-switch-review",
+              "date": "2020-03-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 82,
+              "url": "https://www.spaziogames.it/good-job-recensione/",
+              "date": "2020-04-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2020/04/18/good-job-review/",
+              "date": "2020-04-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 70,
+              "url": "https://www.thesixthaxis.com/2020/04/08/good-job-switch-review/",
+              "date": "2020-04-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 50,
+              "url": "https://twinfinite.net/2020/04/good-job-review/",
+              "date": "2020-04-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 78,
+              "url": "https://vandal.elespanol.com/analisis/switch/good-job/83463#p-83",
+              "date": "2020-03-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/switch-indie-games-2020#good-job",
+              "date": "2020-04-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 28
         },
         "user": {
-          "score": 7.6,
+          "score": 7.82,
           "scale": 10,
           "sources": [
             {
@@ -258261,14 +259300,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/good_job",
               "platform": "Nintendo Switch",
               "weight": 9.273618495495704,
-              "normalized": 7.6,
-              "checked": "2026-11-02T17:31:24.108289+00:00"
+              "normalized": 7.6
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.1,
+              "scale": 10,
+              "count": 51,
+              "url": "https://www.metacritic.com/game/good-job/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 7.14142842854285,
+              "normalized": 8.1
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:36:10.145996+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 30,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:07:29.001891+00:00"
       },
       "requirements": {
         "image": true,
@@ -258284,7 +259337,12 @@
       },
       "basics_attempted": "2026-11-02T22:36:10.145996+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/good-job-switch/",
@@ -258333,7 +259391,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:07:30.639319+00:00",
+      "full_version": 7
     },
     "Switch:7280": {
       "title": "Grand Brix Shooter",
@@ -290288,19 +291348,195 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 65.4,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/golden_force",
+              "name": "DarkZero",
+              "score": 30,
+              "url": "https://darkzero.co.uk/game-reviews/golden-force-switch-review/",
+              "date": "2021-01-29",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 65,
+              "url": "http://digitalchumps.com/golden-force/",
+              "date": "2021-01-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 60,
+              "url": "https://www.eurogamer.it/articles/2021-02-04-golden-force-recensione",
+              "date": "2021-02-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 20,
+              "url": "https://gamerant.com/golden-force-review/",
+              "date": "2021-01-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 60,
+              "url": "https://gamecritics.com/gc-staff/golden-force-review/",
+              "date": "2021-05-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 70,
+              "url": "https://www.gameover.gr/2021/01/21/golden-force-review/",
+              "date": "2021-01-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 65,
+              "url": "https://gamingtrend.com/feature/reviews/not-all-that-glitters-is-gold-golden-force-review/",
+              "date": "2021-04-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "https://www.godisageek.com/reviews/golden-force-review/",
+              "date": "2021-01-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 70,
+              "url": "https://www.heypoorplayer.com/2021/01/25/golden-force-review-switch/",
+              "date": "2021-01-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 70,
+              "url": " https://www.jeuxactu.com/test-golden-force-un-plateformer-2d-qui-sent-bon-les-annees-16-bit-125872.htm",
+              "date": "2021-05-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 80,
+              "url": "https://www.jeuxvideo.com/test/1383492/golden-force-un-platformer-qui-a-du-repondant.htm",
+              "date": "2021-04-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 65,
+              "url": "https://as.com/meristation/2021/01/29/analisis/1611911666_634227.html",
+              "date": "2021-02-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 64.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=golden-force-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 75,
+              "url": "https://www.nintenderos.com/2021/02/analisis-golden-force-para-nintendo-switch/",
+              "date": "2021-02-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/golden_force",
+              "date": "2021-01-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 55,
+              "url": "https://www.nintendoworldreport.com/review/56034/golden-force-switch-review",
+              "date": "2021-01-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 90,
+              "url": "https://purenintendo.com/golden-force-switch-review/",
+              "date": "2021-02-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 70,
+              "url": "https://screenrant.com/golden-force-game-review/",
+              "date": "2021-01-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 80,
+              "url": "https://www.starbit.pt/2021/03/01/golden-force-analise/",
+              "date": "2021-03-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 90,
+              "url": "https://www.thesixthaxis.com/2021/01/21/golden-force-review/",
+              "date": "2021-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 70,
+              "url": "https://vandal.elespanol.com/analisis/switch/golden-force/90321#p-83",
+              "date": "2021-01-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/cool-indie-games-2021#golden-force",
+              "date": "2021-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 55,
+              "url": "https://worthplaying.com/article/2021/11/18/reviews/129489-switch-review-golden-force/",
+              "date": "2021-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 23
         },
         "user": {
           "score": 6.8,
@@ -290314,14 +291550,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/golden_force",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 6.799999999999999,
-              "checked": "2026-11-02T17:37:30.930605+00:00"
+              "normalized": 6.799999999999999
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.8,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/golden-force/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.0,
+              "normalized": 6.799999999999999
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:37:36.258769+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 22,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:07:23.841840+00:00"
       },
       "requirements": {
         "image": true,
@@ -290337,7 +291587,10 @@
       },
       "basics_attempted": "2026-11-02T22:37:36.258769+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/golden-force-switch/",
@@ -290386,7 +291639,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:07:25.717280+00:00",
+      "full_version": 7
     },
     "Switch:8308": {
       "title": "Grave Danger",
@@ -301610,22 +302865,38 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 50.0,
+          "score": 56.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 50.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/goat_simulator_the_goaty",
+              "name": "Impulsegamer",
+              "score": 38,
+              "url": "http://www.impulsegamer.com/goat-simulator-nintendo-switch-review/",
+              "date": "2019-10-04",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 80.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=goat-simulator-the-goaty-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 50,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/goat_simulator_the_goaty?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2019-02-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": 6.7,
+          "score": 6.83,
           "scale": 10,
           "sources": [
             {
@@ -301636,14 +302907,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/goat_simulator_the_goaty",
               "platform": "Nintendo Switch",
               "weight": 4.795831523312719,
-              "normalized": 6.7,
-              "checked": "2026-11-02T17:39:03.524111+00:00"
+              "normalized": 6.7
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7,
+              "scale": 10,
+              "count": 14,
+              "url": "https://www.metacritic.com/game/goat-simulator-the-goaty/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.7416573867739413,
+              "normalized": 7.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:38:04.377737+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:06:48.776858+00:00"
       },
       "requirements": {
         "image": true,
@@ -301659,7 +302944,12 @@
       },
       "basics_attempted": "2026-11-02T22:38:04.377737+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/goat-simulator-the-goaty-switch/",
@@ -301708,7 +302998,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:06:50.605263+00:00",
+      "full_version": 7
     },
     "Switch:8770": {
       "title": "Good Night, Knight",
