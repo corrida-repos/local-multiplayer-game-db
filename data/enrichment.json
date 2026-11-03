@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T07:31:18.692007+00:00",
+  "updated": "2026-11-03T07:32:07.327597+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1751,
+    "full_attempted": 1761,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -86591,15 +86591,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.05,
-              "count": 56,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.05,
               "scale": 5,
-              "source": "PSN",
+              "count": 56,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA10588_00-RATAGAPETSATWORK",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T19:26:06.199148+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 7.483314773547883,
               "normalized": 8.1
             }
@@ -86607,7 +86605,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:39:50.545309+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:31:38.127510+00:00"
       },
       "requirements": {
         "image": true,
@@ -86617,7 +86622,10 @@
       "basics_attempted": "2026-11-02T19:39:50.545309+00:00",
       "version": 4,
       "errors": {
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA10588_00-RATAGAPETSATWORK",
@@ -86667,7 +86675,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:31:38.464035+00:00",
+      "full_version": 7
     },
     "Switch:13208": {
       "title": "Pets at Work",
@@ -123450,34 +123460,66 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 74.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Finger Guns",
+              "score": 70,
+              "url": "https://fingerguns.net/games/2024/09/08/perennial-order-review-ps5-the-roots-of-all-evil/",
+              "date": "2024-09-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MeuPlayStation",
+              "score": 78,
+              "url": "https://meups.com.br/review/perennial-order-vale-a-pena/",
+              "date": "2024-09-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
-          "score": 8.54,
+          "score": 8.51,
           "scale": 10,
           "sources": [
             {
-              "score": 4.27,
-              "count": 190,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.27,
               "scale": 5,
-              "source": "PSN",
+              "count": 190,
               "url": "https://store.playstation.com/pt-pt/product/EP4541-PPSA19608_00-PERENNIALORDEREU",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:04:33.385806+00:00",
-              "platform": "PSN · PS5",
               "weight": 13.784048752090222,
               "normalized": 8.54
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.3,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/perennial-order/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.0,
+              "normalized": 8.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:04:31.757256+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:31:33.339853+00:00"
       },
       "requirements": {
         "image": true,
@@ -123519,7 +123561,11 @@
       },
       "basics_attempted": "2026-11-02T18:04:31.757256+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -123535,7 +123581,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:31:33.666937+00:00",
+      "full_version": 7
     },
     "Switch:14988": {
       "title": "Quadroids",
@@ -142673,34 +142721,90 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 77.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Digital Chumps",
+              "score": 80,
+              "url": "https://digitalchumps.com/phantom-breaker-battle-grounds-ultimate-review/",
+              "date": "2025-04-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2025/04/phantom-breaker-battle-grounds-ultimate-review/",
+              "date": "2025-04-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 90,
+              "url": "https://www.gamingnexus.com/Article/14206/Phantom-Breaker-Battle-Grounds-Ultimate/",
+              "date": "2025-04-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 70,
+              "url": "https://psxbrasil.com.br/phantom-breaker-battle-grounds-ultimate-review/",
+              "date": "2025-05-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 75,
+              "url": "https://videochums.com/review/phantom-breaker-battle-grounds-ultimate",
+              "date": "2025-04-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 5
         },
         "user": {
-          "score": 9.34,
+          "score": 9.3,
           "scale": 10,
           "sources": [
             {
-              "score": 4.67,
-              "count": 321,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.67,
               "scale": 5,
-              "source": "PSN",
+              "count": 321,
               "url": "https://store.playstation.com/pt-pt/product/UP5857-PPSA13794_00-0516018046423206",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:04:40.658387+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 17.916472867168917,
               "normalized": 9.34
+            },
+            {
+              "name": "Metacritic users",
+              "score": 9,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/phantom-breaker-battle-grounds-ultimate/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.23606797749979,
+              "normalized": 9.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:04:39.098724+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:31:57.638881+00:00"
       },
       "requirements": {
         "image": true,
@@ -142742,7 +142846,11 @@
       },
       "basics_attempted": "2026-11-02T18:04:39.098724+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -142758,7 +142866,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:31:57.924486+00:00",
+      "full_version": 7
     },
     "Switch:15613": {
       "title": "Phantom Breaker: Battle Grounds Ultimate",
@@ -142772,6 +142882,7 @@
               "name": "CGMagazine",
               "score": 90,
               "url": "https://www.cgmagonline.com/review/game/phantom-breaker-battle-grounds/",
+              "date": "2025-04-17",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -142779,6 +142890,7 @@
               "name": "Game8",
               "score": 80,
               "url": "https://game8.co/articles/reviews/phantom-breaker-battle-grounds-ultimate-review",
+              "date": "2025-04-17",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -142786,6 +142898,7 @@
               "name": "Universo Nintendo",
               "score": 55,
               "url": "https://universonintendo.com/analise-phantom-breaker-battle-grounds-ultimate/",
+              "date": "2025-04-16",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -142794,13 +142907,30 @@
           "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 7.25,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.25,
+              "scale": 10,
+              "count": 4,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/phantom_breaker_battle_grounds_ultimate",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.0,
+              "normalized": 7.25
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:27.491273+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:31:44.542844+00:00"
       },
       "requirements": {
         "image": true,
@@ -142818,7 +142948,11 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -142868,7 +143002,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:31:49.245577+00:00",
+      "full_version": 7
     },
     "Switch:15865": {
       "title": "Q2 HUMANITY",
@@ -240393,28 +240529,102 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 69.3,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/4550/1/phantom-breaker-battle-grounds-overdrive-nintendo-switch.html",
+              "date": "2018-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 40,
+              "url": "http://www.darkstation.com/reviews/phantom-breaker-battle-grounds-overdrive",
+              "date": "2018-03-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 85,
+              "url": "http://www.godisageek.com/reviews/phantom-breaker-battle-grounds-overdrive-switch-review/",
+              "date": "2017-12-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 70.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=phantom-breaker-battle-grounds-overdrive-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/phantom_breaker_battle_grounds_overdrive?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2017-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 65,
+              "url": "http://www.nintendoworldreport.com/review/46036/phantom-breaker-battle-grounds-overdrive",
+              "date": "2017-12-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 75,
+              "url": "http://worthplaying.com/article/2018/5/1/reviews/108487/",
+              "date": "2018-05-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
-          "score": null,
+          "score": 6.88,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/phantom-breaker-battle-grounds-overdrive/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.23606797749979,
+              "normalized": 7.0
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 6.8,
+              "scale": 10.0,
+              "count": 10,
+              "url": "https://www.nintendolife.com/games/switch-eshop/phantom_breaker_battle_grounds_overdrive",
+              "platform": "Nintendo Switch",
+              "weight": 3.1622776601683795,
+              "normalized": 6.799999999999999
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:04:37.088197+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:31:49.406333+00:00"
       },
       "requirements": {
         "image": true,
@@ -240438,7 +240648,10 @@
       "basics_attempted": "2026-11-02T18:04:37.088197+00:00",
       "version": 2,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -240455,7 +240668,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:31:53.679677+00:00",
+      "full_version": 7
     },
     "Switch:5099": {
       "title": "PixelJunk Monsters 2",
@@ -300837,28 +301052,343 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 77.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "3DJuegos",
+              "score": 70,
+              "url": "https://www.3djuegos.com/juegos/analisis/30332/0/pikuniku/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 55,
+              "url": "",
+              "date": "2019-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 75,
+              "url": "https://cogconnected.com/review/pikuniku-review/",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 60,
+              "url": "http://www.cubed3.com/review/5314/1/pikuniku-nintendo-switch.html",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cultured Vultures",
+              "score": 70,
+              "url": "https://culturedvultures.com/pikuniku-switch-review/",
+              "date": "2019-01-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 80,
+              "url": "https://www.destructoid.com/review-pikuniku-539016.phtml",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 80,
+              "url": "http://www.digitallydownloaded.net/2019/01/review-pikuniku-nintendo-switch.html",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 60,
+              "url": "",
+              "date": "2019-02-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 70,
+              "url": "https://www.eurogamer.it/articles/2019-02-08-pikuniku-recensione",
+              "date": "2019-02-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 73,
+              "url": "https://www.everyeye.it/articoli/recensione-pikuniku-insostenibile-leggerezza-devolver-digital-42541.html",
+              "date": "2019-02-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Revolution",
+              "score": 80,
+              "url": "https://www.gamerevolution.com/review/485335-pikuniku-review-devolver-digital-nintendo-switch-pc",
+              "date": "2019-01-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 95,
+              "url": "https://www.gamegrin.com/reviews/pikuniku-review/",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2019/01/pikuniku-review/",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/pikuniku-review-tasty-morsel/1900-6417069/",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 70,
+              "url": "http://www.gameblog.fr/tests/3285-pikuniku-pc-switch",
+              "date": "2019-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameplanet",
+              "score": 65,
+              "url": "https://www.gameplanet.com.au/nintendo-switch/reviews/g5c44cfdeb4dd2/Pikuniku-Review/",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 100,
+              "url": "http://www.gaming-age.com/2019/10/pikuniku-review-for-nintendo-switch/",
+              "date": "2019-10-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 85,
+              "url": "https://www.gamingnexus.com/Article/5880/Pikuniku/",
+              "date": "2019-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 60,
+              "url": "http://www.impulsegamer.com/pikuniku-review/",
+              "date": "2019-01-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 70,
+              "url": "http://www.jeuxvideo.com/test/992022/pikuniku-du-puzzle-de-la-plate-forme-et-des-sourires.htm",
+              "date": "2019-01-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 80.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=pikuniku-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2019/02/analisis-pikuniku/",
+              "date": "2019-02-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/pikuniku-review/",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/pikuniku",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/49421/pikuniku-switch-review",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 80,
+              "url": "https://www.pocketgamer.com/articles/079808/pikuniku-switch-review/",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80.0,
+              "url": "https://purenintendo.com/review-pikuniku-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 8.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 80,
+              "url": "https://screenrant.com/pikuniku-review/",
+              "date": "2019-01-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2019/03/03/pikuniku-review/",
+              "date": "2019-03-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Daily Dot",
+              "score": 80,
+              "url": "https://www.dailydot.com/parsec/pikuniku-review/",
+              "date": "2019-01-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Indie Game Website",
+              "score": 70,
+              "url": "https://www.indiegamewebsite.com/2019/01/21/pikuniku-review/",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Sydney Morning Herald",
+              "score": 85,
+              "url": "https://www.smh.com.au/technology/pikuniku-review-the-sunniest-subterfuge-20190121-p50smj.html",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 90,
+              "url": "https://www.thesixthaxis.com/2019/01/21/pikuniku-review/",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 90,
+              "url": "https://vandal.elespanol.com/analisis/pc/pikuniku/51891#p-13",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/switch-exclusive-indie-games-part-2#pikuniku",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VideoGamer",
+              "score": 60,
+              "url": "https://www.videogamer.com/reviews/pikuniku-review",
+              "date": "2019-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 90,
+              "url": "https://www.vooks.net/pikuniku-switch-eshop-review/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 37
         },
         "user": {
-          "score": null,
+          "score": 7.7,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.7,
+              "scale": 10,
+              "count": 136,
+              "url": "https://www.metacritic.com/game/pikuniku/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 11.661903789690601,
+              "normalized": 7.7
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 83,
+              "url": "https://www.nintendolife.com/games/switch-eshop/pikuniku",
+              "platform": "Nintendo Switch",
+              "weight": 9.1104335791443,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:27.752566+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 37,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:31:59.560952+00:00"
       },
       "requirements": {
         "image": true,
@@ -300875,7 +301405,9 @@
       "basics_attempted": "2026-11-02T22:44:27.752566+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -300926,7 +301458,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:32:02.641555+00:00",
+      "full_version": 7
     },
     "Switch:7637": {
       "title": "Psyvariar Delta",
@@ -323414,28 +323948,111 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 76.0,
+          "score": 63.4,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 30,
+              "url": "http://www.cubed3.com/review/4144/1/phantom-trigger-nintendo-switch.html",
+              "date": "2017-08-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 60,
+              "url": "http://www.darkstation.com/reviews/phantom-trigger-review",
+              "date": "2017-09-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 60,
+              "url": "http://fnintendo.net/article/9771-phantom-trigger",
+              "date": "2017-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 76.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=phantom-trigger-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/phantom_trigger",
+              "date": "2017-08-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/45161/phantom-trigger-switch-eshop-review",
+              "date": "2017-08-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 75.0,
+              "url": "https://purenintendo.com/review-phantom-trigger-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 7.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 66,
+              "url": "http://switchplayer.net/2017/10/05/phantom-trigger-review/",
+              "date": "2017-10-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 8
         },
         "user": {
-          "score": null,
+          "score": 6.35,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.4,
+              "scale": 10,
+              "count": 13,
+              "url": "https://www.metacritic.com/game/phantom-trigger/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 6.4
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 6.3,
+              "scale": 10.0,
+              "count": 19,
+              "url": "https://www.nintendolife.com/games/switch-eshop/phantom_trigger",
+              "platform": "Nintendo Switch",
+              "weight": 4.358898943540674,
+              "normalized": 6.3
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:27.495599+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:31:39.533459+00:00"
       },
       "requirements": {
         "image": true,
@@ -323452,7 +324069,9 @@
       "basics_attempted": "2026-11-02T22:44:27.495599+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -323502,7 +324121,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:31:42.603112+00:00",
+      "full_version": 7
     },
     "Switch:8349": {
       "title": "Project Starship X",
@@ -335995,28 +336616,61 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 30.0,
+          "score": 66.7,
           "scale": 100,
           "sources": [
+            {
+              "name": "GamingTrend",
+              "score": 90,
+              "url": "https://gamingtrend.com/feature/reviews/cant-stop-me-now-peasant-knight-review/",
+              "date": "2019-03-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 30.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=peasant-knight-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-peasant-knight-nintendo-switch/",
+              "date": "2019-05-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/peasant_knight",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:27.490952+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:31:34.434042+00:00"
       },
       "requirements": {
         "image": true,
@@ -336033,7 +336687,10 @@
       "basics_attempted": "2026-11-02T22:44:27.490952+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -336083,14 +336740,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:31:36.864835+00:00",
+      "full_version": 7
     },
     "Switch:8705": {
       "title": "Pic-a-Pix Deluxe",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 76.6,
           "scale": 100,
           "sources": [
             {
@@ -336099,19 +336758,77 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=pic-a-pix-deluxe-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 78,
+              "url": "http://www.nintenderos.com/2018/02/analisis-pic-a-pix-deluxe/",
+              "date": "2018-02-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/pic-a-pix_deluxe",
+              "date": "2018-01-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/46146/pic-a-pix-deluxe-switch-eshop-review",
+              "date": "2018-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2018/01/12/pic-a-pix-deluxe-review/",
+              "date": "2018-01-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": null,
+          "score": 7.32,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.9,
+              "scale": 10,
+              "count": 10,
+              "url": "https://www.metacritic.com/game/pic-a-pix-deluxe/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.1622776601683795,
+              "normalized": 7.9
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 6.7,
+              "scale": 10.0,
+              "count": 9,
+              "url": "https://www.nintendolife.com/games/switch-eshop/pic-a-pix_deluxe",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 6.7
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:28.857938+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:32:04.557791+00:00"
       },
       "requirements": {
         "image": true,
@@ -336128,7 +336845,10 @@
       "basics_attempted": "2026-11-02T22:44:28.857938+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -336178,35 +336898,78 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:32:07.110944+00:00",
+      "full_version": 7
     },
     "Switch:8703": {
       "title": "Pic-a-Pix Pieces",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 85.0,
+          "score": 77.5,
           "scale": 100,
           "sources": [
+            {
+              "name": "Gaming Age",
+              "score": 100,
+              "url": "http://www.gaming-age.com/2019/02/pic-a-pix-pieces-review-for-nintendo-switch-ps4-ps-vita/",
+              "date": "2019-02-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 60,
+              "url": "https://www.godisageek.com/reviews/pic-a-pix-pieces-review/",
+              "date": "2019-01-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 85.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=pic-a-pix-pieces-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 65,
+              "url": "http://www.nintendoworldreport.com/review/49536/pic-a-pix-pieces-switch-review",
+              "date": "2019-01-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 5.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 5.5,
+              "scale": 10,
+              "count": 4,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/pic-a-pix_pieces",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.0,
+              "normalized": 5.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:41.621227+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:31:54.549470+00:00"
       },
       "requirements": {
         "image": true,
@@ -336223,7 +336986,10 @@
       "basics_attempted": "2026-11-02T22:44:41.621227+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -336273,7 +337039,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:31:59.550372+00:00",
+      "full_version": 7
     },
     "Switch:8698": {
       "title": "R-Type Dimensions EX",
