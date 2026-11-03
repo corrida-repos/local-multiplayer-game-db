@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T00:07:02.706261+00:00",
+  "updated": "2026-11-03T00:09:11.946830+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1937,
+    "ready": 1939,
     "missing_image": 109,
-    "missing_store": 402,
+    "missing_store": 394,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -80764,7 +80764,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:29:14.482195+00:00"
+        "attempted": "2026-11-03T00:07:07.123384+00:00"
       },
       "requirements": {
         "image": true,
@@ -80786,15 +80786,85 @@
       "aliases": [
         "Arcade Archives The Return of ISHTAR"
       ],
-      "basics_attempted": "2026-11-02T21:29:14.482195+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:07:07.123384+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:55:36.353771+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:42.505305+00:00",
+              "next_attempt": "2026-11-04T00:08:42.505305+00:00",
+              "revision": "ccff1dcd1915741e:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_return_of_ishtar",
+                "https://www.nintendolife.com/games/switch-eshop/the_return_of_ishtar",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_the_return_of_ishtar"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_the_return_of_ishtar"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:43.704873+00:00",
+              "next_attempt": "2026-11-04T00:08:43.704873+00:00",
+              "revision": "ccff1dcd1915741e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-return-of-ishtar-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-return-of-ishtar-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:09:11.703599+00:00",
+              "next_attempt": "2026-11-04T00:09:11.703599+00:00",
+              "revision": "ccff1dcd1915741e:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-the-return-of-ishtar/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-the-return-of-ishtar/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-the-return-of-ishtar/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-the-return-of-ishtar/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:09:11.739424+00:00",
+              "next_attempt": "2026-11-04T00:09:11.739424+00:00",
+              "revision": "ccff1dcd1915741e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Return+of+Ishtar&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Return+of+Ishtar&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:09:11.739546+00:00",
+              "next_attempt": "2026-11-03T01:09:11.739546+00:00",
+              "revision": "ccff1dcd1915741e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:09:11.739613+00:00",
+              "next_attempt": "2026-11-03T01:09:11.739613+00:00",
+              "revision": "ccff1dcd1915741e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:11830": {
       "title": "The Rusty Sword: Vanguard Island",
@@ -80814,11 +80884,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:29:14.484150+00:00"
+        "attempted": "2026-11-03T00:07:07.123637+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -80826,12 +80896,14 @@
         "source": "https://www.nintendo.com/us/store/products/the-rusty-sword-vanguard-island-switch/",
         "checked": "2026-11-02T21:29:24.117612+00:00"
       },
-      "basics_attempted": "2026-11-02T21:29:14.484150+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:07:07.123637+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:55:48.525843+00:00",
       "store_evidence": [
@@ -80841,7 +80913,100 @@
           "checked": "2026-11-02T21:29:24.117148+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Rusty-Sword-Vanguard-Island-2318505.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:07:10.753448+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "The Rusty Sword: Vanguard Island"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:07:10.753753+00:00",
+              "next_attempt": "2026-11-04T00:07:10.753753+00:00",
+              "revision": "84b764910fee64c2:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:07:10.753753+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Rusty-Sword-Vanguard-Island-2318505.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Rusty-Sword-Vanguard-Island-2318505.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:17.368519+00:00",
+              "next_attempt": "2026-11-04T00:08:17.368519+00:00",
+              "revision": "84b764910fee64c2:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_rusty_sword_vanguard_island",
+                "https://www.nintendolife.com/games/switch-eshop/the_rusty_sword_vanguard_island"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/the_rusty_sword_vanguard_island"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:18.388463+00:00",
+              "next_attempt": "2026-11-04T00:08:18.388463+00:00",
+              "revision": "84b764910fee64c2:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-rusty-sword-vanguard-island-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-rusty-sword-vanguard-island-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:22.493547+00:00",
+              "next_attempt": "2026-11-04T00:08:22.493547+00:00",
+              "revision": "84b764910fee64c2:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/the-rusty-sword-vanguard-island/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/the-rusty-sword-vanguard-island/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/the-rusty-sword-vanguard-island/"
+              ],
+              "url": "https://www.metacritic.com/game/the-rusty-sword-vanguard-island/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:23.477120+00:00",
+              "next_attempt": "2026-11-04T00:08:23.477120+00:00",
+              "revision": "84b764910fee64c2:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Rusty+Sword%3A+Vanguard+Island&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Rusty+Sword%3A+Vanguard+Island&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:23.477279+00:00",
+              "next_attempt": "2026-11-03T01:08:23.477279+00:00",
+              "revision": "84b764910fee64c2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:23.477351+00:00",
+              "next_attempt": "2026-11-03T01:08:23.477351+00:00",
+              "revision": "84b764910fee64c2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:12871": {
       "title": "The Samurai Collection (QUByte Classics)",
@@ -105677,11 +105842,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:29:14.479370+00:00"
+        "attempted": "2026-11-03T00:07:07.121476+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -105689,12 +105854,14 @@
         "source": "https://www.nintendo.com/us/store/products/the-legend-of-the-dragonflame-high-school-3-switch/",
         "checked": "2026-11-02T21:29:16.246621+00:00"
       },
-      "basics_attempted": "2026-11-02T21:29:14.479370+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:07:07.121476+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:55:04.475678+00:00",
       "store_evidence": [
@@ -105704,7 +105871,100 @@
           "checked": "2026-11-02T21:29:16.246302+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Legend-of-the-Dragonflame-High-School-3-2614895.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:07:07.505221+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "The Legend of the Dragonflame High School 3"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:07:07.505545+00:00",
+              "next_attempt": "2026-11-04T00:07:07.505545+00:00",
+              "revision": "ea045e0a4bfad722:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:07:07.505545+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Legend-of-the-Dragonflame-High-School-3-2614895.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Legend-of-the-Dragonflame-High-School-3-2614895.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:07:57.362038+00:00",
+              "next_attempt": "2026-11-04T00:07:57.362038+00:00",
+              "revision": "ea045e0a4bfad722:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_legend_of_the_dragonflame_high_school_3",
+                "https://www.nintendolife.com/games/switch-eshop/the_legend_of_the_dragonflame_high_school_3"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/the_legend_of_the_dragonflame_high_school_3"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:00.290245+00:00",
+              "next_attempt": "2026-11-04T00:08:00.290245+00:00",
+              "revision": "ea045e0a4bfad722:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-legend-of-the-dragonflame-high-school-3-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-legend-of-the-dragonflame-high-school-3-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:02.291944+00:00",
+              "next_attempt": "2026-11-04T00:08:02.291944+00:00",
+              "revision": "ea045e0a4bfad722:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/the-legend-of-the-dragonflame-high-school-3/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/the-legend-of-the-dragonflame-high-school-3/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/the-legend-of-the-dragonflame-high-school-3/"
+              ],
+              "url": "https://www.metacritic.com/game/the-legend-of-the-dragonflame-high-school-3/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:02.372454+00:00",
+              "next_attempt": "2026-11-04T00:08:02.372454+00:00",
+              "revision": "ea045e0a4bfad722:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Legend+of+the+Dragonflame+High+School+3&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Legend+of+the+Dragonflame+High+School+3&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:02.372610+00:00",
+              "next_attempt": "2026-11-03T01:08:02.372610+00:00",
+              "revision": "ea045e0a4bfad722:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:02.372710+00:00",
+              "next_attempt": "2026-11-03T01:08:02.372710+00:00",
+              "revision": "ea045e0a4bfad722:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:15840": {
       "title": "The Ninja Kids",
@@ -105724,7 +105984,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:29:14.480491+00:00"
+        "attempted": "2026-11-03T00:07:07.121782+00:00"
       },
       "requirements": {
         "image": true,
@@ -105746,15 +106006,85 @@
       "aliases": [
         "Arcade Archives THE NINJA KIDS"
       ],
-      "basics_attempted": "2026-11-02T21:29:14.480491+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:07:07.121782+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:54:58.603089+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:37.509903+00:00",
+              "next_attempt": "2026-11-04T00:08:37.509903+00:00",
+              "revision": "c09082609722bd82:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_ninja_kids",
+                "https://www.nintendolife.com/games/switch-eshop/the_ninja_kids",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_the_ninja_kids"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_the_ninja_kids"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:38.301634+00:00",
+              "next_attempt": "2026-11-04T00:08:38.301634+00:00",
+              "revision": "c09082609722bd82:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-ninja-kids-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-ninja-kids-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:48.760921+00:00",
+              "next_attempt": "2026-11-04T00:08:48.760921+00:00",
+              "revision": "c09082609722bd82:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-the-ninja-kids/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-the-ninja-kids/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-the-ninja-kids/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-the-ninja-kids/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:48.812559+00:00",
+              "next_attempt": "2026-11-04T00:08:48.812559+00:00",
+              "revision": "c09082609722bd82:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Ninja+Kids&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Ninja+Kids&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:48.812694+00:00",
+              "next_attempt": "2026-11-03T01:08:48.812694+00:00",
+              "revision": "c09082609722bd82:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:48.812771+00:00",
+              "next_attempt": "2026-11-03T01:08:48.812771+00:00",
+              "revision": "c09082609722bd82:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:15897": {
       "title": "The Smurfs - Dreams",
@@ -113136,11 +113466,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:29:14.478940+00:00"
+        "attempted": "2026-11-03T00:07:07.121233+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -113148,12 +113478,14 @@
         "source": "https://www.nintendo.com/us/store/products/the-legend-of-santa-switch/",
         "checked": "2026-11-02T21:29:19.523558+00:00"
       },
-      "basics_attempted": "2026-11-02T21:29:14.478940+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:07:07.121233+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:55:05.643094+00:00",
       "store_evidence": [
@@ -113163,7 +113495,100 @@
           "checked": "2026-11-02T21:29:19.523107+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Legend-of-Santa-2665654.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:07:09.569899+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "The Legend of Santa"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:07:09.570232+00:00",
+              "next_attempt": "2026-11-04T00:07:09.570232+00:00",
+              "revision": "55d6965deb5113fe:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:07:09.570232+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Legend-of-Santa-2665654.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Legend-of-Santa-2665654.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:12.363193+00:00",
+              "next_attempt": "2026-11-04T00:08:12.363193+00:00",
+              "revision": "55d6965deb5113fe:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_legend_of_santa",
+                "https://www.nintendolife.com/games/switch-eshop/the_legend_of_santa"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/the_legend_of_santa"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:15.367889+00:00",
+              "next_attempt": "2026-11-04T00:08:15.367889+00:00",
+              "revision": "55d6965deb5113fe:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-legend-of-santa-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-legend-of-santa-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:22.291643+00:00",
+              "next_attempt": "2026-11-04T00:08:22.291643+00:00",
+              "revision": "55d6965deb5113fe:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/the-legend-of-santa/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/the-legend-of-santa/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/the-legend-of-santa/"
+              ],
+              "url": "https://www.metacritic.com/game/the-legend-of-santa/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:22.393494+00:00",
+              "next_attempt": "2026-11-04T00:08:22.393494+00:00",
+              "revision": "55d6965deb5113fe:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Legend+of+Santa&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Legend+of+Santa&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:22.393609+00:00",
+              "next_attempt": "2026-11-03T01:08:22.393609+00:00",
+              "revision": "55d6965deb5113fe:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:22.393670+00:00",
+              "next_attempt": "2026-11-03T01:08:22.393670+00:00",
+              "revision": "55d6965deb5113fe:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:16210": {
       "title": "The Phantom",
@@ -113258,11 +113683,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:29:14.481575+00:00"
+        "attempted": "2026-11-03T00:07:07.122219+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -113270,12 +113695,14 @@
         "source": "https://www.nintendo.com/us/store/products/the-phantom-switch/",
         "checked": "2026-11-02T21:29:22.590000+00:00"
       },
-      "basics_attempted": "2026-11-02T21:29:14.481575+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:07:07.122219+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:55:06.698797+00:00",
       "store_evidence": [
@@ -113285,7 +113712,100 @@
           "checked": "2026-11-02T21:29:22.589697+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Phantom-2763999.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:07:11.826682+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "The Phantom"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:07:11.827002+00:00",
+              "next_attempt": "2026-11-04T00:07:11.827002+00:00",
+              "revision": "71e81d2c779c94cd:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:07:11.827002+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Phantom-2763999.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Phantom-2763999.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:22.411724+00:00",
+              "next_attempt": "2026-11-04T00:08:22.411724+00:00",
+              "revision": "71e81d2c779c94cd:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_phantom",
+                "https://www.nintendolife.com/games/switch-eshop/the_phantom"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/the_phantom"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:26.028881+00:00",
+              "next_attempt": "2026-11-04T00:08:26.028881+00:00",
+              "revision": "71e81d2c779c94cd:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-phantom-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-phantom-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:36.126976+00:00",
+              "next_attempt": "2026-11-04T00:08:36.126976+00:00",
+              "revision": "71e81d2c779c94cd:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/the-phantom/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/the-phantom/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/the-phantom/"
+              ],
+              "url": "https://www.metacritic.com/game/the-phantom/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:36.202712+00:00",
+              "next_attempt": "2026-11-04T00:08:36.202712+00:00",
+              "revision": "71e81d2c779c94cd:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Phantom&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Phantom&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:36.202841+00:00",
+              "next_attempt": "2026-11-03T01:08:36.202841+00:00",
+              "revision": "71e81d2c779c94cd:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:36.202903+00:00",
+              "next_attempt": "2026-11-03T01:08:36.202903+00:00",
+              "revision": "71e81d2c779c94cd:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:16191": {
       "title": "Twins of Legacy",
@@ -181554,17 +182074,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.4142135623730951,
-              "normalized": 3.0
+              "normalized": 3.0,
+              "checked": "2026-11-02T21:30:05.950543+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:30:05.950543+00:00"
+        "attempted": "2026-11-03T00:07:07.125543+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -181572,8 +182093,8 @@
         "source": "https://www.nintendo.com/us/store/products/them-bombs-switch/",
         "checked": "2026-11-02T21:30:07.062833+00:00"
       },
-      "basics_attempted": "2026-11-02T21:30:05.950543+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:07:07.125543+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:55:34.911539+00:00",
       "store_evidence": [
@@ -181583,7 +182104,35 @@
           "checked": "2026-11-02T21:30:07.062477+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Them-Bombs--1386434.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:07:13.004993+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Them Bombs!"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:07:13.005326+00:00",
+              "next_attempt": "2026-11-04T00:07:13.005326+00:00",
+              "revision": "689499da6199db1e:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:07:13.005326+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Them-Bombs--1386434.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Them-Bombs--1386434.html"
+            }
+          }
+        }
+      }
     },
     "Switch:5365": {
       "title": "Think of the Children",
@@ -198701,17 +199250,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.0,
-              "normalized": 1.0
+              "normalized": 1.0,
+              "checked": "2026-11-02T21:31:27.641753+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:31:27.641753+00:00"
+        "attempted": "2026-11-03T00:07:13.005980+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -198719,8 +199269,8 @@
         "source": "https://www.nintendo.com/us/store/products/they-breathe-switch/",
         "checked": "2026-11-02T21:31:32.471219+00:00"
       },
-      "basics_attempted": "2026-11-02T21:31:27.641753+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:07:13.005980+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:55:33.708734+00:00",
       "store_evidence": [
@@ -198730,7 +199280,35 @@
           "checked": "2026-11-02T21:31:32.470792+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/They-Breathe-1813936.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:07:14.054698+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "They Breathe"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:07:14.055017+00:00",
+              "next_attempt": "2026-11-04T00:07:14.055017+00:00",
+              "revision": "fd4c0f548f372b19:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:07:14.055017+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/They-Breathe-1813936.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/They-Breathe-1813936.html"
+            }
+          }
+        }
+      }
     },
     "Switch:6261": {
       "title": "Totally Reliable Delivery Service",
@@ -206466,11 +207044,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:29:29.685924+00:00"
+        "attempted": "2026-11-03T00:07:07.124794+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -206478,12 +207056,14 @@
         "source": "https://www.nintendo.com/us/store/products/the-story-goes-on-switch/",
         "checked": "2026-11-02T21:29:31.576767+00:00"
       },
-      "basics_attempted": "2026-11-02T21:29:29.685924+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:07:07.124794+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:55:28.683912+00:00",
       "store_evidence": [
@@ -206493,7 +207073,100 @@
           "checked": "2026-11-02T21:29:31.576454+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Story-Goes-On-1733156.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:07:08.479321+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "The Story Goes On"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:07:08.479641+00:00",
+              "next_attempt": "2026-11-04T00:07:08.479641+00:00",
+              "revision": "40c05c46fcda54b0:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:07:08.479641+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Story-Goes-On-1733156.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/The-Story-Goes-On-1733156.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:07.381966+00:00",
+              "next_attempt": "2026-11-04T00:08:07.381966+00:00",
+              "revision": "40c05c46fcda54b0:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/the_story_goes_on",
+                "https://www.nintendolife.com/games/switch-eshop/the_story_goes_on"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/the_story_goes_on"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:09.095828+00:00",
+              "next_attempt": "2026-11-04T00:08:09.095828+00:00",
+              "revision": "40c05c46fcda54b0:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=the-story-goes-on-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-story-goes-on-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:24.270274+00:00",
+              "next_attempt": "2026-11-04T00:08:24.270274+00:00",
+              "revision": "40c05c46fcda54b0:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/the-story-goes-on/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/the-story-goes-on/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/the-story-goes-on/"
+              ],
+              "url": "https://www.metacritic.com/game/the-story-goes-on/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:24.573690+00:00",
+              "next_attempt": "2026-11-04T00:08:24.573690+00:00",
+              "revision": "40c05c46fcda54b0:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Story+Goes+On&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=The+Story+Goes+On&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:24.573802+00:00",
+              "next_attempt": "2026-11-03T01:08:24.573802+00:00",
+              "revision": "40c05c46fcda54b0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:24.573861+00:00",
+              "next_attempt": "2026-11-03T01:08:24.573861+00:00",
+              "revision": "40c05c46fcda54b0:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:7272": {
       "title": "Thoth",
@@ -249937,11 +250610,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:31:27.642054+00:00"
+        "attempted": "2026-11-03T00:07:14.055706+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -249949,12 +250622,14 @@
         "source": "https://www.nintendo.com/us/store/products/throw-it-animal-park-switch/",
         "checked": "2026-11-02T21:31:29.768086+00:00"
       },
-      "basics_attempted": "2026-11-02T21:31:27.642054+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:07:14.055706+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:55:38.830418+00:00",
       "store_evidence": [
@@ -249964,7 +250639,100 @@
           "checked": "2026-11-02T21:31:29.767780+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Throw-it-Animal-Park-1954038.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:07:15.245303+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Throw it! Animal Park"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:07:15.245606+00:00",
+              "next_attempt": "2026-11-04T00:07:15.245606+00:00",
+              "revision": "91326e321beec32c:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:07:15.245606+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Throw-it-Animal-Park-1954038.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Throw-it-Animal-Park-1954038.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:32.529458+00:00",
+              "next_attempt": "2026-11-04T00:08:32.529458+00:00",
+              "revision": "91326e321beec32c:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/throw_it_animal_park",
+                "https://www.nintendolife.com/games/nintendo-switch/throw_it_animal_park"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/throw_it_animal_park"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:33.298058+00:00",
+              "next_attempt": "2026-11-04T00:08:33.298058+00:00",
+              "revision": "91326e321beec32c:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=throw-it-animal-park-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=throw-it-animal-park-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:38.006407+00:00",
+              "next_attempt": "2026-11-04T00:08:38.006407+00:00",
+              "revision": "91326e321beec32c:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/throw-it-animal-park/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/throw-it-animal-park/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/throw-it-animal-park/"
+              ],
+              "url": "https://www.metacritic.com/game/throw-it-animal-park/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:08:38.038693+00:00",
+              "next_attempt": "2026-11-04T00:08:38.038693+00:00",
+              "revision": "91326e321beec32c:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Throw+it%21+Animal+Park&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Throw+it%21+Animal+Park&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:38.038820+00:00",
+              "next_attempt": "2026-11-03T01:08:38.038820+00:00",
+              "revision": "91326e321beec32c:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:08:38.038883+00:00",
+              "next_attempt": "2026-11-03T01:08:38.038883+00:00",
+              "revision": "91326e321beec32c:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:9553": {
       "title": "Thunder Cross II",
