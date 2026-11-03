@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:20:05.472366+00:00",
+  "updated": "2026-11-03T08:20:53.089477+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2211,
+    "full_attempted": 2221,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -122054,15 +122054,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.08,
-              "count": 12,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.08,
               "scale": 5,
-              "source": "PSN",
+              "count": 12,
               "url": "https://store.playstation.com/pt-pt/product/EB0467-PPSA18841_00-0144561479626972",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:30:33.546793+00:00",
-              "platform": "PSN · PS5",
               "weight": 3.4641016151377544,
               "normalized": 8.16
             }
@@ -122070,7 +122068,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:30:32.217892+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:20:40.246516+00:00"
       },
       "requirements": {
         "image": true,
@@ -122112,7 +122117,11 @@
       },
       "basics_attempted": "2026-11-02T18:30:32.217892+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -122128,7 +122137,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:20:40.449885+00:00",
+      "full_version": 7
     },
     "Switch:13376": {
       "title": "Tanky Tanks 2",
@@ -155027,19 +155038,51 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 62.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/talisman_digital_edition",
+              "name": "Digitally Downloaded",
+              "score": 50,
+              "url": "http://www.digitallydownloaded.net/2020/03/review-talisman-digital-edition.html",
+              "date": "2020-03-20",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 60,
+              "url": "https://www.godisageek.com/reviews/talisman-digital-edition-review/",
+              "date": "2020-03-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 61.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=talisman-digital-edition-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/talisman_digital_edition",
+              "date": "2020-03-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2020/05/05/talisman-digital-edition-review/",
+              "date": "2020-05-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
           "score": 6.5,
@@ -155053,14 +155096,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/talisman_digital_edition",
               "platform": "Nintendo Switch",
               "weight": 2.8284271247461903,
-              "normalized": 6.5,
-              "checked": "2026-11-02T18:30:07.335443+00:00"
+              "normalized": 6.5
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:23.011654+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:20:21.157957+00:00"
       },
       "requirements": {
         "image": true,
@@ -155076,7 +155123,12 @@
       },
       "basics_attempted": "2026-11-02T22:51:23.011654+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/talisman-digital-edition-switch/",
@@ -155125,7 +155177,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:20:23.199100+00:00",
+      "full_version": 7
     },
     "Switch:15371": {
       "title": "Talisman: Digital Edition - Expansion Pack #2",
@@ -205601,11 +205655,28 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Siliconera",
+              "score": 80,
+              "url": "https://www.siliconera.com/review-tales-of-xillia-remastered-is-another-fine-switch-remaster/",
+              "date": "2026-01-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 80,
+              "url": "https://www.starbit.pt/2025/11/14/tales-of-xillia-remastered-analise/",
+              "date": "2025-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 7.9,
@@ -205619,14 +205690,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/tales_of_xillia_remastered",
               "platform": "Nintendo Switch",
               "weight": 4.47213595499958,
-              "normalized": 7.9,
-              "checked": "2026-11-02T18:30:07.334101+00:00"
+              "normalized": 7.9
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:23.010038+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:20:31.044037+00:00"
       },
       "requirements": {
         "image": true,
@@ -205642,7 +205717,12 @@
       },
       "basics_attempted": "2026-11-02T22:51:23.010038+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/tales-of-xillia-remastered-switch/",
@@ -205691,7 +205771,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "d8b_JeKCKao",
+        "title": "Tales of Xillia Remastered - Launch Trailer | PS5 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/tales-of-xillia-remastered/"
+      },
+      "full_attempted": "2026-11-03T08:20:33.620643+00:00",
+      "full_version": 7
     },
     "Switch:17127": {
       "title": "Tanks, But No Tanks",
@@ -235321,15 +235409,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.46,
-              "count": 13,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.46,
               "scale": 5,
-              "source": "PSN",
+              "count": 13,
               "url": "https://store.playstation.com/pt-pt/product/EP1411-PPSA37526_00-0389890193491824",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:30:12.660930+00:00",
-              "platform": "PSN · PS5",
               "weight": 3.605551275463989,
               "normalized": 8.92
             }
@@ -235337,7 +235423,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:30:11.030377+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:20:25.327112+00:00"
       },
       "requirements": {
         "image": true,
@@ -235379,7 +235472,11 @@
       },
       "basics_attempted": "2026-11-02T18:30:11.030377+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -235395,7 +235492,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:20:25.796639+00:00",
+      "full_version": 7
     },
     "PS5:18429": {
       "title": "Teeto",
@@ -242545,15 +242644,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 5,
-              "count": 5,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 5,
               "scale": 5,
-              "source": "PSN",
+              "count": 5,
               "url": "https://store.playstation.com/pt-pt/product/EP1411-PPSA37901_00-0143292113002332",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:30:11.602294+00:00",
-              "platform": "PSN · PS5",
               "weight": 2.23606797749979,
               "normalized": 10.0
             }
@@ -242561,7 +242658,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:30:07.335913+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:20:30.384091+00:00"
       },
       "requirements": {
         "image": true,
@@ -242603,7 +242707,11 @@
       },
       "basics_attempted": "2026-11-02T18:30:07.335913+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -242619,7 +242727,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:20:30.749514+00:00",
+      "full_version": 7
     },
     "PS5:18533": {
       "title": "Tanky Tanks - Reloaded",
@@ -253623,15 +253733,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.74,
-              "count": 340,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.74,
               "scale": 5,
-              "source": "PSN",
+              "count": 340,
               "url": "https://store.playstation.com/pt-pt/product/HP7302-PPSA26150_00-0553311798537461",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:30:37.513359+00:00",
-              "platform": "PSN · PS5",
               "weight": 18.439088914585774,
               "normalized": 9.48
             }
@@ -253639,7 +253747,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:30:35.940536+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:20:35.355564+00:00"
       },
       "requirements": {
         "image": true,
@@ -253681,7 +253796,11 @@
       },
       "basics_attempted": "2026-11-02T18:30:35.940536+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -253697,7 +253816,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:20:36.509780+00:00",
+      "full_version": 7
     },
     "Switch:19083": {
       "title": "Tape to Tape",
@@ -253720,16 +253841,22 @@
               "scale": 10,
               "count": 6,
               "url": "https://www.metacritic.com/game/tape-to-tape/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 9.8,
-              "checked": "2026-11-02T18:31:13.111824+00:00"
+              "normalized": 9.8
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:23.015647+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:20:50.820591+00:00"
       },
       "requirements": {
         "image": true,
@@ -253746,7 +253873,12 @@
       "basics_attempted": "2026-11-02T22:51:23.015647+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -253796,7 +253928,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:20:52.829176+00:00",
+      "full_version": 7
     },
     "Switch:4591": {
       "title": "The Escapists 2",
@@ -313648,22 +313782,63 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 57.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/tallowmere",
+              "name": "Cubed3",
+              "score": 60,
+              "url": "http://www.cubed3.com/review/4575/1/tallowmere-nintendo-switch.html",
+              "date": "2018-01-29",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 76.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=tallowmere-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/tallowmere?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2017-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/45929/tallowmere-switch-review",
+              "date": "2017-12-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 40.0,
+              "url": "https://purenintendo.com/review-tallowmere-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 4.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 30,
+              "url": "http://switchplayer.net/2017/11/30/tallowmere-review/",
+              "date": "2017-11-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
-          "score": 5.6,
+          "score": 6.27,
           "scale": 10,
           "sources": [
             {
@@ -313674,14 +313849,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/tallowmere",
               "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
-              "normalized": 5.6,
-              "checked": "2026-11-02T18:30:08.421475+00:00"
+              "normalized": 5.6
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/tallowmere/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 7.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:23.012107+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:20:36.070083+00:00"
       },
       "requirements": {
         "image": true,
@@ -313697,7 +313886,10 @@
       },
       "basics_attempted": "2026-11-02T22:51:23.012107+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/tallowmere-switch/",
@@ -313746,7 +313938,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:20:39.486722+00:00",
+      "full_version": 7
     },
     "Switch:6699": {
       "title": "Tanky Tanks",
@@ -363623,28 +363817,165 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 71.9,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/tanuki_justice",
+              "name": "GameCritics",
+              "score": 50,
+              "url": "https://gamecritics.com/brian-theisen/tanuki-justice-review/",
+              "date": "2021-01-26",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 85,
+              "url": "https://www.gamegrin.com/reviews/tanuki-justice-review/",
+              "date": "2021-01-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 55,
+              "url": "https://gamingtrend.com/feature/reviews/notorious-ninja-tanuki-justice-review/",
+              "date": "2021-01-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 80,
+              "url": "https://www.heypoorplayer.com/2020/12/09/tanuki-justice-review-switch/",
+              "date": "2020-12-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 70,
+              "url": "https://as.com/meristation/2021/02/08/analisis/1612801205_817006.html",
+              "date": "2021-02-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 74.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=tanuki-justice-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 74,
+              "url": "https://www.nintenderos.com/2021/01/analisis-tanuki-justice-para-nintendo-switch/",
+              "date": "2021-01-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 70,
+              "url": "",
+              "date": "2021-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/tanuki_justice",
+              "date": "2020-12-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 83,
+              "url": "https://www.nintendojo.com/reviews/review-tanuki-justice-switch",
+              "date": "2021-02-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 70,
+              "url": "https://noisypixel.net/tanuki-justice-review-switch/",
+              "date": "2020-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 60,
+              "url": "https://screenrant.com/tanuki-justice-game-review/",
+              "date": "2020-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 70,
+              "url": "https://www.starbit.pt/2021/02/23/tanuki-justice-analise/",
+              "date": "2021-02-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2021/01/18/tanuki-justice-review/",
+              "date": "2021-01-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 80,
+              "url": "https://www.thegamer.com/tanuki-justice-review/",
+              "date": "2021-01-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/retro-inspired-indie-games-part-8#tanuki-justice",
+              "date": "2020-12-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 16
         },
         "user": {
-          "score": null,
+          "score": 6.75,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 6.75,
+              "scale": 10,
+              "count": 4,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/tanuki_justice",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.0,
+              "normalized": 6.75
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:23.014900+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 15,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:20:41.177207+00:00"
       },
       "requirements": {
         "image": true,
@@ -363660,7 +363991,12 @@
       },
       "basics_attempted": "2026-11-02T22:51:23.014900+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/tanuki-justice-switch/",
@@ -363709,7 +364045,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:20:43.612168+00:00",
+      "full_version": 7
     },
     "PS5:8075": {
       "title": "Tesla Force",
@@ -377813,24 +378151,58 @@
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/tales_of_the_tiny_planet",
+              "name": "Nintenderos",
+              "score": 70,
+              "url": "http://www.nintenderos.com/2018/01/analisis-tales-of-the-tiny-planet/",
+              "date": "2018-02-05",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/tales_of_the_tiny_planet",
+              "date": "2018-01-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/46415/tales-of-the-tiny-planet-switch-review",
+              "date": "2018-02-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/nintendo-switch/tales_of_the_tiny_planet",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:23.010303+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:20:25.943564+00:00"
       },
       "requirements": {
         "image": true,
@@ -377846,7 +378218,12 @@
       },
       "basics_attempted": "2026-11-02T22:51:23.010303+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/tales-of-the-tiny-planet-switch/",
@@ -377895,7 +378272,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:20:28.358003+00:00",
+      "full_version": 7
     },
     "PS5:9044": {
       "title": "The Binding of Isaac: Repentance",
