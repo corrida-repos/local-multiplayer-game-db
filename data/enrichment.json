@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T05:53:58.652497+00:00",
+  "updated": "2026-11-03T05:54:53.109599+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1191,
+    "full_attempted": 1201,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -117975,26 +117975,33 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 65.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "PSX Brasil",
+              "score": 65,
+              "url": "https://psxbrasil.com.br/analise/frogun-encore-review/",
+              "date": "2024-06-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 7.12,
           "scale": 10,
           "sources": [
             {
-              "score": 3.56,
-              "count": 437,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.56,
               "scale": 5,
-              "source": "PSN",
+              "count": 437,
               "url": "https://store.playstation.com/pt-pt/product/EP5335-PPSA21412_00-FROGUNENCORE0000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:10:27.216887+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 20.904544960366874,
               "normalized": 7.119999999999999
             }
@@ -118002,7 +118009,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:10:25.886228+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:54:20.683089+00:00"
       },
       "requirements": {
         "image": true,
@@ -118044,7 +118058,11 @@
       },
       "basics_attempted": "2026-11-02T17:10:25.886228+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -118060,7 +118078,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:54:21.349381+00:00",
+      "full_version": 7
     },
     "Switch:15421": {
       "title": "Frogun Encore",
@@ -118072,23 +118092,41 @@
           "sources": [
             {
               "name": "Nintendo Life",
-              "score": 80.0,
+              "score": 80,
               "url": "https://www.nintendolife.com/reviews/switch-eshop/frogun-encore",
+              "date": "2024-06-29",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 4.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.5,
+              "scale": 10,
+              "count": 4,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/frogun_encore",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.0,
+              "normalized": 4.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:37.565390+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:54:24.787511+00:00"
       },
       "requirements": {
         "image": true,
@@ -118104,7 +118142,13 @@
       },
       "basics_attempted": "2026-11-02T22:32:37.565390+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/frogun-encore-switch/",
@@ -118153,7 +118197,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:54:27.422598+00:00",
+      "full_version": 7
     },
     "Switch:15309": {
       "title": "Goliath Depot",
@@ -126991,15 +127037,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.88,
-              "count": 16,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.88,
               "scale": 5,
-              "source": "PSN",
+              "count": 16,
               "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA21876_00-FB202400000PS5EU",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:10:22.948995+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 4.0,
               "normalized": 7.76
             }
@@ -127007,7 +127051,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:10:21.548109+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:54:15.673437+00:00"
       },
       "requirements": {
         "image": true,
@@ -127049,7 +127100,11 @@
       },
       "basics_attempted": "2026-11-02T17:10:21.548109+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -127065,7 +127120,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:54:16.137418+00:00",
+      "full_version": 7
     },
     "Switch:15655": {
       "title": "Fueled Up",
@@ -127090,14 +127147,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/fueled_up",
               "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
-              "normalized": 6.9,
-              "checked": "2026-11-02T17:10:36.557960+00:00"
+              "normalized": 6.9
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:37.565714+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:54:34.774611+00:00"
       },
       "requirements": {
         "image": true,
@@ -127113,7 +127174,13 @@
       },
       "basics_attempted": "2026-11-02T22:32:37.565714+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/fueled-up-switch/",
@@ -127162,7 +127229,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:54:37.653459+00:00",
+      "full_version": 7
     },
     "Switch:15862": {
       "title": "Goat Simulator 3",
@@ -227898,6 +227967,7 @@
               "name": "NintendoWorldReport",
               "score": 50,
               "url": "http://www.nintendoworldreport.com/review/47654/fossil-hunters-switch-eshop-review",
+              "date": "2018-07-02",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -227906,13 +227976,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 4.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/fossil_hunters",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:01:52.601796+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:54:44.695791+00:00"
       },
       "requirements": {
         "image": true,
@@ -227929,9 +228016,12 @@
       "basics_attempted": "2026-11-02T23:01:52.601796+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 301: Moved Permanently",
-        "metacritic_reviews": "HTTP Error 301: Moved Permanently"
+        "metacritic_reviews": "HTTP Error 301: Moved Permanently",
+        "slush": "No scored Switch review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -227981,7 +228071,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:54:47.470512+00:00",
+      "full_version": 7
     },
     "Switch:5425": {
       "title": "Freaky Awesome",
@@ -228098,22 +228190,78 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 77.9,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/full_metal_furies",
+              "name": "Cubed3",
+              "score": 50,
+              "url": "http://www.cubed3.com/review/5240/1/full-metal-furies-nintendo-switch.html",
+              "date": "2018-12-28",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "https://fnintendo.net/article/13058-full-metal-furies",
+              "date": "2019-10-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/full-metal-furies-review-puzzle-brawler/1900-6417034/",
+              "date": "2018-11-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=full-metal-furies-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 73,
+              "url": "https://www.nintenderos.com/2021/01/analisis-full-metal-furies-para-nintendo-switch/",
+              "date": "2021-01-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/full_metal_furies?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/48879/full-metal-furies-switch-review",
+              "date": "2018-11-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 100,
+              "url": "https://www.nintendojo.com/reviews/backlog-review-full-metal-furies-switch",
+              "date": "2020-07-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 8
         },
         "user": {
-          "score": 6.8,
+          "score": 7.41,
           "scale": 10,
           "sources": [
             {
@@ -228124,14 +228272,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/full_metal_furies",
               "platform": "Nintendo Switch",
               "weight": 4.123105625617661,
-              "normalized": 6.799999999999999,
-              "checked": "2026-11-02T17:27:55.700558+00:00"
+              "normalized": 6.799999999999999
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.1,
+              "scale": 10,
+              "count": 13,
+              "url": "https://www.metacritic.com/game/full-metal-furies/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 8.1
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:35:12.928337+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:54:39.659755+00:00"
       },
       "requirements": {
         "image": true,
@@ -228147,7 +228309,11 @@
       },
       "basics_attempted": "2026-11-02T22:35:12.928337+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/full-metal-furies-switch/",
@@ -228196,7 +228362,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:54:42.313900+00:00",
+      "full_version": 7
     },
     "Switch:5381": {
       "title": "Fury Unleashed",
@@ -238393,13 +238561,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/freakout_calamity_tv_show",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:35:12.928093+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:54:14.775785+00:00"
       },
       "requirements": {
         "image": true,
@@ -238415,7 +238600,12 @@
       },
       "basics_attempted": "2026-11-02T22:35:12.928093+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/freakout-calamity-tv-show-switch/",
@@ -238464,7 +238654,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:54:17.478816+00:00",
+      "full_version": 7
     },
     "Switch:6082": {
       "title": "Georifters",
@@ -256078,28 +256270,69 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 65.0,
+          "score": 56.2,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 50,
+              "url": "http://www.cubed3.com/review/6111/1/foxyland-2-nintendo-switch.html",
+              "date": "2020-09-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 65.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=foxyland-2-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 40,
+              "url": "https://purenintendo.com/review-foxyland-2-nintendo-switch/",
+              "date": "2020-02-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2020/02/25/foxyland-2-review/",
+              "date": "2020-02-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/foxyland_2",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:36:09.892882+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:54:19.803978+00:00"
       },
       "requirements": {
         "image": true,
@@ -256115,7 +256348,11 @@
       },
       "basics_attempted": "2026-11-02T22:36:09.892882+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/foxyland-2-switch/",
@@ -256165,7 +256402,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:54:22.307976+00:00",
+      "full_version": 7
     },
     "Switch:7185": {
       "title": "Frontline Zed",
@@ -256187,13 +256426,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 2.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 2.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/frontline_zed",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 2.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:36:09.893546+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:54:29.778661+00:00"
       },
       "requirements": {
         "image": true,
@@ -256209,7 +256465,12 @@
       },
       "basics_attempted": "2026-11-02T22:36:09.893546+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/frontline-zed-switch/",
@@ -256258,7 +256519,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:54:34.320419+00:00",
+      "full_version": 7
     },
     "Switch:7266": {
       "title": "Good Job!",
@@ -298056,28 +298319,102 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 59.4,
           "scale": 100,
           "sources": [
+            {
+              "name": "FNintendo",
+              "score": 50,
+              "url": "https://fnintendo.net/article/12310-fullblast",
+              "date": "2019-04-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 50,
+              "url": "http://gamingtrend.com/feature/reviews/generic-explosion-machine-fullblast-review/",
+              "date": "2018-09-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 70.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=fullblast-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 60,
+              "url": "https://www.nintenderos.com/2018/12/analisis-fullblast/",
+              "date": "2018-12-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 50,
+              "url": "http://www.nintendoworldreport.com/review/48651/fullblast-switch-review",
+              "date": "2018-10-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 75.0,
+              "url": "https://purenintendo.com/review-fullblast-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 7.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2018/09/26/full-blast-review/",
+              "date": "2018-09-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/switch-retro-indie-games#fullblast",
+              "date": "2018-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 8
         },
         "user": {
-          "score": null,
+          "score": 2.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 2.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/fullblast",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 2.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:38:04.375965+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:54:49.677124+00:00"
       },
       "requirements": {
         "image": true,
@@ -298093,7 +298430,10 @@
       },
       "basics_attempted": "2026-11-02T22:38:04.375965+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/fullblast-switch/",
@@ -298142,7 +298482,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:54:52.874221+00:00",
+      "full_version": 7
     },
     "Switch:8981": {
       "title": "GUERRILLA WAR",
