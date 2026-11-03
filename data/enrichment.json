@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T09:08:15.639977+00:00",
+  "updated": "2026-11-03T09:09:18.534105+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -5742,12 +5742,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 1,
         "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:55:57.990613+00:00"
+        "attempted": "2026-11-03T09:09:16.117833+00:00"
       },
       "requirements": {
         "image": true,
@@ -5765,10 +5764,13 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:49:21.673373+00:00",
+      "full_attempted": "2026-11-03T09:09:18.272332+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/astrosmash-switch/",
@@ -5818,7 +5820,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "PS5:12888": {
       "title": "Atari 50: The Anniversary Celebration",
@@ -6445,7 +6448,7 @@
           "source_count": 1
         },
         "user": {
-          "score": 1.8,
+          "score": 3.9,
           "scale": 10,
           "sources": [
             {
@@ -6456,22 +6459,29 @@
               "url": "https://www.metacritic.com/game/avatar-the-last-airbender-quest-for-balance/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 2.0,
-              "normalized": 1.7999999999999998,
-              "checked": "2026-11-02T19:49:22.111050+00:00"
+              "normalized": 1.7999999999999998
+            },
+            {
+              "score": 6.33,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/avatar_the_last_airbender_quest_for_balance",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 6.33
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 1,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:31:13.463135+00:00"
+        "attempted": "2026-11-03T09:08:31.360712+00:00"
       },
       "requirements": {
         "image": true,
@@ -6488,10 +6498,13 @@
       "basics_attempted": "2026-11-02T22:31:13.463135+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:49:23.096747+00:00",
+      "full_attempted": "2026-11-03T09:08:35.698236+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/avatar-the-last-airbender-quest-for-balance-switch/",
@@ -6541,14 +6554,15 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:10322": {
       "title": "BADLAND: Game of the Year Edition",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 85.0,
+          "score": 70.0,
           "scale": 100,
           "sources": [
             {
@@ -6557,13 +6571,29 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=badland-game-of-the-year-edition-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 55,
+              "url": "https://purenintendo.com/review-badland-game-of-the-year-edition-nintendo-switch/",
+              "date": "2021-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 70,
+              "url": "https://www.starbit.pt/2023/03/23/badland-game-of-the-year-edition-analise/",
+              "date": "2023-03-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": 7.0,
+          "score": 7.21,
           "scale": 10,
           "sources": [
             {
@@ -6574,24 +6604,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/badland_game_of_the_year_edition",
               "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
-              "normalized": 7.0,
-              "checked": "2026-11-02T19:49:44.882053+00:00"
+              "normalized": 7.0
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/badland/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 301: Moved Permanently",
-          "Metacritic users: HTTP Error 301: Moved Permanently",
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:31:13.463399+00:00"
+        "attempted": "2026-11-03T09:09:11.255843+00:00"
       },
       "requirements": {
         "image": true,
@@ -6608,9 +6642,11 @@
       "basics_attempted": "2026-11-02T22:31:13.463399+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:49:45.307621+00:00",
+      "full_attempted": "2026-11-03T09:09:13.183831+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/badland-game-of-the-year-edition-switch/",
@@ -6660,7 +6696,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:13708": {
       "title": "BATSUGUN Saturn Tribute Boosted",
@@ -6671,6 +6708,13 @@
           "scale": 100,
           "sources": [
             {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/batsugun-saturn-tribute-boosted",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            },
+            {
               "name": "Video Chums",
               "score": 80,
               "url": "https://videochums.com/article/resurrected-shoot-em-ups-on-nintendo-switch#batsugun-saturn-tribute-boosted",
@@ -6680,7 +6724,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": 7.4,
@@ -6694,8 +6738,7 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/batsugun_saturn_tribute_boosted",
               "platform": "Nintendo Switch",
               "weight": 4.123105625617661,
-              "normalized": 7.4,
-              "checked": "2026-11-02T19:49:48.182297+00:00"
+              "normalized": 7.4
             }
           ],
           "source_count": 1,
@@ -6703,13 +6746,10 @@
         },
         "critic_index_complete": true,
         "critic_index_review_count": 1,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:31:13.463658+00:00"
+        "attempted": "2026-11-03T09:08:51.242959+00:00"
       },
       "requirements": {
         "image": true,
@@ -6726,10 +6766,13 @@
       "basics_attempted": "2026-11-02T22:31:13.463658+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:49:49.175670+00:00",
+      "full_attempted": "2026-11-03T09:08:53.133957+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/batsugun-saturn-tribute-boosted-switch/",
@@ -6778,7 +6821,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:14036": {
       "title": "BOKURA",
@@ -6808,7 +6852,7 @@
           "source_count": 2
         },
         "user": {
-          "score": 7.3,
+          "score": 7.33,
           "scale": 10,
           "sources": [
             {
@@ -6819,22 +6863,29 @@
               "url": "https://www.metacritic.com/game/bokura/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 4.242640687119285,
-              "normalized": 7.3,
-              "checked": "2026-11-02T19:49:53.684426+00:00"
+              "normalized": 7.3
+            },
+            {
+              "score": 7.4,
+              "scale": 10,
+              "count": 5,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/bokura",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.23606797749979,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 1,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:31:13.463988+00:00"
+        "attempted": "2026-11-03T09:08:46.270422+00:00"
       },
       "requirements": {
         "image": true,
@@ -6851,9 +6902,11 @@
       "basics_attempted": "2026-11-02T22:31:13.463988+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:49:54.446482+00:00",
+      "full_attempted": "2026-11-03T09:08:47.998039+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/bokura-switch/",
@@ -6902,7 +6955,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "PS5:14050": {
       "title": "Baby Shark: Sing & Swim Party",
@@ -144883,11 +144937,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 0,
         "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:50:11.721410+00:00"
+        "attempted": "2026-11-03T09:08:45.533785+00:00"
       },
       "requirements": {
         "image": true,
@@ -144930,9 +144984,11 @@
       "basics_attempted": "2026-11-02T17:00:35.329739+00:00",
       "version": 1,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:50:12.066142+00:00",
+      "full_attempted": "2026-11-03T09:08:46.064101+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -144948,7 +145004,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:15143": {
       "title": "Balloony",
@@ -323902,23 +323959,33 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 4.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/b_ark",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": false,
         "critic_index_review_count": null,
         "errors": [
           "Metacritic critics: HTTP Error 404: Not Found",
-          "Metacritic users: HTTP Error 404: Not Found",
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+          "Metacritic users: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:35:27.285035+00:00"
+        "attempted": "2026-11-03T09:08:56.225874+00:00"
       },
       "requirements": {
         "image": true,
@@ -323935,9 +324002,13 @@
       "basics_attempted": "2026-11-02T22:35:27.285035+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:49:55.625180+00:00",
+      "full_attempted": "2026-11-03T09:09:00.374827+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/b-ark-switch/",
@@ -323987,7 +324058,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:6479": {
       "title": "BOSSGARD",
@@ -324012,8 +324084,7 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/bossgard",
               "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
-              "normalized": 7.3,
-              "checked": "2026-11-02T19:49:56.923600+00:00"
+              "normalized": 7.3
             }
           ],
           "source_count": 1,
@@ -324021,13 +324092,10 @@
         },
         "critic_index_complete": true,
         "critic_index_review_count": 0,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:35:27.287606+00:00"
+        "attempted": "2026-11-03T09:09:06.434551+00:00"
       },
       "requirements": {
         "image": true,
@@ -324044,10 +324112,13 @@
       "basics_attempted": "2026-11-02T22:35:27.287606+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:49:58.899729+00:00",
+      "full_attempted": "2026-11-03T09:09:10.817585+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/bossgard-switch/",
@@ -324096,7 +324167,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:6136": {
       "title": "Bake 'n Switch",
@@ -364577,21 +364649,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/bff_or_die",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 0,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:36:52.665823+00:00"
+        "attempted": "2026-11-03T09:08:41.255184+00:00"
       },
       "requirements": {
         "image": true,
@@ -364608,9 +364689,12 @@
       "basics_attempted": "2026-11-02T22:36:52.665823+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:49:52.383941+00:00",
+      "full_attempted": "2026-11-03T09:08:44.991829+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/bff-or-die-switch/",
@@ -364659,7 +364743,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "PS5:7689": {
       "title": "Balan Wonderworld",
@@ -405180,7 +405265,7 @@
           "source_count": 7
         },
         "user": {
-          "score": 7.2,
+          "score": 6.84,
           "scale": 10,
           "sources": [
             {
@@ -405191,22 +405276,29 @@
               "url": "https://www.metacritic.com/game/azure-reflections/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 7.199999999999999,
-              "checked": "2026-11-02T19:49:36.087541+00:00"
+              "normalized": 7.199999999999999
+            },
+            {
+              "score": 6.33,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/azure_reflections",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 6.33
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 6,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:38:18.791594+00:00"
+        "attempted": "2026-11-03T09:08:36.251958+00:00"
       },
       "requirements": {
         "image": true,
@@ -405223,9 +405315,11 @@
       "basics_attempted": "2026-11-02T22:38:18.791594+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:49:36.576599+00:00",
+      "full_attempted": "2026-11-03T09:08:37.845110+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/azure-reflections-switch/",
@@ -405274,7 +405368,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:9322": {
       "title": "Balloon Fight",
