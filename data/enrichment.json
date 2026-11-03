@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T09:54:29.580670+00:00",
+  "updated": "2026-11-03T09:55:39.375902+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -24825,12 +24825,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 2,
         "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T23:40:09.984615+00:00"
+        "attempted": "2026-11-03T09:55:37.206659+00:00"
       },
       "requirements": {
         "image": true,
@@ -24847,11 +24846,14 @@
       "basics_attempted": "2026-11-02T23:40:09.984615+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T21:10:32.184795+00:00",
+      "full_attempted": "2026-11-03T09:55:39.110990+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/cyber-citizen-shockman-2-a-new-menace-switch/",
@@ -24900,7 +24902,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "PS5:14244": {
       "title": "CyberTD",
@@ -24933,12 +24936,10 @@
         },
         "critic_index_complete": true,
         "critic_index_review_count": 0,
-        "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T21:10:22.974336+00:00"
+        "attempted": "2026-11-03T09:54:48.558439+00:00"
       },
       "requirements": {
         "image": true,
@@ -24981,9 +24982,10 @@
       "basics_attempted": "2026-11-02T17:04:33.535388+00:00",
       "version": 1,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T21:10:23.377707+00:00",
+      "full_attempted": "2026-11-03T09:54:48.787634+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -24999,7 +25001,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:14458": {
       "title": "CyberTD",
@@ -25197,12 +25200,12 @@
         "critic_index_complete": true,
         "critic_index_review_count": 0,
         "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:56:39.386144+00:00"
+        "attempted": "2026-11-03T09:55:27.203392+00:00"
       },
       "requirements": {
         "image": true,
@@ -25221,9 +25224,12 @@
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T21:10:30.264650+00:00",
+      "full_attempted": "2026-11-03T09:55:29.542243+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/d-corp-switch/",
@@ -25272,7 +25278,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "PS5:13281": {
       "title": "DC's Justice League: Cosmic Chaos",
@@ -25351,20 +25358,30 @@
           "source_count": 8
         },
         "user": {
-          "score": null,
+          "score": 5.33,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 5.33,
+              "scale": 10,
+              "count": 3,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/dcs_justice_league_cosmic_chaos",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 5.33
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 8,
-        "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T23:40:43.947465+00:00"
+        "attempted": "2026-11-03T09:54:58.512889+00:00"
       },
       "requirements": {
         "image": true,
@@ -25390,7 +25407,7 @@
         "kind": "gameplay",
         "source": "https://www.playstation.com/en-us/games/dcs-justice-league-cosmic-chaos/"
       },
-      "full_attempted": "2026-11-02T21:10:46.766008+00:00",
+      "full_attempted": "2026-11-03T09:54:58.513465+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "store": {
@@ -25423,7 +25440,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:13279": {
       "title": "DC's Justice League: Cosmic Chaos",
@@ -25489,14 +25507,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/dcs_justice_league_cosmic_chaos",
               "platform": "Nintendo Switch",
               "weight": 4.58257569495584,
-              "normalized": 7.7,
-              "checked": "2026-11-02T21:10:48.927892+00:00"
+              "normalized": 7.7
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T00:25:55.504930+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T09:55:02.872735+00:00"
       },
       "requirements": {
         "image": true,
@@ -25515,7 +25537,8 @@
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed"
       },
       "trailer": {
         "id": "63W45yvfrlU",
@@ -25523,7 +25546,7 @@
         "kind": "gameplay",
         "source": "https://www.playstation.com/en-us/games/dcs-justice-league-cosmic-chaos/"
       },
-      "full_attempted": "2026-11-02T21:10:51.944686+00:00",
+      "full_attempted": "2026-11-03T09:55:04.374193+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "store": {
@@ -25554,7 +25577,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:14171": {
       "title": "DELTAZEAL",
@@ -25577,21 +25601,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/deltazeal",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 1,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:56:39.386431+00:00"
+        "attempted": "2026-11-03T09:55:22.489123+00:00"
       },
       "requirements": {
         "image": true,
@@ -25608,11 +25641,13 @@
       "basics_attempted": "2026-11-02T22:56:39.386431+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T21:10:54.204945+00:00",
+      "full_attempted": "2026-11-03T09:55:24.404521+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/deltazeal-switch/",
@@ -25661,7 +25696,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "PS5:12868": {
       "title": "DORAEMON STORY OF SEASONS: Friends of the Great Kingdom",
@@ -156812,12 +156848,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 4,
         "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T23:40:43.947186+00:00"
+        "attempted": "2026-11-03T09:55:32.206629+00:00"
       },
       "requirements": {
         "image": true,
@@ -156834,12 +156869,15 @@
       "basics_attempted": "2026-11-02T23:40:43.947186+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_reviews": "The read operation timed out",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T21:10:25.908319+00:00",
+      "full_attempted": "2026-11-03T09:55:33.768309+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/cyber-citizen-shockman-3-the-princess-from-another-world-switch/",
@@ -156888,7 +156926,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "PS5:15574": {
       "title": "Cyber Citizen Shockman Zero",
@@ -191259,11 +191298,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 0,
         "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T21:10:49.045738+00:00"
+        "attempted": "2026-11-03T09:54:53.315677+00:00"
       },
       "requirements": {
         "image": true,
@@ -191306,9 +191345,11 @@
       "basics_attempted": "2026-11-02T17:08:09.350852+00:00",
       "version": 1,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T21:10:49.783031+00:00",
+      "full_attempted": "2026-11-03T09:54:53.542936+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -191324,7 +191365,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:16519": {
       "title": "Dead Connection",
@@ -227018,11 +227060,84 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 71.1,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Adrenaline",
+              "score": 70,
+              "url": "https://www.adrenaline.com.br/analise/games/damon-and-baby-review/",
+              "date": "2026-06-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 65,
+              "url": "https://cogconnected.com/review/damon-and-baby-review/",
+              "date": "2026-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ElDesmarque",
+              "score": 70,
+              "url": "https://www.eldesmarque.com/videojuegos/analisis/20260324/damon-and-baby-experimento-disparos-demonios-bebe_18_018698023.html",
+              "date": "2026-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game8",
+              "score": 78,
+              "url": "https://game8.co/articles/reviews/damon-and-baby-review",
+              "date": "2026-04-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "INVEN",
+              "score": 70,
+              "url": "https://www.inven.co.kr/webzine/news/?news=314882",
+              "date": "2026-04-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Indigo GEEK",
+              "score": 75,
+              "url": "https://geek.reporteindigo.com/resena/damon-and-baby-resena-combate-solido-pero-fallas-en-progresion-e-inventario-20260323-0010.html",
+              "date": "2026-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MonsterVine",
+              "score": 60,
+              "url": "https://monstervine.com/2026/03/damon-and-baby-review/",
+              "date": "2026-03-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 72,
+              "url": "https://vandal.elespanol.com/analisis/ps5/damon-and-baby/231727#p-89",
+              "date": "2026-03-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/4-twin-stick-games-for-playstation-5#damon-and-baby",
+              "date": "2026-03-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 9
         },
         "user": {
           "score": 8.0,
@@ -227042,15 +227157,12 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: The read operation timed out",
-          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
-        ],
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T21:10:57.156020+00:00"
+        "attempted": "2026-11-03T09:55:03.628826+00:00"
       },
       "requirements": {
         "image": true,
@@ -227093,9 +227205,10 @@
       "basics_attempted": "2026-11-02T17:19:48.824400+00:00",
       "version": 2,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T21:10:57.537735+00:00",
+      "full_attempted": "2026-11-03T09:55:03.815205+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -227111,7 +227224,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:17901": {
       "title": "DAMON and BABY",
@@ -227151,12 +227265,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 3,
         "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:33:19.924806+00:00"
+        "attempted": "2026-11-03T09:54:52.193905+00:00"
       },
       "requirements": {
         "image": true,
@@ -227173,11 +227286,14 @@
       "basics_attempted": "2026-11-02T22:33:19.924806+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T21:10:49.014077+00:00",
+      "full_attempted": "2026-11-03T09:54:56.401633+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/damon-and-baby-switch/",
@@ -227226,7 +227342,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:18081": {
       "title": "Dark Scrolls",
