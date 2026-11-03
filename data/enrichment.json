@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:05:33.734347+00:00",
+  "updated": "2026-11-03T08:06:15.855719+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2081,
+    "full_attempted": 2091,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -107457,6 +107457,7 @@
               "name": "SECTOR.sk",
               "score": 40,
               "url": "https://www.sector.sk/recenzia/38477/star-trek-prodigy-supernova.htm",
+              "date": "2023-01-03",
               "platform": "PlayStation 5",
               "via": "Metacritic review index"
             }
@@ -107471,7 +107472,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:33:11.287543+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:05:55.206964+00:00"
       },
       "requirements": {
         "image": true,
@@ -107483,7 +107491,10 @@
       "errors": {
         "store": "No exact Portugal PS5 product verified",
         "community": "HTTP Error 404: Not Found",
-        "psn": "No exact Portugal PS5 product verified"
+        "psn": "No exact Portugal PS5 product verified",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_5/1x1_NSwitch_StarTrekProdigySupernova_image500w.jpg",
@@ -107527,7 +107538,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:05:56.277247+00:00",
+      "full_version": 7
     },
     "Switch:12499": {
       "title": "Star Trek Prodigy: Supernova",
@@ -107539,23 +107552,59 @@
           "sources": [
             {
               "name": "Nintendo Life",
-              "score": 70.0,
+              "score": 70,
               "url": "https://www.nintendolife.com/reviews/nintendo-switch/star-trek-prodigy-supernova",
+              "date": "2022-10-14",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/61820/star-trek-prodigy-supernova-switch-review",
+              "date": "2022-10-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 7.61,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.8,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/star-trek-prodigy-supernova/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 7.800000000000001
+            },
+            {
+              "score": 7.4,
+              "scale": 10,
+              "count": 5,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/nintendo-switch/star_trek_prodigy_supernova",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.23606797749979,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:23:16.852888+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:05:52.539701+00:00"
       },
       "requirements": {
         "image": true,
@@ -107581,7 +107630,12 @@
       ],
       "basics_attempted": "2026-11-02T18:23:16.852888+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -107597,7 +107651,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:05:55.376005+00:00",
+      "full_version": 7
     },
     "Switch:4719": {
       "title": "Stardew Valley",
@@ -132231,34 +132287,202 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 57.6,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Digital Chumps",
+              "score": 75,
+              "url": "https://digitalchumps.com/star-wars-battlefront-classic-collection-review/",
+              "date": "2024-03-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 52,
+              "url": "https://www.games.ch/battlefront-classic/test/review-lRO/",
+              "date": "2024-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingBolt",
+              "score": 80,
+              "url": "https://gamingbolt.com/star-wars-battlefront-classic-collection-review-the-droids-youre-looking-for",
+              "date": "2024-03-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 85,
+              "url": "https://gamingtrend.com/feature/reviews/star-wars-battlefront-classic-collection-review-just-like-the-simulations/",
+              "date": "2024-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "https://www.godisageek.com/reviews/star-wars-battlefront-classic-collection-review/",
+              "date": "2024-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 60,
+              "url": "https://hardcoregamer.com/review-star-wars-battlefront-classic-collection/",
+              "date": "2024-03-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 70,
+              "url": "https://www.heypoorplayer.com/2024/03/17/star-wars-battlefront-classic-collection-review-ps5/",
+              "date": "2024-03-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 30,
+              "url": "https://noisypixel.net/star-wars-battlefront-classic-collection-review/",
+              "date": "2024-04-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PC Games",
+              "score": 40,
+              "url": "https://www.pcgames.de/Star-Wars-Battlefront-Classic-Collection-Spiel-74566/Tests/Review-Wertung-Gameplay-Release-Termin-Playstation-Nintendo-Switch-Steam-1443475/",
+              "date": "2024-03-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PCMag",
+              "score": 50,
+              "url": "https://www.pcmag.com/reviews/star-wars-battlefront-classic-collection",
+              "date": "2024-03-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 85,
+              "url": "https://psxbrasil.com.br/analise/star-wars-battlefront-classic-collection-review/",
+              "date": "2024-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 50,
+              "url": "https://www.psu.com/reviews/star-wars-battlefront-classic-collection-review-ps5/",
+              "date": "2024-03-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 25,
+              "url": "https://www.player2.net.au/2024/04/star-wars-battlefront-classic-collection-review-makes-jar-jar-look-good/",
+              "date": "2024-04-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 85,
+              "url": "https://press-start.com.au/reviews/ps5-reviews/2024/03/13/star-wars-battlefront-classic-collection-review-games-for-a-more-civilised-age/",
+              "date": "2024-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 30,
+              "url": "https://www.pushsquare.com/reviews/ps5/star-wars-battlefront-classic-collection",
+              "date": "2024-03-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 40,
+              "url": "https://screenrant.com/star-wars-battlefront-classic-collection-review/",
+              "date": "2024-03-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 30,
+              "url": "https://www.thegamer.com/star-wars-battlefront-classic-collection-review/",
+              "date": "2024-03-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 70,
+              "url": "https://www.thesixthaxis.com/2024/03/29/star-wars-battlefront-classics-collection-remastered-review/",
+              "date": "2024-03-31",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 18
         },
         "user": {
-          "score": 6.22,
+          "score": 5.52,
           "scale": 10,
           "sources": [
             {
-              "score": 3.11,
-              "count": 10023,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.11,
               "scale": 5,
-              "source": "PSN",
+              "count": 10023,
               "url": "https://store.playstation.com/pt-pt/product/EP1875-PPSA16943_00-SWBATTLEFRONT000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:23:18.905908+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 6.22
+            },
+            {
+              "name": "Metacritic users",
+              "score": 3.2,
+              "scale": 10,
+              "count": 83,
+              "url": "https://www.metacritic.com/game/star-wars-battlefront-classic-collection/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 9.1104335791443,
+              "normalized": 3.2
+            },
+            {
+              "name": "Push Square",
+              "score": 5.2,
+              "scale": 10.0,
+              "count": 6,
+              "url": "https://www.pushsquare.com/games/ps5/star_wars_battlefront_classic_collection",
+              "platform": "PlayStation 5",
+              "weight": 2.449489742783178,
+              "normalized": 5.2
             }
           ],
-          "source_count": 1,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:23:16.853241+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 18,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:06:10.363574+00:00"
       },
       "requirements": {
         "image": true,
@@ -132300,7 +132524,9 @@
       },
       "basics_attempted": "2026-11-02T18:23:16.853241+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -132316,29 +132542,63 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:06:11.459205+00:00",
+      "full_version": 7
     },
     "Switch:15035": {
       "title": "Star Wars: Battlefront Classic Collection",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 40.0,
+          "score": 56.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 40.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/star-wars-battlefront-classic-collection",
+              "name": "CGMagazine",
+              "score": 60,
+              "url": "https://www.cgmagonline.com/review/game/star-wars-battlefront-classic-collection/",
+              "date": "2024-03-18",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 70,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-star-wars-battlefront-classic-collection-problematica-adaptacion-shooter-clasico-1372595",
+              "date": "2024-03-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=star-wars-battlefront-classic-collection-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 40,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/star-wars-battlefront-classic-collection",
+              "date": "2024-03-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Tactics",
+              "score": 40,
+              "url": "https://www.pockettactics.com/star-wars-battlefront-classic-collection/switch-review",
+              "date": "2024-03-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": 6.2,
+          "score": 5.5,
           "scale": 10,
           "sources": [
             {
@@ -132349,14 +132609,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/star_wars_battlefront_classic_collection",
               "platform": "Nintendo Switch",
               "weight": 4.123105625617661,
-              "normalized": 6.2,
-              "checked": "2026-11-02T18:23:16.853490+00:00"
+              "normalized": 6.2
+            },
+            {
+              "name": "Metacritic users",
+              "score": 4.2,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/star-wars-battlefront-classic-collection/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.23606797749979,
+              "normalized": 4.2
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:15.963584+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:05:57.547092+00:00"
       },
       "requirements": {
         "image": true,
@@ -132372,7 +132646,12 @@
       },
       "basics_attempted": "2026-11-02T22:49:15.963584+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/star-wars-battlefront-classic-collection-switch/",
@@ -132422,7 +132701,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:05:59.443119+00:00",
+      "full_version": 7
     },
     "Switch:14925": {
       "title": "Stolen Realm",
@@ -144185,15 +144466,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.14,
-              "count": 1326,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.14,
               "scale": 5,
-              "source": "PSN",
+              "count": 1326,
               "url": "https://store.playstation.com/pt-pt/product/UP1082-PPSA21985_00-0384550355606536",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:23:44.323310+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 8.28
             }
@@ -144201,7 +144480,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:23:42.982320+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:06:05.217391+00:00"
       },
       "requirements": {
         "image": true,
@@ -144243,7 +144529,11 @@
       },
       "basics_attempted": "2026-11-02T18:23:42.982320+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -144259,7 +144549,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:06:06.640382+00:00",
+      "full_version": 7
     },
     "Switch:15248": {
       "title": "Surmount: A Mountain Climbing Adventure",
@@ -163800,34 +164092,61 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 85.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "PlayStation Universe",
+              "score": 85.0,
+              "url": "https://www.psu.com/reviews/star-wars-episode-i-jedi-power-battles-ps5-review/",
+              "platform": "PlayStation 5",
+              "original_score": 8.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
-          "score": 8.04,
+          "score": 7.97,
           "scale": 10,
           "sources": [
             {
-              "score": 4.02,
-              "count": 691,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.02,
               "scale": 5,
-              "source": "PSN",
+              "count": 691,
               "url": "https://store.playstation.com/pt-pt/product/EP1875-PPSA16921_00-JEDIPOWERBATTLES",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:23:21.362314+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 26.28687885618983,
               "normalized": 8.04
+            },
+            {
+              "score": 6.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/star_wars_episode_i_jedi_power_battles",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 6.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:23:18.914544+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:06:00.301954+00:00"
       },
       "requirements": {
         "image": true,
@@ -163869,7 +164188,10 @@
       },
       "basics_attempted": "2026-11-02T18:23:18.914544+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -163885,26 +164207,92 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:06:01.028170+00:00",
+      "full_version": 7
     },
     "Switch:16010": {
       "title": "Star Wars: Episode I: Jedi Power Battles",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 59.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/star-wars-episode-i-jedi-power-battles",
+              "name": "CGMagazine",
+              "score": 50,
+              "url": "https://www.cgmagonline.com/review/game/star-wars-episode-i-jedi-power-battles-nintendo-switch/",
+              "date": "2025-01-23",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 70,
+              "url": "https://www.godisageek.com/reviews/star-wars-episode-1-jedi-power-battles-review/",
+              "date": "2025-01-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 80,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-star-wars-episode-i-jedi-power-battles-homenaje-espadas-laser-juegos-arcade-1437119",
+              "date": "2025-01-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 50,
+              "url": "https://www.impulsegamer.com/star-wars-episode-i-jedi-power-battles-review-switch/?utm_source=ReviveOldPost&utm_medium=social&utm_campaign=ReviveOldPost",
+              "date": "2025-01-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 45,
+              "url": "https://multiplayer.it/recensioni/star-wars-episode-i-jedi-power-battles-remaster-recensione.html",
+              "date": "2025-01-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 68.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=star-wars-episode-i-jedi-power-battles-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/star-wars-episode-i-jedi-power-battles-review/",
+              "date": "2025-05-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/star-wars-episode-i-jedi-power-battles",
+              "date": "2025-01-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 40,
+              "url": "https://universonintendo.com/analise-star-wars-jedi-power-battles/",
+              "date": "2025-04-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
           "score": 5.8,
@@ -163918,14 +164306,20 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/star_wars_episode_i_jedi_power_battles",
               "platform": "Nintendo Switch",
               "weight": 3.3166247903554,
-              "normalized": 5.8,
-              "checked": "2026-11-02T18:23:42.982106+00:00"
+              "normalized": 5.8
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:28.465000+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [
+          "Metacritic users: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:06:08.239608+00:00"
       },
       "requirements": {
         "image": true,
@@ -163941,7 +164335,13 @@
       },
       "basics_attempted": "2026-11-02T22:49:28.465000+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Metacritic users: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/star-wars-episode-i-jedi-power-battles-switch/",
@@ -163991,7 +164391,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:06:10.281272+00:00",
+      "full_version": 7
     },
     "Switch:16006": {
       "title": "StormEdge",
@@ -175004,15 +175406,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.7,
-              "count": 716,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.7,
               "scale": 5,
-              "source": "PSN",
+              "count": 716,
               "url": "https://store.playstation.com/pt-pt/product/UP1082-PPSA07364_00-6500186936636096",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:23:19.993381+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 26.758176320519304,
               "normalized": 7.4
             }
@@ -175020,7 +175420,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:23:18.848589+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:05:50.222902+00:00"
       },
       "requirements": {
         "image": true,
@@ -175062,7 +175469,11 @@
       },
       "basics_attempted": "2026-11-02T18:23:18.848589+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -175078,7 +175489,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:05:50.653236+00:00",
+      "full_version": 7
     },
     "Switch:16323": {
       "title": "Strania -The Stella Machina- EX",
@@ -183643,26 +184056,33 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/console-games-grab-bag-tactics-scares-and-shields#starlightriders-hyperjump",
+              "date": "2025-12-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 7.08,
           "scale": 10,
           "sources": [
             {
-              "score": 3.54,
-              "count": 28,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.54,
               "scale": 5,
-              "source": "PSN",
+              "count": 28,
               "url": "https://store.playstation.com/pt-pt/product/UP2005-PPSA28552_00-STARLIGHTRIDERS0",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:23:45.196103+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 5.291502622129181,
               "normalized": 7.08
             }
@@ -183670,7 +184090,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:23:42.983959+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:06:15.231356+00:00"
       },
       "requirements": {
         "image": true,
@@ -183712,7 +184139,11 @@
       },
       "basics_attempted": "2026-11-02T18:23:42.983959+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -183728,7 +184159,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:06:15.620602+00:00",
+      "full_version": 7
     },
     "Switch:16702": {
       "title": "StarLightRiders: HyperJump",
@@ -284580,7 +285013,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 68.0,
+          "score": 64.0,
           "scale": 100,
           "sources": [
             {
@@ -284589,19 +285022,44 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=starcrossed-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 60,
+              "url": "http://www.nintendoworldreport.com/review/53628/starcrossed-switch-review",
+              "date": "2020-05-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 4.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/starcrossed",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:28.465259+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:06:03.423107+00:00"
       },
       "requirements": {
         "image": true,
@@ -284617,7 +285075,11 @@
       },
       "basics_attempted": "2026-11-02T22:49:28.465259+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/starcrossed-switch/",
@@ -284666,7 +285128,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:06:05.708733+00:00",
+      "full_version": 7
     },
     "Switch:5898": {
       "title": "Stay Cool, Kobayashi-San!: A River City Ransom Story",
