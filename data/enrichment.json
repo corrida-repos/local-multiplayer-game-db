@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:11:42.157232+00:00",
+  "updated": "2026-11-03T06:12:47.892690+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1261,
+    "full_attempted": 1271,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -42372,6 +42372,7 @@
               "name": "TouchArcade",
               "score": 80,
               "url": "https://toucharcade.com/2023/09/05/taito-milestones-2-switch-eshop-review-digital-release-rhapsody-marl-kingdom-chronicles/",
+              "date": "2023-09-05",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -42386,7 +42387,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T00:40:23.503699+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:12:01.282675+00:00"
       },
       "requirements": {
         "image": true,
@@ -42398,7 +42407,12 @@
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/a/a7/Gurume-Sentai-Barayar%C5%8D.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
@@ -42438,7 +42452,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:12:03.237498+00:00",
+      "full_version": 7
     },
     "PS5:11887": {
       "title": "Gravitar: Recharged",
@@ -42485,27 +42501,41 @@
           "source_count": 4
         },
         "user": {
-          "score": 8.14,
+          "score": 7.44,
           "scale": 10,
           "sources": [
             {
-              "score": 4.07,
-              "count": 42,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.07,
               "scale": 5,
-              "source": "PSN",
+              "count": 42,
               "url": "https://store.playstation.com/pt-pt/product/EP0182-PPSA07625_00-4445486078309741",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:22:07.922669+00:00",
-              "platform": "PSN · PS5",
               "weight": 6.48074069840786,
               "normalized": 8.14
+            },
+            {
+              "score": 5.4,
+              "scale": 10,
+              "count": 5,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/gravitar_recharged",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 2.23606797749979,
+              "normalized": 5.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:22:05.458711+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:11:59.706873+00:00"
       },
       "requirements": {
         "image": true,
@@ -42547,7 +42577,10 @@
       },
       "basics_attempted": "2026-11-02T17:22:05.458711+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -42563,14 +42596,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:12:00.150503+00:00",
+      "full_version": 7
     },
     "Switch:11885": {
       "title": "Gravitar: Recharged",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.1,
+          "score": 70.8,
           "scale": 100,
           "sources": [
             {
@@ -42588,6 +42623,13 @@
               "date": "2022-06-08",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=gravitar-recharged-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             },
             {
               "name": "Player 2",
@@ -42631,16 +42673,33 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 7
+          "source_count": 8
         },
         "user": {
-          "score": null,
+          "score": 6.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 6.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/gravitar_recharged",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 6.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:33:34.005971+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:12:16.429415+00:00"
       },
       "requirements": {
         "image": true,
@@ -42656,7 +42715,11 @@
       },
       "basics_attempted": "2026-11-02T22:33:34.005971+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/gravitar-recharged-switch/",
@@ -42705,7 +42768,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:12:18.374893+00:00",
+      "full_version": 7
     },
     "Switch:14153": {
       "title": "Growl",
@@ -42975,7 +43040,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 49.8,
+          "score": 54.2,
           "scale": 100,
           "sources": [
             {
@@ -42985,6 +43050,13 @@
               "date": "2018-03-12",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=guilt-battle-arena-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             },
             {
               "name": "Nintenderos",
@@ -43019,6 +43091,15 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Pure Nintendo",
+              "score": 60.0,
+              "url": "https://purenintendo.com/review-guilt-battle-arena-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 6.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "Switch Player",
               "score": 40,
               "url": "http://switchplayer.net/2018/04/02/guilt-battle-arena-review/",
@@ -43028,16 +43109,33 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 6
+          "source_count": 8
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/guilt_battle_arena",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:22:10.203482+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:12:31.497633+00:00"
       },
       "requirements": {
         "image": true,
@@ -43060,7 +43158,10 @@
       },
       "basics_attempted": "2026-11-02T17:22:10.203482+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -43076,7 +43177,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:12:47.651503+00:00",
+      "full_version": 7
     },
     "Switch:12378": {
       "title": "Gun Frontier",
@@ -191115,15 +191218,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 2.44,
-              "count": 179,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 2.44,
               "scale": 5,
-              "source": "PSN",
+              "count": 179,
               "url": "https://store.playstation.com/pt-pt/product/HB1179-PPSA32765_00-0486991519684660",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:22:08.070910+00:00",
-              "platform": "PSN · PS5",
               "weight": 13.379088160259652,
               "normalized": 4.88
             }
@@ -191131,7 +191232,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:22:06.641979+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:12:04.466864+00:00"
       },
       "requirements": {
         "image": true,
@@ -191173,7 +191281,11 @@
       },
       "basics_attempted": "2026-11-02T17:22:06.641979+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -191189,7 +191301,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:12:04.762345+00:00",
+      "full_version": 7
     },
     "PS5:18278": {
       "title": "Gunboat God",
@@ -191207,15 +191321,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.13,
-              "count": 8,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.13,
               "scale": 5,
-              "source": "PSN",
+              "count": 8,
               "url": "https://store.playstation.com/pt-pt/product/UP2660-PPSA34003_00-0185371045862545",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:22:14.682215+00:00",
-              "platform": "PSN · PS5",
               "weight": 2.8284271247461903,
               "normalized": 8.26
             }
@@ -191223,7 +191335,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:22:13.448130+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:12:09.467428+00:00"
       },
       "requirements": {
         "image": true,
@@ -191265,7 +191384,11 @@
       },
       "basics_attempted": "2026-11-02T17:22:13.448130+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -191281,7 +191404,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:12:09.736124+00:00",
+      "full_version": 7
     },
     "PS5:18168": {
       "title": "Hero Siege",
@@ -230791,22 +230916,167 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 87.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/guacamelee_2",
+              "name": "3DJuegos",
+              "score": 90,
+              "url": "https://www.3djuegos.com/juegos/analisis/33414/0/guacamelee-2/",
+              "date": "2018-12-18",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 80,
+              "url": "https://cogconnected.com/review/guacamelee-2-review/",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 90,
+              "url": "http://www.cubed3.com/review/5231/1/guacamelee-2-nintendo-switch.html",
+              "date": "2018-12-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 80,
+              "url": "https://www.darkstation.com/reviews/guacamelee-2-switch-review",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 80,
+              "url": "https://www.eurogamer.it/articles/2018-12-10-guacamelee-2-switch-recensione",
+              "date": "2018-12-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "https://fnintendo.net/article/11858-guacamelee-2",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 90,
+              "url": "https://www.gamespace.com/reviews/guacamelee-2-review-nintendo-switch/",
+              "date": "2018-12-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "https://www.godisageek.com/reviews/switch-report-review-36/",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 90,
+              "url": "https://multiplayer.it/recensioni/guacamelee-2-recensione-xbox-one.html",
+              "date": "2019-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 90.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=guacamelee-2-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 86,
+              "url": "https://www.nintenderos.com/2018/12/analisis-guacamelee-2/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 95,
+              "url": "https://www.nintendoenthusiast.com/2018/12/01/guacamelee-2-review/",
+              "date": "2018-12-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 90,
+              "url": "https://www.nintendo-insider.com/guacamelee-2-review/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/guacamelee_2",
+              "date": "2018-12-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/49118/guacamelee-2-switch-review",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 90.0,
+              "url": "https://purenintendo.com/review-guacamelee-2-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 9.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 90,
+              "url": "https://screenrant.com/guacamelee-2-switch-review/",
+              "date": "2018-12-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 90,
+              "url": "http://switchplayer.net/2018/12/23/guacamelee-2-review/",
+              "date": "2018-12-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 88,
+              "url": "https://www.thegamesmachine.it/guacamelee-2-pc-ps4-switch/guacamelee-2-recensione-switch/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 19
         },
         "user": {
-          "score": 7.9,
+          "score": 8.16,
           "scale": 10,
           "sources": [
             {
@@ -230817,14 +231087,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/guacamelee_2",
               "platform": "Nintendo Switch",
               "weight": 8.246211251235321,
-              "normalized": 7.9,
-              "checked": "2026-11-02T17:27:58.400394+00:00"
+              "normalized": 7.9
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.4,
+              "scale": 10,
+              "count": 83,
+              "url": "https://www.metacritic.com/game/guacamelee-2/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 9.1104335791443,
+              "normalized": 8.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:35:12.929698+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 17,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:12:26.404498+00:00"
       },
       "requirements": {
         "image": true,
@@ -230840,7 +231124,9 @@
       },
       "basics_attempted": "2026-11-02T22:35:12.929698+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/guacamelee-2-switch/",
@@ -230889,29 +231175,105 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:12:37.523397+00:00",
+      "full_version": 7
     },
     "Switch:5390": {
       "title": "Guacamelee! Super Turbo Championship Edition",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 86.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/guacamelee_super_turbo_championship_edition",
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/5285/1/guacamelee-super-turbo-championship-edition-nintendo-switch.html",
+              "date": "2019-01-18",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "https://fnintendo.net/article/11824-guacamelee-super-turbo-championship-edition",
+              "date": "2018-12-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 90,
+              "url": "https://multiplayer.it/recensioni/guacamelee-recensione-nintendo-switch.html",
+              "date": "2018-10-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 85,
+              "url": "https://www.nintenderos.com/2018/10/analisis-guacamelee-super-turbo-championship-edition-2/",
+              "date": "2018-10-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 95,
+              "url": "https://www.nintendoenthusiast.com/2018/11/19/guacamelee-switch-review/",
+              "date": "2018-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 90,
+              "url": "https://www.nintendo-insider.com/guacamelee-super-turbo-championship-edition-review-switch/",
+              "date": "2018-10-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/guacamelee_super_turbo_championship_edition",
+              "date": "2018-10-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/48661/guacamelee-super-turbo-championship-edition-switch-review",
+              "date": "2018-10-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 90.0,
+              "url": "https://purenintendo.com/review-guacamelee-super-turbo-championship-edition-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 9.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Vooks",
+              "score": 90,
+              "url": "https://www.vooks.net/guacamelee-super-turbo-championship-edition-switch-review/",
+              "date": "2018-10-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 10
         },
         "user": {
-          "score": 7.8,
+          "score": 7.89,
           "scale": 10,
           "sources": [
             {
@@ -230922,14 +231284,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/guacamelee_super_turbo_championship_edition",
               "platform": "Nintendo Switch",
               "weight": 9.746794344808963,
-              "normalized": 7.800000000000001,
-              "checked": "2026-11-02T17:28:00.604160+00:00"
+              "normalized": 7.800000000000001
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 69,
+              "url": "https://www.metacritic.com/game/guacamelee-super-turbo-championship-edition/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 8.306623862918075,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:35:12.929998+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:12:21.437807+00:00"
       },
       "requirements": {
         "image": true,
@@ -230945,7 +231321,11 @@
       },
       "basics_attempted": "2026-11-02T22:35:12.929998+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/guacamelee-super-turbo-championship-edition-switch/",
@@ -230994,7 +231374,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:12:29.217732+00:00",
+      "full_version": 7
     },
     "Switch:5406": {
       "title": "I Hate Running Backwards",
@@ -259400,7 +259782,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 81.0,
+          "score": 80.3,
           "scale": 100,
           "sources": [
             {
@@ -259409,19 +259791,52 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=grand-brix-shooter-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-grand-brix-shooter-nintendo-switch/",
+              "date": "2019-09-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/unique-indie-games-part-4#grand-brix-shooter",
+              "date": "2019-09-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/grand_brix_shooter",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:36:11.221811+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:12:06.471941+00:00"
       },
       "requirements": {
         "image": true,
@@ -259437,7 +259852,11 @@
       },
       "basics_attempted": "2026-11-02T22:36:11.221811+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/grand-brix-shooter-switch/",
@@ -259486,7 +259905,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:12:08.044188+00:00",
+      "full_version": 7
     },
     "Switch:7169": {
       "title": "Guns, Gore & Cannoli 2",
@@ -303117,9 +303538,17 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 68.0,
+          "score": 69.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "Digitally Downloaded",
+              "score": 70,
+              "url": "http://www.digitallydownloaded.net/2021/04/review-gravity-heroes-nintendo-switch.html",
+              "date": "2021-04-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 68.0,
@@ -303129,16 +303558,33 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 6.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 6.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/gravity_heroes",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 6.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:38:04.655396+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:12:11.365092+00:00"
       },
       "requirements": {
         "image": true,
@@ -303154,7 +303600,12 @@
       },
       "basics_attempted": "2026-11-02T22:38:04.655396+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/gravity-heroes-switch/",
@@ -303203,7 +303654,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:12:12.937010+00:00",
+      "full_version": 7
     },
     "Switch:8898": {
       "title": "Gunslugs 2",
