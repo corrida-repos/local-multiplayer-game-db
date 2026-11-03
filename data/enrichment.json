@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T05:49:45.140701+00:00",
+  "updated": "2026-11-03T05:50:31.344324+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1151,
+    "full_attempted": 1161,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -34240,8 +34240,7 @@
               "url": "https://www.metacritic.com/game/fifa-22/user-reviews/?platform=playstation-5",
               "platform": "PlayStation 5",
               "weight": 30.066592756745816,
-              "normalized": 4.2,
-              "checked": "2026-11-02T20:08:40.329553+00:00"
+              "normalized": 4.2
             },
             {
               "name": "Push Square",
@@ -34251,14 +34250,18 @@
               "url": "https://www.pushsquare.com/games/ps5/fifa_22",
               "platform": "PlayStation 5",
               "weight": 9.273618495495704,
-              "normalized": 6.9,
-              "checked": "2026-11-02T20:08:40.329553+00:00"
+              "normalized": 6.9
             }
           ],
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:42:41.892700+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 63,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:50:30.740512+00:00"
       },
       "requirements": {
         "image": true,
@@ -34276,7 +34279,8 @@
       "version": 7,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "psn": "No exact Portugal PS5 product verified"
+        "psn": "No exact Portugal PS5 product verified",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -34310,7 +34314,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:50:31.107461+00:00",
+      "full_version": 7
     },
     "PS5:10516": {
       "title": "Fallen City Brawl",
@@ -34337,15 +34343,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.57,
-              "count": 51,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.57,
               "scale": 5,
-              "source": "PSN",
+              "count": 51,
               "url": "https://store.playstation.com/pt-pt/product/UP2005-PPSA05215_00-FALLENCITYBRAWL0",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:08:37.751775+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 7.14142842854285,
               "normalized": 9.14
             }
@@ -34353,7 +34357,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:08:35.996502+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:50:05.435678+00:00"
       },
       "requirements": {
         "image": true,
@@ -34395,7 +34406,11 @@
       },
       "basics_attempted": "2026-11-02T17:08:35.996502+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -34411,7 +34426,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:50:06.163280+00:00",
+      "full_version": 7
     },
     "Switch:10518": {
       "title": "Fallen City Brawl",
@@ -34448,7 +34465,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:24.152636+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:50:09.973304+00:00"
       },
       "requirements": {
         "image": true,
@@ -34465,7 +34489,12 @@
       "basics_attempted": "2026-11-02T22:32:24.152636+00:00",
       "version": 7,
       "errors": {
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -34504,7 +34533,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:50:11.963407+00:00",
+      "full_version": 7
     },
     "Switch:14412": {
       "title": "Farm Land",
@@ -144888,34 +144919,243 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.7,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "COGconnected",
+              "score": 80,
+              "url": "https://cogconnected.com/review/fantasy-life-i-the-girl-who-steals-time-review/",
+              "date": "2025-05-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DBLTAP",
+              "score": 80,
+              "url": "https://www.dbltap.com/reviews/fantasy-life-i-girl-who-steals-time-review",
+              "date": "2025-06-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 100,
+              "url": "https://www.digitallydownloaded.net/2025/06/review-fantasy-life-i-the-girl-who-steals-time-sony-playstation-5.html",
+              "date": "2025-06-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 80,
+              "url": "https://www.dualshockers.com/fantasy-life-i-the-girl-who-steals-time-review/",
+              "date": "2025-05-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 82,
+              "url": "https://www.games.ch/fantasy-life-i/test/review-mnjg/",
+              "date": "2025-06-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game8",
+              "score": 80,
+              "url": "https://game8.co/articles/reviews/fantasy-life-i-the-girl-who-steals-time-review",
+              "date": "2025-05-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameBlast",
+              "score": 20,
+              "url": "https://www.gameblast.com.br/2025/06/analise-fantasy-life-i-girl-who-steals-time-review.html",
+              "date": "2025-06-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 95,
+              "url": "https://www.gamegrin.com/reviews/fantasy-life-i-the-girl-who-steals-time-review/",
+              "date": "2025-06-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameMAG",
+              "score": 80,
+              "url": "https://gamemag.ru/reviews/fantsay-life-i-the-girl-who-steals-time-ps5-review",
+              "date": "2025-07-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 90,
+              "url": "https://www.gameover.gr/2025/06/05/fantasy-life-i-the-girl-who-steals-time-review/",
+              "date": "2025-06-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 85,
+              "url": "https://www.gamepro.de/artikel/fantasy-life-i-test,3433688.html",
+              "date": "2025-05-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 70,
+              "url": " https://www.gameblog.fr/jeu-video/jeux/tests/fantasy-life-i-ps5-test-697570",
+              "date": "2025-06-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamesurf",
+              "score": 80,
+              "url": "https://www.gamesurf.it/recensioni/gioco/fantasy-life-i-la-ragazza-che-ruba-il-tempo-recensione",
+              "date": "2025-06-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 90,
+              "url": "https://gaming-age.com/2025/06/fantasy-life-i-the-girl-who-steals-time-review-for-playstation-5-xbox-series-xs-nintendo-switch-2-and-pc/",
+              "date": "2025-06-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 90,
+              "url": "https://www.ign.com/articles/fantasy-life-i-the-girl-who-steals-time-review",
+              "date": "2025-05-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/fantasy-life-i-la-ragazza-che-ruba-il-tempo-recensione.html",
+              "date": "2025-06-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 85,
+              "url": "https://psxbrasil.com.br/fantasy-life-i-the-girl-who-steals-time-review/",
+              "date": "2025-06-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Extreme",
+              "score": 98,
+              "url": "https://psxextreme.com/reviews/fantasy-life-i-the-girl-who-steals-time-review/",
+              "date": "2025-06-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlaySense",
+              "score": 80,
+              "url": "https://playsense.nl/651068/review-fantasy-life-i-the-girl-who-steals-time/",
+              "date": "2025-06-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 80,
+              "url": "https://www.pushsquare.com/reviews/ps5/fantasy-life-i-the-girl-who-steals-time",
+              "date": "2025-05-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Jimquisition",
+              "score": 60,
+              "url": "https://www.thejimquisition.com/post/fantasy-life-i-the-girl-who-steals-time-breath-of-the-mild-review",
+              "date": "2025-06-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 87,
+              "url": "https://vandal.elespanol.com/analisis/ps5/fantasy-life-i-la-pequena-ladrona-del-tiempo/192756#p-89",
+              "date": "2025-05-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 83,
+              "url": "https://videochums.com/review/fantasy-life-i-the-girl-who-steals-time",
+              "date": "2025-05-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 23
         },
         "user": {
-          "score": 9.52,
+          "score": 9.25,
           "scale": 10,
           "sources": [
             {
-              "score": 4.76,
-              "count": 4158,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.76,
               "scale": 5,
-              "source": "PSN",
+              "count": 4158,
               "url": "https://store.playstation.com/pt-pt/product/JP0720-PPSA27625_00-FANTASYLIFEIGAME",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:08:36.227315+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 9.52
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.5,
+              "scale": 10,
+              "count": 160,
+              "url": "https://www.metacritic.com/game/fantasy-life-i-the-girl-who-steals-time/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 12.649110640673518,
+              "normalized": 8.5
+            },
+            {
+              "score": 10.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/fantasy_life_i_the_girl_who_steals_time",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 10.0
             }
           ],
-          "source_count": 1,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:08:32.340873+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 24,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:50:15.653552+00:00"
       },
       "requirements": {
         "image": true,
@@ -144957,7 +145197,9 @@
       },
       "basics_attempted": "2026-11-02T17:08:32.340873+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -144973,29 +145215,104 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:50:16.206063+00:00",
+      "full_version": 7
     },
     "Switch:16598": {
       "title": "FANTASY LIFE i: The Girl Who Steals Time",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 85.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/fantasy-life-i-the-girl-who-steals-time",
+              "name": "Atomix",
+              "score": 90,
+              "url": "https://atomix.vg/review-fantasy-life-i-the-girl-who-steals-time/",
+              "date": "2025-06-07",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Final Weapon",
+              "score": 70,
+              "url": "https://finalweapon.net/2025/06/23/fantasy-life-i-the-girl-who-steals-time-review-a-faithful-return/",
+              "date": "2025-07-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamezebo",
+              "score": 90,
+              "url": "https://www.gamezebo.com/reviews/fantasy-life-i-the-girl-who-steals-time-review/",
+              "date": "2025-07-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Benelux",
+              "score": 95,
+              "url": "https://nl.ign.com/fantasy-life-i-the-girl-who-steals-time/157512/review/fantasy-life-i-the-girl-who-steals-time-review-verrassend-diepe-rpg",
+              "date": "2025-05-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/fantasy-life-i-the-girl-who-steals-time",
+              "date": "2025-06-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Oyungezer",
+              "score": 80,
+              "url": "https://oyungezer.com.tr/inceleme/fantasy-life-i-the-girl-who-steals-time-inceleme",
+              "date": "2025-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 80,
+              "url": "https://www.rpgfan.com/review/fantasy-life-i-the-girl-who-steals-time/",
+              "date": "2025-07-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Retcon",
+              "score": 90,
+              "url": "https://retconmagazine.com/2025/05/fantasy-life-i-the-girl-who-steals-time-the-retcon-review/",
+              "date": "2025-05-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "This Is Game",
+              "score": 80,
+              "url": "https://www.thisisgame.com/webzine/nboard/282/?n=213575",
+              "date": "2025-06-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 90,
+              "url": "https://universonintendo.com/analise-fantasy-life-i-the-girl-who-steals-time/",
+              "date": "2025-06-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 10
         },
         "user": {
-          "score": 8.2,
+          "score": 8.44,
           "scale": 10,
           "sources": [
             {
@@ -145006,14 +145323,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/fantasy_life_i_the_girl_who_steals_time",
               "platform": "Nintendo Switch",
               "weight": 8.246211251235321,
-              "normalized": 8.2,
-              "checked": "2026-11-02T17:08:33.803461+00:00"
+              "normalized": 8.2
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.9,
+              "scale": 10,
+              "count": 18,
+              "url": "https://www.metacritic.com/game/fantasy-life-i-the-girl-who-steals-time/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.242640687119285,
+              "normalized": 8.9
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:24.152363+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:50:00.089259+00:00"
       },
       "requirements": {
         "image": true,
@@ -145029,7 +145360,12 @@
       },
       "basics_attempted": "2026-11-02T22:32:24.152363+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/fantasy-life-i-the-girl-who-steals-time-switch/",
@@ -145078,7 +145414,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:50:02.540461+00:00",
+      "full_version": 7
     },
     "Switch:16573": {
       "title": "Fatal Fury: King of Fighters",
@@ -153761,15 +154099,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.39,
-              "count": 28,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.39,
               "scale": 5,
-              "source": "PSN",
+              "count": 28,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA27090_00-FEUDALBROSTONORG",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:10:02.718782+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 5.291502622129181,
               "normalized": 8.78
             }
@@ -153777,7 +154113,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:10:01.514617+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:50:20.445199+00:00"
       },
       "requirements": {
         "image": true,
@@ -153819,7 +154162,11 @@
       },
       "basics_attempted": "2026-11-02T17:10:01.514617+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -153835,7 +154182,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:50:21.085112+00:00",
+      "full_version": 7
     },
     "Switch:17068": {
       "title": "Finnigan Fox",
@@ -161708,15 +162057,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.73,
-              "count": 1017,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.73,
               "scale": 5,
-              "source": "PSN",
+              "count": 1017,
               "url": "https://store.playstation.com/pt-pt/product/EP0856-PPSA26382_00-FRMTGETHR2EUPS5D",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:12:03.754388+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 9.46
             }
@@ -161724,7 +162071,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:12:02.520545+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:50:25.431860+00:00"
       },
       "requirements": {
         "image": true,
@@ -161766,7 +162120,11 @@
       },
       "basics_attempted": "2026-11-02T17:12:02.520545+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -161782,7 +162140,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:50:25.848045+00:00",
+      "full_version": 7
     },
     "Switch:17164": {
       "title": "Farm Together 2",
@@ -225628,7 +225988,7 @@
           "source_count": 0
         },
         "user": {
-          "score": 6.9,
+          "score": 7.41,
           "scale": 10,
           "sources": [
             {
@@ -225639,14 +225999,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/farm_together",
               "platform": "Nintendo Switch",
               "weight": 3.0,
-              "normalized": 6.9,
-              "checked": "2026-11-02T17:26:11.669552+00:00"
+              "normalized": 6.9
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.9,
+              "scale": 10,
+              "count": 10,
+              "url": "https://www.metacritic.com/game/farm-together/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.1622776601683795,
+              "normalized": 7.9
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:34:29.809780+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:50:20.166305+00:00"
       },
       "requirements": {
         "image": true,
@@ -225662,7 +226036,13 @@
       },
       "basics_attempted": "2026-11-02T22:34:29.809780+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/farm-together-switch/",
@@ -225711,7 +226091,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:50:22.625872+00:00",
+      "full_version": 7
     },
     "Switch:5259": {
       "title": "Flat Heroes",
@@ -264346,7 +264728,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 68.0,
+          "score": 64.0,
           "scale": 100,
           "sources": [
             {
@@ -264355,19 +264737,44 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=fallen-angel-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "RPGamer",
+              "score": 60,
+              "url": "https://rpgamer.com/review/fallen-angel-review/",
+              "date": "2022-08-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/fallen_angel",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:36:38.555864+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:50:15.159938+00:00"
       },
       "requirements": {
         "image": true,
@@ -264383,7 +264790,12 @@
       },
       "basics_attempted": "2026-11-02T22:36:38.555864+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/fallen-angel-switch/",
@@ -264432,7 +264844,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:50:17.254841+00:00",
+      "full_version": 7
     },
     "Switch:7530": {
       "title": "Firework",
@@ -275345,22 +275759,151 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 74.6,
           "scale": 100,
           "sources": [
             {
-              "name": "Push Square",
-              "score": 80.0,
-              "url": "https://www.pushsquare.com/reviews/ps5/fifa_21",
+              "name": "CD-Action",
+              "score": 75,
+              "url": "",
+              "date": "2021-07-23",
               "platform": "PlayStation 5",
-              "via": "Push Square"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 75,
+              "url": "https://www.everyeye.it/articoli/recensione-fifa-21-next-gen-ps5-nuova-generazione-giochi-calcio-51221.html",
+              "date": "2020-12-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 86,
+              "url": "https://www.games.ch/fifa-21/test/review-jT4/",
+              "date": "2021-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/fifa-21-review/1900-6417577/",
+              "date": "2020-12-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 60,
+              "url": "http://www.gameblog.fr/tests/3798-fifa-21-ps5",
+              "date": "2020-12-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 60,
+              "url": "https://hardcoregamer.com/2020/12/09/review-fifa-21-ps5/393640/",
+              "date": "2020-12-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 80,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-fifa-21-ps5-xbox-series-xs-768955",
+              "date": "2020-12-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 70,
+              "url": "https://www.ign.com/articles/fifa-21-review",
+              "date": "2020-12-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 70,
+              "url": "https://www.jeuxactu.com/test-fifa-21-ps5-xbox-series-x-une-version-next-gen-qui-n-apporte-rien-124971.htm",
+              "date": "2020-12-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 70,
+              "url": "https://www.jeuxvideo.com/test/1335653/fifa-21-simple-lifting-sur-next-gen.htm",
+              "date": "2020-12-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG Spain",
+              "score": 78,
+              "url": "https://es.millenium.gg/analisis/30300.html",
+              "date": "2020-12-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/fifa-21-recensione-per-ps5-xbox-series-x.html",
+              "date": "2020-12-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Playstation Official Magazine UK",
+              "score": 70,
+              "url": "",
+              "date": "2021-01-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 85,
+              "url": "https://press-start.com.au/reviews/ps5-reviews/2021/01/04/fifa-21-ps5-xbox-series-x-review-an-impressive-step-up/",
+              "date": "2021-01-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 80,
+              "url": "http://www.pushsquare.com/reviews/ps5/fifa_21",
+              "date": "2020-12-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 70,
+              "url": "https://screenrant.com/fifa-21-ps5-game-review/",
+              "date": "2020-12-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 80,
+              "url": "https://vandal.elespanol.com/analisis/ps5/fifa-21/86863#p-89",
+              "date": "2020-12-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 17
         },
         "user": {
-          "score": 6.1,
+          "score": 3.54,
           "scale": 10,
           "sources": [
             {
@@ -275371,14 +275914,28 @@
               "url": "https://www.pushsquare.com/games/ps5/fifa_21",
               "platform": "PlayStation 5",
               "weight": 7.54983443527075,
-              "normalized": 6.1,
-              "checked": "2026-11-02T19:24:12.859606+00:00"
+              "normalized": 6.1
+            },
+            {
+              "name": "Metacritic users",
+              "score": 2.2,
+              "scale": 10,
+              "count": 208,
+              "url": "https://www.metacritic.com/game/fifa-21/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 14.422205101855956,
+              "normalized": 2.2
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:01:50.816580+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 17,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:50:10.416245+00:00"
       },
       "requirements": {
         "image": true,
@@ -275396,7 +275953,9 @@
       "version": 7,
       "errors": {
         "store": "No exact Portugal PS5 product verified",
-        "psn": "No exact Portugal PS5 product verified"
+        "psn": "No exact Portugal PS5 product verified",
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -275430,7 +275989,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:50:11.077945+00:00",
+      "full_version": 7
     },
     "Switch:8042": {
       "title": "Fire & Water",
