@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:18:43.209257+00:00",
+  "updated": "2026-11-03T06:19:43.408561+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1331,
+    "full_attempted": 1341,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -46994,27 +46994,41 @@
           "source_count": 0
         },
         "user": {
-          "score": 10.0,
+          "score": 7.91,
           "scale": 10,
           "sources": [
             {
-              "score": 5,
-              "count": 7,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 5,
               "scale": 5,
-              "source": "PSN",
+              "count": 7,
               "url": "https://store.playstation.com/pt-pt/product/EP3968-PPSA12539_00-0838753827733319",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:39:23.660132+00:00",
-              "platform": "PSN · PS5",
               "weight": 2.6457513110645907,
               "normalized": 10.0
+            },
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/hyper_gunsport",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:39:22.138470+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:19:03.474341+00:00"
       },
       "requirements": {
         "image": true,
@@ -47056,7 +47070,10 @@
       },
       "basics_attempted": "2026-11-02T17:39:22.138470+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -47072,14 +47089,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:19:03.672867+00:00",
+      "full_version": 7
     },
     "Switch:13127": {
       "title": "Hyper Gunsport",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 75.5,
           "scale": 100,
           "sources": [
             {
@@ -47105,19 +47124,43 @@
               "date": "2023-01-24",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 62.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=hyper-gunsport-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 3
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 6.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 6.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/hyper_gunsport",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 6.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:38:18.789385+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:19:00.701898+00:00"
       },
       "requirements": {
         "image": true,
@@ -47133,7 +47176,12 @@
       },
       "basics_attempted": "2026-11-02T22:38:18.789385+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hyper-gunsport-switch/",
@@ -47182,7 +47230,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:19:02.504632+00:00",
+      "full_version": 7
     },
     "Switch:13583": {
       "title": "IGS Classic Arcade Collection",
@@ -166577,7 +166627,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:38:49.343314+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:19:25.570645+00:00"
       },
       "requirements": {
         "image": true,
@@ -166593,7 +166650,13 @@
       },
       "basics_attempted": "2026-11-02T22:38:49.343314+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hyperspaced-switch/",
@@ -166642,7 +166705,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:19:27.296834+00:00",
+      "full_version": 7
     },
     "PS5:17307": {
       "title": "Just Dance 2026 Edition",
@@ -193091,15 +193156,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.74,
-              "count": 823,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.74,
               "scale": 5,
-              "source": "PSN",
+              "count": 823,
               "url": "https://store.playstation.com/pt-pt/product/EB2071-PPSA34372_00-0748332557039838",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:39:21.237666+00:00",
-              "platform": "PSN · PS5",
               "weight": 28.687976575562104,
               "normalized": 7.48
             }
@@ -193107,7 +193170,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:39:20.251597+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:18:58.298168+00:00"
       },
       "requirements": {
         "image": true,
@@ -193149,7 +193219,11 @@
       },
       "basics_attempted": "2026-11-02T17:39:20.251597+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -193165,7 +193239,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:18:59.032142+00:00",
+      "full_version": 7
     },
     "PS5:18171": {
       "title": "Inkling Cats : Beneath the dreams",
@@ -208836,22 +208912,94 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 84.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/huntdown",
+              "name": "Cubed3",
+              "score": 70,
+              "url": "https://www.cubed3.com/games/reviews/nintendo-switch/huntdown",
+              "date": "2026-04-27",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Daily Star",
+              "score": 100,
+              "url": "https://www.dailystar.co.uk/tech/gaming/huntdown-review-16-bit-blast-22016538",
+              "date": "2020-05-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 85.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=huntdown-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2020/10/analisis-huntdown-para-nintendo-switch/",
+              "date": "2020-10-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/huntdown-review/",
+              "date": "2020-06-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/huntdown",
+              "date": "2020-05-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/54064/huntdown-switch-review",
+              "date": "2020-06-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 80,
+              "url": "https://www.starbit.pt/2020/06/16/huntdown/",
+              "date": "2020-06-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TrueGaming",
+              "score": 80,
+              "url": "https://www.true-gaming.net/home/425908/",
+              "date": "2020-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 90,
+              "url": "https://switch-brasil.com/analise-huntdown/",
+              "date": "2020-06-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 10
         },
         "user": {
-          "score": 7.8,
+          "score": 8.08,
           "scale": 10,
           "sources": [
             {
@@ -208862,14 +209010,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/huntdown",
               "platform": "Nintendo Switch",
               "weight": 7.615773105863909,
-              "normalized": 7.800000000000001,
-              "checked": "2026-11-02T17:35:40.024599+00:00"
+              "normalized": 7.800000000000001
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.3,
+              "scale": 10,
+              "count": 89,
+              "url": "https://www.metacritic.com/game/huntdown/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 9.433981132056603,
+              "normalized": 8.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:37:21.629376+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:19:30.644295+00:00"
       },
       "requirements": {
         "image": true,
@@ -208885,7 +209047,10 @@
       },
       "basics_attempted": "2026-11-02T22:37:21.629376+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/huntdown-switch/",
@@ -208934,7 +209099,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:19:34.316931+00:00",
+      "full_version": 7
     },
     "PS5:18916": {
       "title": "Isle of Reveries",
@@ -219981,22 +220148,487 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 78.9,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/hyrule_warriors_definitive_edition",
+              "name": "3DJuegos",
+              "score": 75,
+              "url": "https://www.3djuegos.com/juegos/analisis/31143/0/hyrule-warriors-definitive-edition/",
+              "date": "2018-05-16",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "4P.de",
+              "score": 74,
+              "url": "http://www.4players.de/4players.php/dispbericht/Switch/Test/35372/83176/0/Hyrule_Warriors.html",
+              "date": "2018-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 85,
+              "url": "https://areajugones.sport.es/hyrule-warriors/analisis-definitive-edition/",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "AusGamers",
+              "score": 60,
+              "url": "https://www.ausgamers.com/games/hyrule-warriors-definitive-edition/review/",
+              "date": "2018-06-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 80,
+              "url": "https://www.cgmagonline.com/reviews/hyrule-warriors-definitive-edition-review-benign-battlefield/",
+              "date": "2018-05-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 85,
+              "url": "http://cogconnected.com/review/hyrule-warriors-definite-edition-review/",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 85,
+              "url": "https://www.criticalhit.net/review/hyrule-warriors-definitive-edition-review-link-swords/",
+              "date": "2018-05-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 90,
+              "url": "http://www.cubed3.com/review/4843/1/hyrule-warriors-definitive-edition-nintendo-switch.html",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 90,
+              "url": "http://www.darkstation.com/reviews/hyrule-warriors-definitive-edition-review",
+              "date": "2018-06-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 90,
+              "url": "http://www.digitallydownloaded.net/2018/05/review-hyrule-warriors-definitive.html",
+              "date": "2018-05-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 80,
+              "url": "https://www.dualshockers.com/hyrule-warriors-definitive-edition-nintendo-switch-review/",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 80,
+              "url": "https://www.eurogamer.it/articles/2018-05-16-hyrule-warriors-definitive-edition-recensione",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 72,
+              "url": "https://www.everyeye.it/articoli/recensione-hyrule-warriors-approda-switch-con-definitive-edition-la-38783.html",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FANDOM",
+              "score": 70,
+              "url": "http://fandom.wikia.com/articles/hyrule-warriors-definitive-edition-review-not-the-weakest-link",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "http://fnintendo.net/article/10919-hyrule-warriors-definitive-edition",
+              "date": "2018-06-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Forbes",
+              "score": 80,
+              "url": "https://www.forbes.com/sites/games/2018/06/06/hyrule-warriors-definitive-edition-review-zelda-takes-a-leaf-from-herzog-zwei/#b0aaf5c3be49",
+              "date": "2018-06-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 85,
+              "url": "http://gameover.gr/reviews/37552-hyrule-warriors-definitive-edition-review",
+              "date": "2018-05-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 79,
+              "url": "https://www.gamepro.de/artikel/hyrule-warriors-definitive-edition-xxl-schlachtplatte-zum-mitnehmen,3329993.html",
+              "date": "2018-05-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 85,
+              "url": "https://www.gamespace.com/reviews/hyrule-warriors-definitive-edition-review/",
+              "date": "2018-05-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2018/05/hyrule-warriors-definitive-edition-review/",
+              "date": "2018-05-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/hyrule-warriors-definitive-edition-review-the-grea/1900-6416911/",
+              "date": "2018-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 70,
+              "url": "http://www.gameblog.fr/tests/3053-hyrule-warriors-definitive-edition-switch",
+              "date": "2018-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameplanet",
+              "score": 80,
+              "url": "https://www.gameplanet.com.au/nintendo-switch/reviews/g5b04e3c0de96f/Hyrule-Warriors-Definitive-Edition-review/",
+              "date": "2018-05-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 80,
+              "url": "https://games.tiscali.cz/recenze/hyrule-warriors-definitive-edition-recenze-313796",
+              "date": "2018-07-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesBeat",
+              "score": 84,
+              "url": "https://venturebeat.com/2018/05/16/hyrule-warriors-definitive-edition-review/",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 85,
+              "url": "http://gamingtrend.com/feature/reviews/busting-bombchus-against-the-moblin-mentality-hyrule-warriors-definitive-edition-review/",
+              "date": "2018-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 85,
+              "url": "http://www.godisageek.com/reviews/hyrule-warriors-definitive-edition-review/",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 90,
+              "url": "https://www.hardcoregamer.com/2018/05/21/review-hyrule-warriors-definitive-edition/299875/",
+              "date": "2018-05-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 80,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-hyrule-warriors-definitive-edition-switch-246478",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 75,
+              "url": "http://www.ign.com/articles/2018/05/16/hyrule-warriors-definitive-edition-review",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 82,
+              "url": "http://es.ign.com/hyrule-warriors-definitive-edition-nintendo-switch/133309/review/analisis-de-hyrule-warriors-definitive-edition-para-nintendo",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 80,
+              "url": "http://www.jeuxvideo.com/test/846164/hyrule-warriors-definitive-edition-une-version-ultra-complete-du-muso-zelda.htm",
+              "date": "2018-05-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 75,
+              "url": "http://meristation.as.com/nintendo-switch/hyrule-warriors-definitive-edition/analisis-juego/2254516",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 40,
+              "url": "http://metro.co.uk/2018/05/16/hyrule-warriors-definitive-edition-review-linkle-past-7550813/",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 83,
+              "url": "https://multiplayer.it/recensioni/199203-hyrule-warriors-definitive-edition-la-recensione-di-hyrule-warriors-definitive-edition.html",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "My Nintendo News",
+              "score": 70,
+              "url": "https://mynintendonews.com/2018/05/16/review-hyrule-warriors-definitive-edition-for-nintendo-switch/",
+              "date": "2018-07-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 84,
+              "url": "http://www.nintenderos.com/2018/05/analisis-hyrule-warriors-definitive-edition/",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 85,
+              "url": "http://nintendoenthusiast.com/blog/2018/05/16/hyrule-warriors-definitive-edition-review-nintendo-switch/",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 75,
+              "url": "",
+              "date": "2018-09-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 90,
+              "url": "https://www.nintendo-insider.com/hyrule-warriors-definitive-edition-review/",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/hyrule_warriors_definitive_edition",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/46887/hyrule-warriors-definitive-edition-switch-review",
+              "date": "2018-04-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 80,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/Hyrule+Warriors%3A+Definitive+Edition/review.asp?c=77513",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 77,
+              "url": "http://www.rpgfan.com/reviews/Hyrule_Warriors_Definitive_Edition/index.html",
+              "date": "2018-08-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Site",
+              "score": 80,
+              "url": "https://www.rpgsite.net/review/7374-hyrule-warriors-definitive-edition-review",
+              "date": "2018-06-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 90,
+              "url": "http://www.shacknews.com/article/104950/hyrule-warriors-definitive-edition-review-how-to-triforce",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 70,
+              "url": "https://www.spaziogames.it/recensioni_videogiochi/console_nintendo_switch/22405/hyrule-warriors-definitive-edition-recensione-dello-spin-off-di-zelda-su-nintendo-switch.aspx",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 65,
+              "url": "https://stevivor.com/reviews/review-hyrule-warriors-legends/",
+              "date": "2018-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 90,
+              "url": "http://switchplayer.net/2018/05/16/hyrule-warriors-definitive-edition-review/",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 70,
+              "url": "https://www.thedigitalfix.com/gaming/content/8940/hyrule-warriors-definitive-edition/",
+              "date": "2018-05-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 80,
+              "url": "http://www.trustedreviews.com/reviews/hyrule-warriors-definitive-edition",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 80,
+              "url": "https://twinfinite.net/2018/05/hyrule-warriors-definitive-edition-review/",
+              "date": "2018-05-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "USgamer",
+              "score": 80,
+              "url": "https://www.usgamer.net/articles/hyrule-warriors-definitive-edition-switch-review",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 80,
+              "url": "https://vandal.elespanol.com/analisis/switch/hyrule-warriors-definitive-edition/56345",
+              "date": "2018-05-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 90,
+              "url": "https://www.vooks.net/hyrule-warriors-definitive-edition-switch-review/",
+              "date": "2018-06-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 78,
+              "url": "https://wccftech.com/review/hyrule-warriors-definitive-edition/",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 50,
+              "url": "http://wegotthiscovered.com/gaming/hyrule-warriors-definitive-edition-review/",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 80,
+              "url": "https://www.xgn.nl/review/hyrule-warriors-definitive-edition-review",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 80,
+              "url": "http://www.ztgd.com/reviews/hyrule-warriors-definitive-edition-switch/",
+              "date": "2018-06-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 59
         },
         "user": {
-          "score": 7.9,
+          "score": 7.86,
           "scale": 10,
           "sources": [
             {
@@ -220007,14 +220639,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/hyrule_warriors_definitive_edition",
               "platform": "Nintendo Switch",
               "weight": 24.779023386727733,
-              "normalized": 7.9,
-              "checked": "2026-11-02T17:42:37.349915+00:00"
+              "normalized": 7.9
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.8,
+              "scale": 10,
+              "count": 297,
+              "url": "https://www.metacritic.com/game/hyrule-warriors-definitive-edition/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 17.233687939614086,
+              "normalized": 7.800000000000001
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:02.236327+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 65,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:19:35.707140+00:00"
       },
       "requirements": {
         "image": true,
@@ -220030,7 +220676,12 @@
       },
       "basics_attempted": "2026-11-02T22:39:02.236327+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hyrule-warriors-definitive-edition-switch/",
@@ -220079,7 +220730,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:19:37.550577+00:00",
+      "full_version": 7
     },
     "Switch:5102": {
       "title": "Ikaruga",
@@ -243791,22 +244444,78 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 72.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/hyperparasite",
+              "name": "GameSkinny",
+              "score": 70,
+              "url": "https://www.gameskinny.com/k6us4/hyperparasite-review-mullet-hell",
+              "date": "2020-04-08",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 70,
+              "url": "https://es.ign.com/hyperparasite-nintendo-switch/162207/review/analisis-de-hyperparasite-para-ps4-xbox-one-switch-y-pc ",
+              "date": "2020-04-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=hyperparasite-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/hyperparasite",
+              "date": "2020-04-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 65,
+              "url": "http://www.nintendoworldreport.com/review/53679/hyperparasite-switch-review",
+              "date": "2020-05-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-hyperparasite-nintendo-switch/",
+              "date": "2020-04-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2020/05/05/hyperparasite-review/",
+              "date": "2020-05-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 70,
+              "url": "https://vandal.elespanol.com/analisis/pc/hyperparasite/52801#p-13",
+              "date": "2020-04-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 8
         },
         "user": {
-          "score": 5.6,
+          "score": 6.84,
           "scale": 10,
           "sources": [
             {
@@ -243817,14 +244526,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/hyperparasite",
               "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
-              "normalized": 5.6,
-              "checked": "2026-11-02T17:42:25.929512+00:00"
+              "normalized": 5.6
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 8,
+              "url": "https://www.metacritic.com/game/hyperparasite/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.8284271247461903,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:38:47.533561+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:19:10.661218+00:00"
       },
       "requirements": {
         "image": true,
@@ -243840,7 +244563,10 @@
       },
       "basics_attempted": "2026-11-02T22:38:47.533561+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hyperparasite-switch/",
@@ -243889,7 +244615,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:19:12.558164+00:00",
+      "full_version": 7
     },
     "Switch:5651": {
       "title": "Infected Shelter",
@@ -274462,18 +275190,35 @@
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/hyperlight_ultimate",
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/hyperlight_ultimate?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2019-07-15",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 75,
+              "url": "https://www.nintendoenthusiast.com/2019/07/18/hyperlight-ultimate-review/",
+              "date": "2019-07-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/reviewmini/51203/hyperlight-ultimate-switch-eshop-review-mini",
+              "date": "2019-07-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": 5.5,
+          "score": 6.66,
           "scale": 10,
           "sources": [
             {
@@ -274484,14 +275229,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/hyperlight_ultimate",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 5.5,
-              "checked": "2026-11-02T17:42:29.939223+00:00"
+              "normalized": 5.5
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.6,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/hyperlight-ultimate/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 7.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:38:47.799100+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:19:05.743703+00:00"
       },
       "requirements": {
         "image": true,
@@ -274507,7 +275266,12 @@
       },
       "basics_attempted": "2026-11-02T22:38:47.799100+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hyperlight-ultimate-switch/",
@@ -274556,29 +275320,928 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:19:07.684259+00:00",
+      "full_version": 7
     },
     "Switch:7617": {
       "title": "Hyrule Warriors: Age of Calamity",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 79.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/hyrule_warriors_age_of_calamity",
+              "name": "3DJuegos",
+              "score": 80,
+              "url": "https://www.3djuegos.com/juegos/analisis/37526/0/hyrule-warriors-la-era-del-cataclismo/",
+              "date": "2020-11-18",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "4P.de",
+              "score": 80,
+              "url": "https://www.4players.de/4players.php/spielinfo/Switch/42324/Hyrule_Warriors_Zeit_der_Verheerung.html",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "App Trigger",
+              "score": 85,
+              "url": "https://apptrigger.com/2020/12/09/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 90,
+              "url": "https://areajugones.sport.es/videojuegos/analisis-hyrule-warriors-la-era-del-cataclismo/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 90,
+              "url": "https://atomix.vg/review-hyrule-warriors-age-of-calamity/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 60,
+              "url": "https://attackofthefanboy.com/reviews/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "AusGamers",
+              "score": 85,
+              "url": "https://www.ausgamers.com/games/hyrule-warriors-age-of-calamity/review/",
+              "date": "2020-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 75,
+              "url": "",
+              "date": "2021-06-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 85,
+              "url": "https://www.cgmagonline.com/reviews/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 85,
+              "url": "https://cogconnected.com/review/hyrule-warriors-calamity-review/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ComicBook",
+              "score": 80,
+              "url": "https://comicbook.com/gaming/news/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 70,
+              "url": "https://www.criticalhit.net/gaming/hyrule-warriors-age-of-calamity-review-once-twice-three-times-the-amount-of-bokoblins/ ",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/6187/1/hyrule-warriors-age-of-calamity-nintendo-switch.html",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 85,
+              "url": "https://www.destructoid.com/stories/review-hyrule-warriors-age-of-calamity-610091.phtml",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 95,
+              "url": "http://digitalchumps.com/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Trends",
+              "score": 80,
+              "url": "https://www.digitaltrends.com/game-reviews/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 100,
+              "url": "http://www.digitallydownloaded.net/2020/11/review-hyrule-warriors-age-of-calamity.html",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 90,
+              "url": "https://www.dualshockers.com/hyrule-warriors-age-of-calamity-review-switch/",
+              "date": "2020-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "EGM",
+              "score": 80,
+              "url": "https://egmnow.com/hyrule-warriors-age-of-calamity-review",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Easy Allies",
+              "score": 75,
+              "url": "https://easyallies.com/#!/review/hyrule-warriors-age-of-calamity",
+              "date": "2020-12-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 70,
+              "url": "",
+              "date": "2020-12-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 80,
+              "url": "https://www.eurogamer.it/articles/2020-11-18-hyrule-warriors-lera-della-calamita-recensione",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 77,
+              "url": "https://www.everyeye.it/articoli/recensione-hyrule-warriors-era-calamita-prequel-zelda-botw-50967.html",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMINGbible",
+              "score": 70,
+              "url": "https://www.gamingbible.co.uk/reviews/games-nintendo-hyrule-warriors-age-of-calamity-review-a-bit-of-zelda-magic-20201118",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GRYOnline.pl",
+              "score": 80,
+              "url": "https://www.gry-online.pl/S020.asp?ID=14266",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 75,
+              "url": "https://www.gameinformer.com/review/hyrule-warriors-age-of-calamity/hyrule-warriors-age-of-calamity-review-well-worn-fanservice",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 80,
+              "url": "https://gamerant.com/hyrule-warriors-age-calamity-review/",
+              "date": "2020-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game World Navigator Magazine",
+              "score": 78,
+              "url": "",
+              "date": "2020-12-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCrate",
+              "score": 83,
+              "url": "https://gamecrate.com/reviews/review-hyrule-warriors-age-calamity-not-what-you-expected-still-darn-good-game/26393",
+              "date": "2020-11-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 85,
+              "url": "https://gamecritics.com/gc-staff/hyrule-warriors-age-of-calamity-review/",
+              "date": "2021-02-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 80,
+              "url": "https://www.gamegrin.com/reviews/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-12-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameMAG",
+              "score": 80,
+              "url": "https://gamemag.ru/reviews/hyrule-warriors-age-of-calamity",
+              "date": "2020-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 80,
+              "url": "https://www.gameover.gr/2020/11/18/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 78,
+              "url": "https://www.gamepro.de/artikel/hyrule-warriors-zeit-der-verheerung-test,3364141.html",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSkinny",
+              "score": 90,
+              "url": "https://www.gameskinny.com/17uzt/hyrule-warriors-age-of-calamity-review-once-more-into-the-breach",
+              "date": "2020-11-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 90,
+              "url": "https://www.gamespew.com/2020/11/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 60,
+              "url": "https://www.gamespot.com/reviews/hyrule-warriors-age-of-calamity-review/1900-6417614/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 60,
+              "url": "http://www.gameblog.fr/tests/3762-hyrule-warriors-l-ere-du-fleau-switch",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 85,
+              "url": "https://gamer.nl/artikelen/review/hyrule-warriors-age-of-calamity-is-veel-meer-dan-een-zoethoudertje/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.no",
+              "score": 80,
+              "url": "https://www.gamer.no/artikler/anmeldelse-hyrule-warriors-age-of-calamity/503281",
+              "date": "2020-12-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamersky",
+              "score": 82,
+              "url": "https://www.gamersky.com/review/202011/1340458.shtml",
+              "date": "2020-11-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 80,
+              "url": "https://www.gamesradar.com/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingBolt",
+              "score": 70,
+              "url": "https://gamingbolt.com/hyrule-warriors-age-of-calamity-back-to-the-future",
+              "date": "2020-11-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 75,
+              "url": "https://gamingtrend.com/feature/reviews/bombastic-symphony-hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 85,
+              "url": "https://www.godisageek.com/reviews/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Guardian",
+              "score": 60,
+              "url": "https://www.theguardian.com/games/2020/nov/25/hyrule-warriors-age-of-calamity-review-nintendo-switch-omega-force-koei-tecmo",
+              "date": "2020-11-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 80,
+              "url": "https://hardcoregamer.com/2020/11/23/review-hyrule-warriors-age-of-calamity/392806/",
+              "date": "2020-11-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 80,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-hyrule-warriors-era-cataclismo-nintendo-switch-750739",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 90,
+              "url": "https://www.ign.com/articles/hyrule-warriors-age-of-calamity-review",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 80,
+              "url": "https://it.ign.com/hyrule-warriors-lera-della-calamita-nintendo-switch/175870/review/hyrule-warriors-lera-della-calamita-la-recensione",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Japan",
+              "score": 80,
+              "url": "https://jp.ign.com/zeldamuso-yakusainomokujiroku/48664/review/ ",
+              "date": "2020-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 70,
+              "url": "https://www.impulsegamer.com/hyrule-warriors-age-of-calamity-review-a-war-of-concessions/",
+              "date": "2020-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 70,
+              "url": "https://www.jeuxactu.com/test-hyrule-warriors-l-ere-du-fleau-de-quoi-patienter-jusqu-au-vrai-ze-124868.htm",
+              "date": "2020-11-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 70,
+              "url": "https://www.jeuxvideo.com/test/1323446/hyrule-warriors-l-ere-du-fleau-la-switch-tient-elle-son-hit-de-fin-d-annee.htm",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 80,
+              "url": "https://www.levelup.com/Nintendo-Switch/juegos/590531/Hyrule-Warriors-Age-of-Calamity/review",
+              "date": "2020-12-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "M3",
+              "score": 80,
+              "url": "https://m3.idg.se/2.1022/1.744365/hyrule-warriors-age-of-calamity",
+              "date": "2020-12-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG",
+              "score": 65,
+              "url": "https://fr.millenium.gg/test/374087.html",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG Spain",
+              "score": 82,
+              "url": "https://es.millenium.gg/analisis/29549.html",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MMORPG.com",
+              "score": 75,
+              "url": "https://www.mmorpg.com/reviews/not-so-mmo-hyrule-warrios-age-of-calamity-review-2000120202",
+              "date": "2020-11-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Malditos Nerds",
+              "score": 80,
+              "url": "https://malditosnerds.com/hyrule-warriors-age-of-calamity/analisis-arrasa-todo-n17852",
+              "date": "2020-12-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 75,
+              "url": "https://as.com/meristation/2020/11/18/analisis/1605690141_341358.html",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 60,
+              "url": "https://metro.co.uk/2020/11/18/hyrule-warriors-age-of-calamity-review-button-mash-of-the-wild-13615957/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 85,
+              "url": "https://multiplayer.it/recensioni/hyrule-warriors-lera-della-calamita-recensione.html",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "My Nintendo News",
+              "score": 80,
+              "url": "https://mynintendonews.com/2020/11/18/review-hyrule-warriors-age-of-calamity-for-nintendo-switch/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New Game Network",
+              "score": 68,
+              "url": "https://www.newgamenetwork.com/article/2392/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-12-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 95,
+              "url": "https://www.nintenderos.com/2020/11/analisis-hyrule-warriors-la-era-del-cataclismo-para-nintendo-switch/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 85,
+              "url": "https://www.nintendoenthusiast.com/hyrule-warriors-age-of-calamity-review-nintendo-switch/",
+              "date": "2020-11-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 85,
+              "url": "",
+              "date": "2021-05-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 90,
+              "url": "https://www.nintendo-insider.com/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/hyrule_warriors_age_of_calamity",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "https://www.nintendoworldreport.com/review/55528/hyrule-warriors-age-of-calamity-switch-review",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Ninty Fresh Magazine",
+              "score": 80,
+              "url": "",
+              "date": "2021-10-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 85,
+              "url": "https://noisypixel.net/hyrule-warriors-age-of-calamity-review-switch/",
+              "date": "2020-11-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PCMag",
+              "score": 70,
+              "url": "https://www.pcmag.com/reviews/hyrule-warriors-age-of-calamity-for-nintendo-switch",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 80,
+              "url": "https://play.co.rs/2020/11/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 75,
+              "url": "https://www.player2.net.au/2020/12/hyrule-warriors-age-of-calamity-hyrule-slaughterhouse/",
+              "date": "2020-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 70,
+              "url": "https://www.pocketgamer.com/articles/084843/hyrule-warriors-age-of-calamity-review-a-breathless-and-wild-button-masher/",
+              "date": "2020-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Tactics",
+              "score": 70,
+              "url": "https://www.pockettactics.com/hyrule-warriors-age-of-calamity/review",
+              "date": "2020-11-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Power Unlimited",
+              "score": 88,
+              "url": "https://pu.nl/artikelen/review/hyrule-warriors-age-of-calamity-review-switch-meer-hyrule-dan-warriors/",
+              "date": "2020-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 85,
+              "url": "https://press-start.com.au/reviews/nintendo-switch/2020/11/19/hyrule-warriors-age-of-calamity-review-a-champions-tale/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-hyrule-warriors-age-of-calamity-nintendo-switch/",
+              "date": "2020-11-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 86,
+              "url": "https://www.rpgfan.com/review/hyrule-warriors-age-of-calamity/",
+              "date": "2020-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Site",
+              "score": 80,
+              "url": "https://www.rpgsite.net/review/10559-hyrule-warriors-age-of-calamity-review",
+              "date": "2020-12-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPGamer",
+              "score": 70,
+              "url": "https://rpgamer.com/review/hyrule-warriors-age-of-calamity-review/",
+              "date": "2021-01-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 80,
+              "url": "https://screenrant.com/hyrule-warriors-age-calamity-game-review/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 90,
+              "url": "https://www.shacknews.com/article/121573/hyrule-warriors-age-of-calamity-review-a-wink-to-the-past",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Siliconera",
+              "score": 80,
+              "url": "https://www.siliconera.com/review-hyrule-warriors-age-of-calamity-takes-us-through-a-history-lesson/",
+              "date": "2020-11-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Slant Magazine",
+              "score": 70,
+              "url": "https://www.slantmagazine.com/games/review-hyrule-warriors-age-of-calamity-is-addictive-in-spite-of-a-shaky-engine/",
+              "date": "2020-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 80,
+              "url": "https://www.spaziogames.it/hyrule-warriors-lera-della-calamita-recensione-la-guerra-di-zelda/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 80,
+              "url": "https://www.starbit.pt/2020/12/10/hyrule-warriors-age-of-calamity-analise/",
+              "date": "2020-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 65,
+              "url": "https://stevivor.com/reviews/hyrule-warriors-age-of-calamity-review-come-for-the-battle-stay-for-the-story/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 90,
+              "url": "https://switchplayer.net/2020/11/18/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 84,
+              "url": "https://www.thegamesmachine.it/hyrule-warriors-era-della-calamita-switch/hyrule-warriors-era-della-calamita-recensione/ ",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Sydney Morning Herald",
+              "score": 65,
+              "url": "https://www.smh.com.au/technology/video-games/zelda-breath-of-the-wild-spinoff-nails-the-aesthetic-misses-the-point-20201124-p56hgl.html",
+              "date": "2020-11-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 90,
+              "url": "https://www.thegamer.com/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 90,
+              "url": "https://www.thesixthaxis.com/2020/11/18/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 80,
+              "url": "https://www.trustedreviews.com/reviews/hyrule-warriors-age-of-calamity",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 80,
+              "url": "https://twinfinite.net/2020/11/hyrule-warriors-age-of-calamity-review-link-to-the-past",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "USgamer",
+              "score": 80,
+              "url": "https://www.usgamer.net/articles/hyrule-warriors-age-of-calamity-review-good-times-in-the-end-times",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 90,
+              "url": "https://switch-brasil.com/analise-hyrule-warriors-age-of-calamity/",
+              "date": "2020-12-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VG247",
+              "score": 80,
+              "url": "https://www.vg247.com/2020/11/18/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VGC",
+              "score": 60,
+              "url": "https://www.videogameschronicle.com/reviews/hyrule-warriors-age-of-calamity/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 78,
+              "url": "https://vandal.elespanol.com/analisis/switch/hyrule-warriors-la-era-del-cataclismo/90101",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vgames",
+              "score": 85,
+              "url": "https://www.vgames.co.il/article/27390.html",
+              "date": "2020-12-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 79,
+              "url": "https://videochums.com/review/hyrule-warriors-age-of-calamity",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 90,
+              "url": "https://www.vooks.net/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Washington Post",
+              "score": 75,
+              "url": "https://www.washingtonpost.com/video-games/reviews/hyrule-warriors-age-of-calamity-zelda-review/",
+              "date": "2020-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 78,
+              "url": "https://wccftech.com/review/hyrule-warriors-age-of-calamity-not-exactly-next-gen/",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 80,
+              "url": "https://wegotthiscovered.com/gaming/hyrule-warriors-age-of-calamity-review/",
+              "date": "2020-12-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "WellPlayed",
+              "score": 70,
+              "url": "https://www.well-played.com.au/hyrule-warriors-age-of-calamity-review/",
+              "date": "2021-02-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 90,
+              "url": "https://worthplaying.com/article/2020/12/8/reviews/123205/",
+              "date": "2020-12-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 75,
+              "url": "https://www.xgn.nl/review/hyrule-warriors-age-of-calamity-review",
+              "date": "2020-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "iMore",
+              "score": 80,
+              "url": "https://www.imore.com/hyrule-warriors-age-calamity-review",
+              "date": "2021-03-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 113
         },
         "user": {
-          "score": 8.1,
+          "score": 7.9,
           "scale": 10,
           "sources": [
             {
@@ -274589,14 +276252,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/hyrule_warriors_age_of_calamity",
               "platform": "Nintendo Switch",
               "weight": 29.120439557122072,
-              "normalized": 8.1,
-              "checked": "2026-11-02T17:42:35.389069+00:00"
+              "normalized": 8.1
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.7,
+              "scale": 10,
+              "count": 858,
+              "url": "https://www.metacritic.com/game/hyrule-warriors-age-of-calamity/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 29.29163703175362,
+              "normalized": 7.7
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:02.236052+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 118,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:19:40.820116+00:00"
       },
       "requirements": {
         "image": true,
@@ -274612,7 +276289,11 @@
       },
       "basics_attempted": "2026-11-02T22:39:02.236052+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hyrule-warriors-age-of-calamity-switch/",
@@ -274661,7 +276342,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:19:43.117798+00:00",
+      "full_version": 7
     },
     "Switch:7546": {
       "title": "I Am The Hero",
@@ -306795,19 +308478,35 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 91.7,
           "scale": 100,
           "sources": [
+            {
+              "name": "Nindie Spotlight",
+              "score": 90.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=hyper-light-drifter-special-edition-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
             {
               "name": "Nintendo Life",
               "score": 90.0,
               "url": "https://www.nintendolife.com/reviews/switch-eshop/hyper_light_drifter_special_edition",
               "platform": "Nintendo Switch",
               "via": "Nintendo Life"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 95.0,
+              "url": "https://purenintendo.com/review-hyper-light-drifter-special-edition-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 9.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
           "score": 7.9,
@@ -306821,14 +308520,21 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/hyper_light_drifter_special_edition",
               "platform": "Nintendo Switch",
               "weight": 11.135528725660043,
-              "normalized": 7.9,
-              "checked": "2026-11-02T17:42:25.929377+00:00"
+              "normalized": 7.9
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:38:47.532465+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:19:20.559048+00:00"
       },
       "requirements": {
         "image": true,
@@ -306844,7 +308550,12 @@
       },
       "basics_attempted": "2026-11-02T22:38:47.532465+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hyper-light-drifter-special-edition-switch/",
@@ -306894,7 +308605,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:19:22.614861+00:00",
+      "full_version": 7
     },
     "Switch:8686": {
       "title": "INVERSUS Deluxe",
