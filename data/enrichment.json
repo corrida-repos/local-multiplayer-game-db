@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:20:44.155492+00:00",
+  "updated": "2026-11-03T06:21:50.260964+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1351,
+    "full_attempted": 1361,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -47986,7 +47986,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 83.6,
+          "score": 84.0,
           "scale": 100,
           "sources": [
             {
@@ -48036,6 +48036,13 @@
               "date": "2022-03-15",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 90.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=infernax-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             },
             {
               "name": "Nintendo Enthusiast",
@@ -48103,10 +48110,10 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 14
+          "source_count": 15
         },
         "user": {
-          "score": 8.0,
+          "score": 7.81,
           "scale": 10,
           "sources": [
             {
@@ -48117,14 +48124,28 @@
               "url": "https://www.metacritic.com/game/infernax/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 7.810249675906654,
-              "normalized": 8.0,
-              "checked": "2026-11-02T17:43:40.885810+00:00"
+              "normalized": 8.0
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.6,
+              "scale": 10.0,
+              "count": 52,
+              "url": "https://www.nintendolife.com/games/switch-eshop/infernax",
+              "platform": "Nintendo Switch",
+              "weight": 7.211102550927978,
+              "normalized": 7.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:16.485645+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 15,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:21:28.793448+00:00"
       },
       "requirements": {
         "image": true,
@@ -48140,7 +48161,10 @@
       },
       "basics_attempted": "2026-11-02T22:39:16.485645+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/infernax-switch/",
@@ -48189,7 +48213,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:21:30.819311+00:00",
+      "full_version": 7
     },
     "PS5:14119": {
       "title": "Irem Collection Volume 2",
@@ -181090,15 +181116,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.87,
-              "count": 15,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.87,
               "scale": 5,
-              "source": "PSN",
+              "count": 15,
               "url": "https://store.playstation.com/pt-pt/product/UP8767-PPSA25659_00-0877137062054680",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:43:43.292266+00:00",
-              "platform": "PSN · PS5",
               "weight": 3.872983346207417,
               "normalized": 7.74
             }
@@ -181106,7 +181130,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:43:42.115788+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:21:12.950561+00:00"
       },
       "requirements": {
         "image": true,
@@ -181148,7 +181179,11 @@
       },
       "basics_attempted": "2026-11-02T17:43:42.115788+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -181164,7 +181199,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:21:13.250268+00:00",
+      "full_version": 7
     },
     "Switch:17749": {
       "title": "Ink Inside",
@@ -181192,7 +181229,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:16.488603+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:21:48.606064+00:00"
       },
       "requirements": {
         "image": true,
@@ -181208,7 +181252,13 @@
       },
       "basics_attempted": "2026-11-02T22:39:16.488603+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/ink-inside-switch/",
@@ -181257,7 +181307,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:21:50.012547+00:00",
+      "full_version": 7
     },
     "PS5:18042": {
       "title": "Jay and Silent Bob: Chronic Blunt Punch",
@@ -220855,22 +220907,231 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 87.4,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/ikaruga",
+              "name": "COGconnected",
+              "score": 85,
+              "url": "http://cogconnected.com/review/ikaruga-switch-review/",
+              "date": "2018-06-01",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 90,
+              "url": "http://www.cubed3.com/review/4901/1/ikaruga-nintendo-switch.html",
+              "date": "2018-06-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 95,
+              "url": "https://www.destructoid.com/review-ikaruga-switch--503643.phtml",
+              "date": "2018-05-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 95,
+              "url": "http://digitalchumps.com/ikaruga-switch/",
+              "date": "2018-06-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 90,
+              "url": "http://www.digitallydownloaded.net/2018/06/review-ikaruga-nintendo-switch.html",
+              "date": "2018-06-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "EGM",
+              "score": 90,
+              "url": "http://www.egmnow.com/articles/reviews/ikaruga-review/",
+              "date": "2018-05-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 90,
+              "url": "https://www.everyeye.it/articoli/recensione-ikaruga-inferno-proiettili-torna-nintendo-switch-39589.html",
+              "date": "2018-07-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "http://fnintendo.net/article/11041-ikaruga",
+              "date": "2018-06-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 100,
+              "url": "https://gamecritics.com/jarrod-johnston/ikaruga-switch-review/",
+              "date": "2018-06-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 90,
+              "url": "https://www.gamespew.com/2018/05/ikaruga-review-switch/",
+              "date": "2018-05-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 90,
+              "url": "https://www.hardcoregamer.com/2018/05/26/review-ikaruga-switch/300403/",
+              "date": "2018-05-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 80,
+              "url": "http://meristation.as.com/nintendo-switch/ikaruga/analisis-juego/2285381",
+              "date": "2018-06-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 90,
+              "url": "https://metro.co.uk/2018/05/31/ikaruga-switch-review-shooting-for-classic-status-7592189/",
+              "date": "2018-05-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 85.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=ikaruga-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 85,
+              "url": "http://www.nintenderos.com/2018/06/analisis-ikaruga/",
+              "date": "2018-06-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 90,
+              "url": "http://nintendoenthusiast.com/blog/2018/05/27/ikaruga-review-nintendo-switch/",
+              "date": "2018-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 90,
+              "url": "https://www.nintendo-insider.com/ikaruga-review/",
+              "date": "2018-05-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/ikaruga",
+              "date": "2018-05-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/47294/ikaruga-switch-eshop-review",
+              "date": "2018-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 70,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/Ikaruga/review.asp?c=77620",
+              "date": "2018-05-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80.0,
+              "url": "https://purenintendo.com/review-ikaruga-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 8.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 90,
+              "url": "https://www.spaziogames.it/recensioni_videogiochi/console_nintendo_switch/22486/ikaruga---la-magia-rivive-su-switch.aspx",
+              "date": "2018-06-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2018/07/03/ikaruga-review/",
+              "date": "2018-07-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 92,
+              "url": "https://www.thegamesmachine.it/ikaruga/ikaruga-recensione-switch/",
+              "date": "2018-05-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 100,
+              "url": "https://switch-brasil.com/analise-ikaruga/",
+              "date": "2018-06-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 82,
+              "url": "https://videochums.com/review/ikaruga",
+              "date": "2018-05-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 90,
+              "url": "http://wegotthiscovered.com/gaming/ikaruga/",
+              "date": "2018-05-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 27
         },
         "user": {
-          "score": 7.4,
+          "score": 7.63,
           "scale": 10,
           "sources": [
             {
@@ -220881,14 +221142,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/ikaruga",
               "platform": "Nintendo Switch",
               "weight": 9.055385138137417,
-              "normalized": 7.4,
-              "checked": "2026-11-02T17:43:06.963567+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.9,
+              "scale": 10,
+              "count": 61,
+              "url": "https://www.metacritic.com/game/ikaruga/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 7.810249675906654,
+              "normalized": 7.9
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:16.484738+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 26,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:21:43.888998+00:00"
       },
       "requirements": {
         "image": true,
@@ -220904,7 +221179,9 @@
       },
       "basics_attempted": "2026-11-02T22:39:16.484738+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/ikaruga-switch/",
@@ -220953,7 +221230,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:21:47.611480+00:00",
+      "full_version": 7
     },
     "Switch:4792": {
       "title": "JYDGE",
@@ -256006,28 +256285,79 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 73.8,
           "scale": 100,
           "sources": [
+            {
+              "name": "Hardcore Gamer",
+              "score": 80,
+              "url": "https://hardcoregamer.com/2020/05/10/review-infinite-beyond-the-mind/377862/",
+              "date": "2020-05-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 70.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=infinite-beyond-the-mind-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/53635/infinite-beyond-the-mind-switch-review",
+              "date": "2020-05-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-infinite-beyond-the-mind-nintendo-switch/",
+              "date": "2020-05-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 6.45,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/infinite-beyond-the-mind/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.23606797749979,
+              "normalized": 8.0
+            },
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/infinite_-_beyond_the_mind",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.0
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:16.487883+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:21:23.735125+00:00"
       },
       "requirements": {
         "image": true,
@@ -256044,7 +256374,9 @@
       "basics_attempted": "2026-11-02T22:39:16.487883+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -256095,7 +256427,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:21:25.375474+00:00",
+      "full_version": 7
     },
     "Switch:6419": {
       "title": "Jack Axe",
@@ -263592,6 +263926,7 @@
               "name": "Nintendo Life",
               "score": 80,
               "url": "http://www.nintendolife.com/reviews/switch-eshop/arcade_archives_in_the_hunt?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2019-12-13",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -263600,13 +263935,29 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 6.2,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 6.2,
+              "scale": 10.0,
+              "count": 13,
+              "url": "https://www.nintendolife.com/games/switch-eshop/arcade_archives_in_the_hunt",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 6.2
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:43:24.072522+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:21:03.910988+00:00"
       },
       "requirements": {
         "image": true,
@@ -263631,7 +263982,11 @@
       "version": 2,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -263648,7 +264003,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:21:05.876452+00:00",
+      "full_version": 7
     },
     "Switch:7282": {
       "title": "It's Raining Fists and Metal",
@@ -276756,13 +277113,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/inferno_2",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:16.486626+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:21:18.876394+00:00"
       },
       "requirements": {
         "image": true,
@@ -276778,7 +277152,12 @@
       },
       "basics_attempted": "2026-11-02T22:39:16.486626+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/inferno-2-switch/",
@@ -276827,7 +277206,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:21:20.910506+00:00",
+      "full_version": 7
     },
     "Switch:7393": {
       "title": "Jets'n'Guns 2",
@@ -297269,24 +297650,50 @@
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 50.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/ice_cream_surfer",
+              "name": "Nintendo Insider",
+              "score": 50,
+              "url": "https://www.nintendo-insider.com/ice-cream-surfer-review/",
+              "date": "2018-06-05",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 50,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/ice_cream_surfer?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-05-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 3.75,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.75,
+              "scale": 10,
+              "count": 4,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/ice_cream_surfer",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.0,
+              "normalized": 3.75
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:03.605177+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:21:08.888689+00:00"
       },
       "requirements": {
         "image": true,
@@ -297302,7 +297709,13 @@
       },
       "basics_attempted": "2026-11-02T22:39:03.605177+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/ice-cream-surfer-switch/",
@@ -297351,7 +297764,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:21:10.442044+00:00",
+      "full_version": 7
     },
     "Switch:8089": {
       "title": "In Celebration of Violence",
@@ -297373,13 +297788,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/in_celebration_of_violence",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:16.485081+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:20:58.782710+00:00"
       },
       "requirements": {
         "image": true,
@@ -297395,7 +297827,12 @@
       },
       "basics_attempted": "2026-11-02T22:39:16.485081+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/in-celebration-of-violence-switch/",
@@ -297445,7 +297882,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:21:00.632525+00:00",
+      "full_version": 7
     },
     "PS5:8051": {
       "title": "JYDGE",
@@ -320477,6 +320916,7 @@
               "name": "Pure Nintendo",
               "score": 60,
               "url": "https://purenintendo.com/review-infernal-radiation-nintendo-switch/",
+              "date": "2021-07-26",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -320491,7 +320931,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:16.485336+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:21:33.596420+00:00"
       },
       "requirements": {
         "image": true,
@@ -320508,7 +320955,11 @@
       "basics_attempted": "2026-11-02T22:39:16.485336+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -320558,7 +321009,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:21:35.398015+00:00",
+      "full_version": 7
     },
     "Switch:9115": {
       "title": "KEMONO FRIENDS PICROSS",
