@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:12:47.892690+00:00",
+  "updated": "2026-11-03T06:13:54.517647+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1271,
+    "full_attempted": 1281,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -43441,7 +43441,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 55.0,
+          "score": 58.0,
           "scale": 100,
           "sources": [
             {
@@ -43453,6 +43453,13 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Nindie Spotlight",
+              "score": 64.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=gunscape-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "Pure Nintendo",
               "score": 50,
               "url": "https://purenintendo.com/review-gunscape-nintendo-switch/",
@@ -43462,16 +43469,33 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 2
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 6.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 6.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/gunscape",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 6.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:33:34.006641+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:13:22.468315+00:00"
       },
       "requirements": {
         "image": true,
@@ -43487,7 +43511,11 @@
       },
       "basics_attempted": "2026-11-02T22:33:34.006641+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/gunscape-switch/",
@@ -43536,7 +43564,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:13:24.249107+00:00",
+      "full_version": 7
     },
     "Switch:13161": {
       "title": "Guntech 2",
@@ -43573,7 +43603,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:33:34.009452+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:13:32.203031+00:00"
       },
       "requirements": {
         "image": true,
@@ -43589,7 +43626,14 @@
       },
       "basics_attempted": "2026-11-02T22:33:34.009452+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/guntech-2-switch/",
@@ -43638,7 +43682,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:13:33.963006+00:00",
+      "full_version": 7
     },
     "PS5:10494": {
       "title": "Guts 'N Goals",
@@ -43656,15 +43702,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.86,
-              "count": 7,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.86,
               "scale": 5,
-              "source": "PSN",
+              "count": 7,
               "url": "https://store.playstation.com/pt-pt/product/EP2011-PPSA04388_00-2337819673921593",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:22:30.446704+00:00",
-              "platform": "PSN · PS5",
               "weight": 2.6457513110645907,
               "normalized": 7.720000000000001
             }
@@ -43672,7 +43716,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:22:28.969959+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:13:05.502799+00:00"
       },
       "requirements": {
         "image": true,
@@ -43714,7 +43765,11 @@
       },
       "basics_attempted": "2026-11-02T17:22:28.969959+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -43730,14 +43785,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:13:05.745665+00:00",
+      "full_version": 7
     },
     "Switch:10497": {
       "title": "Guts 'N Goals",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 50.0,
+          "score": 57.0,
           "scale": 100,
           "sources": [
             {
@@ -43747,19 +43804,43 @@
               "date": "2022-01-03",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 64.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=guts-n-goals-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 5.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 5.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/guts_n_goals",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 5.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:33:34.261730+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:13:17.371341+00:00"
       },
       "requirements": {
         "image": true,
@@ -43775,7 +43856,12 @@
       },
       "basics_attempted": "2026-11-02T22:33:34.261730+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/guts-n-goals-switch/",
@@ -43824,7 +43910,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:13:19.082892+00:00",
+      "full_version": 7
     },
     "Switch:12980": {
       "title": "Gyro Boss DX",
@@ -44098,7 +44186,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 77.0,
+          "score": 78.5,
           "scale": 100,
           "sources": [
             {
@@ -44107,19 +44195,44 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=hyper-meteor-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/64382/hyper-meteor-switch-review",
+              "date": "2023-07-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/hyper_meteor",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:33:35.416772+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:13:47.385859+00:00"
       },
       "requirements": {
         "image": true,
@@ -44135,7 +44248,11 @@
       },
       "basics_attempted": "2026-11-02T22:33:35.416772+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hyper-meteor-switch/",
@@ -44184,7 +44301,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:13:49.187375+00:00",
+      "full_version": 7
     },
     "PS5:14611": {
       "title": "Harmony's Odyssey",
@@ -218074,7 +218193,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 67.5,
+          "score": 65.0,
           "scale": 100,
           "sources": [
             {
@@ -218086,17 +218205,26 @@
             },
             {
               "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/guns_gore_and_cannoli",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/guns_gore_and_cannoli?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2017-12-22",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2018/01/22/guns-gore-cannoli-review/",
+              "date": "2018-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 2
+          "source_count": 3
         },
         "user": {
-          "score": 7.1,
+          "score": 7.05,
           "scale": 10,
           "sources": [
             {
@@ -218107,14 +218235,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/guns_gore_and_cannoli",
               "platform": "Nintendo Switch",
               "weight": 4.69041575982343,
-              "normalized": 7.1,
-              "checked": "2026-11-02T19:48:59.405664+00:00"
+              "normalized": 7.1
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7,
+              "scale": 10,
+              "count": 20,
+              "url": "https://www.metacritic.com/game/guns-gore-and-cannoli/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.47213595499958,
+              "normalized": 7.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:30:03.026348+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:13:07.451704+00:00"
       },
       "requirements": {
         "image": true,
@@ -218130,7 +218272,12 @@
       },
       "basics_attempted": "2026-11-02T23:30:03.026348+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Guns-Gore-and-Cannoli-1320796.html",
@@ -218180,7 +218327,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:13:09.283294+00:00",
+      "full_version": 7
     },
     "Switch:4881": {
       "title": "Hammerwatch",
@@ -241714,28 +241863,69 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 75.0,
+          "score": 72.5,
           "scale": 100,
           "sources": [
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/13052-hellmut-the-badass-from-hell",
+              "date": "2019-10-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 70,
+              "url": "https://gamingtrend.com/feature/reviews/creatures-vs-demons-hellmut-the-badass-from-hell-review/",
+              "date": "2019-05-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 75.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=hellmut-the-badass-from-hell-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 75,
+              "url": "https://worthplaying.com/article/2019/9/6/reviews/116071/",
+              "date": "2019-09-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 5.67,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 5.67,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/hellmut_the_badass_from_hell",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 5.67
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:35:12.930296+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:13:42.264812+00:00"
       },
       "requirements": {
         "image": true,
@@ -241751,7 +241941,12 @@
       },
       "basics_attempted": "2026-11-02T22:35:12.930296+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hellmut-the-badass-from-hell-switch/",
@@ -241801,7 +241996,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:13:46.208071+00:00",
+      "full_version": 7
     },
     "Switch:6078": {
       "title": "Heave Ho",
@@ -259914,7 +260111,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 82.5,
+          "score": 77.1,
           "scale": 100,
           "sources": [
             {
@@ -259925,18 +260122,59 @@
               "via": "Direct console-specific review"
             },
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/guns_gore_and_cannoli_2",
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2018/08/analisis-guns-gore-cannoli-2/",
+              "date": "2018-08-10",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 85,
+              "url": "https://www.nintendoenthusiast.com/2018/10/13/guns-gore-cannoli-2-review-switch/",
+              "date": "2018-10-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/guns_gore_and_cannoli_2?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-08-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/48047/guns-gore-and-cannoli-2-switch-review",
+              "date": "2018-08-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2018/09/04/guns-gore-and-cannoli-2-review/",
+              "date": "2018-09-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TrueGaming",
+              "score": 70,
+              "url": "https://www.true-gaming.net/home/375648/",
+              "date": "2018-08-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 2
+          "source_count": 7
         },
         "user": {
-          "score": 7.7,
+          "score": 7.39,
           "scale": 10,
           "sources": [
             {
@@ -259947,14 +260185,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/guns_gore_and_cannoli_2",
               "platform": "Nintendo Switch",
               "weight": 4.47213595499958,
-              "normalized": 7.7,
-              "checked": "2026-11-02T19:48:59.729597+00:00"
+              "normalized": 7.7
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.1,
+              "scale": 10,
+              "count": 23,
+              "url": "https://www.metacritic.com/game/guns-gore-and-cannoli-2/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.795831523312719,
+              "normalized": 7.1
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:30:22.096597+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:13:02.497455+00:00"
       },
       "requirements": {
         "image": true,
@@ -259970,7 +260222,11 @@
       },
       "basics_attempted": "2026-11-02T23:30:22.096597+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Guns-Gore-and-Cannoli-2-1409524.html",
@@ -260020,7 +260276,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:13:04.496383+00:00",
+      "full_version": 7
     },
     "Switch:6988": {
       "title": "Ikki",
@@ -282513,6 +282771,7 @@
               "name": "TouchArcade",
               "score": 70,
               "url": "https://toucharcade.com/2020/11/09/switcharcade-round-up-pikmin-3-deluxe-review-mini-views-featuring-choices-that-matter-and-more-plus-the-latest-releases-and-sales/",
+              "date": "2020-11-11",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -282521,13 +282780,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 4.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/gunslugs",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:37:07.003101+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:13:27.353545+00:00"
       },
       "requirements": {
         "image": true,
@@ -282544,7 +282820,11 @@
       "basics_attempted": "2026-11-02T22:37:07.003101+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -282594,7 +282874,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:13:29.438016+00:00",
+      "full_version": 7
     },
     "Switch:7782": {
       "title": "Hide & Dance!",
@@ -315029,6 +315311,7 @@
               "name": "Video Chums",
               "score": 60,
               "url": "https://videochums.com/article/arcade-style-console-games-part-3#guns-of-mercy-rangers-edition",
+              "date": "2020-09-22",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -315043,7 +315326,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:05:52.810412+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:13:52.204132+00:00"
       },
       "requirements": {
         "image": true,
@@ -315061,9 +315352,14 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 301: Moved Permanently",
-        "metacritic_reviews": "HTTP Error 301: Moved Permanently"
+        "metacritic_reviews": "HTTP Error 301: Moved Permanently",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -315113,7 +315409,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:13:54.269542+00:00",
+      "full_version": 7
     },
     "Switch:9097": {
       "title": "Hacky Zack",
