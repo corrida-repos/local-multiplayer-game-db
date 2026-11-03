@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:32:45.469410+00:00",
+  "updated": "2026-11-03T06:33:39.431599+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1481,
+    "full_attempted": 1491,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -64016,13 +64016,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/last_beat_enhanced",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:41.092762+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:33:01.279854+00:00"
       },
       "requirements": {
         "image": true,
@@ -64038,7 +64055,12 @@
       },
       "basics_attempted": "2026-11-02T22:40:41.092762+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/last-beat-enhanced-switch/",
@@ -64087,7 +64109,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:33:03.278536+00:00",
+      "full_version": 7
     },
     "Switch:11822": {
       "title": "Layer Section & Galactic Attack S-Tribute",
@@ -64101,6 +64125,7 @@
               "name": "Nintendo Life",
               "score": 80,
               "url": "http://www.nintendolife.com/reviews/switch-eshop/layer-section-and-galactic-attack-s-tribute",
+              "date": "2022-05-03",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -64108,6 +64133,7 @@
               "name": "Video Chums",
               "score": 80,
               "url": "https://videochums.com/review/layer-section-and-galactic-attack-s-tribute",
+              "date": "2022-06-06",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -64116,13 +64142,31 @@
           "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 7.4,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 13,
+              "url": "https://www.nintendolife.com/games/switch-eshop/layer_section_and_galactic_attack_s-tribute",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:41.093411+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Metacritic users: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:33:16.167469+00:00"
       },
       "requirements": {
         "image": true,
@@ -64140,7 +64184,12 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Metacritic users: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -64191,41 +64240,89 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:33:18.197097+00:00",
+      "full_version": 7
     },
     "PS5:14136": {
       "title": "Legend Bowl",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 69.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Gaming Age",
+              "score": 58,
+              "url": "https://gaming-age.com/2023/08/legend-bowl-review-for-playstation-xbox-pc-nintendo-switch/",
+              "date": "2023-08-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 80,
+              "url": "https://noisypixel.net/legend-bowl-review-ps5-switch/",
+              "date": "2023-08-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 70,
+              "url": "https://www.playstationcountry.com/legend-bowl-ps5-review/",
+              "date": "2023-08-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 68,
+              "url": "https://www.thegamesmachine.it/legend-bowl/legend-bowl-recensione-thegamesmachine/",
+              "date": "2023-09-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 4
         },
         "user": {
-          "score": 7.82,
+          "score": 7.85,
           "scale": 10,
           "sources": [
             {
-              "score": 3.91,
-              "count": 687,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.91,
               "scale": 5,
-              "source": "PSN",
+              "count": 687,
               "url": "https://store.playstation.com/pt-pt/product/EP5335-PPSA09769_00-LEGENDBOWL000000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:50:14.854773+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 26.210684844162312,
               "normalized": 7.82
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.1,
+              "scale": 10,
+              "count": 7,
+              "url": "https://www.metacritic.com/game/legend-bowl/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.6457513110645907,
+              "normalized": 8.1
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:50:13.394482+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:33:05.079458+00:00"
       },
       "requirements": {
         "image": true,
@@ -64267,7 +64364,10 @@
       },
       "basics_attempted": "2026-11-02T17:50:13.394482+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -64283,26 +64383,52 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:33:05.394953+00:00",
+      "full_version": 7
     },
     "Switch:14134": {
       "title": "Legend Bowl",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 72.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/legend-bowl",
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=legend-bowl-switch",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/legend-bowl",
+              "date": "2023-08-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 65,
+              "url": "http://www.nintendoworldreport.com/review/64496/legend-bowl-switch-review",
+              "date": "2023-08-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 90,
+              "url": "https://www.thesixthaxis.com/2023/08/09/legend-bowl-review/",
+              "date": "2023-08-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
           "score": 6.2,
@@ -64316,14 +64442,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/legend_bowl",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 6.2,
-              "checked": "2026-11-02T17:50:14.863504+00:00"
+              "normalized": 6.2
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:41.094521+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:33:11.051800+00:00"
       },
       "requirements": {
         "image": true,
@@ -64339,7 +64469,11 @@
       },
       "basics_attempted": "2026-11-02T22:40:41.094521+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/legend-bowl-switch/",
@@ -64389,7 +64523,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:33:12.638653+00:00",
+      "full_version": 7
     },
     "Switch:13080": {
       "title": "Legion of Doom",
@@ -140525,15 +140661,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.46,
-              "count": 105,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.46,
               "scale": 5,
-              "source": "PSN",
+              "count": 105,
               "url": "https://store.playstation.com/pt-pt/product/UP8674-PPSA37596_00-0654827689728642",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:49:41.444547+00:00",
-              "platform": "PSN · PS5",
               "weight": 10.246950765959598,
               "normalized": 8.92
             }
@@ -140541,7 +140675,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:49:40.180604+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:32:59.967627+00:00"
       },
       "requirements": {
         "image": true,
@@ -140583,7 +140724,11 @@
       },
       "basics_attempted": "2026-11-02T17:49:40.180604+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -140599,7 +140744,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:33:00.262783+00:00",
+      "full_version": 7
     },
     "Switch:16205": {
       "title": "Lady Death Demonicron",
@@ -224439,23 +224586,122 @@
           "scale": 100,
           "sources": [
             {
-              "name": "Metacritic aggregate",
-              "score": 52,
-              "url": "https://www.metacritic.com/game/last-encounter/critic-reviews/?platform=nintendo-switch",
-              "platform": "Switch"
+              "name": "Digital Chumps",
+              "score": 70,
+              "url": "http://digitalchumps.com/last-encounter/",
+              "date": "2020-02-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 40,
+              "url": "https://fnintendo.net/article/13640-last-encounter",
+              "date": "2020-04-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 60,
+              "url": "https://www.gamespace.com/featured/last-encounter-review-just-short-of-greatness/",
+              "date": "2020-03-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New Game Network",
+              "score": 40,
+              "url": "https://www.newgamenetwork.com/article/2272/last-encounter-review/",
+              "date": "2020-02-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 42,
+              "url": "https://www.nintendojo.com/reviews/backlog-review-last-encounter-switch",
+              "date": "2020-05-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 40,
+              "url": "https://purenintendo.com/review-last-encounter-nintendo-switch/",
+              "date": "2020-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 70,
+              "url": "https://screenrant.com/last-encounter-switch-review/",
+              "date": "2020-02-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 50,
+              "url": "http://switchplayer.net/2020/05/18/last-encounter-review/",
+              "date": "2020-05-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TrueGaming",
+              "score": 50,
+              "url": "https://www.true-gaming.net/home/418616/",
+              "date": "2020-02-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/indie-shooting-games-part-2#last-encounter",
+              "date": "2020-02-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 50,
+              "url": "https://worthplaying.com/article/2020/4/2/reviews/118807/",
+              "date": "2020-04-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 11
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/last_encounter",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:41.093125+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 11,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:33:21.080780+00:00"
       },
       "requirements": {
         "image": true,
@@ -224472,7 +224718,10 @@
       "basics_attempted": "2026-11-02T22:40:41.093125+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -224522,7 +224771,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:33:23.130028+00:00",
+      "full_version": 7
     },
     "Switch:4795": {
       "title": "Lichtspeer: Double Speer Edition",
@@ -302469,26 +302720,33 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Movies Games and Tech",
+              "score": 60,
+              "url": "https://moviesgamesandtech.com/2025/08/12/review-leifs-adventure-netherworld-hero/",
+              "date": "2025-08-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 6.3,
           "scale": 10,
           "sources": [
             {
-              "score": 3.15,
-              "count": 106,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.15,
               "scale": 5,
-              "source": "PSN",
+              "count": 106,
               "url": "https://store.playstation.com/pt-pt/product/EP3945-PPSA25773_00-0878722886718118",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:50:31.073099+00:00",
-              "platform": "PSN · PS5",
               "weight": 10.295630140987,
               "normalized": 6.3
             }
@@ -302496,7 +302754,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:50:28.611197+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:33:14.203669+00:00"
       },
       "requirements": {
         "image": true,
@@ -302538,7 +302803,11 @@
       },
       "basics_attempted": "2026-11-02T17:50:28.611197+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -302554,7 +302823,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:33:14.468188+00:00",
+      "full_version": 7
     },
     "Switch:8110": {
       "title": "Leif's Adventure: Netherworld Hero",
@@ -302582,7 +302853,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:42.448476+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:33:35.998699+00:00"
       },
       "requirements": {
         "image": true,
@@ -302598,7 +302876,13 @@
       },
       "basics_attempted": "2026-11-02T22:40:42.448476+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/leifs-adventure-netherworld-hero-switch/",
@@ -302647,7 +302931,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:33:39.180592+00:00",
+      "full_version": 7
     },
     "Switch:8106": {
       "title": "Let's Cook Together",
@@ -314611,6 +314897,7 @@
               "name": "NintendoWorldReport",
               "score": 50,
               "url": "http://www.nintendoworldreport.com/review/49526/lazy-galaxy-rebel-story-switch-review",
+              "date": "2019-01-29",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -314618,6 +314905,7 @@
               "name": "Switch Player",
               "score": 40,
               "url": "http://switchplayer.net/2019/09/08/lazy-galaxy-rebel-story-review/",
+              "date": "2019-09-09",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -314626,13 +314914,30 @@
           "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 3.75,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.75,
+              "scale": 10,
+              "count": 4,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/lazy_galaxy_rebel_story",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.0,
+              "normalized": 3.75
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:41.093713+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:33:06.185858+00:00"
       },
       "requirements": {
         "image": true,
@@ -314649,7 +314954,10 @@
       "basics_attempted": "2026-11-02T22:40:41.093713+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -314699,29 +315007,224 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:33:09.920779+00:00",
+      "full_version": 7
     },
     "Switch:8863": {
       "title": "Legend of Mana",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 71.8,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/legend_of_mana",
+              "name": "COGconnected",
+              "score": 70,
+              "url": "https://cogconnected.com/review/legend-mana-review/",
+              "date": "2021-06-22",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 90,
+              "url": "http://www.digitallydownloaded.net/2021/06/review-legend-of-mana-nintendo-switch.html",
+              "date": "2021-06-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 83,
+              "url": "https://www.games.ch/legend-of-mana/test/review-kaaU/",
+              "date": "2021-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game World Navigator Magazine",
+              "score": 66,
+              "url": "",
+              "date": "2021-12-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 60,
+              "url": "https://gamecritics.com/brian-theisen/legend-of-mana-2021-review/",
+              "date": "2021-08-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 60,
+              "url": "https://www.gameblog.fr/tests/3881-legend-of-mana-switch-pc-ps4",
+              "date": "2021-06-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.no",
+              "score": 70,
+              "url": "https://www.gamer.no/artikler/anmeldelse-legend-of-mana/511619",
+              "date": "2021-06-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 75,
+              "url": "https://gaming-age.com/2021/06/legend-of-mana-review-for-nintendo-switch-ps4-and-pc/",
+              "date": "2021-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 80,
+              "url": "https://hardcoregamer.com/2021/06/22/review-legend-of-mana/405956/",
+              "date": "2021-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 70,
+              "url": "https://www.ign.com/articles/legend-of-mana-review",
+              "date": "2021-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN France",
+              "score": 60,
+              "url": "https://fr.ign.com/legend-of-mana-remaster/54913/review/test-legend-of-mana-lovni-dans-la-legende",
+              "date": "2021-06-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 70,
+              "url": "https://www.jeuxvideo.com/test/1427638/legend-of-mana-le-remaster-leger-d-un-jeu-de-role-action-surprenant.htm",
+              "date": "2021-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2021/06/analisis-legend-of-mana-para-nintendo-switch/",
+              "date": "2021-06-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 80,
+              "url": "https://www.nintendoenthusiast.com/legend-of-mana-review-nintendo-switch/",
+              "date": "2021-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/legend-of-mana-remaster-review/",
+              "date": "2021-07-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/legend_of_mana",
+              "date": "2021-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "https://www.nintendoworldreport.com/review/57624/legend-of-mana-switch-review",
+              "date": "2021-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 83,
+              "url": "https://www.rpgfan.com/review/legend-of-mana-remaster/",
+              "date": "2021-07-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 40,
+              "url": "https://screenrant.com/legend-mana-switch-review/",
+              "date": "2021-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Siliconera",
+              "score": 70,
+              "url": "https://www.siliconera.com/review-legend-of-mana-remaster-looks-lavish-on-the-switch/",
+              "date": "2021-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 77,
+              "url": "https://www.spaziogames.it/legend-of-mana-recensione/",
+              "date": "2021-06-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 80,
+              "url": "https://www.thegamer.com/legend-of-mana-remaster-review-switch/",
+              "date": "2021-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TierraGamer",
+              "score": 75,
+              "url": "https://www.tierragamer.com/resena-legend-of-mana-nintendo-switch/",
+              "date": "2021-07-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VG247",
+              "score": 60,
+              "url": "https://www.vg247.com/2021/06/27/legend-mana-hd-remaster-review-faithful-gorgeous-recreation-ps1-classic-warts/",
+              "date": "2021-06-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 75,
+              "url": "https://worthplaying.com/article/2021/6/25/reviews/126957-switch-review-legend-of-mana-remastered/",
+              "date": "2021-06-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 25
         },
         "user": {
-          "score": 7.3,
+          "score": 7.56,
           "scale": 10,
           "sources": [
             {
@@ -314732,14 +315235,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/legend_of_mana",
               "platform": "Nintendo Switch",
               "weight": 7.416198487095663,
-              "normalized": 7.3,
-              "checked": "2026-11-02T17:50:15.879202+00:00"
+              "normalized": 7.3
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 20,
+              "url": "https://www.metacritic.com/game/legend-of-mana-remastered/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.47213595499958,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:40:41.378095+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 25,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:33:31.083112+00:00"
       },
       "requirements": {
         "image": true,
@@ -314755,7 +315272,12 @@
       },
       "basics_attempted": "2026-11-02T22:40:41.378095+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/legend-of-mana-switch/",
@@ -314804,7 +315326,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:33:33.091760+00:00",
+      "full_version": 7
     },
     "Switch:8545": {
       "title": "Let's Sing 2018",
