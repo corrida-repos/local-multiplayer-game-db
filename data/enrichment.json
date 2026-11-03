@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T09:03:55.514106+00:00",
+  "updated": "2026-11-03T09:05:14.167109+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -3428,16 +3428,18 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
         "errors": [
-          "Metacritic critics: HTTP Error 301: Moved Permanently",
-          "Metacritic users: HTTP Error 301: Moved Permanently",
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:55:45.620964+00:00"
+        "attempted": "2026-11-03T09:05:11.396717+00:00"
       },
       "requirements": {
         "image": true,
@@ -3455,9 +3457,13 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:46:45.669556+00:00",
+      "full_attempted": "2026-11-03T09:05:13.895772+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/apre-lapli-after-the-rain-switch/",
@@ -3507,7 +3513,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:14490": {
       "title": "Aquarium Land",
@@ -3533,14 +3540,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.7320508075688772,
-              "normalized": 6.33,
-              "checked": "2026-11-02T21:42:10.872754+00:00"
+              "normalized": 6.33
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T00:20:13.614129+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T09:04:11.610352+00:00"
       },
       "requirements": {
         "image": true,
@@ -3557,9 +3568,14 @@
       "basics_attempted": "2026-11-03T00:20:13.614129+00:00",
       "version": 7,
       "errors": {
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:46:47.952311+00:00",
+      "full_attempted": "2026-11-03T09:04:14.272648+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/aquarium-land-switch/",
@@ -3597,7 +3613,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:13205": {
       "title": "Arcade Machine: Clown Hunt",
@@ -3628,7 +3645,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T00:20:13.614626+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 410: Gone"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T09:04:31.390025+00:00"
       },
       "requirements": {
         "image": true,
@@ -3646,9 +3671,13 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 410: Gone",
+        "trailer": "HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:46:51.768219+00:00",
+      "full_attempted": "2026-11-03T09:04:32.187155+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/arcade-machine-clown-hunt-switch/",
@@ -3697,7 +3726,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:12921": {
       "title": "Arcade Machine: Gopher's Revenge",
@@ -3723,14 +3753,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.7320508075688772,
-              "normalized": 7.33,
-              "checked": "2026-11-02T21:42:22.379760+00:00"
+              "normalized": 7.33
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T00:20:13.618010+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T09:04:21.710720+00:00"
       },
       "requirements": {
         "image": true,
@@ -3746,8 +3780,14 @@
       },
       "basics_attempted": "2026-11-03T00:20:13.618010+00:00",
       "version": 7,
-      "errors": {},
-      "full_attempted": "2026-11-02T19:47:07.120237+00:00",
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-03T09:04:24.071298+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/arcade-machine-gophers-revenge-switch/",
@@ -3796,14 +3836,15 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:11795": {
       "title": "Arise: A Simple Story - Definitive Edition",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 83.0,
+          "score": 81.0,
           "scale": 100,
           "sources": [
             {
@@ -3812,29 +3853,54 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=arise-a-simple-story-definitive-edition-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/arise-a-simple-story-definitive-edition",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80.0,
+              "url": "https://purenintendo.com/review-arise-a-simple-story-definitive-edition-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 8.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 7.7,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 26,
+              "url": "https://www.nintendolife.com/games/switch-eshop/arise_a_simple_story_-_definitive_edition",
+              "platform": "Nintendo Switch",
+              "weight": 5.0990195135927845,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": false,
         "critic_index_review_count": null,
         "errors": [
           "Metacritic critics: HTTP Error 404: Not Found",
-          "Metacritic users: HTTP Error 404: Not Found",
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+          "Metacritic users: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:55:46.198076+00:00"
+        "attempted": "2026-11-03T09:04:46.801732+00:00"
       },
       "requirements": {
         "image": true,
@@ -3852,9 +3918,12 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:47:12.492058+00:00",
+      "full_attempted": "2026-11-03T09:04:49.925363+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/arise-a-simple-story-definitive-edition-switch/",
@@ -3903,7 +3972,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:13714": {
       "title": "Ark Area",
@@ -292753,8 +292823,7 @@
               "url": "https://www.metacritic.com/game/arcade-classics-anniversary-collection/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 5.2,
-              "checked": "2026-11-02T19:46:49.571922+00:00"
+              "normalized": 5.2
             },
             {
               "name": "Nintendo Life",
@@ -292764,8 +292833,7 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/arcade_classics_anniversary_collection",
               "platform": "Nintendo Switch",
               "weight": 4.795831523312719,
-              "normalized": 7.3,
-              "checked": "2026-11-02T19:46:49.571922+00:00"
+              "normalized": 7.3
             }
           ],
           "source_count": 2,
@@ -292776,7 +292844,7 @@
         "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:34:16.813379+00:00"
+        "attempted": "2026-11-03T09:04:41.792502+00:00"
       },
       "requirements": {
         "image": true,
@@ -292793,10 +292861,12 @@
       "basics_attempted": "2026-11-02T22:34:16.813379+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:46:50.522260+00:00",
+      "full_attempted": "2026-11-03T09:04:44.316146+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/arcade-classics-anniversary-collection-switch/",
@@ -292845,7 +292915,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:5565": {
       "title": "Assault Android Cactus Plus",
@@ -309709,20 +309780,30 @@
           "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/aqua_lungers",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 2,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 404: Not Found"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:34:44.626202+00:00"
+        "attempted": "2026-11-03T09:04:36.800835+00:00"
       },
       "requirements": {
         "image": true,
@@ -309739,9 +309820,11 @@
       "basics_attempted": "2026-11-02T22:34:44.626202+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:46:47.170520+00:00",
+      "full_attempted": "2026-11-03T09:04:39.026613+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/aqua-lungers-switch/",
@@ -309790,7 +309873,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:5715": {
       "title": "Astro Bears",
@@ -404481,7 +404565,7 @@
           "source_count": 3
         },
         "user": {
-          "score": 7.0,
+          "score": 7.48,
           "scale": 10,
           "sources": [
             {
@@ -404492,22 +404576,28 @@
               "url": "https://www.metacritic.com/game/archvale/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
-              "normalized": 7.0,
-              "checked": "2026-11-02T19:47:12.895184+00:00"
+              "normalized": 7.0
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 32,
+              "url": "https://www.nintendolife.com/games/switch-eshop/archvale",
+              "platform": "Nintendo Switch",
+              "weight": 5.656854249492381,
+              "normalized": 7.7
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 2,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:38:18.790410+00:00"
+        "attempted": "2026-11-03T09:04:51.743233+00:00"
       },
       "requirements": {
         "image": true,
@@ -404524,9 +404614,12 @@
       "basics_attempted": "2026-11-02T22:38:18.790410+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:47:13.585151+00:00",
+      "full_attempted": "2026-11-03T09:04:54.415977+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/archvale-switch/",
@@ -404575,7 +404668,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:9343": {
       "title": "Asterix & Obelix: Slap Them All!",
@@ -416209,15 +416303,13 @@
               "normalized": 6.799999999999999
             },
             {
-              "score": 3.79,
-              "count": 2794,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.79,
               "scale": 5,
-              "source": "PSN",
+              "count": 2794,
               "url": "https://store.playstation.com/pt-pt/product/EP4382-PPSA03664_00-ARCADEPARADISEP5",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T19:22:41.161735+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 7.58
             }
@@ -416227,12 +416319,10 @@
         },
         "critic_index_complete": true,
         "critic_index_review_count": 13,
-        "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:47:10.182024+00:00"
+        "attempted": "2026-11-03T09:04:23.719509+00:00"
       },
       "requirements": {
         "image": true,
@@ -416248,14 +416338,16 @@
       },
       "basics_attempted": "2026-11-02T19:26:13.751861+00:00",
       "version": 4,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed"
+      },
       "trailer": {
         "id": "2UtN1QmXrzk",
         "title": "Arcade Paradise - Rags to Riches (Gameplay Reveal) | PS5, PS4",
         "kind": "gameplay",
         "source": "https://www.playstation.com/en-us/games/arcade-paradise/"
       },
-      "full_attempted": "2026-11-02T19:47:10.418585+00:00",
+      "full_attempted": "2026-11-03T09:04:23.720220+00:00",
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/EP4382-PPSA03664_00-ARCADEPARADISEP5",
         "label": "Abrir na PlayStation Store",
@@ -416297,7 +416389,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:9916": {
       "title": "Arcade Paradise",
@@ -416378,8 +416471,7 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_paradise",
               "platform": "Nintendo Switch",
               "weight": 5.0990195135927845,
-              "normalized": 7.4,
-              "checked": "2026-11-02T19:47:08.486103+00:00"
+              "normalized": 7.4
             }
           ],
           "source_count": 1,
@@ -416387,13 +416479,10 @@
         },
         "critic_index_complete": true,
         "critic_index_review_count": 7,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:38:32.860605+00:00"
+        "attempted": "2026-11-03T09:04:26.662660+00:00"
       },
       "requirements": {
         "image": true,
@@ -416409,14 +416498,17 @@
       },
       "basics_attempted": "2026-11-02T22:38:32.860605+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed"
+      },
       "trailer": {
         "id": "2UtN1QmXrzk",
         "title": "Arcade Paradise - Rags to Riches (Gameplay Reveal) | PS5, PS4",
         "kind": "gameplay",
         "source": "https://www.playstation.com/en-us/games/arcade-paradise/"
       },
-      "full_attempted": "2026-11-02T19:47:08.978533+00:00",
+      "full_attempted": "2026-11-03T09:04:28.793576+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/arcade-paradise-switch/",
@@ -416465,7 +416557,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:9709": {
       "title": "Capcom Arcade Stadium",
