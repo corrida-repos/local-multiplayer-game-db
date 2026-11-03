@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:25:04.149308+00:00",
+  "updated": "2026-11-03T08:26:29.123461+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2261,
+    "full_attempted": 2271,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -126749,26 +126749,49 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameGrin",
+              "score": 85,
+              "url": "https://www.gamegrin.com/reviews/the-crackpet-show-happy-tree-friends-edition-review/",
+              "date": "2023-09-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "https://www.godisageek.com/reviews/the-crackpet-show-happy-tree-friends-edition-review/",
+              "date": "2023-09-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 75,
+              "url": "https://psxbrasil.com.br/analise/the-crackpet-show-happy-tree-friends-edition-review/",
+              "date": "2023-09-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 8.82,
           "scale": 10,
           "sources": [
             {
-              "score": 4.41,
-              "count": 245,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.41,
               "scale": 5,
-              "source": "PSN",
+              "count": 245,
               "url": "https://store.playstation.com/pt-pt/product/EP7488-PPSA10986_00-7895471801529719",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:33:17.879110+00:00",
-              "platform": "PSN · PS5",
               "weight": 15.652475842498529,
               "normalized": 8.82
             }
@@ -126776,7 +126799,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:33:16.934534+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:25:21.843296+00:00"
       },
       "requirements": {
         "image": true,
@@ -126818,7 +126848,11 @@
       },
       "basics_attempted": "2026-11-02T18:33:16.934534+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -126834,7 +126868,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:25:22.279089+00:00",
+      "full_version": 7
     },
     "PS5:10465": {
       "title": "The Dark Pictures Anthology - Triple Pack",
@@ -127007,6 +127043,7 @@
               "name": "Impulsegamer",
               "score": 80,
               "url": "https://www.impulsegamer.com/dark-pictures-anthology-little-hope-nintendo-switch-review/",
+              "date": "2023-11-09",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -127014,6 +127051,7 @@
               "name": "Pocket Tactics",
               "score": 70,
               "url": "https://www.pockettactics.com/little-hope/switch-review",
+              "date": "2023-10-12",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -127028,7 +127066,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:07.687564+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:25:55.570143+00:00"
       },
       "requirements": {
         "image": true,
@@ -127046,7 +127092,11 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -127096,7 +127146,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:25:58.425870+00:00",
+      "full_version": 7
     },
     "Switch:13664": {
       "title": "The Dark Pictures Anthology: Man of Medan",
@@ -127110,6 +127162,7 @@
               "name": "Pocket Tactics",
               "score": 60,
               "url": "https://www.pockettactics.com/man-of-medan/switch-review",
+              "date": "2023-05-10",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -127124,7 +127177,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:07.687970+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:26:10.601515+00:00"
       },
       "requirements": {
         "image": true,
@@ -127142,7 +127203,12 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -127193,18 +127259,421 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:26:15.540006+00:00",
+      "full_version": 7
     },
     "PS5:10735": {
       "title": "The Dark Pictures Anthology: The Devil in Me",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 69.8,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "4P.de",
+              "score": 77,
+              "url": "https://www.4players.de/4players.php/dispbericht/PlayStation5/Test/43691/85198/0/The_Dark_Pictures_Anthology_The_Devil_In_Me.html",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Adventure Game Hotspot",
+              "score": 67,
+              "url": "https://adventuregamehotspot.com/2023/05/12/the-dark-pictures-anthology-the-devil-in-me-review/",
+              "date": "2023-05-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "App Trigger",
+              "score": 40,
+              "url": "https://apptrigger.com/2022/11/24/devil-in-me-review/",
+              "date": "2022-11-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 80,
+              "url": "https://areajugones.sport.es/videojuegos/analisis-the-devil-in-me-el-mejor-juego-hasta-la-fecha-de-the-dark-pictures-anthology/",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 84,
+              "url": "https://cogconnected.com/review/the-dark-pictures-anthology-the-devil-in-me-review/",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ComicBook",
+              "score": 50,
+              "url": "https://comicbook.com/gaming/news/the-dark-pictures-anthology-the-devil-in-me-review/",
+              "date": "2022-12-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/6756/1/the-dark-pictures-anthology-the-devil-in-me-playstation-5.html",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Dexerto",
+              "score": 60,
+              "url": "https://www.dexerto.com/reviews/the-devil-in-me-review-1987391/",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 75,
+              "url": "https://digitalchumps.com/the-dark-pictures-anthology-the-devil-in-me-review/",
+              "date": "2022-12-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 60,
+              "url": "https://www.digitallydownloaded.net/2022/11/review-the-dark-pictures-anthology-the-devil-in-me-sony-playstation-5.html",
+              "date": "2022-11-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 60,
+              "url": "",
+              "date": "2022-12-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Poland",
+              "score": 50,
+              "url": "https://www.eurogamer.pl/the-devil-in-me-recenzja",
+              "date": "2022-11-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Finger Guns",
+              "score": 60,
+              "url": "https://fingerguns.net/reviews/2022/11/22/the-dark-pictures-anthology-the-devil-in-me-review-ps5-better-the-devil-you-know/",
+              "date": "2022-11-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 80,
+              "url": "https://gamerant.com/the-dark-pictures-anthology-the-devil-in-me-review/",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameByte",
+              "score": 60,
+              "url": "https://www.gamebyte.com/reviews/the-dark-pictures-anthology-the-devil-in-me-review/",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 80,
+              "url": "https://www.gameover.gr/2022/11/21/the-dark-pictures-anthology-the-devil-in-me-review/",
+              "date": "2022-12-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 65,
+              "url": "https://www.gamepro.de/artikel/the-devil-in-me-test,3387026.html",
+              "date": "2022-11-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSkinny",
+              "score": 40,
+              "url": "https://www.gameskinny.com/l45ao/the-dark-pictures-anthology-the-devil-in-me-review-dark-hallways",
+              "date": "2022-11-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 70,
+              "url": "https://www.gameblog.fr/jeu-video/jeux/tests/test-de-the-devil-in-me-apres-dahmer-decouvrez-le-tueur-h-h-holmes-410808",
+              "date": "2022-11-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 85,
+              "url": "https://gamer.nl/artikelen/review/the-devil-in-me-is-een-must-voor-true-crime-liefhebbers/",
+              "date": "2022-11-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamers' Temple",
+              "score": 75,
+              "url": "https://www.gamerstemple.com/featured-review/dlc/1622/the-dark-pictures-anthology-the-devil-in-me-review",
+              "date": "2022-12-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamersRD",
+              "score": 78,
+              "url": "https://gamersrd.com/the-dark-pictures-anthology-the-devil-in-me-review/",
+              "date": "2022-12-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamersky",
+              "score": 66,
+              "url": "https://www.gamersky.com/review/202211/1541347.shtml",
+              "date": "2022-11-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 80,
+              "url": "https://games.tiscali.cz/recenze/the-devil-in-me-recenze-paradniho-hororu-z-antologie-the-dark-pictures-546196",
+              "date": "2022-11-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 80,
+              "url": "https://www.heypoorplayer.com/2022/11/17/the-dark-pictures-anthology-the-devil-in-me-review-ps5/",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 80,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-devil-me-ps4-ps5-one-series-x-s-switch-pc-1156563",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Adria",
+              "score": 50,
+              "url": "https://adria.ign.com/the-dark-pictures-the-devil-in-me/38602/review/the-dark-pictures-anthology-the-devil-in-me",
+              "date": "2022-12-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 80,
+              "url": "https://es.ign.com/the-dark-pictures-the-devil-in-me/185634/review/analisis-de-the-dark-pictures-anthology-the-devil-in-me-en-la-mente-del-asesino ",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 72,
+              "url": "https://www.impulsegamer.com/the-dark-pictures-anthology-the-devil-in-me-pc-review/",
+              "date": "2022-11-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 65,
+              "url": "https://www.jeuxactu.com/test-the-devil-in-me-dark-pictures-la-formule-a-t-elle-atteint-ses-lim-128742.htm",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 70,
+              "url": "https://www.jeuxvideo.com/test/1672002/the-dark-pictures-the-devil-in-me-the-quarry-a-t-il-trouve-son-maitre.htm",
+              "date": "2022-11-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LEVEL (Czech Republic)",
+              "score": 40,
+              "url": "",
+              "date": "2024-01-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Malditos Nerds",
+              "score": 80,
+              "url": "https://malditosnerds.com/analisis-the-dark-pictures-the-devil-in-me/",
+              "date": "2022-12-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 70,
+              "url": "https://metro.co.uk/2022/11/21/dark-pictures-anthology-the-devil-in-me-review-the-best-till-last-17801193/",
+              "date": "2022-11-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MeuPlayStation",
+              "score": 79,
+              "url": "https://meups.com.br/review/the-dark-pictures-anthology-the-devil-in-me/",
+              "date": "2022-11-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY",
+              "score": 80,
+              "url": "",
+              "date": "2022-12-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 70,
+              "url": "https://play.co.rs/2022/12/08/sejtan-u-meni-the-dark-pictures-anthology-the-devil-in-me-recenzija/",
+              "date": "2022-12-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 80,
+              "url": "https://psxbrasil.com.br/analise/the-dark-pictures-anthology-the-devil-in-me-review/",
+              "date": "2022-11-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlaySense",
+              "score": 70,
+              "url": "https://playsense.nl/520381/review-the-devil-in-me/",
+              "date": "2022-11-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 75,
+              "url": "https://www.psu.com/reviews/the-dark-pictures-the-devil-in-me-review-ps5-a-solid-conclusion-to-the-dark-pictures-first-season/",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 91,
+              "url": "https://www.player2.net.au/2022/11/the-dark-pictures-the-devil-in-me-the-darkest-picture-is-also-the-brightest/",
+              "date": "2022-11-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 60,
+              "url": "https://www.pushsquare.com/reviews/ps5/the-dark-pictures-anthology-the-devil-in-me",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 68,
+              "url": "https://www.rpgfan.com/review/the-dark-pictures-anthology-the-devil-in-me/",
+              "date": "2022-12-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 80,
+              "url": "https://screenrant.com/dark-pictures-anthology-devil-in-me-review/",
+              "date": "2022-11-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 50,
+              "url": "https://www.shacknews.com/article/133183/dark-pictures-anthology-devil-in-me-review-score",
+              "date": "2022-11-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TierraGamer",
+              "score": 68,
+              "url": "https://tierragamer.com/resenas/videojuegos/resena-the-dark-pictures-anthology-the-devil-in-me-un-slasher-que-se-toma-su-tiempo-para-empezar/",
+              "date": "2023-01-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 70,
+              "url": "https://vandal.elespanol.com/analisis/ps5/the-devil-in-me/109595#p-89",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 80,
+              "url": "https://wegotthiscovered.com/gaming/review-the-dark-pictures-anthology-the-devil-in-me-is-the-best-in-the-series-to-date/",
+              "date": "2022-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "WellPlayed",
+              "score": 80,
+              "url": "https://www.well-played.com.au/the-dark-pictures-anthology-the-devil-in-me-review/",
+              "date": "2022-11-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 80,
+              "url": "https://www.xgn.nl/review/the-dark-pictures-anthology-the-devil-in-me-review-je-kan-inchecken-maar-of-je-nog-wegkomt",
+              "date": "2022-12-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 50
         },
         "user": {
           "score": 7.14,
@@ -127216,20 +127685,18 @@
               "scale": 10,
               "count": 398,
               "url": "https://www.metacritic.com/game/the-dark-pictures-anthology-the-devil-in-me/user-reviews/?platform=playstation-5",
-              "platform": "PS5",
+              "platform": "PlayStation 5",
               "weight": 19.949937343260004,
               "normalized": 6.1
             },
             {
-              "score": 3.9,
-              "count": 9766,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.9,
               "scale": 5,
-              "source": "PSN",
+              "count": 9766,
               "url": "https://store.playstation.com/pt-pt/product/EP0700-PPSA05921_00-SMGDARKPICTURESD",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T20:03:29.104380+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 7.800000000000001
             }
@@ -127237,7 +127704,14 @@
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:03:27.401800+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 51,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:25:52.091949+00:00"
       },
       "requirements": {
         "image": true,
@@ -127246,7 +127720,9 @@
       },
       "basics_attempted": "2026-11-02T20:03:27.401800+00:00",
       "version": 4,
-      "errors": {},
+      "errors": {
+        "composites": "Community: HTTP Error 404: Not Found"
+      },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/EP0700-PPSA05921_00-SMGDARKPICTURESD",
         "label": "Abrir na PlayStation Store",
@@ -127295,7 +127771,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "UdeeI4Zvnio",
+        "title": "The Dark Pictures Anthology: The Devil In Me – Story Trailer | PS5 & PS4 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/the-dark-pictures-anthology-the-devil-in-me/"
+      },
+      "full_attempted": "2026-11-03T08:25:52.685911+00:00",
+      "full_version": 7
     },
     "Switch:11503": {
       "title": "The Dresden Files Cooperative Card Game",
@@ -127324,7 +127808,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:36:03.883551+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:26:15.702370+00:00"
       },
       "requirements": {
         "image": true,
@@ -127342,7 +127834,12 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -127392,7 +127889,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:26:18.966966+00:00",
+      "full_version": 7
     },
     "PS5:14365": {
       "title": "The Grinch: Christmas Adventures",
@@ -256718,28 +257217,279 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 72.4,
           "scale": 100,
           "sources": [
+            {
+              "name": "3DJuegos",
+              "score": 75,
+              "url": "http://www.3djuegos.com/juegos/analisis/28799/0/the-escapists-2/",
+              "date": "2018-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/4528/1/the-escapists-2-nintendo-switch.html",
+              "date": "2018-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 60,
+              "url": "http://www.darkstation.com/reviews/the-escapists-2-switch-review",
+              "date": "2018-02-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkZero",
+              "score": 80,
+              "url": "http://darkzero.co.uk/game-reviews/the-escapists-2-switch-review/",
+              "date": "2018-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 80,
+              "url": "http://www.digitallydownloaded.net/2018/01/review-escapists-2-nintendo-switch.html",
+              "date": "2018-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 80,
+              "url": "http://www.eurogamer.it/articles/2018-01-12-the-escapists-2-recensione",
+              "date": "2018-01-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 60,
+              "url": "http://fnintendo.net/article/10363-the-escapists-2",
+              "date": "2018-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 80,
+              "url": "https://www.gamespace.com/escapists-2/switch-review/",
+              "date": "2018-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamers' Temple",
+              "score": 30,
+              "url": "https://www.gamerstemple.com/game-reviews/switch/11120/the-escapists-2-review",
+              "date": "2018-02-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 85,
+              "url": "https://www.gamingnexus.com/Article/5581/The-Escapists-2/",
+              "date": "2018-02-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 77,
+              "url": "http://it.ign.com/the-escapists-2-nintendo-switch/135604/review/the-escapists-2-la-recensione",
+              "date": "2018-01-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 79,
+              "url": "http://es.ign.com/the-escapists-2-nintendo-switch/127845/review/the-escapists-2-analisis-para-nintendo-switch",
+              "date": "2018-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 80,
+              "url": "http://meristation.as.com/nintendo-switch/the-escapists-2/analisis-juego/2201845",
+              "date": "2018-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 80,
+              "url": "http://metro.co.uk/2018/01/11/the-escapists-2-switch-review-prison-cell-block-ace-7220229/",
+              "date": "2018-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 70.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-escapists-2-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/the_escapists_2",
+              "date": "2018-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/46187/the-escapists-2-switch-review",
+              "date": "2018-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 67,
+              "url": "http://www.nintendojo.com/reviews/review-the-escapists-2-switch",
+              "date": "2018-03-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 70,
+              "url": "http://play.co.rs/2018/02/review-the-escapist-2/",
+              "date": "2018-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 80,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/The+Escapists+2/review.asp?c=76400",
+              "date": "2018-01-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 70,
+              "url": "https://www.spaziogames.it/recensioni_videogiochi/console_nintendo_switch/21941/the-escapist-2-la-recensione-della-versione-per-nintendo-switch.aspx",
+              "date": "2018-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2018/01/11/the-escapists-2-review/",
+              "date": "2018-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 80,
+              "url": "https://www.thedigitalfix.com/gaming/content/7648/the-escapists-2/",
+              "date": "2018-01-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 80,
+              "url": "https://www.thegamesmachine.it/the-escapists-2-2/the-escapists-2-recensione-switch/",
+              "date": "2018-01-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 70,
+              "url": "http://www.trustedreviews.com/reviews/escapists-2-nintendo-switch",
+              "date": "2018-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 68,
+              "url": "https://videochums.com/review/the-escapists-2",
+              "date": "2018-01-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 80,
+              "url": "https://www.vooks.net/escapists-2-switch-review/",
+              "date": "2018-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 70,
+              "url": "http://worthplaying.com/article/2018/2/19/reviews/107297/",
+              "date": "2018-02-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 65,
+              "url": "https://www.xgn.nl/review/the-escapists-2-switch-review",
+              "date": "2018-01-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 65,
+              "url": "http://www.ztgd.com/the-escapists-2/review/",
+              "date": "2018-01-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 30
         },
         "user": {
-          "score": null,
+          "score": 6.7,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.7,
+              "scale": 10,
+              "count": 45,
+              "url": "https://www.metacritic.com/game/the-escapists-2/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 6.708203932499369,
+              "normalized": 6.7
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:07.689283+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 30,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:26:25.721424+00:00"
       },
       "requirements": {
         "image": true,
@@ -256756,7 +257506,11 @@
       "basics_attempted": "2026-11-02T22:52:07.689283+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -256806,7 +257560,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:26:28.861128+00:00",
+      "full_version": 7
     },
     "PS5:19134": {
       "title": "The Raiden Project",
@@ -329168,28 +329924,127 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 61.0,
+          "score": 71.9,
           "scale": 100,
           "sources": [
+            {
+              "name": "4P.de",
+              "score": 70,
+              "url": "https://www.4players.de/4players.php/spielinfo/Switch/42244/The_Eternal_Castle_Remastered.html",
+              "date": "2020-08-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 40,
+              "url": "http://www.cubed3.com/review/6090/1/the-eternal-castle-remastered-nintendo-switch.html",
+              "date": "2020-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 100,
+              "url": "http://www.digitallydownloaded.net/2020/05/review-eternal-castle-remastered.html",
+              "date": "2020-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Finger Guns",
+              "score": 80,
+              "url": "http://fingerguns.net/games/2020/05/15/the-eternal-castle-remastered-switch-review-the-impossible-remaster/",
+              "date": "2020-08-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 85,
+              "url": "https://gamecritics.com/brad-gallaway/the-eternal-castle-remastered-review/",
+              "date": "2020-05-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "KeenGamer",
+              "score": 70,
+              "url": "https://www.keengamer.com/articles/reviews/switch-reviews/the-eternal-castle-remastered-retro-a-go-go-switch/",
+              "date": "2020-09-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 61.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-eternal-castle-remastered-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/eternal_castle_remastered?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2020-08-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 75,
+              "url": "https://noisypixel.net/the-eternal-castle-remastered-review-switch-pc/",
+              "date": "2020-05-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 50,
+              "url": "https://purenintendo.com/review-the-eternal-castle-remastered-nintendo-switch/",
+              "date": "2020-05-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2020/06/28/the-eternal-castle-remastered-review/",
+              "date": "2020-06-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 11
         },
         "user": {
-          "score": null,
+          "score": 8.1,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 8.1,
+              "scale": 10,
+              "count": 7,
+              "url": "https://www.metacritic.com/game/the-eternal-castle-remastered/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.6457513110645907,
+              "normalized": 8.1
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:07.689968+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:26:20.570906+00:00"
       },
       "requirements": {
         "image": true,
@@ -329206,7 +330061,11 @@
       "basics_attempted": "2026-11-02T22:52:07.689968+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -329256,7 +330115,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:26:23.375849+00:00",
+      "full_version": 7
     },
     "Switch:6968": {
       "title": "The Ninja Warriors",
@@ -367818,7 +368679,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 67.0,
+          "score": 73.5,
           "scale": 100,
           "sources": [
             {
@@ -367827,10 +368688,18 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-crackpet-show-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-the-crackpet-show-nintendo-switch/",
+              "date": "2023-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -367839,7 +368708,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:07.687289+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:25:25.565644+00:00"
       },
       "requirements": {
         "image": true,
@@ -367856,7 +368733,11 @@
       "basics_attempted": "2026-11-02T22:52:07.687289+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -367906,7 +368787,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:25:28.305090+00:00",
+      "full_version": 7
     },
     "Switch:8412": {
       "title": "Troll and I",
@@ -382032,28 +382915,103 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 85.0,
+          "score": 78.2,
           "scale": 100,
           "sources": [
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/12178-the-bug-butcher",
+              "date": "2019-03-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 90,
+              "url": "https://www.gamespace.com/reviews/the-bug-butcher-review-nintendo-switch/",
+              "date": "2018-11-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 85.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-bug-butcher-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 66,
+              "url": "https://www.nintenderos.com/2018/11/analisis-the-bug-butcher/",
+              "date": "2018-11-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/the-bug-butcher",
+              "date": "2023-10-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/48958/the-bug-butcher-switch-eshop-review",
+              "date": "2018-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 90,
+              "url": "https://www.thesixthaxis.com/2018/11/15/the-bug-butcher-review/",
+              "date": "2018-11-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 85,
+              "url": "https://worthplaying.com/article/2019/4/12/reviews/113789/",
+              "date": "2019-04-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 8
         },
         "user": {
-          "score": null,
+          "score": 7.9,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.9,
+              "scale": 10,
+              "count": 14,
+              "url": "https://www.metacritic.com/game/the-bug-butcher/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.7416573867739413,
+              "normalized": 7.9
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:07.687048+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:25:45.568425+00:00"
       },
       "requirements": {
         "image": true,
@@ -382070,7 +383028,11 @@
       "basics_attempted": "2026-11-02T22:52:07.687048+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -382120,7 +383082,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:25:48.331642+00:00",
+      "full_version": 7
     },
     "Switch:8791": {
       "title": "Thunder Cross",
@@ -393302,34 +394266,514 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 73.7,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "App Trigger",
+              "score": 90,
+              "url": "https://apptrigger.com/2021/10/22/dark-pictures-anthology-house-of-ashes-review/",
+              "date": "2021-10-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 78,
+              "url": "https://cogconnected.com/review/the-dark-pictures-anthology-house-of-ashes-review",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Carole Quintaine",
+              "score": 65,
+              "url": "http://carolequintaine.com/house-of-ashes-cest-pas-si-terrible-test-ps5/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 60,
+              "url": "https://www.destructoid.com/reviews/review-the-dark-pictures-anthology-house-of-ashes",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 75,
+              "url": "http://digitalchumps.com/the-bear-the-admiral-nintendo-switch/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 80,
+              "url": "http://www.digitallydownloaded.net/2021/10/review-house-of-ashes-sony-playstation-5.html",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 80,
+              "url": "https://www.dualshockers.com/the-dark-pictures-anthology-house-of-ashes-review-welcome-to-hell/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 60,
+              "url": "",
+              "date": "2021-12-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 80,
+              "url": "https://www.eurogamer.it/articles/the-dark-pictures-anthology-house-of-ashes-recensione",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 75,
+              "url": "https://www.everyeye.it/articoli/recensione-the-dark-pictures-anthology-house-of-ashes-orrore-profondo-54960.html",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 80,
+              "url": "https://www.games.ch/dark-pictures-house-ashes/test/review-kvjb/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMINGbible",
+              "score": 60,
+              "url": "https://www.gamingbible.co.uk/reviews/house-of-ashes-review-adventure-horror-thats-light-on-the-scares-20211020",
+              "date": "2021-10-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 75,
+              "url": "https://www.gameinformer.com/review/the-dark-pictures-anthology-house-of-ashes/the-dark-pictures-anthology-house-of-ashes-review",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameMAG",
+              "score": 50,
+              "url": "https://gamemag.ru/reviews/the-dark-pictures-house-of-ashes-ps5-review",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 70,
+              "url": "https://www.gameover.gr/2021/10/27/the-dark-pictures-anthology-house-of-ashes-review/",
+              "date": "2021-10-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 60,
+              "url": "https://www.gamepro.de/artikel/house-of-ashes-test,3374434.html",
+              "date": "2021-10-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2021/10/house-of-ashes-review/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/the-dark-pictures-anthology-house-of-ashes-review-the-descent/1900-6417766/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesBeat",
+              "score": 80,
+              "url": "https://venturebeat.com/2021/10/21/the-dark-pictures-anthology-house-of-ashes-review-saving-friends-and-enemies-alike/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 60,
+              "url": "https://www.gamesradar.com/dark-pictures-anthology-house-of-ashes-review/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 90,
+              "url": "https://gamingtrend.com/?p=214843",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 85,
+              "url": "https://www.godisageek.com/reviews/the-dark-pictures-anthology-house-of-ashes-review/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 80,
+              "url": "https://www.heypoorplayer.com/2021/10/21/the-dark-pictures-anthology-house-of-ashes-review-ps5/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 80,
+              "url": "https://www.ign.com/articles/the-dark-pictures-anthology-house-of-ashes-review",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 70,
+              "url": "https://it.ign.com/the-dark-pictures-house-of-ashes/187702/review/the-dark-pictures-house-of-ashes-la-recensione",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 70,
+              "url": "https://es.ign.com/the-dark-pictures-house-of-ashes/176934/review/analisis-de-house-of-ashes-la-nueva-entrega-de-the-dark-pictures-que-nos-traslada-a-las-profundidade",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 70,
+              "url": "https://www.impulsegamer.com/the-dark-pictures-anthology-house-of-ashes-ps5-review/",
+              "date": "2021-10-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 75,
+              "url": "https://www.jeuxvideo.com/test/1479190/the-dark-pictures-anthology-house-of-ashes-de-quoi-concurrencer-until-dawn.htm",
+              "date": "2021-10-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "KeenGamer",
+              "score": 65,
+              "url": "https://www.keengamer.com/articles/reviews/ps5-reviews/the-dark-pictures-anthology-house-of-ashes-review-a-journey-into-the-abyss-ps5/",
+              "date": "2021-10-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 78,
+              "url": "https://www.levelup.com/PlayStation-5/juegos/647190/The-Dark-Pictures-House-of-Ashes/review",
+              "date": "2021-10-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "M3",
+              "score": 70,
+              "url": "https://m3.idg.se/2.1022/1.757821/house-of-ashes",
+              "date": "2021-11-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG",
+              "score": 65,
+              "url": "https://www.millenium.org/test/383284.html",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG Spain",
+              "score": 75,
+              "url": "https://www.millenium.gg/analisis/42161.html",
+              "date": "2021-10-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 78,
+              "url": "https://multiplayer.it/recensioni/the-dark-pictures-house-of-ashes-recensione.html",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NME",
+              "score": 80,
+              "url": "https://www.nme.com/reviews/game-reviews/the-dark-pictures-anthology-house-of-ashes-review-3075989",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New Game Network",
+              "score": 65,
+              "url": "https://www.newgamenetwork.com/article/2488/the-dark-pictures-house-of-ashes-review/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 90,
+              "url": "https://noisypixel.net/the-dark-pictures-anthology-house-of-ashes-review-ps4-ps5-xbox-one-series-x-pc/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY",
+              "score": 60,
+              "url": "",
+              "date": "2021-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 80,
+              "url": "https://play.co.rs/2021/11/05/the-dark-pictures-anthology-house-of-ashes-review/",
+              "date": "2021-11-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlaySense",
+              "score": 85,
+              "url": "https://playsense.nl/468411/review-house-of-ashes/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation LifeStyle",
+              "score": 90,
+              "url": "https://www.playstationlifestyle.net/2021/10/21/the-dark-pictures-anthology-house-of-ashes-review-ps5/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 90,
+              "url": "http://www.psu.com/reviews/the-dark-pictures-house-of-ashes-ps5-review",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 58,
+              "url": "https://www.player2.net.au/2021/10/the-dark-pictures-house-of-ashes-semper-fine/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Power Unlimited",
+              "score": 74,
+              "url": "https://pu.nl/artikelen/review/the-dark-pictures-house-of-ashes-review-ps5-ondergronds-is-het-mooi-maar-niet-zo-eng/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 80,
+              "url": "https://press-start.com.au/reviews/ps5-reviews/2021/10/22/the-dark-pictures-house-of-ashes-review-supermassive-surprises-once-more/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "http://www.pushsquare.com/reviews/ps5/the-dark-pictures-anthology-house-of-ashes",
+              "date": "2021-10-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 79,
+              "url": "https://www.rpgfan.com/review/the-dark-pictures-anthology-house-of-ashes/",
+              "date": "2021-11-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 70,
+              "url": "https://screenrant.com/dark-pictures-anthology-house-ashes-game-review/",
+              "date": "2021-10-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 72,
+              "url": "https://www.spaziogames.it/the-dark-pictures-anthology-house-of-ashes-recensione/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 81,
+              "url": "https://www.thegamesmachine.it/the-dark-pictures-anthology-house-of-ashes-pc-ps4-ps5-xbox-one-series-x-s/house-of-ashes-recensione/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 80,
+              "url": "https://www.thesixthaxis.com/2021/10/21/house-of-ashes-review-the-dark-pictures-anthology/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 80,
+              "url": "https://twinfinite.net/2021/10/dark-pictures-house-of-ashes-review/",
+              "date": "2021-10-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VG247",
+              "score": 60,
+              "url": "https://www.vg247.com/the-dark-pictures-anthology-house-of-ashes-review-caught-between-a-video-game-and-a-movie",
+              "date": "2021-10-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 73,
+              "url": "https://vandal.elespanol.com/analisis/xbone/house-of-ashes/92288#p-89",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VideoGamer",
+              "score": 40,
+              "url": "https://www.videogamer.com/reviews/the-dark-pictures-anthology-house-of-ashes-review/",
+              "date": "2021-10-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "WellPlayed",
+              "score": 80,
+              "url": "https://www.well-played.com.au/the-dark-pictures-anthology-house-of-ashes-review/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 70,
+              "url": "https://worthplaying.com/article/2021/10/21/reviews/128976-ps5-review-the-dark-pictures-anthology-episode-3-house-of-ashes/",
+              "date": "2021-10-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 80,
+              "url": "https://www.xgn.nl/review/house-of-ashes-review",
+              "date": "2021-11-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 58
         },
         "user": {
-          "score": 8.66,
+          "score": 8.14,
           "scale": 10,
           "sources": [
             {
-              "score": 4.33,
-              "count": 10550,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.33,
               "scale": 5,
-              "source": "PSN",
+              "count": 10550,
               "url": "https://store.playstation.com/pt-pt/product/EP0700-PPSA02594_00-SMGDARKPICTURESC",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:33:19.288330+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 8.66
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 487,
+              "url": "https://www.metacritic.com/game/the-dark-pictures-anthology-house-of-ashes/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 22.06807649071391,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:33:16.935420+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 61,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:25:46.967382+00:00"
       },
       "requirements": {
         "image": true,
@@ -393371,7 +394815,9 @@
       },
       "basics_attempted": "2026-11-02T18:33:16.935420+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "composites": "Community: HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -393387,7 +394833,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:25:47.383149+00:00",
+      "full_version": 7
     },
     "Switch:9463": {
       "title": "The House of the Dead: Remake",
