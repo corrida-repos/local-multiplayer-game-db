@@ -29,6 +29,10 @@ jobs:
           cp data/catalog.json data/ratings.json data/stores.json data/trailers.json data/psplus.json _site/
           cp data/enrichment-public.json _site/enrichment.json
           touch _site/.nojekyll
+          # Version the asset URLs per commit so browsers never show a stale app.js/style.css after a deploy
+          v=$(git rev-parse --short HEAD)
+          sed -i "s|href=\"style.css\"|href=\"style.css?v=$v\"|; s|src=\"app.js\"|src=\"app.js?v=$v\"|" _site/index.html
+          grep -q "app.js?v=$v" _site/index.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
