@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T07:36:18.826580+00:00",
+  "updated": "2026-11-03T07:37:13.319412+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1801,
+    "full_attempted": 1811,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -90434,7 +90434,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:12.901518+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:37:05.346039+00:00"
       },
       "requirements": {
         "image": true,
@@ -90450,7 +90457,13 @@
       },
       "basics_attempted": "2026-11-02T22:45:12.901518+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/princess-farmer-switch/",
@@ -90499,7 +90512,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:37:07.672149+00:00",
+      "full_version": 7
     },
     "Switch:11913": {
       "title": "Pro Tennis: World Court",
@@ -90598,28 +90613,79 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 72.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/pulling-no-punches",
+              "name": "Hey Poor Player",
+              "score": 80,
+              "url": "https://www.heypoorplayer.com/2023/05/28/pulling-no-punches-review-switch/",
+              "date": "2023-05-27",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 68.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=pulling-no-punches-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/pulling-no-punches",
+              "date": "2023-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 70,
+              "url": "https://toucharcade.com/2023/05/29/puzzle-bobble-everybubble-switch-review-eshop-price-discount-new-games/",
+              "date": "2023-05-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 5.45,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 4,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/pulling-no-punches/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 4.0
+            },
+            {
+              "score": 7.4,
+              "scale": 10,
+              "count": 5,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/pulling_no_punches",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.23606797749979,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:25.976876+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:37:10.565504+00:00"
       },
       "requirements": {
         "image": true,
@@ -90635,7 +90701,12 @@
       },
       "basics_attempted": "2026-11-02T22:45:25.976876+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/pulling-no-punches-switch/",
@@ -90685,7 +90756,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:37:13.112503+00:00",
+      "full_version": 7
     },
     "Switch:12423": {
       "title": "Puzzle Bobble Everybubble",
@@ -154103,15 +154176,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.51,
-              "count": 37,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.51,
               "scale": 5,
-              "source": "PSN",
+              "count": 37,
               "url": "https://store.playstation.com/pt-pt/product/EP5403-PPSA06611_00-PRINCESSFARM5EUR",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:07:17.639458+00:00",
-              "platform": "PSN · PS5",
               "weight": 6.082762530298219,
               "normalized": 9.02
             }
@@ -154119,7 +154190,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:07:15.565616+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:36:39.790561+00:00"
       },
       "requirements": {
         "image": true,
@@ -154161,7 +154239,11 @@
       },
       "basics_attempted": "2026-11-02T18:07:15.565616+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -154177,7 +154259,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:36:40.484351+00:00",
+      "full_version": 7
     },
     "Switch:16173": {
       "title": "Rascal's Escape",
@@ -218654,15 +218738,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.72,
-              "count": 18,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.72,
               "scale": 5,
-              "source": "PSN",
+              "count": 18,
               "url": "https://store.playstation.com/pt-pt/product/JB2364-PPSA37317_00-0482449083868760",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:07:18.769802+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 4.242640687119285,
               "normalized": 7.4399999999999995
             }
@@ -218670,7 +218752,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:07:15.569347+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:36:34.983893+00:00"
       },
       "requirements": {
         "image": true,
@@ -218712,7 +218801,11 @@
       },
       "basics_attempted": "2026-11-02T18:07:15.569347+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -218728,7 +218821,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:36:35.395501+00:00",
+      "full_version": 7
     },
     "Switch:18676": {
       "title": "Project Neon",
@@ -218740,10 +218835,11 @@
           "sources": [
             {
               "name": "Nintendo Life",
-              "score": 70.0,
+              "score": 70,
               "url": "https://www.nintendolife.com/reviews/switch-eshop/project-neon",
+              "date": "2026-08-17",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
@@ -218756,7 +218852,12 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:25.975817+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:36:40.706153+00:00"
       },
       "requirements": {
         "image": true,
@@ -218772,7 +218873,13 @@
       },
       "basics_attempted": "2026-11-02T22:45:25.975817+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/project-neon-switch/",
@@ -218821,7 +218928,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:36:43.268678+00:00",
+      "full_version": 7
     },
     "PS5:18631": {
       "title": "Psi-Ops: The Mindgate Conspiracy",
@@ -218839,15 +218948,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.6,
-              "count": 724,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.6,
               "scale": 5,
-              "source": "PSN",
+              "count": 724,
               "url": "https://store.playstation.com/pt-pt/product/UP1018-PPSA31935_00-PS2EMU00PSIOPSMC",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:07:45.095547+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 26.90724809414742,
               "normalized": 9.2
             }
@@ -218855,7 +218962,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:07:43.927808+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:36:44.955255+00:00"
       },
       "requirements": {
         "image": true,
@@ -218897,7 +219011,11 @@
       },
       "basics_attempted": "2026-11-02T18:07:43.927808+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -218913,7 +219031,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:36:45.469526+00:00",
+      "full_version": 7
     },
     "Switch:18883": {
       "title": "Retrobot: 2085",
@@ -269869,22 +269989,31 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 67.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/pushy_and_pully_in_blockland",
+              "name": "Hobby Consolas",
+              "score": 75,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-pushy-and-pully-blockland-puzzles-encanto-retro-642009",
+              "date": "2020-05-17",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/pushy_and_pully_in_blockland",
+              "date": "2020-05-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": 6.8,
+          "score": 7.25,
           "scale": 10,
           "sources": [
             {
@@ -269895,14 +270024,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/pushy_and_pully_in_blockland",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 6.799999999999999,
-              "checked": "2026-11-02T18:07:43.929670+00:00"
+              "normalized": 6.799999999999999
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.7,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/pushy-and-pully-in-blockland/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 7.7
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:25.977228+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:37:00.552927+00:00"
       },
       "requirements": {
         "image": true,
@@ -269918,7 +270061,13 @@
       },
       "basics_attempted": "2026-11-02T22:45:25.977228+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/pushy-and-pully-in-blockland-switch/",
@@ -269967,7 +270116,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:37:03.287819+00:00",
+      "full_version": 7
     },
     "Switch:6070": {
       "title": "Red Wings: Aces of the Sky",
@@ -306071,19 +306222,36 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 81.7,
           "scale": 100,
           "sources": [
             {
               "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/psyvariar_delta",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/psyvariar_delta",
+              "date": "2019-07-04",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/cool-indie-games-2019-part-3#psyvariar-delta",
+              "date": "2019-07-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 85,
+              "url": "https://worthplaying.com/article/2019/10/25/reviews/116685/",
+              "date": "2019-10-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
           "score": 7.4,
@@ -306097,14 +306265,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/psyvariar_delta",
               "platform": "Nintendo Switch",
               "weight": 4.123105625617661,
-              "normalized": 7.4,
-              "checked": "2026-11-02T18:07:43.928647+00:00"
+              "normalized": 7.4
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:25.976341+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:36:50.564082+00:00"
       },
       "requirements": {
         "image": true,
@@ -306120,7 +306292,13 @@
       },
       "basics_attempted": "2026-11-02T22:45:25.976341+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/psyvariar-delta-switch/",
@@ -306169,7 +306347,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:36:55.124511+00:00",
+      "full_version": 7
     },
     "Switch:7331": {
       "title": "PuPaiPo Space Deluxe",
@@ -306183,6 +306363,7 @@
               "name": "Switch Player",
               "score": 60,
               "url": "http://switchplayer.net/2020/04/04/pupaipo-space-deluxe-review/",
+              "date": "2020-04-06",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -306191,13 +306372,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/pupaipo_space_deluxe",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:25.976581+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:36:55.567477+00:00"
       },
       "requirements": {
         "image": true,
@@ -306214,7 +306412,11 @@
       "basics_attempted": "2026-11-02T22:45:25.976581+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -306264,7 +306466,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:36:58.198574+00:00",
+      "full_version": 7
     },
     "Switch:7500": {
       "title": "Puzzle Book",
@@ -328811,22 +329015,31 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 75.0,
           "scale": 100,
           "sources": [
             {
               "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/project_starship_x",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/project_starship_x",
+              "date": "2021-02-05",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shindig",
+              "score": 80,
+              "url": "https://www.shindig.nz/videogames/reviews/review-project-starship-x-switch/",
+              "date": "2021-03-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": 7.4,
+          "score": 7.96,
           "scale": 10,
           "sources": [
             {
@@ -328837,14 +329050,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/project_starship_x",
               "platform": "Nintendo Switch",
               "weight": 3.7416573867739413,
-              "normalized": 7.4,
-              "checked": "2026-11-02T18:07:17.649534+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 9,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/project-starship-x/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.0,
+              "normalized": 9.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:25.976089+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:36:35.676572+00:00"
       },
       "requirements": {
         "image": true,
@@ -328860,7 +329087,13 @@
       },
       "basics_attempted": "2026-11-02T22:45:25.976089+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/project-starship-x-switch/",
@@ -328909,7 +329142,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:36:38.573372+00:00",
+      "full_version": 7
     },
     "Switch:8417": {
       "title": "Putty Pals",
