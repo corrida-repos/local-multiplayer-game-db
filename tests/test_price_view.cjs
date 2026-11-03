@@ -23,6 +23,10 @@ set([physical,{...digital,total_cents:3499,item_cents:3499}]);
 html=context.priceMarkup(g);
 assert.doesNotMatch(html,/Darty/);assert.match(html,/Digital/);assert.doesNotMatch(html,/tied/);
 
+// A promotion always shows when it ends.
+set([{...digital,total_cents:999,item_cents:999,expires_at:iso(86400e3)},physical]);
+html=context.priceMarkup(g);assert.match(html,/Preço válido até/);assert.match(html,new RegExp(String(new Date(now+86400e3).getUTCFullYear())));assert.match(html,/hora de Lisboa/);
+
 // An expired promotion falls back to the next verified minimum between daily runs.
 set([{...digital,total_cents:999,item_cents:999,expires_at:iso(-60e3)},physical]);
 html=context.priceMarkup(g);assert.match(html,/Darty/);assert.match(html,/portes/);
