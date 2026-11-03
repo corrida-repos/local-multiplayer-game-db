@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-03T00:00:51.188529+00:00",
+  "updated": "2026-11-03T00:02:00.390506+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1929,
+    "ready": 1931,
     "missing_image": 109,
-    "missing_store": 429,
+    "missing_store": 423,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -32213,31 +32213,36 @@
       "next_retry": "2026-11-03T23:33:23.711285+00:00"
     },
     {
-      "key": "Switch:7236",
-      "title": "Stones of the Revenant",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:22:11.021695+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:5582",
       "title": "Stranger Things 3: The Game",
       "platform": "Switch",
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T21:22:11.021887+00:00",
+      "attempted": "2026-11-03T00:00:57.247561+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:57.905402+00:00",
+              "next_attempt": "2026-11-04T00:00:57.905402+00:00",
+              "revision": "1b37ca344705a84f:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Stranger+Things+3%3A+The+Game%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Stranger+Things+3%3A+The+Game%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-04T00:00:57.905402+00:00"
     },
     {
       "key": "Switch:18245",
@@ -32246,14 +32251,83 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T21:22:11.022079+00:00",
+      "attempted": "2026-11-03T00:00:57.247880+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:52.645970+00:00",
+              "next_attempt": "2026-11-04T00:01:52.645970+00:00",
+              "revision": "baed3dd35856d261:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/street_smart",
+                "https://www.nintendolife.com/games/switch-eshop/street_smart",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_street_smart"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_street_smart"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:53.253538+00:00",
+              "next_attempt": "2026-11-04T00:01:53.253538+00:00",
+              "revision": "baed3dd35856d261:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=street-smart-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=street-smart-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:59.848308+00:00",
+              "next_attempt": "2026-11-04T00:01:59.848308+00:00",
+              "revision": "baed3dd35856d261:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-street-smart/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-street-smart/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-street-smart/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-street-smart/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:59.882772+00:00",
+              "next_attempt": "2026-11-04T00:01:59.882772+00:00",
+              "revision": "baed3dd35856d261:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Street+Smart&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Street+Smart&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:01:59.882925+00:00",
+              "next_attempt": "2026-11-03T01:01:59.882925+00:00",
+              "revision": "baed3dd35856d261:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:01:59.882991+00:00",
+              "next_attempt": "2026-11-03T01:01:59.882991+00:00",
+              "revision": "baed3dd35856d261:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:01:59.882925+00:00"
     },
     {
       "key": "Switch:14459",
@@ -32368,13 +32442,30 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T21:22:11.022326+00:00",
+      "attempted": "2026-11-03T00:00:57.248334+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:00:59.137368+00:00",
+              "next_attempt": "2026-11-04T00:00:59.137368+00:00",
+              "revision": "5fd5c7b145d23a63:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Strikers+1945%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Strikers+1945%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-04T00:00:59.137368+00:00"
     },
     {
       "key": "Switch:6902",
@@ -32383,13 +32474,30 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T21:22:11.022560+00:00",
+      "attempted": "2026-11-03T00:00:57.248602+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:00.108727+00:00",
+              "next_attempt": "2026-11-04T00:01:00.108727+00:00",
+              "revision": "84203fc956881145:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Strikers+1945+II%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Strikers+1945+II%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-04T00:01:00.108727+00:00"
     },
     {
       "key": "Switch:12307",
@@ -32796,80 +32904,400 @@
       "title": "Strings Theory",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:22:11.023435+00:00",
+      "attempted": "2026-11-03T00:00:57.248970+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:00:58.636104+00:00",
+              "next_attempt": "2026-11-04T00:00:58.636104+00:00",
+              "revision": "c17fa047090d441e:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:00:58.636104+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Strings-Theory-2814205.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Strings-Theory-2814205.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:37.471395+00:00",
+              "next_attempt": "2026-11-04T00:01:37.471395+00:00",
+              "revision": "c17fa047090d441e:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/strings_theory",
+                "https://www.nintendolife.com/games/nintendo-switch/strings_theory"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/strings_theory"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:38.484839+00:00",
+              "next_attempt": "2026-11-04T00:01:38.484839+00:00",
+              "revision": "c17fa047090d441e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=strings-theory-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=strings-theory-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:41.229886+00:00",
+              "next_attempt": "2026-11-04T00:01:41.229886+00:00",
+              "revision": "c17fa047090d441e:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/strings-theory/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/strings-theory/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/strings-theory/"
+              ],
+              "url": "https://www.metacritic.com/game/strings-theory/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:41.287883+00:00",
+              "next_attempt": "2026-11-04T00:01:41.287883+00:00",
+              "revision": "c17fa047090d441e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Strings+Theory&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Strings+Theory&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:01:41.288102+00:00",
+              "next_attempt": "2026-11-03T01:01:41.288102+00:00",
+              "revision": "c17fa047090d441e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:01:41.288187+00:00",
+              "next_attempt": "2026-11-03T01:01:41.288187+00:00",
+              "revision": "c17fa047090d441e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:01:41.288102+00:00"
     },
     {
       "key": "Switch:19015",
       "title": "Sugar Rush Rescue",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:22:11.026291+00:00",
+      "attempted": "2026-11-03T00:00:57.251815+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:00:57.503715+00:00",
+              "next_attempt": "2026-11-04T00:00:57.503715+00:00",
+              "revision": "dd03f83ae10c4c11:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:00:57.503715+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sugar-Rush-Rescue-3214400.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sugar-Rush-Rescue-3214400.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:27.736014+00:00",
+              "next_attempt": "2026-11-04T00:01:27.736014+00:00",
+              "revision": "dd03f83ae10c4c11:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/sugar_rush_rescue",
+                "https://www.nintendolife.com/games/nintendo-switch/sugar_rush_rescue"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/sugar_rush_rescue"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:28.358862+00:00",
+              "next_attempt": "2026-11-04T00:01:28.358862+00:00",
+              "revision": "dd03f83ae10c4c11:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=sugar-rush-rescue-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=sugar-rush-rescue-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:31.778450+00:00",
+              "next_attempt": "2026-11-04T00:01:31.778450+00:00",
+              "revision": "dd03f83ae10c4c11:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/sugar-rush-rescue/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/sugar-rush-rescue/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/sugar-rush-rescue/"
+              ],
+              "url": "https://www.metacritic.com/game/sugar-rush-rescue/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:31.864599+00:00",
+              "next_attempt": "2026-11-04T00:01:31.864599+00:00",
+              "revision": "dd03f83ae10c4c11:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Sugar+Rush+Rescue&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Sugar+Rush+Rescue&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:01:31.864752+00:00",
+              "next_attempt": "2026-11-03T01:01:31.864752+00:00",
+              "revision": "dd03f83ae10c4c11:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:01:31.864814+00:00",
+              "next_attempt": "2026-11-03T01:01:31.864814+00:00",
+              "revision": "dd03f83ae10c4c11:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:01:31.864752+00:00"
     },
     {
       "key": "Switch:16193",
       "title": "Sugar Tanks Arena",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:22:16.392027+00:00",
+      "attempted": "2026-11-03T00:00:57.252877+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:01:00.804972+00:00",
+              "next_attempt": "2026-11-04T00:01:00.804972+00:00",
+              "revision": "832df4386a3ed822:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:01:00.804972+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sugar-Tanks-Arena-2687062.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sugar-Tanks-Arena-2687062.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:42.483641+00:00",
+              "next_attempt": "2026-11-04T00:01:42.483641+00:00",
+              "revision": "832df4386a3ed822:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/sugar_tanks_arena",
+                "https://www.nintendolife.com/games/nintendo-switch/sugar_tanks_arena"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/sugar_tanks_arena"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:43.092425+00:00",
+              "next_attempt": "2026-11-04T00:01:43.092425+00:00",
+              "revision": "832df4386a3ed822:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=sugar-tanks-arena-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=sugar-tanks-arena-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:45.366290+00:00",
+              "next_attempt": "2026-11-04T00:01:45.366290+00:00",
+              "revision": "832df4386a3ed822:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/sugar-tanks-arena/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/sugar-tanks-arena/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/sugar-tanks-arena/"
+              ],
+              "url": "https://www.metacritic.com/game/sugar-tanks-arena/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:45.403770+00:00",
+              "next_attempt": "2026-11-04T00:01:45.403770+00:00",
+              "revision": "832df4386a3ed822:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Sugar+Tanks+Arena&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Sugar+Tanks+Arena&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:01:45.404011+00:00",
+              "next_attempt": "2026-11-03T01:01:45.404011+00:00",
+              "revision": "832df4386a3ed822:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:01:45.404149+00:00",
+              "next_attempt": "2026-11-03T01:01:45.404149+00:00",
+              "revision": "832df4386a3ed822:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:01:45.404011+00:00"
     },
     {
       "key": "Switch:16469",
       "title": "Sunshower",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:22:20.283508+00:00",
+      "attempted": "2026-11-03T00:00:57.906132+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:7276",
-      "title": "Super Bit Blaster XL",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:23:26.214287+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:01:02.106977+00:00",
+              "next_attempt": "2026-11-04T00:01:02.106977+00:00",
+              "revision": "cf446373aca4a17f:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:01:02.106977+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sunshower-2753856.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Sunshower-2753856.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:47.790840+00:00",
+              "next_attempt": "2026-11-04T00:01:47.790840+00:00",
+              "revision": "cf446373aca4a17f:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/sunshower",
+                "https://www.nintendolife.com/games/nintendo-switch/sunshower"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/sunshower"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:48.414915+00:00",
+              "next_attempt": "2026-11-04T00:01:48.414915+00:00",
+              "revision": "cf446373aca4a17f:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=sunshower-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=sunshower-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:51.485794+00:00",
+              "next_attempt": "2026-11-04T00:01:51.485794+00:00",
+              "revision": "cf446373aca4a17f:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/sunshower/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/sunshower/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/sunshower/"
+              ],
+              "url": "https://www.metacritic.com/game/sunshower/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:01:51.519299+00:00",
+              "next_attempt": "2026-11-04T00:01:51.519299+00:00",
+              "revision": "cf446373aca4a17f:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Sunshower&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Sunshower&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:01:51.519483+00:00",
+              "next_attempt": "2026-11-03T01:01:51.519483+00:00",
+              "revision": "cf446373aca4a17f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:01:51.519552+00:00",
+              "next_attempt": "2026-11-03T01:01:51.519552+00:00",
+              "revision": "cf446373aca4a17f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:01:51.519483+00:00"
     },
     {
       "key": "Switch:14352",
