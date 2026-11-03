@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:48:56.316751+00:00",
+  "updated": "2026-11-03T06:49:47.811886+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1641,
+    "full_attempted": 1651,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -78530,26 +78530,49 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 50.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Gaming Age",
+              "score": 58,
+              "url": "https://gaming-age.com/2022/12/new-joe-and-mac-caveman-ninja-for-playstation-xbox-switch/",
+              "date": "2022-12-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 65,
+              "url": "https://www.jeuxactu.com/test-new-joe-mac-remake-le-charme-d-aujourd-hui-la-rigidite-d-autrefro-128849.htm",
+              "date": "2022-11-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 27,
+              "url": "https://videochums.com/review/new-joe-and-mac-caveman-ninja",
+              "date": "2022-12-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 6.84,
           "scale": 10,
           "sources": [
             {
-              "score": 3.42,
-              "count": 220,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.42,
               "scale": 5,
-              "source": "PSN",
+              "count": 220,
               "url": "https://store.playstation.com/pt-pt/product/EP4295-PPSA02801_00-JOEANDMACPS500EU",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:58:34.738112+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 14.832396974191326,
               "normalized": 6.84
             }
@@ -78557,7 +78580,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:58:33.558666+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:49:11.895474+00:00"
       },
       "requirements": {
         "image": true,
@@ -78599,7 +78629,11 @@
       },
       "basics_attempted": "2026-11-02T17:58:33.558666+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -78615,35 +78649,79 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:49:12.166278+00:00",
+      "full_version": 7
     },
     "Switch:12430": {
       "title": "New Joe & Mac: Caveman Ninja",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 64.0,
+          "score": 61.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "Meristation",
+              "score": 60,
+              "url": "https://as.com/meristation/2022/12/11/analisis/1670746573_099861.html",
+              "date": "2022-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 60,
+              "url": "https://multiplayer.it/recensioni/new-joe-mac-caveman-ninja-recensione.html",
+              "date": "2022-12-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 64.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=new-joe-and-mac-caveman-ninja-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Vandal",
+              "score": 60,
+              "url": "https://vandal.elespanol.com/analisis/switch/new-joe-mac-caveman-ninja/125468#p-83",
+              "date": "2022-12-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 1.8,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 1.8,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/new-joe-and-mac-caveman-ninja/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.23606797749979,
+              "normalized": 1.7999999999999998
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:42:49.284496+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:49:25.749256+00:00"
       },
       "requirements": {
         "image": true,
@@ -78659,7 +78737,13 @@
       },
       "basics_attempted": "2026-11-02T22:42:49.284496+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/new-joe-and-mac-caveman-ninja-switch/",
@@ -78709,7 +78793,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:49:28.599088+00:00",
+      "full_version": 7
     },
     "Switch:5462": {
       "title": "New Super Mario Bros. U Deluxe",
@@ -78725,45 +78811,611 @@
         "id": "6wTFy-pJFMI",
         "title": "New Super Mario Bros. U Deluxe – Announcement Trailer",
         "kind": "trailer",
-        "source": "https://www.youtube.com/watch?v=6wTFy-pJFMI",
-        "url": "https://www.youtube.com/watch?v=6wTFy-pJFMI",
-        "checked": "2026-11-02T16:01:07.038948+00:00",
-        "attempted": "2026-11-02T16:01:07.038967+00:00",
-        "error": null
+        "source": "https://www.youtube.com/watch?v=6wTFy-pJFMI"
       },
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 80.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Metacritic",
+              "name": "3DJuegos",
+              "score": 85,
+              "url": "https://www.3djuegos.com/juegos/analisis/33250/0/new-super-mario-bros-u-deluxe/",
+              "date": "2019-01-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "4P.de",
+              "score": 83,
+              "url": "http://www.4players.de/4players.php/dispbericht/Switch/Test/31457/83578/0/New_Super_Mario_Bros_U.html",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 90,
+              "url": "https://areajugones.sport.es/analisis-new-super-mario-bros-u-deluxe/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
               "score": 80,
-              "url": "https://www.metacritic.com/game/new-super-mario-bros-u-deluxe/critic-reviews/?platform=nintendo-switch",
-              "platform": "Switch"
+              "url": "https://atomix.vg/review-new-super-mario-bros-u-deluxe/",
+              "date": "2019-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "AusGamers",
+              "score": 70,
+              "url": "https://www.ausgamers.com/games/new-super-mario-bros-u-deluxe/review/",
+              "date": "2019-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "BaziCenter",
+              "score": 85,
+              "url": "http://www.bazicenter.com/?p=756504",
+              "date": "2019-01-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 90,
+              "url": "",
+              "date": "2019-03-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 85,
+              "url": "https://www.cgmagonline.com/reviews/new-super-mario-bros-u-deluxe-nintendo-switch-review/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 83,
+              "url": "https://cogconnected.com/review/new-super-mario-bros-u-deluxe-review/",
+              "date": "2019-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 80,
+              "url": "https://www.criticalhit.net/review/new-super-mario-bros-u-deluxe-review-more-io/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 90,
+              "url": "http://www.cubed3.com/review/5262/1/new-super-mario-bros-u-deluxe-nintendo-switch.html",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 90,
+              "url": "http://www.digitallydownloaded.net/2019/01/review-new-super-mario-bros-u-deluxe.html",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 80,
+              "url": "https://www.dualshockers.com/new-super-mario-bros-u-deluxe-review-switch/",
+              "date": "2019-01-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "EGM",
+              "score": 90,
+              "url": "http://www.egmnow.com/articles/reviews/new-super-mario-bros-u-deluxe-review/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 80,
+              "url": "https://www.eurogamer.it/articles/2019-01-09-new-super-mario-bros-u-deluxe-recensione",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 80,
+              "url": "https://www.everyeye.it/articoli/recensione-new-super-mario-bros-u-deluxe-del-platform-per-nintendo-switch-42261.html",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FANDOM",
+              "score": 80,
+              "url": "https://www.fandom.com/articles/new-super-mario-bros-u-deluxe-review",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "https://fnintendo.net/article/11965-new-super-mario-bros-u-deluxe",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 85,
+              "url": "https://www.gameinformer.com/review/new-super-mario-bros-u-deluxe/not-new-but-still-super",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game World Navigator Magazine",
+              "score": 78,
+              "url": "",
+              "date": "2019-03-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 75,
+              "url": "https://gameover.gr/reviews/38667-new-super-mario-bros-u-deluxe-review",
+              "date": "2019-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 85,
+              "url": "https://www.gamepro.de/artikel/new-super-mario-bros-u-deluxe-alte-huepf-liebe-rostet-nicht,3339084.html",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 70,
+              "url": "https://www.gamespot.com/reviews/new-super-mario-bros-u-deluxe-review-its-a-me-agai/1900-6417061/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 80,
+              "url": "http://www.gameblog.fr/tests/3273-new-super-mario-bros-u-deluxe-switch",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameplanet",
+              "score": 100,
+              "url": "https://www.gameplanet.com.au/nintendo-switch/reviews/g5c3659fc1f0e5/New-Super-Mario-Bros.-U-Deluxe/",
+              "date": "2019-01-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 90,
+              "url": "https://games.tiscali.cz/recenze/new-super-mario-bros-u-deluxe-recenze-322698",
+              "date": "2019-01-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesBeat",
+              "score": 75,
+              "url": "https://wp.me/p8wLEc-ai9t",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 90,
+              "url": "https://www.gamesradar.com/new-super-mario-bros-u-deluxe-review/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 65,
+              "url": "http://gamingtrend.com/feature/reviews/less-than-super-new-super-mario-bros-u-deluxe-review/",
+              "date": "2019-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 75,
+              "url": "https://www.godisageek.com/reviews/new-super-mario-bros-u-deluxe-review",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Guardian",
+              "score": 60,
+              "url": "https://www.theguardian.com/games/2019/jan/09/new-super-mario-bros-u-deluxe-review-nintendo-switch-multiplayer",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 84,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-new-super-mario-bros-deluxe-nintendo-switch-350819",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 80,
+              "url": "https://www.ign.com/articles/2019/01/09/new-super-mario-bros-u-deluxe-review",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 85,
+              "url": "https://it.ign.com/new-super-mario-bros-u-deluxe-nintendo-switch/149489/review/new-super-mario-bros-u-deluxe-la-recensione",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 82,
+              "url": "https://es.ign.com/new-super-mario-bros-u-deluxe-nintendo-switch/144163/review/analisis-de-new-super-mario-bros-u-deluxe-para-nintendo-swit",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 90,
+              "url": "http://www.impulsegamer.com/new-super-mario-bros-u-deluxe-nintendo-switch-review/",
+              "date": "2019-01-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 70,
+              "url": " https://www.jeuxactu.com/test-new-super-mario-bros-u-deluxe-un-portage-destine-aux-tous-petits-116822.htm",
+              "date": "2019-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 75,
+              "url": "http://www.jeuxvideo.com/test/983514/new-super-mario-bros-u-deluxe-un-contenu-massif-mais-peu-de-nouveautes.htm",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "M3",
+              "score": 70,
+              "url": "https://m3.idg.se/2.1022/1.713038/new-super-mario-bros-u-deluxe",
+              "date": "2019-01-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Merlin'in Kazanı (Turkey)",
+              "score": 80,
+              "url": "http://www.merlininkazani.com/Super_Mario_Bros_U_Deluxe-oyun_inceleme-105382p1.html",
+              "date": "2019-01-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 70,
+              "url": "https://metro.co.uk/2019/01/09/new-super-mario-bros-u-deluxe-review-mario-by-numbers-8326435/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/new-super-mario-bros-deluxe-recensione.html",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "My Nintendo News",
+              "score": 70,
+              "url": "https://mynintendonews.com/2019/01/09/review-new-super-mario-bros-u-deluxe-for-nintendo-switch/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2019/01/analisis-new-super-mario-bros-u-deluxe/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 70,
+              "url": "https://www.nintendoenthusiast.com/2019/01/09/new-super-mario-bros-u-deluxe-review/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 80,
+              "url": "",
+              "date": "2019-08-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/new-super-mario-bros-u-deluxe-review/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/new_super_mario_bros_u_deluxe",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/49322/new-super-mario-bros-u-deluxe-switch-review",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 83,
+              "url": "http://www.nintendojo.com/reviews/review-new-super-mario-bros-u-deluxe-switch",
+              "date": "2019-01-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Power Unlimited",
+              "score": 85,
+              "url": "https://pu.nl/artikelen/review/new-super-mario-bros-u-deluxe-review/",
+              "date": "2019-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 80,
+              "url": "https://press-start.com.au/reviews/nintendo-switch/2019/01/10/new-super-mario-bros-u-deluxe-simple-fun/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 70,
+              "url": "https://screenrant.com/new-super-mario-bros-u-deluxe-review/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 80,
+              "url": "https://www.shacknews.com/article/109483/new-super-mario-bros-u-deluxe-review-just-peachy",
+              "date": "2019-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Slant Magazine",
+              "score": 80,
+              "url": "https://www.slantmagazine.com/games/review-new-super-mario-bros-u-deluxe-opens-its-doors-to-all/",
+              "date": "2019-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 80,
+              "url": "https://www.spaziogames.it/new-super-mario-bros-u-deluxe-recensione/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 75,
+              "url": "https://stevivor.com/reviews/new-super-mario-bros-u-deluxe-review-old-game-new-price-tag/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2019/01/27/new-super-mario-bros-u-deluxe/",
+              "date": "2019-01-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 80,
+              "url": "https://www.thedigitalfix.com/gaming/content/12198/new-super-mario-bros-u-deluxe/",
+              "date": "2019-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 90,
+              "url": "https://www.thegamesmachine.it/new-super-mario-bros-u-deluxe-switch/new-super-mario-bros-u-deluxe-recensione-switch/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Sydney Morning Herald",
+              "score": 100,
+              "url": "https://www.smh.com.au/technology/new-super-mario-bros-u-deluxe-review-a-modern-mario-masterpiece-20190107-p50q0q.html",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 70,
+              "url": "https://www.thesixthaxis.com/2019/01/09/new-super-mario-bros-u-deluxe-review/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 80,
+              "url": "https://www.trustedreviews.com/reviews/new-super-mario-bros-u-deluxe",
+              "date": "2019-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 90,
+              "url": "https://twinfinite.net/2019/01/new-super-mario-bros-u-deluxe-review/",
+              "date": "2019-01-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 85,
+              "url": "https://vandal.elespanol.com/analisis/switch/new-super-mario-bros-u-deluxe/65549#p-83",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 90,
+              "url": "https://www.vooks.net/new-super-mario-bros-u-deluxe-switch-review",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 80,
+              "url": "https://wccftech.com/review/new-super-mario-bros-u-deluxe/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 80,
+              "url": "https://wegotthiscovered.com/gaming/new-super-mario-bros-u-deluxe-review/",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 80,
+              "url": "https://www.xgn.nl/review/new-super-mario-bros-u-deluxe-review",
+              "date": "2019-01-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 75,
+              "url": "http://www.ztgd.com/reviews/new-super-mario-bros-u-deluxe-switch/",
+              "date": "2019-01-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 70
         },
         "user": {
-          "score": 7.1,
+          "score": 7.43,
           "scale": 10,
-          "source_count": 1,
-          "method": "single-source",
           "sources": [
             {
+              "name": "Metacritic users",
               "score": 7.1,
               "scale": 10,
-              "source": "Metacritic",
+              "count": 695,
               "url": "https://www.metacritic.com/game/new-super-mario-bros-u-deluxe/user-reviews/?platform=nintendo-switch",
-              "checked": "2026-11-02T13:11:03.797808+00:00",
-              "name": "Metacritic",
-              "platform": "Switch"
+              "platform": "Nintendo Switch",
+              "weight": 26.362852652928137,
+              "normalized": 7.1
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 1287,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/new_super_mario_bros_u_deluxe",
+              "platform": "Nintendo Switch",
+              "weight": 31.622776601683793,
+              "normalized": 7.7
             }
-          ]
+          ],
+          "source_count": 2,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:42:49.693758+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 76,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:49:46.035428+00:00"
       },
       "requirements": {
         "image": true,
@@ -78772,7 +79424,12 @@
       },
       "basics_attempted": "2026-11-02T22:42:49.693758+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/new-super-mario-bros-u-deluxe-switch/",
@@ -78821,7 +79478,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:49:47.551889+00:00",
+      "full_version": 7
     },
     "Switch:4626": {
       "title": "Nine Parchments",
@@ -130592,26 +131251,49 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameSpew",
+              "score": 60,
+              "url": "https://www.gamespew.com/2024/09/night-slashers-remake-review/",
+              "date": "2024-09-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 60,
+              "url": "https://www.playstationcountry.com/night-slashers-remake-ps5-review/",
+              "date": "2024-09-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 60,
+              "url": "https://www.thegamesmachine.it/night-slashers-remake/night-slahers-remake-recensione/",
+              "date": "2024-10-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 7.5,
           "scale": 10,
           "sources": [
             {
-              "score": 3.75,
-              "count": 437,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.75,
               "scale": 5,
-              "source": "PSN",
+              "count": 437,
               "url": "https://store.playstation.com/pt-pt/product/EP3948-PPSA23692_00-0279900954517279",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:58:48.486783+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 20.904544960366874,
               "normalized": 7.5
             }
@@ -130619,7 +131301,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:58:47.059474+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:49:26.844393+00:00"
       },
       "requirements": {
         "image": true,
@@ -130661,7 +131350,11 @@
       },
       "basics_attempted": "2026-11-02T17:58:47.059474+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -130677,26 +131370,36 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:49:27.107355+00:00",
+      "full_version": 7
     },
     "Switch:15409": {
       "title": "Night Slashers: Remake",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 61.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/night-slashers-remake",
+              "name": "Nindie Spotlight",
+              "score": 62.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=night-slashers-remake-switch",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/night-slashers-remake",
+              "date": "2024-09-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": 5.0,
@@ -130710,14 +131413,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/night_slashers_remake",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 5.0,
-              "checked": "2026-11-02T17:58:47.514701+00:00"
+              "normalized": 5.0
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:43:02.103260+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:49:40.904086+00:00"
       },
       "requirements": {
         "image": true,
@@ -130733,7 +131440,12 @@
       },
       "basics_attempted": "2026-11-02T22:43:02.103260+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/night-slashers-remake-switch/",
@@ -130782,7 +131494,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:49:42.669814+00:00",
+      "full_version": 7
     },
     "PS5:15497": {
       "title": "Nikoderiko: The Magical World",
@@ -138949,15 +139663,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.7,
-              "count": 30,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.7,
               "scale": 5,
-              "source": "PSN",
+              "count": 30,
               "url": "https://store.playstation.com/pt-pt/product/EP3678-PPSA15570_00-NJPABASEGAME0000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:58:45.475818+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 5.477225575051661,
               "normalized": 7.4
             }
@@ -138965,7 +139677,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:58:44.304146+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:49:16.932839+00:00"
       },
       "requirements": {
         "image": true,
@@ -139007,7 +139726,11 @@
       },
       "basics_attempted": "2026-11-02T17:58:44.304146+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -139023,7 +139746,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:49:17.377610+00:00",
+      "full_version": 7
     },
     "Switch:15607": {
       "title": "Nick Jr. Party Adventure",
@@ -177247,34 +177972,96 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 75.8,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "CGMagazine",
+              "score": 65,
+              "url": "https://www.cgmagonline.com/review/game/nicktoons-the-dice-of-destiny-ps5/",
+              "date": "2025-09-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameBlast",
+              "score": 80,
+              "url": "https://www.gameblast.com.br/2025/10/analise-nicktoons-and-the-dice-of-the-destiny-review.html",
+              "date": "2025-10-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2025/09/nicktoons-the-dice-of-destiny-review/",
+              "date": "2025-09-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 90,
+              "url": "https://gamingtrend.com/reviews/nicktoons-the-dice-of-destiny-review-its-the-best-day-ever/",
+              "date": "2025-09-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 70,
+              "url": "https://hardcoregamer.com/review-nicktoons-and-the-dice-of-destiny/",
+              "date": "2025-09-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 70,
+              "url": "https://www.impulsegamer.com/nicktoons-the-dice-of-destiny-review-ps5/",
+              "date": "2025-10-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 6
         },
         "user": {
-          "score": 7.4,
+          "score": 7.25,
           "scale": 10,
           "sources": [
             {
-              "score": 3.7,
-              "count": 213,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.7,
               "scale": 5,
-              "source": "PSN",
+              "count": 213,
               "url": "https://store.playstation.com/pt-pt/product/UP0283-PPSA29010_00-0286199345763002",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:58:47.052858+00:00",
-              "platform": "PSN · PS5",
               "weight": 14.594519519326424,
               "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.4,
+              "scale": 10,
+              "count": 7,
+              "url": "https://www.metacritic.com/game/nicktoons-and-the-dice-of-destiny/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.6457513110645907,
+              "normalized": 6.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:58:44.304594+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:49:21.976085+00:00"
       },
       "requirements": {
         "image": true,
@@ -177316,7 +178103,10 @@
       },
       "basics_attempted": "2026-11-02T17:58:44.304594+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -177332,21 +178122,79 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:49:22.412186+00:00",
+      "full_version": 7
     },
     "Switch:17237": {
       "title": "Nicktoons & The Dice of Destiny",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 69.9,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "DualShockers",
+              "score": 65,
+              "url": "https://www.dualshockers.com/nicktoons-and-the-dice-of-destiny-review/",
+              "date": "2025-09-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameliner",
+              "score": 50,
+              "url": "https://gameliner.nl/reviews/nicktoons-the-dice-of-destiny-review-mist-net-de-saving-throw/7197-24-1-220",
+              "date": "2025-10-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 85,
+              "url": "https://www.gamingnexus.com/Article/16282/Nicktoons--The-Dice-of-Destiny/",
+              "date": "2025-09-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Loot Level Chill",
+              "score": 70,
+              "url": "https://lootlevelchill.com/reviews/nicktoons-the-dice-of-destiny-review/",
+              "date": "2025-09-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 79.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=nicktoons-and-the-dice-of-destiny-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "https://www.nintendoworldreport.com/review/72763/nicktoons-and-the-dice-of-destiny-switch-review",
+              "date": "2025-09-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 60,
+              "url": "https://www.thesixthaxis.com/2025/10/02/nicktoons-the-dice-of-destiny-review/",
+              "date": "2025-10-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 7
         },
         "user": {
-          "score": 7.7,
+          "score": 7.42,
           "scale": 10,
           "sources": [
             {
@@ -177357,14 +178205,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/nicktoons_and_the_dice_of_destiny",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 7.7,
-              "checked": "2026-11-02T17:58:44.304733+00:00"
+              "normalized": 7.7
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.2,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/nicktoons-and-the-dice-of-destiny/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 7.199999999999999
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:43:02.102983+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:49:30.994412+00:00"
       },
       "requirements": {
         "image": true,
@@ -177380,7 +178242,11 @@
       },
       "basics_attempted": "2026-11-02T22:43:02.102983+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/nicktoons-and-the-dice-of-destiny-switch/",
@@ -177429,7 +178295,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:49:32.684282+00:00",
+      "full_version": 7
     },
     "Switch:17322": {
       "title": "Operation Night Strikers",
@@ -235775,28 +236643,78 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 50.0,
+          "score": 58.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 50.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/next_up_hero",
+              "name": "FNintendo",
+              "score": 60,
+              "url": "https://fnintendo.net/article/11921-next-up-hero",
+              "date": "2018-12-25",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 40.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=next-up-hero-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 50,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/next_up_hero?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-08-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 90.0,
+              "url": "https://purenintendo.com/review-next-up-hero-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 9.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 50,
+              "url": "http://switchplayer.net/2018/09/19/next-up-hero-review/",
+              "date": "2018-09-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/next_up_hero",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:43:02.102724+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:49:20.917209+00:00"
       },
       "requirements": {
         "image": true,
@@ -235812,7 +236730,11 @@
       },
       "basics_attempted": "2026-11-02T22:43:02.102724+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/next-up-hero-switch/",
@@ -235861,7 +236783,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:49:23.404533+00:00",
+      "full_version": 7
     },
     "Switch:4831": {
       "title": "Ninja Shodown",
@@ -328543,6 +329467,7 @@
               "name": "Video Chums",
               "score": 80,
               "url": "https://videochums.com/article/johnny-turbos-arcade-games#night-slashers",
+              "date": "2020-05-18",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -328551,13 +329476,29 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 4.9,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 4.9,
+              "scale": 10.0,
+              "count": 9,
+              "url": "https://www.nintendolife.com/games/switch-eshop/johnny_turbos_arcade_night_slashers",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 4.9
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:22:49.150517+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:49:35.906639+00:00"
       },
       "requirements": {
         "image": true,
@@ -328569,8 +329510,12 @@
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/0/02/Night_Slashers_arcadeflyer.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
@@ -328610,7 +329555,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:49:38.084217+00:00",
+      "full_version": 7
     },
     "Switch:8979": {
       "title": "NoReload Heroes Enhanced Edition",
