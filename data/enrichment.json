@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T07:38:21.658559+00:00",
+  "updated": "2026-11-03T07:39:09.684515+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1821,
+    "full_attempted": 1831,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -92188,7 +92188,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 71.5,
           "scale": 100,
           "sources": [
             {
@@ -92197,10 +92197,18 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=quickspot-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Video Chums",
+              "score": 73,
+              "url": "https://videochums.com/review/quickspot",
+              "date": "2022-01-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -92209,7 +92217,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:40.271456+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:38:41.555421+00:00"
       },
       "requirements": {
         "image": true,
@@ -92226,7 +92241,12 @@
       "basics_attempted": "2026-11-02T22:45:40.271456+00:00",
       "version": 7,
       "errors": {
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -92265,7 +92285,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:38:46.391913+00:00",
+      "full_version": 7
     },
     "Switch:10151": {
       "title": "RAIDEN",
@@ -92279,6 +92301,7 @@
               "name": "Pure Nintendo",
               "score": 85,
               "url": "https://purenintendo.com/review-arcade-archives-raiden-nintendo-switch/",
+              "date": "2021-07-13",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -92286,6 +92309,7 @@
               "name": "Video Chums",
               "score": 70,
               "url": "https://videochums.com/review/arcade-archives-raiden",
+              "date": "2021-07-06",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -92294,13 +92318,30 @@
           "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/arcade_archives_raiden",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:08:49.988278+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:39:01.903792+00:00"
       },
       "requirements": {
         "image": true,
@@ -92327,7 +92368,10 @@
       "basics_attempted": "2026-11-02T18:08:49.988278+00:00",
       "version": 3,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -92344,7 +92388,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:39:04.488828+00:00",
+      "full_version": 7
     },
     "PS5:10061": {
       "title": "RESEARCH and DESTROY",
@@ -200562,34 +200608,122 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 65.7,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Creative Bloq",
+              "score": 60,
+              "url": "https://www.creativebloq.com/entertainment/gaming/r-type-dimensions-iii-review-the-snes-shooter-classic-reborn-in-3d-for-better-and-worse",
+              "date": "2026-05-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameBlast",
+              "score": 55,
+              "url": "https://www.gameblast.com.br/2026/05/analise-r-type-dimensions-iii-review.html",
+              "date": "2026-05-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 60,
+              "url": "https://www.gamespew.com/2026/05/r-type-dimensions-iii-review/",
+              "date": "2026-05-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamesurf",
+              "score": 60,
+              "url": "https://www.gamesurf.it/recensioni/gioco/r-type-dimensions-iii-recensione",
+              "date": "2026-05-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 75,
+              "url": "https://gaming-age.com/2026/05/r-type-dimensions-iii-review-for-ps5-xbox-series-x-nintendo-switch-pc/",
+              "date": "2026-05-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Indigo GEEK",
+              "score": 80,
+              "url": "https://geek.reporteindigo.com/resena/r-type-dimensions-iii-resena-playstation-5-20260518-0011.html",
+              "date": "2026-05-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "KonsoliFIN",
+              "score": 80,
+              "url": "https://www.konsolifin.net/node/65378",
+              "date": "2026-05-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 40,
+              "url": "https://metro.co.uk/2026/05/25/r-type-dimensions-3-review-lightning-strikes-thrice-28505895/",
+              "date": "2026-05-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 81,
+              "url": "https://videochums.com/review/r-type-dimensions-iii",
+              "date": "2026-05-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 9
         },
         "user": {
-          "score": 7.9,
+          "score": 7.52,
           "scale": 10,
           "sources": [
             {
-              "score": 3.95,
-              "count": 62,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.95,
               "scale": 5,
-              "source": "PSN",
+              "count": 62,
               "url": "https://store.playstation.com/pt-pt/product/EP8204-PPSA34985_00-RTDIMENSIONS3EU5",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:08:50.910942+00:00",
-              "platform": "PSN · PS5",
               "weight": 7.874007874011811,
               "normalized": 7.9
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.4,
+              "scale": 10,
+              "count": 7,
+              "url": "https://www.metacritic.com/game/r-type-dimensions-iii/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.6457513110645907,
+              "normalized": 6.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:08:48.459857+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:38:38.552923+00:00"
       },
       "requirements": {
         "image": true,
@@ -200631,7 +200765,11 @@
       },
       "basics_attempted": "2026-11-02T18:08:48.459857+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -200647,35 +200785,69 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:38:39.006342+00:00",
+      "full_version": 7
     },
     "Switch:17793": {
       "title": "R-Type Dimensions III",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 72.0,
+          "score": 60.7,
           "scale": 100,
           "sources": [
+            {
+              "name": "Irish Independent",
+              "score": 60,
+              "url": "https://www.independent.ie/entertainment/r-type-dimensions-iii-review-shot-in-the-foot/a/158464564.html",
+              "date": "2026-07-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 72.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=r-type-dimensions-iii-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 50,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/r-type-dimensions-iii",
+              "date": "2026-05-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 5.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 5.0,
+              "scale": 10.0,
+              "count": 14,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/r-type_dimensions_iii",
+              "platform": "Nintendo Switch",
+              "weight": 3.7416573867739413,
+              "normalized": 5.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:41.020864+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:38:51.507565+00:00"
       },
       "requirements": {
         "image": true,
@@ -200692,7 +200864,11 @@
       "basics_attempted": "2026-11-02T22:45:41.020864+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -200742,7 +200918,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:38:56.563805+00:00",
+      "full_version": 7
     },
     "PS5:17983": {
       "title": "RAIDEN FIGHTERS 2 REMIX",
@@ -200760,15 +200938,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4,
-              "count": 9,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4,
               "scale": 5,
-              "source": "PSN",
+              "count": 9,
               "url": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28760_00-0949411176273105",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:08:52.119997+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 3.0,
               "normalized": 8.0
             }
@@ -200776,7 +200952,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:08:50.918150+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:38:43.668163+00:00"
       },
       "requirements": {
         "image": true,
@@ -200818,7 +201001,11 @@
       },
       "basics_attempted": "2026-11-02T18:08:50.918150+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -200834,7 +201021,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:38:44.059795+00:00",
+      "full_version": 7
     },
     "Switch:17994": {
       "title": "RAIDEN FIGHTERS 2 REMIX",
@@ -201019,15 +201208,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.31,
-              "count": 13,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.31,
               "scale": 5,
-              "source": "PSN",
+              "count": 13,
               "url": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28756_00-0798622566175268",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:09:14.105894+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 3.605551275463989,
               "normalized": 8.62
             }
@@ -201035,7 +201222,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:09:13.288298+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:38:48.571525+00:00"
       },
       "requirements": {
         "image": true,
@@ -201077,7 +201271,11 @@
       },
       "basics_attempted": "2026-11-02T18:09:13.288298+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -201093,7 +201291,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:38:48.884711+00:00",
+      "full_version": 7
     },
     "Switch:17993": {
       "title": "RAIDEN FIGHTERS JET REMIX",
@@ -201278,15 +201478,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4,
-              "count": 9,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4,
               "scale": 5,
-              "source": "PSN",
+              "count": 9,
               "url": "https://store.playstation.com/pt-pt/product/HP5035-PPSA28761_00-0272864766810005",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:09:15.318282+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 3.0,
               "normalized": 8.0
             }
@@ -201294,7 +201492,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:09:13.289144+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:39:07.685467+00:00"
       },
       "requirements": {
         "image": true,
@@ -201336,7 +201541,11 @@
       },
       "basics_attempted": "2026-11-02T18:09:13.289144+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -201352,7 +201561,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:39:07.953237+00:00",
+      "full_version": 7
     },
     "Switch:17992": {
       "title": "RAIDEN FIGHTERS REMIX",
@@ -258663,11 +258874,20 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/multiplayer-switch-indie-games#quest-for-the-golden-duck",
+              "date": "2020-06-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 2.6,
@@ -258679,16 +258899,31 @@
               "scale": 10,
               "count": 8,
               "url": "https://www.metacritic.com/game/quest-for-the-golden-duck/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 2.8284271247461903,
-              "normalized": 2.6,
-              "checked": "2026-11-02T18:08:48.459126+00:00"
+              "normalized": 2.6
+            },
+            {
+              "score": 2.6,
+              "scale": 10,
+              "count": 5,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/quest_for_the_golden_duck",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.23606797749979,
+              "normalized": 2.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:40.268125+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:38:46.591017+00:00"
       },
       "requirements": {
         "image": true,
@@ -258705,7 +258940,11 @@
       "basics_attempted": "2026-11-02T22:45:40.268125+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -258755,7 +258994,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:38:50.025135+00:00",
+      "full_version": 7
     },
     "Switch:5606": {
       "title": "RICO",
@@ -307047,13 +307288,40 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 6.56,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/quest-hunter/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.23606797749979,
+              "normalized": 7.0
+            },
+            {
+              "score": 6.0,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/quest_hunter",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 6.0
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:40.267790+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:38:56.622115+00:00"
       },
       "requirements": {
         "image": true,
@@ -307069,7 +307337,12 @@
       },
       "basics_attempted": "2026-11-02T22:45:40.267790+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/quest-hunter-switch/",
@@ -307118,7 +307391,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:39:01.430025+00:00",
+      "full_version": 7
     },
     "Switch:7630": {
       "title": "Raiden V: Director's Cut",
@@ -342505,22 +342780,86 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 80.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/r-type_dimensions_ex",
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/5286/1/r-type-dimensions-ex-nintendo-switch.html",
+              "date": "2019-01-18",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 90,
+              "url": "https://www.gamespace.com/reviews/r-type-dimensions-ex-a-spacey-review/",
+              "date": "2018-12-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 90,
+              "url": "https://metro.co.uk/2018/11/30/r-type-dimensions-ex-review-king-of-the-shmups-8193163/",
+              "date": "2018-11-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 80.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=r-type-dimensions-ex-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/r-type-dimensions-ex-review/",
+              "date": "2018-12-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/r-type_dimensions_ex",
+              "date": "2018-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/49223/r-type-dimensions-ex-switch-review",
+              "date": "2018-12-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 82,
+              "url": "https://videochums.com/review/r-type-dimensions-ex",
+              "date": "2018-11-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 80,
+              "url": "https://worthplaying.com/article/2019/5/30/reviews/114549/",
+              "date": "2019-05-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
-          "score": 7.3,
+          "score": 7.61,
           "scale": 10,
           "sources": [
             {
@@ -342531,14 +342870,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/r-type_dimensions_ex",
               "platform": "Nintendo Switch",
               "weight": 5.477225575051661,
-              "normalized": 7.3,
-              "checked": "2026-11-02T18:08:48.459599+00:00"
+              "normalized": 7.3
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 18,
+              "url": "https://www.metacritic.com/game/r-type-dimensions/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.242640687119285,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:40.896464+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:39:06.873349+00:00"
       },
       "requirements": {
         "image": true,
@@ -342554,7 +342907,11 @@
       },
       "basics_attempted": "2026-11-02T22:45:40.896464+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/r-type-dimensions-ex-switch/",
@@ -342603,7 +342960,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:39:09.467190+00:00",
+      "full_version": 7
     },
     "Switch:8706": {
       "title": "RIVE: Ultimate Edition",
