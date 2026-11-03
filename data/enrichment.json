@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T00:02:00.091491+00:00",
+  "updated": "2026-11-03T00:03:12.904500+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1931,
+    "ready": 1935,
     "missing_image": 109,
-    "missing_store": 423,
+    "missing_store": 414,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -73668,11 +73668,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:23:26.214463+00:00"
+        "attempted": "2026-11-03T00:02:05.282900+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -73680,12 +73680,14 @@
         "source": "https://www.nintendo.com/us/store/products/super-brawl-rush-switch/",
         "checked": "2026-11-02T21:23:29.032687+00:00"
       },
-      "basics_attempted": "2026-11-02T21:23:26.214463+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:02:05.282900+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:52:47.274791+00:00",
       "store_evidence": [
@@ -73695,7 +73697,100 @@
           "checked": "2026-11-02T21:23:29.032391+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Brawl-Rush-2441504.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:02:07.741871+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Super Brawl Rush"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:02:07.742204+00:00",
+              "next_attempt": "2026-11-04T00:02:07.742204+00:00",
+              "revision": "68a8a48fa7e9e66a:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:02:07.742204+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Brawl-Rush-2441504.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Brawl-Rush-2441504.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:35.787252+00:00",
+              "next_attempt": "2026-11-04T00:02:35.787252+00:00",
+              "revision": "68a8a48fa7e9e66a:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/super_brawl_rush",
+                "https://www.nintendolife.com/games/nintendo-switch/super_brawl_rush"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/super_brawl_rush"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:36.404156+00:00",
+              "next_attempt": "2026-11-04T00:02:36.404156+00:00",
+              "revision": "68a8a48fa7e9e66a:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=super-brawl-rush-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-brawl-rush-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:38.404395+00:00",
+              "next_attempt": "2026-11-04T00:02:38.404395+00:00",
+              "revision": "68a8a48fa7e9e66a:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/super-brawl-rush/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/super-brawl-rush/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/super-brawl-rush/"
+              ],
+              "url": "https://www.metacritic.com/game/super-brawl-rush/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:38.437044+00:00",
+              "next_attempt": "2026-11-04T00:02:38.437044+00:00",
+              "revision": "68a8a48fa7e9e66a:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Super+Brawl+Rush&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Super+Brawl+Rush&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:02:38.437226+00:00",
+              "next_attempt": "2026-11-03T01:02:38.437226+00:00",
+              "revision": "68a8a48fa7e9e66a:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:02:38.437299+00:00",
+              "next_attempt": "2026-11-03T01:02:38.437299+00:00",
+              "revision": "68a8a48fa7e9e66a:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:14428": {
       "title": "Super Crazy Rhythm Castle",
@@ -73963,17 +74058,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.7320508075688772,
-              "normalized": 6.0
+              "normalized": 6.0,
+              "checked": "2026-11-02T21:23:26.215675+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:23:26.215675+00:00"
+        "attempted": "2026-11-03T00:02:05.283436+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -73981,8 +74077,8 @@
         "source": "https://www.nintendo.com/us/store/products/super-double-dragon-switch/",
         "checked": "2026-11-02T21:23:33.466222+00:00"
       },
-      "basics_attempted": "2026-11-02T21:23:26.215675+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:02:05.283436+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:52:49.656398+00:00",
       "store_evidence": [
@@ -73992,7 +74088,35 @@
           "checked": "2026-11-02T21:23:33.465798+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Double-Dragon-2472440.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:02:06.816256+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Super Double Dragon"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:02:06.816568+00:00",
+              "next_attempt": "2026-11-04T00:02:06.816568+00:00",
+              "revision": "b60ea3060a38a14b:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:02:06.816568+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Double-Dragon-2472440.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Double-Dragon-2472440.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7182": {
       "title": "Super Kirby Clash",
@@ -74109,11 +74233,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:23:26.216706+00:00"
+        "attempted": "2026-11-03T00:02:05.285088+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -74121,12 +74245,14 @@
         "source": "https://www.nintendo.com/us/store/products/super-mabus-mania-switch/",
         "checked": "2026-11-02T21:23:31.063491+00:00"
       },
-      "basics_attempted": "2026-11-02T21:23:26.216706+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:02:05.285088+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:52:50.881178+00:00",
       "store_evidence": [
@@ -74136,7 +74262,100 @@
           "checked": "2026-11-02T21:23:31.063194+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Mabus-Mania-2283950.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:02:09.989264+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Super Mabus Mania"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:02:09.989571+00:00",
+              "next_attempt": "2026-11-04T00:02:09.989571+00:00",
+              "revision": "4644d851b5a2636a:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:02:09.989571+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Mabus-Mania-2283950.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Mabus-Mania-2283950.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:40.801551+00:00",
+              "next_attempt": "2026-11-04T00:02:40.801551+00:00",
+              "revision": "4644d851b5a2636a:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/super_mabus_mania",
+                "https://www.nintendolife.com/games/switch-eshop/super_mabus_mania"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/super_mabus_mania"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:43.459197+00:00",
+              "next_attempt": "2026-11-04T00:02:43.459197+00:00",
+              "revision": "4644d851b5a2636a:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=super-mabus-mania-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-mabus-mania-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:47.950924+00:00",
+              "next_attempt": "2026-11-04T00:02:47.950924+00:00",
+              "revision": "4644d851b5a2636a:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/super-mabus-mania/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/super-mabus-mania/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/super-mabus-mania/"
+              ],
+              "url": "https://www.metacritic.com/game/super-mabus-mania/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:47.981722+00:00",
+              "next_attempt": "2026-11-04T00:02:47.981722+00:00",
+              "revision": "4644d851b5a2636a:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Super+Mabus+Mania&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Super+Mabus+Mania&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:02:47.981873+00:00",
+              "next_attempt": "2026-11-03T01:02:47.981873+00:00",
+              "revision": "4644d851b5a2636a:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:02:47.981948+00:00",
+              "next_attempt": "2026-11-03T01:02:47.981948+00:00",
+              "revision": "4644d851b5a2636a:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:7574": {
       "title": "Super Mario 3D World + Bowser’s Fury",
@@ -75675,11 +75894,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:24:55.035008+00:00"
+        "attempted": "2026-11-03T00:02:06.817269+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -75687,12 +75906,15 @@
         "source": "https://www.nintendo.com/us/store/products/sven-completely-screwed-switch/",
         "checked": "2026-11-02T21:24:56.749891+00:00"
       },
-      "basics_attempted": "2026-11-02T21:24:55.035008+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:02:06.817269+00:00",
+      "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:53:18.302903+00:00",
       "store_evidence": [
@@ -75702,7 +75924,103 @@
           "checked": "2026-11-02T21:24:56.749594+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Sven-Desbunda-Total-2425912.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:02:14.332911+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Sven - Completely Screwed",
+        "Sven – Desbunda Total",
+        "Sven – completely screwed"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:02:14.333245+00:00",
+              "next_attempt": "2026-11-04T00:02:14.333245+00:00",
+              "revision": "a639eb5b6e61526f:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:02:14.333245+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Sven-Desbunda-Total-2425912.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Sven-Desbunda-Total-2425912.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:03:05.951693+00:00",
+              "next_attempt": "2026-11-04T00:03:05.951693+00:00",
+              "revision": "a639eb5b6e61526f:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/sven_completely_screwed",
+                "https://www.nintendolife.com/games/nintendo-switch/sven_desbunda_total",
+                "https://www.nintendolife.com/games/switch-eshop/sven_desbunda_total"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/sven_desbunda_total"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:03:07.020722+00:00",
+              "next_attempt": "2026-11-04T00:03:07.020722+00:00",
+              "revision": "a639eb5b6e61526f:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=sven-completely-screwed-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=sven-completely-screwed-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:03:12.655196+00:00",
+              "next_attempt": "2026-11-04T00:03:12.655196+00:00",
+              "revision": "a639eb5b6e61526f:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/sven-desbunda-total/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/sven-desbunda-total/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/sven-desbunda-total/"
+              ],
+              "url": "https://www.metacritic.com/game/sven-desbunda-total/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:03:12.693310+00:00",
+              "next_attempt": "2026-11-04T00:03:12.693310+00:00",
+              "revision": "a639eb5b6e61526f:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Sven+-+Completely+Screwed&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Sven+-+Completely+Screwed&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:03:12.693461+00:00",
+              "next_attempt": "2026-11-03T01:03:12.693461+00:00",
+              "revision": "a639eb5b6e61526f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:03:12.693570+00:00",
+              "next_attempt": "2026-11-03T01:03:12.693570+00:00",
+              "revision": "a639eb5b6e61526f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:10747": {
       "title": "Sword of the Necromancer",
@@ -111819,11 +112137,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:23:26.214651+00:00"
+        "attempted": "2026-11-03T00:02:05.283140+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -111831,12 +112149,14 @@
         "source": "https://www.nintendo.com/us/store/products/super-bunny-man-switch/",
         "checked": "2026-11-02T21:23:30.550311+00:00"
       },
-      "basics_attempted": "2026-11-02T21:23:26.214651+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:02:05.283140+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:52:42.765729+00:00",
       "store_evidence": [
@@ -111846,7 +112166,100 @@
           "checked": "2026-11-02T21:23:30.549842+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Bunny-Man-2690738.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:02:05.583837+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Super Bunny Man"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:02:05.584167+00:00",
+              "next_attempt": "2026-11-04T00:02:05.584167+00:00",
+              "revision": "5427d2fa29dd69ed:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:02:05.584167+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Bunny-Man-2690738.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Bunny-Man-2690738.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:10.793092+00:00",
+              "next_attempt": "2026-11-04T00:02:10.793092+00:00",
+              "revision": "5427d2fa29dd69ed:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/super_bunny_man",
+                "https://www.nintendolife.com/games/nintendo-switch/super_bunny_man"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/super_bunny_man"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:11.710489+00:00",
+              "next_attempt": "2026-11-04T00:02:11.710489+00:00",
+              "revision": "5427d2fa29dd69ed:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=super-bunny-man-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-bunny-man-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:14.543376+00:00",
+              "next_attempt": "2026-11-04T00:02:14.543376+00:00",
+              "revision": "5427d2fa29dd69ed:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/super-bunny-man/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/super-bunny-man/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/super-bunny-man/"
+              ],
+              "url": "https://www.metacritic.com/game/super-bunny-man/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:14.578638+00:00",
+              "next_attempt": "2026-11-04T00:02:14.578638+00:00",
+              "revision": "5427d2fa29dd69ed:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Super+Bunny+Man&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Super+Bunny+Man&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:02:14.578768+00:00",
+              "next_attempt": "2026-11-03T01:02:14.578768+00:00",
+              "revision": "5427d2fa29dd69ed:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:02:14.578827+00:00",
+              "next_attempt": "2026-11-03T01:02:14.578827+00:00",
+              "revision": "5427d2fa29dd69ed:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:16089": {
       "title": "Tales of Graces f Remastered",
@@ -118979,17 +119392,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.4142135623730951,
-              "normalized": 7.0
+              "normalized": 7.0,
+              "checked": "2026-11-02T21:23:37.716592+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:23:37.716592+00:00"
+        "attempted": "2026-11-03T00:02:05.291049+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -118997,8 +119411,8 @@
         "source": "https://www.nintendo.com/us/store/products/super-technos-world-river-city-and-technos-arcade-classics-switch/",
         "checked": "2026-11-02T21:23:39.220054+00:00"
       },
-      "basics_attempted": "2026-11-02T21:23:37.716592+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:02:05.291049+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:53:13.979596+00:00",
       "store_evidence": [
@@ -119008,7 +119422,35 @@
           "checked": "2026-11-02T21:23:39.219739+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Technos-World-River-City-Technos-Arcade-Classics-2801197.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:02:11.072763+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Super Technos World: River City & Technos Arcade Classics"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:02:11.073108+00:00",
+              "next_attempt": "2026-11-04T00:02:11.073108+00:00",
+              "revision": "d08c44159f205207:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:02:11.073108+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Technos-World-River-City-Technos-Arcade-Classics-2801197.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Technos-World-River-City-Technos-Arcade-Classics-2801197.html"
+            }
+          }
+        }
+      }
     },
     "PS5:16319": {
       "title": "THE HOUSE OF THE DEAD 2: Remake",
@@ -154992,11 +155434,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:24:55.034814+00:00"
+        "attempted": "2026-11-03T00:02:05.930167+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -155004,12 +155446,14 @@
         "source": "https://www.nintendo.com/us/store/products/superstar-strategy-switch/",
         "checked": "2026-11-02T21:25:01.155492+00:00"
       },
-      "basics_attempted": "2026-11-02T21:24:55.034814+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:02:05.930167+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:53:15.564653+00:00",
       "store_evidence": [
@@ -155019,7 +155463,100 @@
           "checked": "2026-11-02T21:25:01.155190+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Superstar-Strategy-3124914.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:02:13.254342+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Superstar Strategy"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:02:13.254652+00:00",
+              "next_attempt": "2026-11-04T00:02:13.254652+00:00",
+              "revision": "1a4a30144b7a308d:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:02:13.254652+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Superstar-Strategy-3124914.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Superstar-Strategy-3124914.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:45.940685+00:00",
+              "next_attempt": "2026-11-04T00:02:45.940685+00:00",
+              "revision": "1a4a30144b7a308d:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/superstar_strategy",
+                "https://www.nintendolife.com/games/nintendo-switch/superstar_strategy"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/superstar_strategy"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:46.554694+00:00",
+              "next_attempt": "2026-11-04T00:02:46.554694+00:00",
+              "revision": "1a4a30144b7a308d:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=superstar-strategy-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=superstar-strategy-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:50.339949+00:00",
+              "next_attempt": "2026-11-04T00:02:50.339949+00:00",
+              "revision": "1a4a30144b7a308d:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/superstar-strategy/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/superstar-strategy/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/superstar-strategy/"
+              ],
+              "url": "https://www.metacritic.com/game/superstar-strategy/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:50.372297+00:00",
+              "next_attempt": "2026-11-04T00:02:50.372297+00:00",
+              "revision": "1a4a30144b7a308d:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Superstar+Strategy&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Superstar+Strategy&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:02:50.372429+00:00",
+              "next_attempt": "2026-11-03T01:02:50.372429+00:00",
+              "revision": "1a4a30144b7a308d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:02:50.372537+00:00",
+              "next_attempt": "2026-11-03T01:02:50.372537+00:00",
+              "revision": "1a4a30144b7a308d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18729": {
       "title": "Tailbreak",
@@ -212996,7 +213533,7 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:23:26.217344+00:00"
+        "attempted": "2026-11-03T00:02:05.285895+00:00"
       },
       "requirements": {
         "image": true,
@@ -213008,12 +213545,30 @@
         "source": "https://www.nintendolife.com/games/switch-eshop/super_mega_baseball_2_ultimate_edition",
         "checked": "2026-11-02T18:27:34.871047+00:00"
       },
-      "basics_attempted": "2026-11-02T21:23:26.217344+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:02:05.285895+00:00",
+      "version": 7,
       "errors": {
-        "store": "Official Nintendo lookup: HTTP Error 404: Not Found"
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:02:05.929377+00:00",
+              "next_attempt": "2026-11-04T00:02:05.929377+00:00",
+              "revision": "88e29b9d771d2521:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Super+Mega+Baseball+2%3A+Ultimate+Edition%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Super+Mega+Baseball+2%3A+Ultimate+Edition%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "Switch:7629": {
       "title": "Super Mutant Alien Assault",
@@ -221503,17 +222058,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.0,
-              "normalized": 1.0
+              "normalized": 1.0,
+              "checked": "2026-11-02T21:23:26.219828+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:23:26.219828+00:00"
+        "attempted": "2026-11-03T00:02:05.287572+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -221521,8 +222077,8 @@
         "source": "https://www.nintendo.com/us/store/products/super-puzzle-pack-switch/",
         "checked": "2026-11-02T21:23:35.459315+00:00"
       },
-      "basics_attempted": "2026-11-02T21:23:26.219828+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:02:05.287572+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:53:23.667580+00:00",
       "store_evidence": [
@@ -221532,7 +222088,35 @@
           "checked": "2026-11-02T21:23:35.459008+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Super-Puzzle-Pack-1852712.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:02:08.869950+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Super Puzzle Pack"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:02:08.870300+00:00",
+              "next_attempt": "2026-11-04T00:02:08.870300+00:00",
+              "revision": "833b72c329961aba:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:02:08.870300+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Super-Puzzle-Pack-1852712.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Super-Puzzle-Pack-1852712.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7928": {
       "title": "Super Star Blast",
@@ -221558,17 +222142,18 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.0,
-              "normalized": 1.0
+              "normalized": 1.0,
+              "checked": "2026-11-02T21:23:28.687796+00:00"
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:23:28.687796+00:00"
+        "attempted": "2026-11-03T00:02:05.290751+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": true
       },
       "image": {
@@ -221576,8 +222161,8 @@
         "source": "https://www.nintendo.com/us/store/products/super-star-blast-switch/",
         "checked": "2026-11-02T21:23:36.514970+00:00"
       },
-      "basics_attempted": "2026-11-02T21:23:28.687796+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:02:05.290751+00:00",
+      "version": 7,
       "errors": {},
       "full_attempted": "2026-11-02T20:53:12.843215+00:00",
       "store_evidence": [
@@ -221587,7 +222172,35 @@
           "checked": "2026-11-02T21:23:36.514655+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Star-Blast-1549861.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:02:12.160423+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Super Star Blast"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:02:12.160740+00:00",
+              "next_attempt": "2026-11-04T00:02:12.160740+00:00",
+              "revision": "31ca14a2275a163b:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:02:12.160740+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Star-Blast-1549861.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Super-Star-Blast-1549861.html"
+            }
+          }
+        }
+      }
     },
     "Switch:7725": {
       "title": "Supermarket Shriek",
