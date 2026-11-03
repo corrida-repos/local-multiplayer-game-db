@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:10:48.807211+00:00",
+  "updated": "2026-11-03T08:11:43.472386+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2131,
+    "full_attempted": 2141,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -109625,15 +109625,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.29,
-              "count": 21,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.29,
               "scale": 5,
-              "source": "PSN",
+              "count": 21,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA18252_00-SUPERBRAWLRUSHRG",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T20:02:15.667138+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 4.58257569495584,
               "normalized": 8.58
             }
@@ -109641,7 +109639,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:02:13.488990+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:11:05.158623+00:00"
       },
       "requirements": {
         "image": true,
@@ -109650,7 +109655,11 @@
       },
       "basics_attempted": "2026-11-02T20:02:13.488990+00:00",
       "version": 4,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA18252_00-SUPERBRAWLRUSHRG",
         "label": "Abrir na PlayStation Store",
@@ -109699,7 +109708,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:11:05.525321+00:00",
+      "full_version": 7
     },
     "Switch:14352": {
       "title": "Super Brawl Rush",
@@ -109873,26 +109884,81 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 76.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "CGMagazine",
+              "score": 70,
+              "url": "https://www.cgmagonline.com/review/game/super-crazy-rhythm-castle-ps5-review/",
+              "date": "2023-11-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Finger Guns",
+              "score": 70,
+              "url": "https://fingerguns.net/games/2023/11/13/super-crazy-rhythm-castle-review-ps5-my-music-dont-jiggle-jiggle-it-folds/",
+              "date": "2023-11-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 90,
+              "url": "https://www.gamespew.com/2023/11/super-crazy-rhythm-castle-review/",
+              "date": "2023-11-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 75,
+              "url": "https://as.com/meristation/analisis/analisis-de-super-crazy-rhythm-castle-la-mezcla-de-guitar-hero-y-overcooked-n/",
+              "date": "2023-12-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 65,
+              "url": "https://press-start.com.au/reviews/ps5-reviews/2023/11/14/super-crazy-rhythm-castle-review-undercooked-overture/",
+              "date": "2023-11-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 82,
+              "url": "https://www.spaziogames.it/articoli/super-crazy-rhythm-castle-recensione",
+              "date": "2023-11-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/console-games-grab-bag-sing-shoot-and-bust#super-crazy-rhythm-castle",
+              "date": "2023-11-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 7
         },
         "user": {
           "score": 7.96,
           "scale": 10,
           "sources": [
             {
-              "score": 3.98,
-              "count": 173,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.98,
               "scale": 5,
-              "source": "PSN",
+              "count": 173,
               "url": "https://store.playstation.com/pt-pt/product/EP0101-PPSA05986_00-6905141583620693",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:26:28.805406+00:00",
-              "platform": "PSN · PS5",
               "weight": 13.152946437965905,
               "normalized": 7.960000000000001
             }
@@ -109900,7 +109966,12 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:26:27.835777+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:11:16.534129+00:00"
       },
       "requirements": {
         "image": true,
@@ -109942,7 +110013,10 @@
       },
       "basics_attempted": "2026-11-02T18:26:27.835777+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -109958,7 +110032,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:11:16.884326+00:00",
+      "full_version": 7
     },
     "Switch:14424": {
       "title": "Super Crazy Rhythm Castle",
@@ -231814,15 +231890,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.34,
-              "count": 82,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.34,
               "scale": 5,
-              "source": "PSN",
+              "count": 82,
               "url": "https://store.playstation.com/pt-pt/product/UB0876-PPSA24033_00-0357412205143914",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:26:27.827756+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 9.055385138137417,
               "normalized": 6.68
             }
@@ -231830,7 +231904,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:26:26.732288+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:11:10.169541+00:00"
       },
       "requirements": {
         "image": true,
@@ -231872,7 +231953,11 @@
       },
       "basics_attempted": "2026-11-02T18:26:26.732288+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -231888,7 +231973,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:11:10.405414+00:00",
+      "full_version": 7
     },
     "Switch:18547": {
       "title": "Superstar Strategy",
@@ -242414,22 +242501,528 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 63.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/super_bomberman_r",
+              "name": "3DJuegos",
+              "score": 65,
+              "url": "http://www.3djuegos.com/juegos/analisis/28198/0/super-bomberman-r/",
+              "date": "2017-03-10",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "4P.de",
+              "score": 50,
+              "url": "http://www.4players.de/4players.php/dispbericht/Switch/Test/38427/82428/0/Super_Bomberman_R.html",
+              "date": "2017-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 80,
+              "url": "https://areajugones.sport.es/super-bomberman-r/analisis/",
+              "date": "2017-03-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 74,
+              "url": "http://atomix.vg/review-super-bomberman-r/",
+              "date": "2017-03-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 60,
+              "url": "http://attackofthefanboy.com/reviews/super-bomberman-r-review/",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 75,
+              "url": "http://www.cgmagonline.com/reviews/super-bomberman-r-review-not-total-bomb/",
+              "date": "2017-03-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 61,
+              "url": "http://cogconnected.com/review/super-bomberman-r-review/",
+              "date": "2017-03-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cheat Code Central",
+              "score": 56,
+              "url": "http://cheatcc.com/switch/rev/superbombermanrreview.html",
+              "date": "2017-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 50,
+              "url": "http://www.criticalhit.net/review/super-bomberman-r/",
+              "date": "2017-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/3628/1/super-bomberman-r-nintendo-switch.html",
+              "date": "2017-03-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 60,
+              "url": "http://www.darkstation.com/reviews/super-bomberman-r-review",
+              "date": "2017-04-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 70,
+              "url": "https://www.destructoid.com/review-super-bomberman-r-419836.phtml",
+              "date": "2017-03-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 70,
+              "url": "http://digitalchumps.com/super-bomberman-r/",
+              "date": "2017-03-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 80,
+              "url": "http://www.digitallydownloaded.net/2017/03/review-super-bomberman-r-nintendo-switch.html",
+              "date": "2017-03-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "EGM",
+              "score": 75,
+              "url": "http://www.egmnow.com/articles/reviews/super-bomberman-r-review/",
+              "date": "2017-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 40,
+              "url": "",
+              "date": "2017-04-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 70,
+              "url": "http://www.eurogamer.it/articles/2017-03-14-super-bomberman-r-recensione",
+              "date": "2017-03-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 65,
+              "url": "http://www.everyeye.it/articoli/recensione-super-bomberman-r-32668.html",
+              "date": "2017-03-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 50,
+              "url": "http://fnintendo.net/article/9003-super-bomberman-r",
+              "date": "2017-03-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 50,
+              "url": "http://www.gameinformer.com/games/super_bomberman_r/b/switch/archive/2017/03/06/super-bomberman-r-game-informer-review.aspx",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Over Online",
+              "score": 70,
+              "url": "http://www.game-over.com/content/2017/03/super-bomberman-r/#sthash.f9LPaMSB.dpbs",
+              "date": "2017-03-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Revolution",
+              "score": 70,
+              "url": "http://www.gamerevolution.com/review/super-bomberman-r",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCrate",
+              "score": 63,
+              "url": "https://www.gamecrate.com/reviews/review-super-bomberman-r-challenging-somethings-missing/15883",
+              "date": "2017-03-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 70,
+              "url": "http://www.gamespot.com/reviews/super-bomberman-r-review/1900-6416629/",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 50,
+              "url": "http://www.gameblog.fr/tests/2699-super-bomberman-r-switch",
+              "date": "2017-03-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games Master UK",
+              "score": 67,
+              "url": "",
+              "date": "2017-05-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 50,
+              "url": "https://games.tiscali.cz/recenze/super-bomberman-r-recenze-295535",
+              "date": "2017-04-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 70,
+              "url": "http://gamingtrend.com/reviews/blast-from-the-past-super-bomberman-r-switch-review/",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 70,
+              "url": "http://www.godisageek.com/reviews/super-bomberman-r-review/",
+              "date": "2017-03-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 70,
+              "url": "http://www.hardcoregamer.com/2017/03/07/review-super-bomberman-r/249259/",
+              "date": "2017-03-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 66,
+              "url": "http://www.hobbyconsolas.com/reviews/analisis-super-bomberman-r-nintendo-switch-91272",
+              "date": "2017-03-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 62,
+              "url": "http://www.ign.com/articles/2017/03/07/super-bomberman-r-review",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 63,
+              "url": "http://it.ign.com/super-bomberman-r-nintendo-switch/122615/review/super-bomberman-r-la-recensione",
+              "date": "2017-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 65,
+              "url": "http://es.ign.com/super-bomberman-r-nintendo-switch-1/115574/review/super-bomberman-r-analisis-para-nintendo-switch",
+              "date": "2017-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 70,
+              "url": "http://www.impulsegamer.com/bomberman-r-switch-review/",
+              "date": "2017-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "InsideGamer.nl",
+              "score": 60,
+              "url": "http://www.insidegamer.nl/recensies/126931/super-bomberman-r-review-bom-barst-net-niet",
+              "date": "2017-03-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 65,
+              "url": "http://www.levelup.com/Nintendo-Switch/juegos/405460/Super-Bomberman-R/review",
+              "date": "2017-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 70,
+              "url": "http://www.meristation.com/nintendo-switch/super-bomberman-r/analisis-juego/2170196",
+              "date": "2017-03-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 60,
+              "url": "http://metro.co.uk/2017/03/03/super-bomberman-r-review-price-explosion-6485929/",
+              "date": "2017-03-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 70,
+              "url": "http://multiplayer.it/recensioni/180712-super-bomberman-r-esplosioni-dal-passato.html",
+              "date": "2017-03-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NZGamer",
+              "score": 50,
+              "url": "http://nzgamer.com/reviews/2589/super-bomberman-r.html",
+              "date": "2017-03-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New Game Network",
+              "score": 63,
+              "url": "http://www.newgamenetwork.com/article/1625/super-bomberman-r-review/",
+              "date": "2017-03-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 65,
+              "url": "http://nintendoenthusiast.com/review/super-bomberman-r-review-for-nintendo-switch/",
+              "date": "2017-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 60,
+              "url": "",
+              "date": "2017-04-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/super_bomberman_r",
+              "date": "2017-03-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/44257/super-bomberman-r-switch-review",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 70,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/Super+Bomberman+R/review.asp?c=73211",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 60.0,
+              "url": "https://purenintendo.com/review-super-bomberman-r-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 6.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Shacknews",
+              "score": 60,
+              "url": "http://www.shacknews.com/article/99352/super-bomberman-r-review-a-wet-fuse",
+              "date": "2017-03-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 70,
+              "url": "http://www.spaziogames.it/recensioni_videogiochi/console_nintendo_switch/20522/super-bomberman-r.aspx",
+              "date": "2017-03-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 65,
+              "url": "http://stevivor.com/reviews/super-bomberman-r-review-expensive-multiplayer-mayhem/",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2017/03/13/super-bomberman-r-review/",
+              "date": "2017-04-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 60,
+              "url": "http://www.thesixthaxis.com/2017/03/06/super-bomberman-r-review/",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TrueGaming",
+              "score": 50,
+              "url": "http://www.true-gaming.net/home/334835/",
+              "date": "2017-03-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 60,
+              "url": "http://www.trustedreviews.com/super-bomberman-r-review",
+              "date": "2017-03-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 50,
+              "url": "http://twinfinite.net/2017/03/super-bomberman-r-review/",
+              "date": "2017-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "USgamer",
+              "score": 50,
+              "url": "http://www.usgamer.net/articles/super-bomberman-r-review",
+              "date": "2017-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 67,
+              "url": "http://www.vandal.net/analisis/switch/super-bomberman-r/45265",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 78,
+              "url": "https://videochums.com/review/super-bomberman-r",
+              "date": "2017-03-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 60,
+              "url": "http://www.vooks.net/super-bomberman-r-switch-review/",
+              "date": "2017-04-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 50,
+              "url": "http://wegotthiscovered.com/gaming/super-bomberman-r-review/",
+              "date": "2017-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 55,
+              "url": "http://www.xgn.nl/review/super-bomberman-r-review",
+              "date": "2017-03-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 60,
+              "url": "http://www.ztgd.com/super-bomberman-r/review/",
+              "date": "2017-03-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "games(TM)",
+              "score": 60,
+              "url": "https://www.gamestm.co.uk/reviews/super-bomberman-r-review/",
+              "date": "2017-04-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 64
         },
         "user": {
-          "score": 6.8,
+          "score": 6.69,
           "scale": 10,
           "sources": [
             {
@@ -242440,14 +243033,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/super_bomberman_r",
               "platform": "Nintendo Switch",
               "weight": 14.798648586948742,
-              "normalized": 6.799999999999999,
-              "checked": "2026-11-02T18:25:55.999110+00:00"
+              "normalized": 6.799999999999999
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.6,
+              "scale": 10,
+              "count": 367,
+              "url": "https://www.metacritic.com/game/super-bomberman-r/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 19.157244060668017,
+              "normalized": 6.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:57.612298+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 64,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:11:39.890258+00:00"
       },
       "requirements": {
         "image": true,
@@ -242463,7 +243070,11 @@
       },
       "basics_attempted": "2026-11-02T22:49:57.612298+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/super-bomberman-r-switch/",
@@ -242512,7 +243123,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:11:43.249341+00:00",
+      "full_version": 7
     },
     "Switch:3548": {
       "title": "Surgeon Simulator",
@@ -275785,6 +276398,7 @@
               "name": "Video Chums",
               "score": 60,
               "url": "https://videochums.com/article/switch-retro-indie-games-part-2#super-crate-box",
+              "date": "2020-01-09",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -275793,13 +276407,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/super_crate_box",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:50:12.601126+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:11:34.956367+00:00"
       },
       "requirements": {
         "image": true,
@@ -275816,7 +276447,11 @@
       "basics_attempted": "2026-11-02T22:50:12.601126+00:00",
       "version": 7,
       "errors": {
-        "nindie": "No exact scored Nintendo Switch review"
+        "nindie": "No exact scored Nintendo Switch review",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -275866,7 +276501,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:11:37.304974+00:00",
+      "full_version": 7
     },
     "Switch:5267": {
       "title": "Super Destronaut DX",
@@ -288247,28 +288884,119 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 63.8,
           "scale": 100,
           "sources": [
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/12656-super-cane-magic-zero",
+              "date": "2019-07-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 55,
+              "url": "https://www.gamegrin.com/reviews/super-cane-magic-zero-review/",
+              "date": "2019-08-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 60,
+              "url": "https://www.gamespew.com/2019/07/super-cane-magic-zero-review/",
+              "date": "2019-07-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 70,
+              "url": "https://multiplayer.it/recensioni/super-cane-magic-zero-recensione-nintendo-switch.html",
+              "date": "2019-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 80.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-cane-magic-zero-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 50,
+              "url": "http://www.nintendoworldreport.com/review/51068/super-cane-magic-zero-switch-review",
+              "date": "2019-07-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 40,
+              "url": "http://switchplayer.net/2019/07/08/super-cane-magic-zero-review/",
+              "date": "2019-07-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 89,
+              "url": "https://www.thegamesmachine.it/super-cane-magic-zero-pc-ps4-switch/super-cane-magic-zero-recensione/",
+              "date": "2019-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TrueGaming",
+              "score": 60,
+              "url": "https://www.true-gaming.net/home/401000/",
+              "date": "2019-07-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
-          "score": null,
+          "score": 5.74,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.4,
+              "scale": 10,
+              "count": 14,
+              "url": "https://www.metacritic.com/game/super-cane-magic-zero/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.7416573867739413,
+              "normalized": 6.4
+            },
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/super_cane_magic_zero",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.0
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:50:12.600501+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:11:24.611161+00:00"
       },
       "requirements": {
         "image": true,
@@ -288284,7 +289012,11 @@
       },
       "basics_attempted": "2026-11-02T22:50:12.600501+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/super-cane-magic-zero-switch/",
@@ -288333,7 +289065,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:11:27.064474+00:00",
+      "full_version": 7
     },
     "Switch:6104": {
       "title": "The Binding of Isaac: Afterbirth+",
@@ -312914,19 +313648,29 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 71.0,
+          "score": 75.5,
           "scale": 100,
           "sources": [
+            {
+              "name": "Pure Nintendo",
+              "score": 80.0,
+              "url": "https://purenintendo.com/review-johnny-turbos-arcade-super-burger-time-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 8.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
             {
               "name": "Video Chums",
               "score": 71,
               "url": "https://videochums.com/review/johnny-turbos-arcade-super-burger-time",
+              "date": "2018-06-30",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": 4.6,
@@ -312940,7 +313684,6 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/johnny_turbos_arcade_super_burger_time",
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
-              "checked": "2026-11-02T23:33:41.868865+00:00",
               "weight": 2.23606797749979,
               "normalized": 4.6
             }
@@ -312948,7 +313691,12 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:33:11.289863+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:11:09.665216+00:00"
       },
       "requirements": {
         "image": false,
@@ -312962,7 +313710,10 @@
         "nindie": "No review profile indexed for this game",
         "image": "No unique matching video-game article with artwork",
         "nintendo": "No exact Portuguese Switch listing verified",
-        "wikipedia": "No unique matching video-game article with artwork"
+        "wikipedia": "No unique matching video-game article with artwork",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -313029,7 +313780,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:11:12.846846+00:00",
+      "full_version": 7
     },
     "Switch:7289": {
       "title": "Super Mega Space Blaster Special Turbo",
@@ -326635,28 +327388,69 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 58.0,
+          "score": 59.5,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/6027/1/super-box-land-demake-nintendo-switch.html",
+              "date": "2020-08-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 57.99999999999999,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-box-land-demake-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 60,
+              "url": "https://purenintendo.com/review-super-box-land-demake-nintendo-switch/",
+              "date": "2019-10-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 50,
+              "url": "http://switchplayer.net/2019/10/30/super-box-land-demake-review/",
+              "date": "2019-10-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 3.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/super_box_land_demake",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 3.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:57.864211+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:11:04.629453+00:00"
       },
       "requirements": {
         "image": true,
@@ -326672,7 +327466,11 @@
       },
       "basics_attempted": "2026-11-02T22:49:57.864211+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/super-box-land-demake-switch/",
@@ -326721,7 +327519,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:11:07.089910+00:00",
+      "full_version": 7
     },
     "Switch:7631": {
       "title": "Super Mega Baseball 2: Ultimate Edition",
@@ -350488,22 +351288,87 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 77.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/super_chariot",
+              "name": "Areajugones",
+              "score": 85,
+              "url": "https://areajugones.sport.es/analisis-super-chariot/",
+              "date": "2018-06-06",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 76,
+              "url": "https://www.everyeye.it/articoli/recensione-super-chariot-colorato-platform-del-team-frima-giunge-switch-38685.html",
+              "date": "2018-05-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "http://fnintendo.net/article/10985-super-chariot",
+              "date": "2018-06-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 70,
+              "url": "http://metro.co.uk/2018/05/11/super-chariot-review-swing-low-sweet-co-op-7537032/",
+              "date": "2018-05-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 75,
+              "url": "http://www.nintenderos.com/2018/06/analisis-super-chariot/",
+              "date": "2018-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/super_chariot",
+              "date": "2018-05-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/46996/super-chariot-switch-review",
+              "date": "2018-05-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2018/07/05/super-chariot-review/",
+              "date": "2018-07-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 77,
+              "url": "https://videochums.com/review/super-chariot",
+              "date": "2018-05-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
-          "score": 7.6,
+          "score": 7.69,
           "scale": 10,
           "sources": [
             {
@@ -350514,14 +351379,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/super_chariot",
               "platform": "Nintendo Switch",
               "weight": 5.0990195135927845,
-              "normalized": 7.6,
-              "checked": "2026-11-02T18:26:26.733926+00:00"
+              "normalized": 7.6
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.8,
+              "scale": 10,
+              "count": 16,
+              "url": "https://www.metacritic.com/game/super-chariot/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.0,
+              "normalized": 7.800000000000001
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:50:12.600770+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:11:19.527615+00:00"
       },
       "requirements": {
         "image": true,
@@ -350537,7 +351416,12 @@
       },
       "basics_attempted": "2026-11-02T22:50:12.600770+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/super-chariot-switch/",
@@ -350586,7 +351470,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:11:22.144874+00:00",
+      "full_version": 7
     },
     "Switch:8328": {
       "title": "Tachyon Project",
@@ -382120,6 +383006,7 @@
               "name": "Switch Player",
               "score": 90,
               "url": "https://switchplayer.net/2021/08/02/super-cable-boy-review/",
+              "date": "2021-08-03",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -382134,7 +383021,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:49:58.971436+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:11:29.430996+00:00"
       },
       "requirements": {
         "image": true,
@@ -382151,7 +383045,12 @@
       "basics_attempted": "2026-11-02T22:49:58.971436+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -382201,7 +383100,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:11:32.129295+00:00",
+      "full_version": 7
     },
     "Switch:9897": {
       "title": "TOGETHER",
