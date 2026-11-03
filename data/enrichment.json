@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T09:15:36.807343+00:00",
+  "updated": "2026-11-03T09:16:40.421654+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -200302,11 +200302,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 0,
         "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:54:45.327884+00:00"
+        "attempted": "2026-11-03T09:16:03.567428+00:00"
       },
       "requirements": {
         "image": true,
@@ -200349,9 +200349,11 @@
       "basics_attempted": "2026-11-02T17:09:34.212353+00:00",
       "version": 1,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:54:45.938220+00:00",
+      "full_attempted": "2026-11-03T09:16:03.729104+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -200367,7 +200369,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:16707": {
       "title": "Blazing Trail",
@@ -200398,12 +200401,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 0,
         "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:57:08.166717+00:00"
+        "attempted": "2026-11-03T09:16:23.082463+00:00"
       },
       "requirements": {
         "image": true,
@@ -200420,9 +200422,13 @@
       "basics_attempted": "2026-11-02T22:57:08.166717+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:54:46.721033+00:00",
+      "full_attempted": "2026-11-03T09:16:24.660201+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/blazing-trail-switch/",
@@ -200471,7 +200477,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:16991": {
       "title": "Bloom Paradise",
@@ -222505,7 +222512,7 @@
           "source_count": 20
         },
         "user": {
-          "score": 8.64,
+          "score": 8.6,
           "scale": 10,
           "sources": [
             {
@@ -222527,19 +222534,28 @@
               "platform": "PlayStation 5",
               "weight": 31.622776601683793,
               "normalized": 9.02
+            },
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/blazblue_entropy_effect_x",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 7.0
             }
           ],
-          "source_count": 2,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 20,
-        "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:54:25.415328+00:00"
+        "attempted": "2026-11-03T09:16:08.723106+00:00"
       },
       "requirements": {
         "image": true,
@@ -222582,9 +222598,10 @@
       "basics_attempted": "2026-11-02T17:18:06.769258+00:00",
       "version": 2,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:54:25.940545+00:00",
+      "full_attempted": "2026-11-03T09:16:08.865551+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -222600,7 +222617,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:17763": {
       "title": "BlazBlue Entropy Effect X",
@@ -222666,8 +222684,7 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/blazblue_entropy_effect_x",
               "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
-              "normalized": 8.3,
-              "checked": "2026-11-02T19:54:26.302750+00:00"
+              "normalized": 8.3
             }
           ],
           "source_count": 1,
@@ -222675,13 +222692,10 @@
         },
         "critic_index_complete": true,
         "critic_index_review_count": 5,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:33:05.995751+00:00"
+        "attempted": "2026-11-03T09:16:18.144026+00:00"
       },
       "requirements": {
         "image": true,
@@ -222698,10 +222712,13 @@
       "basics_attempted": "2026-11-02T22:33:05.995751+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:54:26.778217+00:00",
+      "full_attempted": "2026-11-03T09:16:20.496943+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/blazblue-entropy-effect-x-switch/",
@@ -222751,7 +222768,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:17748": {
       "title": "Blitz Smash Ultimate",
@@ -270643,7 +270661,7 @@
           "source_count": 23
         },
         "user": {
-          "score": 7.7,
+          "score": 7.75,
           "scale": 10,
           "sources": [
             {
@@ -270654,22 +270672,28 @@
               "url": "https://www.metacritic.com/game/blaster-master-zero/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 12.165525060596439,
-              "normalized": 7.7,
-              "checked": "2026-11-02T19:54:28.509187+00:00"
+              "normalized": 7.7
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.8,
+              "scale": 10.0,
+              "count": 186,
+              "url": "https://www.nintendolife.com/games/switch-eshop/blaster_master_zero",
+              "platform": "Nintendo Switch",
+              "weight": 13.638181696985855,
+              "normalized": 7.800000000000001
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 23,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:33:48.802426+00:00"
+        "attempted": "2026-11-03T09:16:28.260970+00:00"
       },
       "requirements": {
         "image": true,
@@ -270686,10 +270710,12 @@
       "basics_attempted": "2026-11-02T22:33:48.802426+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:54:28.947111+00:00",
+      "full_attempted": "2026-11-03T09:16:30.310214+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/blaster-master-zero-switch/",
@@ -270738,7 +270764,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:5053": {
       "title": "Breakforcist Battle",
@@ -325124,7 +325151,7 @@
           "source_count": 10
         },
         "user": {
-          "score": 7.4,
+          "score": 7.52,
           "scale": 10,
           "sources": [
             {
@@ -325135,22 +325162,28 @@
               "url": "https://www.metacritic.com/game/blazing-beaks/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 7.54983443527075,
-              "normalized": 7.4,
-              "checked": "2026-11-02T19:54:41.815586+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 26,
+              "url": "https://www.nintendolife.com/games/switch-eshop/blazing_beaks",
+              "platform": "Nintendo Switch",
+              "weight": 5.0990195135927845,
+              "normalized": 7.7
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 9,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:35:41.350210+00:00"
+        "attempted": "2026-11-03T09:15:53.260774+00:00"
       },
       "requirements": {
         "image": true,
@@ -325167,9 +325200,10 @@
       "basics_attempted": "2026-11-02T22:35:41.350210+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed"
       },
-      "full_attempted": "2026-11-02T19:54:42.463233+00:00",
+      "full_attempted": "2026-11-03T09:15:55.040525+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/blazing-beaks-switch/",
@@ -325218,14 +325252,15 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:6682": {
       "title": "Bleed",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 74.0,
+          "score": 73.2,
           "scale": 100,
           "sources": [
             {
@@ -325300,6 +325335,15 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Pure Nintendo",
+              "score": 65.0,
+              "url": "https://purenintendo.com/review-bleed-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 6.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "SpazioGames",
               "score": 70,
               "url": "https://www.spaziogames.it/recensioni_videogiochi/console_nintendo_switch/21817/bleed-recensione-dellaction-bidimensionale-per-switch.aspx",
@@ -325317,10 +325361,10 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 11
+          "source_count": 12
         },
         "user": {
-          "score": 7.5,
+          "score": 7.18,
           "scale": 10,
           "sources": [
             {
@@ -325331,22 +325375,28 @@
               "url": "https://www.metacritic.com/game/bleed/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 4.69041575982343,
-              "normalized": 7.5,
-              "checked": "2026-11-02T19:54:49.519161+00:00"
+              "normalized": 7.5
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 6.8,
+              "scale": 10.0,
+              "count": 15,
+              "url": "https://www.nintendolife.com/games/switch-eshop/bleed",
+              "platform": "Nintendo Switch",
+              "weight": 3.872983346207417,
+              "normalized": 6.799999999999999
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 10,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:35:41.350502+00:00"
+        "attempted": "2026-11-03T09:16:08.146239+00:00"
       },
       "requirements": {
         "image": true,
@@ -325363,9 +325413,10 @@
       "basics_attempted": "2026-11-02T22:35:41.350502+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed"
       },
-      "full_attempted": "2026-11-02T19:54:50.154114+00:00",
+      "full_attempted": "2026-11-03T09:16:10.504691+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/bleed-switch/",
@@ -325414,14 +325465,15 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:6683": {
       "title": "Bleed 2",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 78.9,
+          "score": 79.0,
           "scale": 100,
           "sources": [
             {
@@ -325488,6 +325540,15 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Pure Nintendo",
+              "score": 80.0,
+              "url": "https://purenintendo.com/review-bleed-2-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 8.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "Switch Player",
               "score": 70,
               "url": "http://switchplayer.net/2018/03/27/bleed-2-review/",
@@ -325497,10 +325558,10 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 9
+          "source_count": 10
         },
         "user": {
-          "score": 8.2,
+          "score": 7.99,
           "scale": 10,
           "sources": [
             {
@@ -325511,22 +325572,28 @@
               "url": "https://www.metacritic.com/game/bleed-2/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 4.242640687119285,
-              "normalized": 8.2,
-              "checked": "2026-11-02T19:54:51.739026+00:00"
+              "normalized": 8.2
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.8,
+              "scale": 10.0,
+              "count": 20,
+              "url": "https://www.nintendolife.com/games/switch-eshop/bleed_2",
+              "platform": "Nintendo Switch",
+              "weight": 4.47213595499958,
+              "normalized": 7.800000000000001
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 8,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:35:41.351438+00:00"
+        "attempted": "2026-11-03T09:16:33.321488+00:00"
       },
       "requirements": {
         "image": true,
@@ -325543,9 +325610,10 @@
       "basics_attempted": "2026-11-02T22:35:41.351438+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed"
       },
-      "full_attempted": "2026-11-02T19:54:52.515355+00:00",
+      "full_attempted": "2026-11-03T09:16:35.556972+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/bleed-2-switch/",
@@ -325594,7 +325662,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:6344": {
       "title": "Bloodstained: Curse of the Moon 2",
@@ -337000,12 +337069,12 @@
         "critic_index_complete": true,
         "critic_index_review_count": 4,
         "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:54:44.014941+00:00"
+        "attempted": "2026-11-03T09:16:13.069855+00:00"
       },
       "requirements": {
         "image": true,
@@ -337030,10 +337099,13 @@
       "version": 2,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:54:44.830299+00:00",
+      "full_attempted": "2026-11-03T09:16:14.927653+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -337049,7 +337121,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:7237": {
       "title": "Boot Hill Bounties",
@@ -390570,7 +390643,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 68.5,
+          "score": 69.0,
           "scale": 100,
           "sources": [
             {
@@ -390582,6 +390655,13 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Nintendo Life",
+              "score": 70.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/bleep-bloop",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
+            },
+            {
               "name": "Vandal",
               "score": 72,
               "url": "https://vandal.elespanol.com/analisis/pc/bleep-bloop/58905#p-13",
@@ -390591,24 +390671,33 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 2
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/bleep_bloop",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 2,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:37:50.073926+00:00"
+        "attempted": "2026-11-03T09:16:38.217929+00:00"
       },
       "requirements": {
         "image": true,
@@ -390625,10 +390714,13 @@
       "basics_attempted": "2026-11-02T22:37:50.073926+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:54:54.726269+00:00",
+      "full_attempted": "2026-11-03T09:16:40.158201+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/bleep-bloop-switch/",
@@ -390677,7 +390769,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:8917": {
       "title": "Blizzard Arcade Collection",
