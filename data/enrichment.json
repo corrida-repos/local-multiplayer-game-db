@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:31:52.271932+00:00",
+  "updated": "2026-11-03T08:32:45.761133+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2311,
+    "full_attempted": 2321,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -191582,15 +191582,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.07,
-              "count": 98,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.07,
               "scale": 5,
-              "source": "PSN",
+              "count": 98,
               "url": "https://store.playstation.com/pt-pt/product/EP5133-PPSA27970_00-MICROTILTCHALLEN",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:37:29.248840+00:00",
-              "platform": "PSN · PS5",
               "weight": 9.899494936611665,
               "normalized": 6.14
             }
@@ -191598,7 +191596,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:37:27.962098+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:32:25.370601+00:00"
       },
       "requirements": {
         "image": true,
@@ -191640,7 +191645,11 @@
       },
       "basics_attempted": "2026-11-02T18:37:27.962098+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -191656,7 +191665,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:32:25.615330+00:00",
+      "full_version": 7
     },
     "PS5:16494": {
       "title": "Twin Breaker: A Sacred Symbols Adventure",
@@ -259258,15 +259269,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.65,
-              "count": 23,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.65,
               "scale": 5,
-              "source": "PSN",
+              "count": 23,
               "url": "https://store.playstation.com/pt-pt/product/UP2158-PPSA36416_00-THUNDERHOOPCOPS5",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:36:46.669376+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 4.795831523312719,
               "normalized": 9.3
             }
@@ -259274,7 +259283,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:36:45.568570+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:32:20.421605+00:00"
       },
       "requirements": {
         "image": true,
@@ -259316,7 +259332,11 @@
       },
       "basics_attempted": "2026-11-02T18:36:45.568570+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -259332,7 +259352,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:32:20.625684+00:00",
+      "full_version": 7
     },
     "Switch:19046": {
       "title": "Thunder Hoop Collection (QUByte Classics)",
@@ -259346,6 +259368,7 @@
               "name": "Nindie Spotlight",
               "score": 68,
               "url": "https://nindiespotlight.com/game_profile.cfm?game=thunder-hoop-collection-switch",
+              "date": "2026-10-09",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -259360,7 +259383,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:36:03.884972+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:32:13.336120+00:00"
       },
       "requirements": {
         "image": true,
@@ -259372,8 +259403,13 @@
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://image.api.playstation.com/vulcan/ap/rnd/202610/0722/9fb81785311e533a635046d4497a6c17e6de1a21fa7a530f.png",
@@ -259415,7 +259451,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:32:16.983695+00:00",
+      "full_version": 7
     },
     "PS5:19060": {
       "title": "Thundercade",
@@ -259433,15 +259471,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 5,
-              "count": 16,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 5,
               "scale": 5,
-              "source": "PSN",
+              "count": 16,
               "url": "https://store.playstation.com/pt-pt/product/JP0571-PPSA39156_00-HAMPRDC000000001",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T20:04:03.152974+00:00",
-              "platform": "PSN · PS5",
               "weight": 4.0,
               "normalized": 10.0
             }
@@ -259449,7 +259485,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:04:01.341396+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:32:10.391836+00:00"
       },
       "requirements": {
         "image": true,
@@ -259458,7 +259501,11 @@
       },
       "basics_attempted": "2026-11-02T20:04:01.341396+00:00",
       "version": 4,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/JP0571-PPSA39156_00-HAMPRDC000000001",
         "label": "Abrir na PlayStation Store",
@@ -259507,7 +259554,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:32:10.803439+00:00",
+      "full_version": 7
     },
     "Switch:19057": {
       "title": "Thundercade",
@@ -295230,24 +295279,67 @@
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
+              "name": "Nindie Spotlight",
               "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/tick_tock_a_tale_for_two",
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=tick-tock-a-tale-for-two-switch",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/tick-tock-a-tale-for-two-review/",
+              "date": "2020-02-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/tick_tock_a_tale_for_two",
+              "date": "2019-12-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 6.4,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6,
+              "scale": 10,
+              "count": 7,
+              "url": "https://www.metacritic.com/game/tick-tock-a-tale-for-two/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.6457513110645907,
+              "normalized": 6.0
+            },
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/tick_tock_a_tale_for_two",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:50.794480+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:32:28.437822+00:00"
       },
       "requirements": {
         "image": true,
@@ -295263,7 +295355,12 @@
       },
       "basics_attempted": "2026-11-02T22:52:50.794480+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/tick-tock-a-tale-for-two-switch/",
@@ -295312,20 +295409,23 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:32:30.821681+00:00",
+      "full_version": 7
     },
     "Switch:5399": {
       "title": "Tied Together",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 54.0,
+          "score": 52.5,
           "scale": 100,
           "sources": [
             {
               "name": "DarkStation",
               "score": 60,
               "url": "http://www.darkstation.com/reviews/tied-together-review",
+              "date": "2018-11-06",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -295333,6 +295433,7 @@
               "name": "IGN Spain",
               "score": 60,
               "url": "https://es.ign.com/tied-together-nintendo-switch/140724/review/analisis-de-tied-together-para-nintendo-switch",
+              "date": "2018-10-20",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -295340,13 +295441,24 @@
               "name": "NintendoWorldReport",
               "score": 40,
               "url": "http://www.nintendoworldreport.com/review/48818/tied-together-switch-review",
+              "date": "2018-11-05",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 45.0,
+              "url": "https://purenintendo.com/review-tied-together-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 4.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
             },
             {
               "name": "Switch Player",
               "score": 70,
               "url": "http://switchplayer.net/2019/12/06/tied-together-review/",
+              "date": "2019-12-09",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -295354,21 +295466,39 @@
               "name": "Video Chums",
               "score": 40,
               "url": "https://videochums.com/article/switch-co-op-indie-games#tied-together",
+              "date": "2018-10-19",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 5
+          "source_count": 6
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/tied_together",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:50.794741+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:32:38.419238+00:00"
       },
       "requirements": {
         "image": true,
@@ -295385,7 +295515,9 @@
       "basics_attempted": "2026-11-02T22:52:50.794741+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -295435,7 +295567,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:32:42.109507+00:00",
+      "full_version": 7
     },
     "Switch:5535": {
       "title": "TowerFall",
@@ -333313,28 +333447,109 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 75.0,
+          "score": 74.8,
           "scale": 100,
           "sources": [
+            {
+              "name": "4P.de",
+              "score": 83,
+              "url": "https://www.4players.de/4players.php/dispbericht/Switch/Test/38116/84201/0/Thoth.html",
+              "date": "2020-01-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 80,
+              "url": "https://www.gamespace.com/featured/thoth-switch-review-geometrical-goodness/",
+              "date": "2019-12-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 80,
+              "url": "https://gamingtrend.com/feature/reviews/in-space-shapes-can-hear-you-scream-thoth-review/",
+              "date": "2020-02-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 75.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=thoth-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 50,
+              "url": "http://www.nintendoworldreport.com/review/52379/thoth-switch-review",
+              "date": "2020-01-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 75,
+              "url": "https://purenintendo.com/review-thoth-nintendo-switch/",
+              "date": "2019-12-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2020/02/06/thoth-review/",
+              "date": "2020-02-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 80,
+              "url": "https://www.thedigitalfix.com/gaming/review/thoth-switch-review/",
+              "date": "2020-01-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/old-school-console-games-part-2#thoth",
+              "date": "2020-01-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
-          "score": null,
+          "score": 4.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/thoth",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:36.603758+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:32:18.346032+00:00"
       },
       "requirements": {
         "image": true,
@@ -333350,7 +333565,10 @@
       },
       "basics_attempted": "2026-11-02T22:52:36.603758+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/thoth-switch/",
@@ -333400,14 +333618,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:32:21.998576+00:00",
+      "full_version": 7
     },
     "Switch:7189": {
       "title": "Thy Sword",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 63.0,
+          "score": 71.0,
           "scale": 100,
           "sources": [
             {
@@ -333416,19 +333636,52 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=thy-sword-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-thy-sword-nintendo-switch/",
+              "date": "2020-06-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2020/06/16/thy-sword-review/",
+              "date": "2020-06-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/thy_sword",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:38.045235+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:32:23.365391+00:00"
       },
       "requirements": {
         "image": true,
@@ -333444,7 +333697,11 @@
       },
       "basics_attempted": "2026-11-02T22:52:38.045235+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/thy-sword-switch/",
@@ -333493,7 +333750,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:32:27.237661+00:00",
+      "full_version": 7
     },
     "Switch:7196": {
       "title": "Tonight We Riot",
@@ -386292,26 +386551,49 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 54.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Gaming Age",
+              "score": 42,
+              "url": "https://gaming-age.com/2021/04/thunderflash-review-for-ps5-ps4-xbox-series-x-xbox-one-switch/",
+              "date": "2021-04-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 60,
+              "url": "https://gamingtrend.com/feature/reviews/run-n-gun-80s-style-thunderflash-review/",
+              "date": "2021-04-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 60,
+              "url": "http://www.playstationcountry.com/thunderflash-ps4-review/",
+              "date": "2021-03-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 7.78,
           "scale": 10,
           "sources": [
             {
-              "score": 3.89,
-              "count": 296,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.89,
               "scale": 5,
-              "source": "PSN",
+              "count": 296,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA02924_00-RATATHUNDERFLASH",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:36:50.389166+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 17.204650534085253,
               "normalized": 7.78
             }
@@ -386319,7 +386601,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:36:49.501645+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:32:15.489335+00:00"
       },
       "requirements": {
         "image": true,
@@ -386361,7 +386650,11 @@
       },
       "basics_attempted": "2026-11-02T18:36:49.501645+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -386377,7 +386670,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:32:15.804151+00:00",
+      "full_version": 7
     },
     "Switch:8860": {
       "title": "Thunderflash",
@@ -386393,10 +386688,18 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=thunderflash-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 65,
+              "url": "https://purenintendo.com/review-thunderflash-nintendo-switch/",
+              "date": "2021-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -386405,7 +386708,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:52:36.868691+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:32:43.153559+00:00"
       },
       "requirements": {
         "image": true,
@@ -386421,7 +386731,12 @@
       },
       "basics_attempted": "2026-11-02T22:52:36.868691+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/thunderflash-switch/",
@@ -386470,7 +386785,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:32:45.498755+00:00",
+      "full_version": 7
     },
     "Switch:9057": {
       "title": "Time Carnage",
