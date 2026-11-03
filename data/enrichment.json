@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T07:30:14.494027+00:00",
+  "updated": "2026-11-03T07:31:18.692007+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1741,
+    "full_attempted": 1751,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -86098,15 +86098,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.37,
-              "count": 19,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.37,
               "scale": 5,
-              "source": "PSN",
+              "count": 19,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA08325_00-RATAPARASITEPACK",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:04:12.973652+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 4.358898943540674,
               "normalized": 8.74
             }
@@ -86114,7 +86112,16 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:04:10.515684+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:30:31.206506+00:00"
       },
       "requirements": {
         "image": true,
@@ -86156,7 +86163,11 @@
       },
       "basics_attempted": "2026-11-02T18:04:10.515684+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -86172,7 +86183,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:30:31.881441+00:00",
+      "full_version": 7
     },
     "Switch:12133": {
       "title": "Parasite Pack",
@@ -86200,7 +86213,16 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:12.925077+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:30:34.140551+00:00"
       },
       "requirements": {
         "image": true,
@@ -86217,7 +86239,12 @@
       "basics_attempted": "2026-11-02T22:44:12.925077+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -86267,33 +86294,74 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:30:38.899820+00:00",
+      "full_version": 7
     },
     "PS5:14142": {
       "title": "Parasol Stars: The Story of Bubble Bobble III",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 82.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Gaming Age",
+              "score": 90,
+              "url": "https://gaming-age.com/2024/07/parasol-stars-the-story-of-bubble-bobble-iii-review-for-playstation-xbox-switch/",
+              "date": "2024-07-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 80,
+              "url": "https://www.impulsegamer.com/parasol-stars-the-story-of-bubble-bobble-iii-review/",
+              "date": "2024-07-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 80,
+              "url": "https://www.thegamesmachine.it/parasol-stars/parasol-stars-recensione-ps5/",
+              "date": "2024-07-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 80,
+              "url": "https://www.thesixthaxis.com/2024/07/09/parasol-stars-the-story-of-bubble-bobble-iii-review/",
+              "date": "2024-07-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/old-school-console-games-part-4#parasol-stars-the-story-of-bubble-bobble-iii",
+              "date": "2024-07-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 5
         },
         "user": {
           "score": 9.76,
           "scale": 10,
           "sources": [
             {
-              "score": 4.88,
-              "count": 42,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.88,
               "scale": 5,
-              "source": "PSN",
+              "count": 42,
               "url": "https://store.playstation.com/pt-pt/product/EP8204-PPSA16852_00-PARASOLSTARSP5EU",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:04:14.176431+00:00",
-              "platform": "PSN · PS5",
               "weight": 6.48074069840786,
               "normalized": 9.76
             }
@@ -86301,7 +86369,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:04:12.977564+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:30:43.277623+00:00"
       },
       "requirements": {
         "image": true,
@@ -86343,7 +86418,11 @@
       },
       "basics_attempted": "2026-11-02T18:04:12.977564+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -86359,14 +86438,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:30:43.733388+00:00",
+      "full_version": 7
     },
     "Switch:14140": {
       "title": "Parasol Stars: The Story of Bubble Bobble III",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 73.0,
+          "score": 80.8,
           "scale": 100,
           "sources": [
             {
@@ -86375,10 +86456,34 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=parasol-stars-the-story-of-bubble-bobble-iii-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-parasol-stars-the-story-of-bubble-bobble-iii-nintendo-switch/",
+              "date": "2024-08-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Tech-Gaming",
+              "score": 80,
+              "url": "https://www.tech-gaming.com/parasol-stars/",
+              "date": "2024-07-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 90,
+              "url": "https://toucharcade.com/2024/07/15/switcharcade-round-up-reviews-featuring-parasol-stars-plus-todays-new-releases-and-the-latest-sales/",
+              "date": "2024-07-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
           "score": null,
@@ -86387,7 +86492,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:14.190708+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:31:14.040447+00:00"
       },
       "requirements": {
         "image": true,
@@ -86404,7 +86516,11 @@
       "basics_attempted": "2026-11-02T22:44:14.190708+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -86455,7 +86571,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:31:18.489069+00:00",
+      "full_version": 7
     },
     "PS5:13273": {
       "title": "Pets at Work",
@@ -171879,15 +171997,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.88,
-              "count": 42,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.88,
               "scale": 5,
-              "source": "PSN",
+              "count": 42,
               "url": "https://store.playstation.com/pt-pt/product/EP8204-PPSA16852_00-PSSPARASOLSPS5EU",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:04:16.674343+00:00",
-              "platform": "PSN · PS5",
               "weight": 6.48074069840786,
               "normalized": 9.76
             }
@@ -171895,7 +172011,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:04:15.534510+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:30:36.086116+00:00"
       },
       "requirements": {
         "image": true,
@@ -171937,7 +172060,11 @@
       },
       "basics_attempted": "2026-11-02T18:04:15.534510+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -171953,26 +172080,37 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:30:36.696279+00:00",
+      "full_version": 7
     },
     "Switch:16868": {
       "title": "Parasol Superstars",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 79.0,
+          "score": 82.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nindie Spotlight",
-              "score": 79.0,
-              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=parasol-superstars-switch",
+              "name": "GameGrin",
+              "score": 85,
+              "url": "https://www.gamegrin.com/reviews/parasol-superstars-review/",
+              "date": "2026-06-22",
               "platform": "Nintendo Switch",
-              "via": "Direct console-specific review"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 79,
+              "url": "https://nindiespotlight.com/game_profile.cfm?game=parasol-superstars-switch",
+              "date": "2026-04-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -171981,7 +172119,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:27.487890+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:30:49.000597+00:00"
       },
       "requirements": {
         "image": true,
@@ -171998,7 +172143,12 @@
       "basics_attempted": "2026-11-02T22:44:27.487890+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -172048,7 +172198,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:30:51.964190+00:00",
+      "full_version": 7
     },
     "Switch:16826": {
       "title": "Punk Shot",
@@ -278995,7 +279147,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 64.0,
+          "score": 67.0,
           "scale": 100,
           "sources": [
             {
@@ -279004,19 +279156,44 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=paw-paw-paw-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-paw-paw-paw-nintendo-switch/",
+              "date": "2021-01-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/paw_paw_paw",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:27.489567+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:31:09.364432+00:00"
       },
       "requirements": {
         "image": true,
@@ -279033,7 +279210,10 @@
       "basics_attempted": "2026-11-02T22:44:27.489567+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -279083,7 +279263,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:31:12.091787+00:00",
+      "full_version": 7
     },
     "Switch:6566": {
       "title": "Police Stories",
@@ -300337,28 +300519,95 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 75.0,
+          "score": 75.8,
           "scale": 100,
           "sources": [
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/12129-party-hard",
+              "date": "2019-02-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 75.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=party-hard-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 65,
+              "url": "https://www.nintenderos.com/2020/12/analisis-party-hard-para-nintendo-switch/",
+              "date": "2020-12-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 90,
+              "url": "https://www.nintendo-insider.com/party-hard-review/",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/party-hard",
+              "date": "2024-02-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/49020/party-hard-switch-review",
+              "date": "2018-11-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
-          "score": null,
+          "score": 6.59,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.6,
+              "scale": 10,
+              "count": 11,
+              "url": "https://www.metacritic.com/game/party-hard/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.3166247903554,
+              "normalized": 7.6
+            },
+            {
+              "score": 4.67,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/party_hard",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 4.67
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:27.488428+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:30:44.355364+00:00"
       },
       "requirements": {
         "image": true,
@@ -300375,7 +300624,10 @@
       "basics_attempted": "2026-11-02T22:44:27.488428+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -300425,14 +300677,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:30:49.648325+00:00",
+      "full_version": 7
     },
     "Switch:7501": {
       "title": "Party Hard 2",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 73.0,
+          "score": 60.8,
           "scale": 100,
           "sources": [
             {
@@ -300441,19 +300695,70 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=party-hard-2-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/party_hard_2",
+              "date": "2020-09-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 40.0,
+              "url": "https://purenintendo.com/review-party-hard-2-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 4.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Starbit",
+              "score": 60,
+              "url": "https://www.starbit.pt/2020/10/14/party-hard-2-analise/",
+              "date": "2020-10-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 4.14,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 3,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/party-hard-2/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.0,
+              "normalized": 3.0
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 5.0,
+              "scale": 10.0,
+              "count": 7,
+              "url": "https://www.nintendolife.com/games/switch-eshop/party_hard_2",
+              "platform": "Nintendo Switch",
+              "weight": 2.6457513110645907,
+              "normalized": 5.0
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:27.488827+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:30:54.206047+00:00"
       },
       "requirements": {
         "image": true,
@@ -300470,7 +300775,10 @@
       "basics_attempted": "2026-11-02T22:44:27.488827+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -300520,7 +300828,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:30:57.081135+00:00",
+      "full_version": 7
     },
     "Switch:7597": {
       "title": "PiKUNiKU",
@@ -311981,14 +312291,183 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 77.7,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "3DJuegos",
+              "score": 75,
+              "url": "https://www.3djuegos.com/juegos/analisis/37820/0/part-time-ufo/",
+              "date": "2020-11-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 70,
+              "url": "https://attackofthefanboy.com/reviews/part-time-ufo-review/",
+              "date": "2020-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/6374/1/part-time-ufo-nintendo-switch.html",
+              "date": "2021-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 70,
+              "url": "https://www.ausgamers.com/games/call-of-duty-black-ops-cold-war/review/",
+              "date": "2020-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game World Navigator Magazine",
+              "score": 71,
+              "url": "",
+              "date": "2021-02-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2020/11/part-time-ufo-review/",
+              "date": "2020-11-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 80,
+              "url": "http://www.gameblog.fr/tests/3765-part-time-ufo-switch",
+              "date": "2020-11-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 85,
+              "url": "https://gamingtrend.com/feature/reviews/i-lift-things-up-and-put-them-down-part-time-ufo-review/",
+              "date": "2020-11-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "https://www.godisageek.com/reviews/part-time-ufo-review/",
+              "date": "2020-11-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 80,
+              "url": "https://hardcoregamer.com/2020/11/01/review-part-time-ufo/391177/",
+              "date": "2020-11-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 78,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-part-time-ufo-nintendo-switch-pequenos-trabajos-arcade-tan-divertidos-como-simples-directos-745847",
+              "date": "2020-10-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 70,
+              "url": "https://www.nintenderos.com/2020/11/analisis-part-time-ufo-para-nintendo-switch/",
+              "date": "2020-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 85,
+              "url": "",
+              "date": "2021-05-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/part-time-ufo-review/",
+              "date": "2020-11-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/part_time_ufo",
+              "date": "2020-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "https://www.nintendoworldreport.com/review/55447/part-time-ufo-switch-review",
+              "date": "2020-11-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 85,
+              "url": "https://purenintendo.com/review-part-time-ufo-nintendo-switch/",
+              "date": "2020-11-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 70,
+              "url": "https://www.shacknews.com/article/121256/part-time-ufo-review-the-claaaaaaw",
+              "date": "2020-11-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 80,
+              "url": "https://www.thedigitalfix.com/gaming/review/part-time-ufo-switch/",
+              "date": "2020-11-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 77,
+              "url": "https://vandal.elespanol.com/analisis/switch/part-time-ufo/92181#p-83",
+              "date": "2020-11-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 70,
+              "url": "https://videochums.com/review/part-time-ufo",
+              "date": "2020-10-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 21
         },
         "user": {
-          "score": 7.9,
+          "score": 7.7,
           "scale": 10,
           "sources": [
             {
@@ -311997,16 +312476,30 @@
               "scale": 10,
               "count": 21,
               "url": "https://www.metacritic.com/game/part-time-ufo/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 4.58257569495584,
-              "normalized": 7.9,
-              "checked": "2026-11-02T18:04:18.735153+00:00"
+              "normalized": 7.9
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.6,
+              "scale": 10.0,
+              "count": 95,
+              "url": "https://www.nintendolife.com/games/switch-eshop/part_time_ufo",
+              "platform": "Nintendo Switch",
+              "weight": 9.746794344808963,
+              "normalized": 7.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:44:27.488174+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 21,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:30:59.077362+00:00"
       },
       "requirements": {
         "image": true,
@@ -312024,7 +312517,9 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -312074,7 +312569,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:31:04.249398+00:00",
+      "full_version": 7
     },
     "Switch:7932": {
       "title": "Pitfall Planet",
