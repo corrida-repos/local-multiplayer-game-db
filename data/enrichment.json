@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:35:23.733357+00:00",
+  "updated": "2026-11-03T06:36:19.978321+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1511,
+    "full_attempted": 1521,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -66086,13 +66086,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 4.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/lilas_tale_and_the_hidden_forest",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 4.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:08.225268+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:35:48.158298+00:00"
       },
       "requirements": {
         "image": true,
@@ -66108,7 +66125,12 @@
       },
       "basics_attempted": "2026-11-02T22:41:08.225268+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lilas-tale-and-the-hidden-forest-switch/",
@@ -66157,33 +66179,50 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:35:49.951296+00:00",
+      "full_version": 7
     },
     "PS5:10104": {
       "title": "Loopindex",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 56.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Gaming Age",
+              "score": 42,
+              "url": "https://gaming-age.com/2021/10/loopindex-review-for-ps5-4-xbox-series-x-one-switch/",
+              "date": "2021-10-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 70,
+              "url": "https://www.playstationcountry.com/loopindex-ps4-ps5-review/",
+              "date": "2021-08-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 7.7,
           "scale": 10,
           "sources": [
             {
-              "score": 3.85,
-              "count": 26,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.85,
               "scale": 5,
-              "source": "PSN",
+              "count": 26,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA04083_00-RATAGAMLOOPINDEX",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:51:55.165315+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 5.0990195135927845,
               "normalized": 7.7
             }
@@ -66191,7 +66230,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:51:54.099064+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:35:50.044256+00:00"
       },
       "requirements": {
         "image": true,
@@ -66233,7 +66279,11 @@
       },
       "basics_attempted": "2026-11-02T17:51:54.099064+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -66249,14 +66299,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:35:51.149225+00:00",
+      "full_version": 7
     },
     "Switch:10014": {
       "title": "Loopindex",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 71.0,
+          "score": 55.5,
           "scale": 100,
           "sources": [
             {
@@ -66265,10 +66317,18 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=loopindex-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 40,
+              "url": "https://purenintendo.com/review-loopindex-nintendo-switch/",
+              "date": "2021-07-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -66277,7 +66337,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:08.228058+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:36:18.032400+00:00"
       },
       "requirements": {
         "image": true,
@@ -66293,7 +66360,12 @@
       },
       "basics_attempted": "2026-11-02T22:41:08.228058+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/loopindex-switch/",
@@ -66342,7 +66414,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:36:19.732299+00:00",
+      "full_version": 7
     },
     "PS5:12247": {
       "title": "LootLite",
@@ -113359,34 +113433,139 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 82.5,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameCritics",
+              "score": 70,
+              "url": "https://gamecritics.com/jarrod-johnston/llamasoft-the-jeff-minter-story-review/",
+              "date": "2024-03-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 80,
+              "url": "https://www.gamingnexus.com/Article/14018/Llamasoft-The-Jeff-Minter-Story/",
+              "date": "2024-03-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 70,
+              "url": "https://www.heypoorplayer.com/2024/03/16/llamasoft-the-jeff-minter-story-review-ps5/",
+              "date": "2024-03-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Irish Independent",
+              "score": 80,
+              "url": "https://www.independent.ie/entertainment/games/llamasoft-the-jeff-minter-story-review-inside-the-mad-mind-of-a-gaming-pioneer/a1859611057.html",
+              "date": "2024-04-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 90,
+              "url": "https://psxbrasil.com.br/analise/llamasoft-the-jeff-minter-story-review/",
+              "date": "2024-03-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 80,
+              "url": "https://www.playstationcountry.com/llamasoft-the-jeff-minter-story-ps5-review/",
+              "date": "2024-03-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 85,
+              "url": "https://www.psu.com/reviews/llamasoft-the-jeff-minter-story-review-ps5/",
+              "date": "2024-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 100,
+              "url": "https://www.player2.net.au/2024/03/llamasoft-the-jeff-minter-story-review-it-really-whips/",
+              "date": "2024-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 90,
+              "url": "https://www.pushsquare.com/reviews/ps5/llamasoft-the-jeff-minter-story",
+              "date": "2024-03-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/modern-games-for-old-school-gamers#llamasoft-the-jeff-minter-story",
+              "date": "2024-03-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 10
         },
         "user": {
-          "score": 9.42,
+          "score": 8.61,
           "scale": 10,
           "sources": [
             {
-              "score": 4.71,
-              "count": 101,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.71,
               "scale": 5,
-              "source": "PSN",
+              "count": 101,
               "url": "https://store.playstation.com/pt-pt/product/EP7816-PPSA18158_00-0079142450506243",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:51:48.581540+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 10.04987562112089,
               "normalized": 9.42
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.1,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/llamasoft-the-jeff-minter-story/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 3.0,
+              "normalized": 6.1
+            },
+            {
+              "score": 8.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/llamasoft_the_jeff_minter_story",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:51:47.101208+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:35:40.192448+00:00"
       },
       "requirements": {
         "image": true,
@@ -113428,7 +113607,9 @@
       },
       "basics_attempted": "2026-11-02T17:51:47.101208+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -113444,26 +113625,68 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:35:41.442488+00:00",
+      "full_version": 7
     },
     "Switch:15086": {
       "title": "Llamasoft: The Jeff Minter Story",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 85.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/llamasoft-the-jeff-minter-story",
+              "name": "Eurogamer",
+              "score": 80,
+              "url": "https://www.eurogamer.net/llamasoft-the-jeff-minter-story-review",
+              "date": "2024-03-12",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 80.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=llamasoft-the-jeff-minter-story-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/llamasoft-the-jeff-minter-story",
+              "date": "2024-03-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/66593/llamasoft-the-jeff-minter-story-switch-review",
+              "date": "2024-03-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-llamasoft-the-jeff-minter-story-nintendo-switch/",
+              "date": "2024-05-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 100,
+              "url": "https://toucharcade.com/2024/03/13/llamasoft-the-jeff-minter-story-switch-review-digital-eclipse-nintendo-eshop-sales/",
+              "date": "2024-03-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
           "score": 7.2,
@@ -113477,14 +113700,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/llamasoft_the_jeff_minter_story",
               "platform": "Nintendo Switch",
               "weight": 3.605551275463989,
-              "normalized": 7.199999999999999,
-              "checked": "2026-11-02T17:51:47.101398+00:00"
+              "normalized": 7.199999999999999
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:08.226638+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:35:43.230569+00:00"
       },
       "requirements": {
         "image": true,
@@ -113500,7 +113727,10 @@
       },
       "basics_attempted": "2026-11-02T22:41:08.226638+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/llamasoft-the-jeff-minter-story-switch/",
@@ -113549,7 +113779,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:35:46.323464+00:00",
+      "full_version": 7
     },
     "PS5:15147": {
       "title": "Moonglow Bay",
@@ -122835,34 +123067,120 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 47.3,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Everyeye.it",
+              "score": 50,
+              "url": "https://www.everyeye.it/articoli/recensione-looney-tunes-wacky-world-of-sports-risate-sportivita-64583.html",
+              "date": "2024-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 50,
+              "url": "https://gamecritics.com/c-j-salcedo/looney-tunes-wacky-world-of-sports-review/",
+              "date": "2024-12-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 40,
+              "url": "https://www.gamespew.com/2024/09/looney-tunes-wacky-world-of-sports-review/",
+              "date": "2024-09-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 60,
+              "url": "https://www.godisageek.com/reviews/looney-tunes-wacky-world-of-sports-review/",
+              "date": "2024-10-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 65,
+              "url": "https://psxbrasil.com.br/analise/looney-tunes-wacky-world-of-sports-review/",
+              "date": "2024-09-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 33,
+              "url": "https://www.player2.net.au/2024/09/looney-tunes-wacky-world-of-sports-review-thats-all-folks/",
+              "date": "2024-10-31",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 40,
+              "url": "https://www.pushsquare.com/reviews/ps5/looney-tunes-wacky-world-of-sports",
+              "date": "2024-10-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 50,
+              "url": "https://www.thegamesmachine.it/looney-tunes-wacky-world-of-sports-pc-ps4-ps5-xbox-one-series-x-s-switch/looney-tunes-wacky-world-of-sports-recensione/",
+              "date": "2024-10-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 38,
+              "url": "https://videochums.com/review/looney-tunes-wacky-world-of-sports",
+              "date": "2024-09-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 9
         },
         "user": {
-          "score": 7.48,
+          "score": 7.2,
           "scale": 10,
           "sources": [
             {
-              "score": 3.74,
-              "count": 227,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.74,
               "scale": 5,
-              "source": "PSN",
+              "count": 227,
               "url": "https://store.playstation.com/pt-pt/product/EP0281-PPSA19564_00-LOONEYTUNESPORTS",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:51:52.048595+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 15.066519173319364,
               "normalized": 7.48
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.3,
+              "scale": 10,
+              "count": 21,
+              "url": "https://www.metacritic.com/game/looney-tunes-wacky-world-of-sports/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 4.58257569495584,
+              "normalized": 6.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:51:50.632785+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:35:45.080991+00:00"
       },
       "requirements": {
         "image": true,
@@ -122904,7 +123222,10 @@
       },
       "basics_attempted": "2026-11-02T17:51:50.632785+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -122920,35 +123241,70 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:35:45.583618+00:00",
+      "full_version": 7
     },
     "Switch:15592": {
       "title": "Looney Tunes: Wacky World of Sports",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 40.0,
+          "score": 57.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 40.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/looney-tunes-wacky-world-of-sports",
+              "name": "Impulsegamer",
+              "score": 68,
+              "url": "https://www.impulsegamer.com/looney-tunes-wacky-world-of-sports-review-nintendo-switch/",
+              "date": "2024-10-08",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 65.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=looney-tunes-wacky-world-of-sports-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 40,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/looney-tunes-wacky-world-of-sports",
+              "date": "2024-09-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 6.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 6.0,
+              "scale": 10,
+              "count": 5,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/nintendo-switch/looney_tunes_wacky_world_of_sports",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.23606797749979,
+              "normalized": 6.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:08.227688+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:36:03.198221+00:00"
       },
       "requirements": {
         "image": true,
@@ -122964,7 +123320,12 @@
       },
       "basics_attempted": "2026-11-02T22:41:08.227688+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/looney-tunes-wacky-world-of-sports-switch/",
@@ -123013,7 +123374,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:36:07.400285+00:00",
+      "full_version": 7
     },
     "Switch:15582": {
       "title": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
@@ -184799,19 +185162,36 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 72.0,
+          "score": 77.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Nindie Spotlight",
-              "score": 72.0,
-              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=living-dead-house-switch",
+              "name": "Digitally Downloaded",
+              "score": 80,
+              "url": "https://www.digitallydownloaded.net/2026/04/review-living-dead-house-nintendo-switch.html",
+              "date": "2026-04-08",
               "platform": "Nintendo Switch",
-              "via": "Direct console-specific review"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 72,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=living-dead-house-switch",
+              "date": "2026-04-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-living-dead-house-nintendo-switch/",
+              "date": "2026-04-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
           "score": null,
@@ -184820,7 +185200,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:08.225849+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:36:13.030863+00:00"
       },
       "requirements": {
         "image": true,
@@ -184836,7 +185223,12 @@
       },
       "basics_attempted": "2026-11-02T22:41:08.225849+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/living-dead-house-switch/",
@@ -184885,7 +185277,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:36:14.984644+00:00",
+      "full_version": 7
     },
     "PS5:17988": {
       "title": "MARVEL MaXimum Collection",
@@ -225405,22 +225799,78 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 74.4,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/lode_runner_legacy",
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/4798/1/lode-runner-legacy-nintendo-switch.html",
+              "date": "2018-04-17",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 80,
+              "url": "https://gamecritics.com/andrew-king/lode-runner-legacy-review/",
+              "date": "2018-06-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=lode-runner-legacy-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 55,
+              "url": "https://www.nintenderos.com/2018/08/analisis-lode-runner-legacy/",
+              "date": "2018-08-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/lode-runner-legacy-review/",
+              "date": "2018-04-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/lode_runner_legacy?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-04-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/47118/lode-runner-legacy-switch-review",
+              "date": "2018-04-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/review/lode-runner-legacy",
+              "date": "2018-04-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 8
         },
         "user": {
-          "score": 7.7,
+          "score": 7.63,
           "scale": 10,
           "sources": [
             {
@@ -225431,14 +225881,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/lode_runner_legacy",
               "platform": "Nintendo Switch",
               "weight": 4.358898943540674,
-              "normalized": 7.7,
-              "checked": "2026-11-02T17:51:48.586368+00:00"
+              "normalized": 7.7
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.5,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/lode-runner-legacy/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 7.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:08.227404+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:35:53.257950+00:00"
       },
       "requirements": {
         "image": true,
@@ -225454,7 +225918,11 @@
       },
       "basics_attempted": "2026-11-02T22:41:08.227404+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/lode-runner-legacy-switch/",
@@ -225503,7 +225971,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:35:55.492474+00:00",
+      "full_version": 7
     },
     "Switch:5200": {
       "title": "Mario Tennis Aces",
@@ -316105,28 +316575,95 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 75.8,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/little_triangle",
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/4725/1/little-triangle-nintendo-switch.html",
+              "date": "2018-03-22",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 80.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=little-triangle-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 75,
+              "url": "http://www.nintenderos.com/2018/04/analisis-little-triangle/",
+              "date": "2018-04-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 80,
+              "url": "http://nintendoenthusiast.com/blog/2018/03/07/little-triangle-review-nintendo-switch/",
+              "date": "2018-03-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/little_triangle?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-02-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/46584/little-triangle-switch-review",
+              "date": "2018-03-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
-          "score": null,
+          "score": 6.83,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.5,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/little-triangle/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 7.5
+            },
+            {
+              "score": 6.0,
+              "scale": 10,
+              "count": 4,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/little_triangle",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.0,
+              "normalized": 6.0
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:41:08.225511+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:35:38.089385+00:00"
       },
       "requirements": {
         "image": true,
@@ -316142,7 +316679,11 @@
       },
       "basics_attempted": "2026-11-02T22:41:08.225511+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/little-triangle-switch/",
@@ -316191,7 +316732,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:35:40.511201+00:00",
+      "full_version": 7
     },
     "Switch:9039": {
       "title": "Moonfall Ultimate",
