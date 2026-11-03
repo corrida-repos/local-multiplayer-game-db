@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:46:46.010353+00:00",
+  "updated": "2026-11-03T06:47:42.488991+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1621,
+    "full_attempted": 1631,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -76789,7 +76789,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 72.5,
           "scale": 100,
           "sources": [
             {
@@ -76798,19 +76798,44 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=my-little-universe-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 85,
+              "url": "https://purenintendo.com/review-my-little-universe-nintendo-switch/",
+              "date": "2023-10-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 7.33,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.33,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/my_little_universe",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 7.33
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:42:34.536099+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:47:00.479722+00:00"
       },
       "requirements": {
         "image": true,
@@ -76826,7 +76851,11 @@
       },
       "basics_attempted": "2026-11-02T22:42:34.536099+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/my-little-universe-switch/",
@@ -76875,33 +76904,42 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:47:02.355783+00:00",
+      "full_version": 7
     },
     "PS5:14396": {
       "title": "Mystic Gate",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 50.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "PlayStation Country",
+              "score": 50,
+              "url": "https://www.playstationcountry.com/mystic-gate-ps5-review/",
+              "date": "2023-09-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 7.32,
           "scale": 10,
           "sources": [
             {
-              "score": 3.66,
-              "count": 56,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.66,
               "scale": 5,
-              "source": "PSN",
+              "count": 56,
               "url": "https://store.playstation.com/pt-pt/product/EP2005-PPSA15394_00-MYSTICGATE000000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:57:33.720742+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 7.483314773547883,
               "normalized": 7.32
             }
@@ -76909,7 +76947,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:57:31.406838+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:47:07.522709+00:00"
       },
       "requirements": {
         "image": true,
@@ -76951,7 +76996,11 @@
       },
       "basics_attempted": "2026-11-02T17:57:31.406838+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -76967,7 +77016,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:47:07.870295+00:00",
+      "full_version": 7
     },
     "Switch:13393": {
       "title": "Mystic Gate",
@@ -76995,7 +77046,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:42:34.797742+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:47:25.390716+00:00"
       },
       "requirements": {
         "image": true,
@@ -77011,7 +77069,13 @@
       },
       "basics_attempted": "2026-11-02T22:42:34.797742+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/mystic-gate-switch/",
@@ -77060,7 +77124,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:47:27.010416+00:00",
+      "full_version": 7
     },
     "PS5:14027": {
       "title": "NINJA KIDZ: TIME MASTERS",
@@ -77078,15 +77144,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.94,
-              "count": 85,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.94,
               "scale": 5,
-              "source": "PSN",
+              "count": 85,
               "url": "https://store.playstation.com/pt-pt/product/EP6325-PPSA14357_00-0635193746642528",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:58:01.910349+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 9.219544457292887,
               "normalized": 7.880000000000001
             }
@@ -77094,7 +77158,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:58:00.712398+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:47:17.523628+00:00"
       },
       "requirements": {
         "image": true,
@@ -77136,7 +77207,11 @@
       },
       "basics_attempted": "2026-11-02T17:58:00.712398+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -77152,7 +77227,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:47:17.754055+00:00",
+      "full_version": 7
     },
     "Switch:14025": {
       "title": "NINJA KIDZ: TIME MASTERS",
@@ -119445,6 +119522,7 @@
               "name": "GameSpew",
               "score": 80,
               "url": "https://www.gamespew.com/2024/05/my-little-pony-a-zephyr-heights-mystery-review/",
+              "date": "2024-05-17",
               "platform": "PlayStation 5",
               "via": "Metacritic review index"
             },
@@ -119452,6 +119530,7 @@
               "name": "Impulsegamer",
               "score": 80,
               "url": "https://www.impulsegamer.com/my-little-pony-a-zephyr-heights-mystery-review-ps5/",
+              "date": "2024-06-18",
               "platform": "PlayStation 5",
               "via": "Metacritic review index"
             }
@@ -119464,15 +119543,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.25,
-              "count": 116,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.25,
               "scale": 5,
-              "source": "PSN",
+              "count": 116,
               "url": "https://store.playstation.com/pt-pt/product/EP3678-PPSA16495_00-MLP2BASEGAME0001",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T19:25:26.770098+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 10.770329614269007,
               "normalized": 8.5
             }
@@ -119480,7 +119557,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:35:39.285479+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:47:02.635259+00:00"
       },
       "requirements": {
         "image": true,
@@ -119490,7 +119574,10 @@
       "basics_attempted": "2026-11-02T19:35:39.285479+00:00",
       "version": 4,
       "errors": {
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/EP3678-PPSA16495_00-MLP2BASEGAME0001",
@@ -119540,7 +119627,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:47:03.484001+00:00",
+      "full_version": 7
     },
     "Switch:15136": {
       "title": "My Little Pony: A Zephyr Heights Mystery",
@@ -119554,6 +119643,7 @@
               "name": "Video Chums",
               "score": 75,
               "url": "https://videochums.com/review/my-little-pony-a-zephyr-heights-mystery",
+              "date": "2024-05-18",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -119562,13 +119652,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/my_little_pony_a_zephyr_heights_mystery",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:42:34.533035+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:47:05.662046+00:00"
       },
       "requirements": {
         "image": true,
@@ -119585,7 +119692,11 @@
       "basics_attempted": "2026-11-02T22:42:34.533035+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -119635,7 +119746,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:47:08.923606+00:00",
+      "full_version": 7
     },
     "Switch:14859": {
       "title": "Mystic Warriors: Wrath of the Ninjas",
@@ -159939,15 +160052,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.19,
-              "count": 3305,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.19,
               "scale": 5,
-              "source": "PSN",
+              "count": 3305,
               "url": "https://store.playstation.com/pt-pt/product/UP8777-PPSA25326_00-MYLITTLEUNIVERSE",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:57:32.441032+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 8.38
             }
@@ -159955,7 +160066,12 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:57:31.406397+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:47:12.747351+00:00"
       },
       "requirements": {
         "image": true,
@@ -159997,7 +160113,10 @@
       },
       "basics_attempted": "2026-11-02T17:57:31.406397+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -160013,7 +160132,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:47:12.908932+00:00",
+      "full_version": 7
     },
     "PS5:16458": {
       "title": "One Piece: Pirate Warriors 4",
@@ -211786,19 +211907,28 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 77.0,
+          "score": 83.5,
           "scale": 100,
           "sources": [
             {
               "name": "Nindie Spotlight",
-              "score": 77.0,
-              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=mythmatch-switch",
+              "score": 77,
+              "url": "https://nindiespotlight.com/game_profile.cfm?game=mythmatch-switch",
+              "date": "2026-07-08",
               "platform": "Nintendo Switch",
-              "via": "Direct console-specific review"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Siliconera",
+              "score": 90,
+              "url": "https://www.siliconera.com/review-mythmatch-mixes-match-3-with-comedy-and-myths/",
+              "date": "2026-07-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -211807,7 +211937,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:42:35.878516+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:47:40.381130+00:00"
       },
       "requirements": {
         "image": true,
@@ -211823,7 +211960,13 @@
       },
       "basics_attempted": "2026-11-02T22:42:35.878516+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/mythmatch-switch/",
@@ -211872,7 +212015,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:47:42.239878+00:00",
+      "full_version": 7
     },
     "PS5:18675": {
       "title": "Project Neon",
@@ -234586,14 +234731,70 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 68.6,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Cubed3",
+              "score": 50,
+              "url": "http://www.cubed3.com/review/5189/1/nba-2k-playgrounds-2-nintendo-switch.html",
+              "date": "2018-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 70,
+              "url": "http://www.gameblog.fr/tests/3203-nba-2k-playgrounds-2-switch",
+              "date": "2018-10-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=nba-2k-playgrounds-2-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 60,
+              "url": "https://www.nintenderos.com/2018/11/analisis-nba-2k-playgrounds-2/",
+              "date": "2018-11-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/nba_2k_playgrounds_2?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-10-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/48716/nba-playgrounds-2-switch-review",
+              "date": "2018-10-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 70,
+              "url": "https://www.vooks.net/nba-2k-playgrounds-2-switch-review/",
+              "date": "2018-11-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 7
         },
         "user": {
-          "score": 5.4,
+          "score": 6.19,
           "scale": 10,
           "sources": [
             {
@@ -234601,17 +234802,31 @@
               "score": 5.4,
               "scale": 10,
               "count": 32,
-              "url": "https://www.metacritic.com/game/nba-playgrounds-2/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "url": "https://www.metacritic.com/game/nba-2k-playgrounds-2/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
               "weight": 5.656854249492381,
-              "normalized": 5.4,
-              "checked": "2026-11-02T19:35:52.900344+00:00"
+              "normalized": 5.4
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.1,
+              "scale": 10.0,
+              "count": 24,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/nba_2k_playgrounds_2",
+              "platform": "Nintendo Switch",
+              "weight": 4.898979485566356,
+              "normalized": 7.1
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:51:12.523241+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:47:30.446803+00:00"
       },
       "requirements": {
         "image": true,
@@ -234622,9 +234837,11 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; Different game/edition",
-        "nindie": "Not a Switch 1 review",
         "metacritic_users": "HTTP Error 301: Moved Permanently",
-        "metacritic_reviews": "HTTP Error 301: Moved Permanently"
+        "metacritic_reviews": "HTTP Error 301: Moved Permanently",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "\nhttps://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_NBA2KPlaygrounds2_image1280w.jpg",
@@ -234682,7 +234899,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:47:32.229520+00:00",
+      "full_version": 7
     },
     "Switch:4732": {
       "title": "NeuroVoider",
@@ -280246,11 +280465,36 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/3736/1/aca-neogeo-nam-1975-nintendo-switch.html",
+              "date": "2017-03-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/nam-1975_neogeo",
+              "date": "2017-03-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/44516/nam-1975-switch-review",
+              "date": "2017-04-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 7.3,
@@ -280262,7 +280506,7 @@
               "scale": 10,
               "count": 17,
               "url": "https://www.metacritic.com/game/nam-1975/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 4.123105625617661,
               "normalized": 7.3
             }
@@ -280270,7 +280514,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:57:45.406377+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:47:35.326120+00:00"
       },
       "requirements": {
         "image": true,
@@ -280295,7 +280547,11 @@
       "version": 2,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -280312,7 +280568,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:47:37.365132+00:00",
+      "full_version": 7
     },
     "Switch:6940": {
       "title": "Ninja Combat",
