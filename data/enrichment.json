@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:14:54.470378+00:00",
+  "updated": "2026-11-03T06:15:50.970694+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1291,
+    "full_attempted": 1301,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -44543,15 +44543,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 2.18,
-              "count": 34,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 2.18,
               "scale": 5,
-              "source": "PSN",
+              "count": 34,
               "url": "https://store.playstation.com/pt-pt/product/EP1629-PPSA04764_00-HARVESTLIFEPS5EU",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:28:07.513754+00:00",
-              "platform": "PSN · PS5",
               "weight": 5.830951894845301,
               "normalized": 4.36
             }
@@ -44559,7 +44557,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:28:06.082059+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:15:13.464928+00:00"
       },
       "requirements": {
         "image": true,
@@ -44601,7 +44606,11 @@
       },
       "basics_attempted": "2026-11-02T17:28:06.082059+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -44617,7 +44626,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:15:13.786651+00:00",
+      "full_version": 7
     },
     "Switch:11699": {
       "title": "Hatsune Miku Jigsaw Puzzle",
@@ -44648,13 +44659,30 @@
           "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 6.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 6.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/hatsune_miku_jigsaw_puzzle",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 6.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:35:13.244691+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:15:28.832834+00:00"
       },
       "requirements": {
         "image": true,
@@ -44670,7 +44698,13 @@
       },
       "basics_attempted": "2026-11-02T22:35:13.244691+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hatsune-miku-jigsaw-puzzle-switch/",
@@ -44719,7 +44753,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:15:32.726692+00:00",
+      "full_version": 7
     },
     "Switch:13228": {
       "title": "Haunted Zombie Slaughter",
@@ -45081,7 +45117,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:35:14.274207+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:15:38.689277+00:00"
       },
       "requirements": {
         "image": true,
@@ -45097,7 +45140,13 @@
       },
       "basics_attempted": "2026-11-02T22:35:14.274207+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/have-a-blast-switch/",
@@ -45146,7 +45195,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:15:40.739044+00:00",
+      "full_version": 7
     },
     "Switch:12588": {
       "title": "Hazelnut Hex",
@@ -45160,7 +45211,7 @@
           "source_count": 0
         },
         "user": {
-          "score": 8.9,
+          "score": 8.1,
           "scale": 10,
           "sources": [
             {
@@ -45171,14 +45222,28 @@
               "url": "https://www.metacritic.com/game/hazelnut-hex/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
-              "normalized": 8.9,
-              "checked": "2026-11-02T17:28:12.851565+00:00"
+              "normalized": 8.9
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.3,
+              "scale": 10.0,
+              "count": 7,
+              "url": "https://www.nintendolife.com/games/switch-eshop/hazelnut_hex",
+              "platform": "Nintendo Switch",
+              "weight": 2.6457513110645907,
+              "normalized": 7.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:35:27.280980+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:15:48.907856+00:00"
       },
       "requirements": {
         "image": true,
@@ -45194,7 +45259,13 @@
       },
       "basics_attempted": "2026-11-02T22:35:27.280980+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/hazelnut-hex-switch/",
@@ -45243,7 +45314,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:15:50.723444+00:00",
+      "full_version": 7
     },
     "Switch:14715": {
       "title": "Heavenly Bodies",
@@ -242694,22 +242767,143 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 79.4,
           "scale": 100,
           "sources": [
+            {
+              "name": "Attack of the Fanboy",
+              "score": 80,
+              "url": "https://attackofthefanboy.com/reviews/heave-ho-review/",
+              "date": "2019-08-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 75,
+              "url": "https://www.cgmagonline.com/reviews/heave-ho-review/",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 85,
+              "url": "https://cogconnected.com/review/heave-ho-review/",
+              "date": "2019-09-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/5748/1/heave-ho-nintendo-switch.html",
+              "date": "2019-12-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 80,
+              "url": "https://www.darkstation.com/reviews/heave-ho-review",
+              "date": "2019-09-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 80,
+              "url": "https://www.destructoid.com/review-heave-ho-564896.phtml",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 70,
+              "url": "https://www.gamespace.com/featured/heave-ho-review-a-real-cliffhanger/",
+              "date": "2019-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 80,
+              "url": "http://www.gameblog.fr/tests/3525-heave-ho-pc-switch",
+              "date": "2019-10-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nintendo Life",
               "score": 80.0,
               "url": "https://www.nintendolife.com/reviews/switch-eshop/heave_ho",
               "platform": "Nintendo Switch",
               "via": "Nintendo Life"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "https://urldefense.com/v3/__http://www.nintendolife.com/reviews/switch-eshop/heave_ho?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification__;!3AY1PFWPl0I!b_J2Q67XeOHGWK5gaHOXaGsZCe58v7_QXndJmk6rMZI6EpBYFd8TbJoMJu3o_supSMsbWi6H$",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/51513/heave-ho-switch-review",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 85.0,
+              "url": "https://purenintendo.com/review-heave-ho-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 8.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 80,
+              "url": "https://screenrant.com/heave-ho-review/",
+              "date": "2019-08-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 75,
+              "url": "https://www.spaziogames.it/heave-ho-recensione/",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2019/09/08/heave-ho-review/",
+              "date": "2019-09-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 70,
+              "url": "https://www.thesixthaxis.com/2019/08/30/heave-ho-review-switch-pc-console/",
+              "date": "2019-08-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 16
         },
         "user": {
-          "score": 7.2,
+          "score": 7.51,
           "scale": 10,
           "sources": [
             {
@@ -242720,14 +242914,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/heave_ho",
               "platform": "Nintendo Switch",
               "weight": 5.385164807134504,
-              "normalized": 7.199999999999999,
-              "checked": "2026-11-02T17:28:18.165139+00:00"
+              "normalized": 7.199999999999999
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.8,
+              "scale": 10,
+              "count": 34,
+              "url": "https://www.metacritic.com/game/heave-ho/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 5.830951894845301,
+              "normalized": 7.800000000000001
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:35:27.281249+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 14,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:15:43.874561+00:00"
       },
       "requirements": {
         "image": true,
@@ -242743,7 +242951,11 @@
       },
       "basics_attempted": "2026-11-02T22:35:27.281249+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No exact scored Nintendo Switch review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/heave-ho-switch/",
@@ -242792,7 +243004,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:15:46.534680+00:00",
+      "full_version": 7
     },
     "Switch:6017": {
       "title": "HyperParasite",
@@ -252834,34 +253048,186 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 73.4,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "4P.de",
+              "score": 82,
+              "url": "https://www.4players.de/4players.php/dispbericht/PlayStation5/Test/40457/84708/0/Haven.html",
+              "date": "2021-01-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 80,
+              "url": "https://cogconnected.com/review/haven-review/",
+              "date": "2021-02-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 80,
+              "url": "http://digitalchumps.com/haven-review",
+              "date": "2021-01-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Finger Guns",
+              "score": 70,
+              "url": "https://fingerguns.net/games/2020/12/05/haven-review-ps5-no-mans-love-story/",
+              "date": "2020-12-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 50,
+              "url": "http://www.gameblog.fr/tests/3790-haven-pc-ps4-ps5-xb1-xbs",
+              "date": "2020-12-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 50,
+              "url": "https://gamer.nl/artikelen/review/haven-is-niet-de-liefdevolle-game-die-het-moest-zijn/",
+              "date": "2020-12-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 75,
+              "url": "https://www.jeuxvideo.com/test/1330032/haven-une-exploration-tout-en-douceur.htm",
+              "date": "2020-12-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 78,
+              "url": "https://multiplayer.it/recensioni/haven-recensione.html",
+              "date": "2020-12-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlaySense",
+              "score": 80,
+              "url": "https://www.psx-sense.nl/426159/review-haven/",
+              "date": "2020-12-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 80,
+              "url": "https://www.psu.com/reviews/haven-review-ps5-unique-combat-and-a-stunning-soundtrack-help-tell-this-excellent-love-story/",
+              "date": "2020-12-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Playstation Official Magazine UK",
+              "score": 70,
+              "url": "",
+              "date": "2020-12-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "http://www.pushsquare.com/reviews/ps5/haven",
+              "date": "2020-12-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 70,
+              "url": "https://www.spaziogames.it/haven-recensione-ps5-un-videogioco-damore/",
+              "date": "2020-12-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 70,
+              "url": "https://vandal.elespanol.com/analisis/pc/haven/70739#p-13",
+              "date": "2020-12-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "WellPlayed",
+              "score": 80,
+              "url": "https://www.well-played.com.au/haven-review/",
+              "date": "2021-02-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 90,
+              "url": "https://worthplaying.com/article/2020/12/11/reviews/123314/",
+              "date": "2020-12-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 16
         },
         "user": {
-          "score": 8.56,
+          "score": 8.1,
           "scale": 10,
           "sources": [
             {
-              "score": 4.28,
-              "count": 2471,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.28,
               "scale": 5,
-              "source": "PSN",
+              "count": 2471,
               "url": "https://store.playstation.com/pt-pt/product/EP0771-PPSA01562_00-3682614698353243",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:30:10.787858+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 8.56
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.1,
+              "scale": 10,
+              "count": 44,
+              "url": "https://www.metacritic.com/game/haven/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 6.6332495807108,
+              "normalized": 7.1
+            },
+            {
+              "name": "Push Square",
+              "score": 6.9,
+              "scale": 10.0,
+              "count": 42,
+              "url": "https://www.pushsquare.com/games/ps5/haven",
+              "platform": "PlayStation 5",
+              "weight": 6.48074069840786,
+              "normalized": 6.9
             }
           ],
-          "source_count": 1,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:30:09.337270+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 16,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:15:23.474406+00:00"
       },
       "requirements": {
         "image": true,
@@ -252919,29 +253285,101 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "KUii-qD7QuY",
+        "title": "Haven - Gameplay Reveal Trailer | PS4",
+        "kind": "gameplay",
+        "source": "https://www.playstation.com/en-us/games/haven/"
+      },
+      "full_attempted": "2026-11-03T06:15:23.675021+00:00",
+      "full_version": 7
     },
     "Switch:6376": {
       "title": "Haven",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 76.1,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/haven",
+              "name": "4P.de",
+              "score": 80,
+              "url": "https://www.4players.de/4players.php/dispbericht/Switch/Test/40457/84756/0/Haven.html",
+              "date": "2021-02-09",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 80,
+              "url": "https://www.heypoorplayer.com/2021/02/23/haven-review-switch/",
+              "date": "2021-02-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=haven-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/haven",
+              "date": "2021-02-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "https://www.nintendoworldreport.com/review/56144/haven-switch-review",
+              "date": "2021-02-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Tactics",
+              "score": 80,
+              "url": "https://www.pockettactics.com/haven/switch-review",
+              "date": "2021-02-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 70,
+              "url": "https://www.starbit.pt/2021/04/27/haven-analise/",
+              "date": "2021-04-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2021/02/16/haven-review/",
+              "date": "2021-02-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 80,
+              "url": "https://toucharcade.com/2021/02/15/switcharcade-round-up-mini-views-featuring-haven-and-more-plus-todays-new-releases-and-the-latest-sales/",
+              "date": "2021-02-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
-          "score": 6.8,
+          "score": 7.0,
           "scale": 10,
           "sources": [
             {
@@ -252952,14 +253390,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/haven",
               "platform": "Nintendo Switch",
               "weight": 5.291502622129181,
-              "normalized": 6.799999999999999,
-              "checked": "2026-11-02T17:30:09.337538+00:00"
+              "normalized": 6.799999999999999
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.3,
+              "scale": 10,
+              "count": 12,
+              "url": "https://www.metacritic.com/game/haven/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.4641016151377544,
+              "normalized": 7.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:35:55.074388+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:15:33.968134+00:00"
       },
       "requirements": {
         "image": true,
@@ -252975,7 +253427,10 @@
       },
       "basics_attempted": "2026-11-02T22:35:55.074388+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/haven-switch/",
@@ -253024,7 +253479,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "KUii-qD7QuY",
+        "title": "Haven - Gameplay Reveal Trailer | PS4",
+        "kind": "gameplay",
+        "source": "https://www.playstation.com/en-us/games/haven/"
+      },
+      "full_attempted": "2026-11-03T06:15:36.152407+00:00",
+      "full_version": 7
     },
     "PS5:6422": {
       "title": "Heavenly Bodies",
@@ -272398,11 +272861,28 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 28.5,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "FNintendo",
+              "score": 20,
+              "url": "https://fnintendo.net/article/13442-harvest-moon-mad-dash",
+              "date": "2020-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 37,
+              "url": "https://videochums.com/review/harvest-moon-mad-dash",
+              "date": "2019-11-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 3.7,
@@ -272416,14 +272896,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/harvest_moon_mad_dash",
               "platform": "Nintendo Switch",
               "weight": 5.0990195135927845,
-              "normalized": 3.7,
-              "checked": "2026-11-02T17:33:58.868351+00:00"
+              "normalized": 3.7
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:36:40.100336+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:15:08.911327+00:00"
       },
       "requirements": {
         "image": true,
@@ -272439,7 +272923,13 @@
       },
       "basics_attempted": "2026-11-02T22:36:40.100336+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/harvest-moon-mad-dash-switch/",
@@ -272488,7 +272978,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:15:10.862745+00:00",
+      "full_version": 7
     },
     "Switch:7563": {
       "title": "Hexagroove: Tactical DJ",
@@ -293277,11 +293769,28 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 50.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Eurogamer Italy",
+              "score": 50,
+              "url": "https://www.eurogamer.it/articles/2019-11-18-harvest-moon-light-of-hope-special-edition-complete-recensione",
+              "date": "2019-11-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 50,
+              "url": "https://multiplayer.it/recensioni/harvest-moon-light-of-hope-special-edition-recensione-nintendo-switch.html",
+              "date": "2019-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 5.1,
@@ -293295,14 +293804,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/harvest_moon_light_of_hope_special_edition",
               "platform": "Nintendo Switch",
               "weight": 6.557438524302,
-              "normalized": 5.1,
-              "checked": "2026-11-02T17:39:11.432947+00:00"
+              "normalized": 5.1
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:38:05.700528+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:15:13.878107+00:00"
       },
       "requirements": {
         "image": true,
@@ -293318,7 +293831,13 @@
       },
       "basics_attempted": "2026-11-02T22:38:05.700528+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/harvest-moon-light-of-hope-special-edition-switch/",
@@ -293367,7 +293886,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:15:15.847889+00:00",
+      "full_version": 7
     },
     "Switch:8136": {
       "title": "Heroes of Loot",
@@ -316450,28 +316971,53 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 30.0,
+          "score": 32.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 30.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/harvest_life",
+              "name": "Nindie Spotlight",
+              "score": 35.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=harvest-life-switch",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 30,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/harvest_life?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-11-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/harvest_life",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:38:47.531726+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:15:23.907075+00:00"
       },
       "requirements": {
         "image": true,
@@ -316487,7 +317033,12 @@
       },
       "basics_attempted": "2026-11-02T22:38:47.531726+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/harvest-life-switch/",
@@ -316536,7 +317087,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:15:25.732431+00:00",
+      "full_version": 7
     },
     "Switch:9563": {
       "title": "Infernal Radiation",
