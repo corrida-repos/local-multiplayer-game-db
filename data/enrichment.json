@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T05:43:15.428036+00:00",
+  "updated": "2026-11-03T05:44:19.437740+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1081,
+    "full_attempted": 1091,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -28296,15 +28296,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.69,
-              "count": 11610,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.69,
               "scale": 5,
-              "source": "PSN",
+              "count": 11610,
               "url": "https://store.playstation.com/pt-pt/product/EP3383-PPSA06866_00-ORIGINALSIN2XPS5",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:05:43.865973+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 9.38
             }
@@ -28312,7 +28310,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:05:42.652629+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:43:31.001112+00:00"
       },
       "requirements": {
         "image": true,
@@ -28354,7 +28359,11 @@
       },
       "basics_attempted": "2026-11-02T17:05:42.652629+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -28370,7 +28379,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:43:31.496398+00:00",
+      "full_version": 7
     },
     "Switch:10832": {
       "title": "DoDonPachi Resurrection",
@@ -28425,13 +28436,29 @@
           "source_count": 5
         },
         "user": {
-          "score": null,
+          "score": 7.6,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.6,
+              "scale": 10.0,
+              "count": 38,
+              "url": "https://www.nintendolife.com/games/switch-eshop/dodonpachi_resurrection",
+              "platform": "Nintendo Switch",
+              "weight": 6.164414002968976,
+              "normalized": 7.6
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:09.973177+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:43:32.066401+00:00"
       },
       "requirements": {
         "image": true,
@@ -28447,7 +28474,13 @@
       },
       "basics_attempted": "2026-11-02T22:32:09.973177+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/dodonpachi-resurrection-switch/",
@@ -28496,7 +28529,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:43:37.461405+00:00",
+      "full_version": 7
     },
     "Switch:13547": {
       "title": "Dogfight: A Sausage Bomber Story",
@@ -28510,6 +28545,7 @@
               "name": "Hey Poor Player",
               "score": 70,
               "url": "https://www.heypoorplayer.com/2023/06/09/dogfight-a-sausage-bomber-story-review-switch/",
+              "date": "2023-06-09",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -28517,6 +28553,7 @@
               "name": "TouchArcade",
               "score": 60,
               "url": "https://toucharcade.com/2023/04/18/mega-man-battle-network-legacy-collection-switch-review-bundle-eshop-price-discount-online/",
+              "date": "2023-04-20",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -28531,7 +28568,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T00:25:55.507973+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:43:56.946572+00:00"
       },
       "requirements": {
         "image": false,
@@ -28546,7 +28590,12 @@
         "nindie": "No review profile indexed for this game",
         "image": "No unique matching video-game article with artwork",
         "nintendo": "No exact Portuguese Switch listing verified",
-        "wikipedia": "No unique matching video-game article with artwork"
+        "wikipedia": "No unique matching video-game article with artwork",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -28614,7 +28663,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:43:59.230997+00:00",
+      "full_version": 7
     },
     "Switch:13369": {
       "title": "Don Doko Don",
@@ -28775,7 +28826,7 @@
           "source_count": 0
         },
         "user": {
-          "score": 4.3,
+          "score": 5.72,
           "scale": 10,
           "sources": [
             {
@@ -28786,14 +28837,28 @@
               "url": "https://www.metacritic.com/game/dont-starve-together/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 3.3166247903554,
-              "normalized": 4.3,
-              "checked": "2026-11-02T17:06:18.577946+00:00"
+              "normalized": 4.3
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.3,
+              "scale": 10.0,
+              "count": 9,
+              "url": "https://www.nintendolife.com/games/switch-eshop/dont_starve_together",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 7.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:09.973500+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:43:51.999202+00:00"
       },
       "requirements": {
         "image": true,
@@ -28809,7 +28874,13 @@
       },
       "basics_attempted": "2026-11-02T22:32:09.973500+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/dont-starve-together-switch/",
@@ -28858,7 +28929,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:43:55.684161+00:00",
+      "full_version": 7
     },
     "PS5:10072": {
       "title": "Donuts'n'Justice",
@@ -114911,22 +114984,807 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 77.9,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/donkey-kong-country-returns-hd",
+              "name": "Areajugones",
+              "score": 90,
+              "url": "ttps://areajugones.sport.es/videojuegos/analisis-de-donkey-kong-country-returns-hd-una-explosion-de-nostalgia-con-soplos-de-aire-nuevo/",
+              "date": "2025-01-14",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 80,
+              "url": "https://atomix.vg/review-donkey-kong-country-returns-hd/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "But Why Tho?",
+              "score": 60,
+              "url": "https://butwhytho.net/2025/01/donkey-kong-country-returns-hd-review-switch/",
+              "date": "2025-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 80,
+              "url": "https://cdaction.pl/recenzje/donkey-kong-country-returns-hd-recenzja-gry-kolejny-po-silent-hillu-2-owoc-wspolpracy-polsko-japonsk",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 85,
+              "url": "https://www.cgmagonline.com/review/game/donkey-kong-country-returns-hd/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 85,
+              "url": "https://cogconnected.com/review/donkey-kong-country-returns-hd-review/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Checkpoint Gaming",
+              "score": 75,
+              "url": "https://checkpointgaming.net/reviews/2025/01/donkey-kong-country-returns-hd-review-preserving-the-top-banana/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ComicBook",
+              "score": 80,
+              "url": "https://comicbook.com/gaming/news/donkey-kong-country-returns-hd-review/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hits",
+              "score": 80,
+              "url": "https://criticalhits.com.br/reviews/donkey-kong-country-returns-hd-analise-vale-a-pena-review/",
+              "date": "2025-04-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "https://www.cubed3.com/review/10022/1/donkey-kong-country-returns-hd-nintendo-switch.html",
+              "date": "2025-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cultura Geek",
+              "score": 60,
+              "url": "https://culturageek.com.ar/review-donkey-kong-country-returns-hd-un-remaster-con-buen-sabor-a-2010/",
+              "date": "2025-04-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Daily Star",
+              "score": 90,
+              "url": "https://www.dailystar.co.uk/tech/reviews/donkey-kong-country-returns-hd-34471506",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 80,
+              "url": "https://www.destructoid.com/reviews/review-donkey-kong-country-returns-hd/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 90,
+              "url": "https://www.digitallydownloaded.net/2025/01/review-donkey-kong-country-returns-hd-nintendo-switch.html",
+              "date": "2025-01-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 75,
+              "url": "https://www.dualshockers.com/donkey-kong-country-returns-hd-review/",
+              "date": "2025-01-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer",
+              "score": 60,
+              "url": "https://www.eurogamer.net/donkey-kong-country-returns-hd-review-a-formidable-platformer-that-still-holds-up-today",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Germany",
+              "score": 80,
+              "url": "https://www.eurogamer.de/donkey-kong-country-returns-hd-test",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Portugal",
+              "score": 80,
+              "url": "https://www.eurogamer.pt/donkey-kong-country-returns-hd-review",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 80,
+              "url": "https://www.everyeye.it/articoli/recensione-donkey-kong-country-returns-hd-platform-gusto-banana-65031.html",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Final Weapon",
+              "score": 60,
+              "url": "https://finalweapon.net/2025/01/24/donkey-kong-country-returns-hd-review-a-barrel-of-fun/",
+              "date": "2025-08-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 90,
+              "url": "https://www.games.ch/donkey-kong-country-hd/test/review-ljRh/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMINGbible",
+              "score": 80,
+              "url": "https://www.gamingbible.com/reviews/donkey-kong-country-returns-hd-review-703331-20250114",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GRYOnline.pl",
+              "score": 70,
+              "url": "https://www.gry-online.pl/recenzje/donkey-kong-country-returns-hd-recenzja-gry-stara-dobra-malpa/z346cf",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 88,
+              "url": "https://gameinformer.dev.anyforsoft.com/review/donkey-kong-country-returns-hd/decent-port-fantastic-game",
+              "date": "2025-03-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 80,
+              "url": "https://gamerant.com/donkey-kong-country-returns-hd-review/",
+              "date": "2025-01-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 80,
+              "url": "https://www.gameover.gr/2025/01/15/donkey-kong-country-returns-hd-review/",
+              "date": "2025-02-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2025/01/donkey-kong-country-returns-hd-review/",
+              "date": "2025-01-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 70,
+              "url": "https://www.gamespot.com/reviews/donkey-kong-country-returns-hd-review-apes-hit/1900-6418328/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameStar",
+              "score": 78,
+              "url": "https://www.gamestar.de/artikel/donkey-kong-country-returns-hd-test,3425802.html",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 70,
+              "url": " https://www.gameblog.fr/jeu-video/jeux/tests/donkey-kong-country-returns-hd-test-nintendo-switch-653633",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameliner",
+              "score": 80,
+              "url": "https://gameliner.nl/reviews/donkey-kong-country-returns-hd-review-apenstreken-in-hd/6822-24-1-194",
+              "date": "2025-01-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamepressure",
+              "score": 85,
+              "url": "https://www.gamepressure.com/editorials/reviews/donkey-kong-country-returns-hd-swinging-high/zf74d",
+              "date": "2025-01-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 80,
+              "url": "https://gamer.nl/reviews/games/nintendo-switch/review-donkey-kong-country-returns-hd-is-recht-voor-z-n-r-aap",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamereactor UK",
+              "score": 80,
+              "url": "https://www.gamereactor.eu/donkey-kong-country-returns-hd-1481143/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamersRD",
+              "score": 78,
+              "url": "https://gamersrd.com/donkey-kong-country-returns-hd-review/",
+              "date": "2025-01-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesHub",
+              "score": 80,
+              "url": "https://www.gameshub.com/news/reviews/donkey-kong-country-returns-hd-review-2648925/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamesurf",
+              "score": 80,
+              "url": "https://www.gamesurf.it/recensioni/gioco/donkey-kong-country-returns-hd-recensione-platform-nintendo-wii",
+              "date": "2025-02-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 80,
+              "url": "https://gaming-age.com/2025/02/donkey-kong-country-returns-hd-review-for-nintendo-switch/",
+              "date": "2025-02-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingBolt",
+              "score": 70,
+              "url": "https://gamingbolt.com/donkey-kong-country-returns-hd-review-third-times-barely-the-charm",
+              "date": "2025-01-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 80,
+              "url": "https://gamingtrend.com/feature/reviews/donkey-kong-country-returns-hd-review-a-wii-classic-is-revitalized-on-the-switch/",
+              "date": "2025-01-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 85,
+              "url": "https://www.godisageek.com/reviews/donkey-kong--country-returns-hd-review/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 80,
+              "url": "https://hardcoregamer.com/review-donkey-kong-country-returns-hd/",
+              "date": "2025-01-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Het Nieuwsblad",
+              "score": 80,
+              "url": "https://www.nieuwsblad.be/cnt/dmf20250131_95898164",
+              "date": "2025-02-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 86,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-donkey-kong-country-returns-hd-nintendo-switch-1434820",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 80,
+              "url": "https://www.ign.com/articles/donkey-kong-country-returns-hd-review",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Adria",
+              "score": 80,
+              "url": "https://adria.ign.com/donkey-kong-country-returns-hd/45208/review/donkey-kong-country-returns-hd-recenzija",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Benelux",
+              "score": 80,
+              "url": "https://nl.ign.com/donkey-kong-country-returns-hd/155134/review/donkey-kong-country-returns-hd-review",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Brasil",
+              "score": 70,
+              "url": "https://br.ign.com/donkey-kong-country-returns-hd/135036/review/donkey-kong-country-returns-hd-e-uma-timida-adicao-a-franquia-mas-continua-divertido-como-nunca-revi",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN France",
+              "score": 70,
+              "url": "https://fr.ign.com/donkey-kong-country-returns-hd/73750/review/test-donkey-kong-country-returns-hd-le-minimum-hd-syndical-pour-un-plateformer-toujours-exigeant",
+              "date": "2025-01-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 85,
+              "url": "https://it.ign.com/donkey-kong-country-returns-hd/215656/review/donkey-kong-country-returns-hd",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Portugal",
+              "score": 80,
+              "url": "https://pt.ign.com/donkey-kong-country-returns-hd/143920/review/donkey-kong-country-returns-hd-analise",
+              "date": "2025-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 80,
+              "url": "https://es.ign.com/donkey-kong-country-returns-hd/211816/review/donkey-kong-country-returns-hd",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Turkey",
+              "score": 75,
+              "url": "https://tr.ign.com/donkey-kong-country-returns-hd/127385/review/donkey-kong-country-returns-hd-inceleme",
+              "date": "2025-02-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 76,
+              "url": "https://www.impulsegamer.com/donkey-kong-country-returns-hd-review-switch/",
+              "date": "2025-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Irish Independent",
+              "score": 60,
+              "url": "https://www.independent.ie/entertainment/games/donkey-kong-country-returns-hd-review-pound-for-pound-you-could-do-better/a911764267.html",
+              "date": "2025-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 75,
+              "url": "https://www.jeuxactu.com/test-donkey-kong-country-returns-hd-aussi-plaisant-que-frustrant-130554.htm",
+              "date": "2025-01-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 80,
+              "url": "https://www.jeuxvideo.com/test/1959961/15-ans-apres-donkey-kong-country-returns-arrive-sur-nintendo-switch-est-il-toujours-une-reference-du-jeu-video-de-plateformes.htm",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG",
+              "score": 85,
+              "url": "https://www.millenium.org/test/421026.html",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Malditos Nerds",
+              "score": 70,
+              "url": "https://www.infobae.com/malditos-nerds/2025/01/20/review-donkey-kong-country-returns-hd-es-el-segundo-regreso-de-un-clasico-moderno/",
+              "date": "2025-01-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Merlin'in Kazanı (Turkey)",
+              "score": 80,
+              "url": "http://www.merlininkazani.com/Donkey_Kong_Country_Returns_HD-oyun_inceleme-127316p1.html",
+              "date": "2025-01-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 70,
+              "url": "https://metro.co.uk/2025/01/14/donkey-kong-country-returns-hd-review-bananas-retro-platforming-22358620/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/donkey-kong-country-returns-hd-recensione.html",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "My Nintendo News",
+              "score": 85,
+              "url": "https://mynintendonews.com/2025/01/14/review-donkey-kong-country-returns-hd/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 87,
+              "url": "https://www.nintenderos.com/2025/01/analisis-donkey-kong-country-returns-hd-nintendo-switch",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/donkey-kong-country-returns-hd-review/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/donkey-kong-country-returns-hd",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 75,
+              "url": "https://www.nintendojo.com/reviews/backlog-review-donkey-kong-country-returns-hd-switch",
+              "date": "2025-02-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenduo",
+              "score": 83,
+              "url": "https://nintenduo.com/analisis-fantasian-neo-dimension-nintendo-switch/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PC Games",
+              "score": 80,
+              "url": "https://www.pcgames.de/Donkey-Kong-Country-Returns-HD-Spiel-75036/Tests/Review-Gutes-Spiel-schlechter-Deal-1463705/",
+              "date": "2025-01-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 75,
+              "url": "https://play.co.rs/2025/01/29/povratkov-povratak-povratka-donkey-kong-country-returns-hd-recenzija/",
+              "date": "2025-02-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 83,
+              "url": "https://www.player2.net.au/2025/01/donkey-kong-country-returns-hd-review-back-to-kick-some-tail-again/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Tactics",
+              "score": 80,
+              "url": "https://www.pockettactics.com/donkey-kong-country-returns-hd/review",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 80,
+              "url": "https://press-start.com.au/reviews/nintendo-switch/2025/01/15/donkey-kong-country-returns-hd-review-a-modest/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-donkey-kong-country-returns-hd-nintendo-switch/",
+              "date": "2025-01-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Region Free",
+              "score": 80,
+              "url": "https://toisto.net/p/donkey-kong-country-returns-hd-review",
+              "date": "2025-04-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Restart.run",
+              "score": 80,
+              "url": "https://www.restart.run/articles/donkey-kong-country-returns-hd-review-nintendo-switch",
+              "date": "2025-04-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SECTOR.sk",
+              "score": 80,
+              "url": "https://www.sector.sk/recenzia/39782/donkey-kong-country-returns-hd.htm",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 70,
+              "url": "https://screenrant.com//donkey-kong-country-returns-hd-review/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 70,
+              "url": "https://www.shacknews.com/article/142722/donkey-kong-country-returns-hd-review-score",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Siliconera",
+              "score": 80,
+              "url": "https://www.siliconera.com/review-donkey-kong-country-returns-hd",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 70,
+              "url": "https://www.spaziogames.it/articoli/donkey-kong-country-returns-hd-recensione",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 70,
+              "url": "https://www.starbit.pt/2025/02/07/donkey-kong-country-returns-hd-analise/",
+              "date": "2025-02-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 70,
+              "url": "https://stevivor.com/reviews/donkey-kong-country-returns-3d/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TechRadar Gaming",
+              "score": 70,
+              "url": "https://www.techradar.com/gaming/donkey-kong-country-returns-hd-review",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 80,
+              "url": "https://www.thegamesmachine.it/donkey-kong-country-returns-hd/donkey-kong-country-returns-recensione/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Times",
+              "score": 80,
+              "url": "https://www.thetimes.com/article/7f8cbbb8-9164-4940-a614-2f8c5fa99a24?shareToken=3a4246e07ec272fa42f7ab897560e2dd",
+              "date": "2025-06-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 70,
+              "url": "https://www.thegamer.com/donkey-kong-country-returns-hd-review/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 80,
+              "url": "https://www.thesixthaxis.com/2025/01/14/donkey-kong-country-returns-hd-review-switch/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TierraGamer",
+              "score": 85,
+              "url": "https://tierragamer.com/resenas/videojuegos/resena-donkey-kong-country-returns-hd/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VGC",
+              "score": 60,
+              "url": "https://www.videogameschronicle.com/review/donkey-kong-country-returns-hd/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 83,
+              "url": "https://vandal.elespanol.com/analisis/switch/donkey-kong-country-returns-hd/172472#p-83",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vgames",
+              "score": 90,
+              "url": "https://www.vgames.co.il/article/31062.html",
+              "date": "2025-01-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 75,
+              "url": "https://videochums.com/review/donkey-kong-country-returns-hd",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 90,
+              "url": "https://www.vooks.net/donkey-kong-country-returns-hd-review/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Voxel",
+              "score": 86,
+              "url": "https://www.tecmundo.com.br/voxel/500458-review-donkey-kong-country-returns-hd-mostra-que-rei-macaco-nao-perdeu-a-majestade.htm",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 75,
+              "url": "https://wccftech.com/review/donkey-kong-country-returns-hd/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "WellPlayed",
+              "score": 80,
+              "url": "https://www.well-played.com.au/donkey-kong-country-returns-hd-review/",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 80,
+              "url": "https://worthplaying.com/article/2025/1/22/reviews/144819-switch-review-donkey-kong-country-returns-hd/",
+              "date": "2025-01-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 70,
+              "url": "https://www.xgn.nl/review/donkey-kong-country-returns-hd-review",
+              "date": "2025-01-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 99
         },
         "user": {
-          "score": 7.6,
+          "score": 7.48,
           "scale": 10,
           "sources": [
             {
@@ -114937,14 +115795,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/donkey_kong_country_returns_hd",
               "platform": "Nintendo Switch",
               "weight": 20.049937655763422,
-              "normalized": 7.6,
-              "checked": "2026-11-02T17:06:18.666874+00:00"
+              "normalized": 7.6
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.3,
+              "scale": 10,
+              "count": 190,
+              "url": "https://www.metacritic.com/game/donkey-kong-country-returns-hd/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 13.784048752090222,
+              "normalized": 7.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:09.973802+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 102,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:44:07.233863+00:00"
       },
       "requirements": {
         "image": true,
@@ -114960,7 +115832,12 @@
       },
       "basics_attempted": "2026-11-02T22:32:09.973802+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/donkey-kong-country-returns-hd-switch/",
@@ -115009,7 +115886,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:44:11.652413+00:00",
+      "full_version": 7
     },
     "PS5:15432": {
       "title": "Everafter Falls",
@@ -141890,19 +142769,43 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 82.8,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/dodonpachi-saidaioujou",
+              "name": "Nindie Spotlight",
+              "score": 81.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=dodonpachi-saidaioujou-switch",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/dodonpachi-saidaioujou",
+              "date": "2024-12-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Siliconera",
+              "score": 80,
+              "url": "https://www.siliconera.com/review-dodonpachi-saidaioujou-is-another-great-cave-bullet-hell-game/",
+              "date": "2025-01-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/retro-gaming-fun-times#dodonpachi-saidaioujou",
+              "date": "2024-12-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
           "score": 7.4,
@@ -141916,14 +142819,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/dodonpachi_saidaioujou",
               "platform": "Nintendo Switch",
               "weight": 4.123105625617661,
-              "normalized": 7.4,
-              "checked": "2026-11-02T17:08:11.895067+00:00"
+              "normalized": 7.4
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:11.482363+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:43:37.119053+00:00"
       },
       "requirements": {
         "image": true,
@@ -141939,7 +142846,12 @@
       },
       "basics_attempted": "2026-11-02T22:32:11.482363+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/dodonpachi-saidaioujou-switch/",
@@ -141989,7 +142901,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:43:39.722073+00:00",
+      "full_version": 7
     },
     "Switch:16377": {
       "title": "Empires Shall Fall",
@@ -150949,15 +151863,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.36,
-              "count": 131,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.36,
               "scale": 5,
-              "source": "PSN",
+              "count": 131,
               "url": "https://store.playstation.com/pt-pt/product/UP1082-PPSA17219_00-0870447033747384",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T20:08:48.860427+00:00",
-              "platform": "PSN · PS5",
               "weight": 11.445523142259598,
               "normalized": 8.72
             }
@@ -150965,7 +151877,16 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:08:40.332704+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:43:40.982042+00:00"
       },
       "requirements": {
         "image": true,
@@ -150974,7 +151895,11 @@
       },
       "basics_attempted": "2026-11-02T20:08:40.332704+00:00",
       "version": 4,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/UP1082-PPSA17219_00-0870447033747384",
         "label": "Abrir na PlayStation Store",
@@ -151023,7 +151948,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:43:41.924639+00:00",
+      "full_version": 7
     },
     "PS5:16696": {
       "title": "Feudal Bros - Tonosama #1",
@@ -191681,34 +192608,98 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 77.5,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Final Weapon",
+              "score": 90,
+              "url": "https://finalweapon.net/2026/10/14/toy-story-3-complete-edition-review-a-great-port-of-an-underrated-gem/",
+              "date": "2026-10-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 90,
+              "url": "https://www.gamespew.com/2026/10/toy-story-3-complete-edition-review/",
+              "date": "2026-10-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingBolt",
+              "score": 70,
+              "url": "https://gamingbolt.com/toy-story-3-complete-edition-review-lotso-fun",
+              "date": "2026-10-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 70,
+              "url": "https://as.com/meristation/analisis/analisis-de-toy-story-3-complete-edition-el-paso-por-el-taller-de-woody-buzz-y-jessie-f202610-n/",
+              "date": "2026-10-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 75,
+              "url": "https://psxbrasil.com.br/toy-story-3-complete-edition-review/",
+              "date": "2026-10-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "https://www.pushsquare.com/reviews/ps5/toy-story-3-complete-edition",
+              "date": "2026-10-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 6
         },
         "user": {
-          "score": 9.72,
+          "score": 9.58,
           "scale": 10,
           "sources": [
             {
-              "score": 4.86,
-              "count": 1194,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.86,
               "scale": 5,
-              "source": "PSN",
+              "count": 1194,
               "url": "https://store.playstation.com/pt-pt/product/UP0182-PPSA33626_00-TOYSTORYCOMPLETE",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:20:05.214963+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 9.72
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.6,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/disney-pixar-toy-story-3-complete-edition/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.23606797749979,
+              "normalized": 7.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:20:03.725401+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:43:36.000389+00:00"
       },
       "requirements": {
         "image": true,
@@ -191750,7 +192741,11 @@
       },
       "basics_attempted": "2026-11-02T17:20:03.725401+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -191766,7 +192761,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:43:36.560283+00:00",
+      "full_version": 7
     },
     "Switch:18731": {
       "title": "Disney/Pixar Toy Story 3 Complete Edition",
@@ -191949,6 +192946,7 @@
               "name": "GameSpew",
               "score": 70,
               "url": "https://www.gamespew.com/2026/10/dog-man-bark-in-action-review/",
+              "date": "2026-10-29",
               "platform": "PlayStation 5",
               "via": "Metacritic review index"
             }
@@ -191961,15 +192959,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.04,
-              "count": 173,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.04,
               "scale": 5,
-              "source": "PSN",
+              "count": 173,
               "url": "https://store.playstation.com/pt-pt/product/EP3945-PPSA37573_00-0565859012207426",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T19:23:59.340510+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 13.152946437965905,
               "normalized": 8.08
             }
@@ -191977,7 +192973,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:23:49.657809+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:43:45.976085+00:00"
       },
       "requirements": {
         "image": true,
@@ -191987,7 +192990,10 @@
       "basics_attempted": "2026-11-02T19:23:49.657809+00:00",
       "version": 4,
       "errors": {
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/EP3945-PPSA37573_00-0565859012207426",
@@ -192037,26 +193043,37 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:43:46.486058+00:00",
+      "full_version": 7
     },
     "Switch:18894": {
       "title": "Dog Man: Bark in Action",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 70.0,
           "scale": 100,
           "sources": [
             {
               "name": "Nindie Spotlight",
-              "score": 80.0,
-              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=dog-man-bark-in-action-switch",
+              "score": 80,
+              "url": "https://nindiespotlight.com/game_profile.cfm?game=dog-man-bark-in-action-switch",
+              "date": "2026-10-28",
               "platform": "Nintendo Switch",
-              "via": "Direct console-specific review"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo News PL",
+              "score": 60,
+              "url": "https://nintendonews.pl/recenzja-dog-man-bark-in-action-na-nintendo-switch",
+              "date": "2026-10-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -192065,7 +193082,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:33:19.926763+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:44:16.988358+00:00"
       },
       "requirements": {
         "image": true,
@@ -192081,7 +193108,13 @@
       },
       "basics_attempted": "2026-11-02T22:33:19.926763+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "composites": "Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/dog-man-bark-in-action-switch/",
@@ -192131,7 +193164,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:44:19.206984+00:00",
+      "full_version": 7
     },
     "Switch:18760": {
       "title": "Dungeons of Alethrion",
