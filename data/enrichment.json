@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T05:55:45.897230+00:00",
+  "updated": "2026-11-03T05:56:29.616083+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1211,
+    "full_attempted": 1221,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -38453,13 +38453,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 4.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/grood",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:37.569674+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:56:06.929730+00:00"
       },
       "requirements": {
         "image": true,
@@ -38475,7 +38492,12 @@
       },
       "basics_attempted": "2026-11-02T22:32:37.569674+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/grood-switch/",
@@ -38525,7 +38547,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:56:09.776152+00:00",
+      "full_version": 7
     },
     "PS5:11332": {
       "title": "GUNGUNGUN",
@@ -38543,15 +38567,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.14,
-              "count": 100,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.14,
               "scale": 5,
-              "source": "PSN",
+              "count": 100,
               "url": "https://store.playstation.com/pt-pt/product/EP5335-PPSA04746_00-4472125003402262",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:10:49.408404+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 10.0,
               "normalized": 6.28
             }
@@ -38559,7 +38581,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:10:48.469445+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:56:02.153229+00:00"
       },
       "requirements": {
         "image": true,
@@ -38601,7 +38630,11 @@
       },
       "basics_attempted": "2026-11-02T17:10:48.469445+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -38617,7 +38650,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:56:02.555893+00:00",
+      "full_version": 7
     },
     "Switch:11319": {
       "title": "GUNGUNGUN",
@@ -38868,15 +38903,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.26,
-              "count": 700,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.26,
               "scale": 5,
-              "source": "PSN",
+              "count": 700,
               "url": "https://store.playstation.com/pt-pt/product/EP1095-PPSA09600_00-GGACPSAPP0000000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:10:50.752900+00:00",
-              "platform": "PSN · PS5",
               "weight": 26.457513110645905,
               "normalized": 8.52
             }
@@ -38884,7 +38917,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:10:48.470040+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:56:07.276928+00:00"
       },
       "requirements": {
         "image": true,
@@ -38926,7 +38966,10 @@
       },
       "basics_attempted": "2026-11-02T17:10:48.470040+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -38942,14 +38985,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:56:07.657958+00:00",
+      "full_version": 7
     },
     "Switch:13102": {
       "title": "Gal Guardians: Demon Purge",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 76.2,
+          "score": 76.8,
           "scale": 100,
           "sources": [
             {
@@ -38983,6 +39028,13 @@
               "date": "2023-02-26",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 83.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=gal-guardians-demon-purge-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             },
             {
               "name": "Nintendo Life",
@@ -39050,22 +39102,21 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 12
+          "source_count": 13
         },
         "user": {
-          "score": 7.57,
+          "score": 7.61,
           "scale": 10,
           "sources": [
             {
               "name": "Metacritic users",
-              "score": 7.4,
+              "score": 7.5,
               "scale": 10,
-              "count": 19,
+              "count": 20,
               "url": "https://www.metacritic.com/game/gal-guardians-demon-purge/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
-              "weight": 4.358898943540674,
-              "normalized": 7.4,
-              "checked": "2026-11-02T17:10:48.470411+00:00"
+              "weight": 4.47213595499958,
+              "normalized": 7.5
             },
             {
               "name": "Nintendo Life",
@@ -39075,14 +39126,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/gal_guardians_demon_purge",
               "platform": "Nintendo Switch",
               "weight": 5.477225575051661,
-              "normalized": 7.7,
-              "checked": "2026-11-02T17:10:48.470411+00:00"
+              "normalized": 7.7
             }
           ],
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:37.570971+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 12,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:56:21.804963+00:00"
       },
       "requirements": {
         "image": true,
@@ -39098,7 +39153,11 @@
       },
       "basics_attempted": "2026-11-02T22:32:37.570971+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/gal-guardians-demon-purge-switch/",
@@ -39147,7 +39206,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:56:23.956786+00:00",
+      "full_version": 7
     },
     "PS5:11745": {
       "title": "Galactic Wars EX",
@@ -39165,15 +39226,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.48,
-              "count": 31,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.48,
               "scale": 5,
-              "source": "PSN",
+              "count": 31,
               "url": "https://store.playstation.com/pt-pt/product/EP3111-PPSA06571_00-JANDUSOFT0000001",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:10:52.821619+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 5.5677643628300215,
               "normalized": 6.959999999999999
             }
@@ -39181,7 +39240,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:10:51.241230+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:56:17.244794+00:00"
       },
       "requirements": {
         "image": true,
@@ -39223,7 +39289,11 @@
       },
       "basics_attempted": "2026-11-02T17:10:51.241230+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -39239,7 +39309,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:56:17.704744+00:00",
+      "full_version": 7
     },
     "Switch:11743": {
       "title": "Galactic Wars EX",
@@ -136574,26 +136646,33 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/console-games-grab-bag-cats-bears-and-a-slime#gal-guardians-servants-of-the-dark",
+              "date": "2025-04-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 8.6,
           "scale": 10,
           "sources": [
             {
-              "score": 4.3,
-              "count": 346,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.3,
               "scale": 5,
-              "source": "PSN",
+              "count": 346,
               "url": "https://store.playstation.com/pt-pt/product/JP1368-PPSA27182_00-GGAC2PSAPP000000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:10:52.409305+00:00",
-              "platform": "PSN · PS5",
               "weight": 18.601075237738275,
               "normalized": 8.6
             }
@@ -136601,7 +136680,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:10:49.416573+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:56:12.264602+00:00"
       },
       "requirements": {
         "image": true,
@@ -136643,7 +136729,11 @@
       },
       "basics_attempted": "2026-11-02T17:10:49.416573+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -136659,7 +136749,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:56:12.751959+00:00",
+      "full_version": 7
     },
     "Switch:15955": {
       "title": "Gal Guardians: Servants of the Dark",
@@ -136671,10 +136763,11 @@
           "sources": [
             {
               "name": "Nintendo Life",
-              "score": 80.0,
+              "score": 80,
               "url": "https://www.nintendolife.com/reviews/nintendo-switch/gal-guardians-servants-of-the-dark",
+              "date": "2025-04-10",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
@@ -136692,14 +136785,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/gal_guardians_servants_of_the_dark",
               "platform": "Nintendo Switch",
               "weight": 5.656854249492381,
-              "normalized": 7.7,
-              "checked": "2026-11-02T17:10:50.770739+00:00"
+              "normalized": 7.7
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:38.336421+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:56:16.949066+00:00"
       },
       "requirements": {
         "image": true,
@@ -136715,7 +136812,13 @@
       },
       "basics_attempted": "2026-11-02T22:32:38.336421+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/gal-guardians-servants-of-the-dark-switch/",
@@ -136764,7 +136867,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:56:19.603099+00:00",
+      "full_version": 7
     },
     "Switch:16232": {
       "title": "Guns And Draguns",
@@ -279233,14 +279338,39 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 64.3,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Gaming Age",
+              "score": 83,
+              "url": "http://www.gaming-age.com/2019/04/sega-ages-gain-ground-review-for-nintendo-switch/",
+              "date": "2019-04-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 50,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/sega_ages_gain_ground",
+              "date": "2019-04-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/sega-ages-on-switch-reviews#gain-ground",
+              "date": "2019-04-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
-          "score": 5.8,
+          "score": 6.58,
           "scale": 10,
           "sources": [
             {
@@ -279249,15 +279379,30 @@
               "scale": 10,
               "count": 4,
               "url": "https://www.metacritic.com/game/gain-ground/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 2.0,
               "normalized": 5.8
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.1,
+              "scale": 10.0,
+              "count": 9,
+              "url": "https://www.nintendolife.com/games/switch-eshop/sega_ages_gain_ground",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 7.1
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:35:16.308007+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:56:11.786302+00:00"
       },
       "requirements": {
         "image": true,
@@ -279282,7 +279427,11 @@
       "version": 2,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -279299,14 +279448,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:56:14.373901+00:00",
+      "full_version": 7
     },
     "Switch:7806": {
       "title": "Galacide",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 68.0,
+          "score": 64.0,
           "scale": 100,
           "sources": [
             {
@@ -279315,19 +279466,44 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=galacide-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 60,
+              "url": "https://purenintendo.com/review-galacide-nintendo-switch/",
+              "date": "2020-11-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/galacide",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:37:07.002358+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:56:26.804882+00:00"
       },
       "requirements": {
         "image": true,
@@ -279343,7 +279519,11 @@
       },
       "basics_attempted": "2026-11-02T22:37:07.002358+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/galacide-switch/",
@@ -279392,7 +279572,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:56:29.376145+00:00",
+      "full_version": 7
     },
     "Switch:7879": {
       "title": "Gnome More War",
@@ -299152,22 +299334,47 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 72.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/gunbird",
+              "name": "Nintenderos",
+              "score": 70,
+              "url": "http://www.nintenderos.com/2018/02/analisis-gunbird/",
+              "date": "2018-02-07",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/gunbird",
+              "date": "2017-12-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2017/12/18/gunbird-review/",
+              "date": "2017-12-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 69,
+              "url": "https://videochums.com/review/gunbird",
+              "date": "2017-12-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": 7.4,
+          "score": 7.25,
           "scale": 10,
           "sources": [
             {
@@ -299178,14 +299385,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/gunbird",
               "platform": "Nintendo Switch",
               "weight": 4.242640687119285,
-              "normalized": 7.4,
-              "checked": "2026-11-02T19:25:23.957686+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/gunbird/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 7.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:03:24.664704+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:56:01.823547+00:00"
       },
       "requirements": {
         "image": true,
@@ -299203,8 +299424,12 @@
       "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -299236,7 +299461,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:56:04.598195+00:00",
+      "full_version": 7
     },
     "Switch:8873": {
       "title": "Ghosts 'n Goblins Resurrection",
