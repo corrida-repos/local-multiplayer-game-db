@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T07:40:18.147507+00:00",
+  "updated": "2026-11-03T07:41:12.001143+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1841,
+    "full_attempted": 1851,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -92761,15 +92761,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 2.67,
-              "count": 27,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 2.67,
               "scale": 5,
-              "source": "PSN",
+              "count": 27,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA09219_00-RATALAIKAGRUNOUT",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:09:34.724844+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 5.196152422706632,
               "normalized": 5.34
             }
@@ -92777,7 +92775,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:09:33.881499+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:40:37.329005+00:00"
       },
       "requirements": {
         "image": true,
@@ -92819,7 +92824,11 @@
       },
       "basics_attempted": "2026-11-02T18:09:33.881499+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -92835,7 +92844,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:40:37.854912+00:00",
+      "full_version": 7
     },
     "Switch:12780": {
       "title": "RUNOUT",
@@ -93192,19 +93203,36 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 87.7,
           "scale": 100,
           "sources": [
             {
               "name": "Nintendo Life",
-              "score": 90.0,
+              "score": 90,
               "url": "https://www.nintendolife.com/reviews/switch-eshop/radiant-silvergun",
+              "date": "2022-09-19",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 90,
+              "url": "https://toucharcade.com/2022/09/26/trails-from-zero-switch-review-nintendo-eshop-radiant-silvergun-potion-permit-price-discount-bundle/",
+              "date": "2022-09-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 83,
+              "url": "https://videochums.com/review/radiant-silvergun",
+              "date": "2022-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
           "score": 7.7,
@@ -93218,14 +93246,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/radiant_silvergun",
               "platform": "Nintendo Switch",
               "weight": 7.745966692414834,
-              "normalized": 7.7,
-              "checked": "2026-11-02T18:10:05.752905+00:00"
+              "normalized": 7.7
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:54.952401+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:40:43.816400+00:00"
       },
       "requirements": {
         "image": true,
@@ -93241,7 +93273,13 @@
       },
       "basics_attempted": "2026-11-02T22:45:54.952401+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/radiant-silvergun-switch/",
@@ -93290,14 +93328,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:40:48.382980+00:00",
+      "full_version": 7
     },
     "Switch:12239": {
       "title": "Raging Blasters",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 85.0,
           "scale": 100,
           "sources": [
             {
@@ -93306,19 +93346,44 @@
               "url": "https://www.nintendolife.com/reviews/switch-eshop/raging-blasters",
               "platform": "Nintendo Switch",
               "via": "Nintendo Life"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 90,
+              "url": "https://toucharcade.com/2022/07/26/raging-blasters-switch-review-shmup-eshop-price-deals-full-list-july-2022/",
+              "date": "2022-07-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 4.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/raging_blasters",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 4.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:46:08.050747+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:40:53.786206+00:00"
       },
       "requirements": {
         "image": true,
@@ -93334,7 +93399,13 @@
       },
       "basics_attempted": "2026-11-02T22:46:08.050747+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/raging-blasters-switch/",
@@ -93383,33 +93454,98 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:40:56.486478+00:00",
+      "full_version": 7
     },
     "PS5:12831": {
       "title": "Raiden III x MIKADO MANIAX",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 74.6,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Edge Magazine",
+              "score": 80,
+              "url": "",
+              "date": "2023-04-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2023/06/raiden-iii-x-mikado-maniax-review/",
+              "date": "2023-06-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamersRD",
+              "score": 70,
+              "url": "https://gamersrd.com/raiden-iii-x-mikado-maniax-review/",
+              "date": "2023-06-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 60,
+              "url": "https://www.heypoorplayer.com/2023/06/08/raiden-iii-x-mikado-maniax-review-ps5/",
+              "date": "2023-06-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 80,
+              "url": "https://www.playstationcountry.com/raiden-iii-x-mikado-maniax-ps5-review/",
+              "date": "2023-06-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 77,
+              "url": "https://www.thegamesmachine.it/raiden-iii-x-mikado-maniax-pc-ps-4-ps5-xbox-one-xbox-series-xs-switch/raiden-iii-x-mikado-maniax-recensione/",
+              "date": "2023-06-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 80,
+              "url": "https://www.thesixthaxis.com/2023/06/20/raiden-iii-x-mikado-maniax-review/",
+              "date": "2023-06-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/review/raiden-iii-x-mikado-maniax",
+              "date": "2023-06-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 8
         },
         "user": {
           "score": 9.46,
           "scale": 10,
           "sources": [
             {
-              "score": 4.73,
-              "count": 142,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.73,
               "scale": 5,
-              "source": "PSN",
+              "count": 142,
               "url": "https://store.playstation.com/pt-pt/product/EP1063-PPSA13357_00-RAIDENXMIKADOPS5",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:10:06.739373+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 11.916375287812984,
               "normalized": 9.46
             }
@@ -93417,7 +93553,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:10:05.754173+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:40:45.280059+00:00"
       },
       "requirements": {
         "image": true,
@@ -93459,7 +93602,11 @@
       },
       "basics_attempted": "2026-11-02T18:10:05.754173+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -93475,14 +93622,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:40:45.950428+00:00",
+      "full_version": 7
     },
     "Switch:12830": {
       "title": "Raiden III x MIKADO MANIAX",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 76.2,
           "scale": 100,
           "sources": [
             {
@@ -93491,19 +93640,60 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=raiden-iii-x-mikado-maniax-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Tech-Gaming",
+              "score": 80,
+              "url": "https://www.tech-gaming.com/raiden-iii-x-mikado-maniax/",
+              "date": "2023-06-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Mako Reactor",
+              "score": 75,
+              "url": "https://themakoreactor.com/featured/raiden-iii-x-mikado-maniax-review-switch-xbox-series-x-differences/54893/",
+              "date": "2023-08-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 70,
+              "url": "https://toucharcade.com/2023/06/14/raiden-3-mikado-maniax-switch-review-annalynn-eshop-discount-penko-park-slime-rancher-portable-price/",
+              "date": "2023-06-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 7.33,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.33,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/raiden_iii_x_mikado_maniax",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 7.33
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:46:08.051307+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:41:03.711832+00:00"
       },
       "requirements": {
         "image": true,
@@ -93519,7 +93709,12 @@
       },
       "basics_attempted": "2026-11-02T22:46:08.051307+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/raiden-iii-x-mikado-maniax-switch/",
@@ -93568,7 +93763,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:41:06.087940+00:00",
+      "full_version": 7
     },
     "PS5:13256": {
       "title": "Raiden IV x MIKADO remix",
@@ -184896,26 +185093,41 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 65.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2025/08/ra-ra-boom-review/",
+              "date": "2025-08-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 60,
+              "url": "https://www.thesixthaxis.com/2025/09/04/ra-ra-boom-review/",
+              "date": "2025-09-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 8.14,
           "scale": 10,
           "sources": [
             {
-              "score": 4.07,
-              "count": 45,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.07,
               "scale": 5,
-              "source": "PSN",
+              "count": 45,
               "url": "https://store.playstation.com/pt-pt/product/UB1558-PPSA30188_00-0561577701401574",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:09:37.103653+00:00",
-              "platform": "PSN · PS5",
               "weight": 6.708203932499369,
               "normalized": 8.14
             }
@@ -184923,7 +185135,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:09:34.734954+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:40:50.447953+00:00"
       },
       "requirements": {
         "image": true,
@@ -184965,7 +185184,11 @@
       },
       "basics_attempted": "2026-11-02T18:09:34.734954+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -184981,7 +185204,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:40:50.767992+00:00",
+      "full_version": 7
     },
     "Switch:17269": {
       "title": "Radiant: Guardians of Light",
@@ -213316,34 +213541,104 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 65.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "COGconnected",
+              "score": 75,
+              "url": "https://cogconnected.com/review/rushing-beat-x-return-of-brawl-brothers-review/",
+              "date": "2026-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ComicBook",
+              "score": 60,
+              "url": "https://comicbook.com/gaming/review/rushing-beat-x-return-of-brawl-brothers-review/",
+              "date": "2026-03-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Creative Bloq",
+              "score": 70,
+              "url": "https://www.creativebloq.com/entertainment/gaming/rushing-beat-x-review-a-90s-retro-game-revamp-thats-surprisingly-deep",
+              "date": "2026-03-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Final Weapon",
+              "score": 60,
+              "url": "https://finalweapon.net/2026/03/30/rushing-beat-x-return-of-brawl-brothers-review/",
+              "date": "2026-03-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 70,
+              "url": "https://www.gamespew.com/2026/03/rushing-beat-x-return-of-brawl-brothers-review/",
+              "date": "2026-03-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "https://www.pushsquare.com/reviews/ps5/rushing-beat-x-return-of-brawl-brothers",
+              "date": "2026-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 50,
+              "url": "https://www.thesixthaxis.com/2026/03/24/rushing-beat-x-return-of-brawl-brothers-review-blast-from-the-past/",
+              "date": "2026-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 7
         },
         "user": {
-          "score": 8.64,
+          "score": 7.91,
           "scale": 10,
           "sources": [
             {
-              "score": 4.32,
-              "count": 120,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.32,
               "scale": 5,
-              "source": "PSN",
+              "count": 120,
               "url": "https://store.playstation.com/pt-pt/product/EP6027-PPSA24280_00-0230876279921703",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:09:36.143897+00:00",
-              "platform": "PSN · PS5",
               "weight": 10.954451150103322,
               "normalized": 8.64
+            },
+            {
+              "name": "Metacritic users",
+              "score": 4.9,
+              "scale": 10,
+              "count": 7,
+              "url": "https://www.metacritic.com/game/rushing-beat-x-return-of-brawl-brothers/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.6457513110645907,
+              "normalized": 4.9
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:09:33.882181+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:40:32.567143+00:00"
       },
       "requirements": {
         "image": true,
@@ -213385,7 +213680,10 @@
       },
       "basics_attempted": "2026-11-02T18:09:33.882181+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -213401,7 +213699,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:40:33.002020+00:00",
+      "full_version": 7
     },
     "PS5:18274": {
       "title": "Rohga: Armor Force",
@@ -246193,22 +246493,102 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 63.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/raging_justice",
+              "name": "Cubed3",
+              "score": 40,
+              "url": "http://www.cubed3.com/review/4853/1/raging-justice-nintendo-switch.html",
+              "date": "2018-05-21",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 50,
+              "url": "http://fnintendo.net/article/10913-raging-justice",
+              "date": "2018-06-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 60,
+              "url": "http://metro.co.uk/2018/05/10/raging-justice-review-street-cleaning-simulator-7534222/",
+              "date": "2018-05-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=raging-justice-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 60,
+              "url": "http://www.nintenderos.com/2018/05/analisis-raging-justice/",
+              "date": "2018-05-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 90,
+              "url": "http://nintendoenthusiast.com/blog/2018/05/25/raging-justice-review-for-switch/",
+              "date": "2018-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/raging-justice-review/",
+              "date": "2018-05-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/raging_justice?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-05-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 60,
+              "url": "http://www.nintendoworldreport.com/review/47164/raging-justice-switch-review",
+              "date": "2018-05-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2018/07/03/raging-justice-review/",
+              "date": "2018-07-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 60,
+              "url": "https://www.thedigitalfix.com/gaming/content/9062/raging-justice/",
+              "date": "2018-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 11
         },
         "user": {
-          "score": 6.1,
+          "score": 5.96,
           "scale": 10,
           "sources": [
             {
@@ -246219,14 +246599,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/raging_justice",
               "platform": "Nintendo Switch",
               "weight": 3.872983346207417,
-              "normalized": 6.1,
-              "checked": "2026-11-02T18:10:05.753675+00:00"
+              "normalized": 6.1
+            },
+            {
+              "name": "Metacritic users",
+              "score": 5.8,
+              "scale": 10,
+              "count": 13,
+              "url": "https://www.metacritic.com/game/raging-justice/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 5.8
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:46:08.051061+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:40:58.786245+00:00"
       },
       "requirements": {
         "image": true,
@@ -246242,7 +246636,11 @@
       },
       "basics_attempted": "2026-11-02T22:46:08.051061+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/raging-justice-switch/",
@@ -246291,7 +246689,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:41:01.413655+00:00",
+      "full_version": 7
     },
     "Switch:5014": {
       "title": "Reigns: Kings and Queens",
@@ -259874,22 +260274,79 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 61.9,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/rad_rodgers_radical_edition",
+              "name": "FNintendo",
+              "score": 60,
+              "url": "https://fnintendo.net/article/12974-rad-rodgers-radical-edition",
+              "date": "2019-09-25",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 70,
+              "url": "https://www.gamespace.com/reviews/our-review-of-rad-rodgers-radical-edition/",
+              "date": "2019-02-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 60,
+              "url": "https://www.gamespew.com/2019/03/rad-rodgers-radical-edition-review/",
+              "date": "2019-03-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 70,
+              "url": "https://es.ign.com/rad-rodgers-radical-edition-nintendo-switch/146139/review/analisis-de-rad-rodgers-radical-edition",
+              "date": "2019-02-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 70,
+              "url": "https://www.nintenderos.com/2019/06/analisis-rad-rodgers-radical-edition/",
+              "date": "2019-06-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/rad_rodgers_radical_edition?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2019-03-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 50,
+              "url": "https://www.vooks.net/rad-rodgers-radical-edition-switch-eshop-review/",
+              "date": "2019-02-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 55,
+              "url": "https://worthplaying.com/article/2019/7/12/reviews/115232/",
+              "date": "2019-07-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 8
         },
         "user": {
-          "score": 6.8,
+          "score": 6.18,
           "scale": 10,
           "sources": [
             {
@@ -259900,14 +260357,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/rad_rodgers_radical_edition",
               "platform": "Nintendo Switch",
               "weight": 2.8284271247461903,
-              "normalized": 6.799999999999999,
-              "checked": "2026-11-02T18:10:05.752687+00:00"
+              "normalized": 6.799999999999999
+            },
+            {
+              "name": "Metacritic users",
+              "score": 5.6,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/rad-rodgers/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 5.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:53.666666+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:41:08.829587+00:00"
       },
       "requirements": {
         "image": true,
@@ -259923,7 +260394,13 @@
       },
       "basics_attempted": "2026-11-02T22:45:53.666666+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/rad-rodgers-radical-edition-switch/",
@@ -259973,7 +260450,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:41:11.795280+00:00",
+      "full_version": 7
     },
     "Switch:5553": {
       "title": "RemiLore",
@@ -355058,7 +355537,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 64.0,
+          "score": 56.0,
           "scale": 100,
           "sources": [
             {
@@ -355067,19 +355546,62 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=rwby-grimm-eclipse-definitive-edition-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 50,
+              "url": "https://play.co.rs/2021/05/31/rwby-grimm-eclipse-definitive-edition-review/",
+              "date": "2021-06-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 40,
+              "url": "https://purenintendo.com/review-rwby-grimm-eclipse-definitive-edition-nintendo-switch/",
+              "date": "2021-06-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 70,
+              "url": "https://www.rpgfan.com/review/rwby-grimm-eclipse-definitive-edition/",
+              "date": "2021-07-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 4.7,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 4.7,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/rwby-grimm-eclipse-definitive-edition/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 4.7
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:45:53.419088+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:40:48.468968+00:00"
       },
       "requirements": {
         "image": true,
@@ -355096,7 +355618,11 @@
       "basics_attempted": "2026-11-02T22:45:53.419088+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -355146,7 +355672,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:40:51.967861+00:00",
+      "full_version": 7
     },
     "Switch:9341": {
       "title": "Raiden IV x MIKADO remix",
