@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T07:54:37.096544+00:00",
+  "updated": "2026-11-03T07:56:09.503524+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 1981,
+    "full_attempted": 1991,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -100560,19 +100560,44 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 77.8,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/ship-of-fools",
+              "name": "Nindie Spotlight",
+              "score": 81.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=ship-of-fools-switch",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/ship-of-fools",
+              "date": "2022-11-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://www.pcinvasion.com/one-piece-odyssey-review/",
+              "date": "2023-01-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80.0,
+              "url": "https://purenintendo.com/review-ship-of-fools-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 8.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
           "score": 7.3,
@@ -100586,14 +100611,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/ship_of_fools",
               "platform": "Nintendo Switch",
               "weight": 2.6457513110645907,
-              "normalized": 7.3,
-              "checked": "2026-11-02T18:17:48.563922+00:00"
+              "normalized": 7.3
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:47:48.988007+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:54:56.387223+00:00"
       },
       "requirements": {
         "image": true,
@@ -100609,7 +100638,11 @@
       },
       "basics_attempted": "2026-11-02T22:47:48.988007+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/ship-of-fools-switch/",
@@ -100658,7 +100691,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:55:02.053581+00:00",
+      "full_version": 7
     },
     "Switch:13938": {
       "title": "Shootvaders: The Beginning",
@@ -100686,7 +100721,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:47:50.379845+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 410: Gone"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:55:46.309035+00:00"
       },
       "requirements": {
         "image": true,
@@ -100703,7 +100746,12 @@
       "basics_attempted": "2026-11-02T22:47:50.379845+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone"
+        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 410: Gone",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -100753,33 +100801,58 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:55:48.599200+00:00",
+      "full_version": 7
     },
     "PS5:10564": {
       "title": "Skeletal Avenger",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 75.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GamingTrend",
+              "score": 75,
+              "url": "https://gamingtrend.com/feature/reviews/skeletal-avenger-review-heads-will-roll/",
+              "date": "2021-10-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 70,
+              "url": "https://www.playstationcountry.com/skeletal-avenger-ps5-review/",
+              "date": "2021-10-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/halloween-video-games-2021#skeletal-avenger",
+              "date": "2021-10-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 8.38,
           "scale": 10,
           "sources": [
             {
-              "score": 4.19,
-              "count": 77,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.19,
               "scale": 5,
-              "source": "PSN",
+              "count": 77,
               "url": "https://store.playstation.com/pt-pt/product/EP4403-PPSA04036_00-4914436066930590",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:18:13.861308+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 8.774964387392123,
               "normalized": 8.38
             }
@@ -100787,7 +100860,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:18:13.098216+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:55:05.526508+00:00"
       },
       "requirements": {
         "image": true,
@@ -100829,7 +100909,11 @@
       },
       "basics_attempted": "2026-11-02T18:18:13.098216+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -100845,7 +100929,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:55:06.005331+00:00",
+      "full_version": 7
     },
     "Switch:10565": {
       "title": "Skeletal Avenger",
@@ -140443,17 +140529,18 @@
           "sources": [
             {
               "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/shovel_knight_shovel_of_hope",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/shovel_knight_shovel_of_hope",
+              "date": "2020-05-02",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
           "source_count": 1
         },
         "user": {
-          "score": 7.7,
+          "score": 7.76,
           "scale": 10,
           "sources": [
             {
@@ -140464,14 +140551,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/shovel_knight_shovel_of_hope",
               "platform": "Nintendo Switch",
               "weight": 8.246211251235321,
-              "normalized": 7.7,
-              "checked": "2026-11-02T18:18:13.097118+00:00"
+              "normalized": 7.7
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/shovel-knight-shovel-of-hope/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.0,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:48:04.113420+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:55:11.481710+00:00"
       },
       "requirements": {
         "image": true,
@@ -140487,7 +140588,13 @@
       },
       "basics_attempted": "2026-11-02T22:48:04.113420+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/shovel-knight-shovel-of-hope-switch/",
@@ -140536,7 +140643,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:55:15.135835+00:00",
+      "full_version": 7
     },
     "Switch:15465": {
       "title": "Slam and Roll",
@@ -234416,22 +234525,151 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 90.6,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/shovel_knight_treasure_trove",
+              "name": "App Trigger",
+              "score": 90,
+              "url": "http://apptrigger.com/2017/03/16/shovel-knight-treasure-trove-review/",
+              "date": "2017-04-21",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 90,
+              "url": "http://atomix.vg/review-shovel-knight-treasure-trove/",
+              "date": "2017-03-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 90,
+              "url": "http://www.cubed3.com/review/3636/1/shovel-knight-treasure-trove-nintendo-switch.html",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 70,
+              "url": "http://www.digitallydownloaded.net/2017/03/short-n-sweet-reviews-nintendo-switch.html",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 90,
+              "url": "http://fnintendo.net/article/8999-shovel-knight-treasure-trove",
+              "date": "2017-03-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 90,
+              "url": "http://www.gameblog.fr/tests/2709-shovel-knight-treasure-trove-switch",
+              "date": "2017-03-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 100,
+              "url": "http://www.gaming-age.com/2017/03/shovel-knight-treasure-trove-review-nintendo-switch/",
+              "date": "2017-03-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 91,
+              "url": "http://www.hobbyconsolas.com/reviews/analisis-shovel-knight-treasure-trove-nintendo-switch-92312",
+              "date": "2017-03-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 90,
+              "url": "http://www.ign.com/articles/2017/03/07/shovel-knight-treasure-trove-review",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 90,
+              "url": "http://www.meristation.com/nintendo-switch/shovel-knight-treasure-trove/analisis-juego/2181735",
+              "date": "2017-03-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 90,
+              "url": "http://nintendoenthusiast.com/review/shovel-knight-treasure-trove-review-for-nintendo-switch/",
+              "date": "2017-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/shovel_knight_treasure_trove",
+              "date": "2017-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 90,
+              "url": "http://www.spaziogames.it/recensioni_videogiochi/console_multi_piattaforma/20555/shovel-knight-treasure-trove.aspx",
+              "date": "2017-03-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 90,
+              "url": "http://www.thesixthaxis.com/2017/03/08/shovel-knight-treasure-trove-review/",
+              "date": "2017-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 90,
+              "url": "http://www.vandal.net/analisis/switch/shovel-knight-treasure-trove/45184",
+              "date": "2017-03-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 100,
+              "url": "http://www.vooks.net/shovel-knight-treasure-trove-switch-review/",
+              "date": "2017-04-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 100,
+              "url": "http://www.ztgd.com/shovel-knight-treasure-trove/review/",
+              "date": "2017-03-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 17
         },
         "user": {
-          "score": 8.4,
+          "score": 8.35,
           "scale": 10,
           "sources": [
             {
@@ -234442,14 +234680,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/shovel_knight_treasure_trove",
               "platform": "Nintendo Switch",
               "weight": 22.9128784747792,
-              "normalized": 8.4,
-              "checked": "2026-11-02T18:18:13.097345+00:00"
+              "normalized": 8.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.3,
+              "scale": 10,
+              "count": 722,
+              "url": "https://www.metacritic.com/game/shovel-knight-treasure-trove/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 26.870057685088806,
+              "normalized": 8.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:48:04.113679+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 18,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:55:26.527167+00:00"
       },
       "requirements": {
         "image": true,
@@ -234465,7 +234717,13 @@
       },
       "basics_attempted": "2026-11-02T22:48:04.113679+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/shovel-knight-treasure-trove-switch/",
@@ -234514,29 +234772,119 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:55:29.905326+00:00",
+      "full_version": 7
     },
     "Switch:4583": {
       "title": "Sine Mora EX",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 72.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/sine_mora_ex",
+              "name": "Areajugones",
+              "score": 75,
+              "url": "https://areajugones.sport.es/analisis-sine-mora-ex/",
+              "date": "2017-11-05",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/4297/1/sine-mora-ex-nintendo-switch.html",
+              "date": "2017-10-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 80,
+              "url": "http://www.darkstation.com/reviews/sine-mora-ex-switch-review",
+              "date": "2017-10-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "http://fnintendo.net/article/10004-sine-mora-ex",
+              "date": "2017-11-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 80,
+              "url": "http://gamingtrend.com/feature/reviews/without-delay-bullet-spray-sine-mora-ex-review/",
+              "date": "2017-10-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "http://www.godisageek.com/reviews/sine-mora-ex-review/",
+              "date": "2017-10-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 82.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=sine-mora-ex-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/sine_mora_ex",
+              "date": "2017-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 50,
+              "url": "http://www.nintendoworldreport.com/review/45626/sine-mora-ex-switch-review",
+              "date": "2017-10-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 60,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/Sine+Mora+EX/review.asp?c=75680",
+              "date": "2017-10-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 76,
+              "url": "http://switchplayer.net/2017/10/16/sine-mora-ex-review/",
+              "date": "2017-10-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 77,
+              "url": "http://worthplaying.com/article/2017/10/12/reviews/105637/",
+              "date": "2017-10-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 12
         },
         "user": {
-          "score": 6.4,
+          "score": 6.77,
           "scale": 10,
           "sources": [
             {
@@ -234547,14 +234895,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/sine_mora_ex",
               "platform": "Nintendo Switch",
               "weight": 6.48074069840786,
-              "normalized": 6.4,
-              "checked": "2026-11-02T18:18:13.097948+00:00"
+              "normalized": 6.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.2,
+              "scale": 10,
+              "count": 30,
+              "url": "https://www.metacritic.com/game/sine-mora-ex/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 5.477225575051661,
+              "normalized": 7.199999999999999
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:48:04.114039+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 12,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:55:36.708062+00:00"
       },
       "requirements": {
         "image": true,
@@ -234570,7 +234932,11 @@
       },
       "basics_attempted": "2026-11-02T22:48:04.114039+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/sine-mora-ex-switch/",
@@ -234619,7 +234985,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:55:39.726202+00:00",
+      "full_version": 7
     },
     "Switch:4462": {
       "title": "Skylanders Imaginators",
@@ -252478,11 +252846,77 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 69.1,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/3702/1/aca-neogeo-shock-troopers-nintendo-switch.html",
+              "date": "2017-03-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 50,
+              "url": "http://www.digitallydownloaded.net/2017/04/short-sweet-reviews-nintendo-switch-neo.html",
+              "date": "2017-04-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 60,
+              "url": "http://fnintendo.net/article/9077-aca-neogeo-shock-troopers",
+              "date": "2017-04-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 73,
+              "url": "http://www.hobbyconsolas.com/reviews/analisis-aca-neo-geo-shock-troopers-nintendo-switch-92110",
+              "date": "2017-03-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/shock_troopers_neogeo",
+              "date": "2017-03-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/44289/shock-troopers-switch-review",
+              "date": "2017-03-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70.0,
+              "url": "https://purenintendo.com/review-aca-neogeo-shock-troopers-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 7.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "XGN",
+              "score": 70,
+              "url": "http://www.xgn.nl/review/shock-troopers-review",
+              "date": "2017-03-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 8
         },
         "user": {
           "score": 7.3,
@@ -252494,7 +252928,7 @@
               "scale": 10,
               "count": 23,
               "url": "https://www.metacritic.com/game/shock-troopers/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 4.795831523312719,
               "normalized": 7.3
             }
@@ -252502,7 +252936,17 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:17:48.564462+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:56:01.423185+00:00"
       },
       "requirements": {
         "image": true,
@@ -252530,7 +252974,10 @@
       "version": 3,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -252547,18 +252994,29 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:56:05.037063+00:00",
+      "full_version": 7
     },
     "Switch:4977": {
       "title": "Shock Troopers: 2nd Squad",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/shock_troopers_2nd_squad_neogeo",
+              "date": "2017-08-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 5.8,
@@ -252570,16 +253028,25 @@
               "scale": 10,
               "count": 8,
               "url": "https://www.metacritic.com/game/shock-troopers-2nd-squad/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 2.8284271247461903,
-              "normalized": 5.8,
-              "checked": "2026-11-02T20:01:20.321291+00:00"
+              "normalized": 5.8
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:32:30.018254+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:56:06.422582+00:00"
       },
       "requirements": {
         "image": true,
@@ -252588,7 +253055,14 @@
       },
       "basics_attempted": "2026-11-02T23:32:30.018254+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "image": {
         "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_AcaNeogeoShockTroopers2ndSquad_image500w.jpg",
         "source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/ACA-NEOGEO-SHOCK-TROOPERS-2nd-Squad-1231013.html",
@@ -252646,7 +253120,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:56:09.290481+00:00",
+      "full_version": 7
     },
     "Switch:5056": {
       "title": "Skies of Fury DX",
@@ -327204,13 +327680,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/shmubedi_boo",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:47:48.989146+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:54:51.735283+00:00"
       },
       "requirements": {
         "image": true,
@@ -327226,7 +327719,12 @@
       },
       "basics_attempted": "2026-11-02T22:47:48.989146+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/shmubedi-boo-switch/",
@@ -327275,14 +327773,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:54:56.716638+00:00",
+      "full_version": 7
     },
     "Switch:7756": {
       "title": "Shoot 1UP DX",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 81.2,
           "scale": 100,
           "sources": [
             {
@@ -327291,19 +327791,62 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=shoot-1up-dx-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "https://www.nintendoworldreport.com/review/57127/shoot-1up-dx-switch-review",
+              "date": "2021-05-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Game Slush Pile",
+              "score": 90.0,
+              "url": "https://gameslushpile.com/2022/10/17/shoot-1up-dx-switch-review/",
+              "date": "2022-10-17T16:46:38-04:00",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review",
+              "original_score": 4.5,
+              "original_scale": 5.0
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/switch-indie-games-2020-part-2#shoot-1up-dx",
+              "date": "2020-11-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 3.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/shoot_1up_dx",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 3.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:47:49.245498+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:55:06.667167+00:00"
       },
       "requirements": {
         "image": true,
@@ -327319,7 +327862,10 @@
       },
       "basics_attempted": "2026-11-02T22:47:49.245498+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/shoot-1up-dx-switch/",
@@ -327368,7 +327914,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:55:14.025212+00:00",
+      "full_version": 7
     },
     "Switch:8017": {
       "title": "Snow Battle Princess Sayuki",
