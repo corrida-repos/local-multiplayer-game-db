@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T00:39:09.212104+00:00",
+  "updated": "2026-11-03T00:41:09.884310+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
     "ready": 1960,
     "missing_image": 109,
-    "missing_store": 283,
+    "missing_store": 277,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -35628,18 +35628,19 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:04:01.854994+00:00"
+        "attempted": "2026-11-03T00:40:23.503699+00:00"
       },
       "requirements": {
         "image": true,
         "store": false,
         "rating": true
       },
-      "basics_attempted": "2026-11-02T22:04:01.854994+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:40:23.503699+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/a/a7/Gurume-Sentai-Barayar%C5%8D.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
@@ -35647,7 +35648,24 @@
         "checked": "2026-11-02T19:30:22.705108+00:00",
         "method": "verified-game-article"
       },
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:23.976245+00:00",
+              "next_attempt": "2026-11-04T00:40:23.976245+00:00",
+              "revision": "2b8bcbec158a4668:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Gourmet+Warriors%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Gourmet+Warriors%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "PS5:11887": {
       "title": "Gravitar: Recharged",
@@ -148387,11 +148405,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:04:01.852600+00:00"
+        "attempted": "2026-11-03T00:39:13.665018+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -148399,12 +148417,14 @@
         "source": "https://www.nintendo.com/us/store/products/graviators-switch/",
         "checked": "2026-11-02T22:04:09.302381+00:00"
       },
-      "basics_attempted": "2026-11-02T22:04:01.852600+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:39:13.665018+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:34:13.618007+00:00",
       "store_evidence": [
@@ -148414,7 +148434,101 @@
           "checked": "2026-11-02T22:04:09.301826+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Graviators-3013512.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:39:16.210853+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "GRAVIATORS",
+        "Graviators"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:39:16.211086+00:00",
+              "next_attempt": "2026-11-04T00:39:16.211086+00:00",
+              "revision": "f78564f270cd58ee:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:39:16.211086+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Graviators-3013512.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Graviators-3013512.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:23.888046+00:00",
+              "next_attempt": "2026-11-04T00:40:23.888046+00:00",
+              "revision": "f78564f270cd58ee:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/graviators",
+                "https://www.nintendolife.com/games/nintendo-switch/graviators"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/graviators"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:27.117209+00:00",
+              "next_attempt": "2026-11-04T00:40:27.117209+00:00",
+              "revision": "f78564f270cd58ee:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=graviators-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=graviators-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:32.294468+00:00",
+              "next_attempt": "2026-11-04T00:40:32.294468+00:00",
+              "revision": "f78564f270cd58ee:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/graviators/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/graviators/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/graviators/"
+              ],
+              "url": "https://www.metacritic.com/game/graviators/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:33.500430+00:00",
+              "next_attempt": "2026-11-04T00:40:33.500430+00:00",
+              "revision": "f78564f270cd58ee:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=GRAVIATORS&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=GRAVIATORS&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:33.500566+00:00",
+              "next_attempt": "2026-11-03T01:40:33.500566+00:00",
+              "revision": "f78564f270cd58ee:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:33.500600+00:00",
+              "next_attempt": "2026-11-03T01:40:33.500600+00:00",
+              "revision": "f78564f270cd58ee:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:17959": {
       "title": "God of War Sons of Sparta",
@@ -158223,7 +158337,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:01:11.892512+00:00"
+        "attempted": "2026-11-03T00:39:13.662252+00:00"
       },
       "requirements": {
         "image": true,
@@ -158242,18 +158356,88 @@
         "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-DEVASTATORS-3055140.html",
         "checked": "2026-11-02T22:01:19.865664+00:00"
       },
-      "basics_attempted": "2026-11-02T22:01:11.892512+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:39:13.662252+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "aliases": [
         "Arcade Archives DEVASTATORS"
       ],
       "full_attempted": "2026-11-02T20:30:20.733762+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:43.976226+00:00",
+              "next_attempt": "2026-11-04T00:40:43.976226+00:00",
+              "revision": "41b8dd0d71ec8e84:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/devastators",
+                "https://www.nintendolife.com/games/switch-eshop/devastators",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_devastators"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_devastators"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:44.442742+00:00",
+              "next_attempt": "2026-11-04T00:40:44.442742+00:00",
+              "revision": "41b8dd0d71ec8e84:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=devastators-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=devastators-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:55.058936+00:00",
+              "next_attempt": "2026-11-04T00:40:55.058936+00:00",
+              "revision": "41b8dd0d71ec8e84:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-devastators/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-devastators/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-devastators/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-devastators/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:56.347674+00:00",
+              "next_attempt": "2026-11-04T00:40:56.347674+00:00",
+              "revision": "41b8dd0d71ec8e84:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Devastators&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Devastators&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:56.347803+00:00",
+              "next_attempt": "2026-11-03T01:40:56.347803+00:00",
+              "revision": "41b8dd0d71ec8e84:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:56.347833+00:00",
+              "next_attempt": "2026-11-03T01:40:56.347833+00:00",
+              "revision": "41b8dd0d71ec8e84:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:18326": {
       "title": "EGGCONSOLE LAYDOCK 2 LAST ATTACK MSX2+",
@@ -158718,11 +158902,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:04:01.853593+00:00"
+        "attempted": "2026-11-03T00:40:16.323846+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -158730,15 +158914,18 @@
         "source": "https://www.nintendo.com/us/store/products/goonect2-switch/",
         "checked": "2026-11-02T22:04:02.915815+00:00"
       },
-      "basics_attempted": "2026-11-02T22:04:01.853593+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:40:16.323846+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:35:00.266844+00:00",
       "store_evidence": [
@@ -158748,7 +158935,100 @@
           "checked": "2026-11-02T22:04:02.915267+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/GooNECT-2-3100336.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:40:16.697610+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "GooNECT√2"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:40:16.697860+00:00",
+              "next_attempt": "2026-11-04T00:40:16.697860+00:00",
+              "revision": "d84240d3097fab42:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:40:16.697860+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/GooNECT-2-3100336.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/GooNECT-2-3100336.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:58.999455+00:00",
+              "next_attempt": "2026-11-04T00:40:58.999455+00:00",
+              "revision": "d84240d3097fab42:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/goonect2",
+                "https://www.nintendolife.com/games/switch-eshop/goonect2"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/goonect2"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:59.618690+00:00",
+              "next_attempt": "2026-11-04T00:40:59.618690+00:00",
+              "revision": "d84240d3097fab42:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=goonect2-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=goonect2-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:41:01.505487+00:00",
+              "next_attempt": "2026-11-04T00:41:01.505487+00:00",
+              "revision": "d84240d3097fab42:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/goonect2/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/goonect2/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/goonect2/"
+              ],
+              "url": "https://www.metacritic.com/game/goonect2/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:41:02.924157+00:00",
+              "next_attempt": "2026-11-04T00:41:02.924157+00:00",
+              "revision": "d84240d3097fab42:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=GooNECT%E2%88%9A2&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=GooNECT%E2%88%9A2&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:41:02.924291+00:00",
+              "next_attempt": "2026-11-03T01:41:02.924291+00:00",
+              "revision": "d84240d3097fab42:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:41:02.924319+00:00",
+              "next_attempt": "2026-11-03T01:41:02.924319+00:00",
+              "revision": "d84240d3097fab42:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:18328": {
       "title": "Goodboy Galaxy",
@@ -165011,11 +165291,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:01:11.892775+00:00"
+        "attempted": "2026-11-03T00:39:13.662412+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -165023,12 +165303,14 @@
         "source": "https://www.nintendo.com/us/store/products/disney-pixar-toy-story-3-complete-edition-switch/",
         "checked": "2026-11-02T22:01:21.022058+00:00"
       },
-      "basics_attempted": "2026-11-02T22:01:11.892775+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:39:13.662412+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:30:32.285076+00:00",
       "store_evidence": [
@@ -165038,7 +165320,101 @@
           "checked": "2026-11-02T22:01:21.021650+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Disney-Pixar-Toy-Story-3-Complete-Edition-3156799.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:39:13.988876+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Disney/Pixar Toy Story 3 Complete Edition"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:39:13.989079+00:00",
+              "next_attempt": "2026-11-04T00:39:13.989079+00:00",
+              "revision": "02e7f078f7ce426b:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:39:13.989079+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Disney-Pixar-Toy-Story-3-Complete-Edition-3156799.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Disney-Pixar-Toy-Story-3-Complete-Edition-3156799.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:38.990104+00:00",
+              "next_attempt": "2026-11-04T00:40:38.990104+00:00",
+              "revision": "02e7f078f7ce426b:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/disneypixar_toy_story_3_complete_edition",
+                "https://www.nintendolife.com/games/nintendo-switch/disney_pixar_toy_story_3_complete_edition",
+                "https://www.nintendolife.com/games/switch-eshop/disney_pixar_toy_story_3_complete_edition"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/disney_pixar_toy_story_3_complete_edition"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:44.262581+00:00",
+              "next_attempt": "2026-11-04T00:40:44.262581+00:00",
+              "revision": "02e7f078f7ce426b:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=disney-pixar-toy-story-3-complete-edition-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=disney-pixar-toy-story-3-complete-edition-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:50.870874+00:00",
+              "next_attempt": "2026-11-04T00:40:50.870874+00:00",
+              "revision": "02e7f078f7ce426b:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/disney-pixar-toy-story-3-complete-edition/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/disney-pixar-toy-story-3-complete-edition/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/disney-pixar-toy-story-3-complete-edition/"
+              ],
+              "url": "https://www.metacritic.com/game/disney-pixar-toy-story-3-complete-edition/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:52.681714+00:00",
+              "next_attempt": "2026-11-04T00:40:52.681714+00:00",
+              "revision": "02e7f078f7ce426b:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Disney%2FPixar+Toy+Story+3+Complete+Edition&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Disney%2FPixar+Toy+Story+3+Complete+Edition&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:52.681841+00:00",
+              "next_attempt": "2026-11-03T01:40:52.681841+00:00",
+              "revision": "02e7f078f7ce426b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:52.681878+00:00",
+              "next_attempt": "2026-11-03T01:40:52.681878+00:00",
+              "revision": "02e7f078f7ce426b:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18898": {
       "title": "Dog Man: Bark in Action",
@@ -165222,11 +165598,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:01:11.893424+00:00"
+        "attempted": "2026-11-03T00:39:13.663139+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -165234,12 +165610,14 @@
         "source": "https://www.nintendo.com/us/store/products/dungeons-of-alethrion-switch/",
         "checked": "2026-11-02T22:01:17.848532+00:00"
       },
-      "basics_attempted": "2026-11-02T22:01:11.893424+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:39:13.663139+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:31:31.742533+00:00",
       "store_evidence": [
@@ -165249,7 +165627,100 @@
           "checked": "2026-11-02T22:01:17.848219+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Dungeons-of-Alethrion-3180686.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:39:15.075986+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Dungeons of Alethrion"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:39:15.076194+00:00",
+              "next_attempt": "2026-11-04T00:39:15.076194+00:00",
+              "revision": "80f13310a01d98c2:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:39:15.076194+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Dungeons-of-Alethrion-3180686.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Dungeons-of-Alethrion-3180686.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:13.992462+00:00",
+              "next_attempt": "2026-11-04T00:40:13.992462+00:00",
+              "revision": "80f13310a01d98c2:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/dungeons_of_alethrion",
+                "https://www.nintendolife.com/games/nintendo-switch/dungeons_of_alethrion"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/dungeons_of_alethrion"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:14.629924+00:00",
+              "next_attempt": "2026-11-04T00:40:14.629924+00:00",
+              "revision": "80f13310a01d98c2:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=dungeons-of-alethrion-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=dungeons-of-alethrion-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:26.902909+00:00",
+              "next_attempt": "2026-11-04T00:40:26.902909+00:00",
+              "revision": "80f13310a01d98c2:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/dungeons-of-alethrion/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/dungeons-of-alethrion/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/dungeons-of-alethrion/"
+              ],
+              "url": "https://www.metacritic.com/game/dungeons-of-alethrion/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:28.354802+00:00",
+              "next_attempt": "2026-11-04T00:40:28.354802+00:00",
+              "revision": "80f13310a01d98c2:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Dungeons+of+Alethrion&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Dungeons+of+Alethrion&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:28.354939+00:00",
+              "next_attempt": "2026-11-03T01:40:28.354939+00:00",
+              "revision": "80f13310a01d98c2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:28.354973+00:00",
+              "next_attempt": "2026-11-03T01:40:28.354973+00:00",
+              "revision": "80f13310a01d98c2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18881": {
       "title": "Folk Hero",
@@ -170139,7 +170610,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:01:11.893742+00:00"
+        "attempted": "2026-11-03T00:39:13.663575+00:00"
       },
       "requirements": {
         "image": true,
@@ -170151,12 +170622,15 @@
         "source": "https://www.nintendo.com/us/store/products/ailuri-switch/",
         "checked": "2026-11-02T22:01:15.808455+00:00"
       },
-      "basics_attempted": "2026-11-02T22:01:11.893742+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:39:13.663575+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:44:22.285066+00:00",
       "store_evidence": [
@@ -170166,7 +170640,89 @@
           "checked": "2026-11-02T22:01:15.808125+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:39:15.381616+00:00",
+              "next_attempt": "2026-11-04T00:39:15.381616+00:00",
+              "revision": "90d7b811a1e3c78a:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Ailuri%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Ailuri%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:18.884348+00:00",
+              "next_attempt": "2026-11-04T00:40:18.884348+00:00",
+              "revision": "90d7b811a1e3c78a:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/ailuri",
+                "https://www.nintendolife.com/games/nintendo-switch/ailuri"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/ailuri"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:19.530328+00:00",
+              "next_attempt": "2026-11-04T00:40:19.530328+00:00",
+              "revision": "90d7b811a1e3c78a:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=ailuri-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=ailuri-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:21.987023+00:00",
+              "next_attempt": "2026-11-04T00:40:21.987023+00:00",
+              "revision": "90d7b811a1e3c78a:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/ailuri/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/ailuri/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/ailuri/"
+              ],
+              "url": "https://www.metacritic.com/game/ailuri/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:23.503458+00:00",
+              "next_attempt": "2026-11-04T00:40:23.503458+00:00",
+              "revision": "90d7b811a1e3c78a:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Ailuri&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Ailuri&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:23.503576+00:00",
+              "next_attempt": "2026-11-03T01:40:23.503576+00:00",
+              "revision": "90d7b811a1e3c78a:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:23.503601+00:00",
+              "next_attempt": "2026-11-03T01:40:23.503601+00:00",
+              "revision": "90d7b811a1e3c78a:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:19132": {
       "title": "Air Hares",
@@ -170186,7 +170742,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:01:11.895545+00:00"
+        "attempted": "2026-11-03T00:39:13.663990+00:00"
       },
       "requirements": {
         "image": true,
@@ -170198,11 +170754,14 @@
         "source": "https://www.nintendo.com/us/store/products/air-hares-switch/",
         "checked": "2026-11-02T22:01:18.544739+00:00"
       },
-      "basics_attempted": "2026-11-02T22:01:11.895545+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:39:13.663990+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:44:24.498039+00:00",
       "store_evidence": [
@@ -170212,7 +170771,89 @@
           "checked": "2026-11-02T22:01:18.544427+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:39:14.257320+00:00",
+              "next_attempt": "2026-11-04T00:39:14.257320+00:00",
+              "revision": "2e92fd6f68b70267:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Air+Hares%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Air+Hares%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:04.036762+00:00",
+              "next_attempt": "2026-11-04T00:40:04.036762+00:00",
+              "revision": "2e92fd6f68b70267:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/air_hares",
+                "https://www.nintendolife.com/games/nintendo-switch/air_hares"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/air_hares"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:06.835883+00:00",
+              "next_attempt": "2026-11-04T00:40:06.835883+00:00",
+              "revision": "2e92fd6f68b70267:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=air-hares-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=air-hares-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:14.916817+00:00",
+              "next_attempt": "2026-11-04T00:40:14.916817+00:00",
+              "revision": "2e92fd6f68b70267:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/air-hares/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/air-hares/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/air-hares/"
+              ],
+              "url": "https://www.metacritic.com/game/air-hares/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:16.323606+00:00",
+              "next_attempt": "2026-11-04T00:40:16.323606+00:00",
+              "revision": "2e92fd6f68b70267:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Air+Hares&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Air+Hares&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:16.323726+00:00",
+              "next_attempt": "2026-11-03T01:40:16.323726+00:00",
+              "revision": "2e92fd6f68b70267:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:16.323751+00:00",
+              "next_attempt": "2026-11-03T01:40:16.323751+00:00",
+              "revision": "2e92fd6f68b70267:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:4172": {
       "title": "Bacon Man: An Adventure",
@@ -170516,11 +171157,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:01:27.702512+00:00"
+        "attempted": "2026-11-03T00:39:13.664411+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -170528,12 +171169,14 @@
         "source": "https://www.nintendo.com/us/store/products/calcium-chaos-switch/",
         "checked": "2026-11-02T22:01:29.226964+00:00"
       },
-      "basics_attempted": "2026-11-02T22:01:27.702512+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:39:13.664411+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:26:16.641737+00:00",
       "store_evidence": [
@@ -170543,7 +171186,100 @@
           "checked": "2026-11-02T22:01:29.226655+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Calcium-Chaos-3211965.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:39:17.264669+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Calcium Chaos"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:39:17.264880+00:00",
+              "next_attempt": "2026-11-04T00:39:17.264880+00:00",
+              "revision": "d85eeeff2cf778b1:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:39:17.264880+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Calcium-Chaos-3211965.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Calcium-Chaos-3211965.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:28.897084+00:00",
+              "next_attempt": "2026-11-04T00:40:28.897084+00:00",
+              "revision": "d85eeeff2cf778b1:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/calcium_chaos",
+                "https://www.nintendolife.com/games/nintendo-switch/calcium_chaos"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/calcium_chaos"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:29.209427+00:00",
+              "next_attempt": "2026-11-04T00:40:29.209427+00:00",
+              "revision": "d85eeeff2cf778b1:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=calcium-chaos-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=calcium-chaos-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:32.925765+00:00",
+              "next_attempt": "2026-11-04T00:40:32.925765+00:00",
+              "revision": "d85eeeff2cf778b1:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/calcium-chaos/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/calcium-chaos/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/calcium-chaos/"
+              ],
+              "url": "https://www.metacritic.com/game/calcium-chaos/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:40:34.658484+00:00",
+              "next_attempt": "2026-11-04T00:40:34.658484+00:00",
+              "revision": "d85eeeff2cf778b1:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Calcium+Chaos&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Calcium+Chaos&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:34.658617+00:00",
+              "next_attempt": "2026-11-03T01:40:34.658617+00:00",
+              "revision": "d85eeeff2cf778b1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:40:34.658646+00:00",
+              "next_attempt": "2026-11-03T01:40:34.658646+00:00",
+              "revision": "d85eeeff2cf778b1:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:19104": {
       "title": "Carry The Glass",
@@ -171077,11 +171813,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:02:04.310904+00:00"
+        "attempted": "2026-11-03T00:39:13.664840+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -171089,12 +171825,15 @@
         "source": "https://www.nintendo.com/us/store/products/ea-sports-fc-27-switch/",
         "checked": "2026-11-02T22:02:05.852459+00:00"
       },
-      "basics_attempted": "2026-11-02T22:02:04.310904+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:39:13.664840+00:00",
+      "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found",
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:32:01.180396+00:00",
       "store_evidence": [
@@ -171104,7 +171843,102 @@
           "checked": "2026-11-02T22:02:05.851968+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/EA-SPORTS-FC-27-3147152.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:39:18.482768+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "EA SPORTS FC 27",
+        "EA SPORTS FC™ 27"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:39:18.482988+00:00",
+              "next_attempt": "2026-11-04T00:39:18.482988+00:00",
+              "revision": "827b9a7ad07186be:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:39:18.482988+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/EA-SPORTS-FC-27-3147152.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/EA-SPORTS-FC-27-3147152.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:41:04.002007+00:00",
+              "next_attempt": "2026-11-04T00:41:04.002007+00:00",
+              "revision": "827b9a7ad07186be:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/ea_sports_fc_27",
+                "https://www.nintendolife.com/games/nintendo-switch/ea_sports_fctm_27",
+                "https://www.nintendolife.com/games/switch-eshop/ea_sports_fctm_27"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/ea_sports_fctm_27"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:41:04.505973+00:00",
+              "next_attempt": "2026-11-04T00:41:04.505973+00:00",
+              "revision": "827b9a7ad07186be:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=ea-sports-fc-27-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=ea-sports-fc-27-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:41:08.430350+00:00",
+              "next_attempt": "2026-11-04T00:41:08.430350+00:00",
+              "revision": "827b9a7ad07186be:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/ea-sports-fctm-27/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/ea-sports-fctm-27/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/ea-sports-fctm-27/"
+              ],
+              "url": "https://www.metacritic.com/game/ea-sports-fctm-27/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:41:09.707082+00:00",
+              "next_attempt": "2026-11-04T00:41:09.707082+00:00",
+              "revision": "827b9a7ad07186be:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=EA+SPORTS+FC+27&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=EA+SPORTS+FC+27&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:41:09.707234+00:00",
+              "next_attempt": "2026-11-03T01:41:09.707234+00:00",
+              "revision": "827b9a7ad07186be:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:41:09.707268+00:00",
+              "next_attempt": "2026-11-03T01:41:09.707268+00:00",
+              "revision": "827b9a7ad07186be:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:19048": {
       "title": "Escape Academy 2: Back 2 School",
