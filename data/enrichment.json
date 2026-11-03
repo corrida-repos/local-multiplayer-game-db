@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:45:00.164319+00:00",
+  "updated": "2026-11-03T08:46:05.601921+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2451,
+    "full_attempted": 2461,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -137180,34 +137180,66 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 76.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Impulsegamer",
+              "score": 72,
+              "url": "https://www.impulsegamer.com/waltz-of-the-wizard-review-aldindynamics/",
+              "date": "2023-12-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/playstation-vr2-game-reviews-part-3#waltz-of-the-wizard",
+              "date": "2023-10-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 9.0,
           "scale": 10,
           "sources": [
             {
-              "score": 4.5,
-              "count": 1106,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.5,
               "scale": 5,
-              "source": "PSN",
+              "count": 1106,
               "url": "https://store.playstation.com/pt-pt/product/EP1441-PPSA13689_00-0848791529458369",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:46:11.798509+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
+              "normalized": 9.0
+            },
+            {
+              "name": "Metacritic users",
+              "score": 9,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/waltz-of-the-wizard-extended-edition/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.23606797749979,
               "normalized": 9.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:46:07.438561+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:45:39.486741+00:00"
       },
       "requirements": {
         "image": true,
@@ -137249,7 +137281,11 @@
       },
       "basics_attempted": "2026-11-02T18:46:07.438561+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -137265,29 +137301,135 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:45:39.823484+00:00",
+      "full_version": 7
     },
     "Switch:13427": {
       "title": "Wargroove 2",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 85.9,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/wargroove-2",
+              "name": "Checkpoint Gaming",
+              "score": 85,
+              "url": "https://checkpointgaming.net/reviews/2023/10/wargroove-2-review-even-groovier/",
+              "date": "2023-10-01",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 90,
+              "url": "https://games.tiscali.cz/recenze/wargroove-2-recenze-mistrovske-tahovky-ktere-k-dokonalosti-chybi-malo-566379",
+              "date": "2023-10-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gfinity",
+              "score": 90,
+              "url": "https://www.gfinityesports.com/reviews/wargroove-2-review/",
+              "date": "2023-09-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 80,
+              "url": "https://www.impulsegamer.com/wargroove-2-nintendo-switch-review/",
+              "date": "2023-10-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 80,
+              "url": "https://as.com/meristation/analisis/analisis-de-wargroove-2-estrategia-pura-y-dura-n/",
+              "date": "2023-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 80,
+              "url": "https://metro.co.uk/2023/10/05/wargroove-2-review-the-mouse-that-roared-19607747/?ico=mosaic_gaming",
+              "date": "2023-10-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 85,
+              "url": "https://multiplayer.it/recensioni/wargroove-2-recensione.html",
+              "date": "2023-10-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 92.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=wargroove-2-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/wargroove-2",
+              "date": "2023-09-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/65102/wargroove-2-switch-review",
+              "date": "2023-10-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Tactics",
+              "score": 90,
+              "url": "https://www.pockettactics.com/wargroove-2/review",
+              "date": "2023-10-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 90,
+              "url": "https://toucharcade.com/2023/10/23/hot-wheels-unleashed-2-switch-review-wargroove-2-eshop-price/",
+              "date": "2023-10-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 80,
+              "url": "https://twinfinite.net/reviews/wargroove-2-review/",
+              "date": "2023-10-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/colourful-indie-games-part-3#wargroove-2",
+              "date": "2023-10-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 14
         },
         "user": {
-          "score": 7.8,
+          "score": 6.68,
           "scale": 10,
           "sources": [
             {
@@ -137298,14 +137440,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/wargroove_2",
               "platform": "Nintendo Switch",
               "weight": 6.324555320336759,
-              "normalized": 7.800000000000001,
-              "checked": "2026-11-02T18:46:28.744113+00:00"
+              "normalized": 7.800000000000001
+            },
+            {
+              "name": "Metacritic users",
+              "score": 5.3,
+              "scale": 10,
+              "count": 26,
+              "url": "https://www.metacritic.com/game/wargroove-2/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 5.0990195135927845,
+              "normalized": 5.300000000000001
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:32.247398+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 13,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:45:26.078595+00:00"
       },
       "requirements": {
         "image": true,
@@ -137321,7 +137477,11 @@
       },
       "basics_attempted": "2026-11-02T22:54:32.247398+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/wargroove-2-switch/",
@@ -137370,7 +137530,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:45:30.524789+00:00",
+      "full_version": 7
     },
     "PS5:11987": {
       "title": "Warhammer 40,000: Inquisitor - Martyr Ultimate Edition",
@@ -137537,22 +137699,735 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 76.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/warioware_get_it_together",
+              "name": "4P.de",
+              "score": 70,
+              "url": "https://www.4players.de/4players.php/dispbericht/Switch/Test/43390/84992/0/WarioWare_Get_It_Together.html",
+              "date": "2021-09-10",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "App Trigger",
+              "score": 85,
+              "url": "https://apptrigger.com/2021/09/14/warioware-get-it-together-review/",
+              "date": "2021-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 85,
+              "url": "https://areajugones.sport.es/videojuegos/analisis-warioware-get-it-together-vuelve-el-personaje-de-nintendo-mas-irreverente-y-a-lo-grande/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 85,
+              "url": "https://atomix.vg/review-warioware-get-it-together/",
+              "date": "2021-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 80,
+              "url": "https://attackofthefanboy.com/reviews/warioware-get-it-together-review/",
+              "date": "2021-09-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 75,
+              "url": "",
+              "date": "2022-01-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 70,
+              "url": "https://www.cgmagonline.com/review/warioware-get-it-together-nintendo-switch-review/",
+              "date": "2021-10-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 80,
+              "url": "https://cogconnected.com/review/warioware-get-together-review/",
+              "date": "2021-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Checkpoint Gaming",
+              "score": 70,
+              "url": "https://checkpointgaming.net/reviews/2021/09/warioware-get-it-together-review-that-rascal/",
+              "date": "2021-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ComicBook",
+              "score": 80,
+              "url": "https://comicbook.com/gaming/news/warioware-get-it-together-review/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/6475/1/warioware-get-it-together-nintendo-switch.html",
+              "date": "2021-09-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Daily Star",
+              "score": 80,
+              "url": "https://www.dailystar.co.uk/tech/reviews/warioware-together-review-fast-frantic-24929102",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 75,
+              "url": "https://www.destructoid.com/reviews/review-warioware-get-it-together/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Dexerto",
+              "score": 80,
+              "url": "https://www.dexerto.com/reviews/warioware-get-it-together-review-nintendo-bad-boy-back-to-his-best-1652832/",
+              "date": "2021-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Spy",
+              "score": 80,
+              "url": "https://www.digitalspy.com/tech/a37644067/warioware-get-it-together-review-nintendo-switch/",
+              "date": "2021-09-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Trends",
+              "score": 60,
+              "url": "https://www.digitaltrends.com/game-reviews/warioware-get-it-together-review/",
+              "date": "2021-09-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 80,
+              "url": "",
+              "date": "2021-10-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 80,
+              "url": "https://www.eurogamer.it/articles/2021-09-08-warioware-get-it-together-recensione",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 75,
+              "url": "https://www.everyeye.it/articoli/recensione-warioware-get-it-together-elogio-follia-switch-54350.html",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 72,
+              "url": "https://www.games.ch/warioware-get-it-together/test/review-kps/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMINGbible",
+              "score": 90,
+              "url": "https://www.gamingbible.co.uk/reviews/games-nintendo-warioware-get-it-together-review-wah-what-is-it-good-for-20210908?c=1631101537229",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GRYOnline.pl",
+              "score": 80,
+              "url": "https://www.gry-online.pl/S020.asp?ID=14523",
+              "date": "2021-09-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 78,
+              "url": "https://www.gameinformer.com/review/warioware-get-it-together/only-as-strong-as-its-weakest-link",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game World Navigator Magazine",
+              "score": 76,
+              "url": "",
+              "date": "2021-10-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameMAG",
+              "score": 70,
+              "url": "https://gamemag.ru/reviews/warioware-get-it-together-switch-review",
+              "date": "2021-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 80,
+              "url": "https://www.gameover.gr/2021/10/05/warioware-get-it-together-review/",
+              "date": "2021-10-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 75,
+              "url": "https://www.gamepro.de/artikel/warioware-get-it-together-im-test,3373254.html",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSkinny",
+              "score": 90,
+              "url": "https://www.gameskinny.com/fo6wq/warioware-get-it-together-review-one-button-mayhem",
+              "date": "2021-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/warioware-get-it-together-review-a-platform-for-change/1900-6417725/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 70,
+              "url": "",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 75,
+              "url": "https://gamer.nl/artikelen/review/nieuwe-besturing-geeft-warioware-get-it-together-een-aangename-twist/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.no",
+              "score": 80,
+              "url": "https://www.gamer.no/artikler/anmeldelse-warioware-get-it-together/513482",
+              "date": "2021-09-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 80,
+              "url": "https://games.tiscali.cz/recenze/warioware-get-it-together-recenze-dokonaleho-zpestreni-kazde-party-518521",
+              "date": "2021-10-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesBeat",
+              "score": 80,
+              "url": "https://venturebeat.com/2021/09/20/warioware-get-it-together-review-refreshing-and-sometimes-frustrating/",
+              "date": "2021-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 60,
+              "url": "https://www.gamesradar.com/warioware-get-it-together-review/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 80,
+              "url": "https://gamingtrend.com/feature/reviews/warioware-get-it-together-review-wario-and-his-team-are-in-a-mess-and-only-quick-reflexes-will-save-them/",
+              "date": "2021-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 85,
+              "url": "https://www.godisageek.com/reviews/warioware-get-it-together-review/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 70,
+              "url": "https://hardcoregamer.com/reviews/review-warioware-get-it-together/410617/",
+              "date": "2021-09-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 80,
+              "url": "https://www.heypoorplayer.com/2021/09/18/warioware-get-it-together-review-switch/",
+              "date": "2021-09-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 70,
+              "url": "https://www.ign.com/articles/warioware-get-it-together-review",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN France",
+              "score": 70,
+              "url": "https://fr.ign.com/wario-ware-get-it-together/55997/review/wario-ware-get-it-together-plaisir-partage",
+              "date": "2021-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 80,
+              "url": "https://it.ign.com/warioware-get-it-together/186384/review/warioware-get-it-together-la-recensione",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 80,
+              "url": "https://www.impulsegamer.com/warioware-get-it-together-nintendo-switch-review/",
+              "date": "2021-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 65,
+              "url": "https://www.jeuxvideo.com/test/1457272/warioware-get-it-together-fun-mais-un-virage-multi-pas-toujours-convaincant.htm",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LEVEL (Czech Republic)",
+              "score": 60,
+              "url": "",
+              "date": "2022-02-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Launcher (The Washington Post)",
+              "score": 90,
+              "url": "https://www.washingtonpost.com/video-games/reviews/warioware-get-it-together-review/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG",
+              "score": 85,
+              "url": "https://www.millenium.org/test/381868.html",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG Spain",
+              "score": 80,
+              "url": "https://www.millenium.gg/analisis/40915.html",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 75,
+              "url": "https://as.com/meristation/2021/09/08/analisis/1631106012_125701.html",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Merlin'in Kazanı (Turkey)",
+              "score": 80,
+              "url": "http://www.merlininkazani.com/Warioware_Get_it_Together-oyun_inceleme-118551p1.html",
+              "date": "2021-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 60,
+              "url": "https://metro.co.uk/2021/09/08/warioware-get-it-together-review-buyer-beware-15225152/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/warioware-get-it-together-recensione.html",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NME",
+              "score": 60,
+              "url": "https://www.nme.com/reviews/game-reviews/warioware-get-it-together-review-a-welcome-return-with-a-so-so-character-quirk-3045380",
+              "date": "2021-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 87,
+              "url": "https://www.nintenderos.com/2021/09/analisis-warioware-get-it-together-para-nintendo-switch/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 90,
+              "url": "https://www.nintendoenthusiast.com/warioware-get-it-together-review-for-nintendo-switch-microgame-mayhem-is-back/",
+              "date": "2021-09-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 75,
+              "url": "",
+              "date": "2021-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 90,
+              "url": "https://www.nintendo-insider.com/warioware-get-it-together-review/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/warioware_get_it_together",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 55,
+              "url": "http://www.nintendoworldreport.com/review/58415/warioware-get-it-together-switch-review",
+              "date": "2021-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PCMag",
+              "score": 80,
+              "url": "https://www.pcmag.com/reviews/warioware-get-it-together-for-nintendo-switch",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 70,
+              "url": "https://play.co.rs/2021/10/04/warioware-get-it-together-review/",
+              "date": "2021-10-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlaySense",
+              "score": 60,
+              "url": "https://playsense.nl/462958/review-warioware-get-it-together/",
+              "date": "2021-09-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Tactics",
+              "score": 80,
+              "url": "https://www.pockettactics.com/warioware-get-it-together/review",
+              "date": "2021-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Power Unlimited",
+              "score": 61,
+              "url": "https://pu.nl/artikelen/review/warioware-get-it-together-review-veel-content-te-weinig-lol/",
+              "date": "2021-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-warioware-get-it-together-nintendo-switch/",
+              "date": "2021-10-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 80,
+              "url": "https://screenrant.com/warioware-get-it-together-game-review/",
+              "date": "2021-09-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 70,
+              "url": "https://www.shacknews.com/article/126619/warioware-get-it-together-review-some-assembly-required",
+              "date": "2021-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shindig",
+              "score": 80,
+              "url": "https://www.shindig.nz/games/game-review/warioware-get-it-together-switch/",
+              "date": "2021-09-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Siliconera",
+              "score": 70,
+              "url": "https://www.siliconera.com/review-warioware-get-it-together-is-a-good-time-and-a-bad-omen/",
+              "date": "2021-09-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Slant Magazine",
+              "score": 80,
+              "url": "https://www.slantmagazine.com/games/warioware-get-it-together-review/",
+              "date": "2021-09-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 83,
+              "url": "https://www.spaziogames.it/warioware-get-it-together-recensione/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 70,
+              "url": "https://www.starbit.pt/2021/10/28/warioware-get-it-together-analise/",
+              "date": "2021-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "https://switchplayer.net/2021/10/04/warioware-get-it-together-review/",
+              "date": "2021-10-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 80,
+              "url": "https://www.thegamesmachine.it/warioware-get-it-together-switch/warioware-get-it-together-recensione/",
+              "date": "2021-09-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 70,
+              "url": "https://www.thegamer.com/warioware-get-it-together-review/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 80,
+              "url": "https://www.thesixthaxis.com/2021/09/08/warioware-get-it-together-review-nintendo-switch/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TierraGamer",
+              "score": 70,
+              "url": "https://tierragamer.com/resena-warioware-get-it-together/",
+              "date": "2021-09-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 80,
+              "url": "https://toucharcade.com/2021/09/14/switcharcade-round-up-reviews-featuring-warioware-get-it-together-and-espgaluda-ii-plus-the-latest-releases-and-sales/",
+              "date": "2021-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 80,
+              "url": "https://www.trustedreviews.com/reviews/warioware-get-it-together",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 70,
+              "url": "https://twinfinite.net/2021/09/warioware-get-it-together-review-ware-frenzy-meets-fun",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 89,
+              "url": "https://switch-brasil.com/analise-warioware-get-it-together/",
+              "date": "2021-10-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VG247",
+              "score": 80,
+              "url": "https://www.vg247.com/warioware-get-it-together-review",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VGC",
+              "score": 60,
+              "url": "https://www.videogameschronicle.com/review/warioware-get-it-together/",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 80,
+              "url": "https://vandal.elespanol.com/análisis/switch/warioware-get-it-together/102452/1#p-83",
+              "date": "2021-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vgames",
+              "score": 80,
+              "url": "https://www.vgames.co.il/article/28239.html",
+              "date": "2021-09-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 83,
+              "url": "https://videochums.com/review/warioware-get-it-together",
+              "date": "2021-09-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 80,
+              "url": "https://www.vooks.net/warioware-get-it-together-review/",
+              "date": "2021-09-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 73,
+              "url": "https://wccftech.com/review/warioware-get-it-together-warios-gamedev-woes/",
+              "date": "2021-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 90,
+              "url": "https://www.well-played.com.au/warioware-get-it-together-review/",
+              "date": "2021-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "iMore",
+              "score": 70,
+              "url": "https://www.imore.com/warioware-get-it-together-review",
+              "date": "2021-09-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 90
         },
         "user": {
-          "score": 7.6,
+          "score": 7.56,
           "scale": 10,
           "sources": [
             {
@@ -137563,14 +138438,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/warioware_get_it_together",
               "platform": "Nintendo Switch",
               "weight": 17.663521732655695,
-              "normalized": 7.6,
-              "checked": "2026-11-02T18:46:28.745661+00:00"
+              "normalized": 7.6
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.5,
+              "scale": 10,
+              "count": 194,
+              "url": "https://www.metacritic.com/game/warioware-get-it-together/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 13.92838827718412,
+              "normalized": 7.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:46.616128+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 95,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:45:53.460218+00:00"
       },
       "requirements": {
         "image": true,
@@ -137586,7 +138475,11 @@
       },
       "basics_attempted": "2026-11-02T22:54:46.616128+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/warioware-get-it-together-switch/",
@@ -137635,29 +138528,744 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:45:56.573636+00:00",
+      "full_version": 7
     },
     "Switch:14012": {
       "title": "WarioWare: Move It!",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 75.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/warioware-move-it",
+              "name": "App Trigger",
+              "score": 90,
+              "url": "https://apptrigger.com/2023/11/14/warioware-move-it-review/",
+              "date": "2023-11-15",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 85,
+              "url": "https://atomix.vg/review-warioware-move-it/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 60,
+              "url": "https://attackofthefanboy.com/reviews/warioware-move-it-review/",
+              "date": "2023-11-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "But Why Tho?",
+              "score": 80,
+              "url": "https://butwhytho.net/2023/11/warioware-move-it-review/",
+              "date": "2023-11-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 70,
+              "url": "https://www.cgmagonline.com/review/game/warioware-move-it-nintendo-switch/",
+              "date": "2023-11-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 85,
+              "url": "https://cogconnected.com/review/warioware-move-it-review/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Checkpoint Gaming",
+              "score": 85,
+              "url": "https://checkpointgaming.net/reviews/2023/11/warioware-move-it-review-a-smooth-successor/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/6901/1/warioware-move-it-nintendo-switch.html",
+              "date": "2023-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 70,
+              "url": "https://destructoid.com/reviews/warioware-move-it/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Dexerto",
+              "score": 80,
+              "url": "https://www.dexerto.com/gaming/warioware-move-it-review-nintendo-party-game-is-on-top-form-2360968/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Trends",
+              "score": 70,
+              "url": "https://www.digitaltrends.com/gaming/warioware-move-it-review-nintendo-switch/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 50,
+              "url": "https://www.digitallydownloaded.net/2023/11/review-warioware-move-it-nintendo-switch.html",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 70,
+              "url": "",
+              "date": "2023-11-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer",
+              "score": 60,
+              "url": "https://www.eurogamer.net/warioware-move-it-review",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Poland",
+              "score": 70,
+              "url": "https://www.eurogamer.pl/warioware-move-it-recenzja",
+              "date": "2023-11-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 85,
+              "url": "https://www.everyeye.it/articoli/recensione-warioware-move-it-migliori-party-game-switch-62702.html",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 70,
+              "url": "https://www.games.ch/wario-ware-move-it/test/review-l5ji/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMINGbible",
+              "score": 90,
+              "url": "https://www.gamingbible.com/reviews/warioware-move-it-review-676300-20231101",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GGRecon",
+              "score": 80,
+              "url": "https://www.ggrecon.com/reviews/warioware-move-it-switch-review/",
+              "date": "2023-11-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 83,
+              "url": "https://www.gameinformer.com/review/warioware-move-it/back-to-form",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 90,
+              "url": "https://www.gameover.gr/2023/11/03/warioware-move-it-review/",
+              "date": "2023-11-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSkinny",
+              "score": 80,
+              "url": "https://www.gameskinny.com/reviews/warioware-move-it-review-weird-wacky-fun-for-all/",
+              "date": "2023-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 60,
+              "url": "https://www.gamespot.com/reviews/warioware-move-it-review-i-am-merely-okay-to-move-it-move-it/1900-6418146/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamepressure",
+              "score": 80,
+              "url": "https://www.gamepressure.com/editorials/reviews/warioware-move-it-review-nintendo-switch/z96b1",
+              "date": "2023-11-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamereactor Finland",
+              "score": 90,
+              "url": "https://www.gamereactor.fi/warioware-move-it-on-minipelikokoelmana-piristys-syksyyn-1113433/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamereactor Spain",
+              "score": 80,
+              "url": "https://www.gamereactor.es/warioware-move-it-1052733/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamereactor UK",
+              "score": 50,
+              "url": "https://www.gamereactor.eu/warioware-move-it-1321333/ ",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesHub",
+              "score": 80,
+              "url": "https://www.gameshub.com/news/reviews/warioware-move-it-switch-review-2632177/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 80,
+              "url": "https://www.gamesradar.com/warioware-move-it-review/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 60,
+              "url": "https://gamingtrend.com/feature/reviews/warioware-move-it-review-detrimental-discombobulation/",
+              "date": "2023-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gfinity",
+              "score": 80,
+              "url": "https://www.gfinityesports.com/reviews/warioware-move-it/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "https://www.godisageek.com/reviews/warioware-move-it-review/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 60,
+              "url": "https://hardcoregamer.com/reviews/review-warioware-move-it/478292/",
+              "date": "2023-11-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 85,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-warioware-move-it-nintendo-switch-1327480",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 70,
+              "url": "https://www.ign.com/articles/warioware-move-it-review",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Adria",
+              "score": 70,
+              "url": "https://adria.ign.com/warioware-move-it/41960/review/warioware-move-it-recenzija",
+              "date": "2023-11-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN France",
+              "score": 60,
+              "url": "https://fr.ign.com/warioware-move-it/67505/review/test-wario-ware-move-it-2smooth-2moves",
+              "date": "2023-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 87,
+              "url": "https://it.ign.com/warioware-move-it/206480/review/warioware-move-it-la-recensione",
+              "date": "2023-11-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Portugal",
+              "score": 70,
+              "url": "https://pt.ign.com/warioware-move-it/132720/review/warioware-move-it-analise ",
+              "date": "2023-11-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 80,
+              "url": "https://es.ign.com/warioware-move-it/195727/review/analisis-de-warioware-move-it-diversion-sin-limites",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 78,
+              "url": "https://www.impulsegamer.com/warioware-move-it-review/",
+              "date": "2023-12-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Inverse",
+              "score": 80,
+              "url": "https://www.inverse.com/gaming/warioware-move-it-review-nintendo-switch",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 70,
+              "url": "https://www.jeuxvideo.com/test/1816703/ce-jeu-nintendo-switch-est-ideal-pour-jouer-en-famille-mais-surtout-pas-en-presence-de-votre-nouveau-crush-notre-test-de-warioware-move-it.htm",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LEVEL (Czech Republic)",
+              "score": 80,
+              "url": "",
+              "date": "2024-01-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 78,
+              "url": "https://www.levelup.com/Nintendo-Switch/juegos/749634/WarioWare-Move-It/review",
+              "date": "2023-11-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MGG",
+              "score": 70,
+              "url": "https://www.millenium.org/test/408263.html",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 80,
+              "url": "https://as.com/meristation/analisis/analisis-de-warioware-move-it-el-rey-del-salon-para-nintendo-switch-en-este-2023-n/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 80,
+              "url": "https://metro.co.uk/2023/11/01/warioware-move-it-review-party-like-its-2006-19755979/?ico=mosaic_gaming",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/warioware-move-it-recensione.html",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "My Nintendo News",
+              "score": 80,
+              "url": "https://mynintendonews.com/2023/11/01/review-warioware-move-it/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NPR",
+              "score": 80,
+              "url": "https://www.npr.org/2023/11/01/1209770371/warioware-move-it",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 87,
+              "url": "https://www.nintenderos.com/2023/11/analisis-warioware-move-it-nintendo-switch",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/warioware-move-it-review/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "https://www.nintendolife.com/reviews/nintendo-switch/warioware-move-it",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenduo",
+              "score": 78,
+              "url": "https://nintenduo.com/analisis-warioware-move-it-switch/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 85,
+              "url": "https://noisypixel.net/warioware-move-it-review/",
+              "date": "2023-11-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PC Games",
+              "score": 90,
+              "url": "https://www.pcgames.de/WarioWare-Move-It-Spiel-74415/Tests/nintendo-wario-ware-super-mario-switch-party-mikrospiele-microgames-compilation-1432734/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PCMag",
+              "score": 70,
+              "url": "https://www.pcmag.com/reviews/warioware-move-it",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 80,
+              "url": "https://play.co.rs/2023/12/15/razmrdajte-palceve-warioware-move-it-recenzija/",
+              "date": "2023-12-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlaySense",
+              "score": 75,
+              "url": "https://playsense.nl/560719/review-warioware-move-it/",
+              "date": "2023-11-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 100,
+              "url": "https://www.player2.net.au/2023/11/warioware-move-it-fast-moving-fun/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Tactics",
+              "score": 70,
+              "url": "https://www.pockettactics.com/warioware-move-it/review",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 90,
+              "url": "https://press-start.com.au/reviews/nintendo-switch/2023/11/02/warioware-move-it-review",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 85,
+              "url": "https://purenintendo.com/review-warioware-move-it-nintendo-switch/",
+              "date": "2023-12-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SECTOR.sk",
+              "score": 75,
+              "url": "https://www.sector.sk/recenzia/39021/warioware-move-it.htm",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 80,
+              "url": "https://screenrant.com/warioware-move-it-review-switch/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 70,
+              "url": "https://www.shacknews.com/article/137606/warioware-move-it-review-score",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Siliconera",
+              "score": 70,
+              "url": "https://www.siliconera.com/review-warioware-move-it-is-fun-but-with-motion-control-drawbacks/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Slant Magazine",
+              "score": 50,
+              "url": "https://www.slantmagazine.com/games/warioware-move-it-review/",
+              "date": "2023-11-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 84,
+              "url": "https://www.spaziogames.it/articoli/warioware-move-it-recensione",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 80,
+              "url": "https://www.starbit.pt/2024/08/30/warioware-move-it-analise/",
+              "date": "2024-08-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 75,
+              "url": "https://stevivor.com/reviews/warioware-move-it-review-did-they-like-to-move-it-move-it/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TechRadar Gaming",
+              "score": 80,
+              "url": "https://www.techradar.com/gaming/nintendo-switch/warioware-move-it-review-innovative-and-ambitious",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 85,
+              "url": "https://www.thegamesmachine.it/warioware-get-it-together-switch/wario-ware-move-it-recensione/",
+              "date": "2023-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 70,
+              "url": "https://www.thegamer.com/warioware-move-it-review/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 70,
+              "url": "https://www.thesixthaxis.com/2023/11/01/warioware-move-it-review/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TierraGamer",
+              "score": 75,
+              "url": "https://tierragamer.com/resenas/videojuegos/resena-warioware-move-it-nintendo-switch/",
+              "date": "2023-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 70,
+              "url": "https://toucharcade.com/2023/11/13/mgs-master-collection-switch-review-risk-of-rain-returns-online-star-ocean-second-story-vs-ps5/",
+              "date": "2023-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 80,
+              "url": "https://twinfinite.net/reviews/warioware-move-it-review/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 80,
+              "url": "https://universonintendo.com/analise-warioware-move-it/",
+              "date": "2023-11-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VG247",
+              "score": 60,
+              "url": "https://www.vg247.com/warioware-move-it-review",
+              "date": "2023-11-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VGC",
+              "score": 60,
+              "url": "https://www.videogameschronicle.com/review/warioware-move-it/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 80,
+              "url": "https://vandal.elespanol.com/analisis/switch/warioware-move-it/143854#p-83",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 75,
+              "url": "https://videochums.com/review/warioware-move-it",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 70,
+              "url": "https://www.vooks.net/warioware-move-it-review/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 55,
+              "url": "https://wccftech.com/review/warioware-move-it/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 60,
+              "url": "https://wegotthiscovered.com/reviews/review-warioware-move-it-is-more-of-an-exercise-in-frustration-than-actual-exercise/",
+              "date": "2023-11-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "WellPlayed",
+              "score": 85,
+              "url": "https://www.well-played.com.au/warioware-move-it-review/",
+              "date": "2023-11-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 75,
+              "url": "https://worthplaying.com/article/2023/11/7/reviews/139669-switch-review-warioware-move-it/",
+              "date": "2023-11-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 70,
+              "url": "https://www.xgn.nl/review/warioware-move-it-review",
+              "date": "2023-11-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 90
         },
         "user": {
-          "score": 7.4,
+          "score": 7.61,
           "scale": 10,
           "sources": [
             {
@@ -137668,14 +139276,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/warioware_move_it",
               "platform": "Nintendo Switch",
               "weight": 13.674794331177344,
-              "normalized": 7.4,
-              "checked": "2026-11-02T18:46:28.745880+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.9,
+              "scale": 10,
+              "count": 93,
+              "url": "https://www.metacritic.com/game/warioware-move-it/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 9.643650760992955,
+              "normalized": 7.9
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:46.616381+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 92,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:46:03.131893+00:00"
       },
       "requirements": {
         "image": true,
@@ -137691,7 +139313,12 @@
       },
       "basics_attempted": "2026-11-02T22:54:46.616381+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/warioware-move-it-switch/",
@@ -137740,7 +139367,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:46:05.335280+00:00",
+      "full_version": 7
     },
     "PS5:12624": {
       "title": "Watcher Chronicles",
@@ -253746,15 +255375,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.5,
-              "count": 14,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.5,
               "scale": 5,
-              "source": "PSN",
+              "count": 14,
               "url": "https://store.playstation.com/pt-pt/product/UP2005-PPSA34478_00-WAKEUPLIA0000000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:46:10.685788+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 3.7416573867739413,
               "normalized": 9.0
             }
@@ -253762,7 +255389,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:46:07.437823+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:45:34.457618+00:00"
       },
       "requirements": {
         "image": true,
@@ -253804,7 +255438,11 @@
       },
       "basics_attempted": "2026-11-02T18:46:07.437823+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -253820,7 +255458,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:45:34.641438+00:00",
+      "full_version": 7
     },
     "Switch:18644": {
       "title": "Wake Up, Lia!",
@@ -253832,10 +255472,11 @@
           "sources": [
             {
               "name": "Nindie Spotlight",
-              "score": 76.0,
-              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=wake-up-lia-switch",
+              "score": 76,
+              "url": "https://nindiespotlight.com/game_profile.cfm?game=wake-up-lia-switch",
+              "date": "2026-07-30",
               "platform": "Nintendo Switch",
-              "via": "Direct console-specific review"
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
@@ -253848,7 +255489,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:31.982825+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:45:20.968253+00:00"
       },
       "requirements": {
         "image": true,
@@ -253864,7 +255512,13 @@
       },
       "basics_attempted": "2026-11-02T22:54:31.982825+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/wake-up-lia-switch/",
@@ -253913,7 +255567,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:45:22.846476+00:00",
+      "full_version": 7
     },
     "PS5:18574": {
       "title": "Xeno Crisis",
@@ -285821,22 +287477,351 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 85.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/wargroove",
+              "name": "3DJuegos",
+              "score": 95,
+              "url": "https://www.3djuegos.com/juegos/analisis/28827/0/wargroove/",
+              "date": "2019-02-07",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "AusGamers",
+              "score": 78,
+              "url": "https://www.ausgamers.com/games/wargroove/review/",
+              "date": "2019-02-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 85,
+              "url": "https://www.cgmagonline.com/reviews/wargroove-switch-review/",
+              "date": "2019-01-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 90,
+              "url": "https://cogconnected.com/review/wargroove-review/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 85,
+              "url": "https://www.criticalhit.net/review/wargroove/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 90,
+              "url": "https://www.destructoid.com/review-wargroove-540869.phtml",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "EGM",
+              "score": 85,
+              "url": "http://www.egmnow.com/articles/reviews/wargroove-review/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 60,
+              "url": "",
+              "date": "2019-02-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 93,
+              "url": "https://www.gameinformer.com/review/wargroove/inheriting-the-throne",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Revolution",
+              "score": 80,
+              "url": "https://www.gamerevolution.com/review/488107-wargroove-review-ps4-switch-pc-xbox",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCrate",
+              "score": 85,
+              "url": "https://www.gamecrate.com/reviews/review-wargroove-much-more-just-advance-wars-successor/22088",
+              "date": "2019-01-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 90,
+              "url": "https://www.gamespace.com/reviews/wargroove-review-nintendo-switch/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/wargroove-review-advanced-wars/1900-6417077/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 80,
+              "url": "http://www.gameblog.fr/tests/3296-wargroove-xb1-switch-ps4-pc",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 95,
+              "url": "https://www.godisageek.com/reviews/wargroove-review/",
+              "date": "2019-01-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 85,
+              "url": "https://www.ign.com/articles/2019/01/30/wargroove-review",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 89,
+              "url": "https://it.ign.com/wargroove-nintendo-switch/150688/review/wargroove-la-recensione",
+              "date": "2019-02-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 89,
+              "url": "https://es.ign.com/wargroove-nintendo-switch/145043/review/analisis-de-wargroove-para-nintendo-switch-xbox-one-y-pc",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 90,
+              "url": "http://www.jeuxvideo.com/test/1021144/wargroove-1-2-0-le-tactical-genial-de-chucklefish-games.htm",
+              "date": "2019-03-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 80,
+              "url": "https://as.com/meristation/2019/01/29/analisis/1548790899_639102.html",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 80,
+              "url": "https://metro.co.uk/2019/01/30/wargroove-review-advance-wars-indie-edition-8414540/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 82,
+              "url": "https://multiplayer.it/recensioni/wargroove-recensione.html",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 90,
+              "url": "https://www.nintenderos.com/2019/01/analisis-wargroove/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 90,
+              "url": "https://www.nintendoenthusiast.com/2019/02/03/wargroove-review-nintendo-switch/",
+              "date": "2019-02-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 90,
+              "url": "",
+              "date": "2019-08-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/wargroove",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 95,
+              "url": "http://www.nintendoworldreport.com/review/49533/wargroove-switch-review",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 90,
+              "url": "https://www.pocketgamer.com/articles/079880/wargroove-review/",
+              "date": "2019-02-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 80,
+              "url": "https://www.shacknews.com/article/109706/wargroove-review-stuck-in-the-groove",
+              "date": "2019-02-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 83,
+              "url": "https://www.spaziogames.it/wargroove-quando-la-guerra-diventa-arte-in-pixel/",
+              "date": "2019-02-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 90,
+              "url": "http://switchplayer.net/2019/02/06/wargroove/",
+              "date": "2019-02-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Telegraph",
+              "score": 60,
+              "url": "https://www.telegraph.co.uk/gaming/features/wargroove-review-ambitious-advance-wars-tribute-little-rough/",
+              "date": "2019-02-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Daily Dot",
+              "score": 90,
+              "url": "https://www.dailydot.com/parsec/wargroove-review/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Sydney Morning Herald",
+              "score": 90,
+              "url": "https://www.smh.com.au/technology/wargroove-review-superb-strategy-near-limitless-potential-20190212-p50x5s.html",
+              "date": "2019-02-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 90,
+              "url": "https://www.thesixthaxis.com/2019/01/30/wargroove-review/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 70,
+              "url": "https://www.trustedreviews.com/reviews/wargroove",
+              "date": "2019-02-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 90,
+              "url": "https://twinfinite.net/2019/01/wargroove-review/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "USgamer",
+              "score": 80,
+              "url": "https://www.usgamer.net/articles/wargroove-review",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 95,
+              "url": "https://switch-brasil.com/analise-wargroove/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 85,
+              "url": "https://vandal.elespanol.com/analisis/switch/wargroove/46523#p-83",
+              "date": "2019-01-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 90,
+              "url": "https://www.vooks.net/wargroove-switch-review/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 85,
+              "url": "https://wccftech.com/review/wargroove-advance-medieval-wars/",
+              "date": "2019-01-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 42
         },
         "user": {
-          "score": 7.8,
+          "score": 7.62,
           "scale": 10,
           "sources": [
             {
@@ -285847,14 +287832,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/wargroove",
               "platform": "Nintendo Switch",
               "weight": 17.233687939614086,
-              "normalized": 7.800000000000001,
-              "checked": "2026-11-02T18:46:09.510862+00:00"
+              "normalized": 7.800000000000001
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 211,
+              "url": "https://www.metacritic.com/game/wargroove/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 14.52583904633395,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:31.983611+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 47,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:45:48.303210+00:00"
       },
       "requirements": {
         "image": true,
@@ -285870,7 +287869,11 @@
       },
       "basics_attempted": "2026-11-02T22:54:31.983611+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/wargroove-switch/",
@@ -285919,7 +287922,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:45:54.613447+00:00",
+      "full_version": 7
     },
     "Switch:5207": {
       "title": "Warriors Orochi 4",
@@ -328658,15 +330663,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.87,
-              "count": 4223,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.87,
               "scale": 5,
-              "source": "PSN",
+              "count": 4223,
               "url": "https://store.playstation.com/pt-pt/product/EP4008-PPSA01445_00-WHCBSIEE00000000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:46:32.167098+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 7.74
             }
@@ -328674,7 +330677,16 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:46:28.745422+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:45:19.186124+00:00"
       },
       "requirements": {
         "image": true,
@@ -328716,7 +330728,11 @@
       },
       "basics_attempted": "2026-11-02T18:46:28.745422+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No published overall review score",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -328732,7 +330748,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:45:20.558931+00:00",
+      "full_version": 7
     },
     "Switch:6715": {
       "title": "Working Zombies",
@@ -414121,15 +416139,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.2,
-              "count": 295,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.2,
               "scale": 5,
-              "source": "PSN",
+              "count": 295,
               "url": "https://store.playstation.com/pt-pt/product/EP8922-PPSA05662_00-2968693232769419",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:46:31.002369+00:00",
-              "platform": "PSN · PS5",
               "weight": 17.175564037317667,
               "normalized": 8.4
             }
@@ -414137,7 +416153,16 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:46:28.744593+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:45:26.572955+00:00"
       },
       "requirements": {
         "image": true,
@@ -414179,7 +416204,11 @@
       },
       "basics_attempted": "2026-11-02T18:46:28.744593+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -414195,7 +416224,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:45:26.926011+00:00",
+      "full_version": 7
     },
     "Switch:9778": {
       "title": "Warhammer 40,000: Shootas, Blood & Teef",
@@ -414223,7 +416254,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:33.324286+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:45:40.790567+00:00"
       },
       "requirements": {
         "image": true,
@@ -414240,7 +416281,12 @@
       "basics_attempted": "2026-11-02T22:54:33.324286+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -414290,7 +416336,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:45:42.865122+00:00",
+      "full_version": 7
     },
     "Switch:7083": {
       "title": "Cannibal Cuisine",
