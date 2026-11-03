@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T00:37:22.368376+00:00",
+  "updated": "2026-11-03T00:39:09.212104+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
     "ready": 1960,
     "missing_image": 109,
-    "missing_store": 293,
+    "missing_store": 283,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -145902,11 +145902,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:59:28.878370+00:00"
+        "attempted": "2026-11-03T00:37:26.256584+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -145914,12 +145914,14 @@
         "source": "https://www.nintendo.com/us/store/products/buildest-switch/",
         "checked": "2026-11-02T21:59:37.890618+00:00"
       },
-      "basics_attempted": "2026-11-02T21:59:28.878370+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:37:26.256584+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:26:11.265062+00:00",
       "store_evidence": [
@@ -145929,7 +145931,100 @@
           "checked": "2026-11-02T21:59:37.890302+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Buildest-2920791.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:37:26.651395+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Buildest"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:37:26.651597+00:00",
+              "next_attempt": "2026-11-04T00:37:26.651597+00:00",
+              "revision": "8c10f1581d4a95c9:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:37:26.651597+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Buildest-2920791.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Buildest-2920791.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:37:31.871941+00:00",
+              "next_attempt": "2026-11-04T00:37:31.871941+00:00",
+              "revision": "8c10f1581d4a95c9:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/buildest",
+                "https://www.nintendolife.com/games/nintendo-switch/buildest"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/buildest"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:37:32.203124+00:00",
+              "next_attempt": "2026-11-04T00:37:32.203124+00:00",
+              "revision": "8c10f1581d4a95c9:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=buildest-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=buildest-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:37:34.630076+00:00",
+              "next_attempt": "2026-11-04T00:37:34.630076+00:00",
+              "revision": "8c10f1581d4a95c9:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/buildest/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/buildest/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/buildest/"
+              ],
+              "url": "https://www.metacritic.com/game/buildest/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:37:35.950797+00:00",
+              "next_attempt": "2026-11-04T00:37:35.950797+00:00",
+              "revision": "8c10f1581d4a95c9:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Buildest&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Buildest&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:37:35.950926+00:00",
+              "next_attempt": "2026-11-03T01:37:35.950926+00:00",
+              "revision": "8c10f1581d4a95c9:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:37:35.950954+00:00",
+              "next_attempt": "2026-11-03T01:37:35.950954+00:00",
+              "revision": "8c10f1581d4a95c9:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:18073": {
       "title": "Bun Buns",
@@ -145949,11 +146044,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:59:28.879008+00:00"
+        "attempted": "2026-11-03T00:37:26.256735+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -145961,12 +146056,14 @@
         "source": "https://www.nintendo.com/us/store/products/bun-buns-switch/",
         "checked": "2026-11-02T21:59:36.886545+00:00"
       },
-      "basics_attempted": "2026-11-02T21:59:28.879008+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:37:26.256735+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:25:59.794669+00:00",
       "store_evidence": [
@@ -145976,7 +146073,100 @@
           "checked": "2026-11-02T21:59:36.886216+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bun-Buns-3051102.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:37:27.599189+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Bun Buns"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:37:27.599399+00:00",
+              "next_attempt": "2026-11-04T00:37:27.599399+00:00",
+              "revision": "0a126e6f6af201ec:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:37:27.599399+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bun-Buns-3051102.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bun-Buns-3051102.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:16.966595+00:00",
+              "next_attempt": "2026-11-04T00:38:16.966595+00:00",
+              "revision": "0a126e6f6af201ec:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/bun_buns",
+                "https://www.nintendolife.com/games/nintendo-switch/bun_buns"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/bun_buns"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:17.455423+00:00",
+              "next_attempt": "2026-11-04T00:38:17.455423+00:00",
+              "revision": "0a126e6f6af201ec:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bun-buns-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bun-buns-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:22.268675+00:00",
+              "next_attempt": "2026-11-04T00:38:22.268675+00:00",
+              "revision": "0a126e6f6af201ec:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/bun-buns/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/bun-buns/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/bun-buns/"
+              ],
+              "url": "https://www.metacritic.com/game/bun-buns/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:23.451316+00:00",
+              "next_attempt": "2026-11-04T00:38:23.451316+00:00",
+              "revision": "0a126e6f6af201ec:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bun+Buns&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bun+Buns&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:23.451463+00:00",
+              "next_attempt": "2026-11-03T01:38:23.451463+00:00",
+              "revision": "0a126e6f6af201ec:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:23.451492+00:00",
+              "next_attempt": "2026-11-03T01:38:23.451492+00:00",
+              "revision": "0a126e6f6af201ec:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:17477": {
       "title": "Chicken Run: Eggstraction",
@@ -146196,11 +146386,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:59:28.879332+00:00"
+        "attempted": "2026-11-03T00:37:26.257188+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -146208,12 +146398,14 @@
         "source": "https://www.nintendo.com/us/store/products/cinnabunny-switch/",
         "checked": "2026-11-02T21:59:33.527946+00:00"
       },
-      "basics_attempted": "2026-11-02T21:59:28.879332+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:37:26.257188+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:27:54.198821+00:00",
       "store_evidence": [
@@ -146223,7 +146415,100 @@
           "checked": "2026-11-02T21:59:33.527627+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cinnabunny-2985524.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:37:30.961299+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Cinnabunny"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:37:30.961488+00:00",
+              "next_attempt": "2026-11-04T00:37:30.961488+00:00",
+              "revision": "c0895f6cdad1795d:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:37:30.961488+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cinnabunny-2985524.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cinnabunny-2985524.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:31.862098+00:00",
+              "next_attempt": "2026-11-04T00:38:31.862098+00:00",
+              "revision": "c0895f6cdad1795d:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/cinnabunny",
+                "https://www.nintendolife.com/games/nintendo-switch/cinnabunny"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/cinnabunny"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:32.210914+00:00",
+              "next_attempt": "2026-11-04T00:38:32.210914+00:00",
+              "revision": "c0895f6cdad1795d:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=cinnabunny-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cinnabunny-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:34.031883+00:00",
+              "next_attempt": "2026-11-04T00:38:34.031883+00:00",
+              "revision": "c0895f6cdad1795d:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/cinnabunny/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/cinnabunny/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/cinnabunny/"
+              ],
+              "url": "https://www.metacritic.com/game/cinnabunny/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:35.667633+00:00",
+              "next_attempt": "2026-11-04T00:38:35.667633+00:00",
+              "revision": "c0895f6cdad1795d:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Cinnabunny&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Cinnabunny&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:35.667773+00:00",
+              "next_attempt": "2026-11-03T01:38:35.667773+00:00",
+              "revision": "c0895f6cdad1795d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:35.667801+00:00",
+              "next_attempt": "2026-11-03T01:38:35.667801+00:00",
+              "revision": "c0895f6cdad1795d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:17806": {
       "title": "Cloudberry Kingdom",
@@ -146325,11 +146610,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:01:11.890680+00:00"
+        "attempted": "2026-11-03T00:37:35.951074+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -146337,12 +146622,14 @@
         "source": "https://www.nintendo.com/us/store/products/cloudberry-kingdom-switch/",
         "checked": "2026-11-02T22:01:14.705987+00:00"
       },
-      "basics_attempted": "2026-11-02T22:01:11.890680+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:37:35.951074+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:28:00.555686+00:00",
       "store_evidence": [
@@ -146352,7 +146639,100 @@
           "checked": "2026-11-02T22:01:14.705677+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cloudberry-Kingdom-3010031.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:37:36.215002+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Cloudberry Kingdom"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:37:36.215198+00:00",
+              "next_attempt": "2026-11-04T00:37:36.215198+00:00",
+              "revision": "d3c692d896e4f47c:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:37:36.215198+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cloudberry-Kingdom-3010031.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cloudberry-Kingdom-3010031.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:51.862796+00:00",
+              "next_attempt": "2026-11-04T00:38:51.862796+00:00",
+              "revision": "d3c692d896e4f47c:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/cloudberry_kingdom",
+                "https://www.nintendolife.com/games/nintendo-switch/cloudberry_kingdom"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/cloudberry_kingdom"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:52.196876+00:00",
+              "next_attempt": "2026-11-04T00:38:52.196876+00:00",
+              "revision": "d3c692d896e4f47c:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=cloudberry-kingdom-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cloudberry-kingdom-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:39:06.524830+00:00",
+              "next_attempt": "2026-11-04T00:39:06.524830+00:00",
+              "revision": "d3c692d896e4f47c:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/cloudberry-kingdom/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/cloudberry-kingdom/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/cloudberry-kingdom/"
+              ],
+              "url": "https://www.metacritic.com/game/cloudberry-kingdom/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:39:08.234328+00:00",
+              "next_attempt": "2026-11-04T00:39:08.234328+00:00",
+              "revision": "d3c692d896e4f47c:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Cloudberry+Kingdom&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Cloudberry+Kingdom&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:39:08.234475+00:00",
+              "next_attempt": "2026-11-03T01:39:08.234475+00:00",
+              "revision": "d3c692d896e4f47c:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:39:08.234509+00:00",
+              "next_attempt": "2026-11-03T01:39:08.234509+00:00",
+              "revision": "d3c692d896e4f47c:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:17505": {
       "title": "Color Breakers 2",
@@ -146372,11 +146752,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:01:11.891058+00:00"
+        "attempted": "2026-11-03T00:38:23.451602+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -146384,12 +146764,14 @@
         "source": "https://www.nintendo.com/us/store/products/color-breakers-2-switch/",
         "checked": "2026-11-02T22:01:16.315148+00:00"
       },
-      "basics_attempted": "2026-11-02T22:01:11.891058+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:38:23.451602+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:28:06.241448+00:00",
       "store_evidence": [
@@ -146399,7 +146781,100 @@
           "checked": "2026-11-02T22:01:16.314841+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Color-Breakers-2-2920852.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:38:23.710308+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Color Breakers 2"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:38:23.710536+00:00",
+              "next_attempt": "2026-11-04T00:38:23.710536+00:00",
+              "revision": "fc4befff4e27c108:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:38:23.710536+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Color-Breakers-2-2920852.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Color-Breakers-2-2920852.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:39:01.971899+00:00",
+              "next_attempt": "2026-11-04T00:39:01.971899+00:00",
+              "revision": "fc4befff4e27c108:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/color_breakers_2",
+                "https://www.nintendolife.com/games/nintendo-switch/color_breakers_2"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/color_breakers_2"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:39:04.984877+00:00",
+              "next_attempt": "2026-11-04T00:39:04.984877+00:00",
+              "revision": "fc4befff4e27c108:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=color-breakers-2-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=color-breakers-2-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:39:06.907395+00:00",
+              "next_attempt": "2026-11-04T00:39:06.907395+00:00",
+              "revision": "fc4befff4e27c108:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/color-breakers-2/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/color-breakers-2/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/color-breakers-2/"
+              ],
+              "url": "https://www.metacritic.com/game/color-breakers-2/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:39:09.031864+00:00",
+              "next_attempt": "2026-11-04T00:39:09.031864+00:00",
+              "revision": "fc4befff4e27c108:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Color+Breakers+2&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Color+Breakers+2&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:39:09.031966+00:00",
+              "next_attempt": "2026-11-03T01:39:09.031966+00:00",
+              "revision": "fc4befff4e27c108:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:39:09.031998+00:00",
+              "next_attempt": "2026-11-03T01:39:09.031998+00:00",
+              "revision": "fc4befff4e27c108:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:17751": {
       "title": "Crosak",
@@ -162521,11 +162996,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:59:28.879581+00:00"
+        "attempted": "2026-11-03T00:37:26.257610+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -162533,12 +163008,14 @@
         "source": "https://www.nintendo.com/us/store/products/acorn-avengers-switch/",
         "checked": "2026-11-02T21:59:37.386045+00:00"
       },
-      "basics_attempted": "2026-11-02T21:59:28.879581+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:37:26.257610+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:43:33.782100+00:00",
       "store_evidence": [
@@ -162548,7 +163025,100 @@
           "checked": "2026-11-02T21:59:37.385714+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Acorn-Avengers-3125562.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:37:33.121867+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Acorn Avengers"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:37:33.122095+00:00",
+              "next_attempt": "2026-11-04T00:37:33.122095+00:00",
+              "revision": "2a4f1d38c7794f2f:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:37:33.122095+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Acorn-Avengers-3125562.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Acorn-Avengers-3125562.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:41.884788+00:00",
+              "next_attempt": "2026-11-04T00:38:41.884788+00:00",
+              "revision": "2a4f1d38c7794f2f:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/acorn_avengers",
+                "https://www.nintendolife.com/games/nintendo-switch/acorn_avengers"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/acorn_avengers"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:42.321553+00:00",
+              "next_attempt": "2026-11-04T00:38:42.321553+00:00",
+              "revision": "2a4f1d38c7794f2f:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=acorn-avengers-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=acorn-avengers-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:55.371966+00:00",
+              "next_attempt": "2026-11-04T00:38:55.371966+00:00",
+              "revision": "2a4f1d38c7794f2f:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/acorn-avengers/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/acorn-avengers/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/acorn-avengers/"
+              ],
+              "url": "https://www.metacritic.com/game/acorn-avengers/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:56.913335+00:00",
+              "next_attempt": "2026-11-04T00:38:56.913335+00:00",
+              "revision": "2a4f1d38c7794f2f:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Acorn+Avengers&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Acorn+Avengers&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:56.913468+00:00",
+              "next_attempt": "2026-11-03T01:38:56.913468+00:00",
+              "revision": "2a4f1d38c7794f2f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:56.913498+00:00",
+              "next_attempt": "2026-11-03T01:38:56.913498+00:00",
+              "revision": "2a4f1d38c7794f2f:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18899": {
       "title": "AereA",
@@ -163223,11 +163793,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:59:28.879859+00:00"
+        "attempted": "2026-11-03T00:37:26.258284+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -163235,15 +163805,18 @@
         "source": "https://www.nintendo.com/us/store/products/apocalypse-no-switch/",
         "checked": "2026-11-02T21:59:34.585609+00:00"
       },
-      "basics_attempted": "2026-11-02T21:59:28.879859+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:37:26.258284+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
         "metacritic_critics": "HTTP Error 404: Not Found",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:46:39.331138+00:00",
       "store_evidence": [
@@ -163253,7 +163826,100 @@
           "checked": "2026-11-02T21:59:34.585298+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Apocalypse-No--3148336.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:37:28.837022+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Apocalypse ? No !"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:37:28.837253+00:00",
+              "next_attempt": "2026-11-04T00:37:28.837253+00:00",
+              "revision": "39b7701e40f7fee8:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:37:28.837253+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Apocalypse-No--3148336.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Apocalypse-No--3148336.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:21.877758+00:00",
+              "next_attempt": "2026-11-04T00:38:21.877758+00:00",
+              "revision": "39b7701e40f7fee8:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/apocalypse_no",
+                "https://www.nintendolife.com/games/nintendo-switch/apocalypse_no"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/apocalypse_no"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:22.562609+00:00",
+              "next_attempt": "2026-11-04T00:38:22.562609+00:00",
+              "revision": "39b7701e40f7fee8:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=apocalypse-no-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=apocalypse-no-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:32.707469+00:00",
+              "next_attempt": "2026-11-04T00:38:32.707469+00:00",
+              "revision": "39b7701e40f7fee8:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/apocalypse-no/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/apocalypse-no/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/apocalypse-no/"
+              ],
+              "url": "https://www.metacritic.com/game/apocalypse-no/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:34.566199+00:00",
+              "next_attempt": "2026-11-04T00:38:34.566199+00:00",
+              "revision": "39b7701e40f7fee8:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Apocalypse+%3F+No+%21&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Apocalypse+%3F+No+%21&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:34.566294+00:00",
+              "next_attempt": "2026-11-03T01:38:34.566294+00:00",
+              "revision": "39b7701e40f7fee8:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:34.566323+00:00",
+              "next_attempt": "2026-11-03T01:38:34.566323+00:00",
+              "revision": "39b7701e40f7fee8:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:18544": {
       "title": "Bloons TD 6",
@@ -163273,11 +163939,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:59:36.649714+00:00"
+        "attempted": "2026-11-03T00:37:26.259760+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -163285,12 +163951,14 @@
         "source": "https://www.nintendo.com/us/store/products/bloons-td-6-switch/",
         "checked": "2026-11-02T21:59:39.202309+00:00"
       },
-      "basics_attempted": "2026-11-02T21:59:36.649714+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:37:26.259760+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:55:43.294307+00:00",
       "store_evidence": [
@@ -163300,7 +163968,100 @@
           "checked": "2026-11-02T21:59:39.201963+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bloons-TD-6-3124686.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:37:30.014381+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Bloons TD 6"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:37:30.014566+00:00",
+              "next_attempt": "2026-11-04T00:37:30.014566+00:00",
+              "revision": "fa9af84f1a833c60:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:37:30.014566+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bloons-TD-6-3124686.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bloons-TD-6-3124686.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:26.873628+00:00",
+              "next_attempt": "2026-11-04T00:38:26.873628+00:00",
+              "revision": "fa9af84f1a833c60:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/bloons_td_6",
+                "https://www.nintendolife.com/games/nintendo-switch/bloons_td_6"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/bloons_td_6"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:29.450949+00:00",
+              "next_attempt": "2026-11-04T00:38:29.450949+00:00",
+              "revision": "fa9af84f1a833c60:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bloons-td-6-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bloons-td-6-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:32.083631+00:00",
+              "next_attempt": "2026-11-04T00:38:32.083631+00:00",
+              "revision": "fa9af84f1a833c60:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/bloons-td-6/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/bloons-td-6/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/bloons-td-6/"
+              ],
+              "url": "https://www.metacritic.com/game/bloons-td-6/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:33.475304+00:00",
+              "next_attempt": "2026-11-04T00:38:33.475304+00:00",
+              "revision": "fa9af84f1a833c60:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bloons+TD+6&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bloons+TD+6&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:33.475420+00:00",
+              "next_attempt": "2026-11-03T01:38:33.475420+00:00",
+              "revision": "fa9af84f1a833c60:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:33.475448+00:00",
+              "next_attempt": "2026-11-03T01:38:33.475448+00:00",
+              "revision": "fa9af84f1a833c60:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18652": {
       "title": "Brave Escape",
@@ -163808,11 +164569,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:00:26.862873+00:00"
+        "attempted": "2026-11-03T00:37:26.261397+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -163820,12 +164581,14 @@
         "source": "https://www.nintendo.com/us/store/products/cash-movers-switch/",
         "checked": "2026-11-02T22:00:28.380446+00:00"
       },
-      "basics_attempted": "2026-11-02T22:00:26.862873+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:37:26.261397+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:26:51.836847+00:00",
       "store_evidence": [
@@ -163835,7 +164598,101 @@
           "checked": "2026-11-02T22:00:28.380101+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cash-Movers-3122734.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:37:32.006863+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Cash Movers",
+        " Cash Movers"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:37:32.007067+00:00",
+              "next_attempt": "2026-11-04T00:37:32.007067+00:00",
+              "revision": "6787e1947d523ac7:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:37:32.007067+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cash-Movers-3122734.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cash-Movers-3122734.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:36.862210+00:00",
+              "next_attempt": "2026-11-04T00:38:36.862210+00:00",
+              "revision": "6787e1947d523ac7:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/cash_movers",
+                "https://www.nintendolife.com/games/nintendo-switch/cash_movers"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/cash_movers"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:39.516120+00:00",
+              "next_attempt": "2026-11-04T00:38:39.516120+00:00",
+              "revision": "6787e1947d523ac7:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=cash-movers-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cash-movers-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:45.217207+00:00",
+              "next_attempt": "2026-11-04T00:38:45.217207+00:00",
+              "revision": "6787e1947d523ac7:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/cash-movers/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/cash-movers/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/cash-movers/"
+              ],
+              "url": "https://www.metacritic.com/game/cash-movers/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:46.602155+00:00",
+              "next_attempt": "2026-11-04T00:38:46.602155+00:00",
+              "revision": "6787e1947d523ac7:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Cash+Movers&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Cash+Movers&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:46.602290+00:00",
+              "next_attempt": "2026-11-03T01:38:46.602290+00:00",
+              "revision": "6787e1947d523ac7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:46.602321+00:00",
+              "next_attempt": "2026-11-03T01:38:46.602321+00:00",
+              "revision": "6787e1947d523ac7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18643": {
       "title": "Cave Looters",
@@ -163937,11 +164794,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:01:11.890454+00:00"
+        "attempted": "2026-11-03T00:37:26.261893+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -163949,12 +164806,14 @@
         "source": "https://www.nintendo.com/us/store/products/cave-looters-switch/",
         "checked": "2026-11-02T22:01:13.381642+00:00"
       },
-      "basics_attempted": "2026-11-02T22:01:11.890454+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:37:26.261893+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T20:27:31.568097+00:00",
       "store_evidence": [
@@ -163964,7 +164823,100 @@
           "checked": "2026-11-02T22:01:13.381333+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cave-Looters-3142703.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:37:34.225973+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Cave Looters"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:37:34.226213+00:00",
+              "next_attempt": "2026-11-04T00:37:34.226213+00:00",
+              "revision": "8f61677d955c41f4:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:37:34.226213+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cave-Looters-3142703.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Cave-Looters-3142703.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:46.879671+00:00",
+              "next_attempt": "2026-11-04T00:38:46.879671+00:00",
+              "revision": "8f61677d955c41f4:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/cave_looters",
+                "https://www.nintendolife.com/games/nintendo-switch/cave_looters"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/cave_looters"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:49.478320+00:00",
+              "next_attempt": "2026-11-04T00:38:49.478320+00:00",
+              "revision": "8f61677d955c41f4:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=cave-looters-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cave-looters-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:51.564889+00:00",
+              "next_attempt": "2026-11-04T00:38:51.564889+00:00",
+              "revision": "8f61677d955c41f4:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/cave-looters/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/cave-looters/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/cave-looters/"
+              ],
+              "url": "https://www.metacritic.com/game/cave-looters/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:38:52.912515+00:00",
+              "next_attempt": "2026-11-04T00:38:52.912515+00:00",
+              "revision": "8f61677d955c41f4:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Cave+Looters&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Cave+Looters&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:52.912643+00:00",
+              "next_attempt": "2026-11-03T01:38:52.912643+00:00",
+              "revision": "8f61677d955c41f4:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:38:52.912672+00:00",
+              "next_attempt": "2026-11-03T01:38:52.912672+00:00",
+              "revision": "8f61677d955c41f4:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18736": {
       "title": "Disney/Pixar Toy Story 3 Complete Edition",
