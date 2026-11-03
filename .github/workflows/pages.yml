@@ -1,0 +1,36 @@
+name: Publicar site (GitHub Pages)
+on:
+  push:
+    branches: [main]
+    paths: ['website/**', '.github/workflows/pages.yml']
+  schedule:
+    - cron: '0 5 * * *'  # refresh the bundled offline fallback data daily
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: node tests/test_price_view.cjs
+      - name: Bundle the site with fallback copies of the live data
+        run: |
+          mkdir -p _site
+          cp -r website/. _site/
+          cp data/catalog.json data/ratings.json data/stores.json data/trailers.json data/psplus.json _site/
+          cp data/enrichment-public.json _site/enrichment.json
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
