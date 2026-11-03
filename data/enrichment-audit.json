@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-03T00:13:14.799260+00:00",
+  "updated": "2026-11-03T00:15:58.757466+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1943,
+    "ready": 1944,
     "missing_image": 109,
-    "missing_store": 385,
+    "missing_store": 380,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -40602,32 +40602,89 @@
       "next_retry": "2026-11-03T00:37:32.110883+00:00"
     },
     {
-      "key": "Switch:7313",
-      "title": "UORiS DX",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:35:55.884574+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:10514",
       "title": "USAAF Mustang",
       "platform": "Switch",
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T21:35:55.886073+00:00",
+      "attempted": "2026-11-03T00:14:14.661734+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:40.235384+00:00",
+              "next_attempt": "2026-11-04T00:15:40.235384+00:00",
+              "revision": "cd9dddf39fa818c3:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/usaaf_mustang",
+                "https://www.nintendolife.com/games/switch-eshop/usaaf_mustang",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_usaaf_mustang"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_usaaf_mustang"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:40.643612+00:00",
+              "next_attempt": "2026-11-04T00:15:40.643612+00:00",
+              "revision": "cd9dddf39fa818c3:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=usaaf-mustang-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=usaaf-mustang-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:46.646436+00:00",
+              "next_attempt": "2026-11-04T00:15:46.646436+00:00",
+              "revision": "cd9dddf39fa818c3:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-usaaf-mustang/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-usaaf-mustang/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-usaaf-mustang/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-usaaf-mustang/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:48.218016+00:00",
+              "next_attempt": "2026-11-04T00:15:48.218016+00:00",
+              "revision": "cd9dddf39fa818c3:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=USAAF+Mustang&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=USAAF+Mustang&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:48.218204+00:00",
+              "next_attempt": "2026-11-03T01:15:48.218204+00:00",
+              "revision": "cd9dddf39fa818c3:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:48.218244+00:00",
+              "next_attempt": "2026-11-03T01:15:48.218244+00:00",
+              "revision": "cd9dddf39fa818c3:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:15:48.218204+00:00"
     },
     {
       "key": "Switch:5529",
@@ -40637,31 +40694,180 @@
         "image",
         "store"
       ],
-      "attempted": "2026-11-02T21:35:55.888424+00:00",
+      "attempted": "2026-11-03T00:14:14.662004+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "image": "No unique matching video-game article with artwork"
+        "image": "No unique matching video-game article with artwork",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:14:15.898288+00:00",
+              "next_attempt": "2026-11-04T00:14:15.898288+00:00",
+              "revision": "91a85fe275904bab:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22UglyDolls%3A+An+Imperfect+Adventure%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22UglyDolls%3A+An+Imperfect+Adventure%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:14:15.898288+00:00",
+              "next_attempt": "2026-11-04T00:14:15.898288+00:00",
+              "revision": "91a85fe275904bab:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22UglyDolls%3A+An+Imperfect+Adventure%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22UglyDolls%3A+An+Imperfect+Adventure%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:14:30.578760+00:00",
+              "next_attempt": "2026-11-04T00:14:30.578760+00:00",
+              "revision": "91a85fe275904bab:7",
+              "reason": "No qualifying image found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/uglydolls_an_imperfect_adventure"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/uglydolls_an_imperfect_adventure"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:14:35.226092+00:00",
+              "next_attempt": "2026-11-04T00:14:35.226092+00:00",
+              "revision": "91a85fe275904bab:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=uglydolls-an-imperfect-adventure-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=uglydolls-an-imperfect-adventure-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:14:35.394723+00:00",
+              "next_attempt": "2026-11-04T00:14:35.394723+00:00",
+              "revision": "91a85fe275904bab:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22UglyDolls%3A+An+Imperfect+Adventure%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22UglyDolls%3A+An+Imperfect+Adventure%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-04T00:14:15.898288+00:00"
     },
     {
       "key": "Switch:8104",
       "title": "Undercat",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:35:55.889997+00:00",
+      "attempted": "2026-11-03T00:14:14.662610+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:14:19.058455+00:00",
+              "next_attempt": "2026-11-04T00:14:19.058455+00:00",
+              "revision": "b9b72fe58d4d2bd4:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:14:19.058455+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Undercat-2571644.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Undercat-2571644.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:25.239424+00:00",
+              "next_attempt": "2026-11-04T00:15:25.239424+00:00",
+              "revision": "b9b72fe58d4d2bd4:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/undercat",
+                "https://www.nintendolife.com/games/nintendo-switch/undercat"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/undercat"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:25.860668+00:00",
+              "next_attempt": "2026-11-04T00:15:25.860668+00:00",
+              "revision": "b9b72fe58d4d2bd4:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=undercat-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=undercat-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:31.709004+00:00",
+              "next_attempt": "2026-11-04T00:15:31.709004+00:00",
+              "revision": "b9b72fe58d4d2bd4:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/undercat/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/undercat/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/undercat/"
+              ],
+              "url": "https://www.metacritic.com/game/undercat/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:33.204551+00:00",
+              "next_attempt": "2026-11-04T00:15:33.204551+00:00",
+              "revision": "b9b72fe58d4d2bd4:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Undercat&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Undercat&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:33.204677+00:00",
+              "next_attempt": "2026-11-03T01:15:33.204677+00:00",
+              "revision": "b9b72fe58d4d2bd4:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:33.204707+00:00",
+              "next_attempt": "2026-11-03T01:15:33.204707+00:00",
+              "revision": "b9b72fe58d4d2bd4:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:15:33.204677+00:00"
     },
     {
       "key": "Switch:7974",
@@ -40670,46 +40876,229 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T21:35:55.890472+00:00",
+      "attempted": "2026-11-03T00:14:14.663017+00:00",
       "reasons": {
-        "store": "Official Nintendo lookup: HTTP Error 404: Not Found"
+        "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:14:16.921591+00:00",
+              "next_attempt": "2026-11-04T00:14:16.921591+00:00",
+              "revision": "62c3524468a186ae:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Unit+4%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Unit+4%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-04T00:14:16.921591+00:00"
     },
     {
       "key": "Switch:18015",
       "title": "Unrailed 2: Back on Track",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:36:07.980122+00:00",
+      "attempted": "2026-11-03T00:14:14.663791+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:14:17.835441+00:00",
+              "next_attempt": "2026-11-04T00:14:17.835441+00:00",
+              "revision": "5ab14113d2eaea35:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:14:17.835441+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Unrailed-2-Back-on-Track-3037999.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Unrailed-2-Back-on-Track-3037999.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:15.201973+00:00",
+              "next_attempt": "2026-11-04T00:15:15.201973+00:00",
+              "revision": "5ab14113d2eaea35:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/unrailed_2_back_on_track",
+                "https://www.nintendolife.com/games/nintendo-switch/unrailed_2_back_on_track"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/unrailed_2_back_on_track"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:18.147771+00:00",
+              "next_attempt": "2026-11-04T00:15:18.147771+00:00",
+              "revision": "5ab14113d2eaea35:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=unrailed-2-back-on-track-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=unrailed-2-back-on-track-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:22.626394+00:00",
+              "next_attempt": "2026-11-04T00:15:22.626394+00:00",
+              "revision": "5ab14113d2eaea35:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/unrailed-2-back-on-track/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/unrailed-2-back-on-track/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/unrailed-2-back-on-track/"
+              ],
+              "url": "https://www.metacritic.com/game/unrailed-2-back-on-track/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:24.258753+00:00",
+              "next_attempt": "2026-11-04T00:15:24.258753+00:00",
+              "revision": "5ab14113d2eaea35:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Unrailed+2%3A+Back+on+Track&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Unrailed+2%3A+Back+on+Track&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:24.259491+00:00",
+              "next_attempt": "2026-11-03T01:15:24.259491+00:00",
+              "revision": "5ab14113d2eaea35:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:24.259535+00:00",
+              "next_attempt": "2026-11-03T01:15:24.259535+00:00",
+              "revision": "5ab14113d2eaea35:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:15:24.259491+00:00"
     },
     {
       "key": "Switch:13757",
       "title": "Vaccine Rebirth",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:36:08.064594+00:00",
+      "attempted": "2026-11-03T00:14:14.684811+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:14:16.720993+00:00",
+              "next_attempt": "2026-11-04T00:14:16.720993+00:00",
+              "revision": "b14dba3cce0782ee:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:14:16.720993+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Vaccine-Rebirth-2391358.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Vaccine-Rebirth-2391358.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:10.252645+00:00",
+              "next_attempt": "2026-11-04T00:15:10.252645+00:00",
+              "revision": "b14dba3cce0782ee:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/vaccine_rebirth",
+                "https://www.nintendolife.com/games/nintendo-switch/vaccine_rebirth"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/vaccine_rebirth"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:13.488162+00:00",
+              "next_attempt": "2026-11-04T00:15:13.488162+00:00",
+              "revision": "b14dba3cce0782ee:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=vaccine-rebirth-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=vaccine-rebirth-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:23.093341+00:00",
+              "next_attempt": "2026-11-04T00:15:23.093341+00:00",
+              "revision": "b14dba3cce0782ee:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/vaccine-rebirth/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/vaccine-rebirth/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/vaccine-rebirth/"
+              ],
+              "url": "https://www.metacritic.com/game/vaccine-rebirth/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:25.258631+00:00",
+              "next_attempt": "2026-11-04T00:15:25.258631+00:00",
+              "revision": "b14dba3cce0782ee:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Vaccine+Rebirth&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Vaccine+Rebirth&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:25.258802+00:00",
+              "next_attempt": "2026-11-03T01:15:25.258802+00:00",
+              "revision": "b14dba3cce0782ee:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:25.258832+00:00",
+              "next_attempt": "2026-11-03T01:15:25.258832+00:00",
+              "revision": "b14dba3cce0782ee:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:15:25.258802+00:00"
     },
     {
       "key": "Switch:10424",
@@ -40718,14 +41107,83 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T21:37:24.170300+00:00",
+      "attempted": "2026-11-03T00:14:14.756976+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:45.234279+00:00",
+              "next_attempt": "2026-11-04T00:15:45.234279+00:00",
+              "revision": "26502779f589a3c5:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/vandyke",
+                "https://www.nintendolife.com/games/switch-eshop/vandyke",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_vandyke"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_vandyke"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:47.345957+00:00",
+              "next_attempt": "2026-11-04T00:15:47.345957+00:00",
+              "revision": "26502779f589a3c5:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=vandyke-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=vandyke-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:56.415953+00:00",
+              "next_attempt": "2026-11-04T00:15:56.415953+00:00",
+              "revision": "26502779f589a3c5:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-vandyke/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-vandyke/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-vandyke/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-vandyke/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:58.376534+00:00",
+              "next_attempt": "2026-11-04T00:15:58.376534+00:00",
+              "revision": "26502779f589a3c5:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Vandyke&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Vandyke&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:58.376665+00:00",
+              "next_attempt": "2026-11-03T01:15:58.376665+00:00",
+              "revision": "26502779f589a3c5:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:58.376695+00:00",
+              "next_attempt": "2026-11-03T01:15:58.376695+00:00",
+              "revision": "26502779f589a3c5:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:15:58.376665+00:00"
     },
     {
       "key": "PS5:11757",
@@ -40765,17 +41223,100 @@
       "title": "Viractal: Will You Trust Your Party?",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:37:24.170536+00:00",
+      "attempted": "2026-11-03T00:14:15.713349+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:14:20.006561+00:00",
+              "next_attempt": "2026-11-04T00:14:20.006561+00:00",
+              "revision": "d5294dcbf777c4ac:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:14:20.006561+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Viractal-Will-You-Trust-Your-Party-3201433.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Viractal-Will-You-Trust-Your-Party-3201433.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:30.261887+00:00",
+              "next_attempt": "2026-11-04T00:15:30.261887+00:00",
+              "revision": "d5294dcbf777c4ac:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/viractal_will_you_trust_your_party",
+                "https://www.nintendolife.com/games/nintendo-switch/viractal_will_you_trust_your_party"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/viractal_will_you_trust_your_party"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:30.935889+00:00",
+              "next_attempt": "2026-11-04T00:15:30.935889+00:00",
+              "revision": "d5294dcbf777c4ac:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=viractal-will-you-trust-your-party-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=viractal-will-you-trust-your-party-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:36.658520+00:00",
+              "next_attempt": "2026-11-04T00:15:36.658520+00:00",
+              "revision": "d5294dcbf777c4ac:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/viractal-will-you-trust-your-party/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/viractal-will-you-trust-your-party/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/viractal-will-you-trust-your-party/"
+              ],
+              "url": "https://www.metacritic.com/game/viractal-will-you-trust-your-party/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:38.471462+00:00",
+              "next_attempt": "2026-11-04T00:15:38.471462+00:00",
+              "revision": "d5294dcbf777c4ac:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Viractal%3A+Will+You+Trust+Your+Party%3F&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Viractal%3A+Will+You+Trust+Your+Party%3F&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:38.471612+00:00",
+              "next_attempt": "2026-11-03T01:15:38.471612+00:00",
+              "revision": "d5294dcbf777c4ac:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:38.471649+00:00",
+              "next_attempt": "2026-11-03T01:15:38.471649+00:00",
+              "revision": "d5294dcbf777c4ac:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:15:38.471612+00:00"
     },
     {
       "key": "Switch:17217",
@@ -40786,16 +41327,150 @@
         "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:37:24.170773+00:00",
+      "attempted": "2026-11-03T00:14:16.922174+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "image": "No unique matching video-game article with artwork"
+        "image": "No unique matching video-game article with artwork",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "wikipedia": "No unique matching video-game article with artwork"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:14:18.024799+00:00",
+              "next_attempt": "2026-11-04T00:14:18.024799+00:00",
+              "revision": "f0f05ff450076663:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Void+Raiders%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Void+Raiders%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "image": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:14:18.024799+00:00",
+              "next_attempt": "2026-11-04T00:14:18.024799+00:00",
+              "revision": "f0f05ff450076663:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Void+Raiders%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Void+Raiders%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            },
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:20.301712+00:00",
+              "next_attempt": "2026-11-04T00:15:20.301712+00:00",
+              "revision": "f0f05ff450076663:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/void_raiders",
+                "https://www.nintendolife.com/games/nintendo-switch/void_raiders"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/void_raiders"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:20.805826+00:00",
+              "next_attempt": "2026-11-04T00:15:20.805826+00:00",
+              "revision": "f0f05ff450076663:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=void-raiders-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=void-raiders-switch"
+            },
+            "wikipedia": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:26.561095+00:00",
+              "next_attempt": "2026-11-04T00:15:26.561095+00:00",
+              "revision": "f0f05ff450076663:7",
+              "reason": "No unique matching video-game article with artwork",
+              "attempted_urls": [
+                "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Void+Raiders%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+              ],
+              "url": "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=%22Void+Raiders%22+video+game&gsrlimit=5&prop=pageimages%7Ccategories&piprop=thumbnail&pithumbsize=500&pilicense=any&cllimit=50&format=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:20.301712+00:00",
+              "next_attempt": "2026-11-04T00:15:20.301712+00:00",
+              "revision": "f0f05ff450076663:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/void_raiders",
+                "https://www.nintendolife.com/games/nintendo-switch/void_raiders"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/void_raiders"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:20.805826+00:00",
+              "next_attempt": "2026-11-04T00:15:20.805826+00:00",
+              "revision": "f0f05ff450076663:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=void-raiders-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=void-raiders-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:23.755511+00:00",
+              "next_attempt": "2026-11-04T00:15:23.755511+00:00",
+              "revision": "f0f05ff450076663:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/void-raiders/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/void-raiders/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/void-raiders/"
+              ],
+              "url": "https://www.metacritic.com/game/void-raiders/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:15:26.368140+00:00",
+              "next_attempt": "2026-11-04T00:15:26.368140+00:00",
+              "revision": "f0f05ff450076663:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Void+Raiders&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Void+Raiders&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:26.368256+00:00",
+              "next_attempt": "2026-11-03T01:15:26.368256+00:00",
+              "revision": "f0f05ff450076663:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:15:26.368278+00:00",
+              "next_attempt": "2026-11-03T01:15:26.368278+00:00",
+              "revision": "f0f05ff450076663:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:15:26.368256+00:00"
     },
     {
       "key": "Switch:15844",
