@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-03T00:03:13.199271+00:00",
+  "updated": "2026-11-03T00:04:50.326916+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1935,
+    "ready": 1937,
     "missing_image": 109,
-    "missing_store": 414,
+    "missing_store": 408,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -34193,17 +34193,100 @@
       "title": "TACTICAL BANDITS",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:24:55.035352+00:00",
+      "attempted": "2026-11-03T00:03:17.607383+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:03:20.073748+00:00",
+              "next_attempt": "2026-11-04T00:03:20.073748+00:00",
+              "revision": "fb34c19ccab2ee7d:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:03:20.073748+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/TACTICAL-BANDITS-2601967.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/TACTICAL-BANDITS-2601967.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:07.967789+00:00",
+              "next_attempt": "2026-11-04T00:04:07.967789+00:00",
+              "revision": "fb34c19ccab2ee7d:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/tactical_bandits",
+                "https://www.nintendolife.com/games/switch-eshop/tactical_bandits"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/tactical_bandits"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:09.085464+00:00",
+              "next_attempt": "2026-11-04T00:04:09.085464+00:00",
+              "revision": "fb34c19ccab2ee7d:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=tactical-bandits-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=tactical-bandits-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:11.109860+00:00",
+              "next_attempt": "2026-11-04T00:04:11.109860+00:00",
+              "revision": "fb34c19ccab2ee7d:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/tactical-bandits/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/tactical-bandits/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/tactical-bandits/"
+              ],
+              "url": "https://www.metacritic.com/game/tactical-bandits/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:11.144282+00:00",
+              "next_attempt": "2026-11-04T00:04:11.144282+00:00",
+              "revision": "fb34c19ccab2ee7d:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=TACTICAL+BANDITS&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=TACTICAL+BANDITS&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:04:11.144418+00:00",
+              "next_attempt": "2026-11-03T01:04:11.144418+00:00",
+              "revision": "fb34c19ccab2ee7d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:04:11.144477+00:00",
+              "next_attempt": "2026-11-03T01:04:11.144477+00:00",
+              "revision": "fb34c19ccab2ee7d:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:04:11.144418+00:00"
     },
     {
       "key": "Switch:7091",
@@ -34212,30 +34295,130 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T21:24:55.035941+00:00",
+      "attempted": "2026-11-03T00:03:17.607630+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:03:18.371591+00:00",
+              "next_attempt": "2026-11-04T00:03:18.371591+00:00",
+              "revision": "c198a0b0fa4310b3:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22TENGAI%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22TENGAI%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-04T00:03:18.371591+00:00"
     },
     {
       "key": "Switch:13686",
       "title": "TORINTO",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:24:55.037034+00:00",
+      "attempted": "2026-11-03T00:03:17.607864+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:03:17.888735+00:00",
+              "next_attempt": "2026-11-04T00:03:17.888735+00:00",
+              "revision": "b569816b6209b658:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:03:17.888735+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/TORINTO-2386683.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/TORINTO-2386683.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:03:48.106873+00:00",
+              "next_attempt": "2026-11-04T00:03:48.106873+00:00",
+              "revision": "b569816b6209b658:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/torinto",
+                "https://www.nintendolife.com/games/nintendo-switch/torinto"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/torinto"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:03:48.968463+00:00",
+              "next_attempt": "2026-11-04T00:03:48.968463+00:00",
+              "revision": "b569816b6209b658:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=torinto-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=torinto-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:03:53.018129+00:00",
+              "next_attempt": "2026-11-04T00:03:53.018129+00:00",
+              "revision": "b569816b6209b658:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/torinto/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/torinto/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/torinto/"
+              ],
+              "url": "https://www.metacritic.com/game/torinto/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:03:53.053924+00:00",
+              "next_attempt": "2026-11-04T00:03:53.053924+00:00",
+              "revision": "b569816b6209b658:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=TORINTO&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=TORINTO&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:03:53.054047+00:00",
+              "next_attempt": "2026-11-03T01:03:53.054047+00:00",
+              "revision": "b569816b6209b658:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:03:53.054162+00:00",
+              "next_attempt": "2026-11-03T01:03:53.054162+00:00",
+              "revision": "b569816b6209b658:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:03:53.054047+00:00"
     },
     {
       "key": "Switch:9001",
@@ -34244,13 +34427,30 @@
       "missing": [
         "store"
       ],
-      "attempted": "2026-11-02T21:24:55.037326+00:00",
+      "attempted": "2026-11-03T00:03:17.608133+00:00",
       "reasons": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:03:19.402051+00:00",
+              "next_attempt": "2026-11-04T00:03:19.402051+00:00",
+              "revision": "c740c0fa08a86cf1:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22TRANSFORMERS%3A+BATTLEGROUNDS%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22TRANSFORMERS%3A+BATTLEGROUNDS%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-04T00:03:19.402051+00:00"
     },
     {
       "key": "Switch:13423",
@@ -34259,16 +34459,86 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T21:24:55.038712+00:00",
+      "attempted": "2026-11-03T00:03:17.608883+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:23.050612+00:00",
+              "next_attempt": "2026-11-04T00:04:23.050612+00:00",
+              "revision": "1e3e53b4c6be3f54:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/turbo_force",
+                "https://www.nintendolife.com/games/switch-eshop/turbo_force",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_turbo_force"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_turbo_force"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:24.128335+00:00",
+              "next_attempt": "2026-11-04T00:04:24.128335+00:00",
+              "revision": "1e3e53b4c6be3f54:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=turbo-force-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=turbo-force-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:35.681152+00:00",
+              "next_attempt": "2026-11-04T00:04:35.681152+00:00",
+              "revision": "1e3e53b4c6be3f54:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-turbo-force/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/turbo-force-1991/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-turbo-force/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-turbo-force/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:35.715709+00:00",
+              "next_attempt": "2026-11-04T00:04:35.715709+00:00",
+              "revision": "1e3e53b4c6be3f54:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=TURBO+FORCE&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=TURBO+FORCE&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:04:35.715831+00:00",
+              "next_attempt": "2026-11-03T01:04:35.715831+00:00",
+              "revision": "1e3e53b4c6be3f54:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:04:35.715892+00:00",
+              "next_attempt": "2026-11-03T01:04:35.715892+00:00",
+              "revision": "1e3e53b4c6be3f54:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:04:35.715831+00:00"
     },
     {
       "key": "PS5:17842",
@@ -34691,30 +34961,6 @@
       "next_retry": "2026-11-03T00:35:06.116961+00:00"
     },
     {
-      "key": "Switch:14691",
-      "title": "Tallowmere 2: Curse of the Kittens",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:24:55.041815+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:7913",
-      "title": "Tanks Meet Zombies",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:25:00.847565+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:17127",
       "title": "Tanks, But No Tanks",
       "platform": "Switch",
@@ -34820,17 +35066,100 @@
       "title": "Tanky Tanks",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:25:02.397256+00:00",
+      "attempted": "2026-11-03T00:03:17.628912+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:03:21.222438+00:00",
+              "next_attempt": "2026-11-04T00:03:21.222438+00:00",
+              "revision": "fab248f1b3174752:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:03:21.222438+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Tanky-Tanks-1809125.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Tanky-Tanks-1809125.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:12.812912+00:00",
+              "next_attempt": "2026-11-04T00:04:12.812912+00:00",
+              "revision": "fab248f1b3174752:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/tanky_tanks",
+                "https://www.nintendolife.com/games/switch-eshop/tanky_tanks"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/tanky_tanks"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:13.475408+00:00",
+              "next_attempt": "2026-11-04T00:04:13.475408+00:00",
+              "revision": "fab248f1b3174752:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=tanky-tanks-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=tanky-tanks-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:36.825005+00:00",
+              "next_attempt": "2026-11-04T00:04:36.825005+00:00",
+              "revision": "fab248f1b3174752:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/tanky-tanks/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/tanky-tanks/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/tanky-tanks/"
+              ],
+              "url": "https://www.metacritic.com/game/tanky-tanks/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:36.873440+00:00",
+              "next_attempt": "2026-11-04T00:04:36.873440+00:00",
+              "revision": "fab248f1b3174752:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Tanky+Tanks&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Tanky+Tanks&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:04:36.873573+00:00",
+              "next_attempt": "2026-11-03T01:04:36.873573+00:00",
+              "revision": "fab248f1b3174752:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:04:36.873631+00:00",
+              "next_attempt": "2026-11-03T01:04:36.873631+00:00",
+              "revision": "fab248f1b3174752:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:04:36.873573+00:00"
     },
     {
       "key": "PS5:18533",
@@ -34965,17 +35294,100 @@
       "title": "Tanky Tanks 2",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:26:34.969580+00:00",
+      "attempted": "2026-11-03T00:03:18.372137+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:03:23.388506+00:00",
+              "next_attempt": "2026-11-04T00:03:23.388506+00:00",
+              "revision": "90b63f9bd57e3ec2:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:03:23.388506+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Tanky-Tanks-2-2348324.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Tanky-Tanks-2-2348324.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:17.964430+00:00",
+              "next_attempt": "2026-11-04T00:04:17.964430+00:00",
+              "revision": "90b63f9bd57e3ec2:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/tanky_tanks_2",
+                "https://www.nintendolife.com/games/nintendo-switch/tanky_tanks_2"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/tanky_tanks_2"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:18.858702+00:00",
+              "next_attempt": "2026-11-04T00:04:18.858702+00:00",
+              "revision": "90b63f9bd57e3ec2:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=tanky-tanks-2-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=tanky-tanks-2-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:23.374862+00:00",
+              "next_attempt": "2026-11-04T00:04:23.374862+00:00",
+              "revision": "90b63f9bd57e3ec2:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/tanky-tanks-2/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/tanky-tanks-2/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/tanky-tanks-2/"
+              ],
+              "url": "https://www.metacritic.com/game/tanky-tanks-2/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:23.412628+00:00",
+              "next_attempt": "2026-11-04T00:04:23.412628+00:00",
+              "revision": "90b63f9bd57e3ec2:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Tanky+Tanks+2&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Tanky+Tanks+2&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:04:23.412752+00:00",
+              "next_attempt": "2026-11-03T01:04:23.412752+00:00",
+              "revision": "90b63f9bd57e3ec2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:04:23.412811+00:00",
+              "next_attempt": "2026-11-03T01:04:23.412811+00:00",
+              "revision": "90b63f9bd57e3ec2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:04:23.412752+00:00"
     },
     {
       "key": "Switch:9693",
@@ -34984,14 +35396,83 @@
       "missing": [
         "rating"
       ],
-      "attempted": "2026-11-02T21:26:34.969782+00:00",
+      "attempted": "2026-11-03T00:03:19.173213+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:32.817506+00:00",
+              "next_attempt": "2026-11-04T00:04:32.817506+00:00",
+              "revision": "11c4601c71c0f37e:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/task_force_harrier",
+                "https://www.nintendolife.com/games/switch-eshop/task_force_harrier",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_task_force_harrier"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_task_force_harrier"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:33.486539+00:00",
+              "next_attempt": "2026-11-04T00:04:33.486539+00:00",
+              "revision": "11c4601c71c0f37e:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=task-force-harrier-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=task-force-harrier-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:49.752417+00:00",
+              "next_attempt": "2026-11-04T00:04:49.752417+00:00",
+              "revision": "11c4601c71c0f37e:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-task-force-harrier/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-task-force-harrier/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-task-force-harrier/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-task-force-harrier/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:04:49.809288+00:00",
+              "next_attempt": "2026-11-04T00:04:49.809288+00:00",
+              "revision": "11c4601c71c0f37e:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Task+Force+Harrier&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Task+Force+Harrier&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:04:49.809430+00:00",
+              "next_attempt": "2026-11-03T01:04:49.809430+00:00",
+              "revision": "11c4601c71c0f37e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:04:49.809494+00:00",
+              "next_attempt": "2026-11-03T01:04:49.809494+00:00",
+              "revision": "11c4601c71c0f37e:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:04:49.809430+00:00"
     },
     {
       "key": "Switch:9576",
