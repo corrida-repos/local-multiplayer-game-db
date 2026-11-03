@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:21:50.260964+00:00",
+  "updated": "2026-11-03T06:22:39.965497+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1361,
+    "full_attempted": 1371,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -48222,26 +48222,49 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 73.7,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Gaming Age",
+              "score": 90,
+              "url": "https://gaming-age.com/2024/11/irem-collection-volume-2-review-for-playstation-xbox-switch/",
+              "date": "2024-12-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 60,
+              "url": "https://www.playstationcountry.com/irem-collection-volume-2-ps5-review/",
+              "date": "2024-11-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 71,
+              "url": "https://videochums.com/review/irem-collection-volume-2",
+              "date": "2024-11-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 9.18,
           "scale": 10,
           "sources": [
             {
-              "score": 4.59,
-              "count": 79,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.59,
               "scale": 5,
-              "source": "PSN",
+              "count": 79,
               "url": "https://store.playstation.com/pt-pt/product/EP8204-PPSA24705_00-IREMCOLLECTXXPS5",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:43:47.681820+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 8.888194417315589,
               "normalized": 9.18
             }
@@ -48249,7 +48272,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:43:46.265728+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:22:04.547412+00:00"
       },
       "requirements": {
         "image": true,
@@ -48291,7 +48321,11 @@
       },
       "basics_attempted": "2026-11-02T17:43:46.265728+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -48307,26 +48341,68 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:22:04.872497+00:00",
+      "full_version": 7
     },
     "Switch:14118": {
       "title": "Irem Collection Volume 2",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 71.0,
+          "score": 70.2,
           "scale": 100,
           "sources": [
+            {
+              "name": "Destructoid",
+              "score": 50,
+              "url": "https://www.destructoid.com/reviews/review-irem-collection-volume-2/",
+              "date": "2024-11-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Portugal",
+              "score": 80,
+              "url": "https://www.eurogamer.pt/irem-collection-volume-2-review-melhoria-substancial-face-ao-primeiro-volume",
+              "date": "2024-12-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Forbes",
+              "score": 80,
+              "url": "https://www.forbes.com/sites/games/2024/11/11/irem-collection-vol-2-review-both-fun-and-historically-fascinating/",
+              "date": "2024-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 70,
+              "url": "https://metro.co.uk/2024/11/21/irem-collection-volume-1-2-review-classic-2d-shmups-90s-22041079/",
+              "date": "2024-11-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 71.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=irem-collection-volume-2-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Tech-Gaming",
+              "score": 70,
+              "url": "https://www.tech-gaming.com/irem-collection-volume-2/",
+              "date": "2024-11-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
           "score": null,
@@ -48335,7 +48411,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:16.488926+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 410: Gone"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:22:25.579132+00:00"
       },
       "requirements": {
         "image": true,
@@ -48352,7 +48436,12 @@
       "basics_attempted": "2026-11-02T22:39:16.488926+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone"
+        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 410: Gone",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -48402,33 +48491,74 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:22:27.106869+00:00",
+      "full_version": 7
     },
     "PS5:14578": {
       "title": "Irem Collection Volume 3",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 68.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameBlast",
+              "score": 70,
+              "url": "https://www.gameblast.com.br/2025/07/analise-irem-collection-volume-3-review.html",
+              "date": "2025-07-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 80,
+              "url": "https://gaming-age.com/2025/07/irem-collection-volume-3-review-for-playstation-xbox-switch/",
+              "date": "2025-07-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 60,
+              "url": "https://www.impulsegamer.com/irem-collection-volume-3-ps5-review/",
+              "date": "2025-07-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 60,
+              "url": "https://www.playstationcountry.com/irem-collection-volume-3-ps5-review/",
+              "date": "2025-07-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 70,
+              "url": "https://videochums.com/review/irem-collection-volume-3",
+              "date": "2025-07-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 5
         },
         "user": {
           "score": 9.16,
           "scale": 10,
           "sources": [
             {
-              "score": 4.58,
-              "count": 33,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.58,
               "scale": 5,
-              "source": "PSN",
+              "count": 33,
               "url": "https://store.playstation.com/pt-pt/product/EP8204-PPSA28507_00-IREMCOLLECT03PS5",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:43:49.063953+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 5.744562646538029,
               "normalized": 9.16
             }
@@ -48436,7 +48566,12 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:43:47.687295+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:22:19.670444+00:00"
       },
       "requirements": {
         "image": true,
@@ -48478,7 +48613,10 @@
       },
       "basics_attempted": "2026-11-02T17:43:47.687295+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -48494,26 +48632,76 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:22:19.804577+00:00",
+      "full_version": 7
     },
     "Switch:14579": {
       "title": "Irem Collection Volume 3",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 83.0,
+          "score": 75.1,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "https://www.cubed3.com/games/reviews/nintendo-switch/irem-collection-volume-3",
+              "date": "2025-07-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Forbes",
+              "score": 80,
+              "url": "https://www.forbes.com/sites/games/2025/06/21/irem-collection-vol-3-review-totally-worth-it-for-mr-heli/",
+              "date": "2025-06-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 60,
+              "url": "https://www.heypoorplayer.com/2025/06/30/irem-collection-volume-3-review-switch/",
+              "date": "2025-07-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 83.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=irem-collection-volume-3-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 75,
+              "url": "https://noisypixel.net/irem-collection-volume-3-review/",
+              "date": "2025-07-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Tech-Gaming",
+              "score": 68,
+              "url": "https://www.tech-gaming.com/irem-collection-volume-3/",
+              "date": "2025-06-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 80,
+              "url": "https://ztgd.com/reviews/irem-collection-volume-3-switch/",
+              "date": "2025-08-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
           "score": null,
@@ -48522,7 +48710,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:16.729204+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 410: Gone"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:22:10.566627+00:00"
       },
       "requirements": {
         "image": true,
@@ -48539,7 +48735,12 @@
       "basics_attempted": "2026-11-02T22:39:16.729204+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone"
+        "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 410: Gone",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -48589,7 +48790,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:22:12.525211+00:00",
+      "full_version": 7
     },
     "PS5:8181": {
       "title": "It Takes Two",
@@ -49122,15 +49325,11 @@
         "id": "joraCOo1n1c",
         "title": "It Takes Two – Official Gameplay Trailer | PS5, PS4",
         "kind": "gameplay",
-        "source": "https://www.ea.com/ea-play/news/it-takes-two-official-gameplay-trailer",
-        "url": "https://www.youtube.com/watch?v=joraCOo1n1c",
-        "checked": "2026-11-02T16:00:27.681818+00:00",
-        "attempted": "2026-11-02T16:00:27.681823+00:00",
-        "error": null
+        "source": "https://www.ea.com/ea-play/news/it-takes-two-official-gameplay-trailer"
       },
       "ratings": {
         "critic": {
-          "score": 82.7,
+          "score": 83.4,
           "scale": 100,
           "sources": [
             {
@@ -49196,6 +49395,13 @@
               "date": "2022-11-04",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 95.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=it-takes-two-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             },
             {
               "name": "Nintenderos",
@@ -49271,7 +49477,7 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 17
+          "source_count": 18
         },
         "user": {
           "score": 7.89,
@@ -49285,8 +49491,7 @@
               "url": "https://www.metacritic.com/game/it-takes-two/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 7.874007874011811,
-              "normalized": 8.4,
-              "checked": "2026-11-02T17:43:57.617662+00:00"
+              "normalized": 8.4
             },
             {
               "name": "Nintendo Life",
@@ -49296,14 +49501,18 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/it_takes_two",
               "platform": "Nintendo Switch",
               "weight": 8.12403840463596,
-              "normalized": 7.4,
-              "checked": "2026-11-02T17:43:57.617662+00:00"
+              "normalized": 7.4
             }
           ],
           "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:30.764273+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 19,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:22:30.649031+00:00"
       },
       "requirements": {
         "image": true,
@@ -49312,7 +49521,9 @@
       },
       "basics_attempted": "2026-11-02T22:39:30.764273+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/it-takes-two-switch/",
@@ -49361,7 +49572,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:22:32.023555+00:00",
+      "full_version": 7
     },
     "Switch:14598": {
       "title": "Itadaki Smash",
@@ -129203,26 +129416,33 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2024/09/iron-meat-review/",
+              "date": "2024-09-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 9.38,
           "scale": 10,
           "sources": [
             {
-              "score": 4.69,
-              "count": 380,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.69,
               "scale": 5,
-              "source": "PSN",
+              "count": 380,
               "url": "https://store.playstation.com/pt-pt/product/UP5420-PPSA22017_00-0103982145742144",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:43:55.017194+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 19.493588689617926,
               "normalized": 9.38
             }
@@ -129230,7 +129450,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:43:53.990840+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:22:14.478126+00:00"
       },
       "requirements": {
         "image": true,
@@ -129272,7 +129499,11 @@
       },
       "basics_attempted": "2026-11-02T17:43:53.990840+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -129288,18 +129519,44 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:22:14.698225+00:00",
+      "full_version": 7
     },
     "Switch:15736": {
       "title": "Iron Meat",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 87.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Hey Poor Player",
+              "score": 90,
+              "url": "https://www.heypoorplayer.com/2024/09/13/iron-meat-review-switch/",
+              "date": "2024-09-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 93.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=iron-meat-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 78,
+              "url": "https://www.spaziogames.it/articoli/iron-meat-recensione",
+              "date": "2024-10-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 7.7,
@@ -129313,14 +129570,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/iron_meat",
               "platform": "Nintendo Switch",
               "weight": 3.3166247903554,
-              "normalized": 7.7,
-              "checked": "2026-11-02T17:43:53.991033+00:00"
+              "normalized": 7.7
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:30.763877+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:22:20.708733+00:00"
       },
       "requirements": {
         "image": true,
@@ -129336,7 +129597,12 @@
       },
       "basics_attempted": "2026-11-02T22:39:30.763877+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/iron-meat-switch/",
@@ -129385,7 +129651,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:22:22.285037+00:00",
+      "full_version": 7
     },
     "Switch:15620": {
       "title": "Jackal",
@@ -193427,15 +193695,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.43,
-              "count": 7,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.43,
               "scale": 5,
-              "source": "PSN",
+              "count": 7,
               "url": "https://store.playstation.com/pt-pt/product/UB0851-PPSA36526_00-INKLINGCATSBTD00",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:43:46.261154+00:00",
-              "platform": "PSN · PS5",
               "weight": 2.6457513110645907,
               "normalized": 6.86
             }
@@ -193443,7 +193709,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:43:45.065765+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:22:09.494265+00:00"
       },
       "requirements": {
         "image": true,
@@ -193485,7 +193758,11 @@
       },
       "basics_attempted": "2026-11-02T17:43:45.065765+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -193501,7 +193778,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:22:09.851510+00:00",
+      "full_version": 7
     },
     "PS5:18175": {
       "title": "Jaleco Sports: Goal!",
@@ -209287,15 +209566,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.68,
-              "count": 25,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.68,
               "scale": 5,
-              "source": "PSN",
+              "count": 25,
               "url": "https://store.playstation.com/pt-pt/product/EB2898-PPSA39421_00-AIRSHIPISLEOFREV",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T19:24:39.345578+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 5.0,
               "normalized": 9.36
             }
@@ -209303,7 +209580,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:28:13.401675+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:22:24.574504+00:00"
       },
       "requirements": {
         "image": true,
@@ -209313,7 +209597,10 @@
       "basics_attempted": "2026-11-02T19:28:13.401675+00:00",
       "version": 4,
       "errors": {
-        "community": "HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/EB2898-PPSA39421_00-AIRSHIPISLEOFREV",
@@ -209363,7 +209650,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:22:24.830025+00:00",
+      "full_version": 7
     },
     "PS5:19011": {
       "title": "King's Blade",
@@ -234401,22 +234690,54 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 74.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/iron_crypticle",
+              "name": "GameCritics",
+              "score": 65,
+              "url": "https://gamecritics.com/jeff-ortloff/iron-crypticle-review/",
+              "date": "2019-05-13",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=iron-crypticle-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/iron_crypticle?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2019-02-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/50123/iron-crypticle-switch-review",
+              "date": "2019-03-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-iron-crypticle-nintendo-switch/",
+              "date": "2019-03-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": 6.0,
+          "score": 6.56,
           "scale": 10,
           "sources": [
             {
@@ -234427,14 +234748,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/iron_crypticle",
               "platform": "Nintendo Switch",
               "weight": 3.3166247903554,
-              "normalized": 6.0,
-              "checked": "2026-11-02T17:43:53.990603+00:00"
+              "normalized": 6.0
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.5,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/iron-crypticle/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.0,
+              "normalized": 7.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:39:18.065831+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:22:37.887969+00:00"
       },
       "requirements": {
         "image": true,
@@ -234450,7 +234785,10 @@
       },
       "basics_attempted": "2026-11-02T22:39:18.065831+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/iron-crypticle-switch/",
@@ -234499,7 +234837,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:22:39.721702+00:00",
+      "full_version": 7
     },
     "Switch:5400": {
       "title": "Joggernauts",
