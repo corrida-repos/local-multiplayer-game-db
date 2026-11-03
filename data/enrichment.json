@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T07:51:34.730886+00:00",
+  "updated": "2026-11-03T07:52:31.806330+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 1951,
+    "full_attempted": 1961,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -99081,7 +99081,17 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:47:35.282317+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:51:54.232716+00:00"
       },
       "requirements": {
         "image": true,
@@ -99099,7 +99109,12 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -99138,7 +99153,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:51:56.502340+00:00",
+      "full_version": 7
     },
     "Switch:10087": {
       "title": "Samurai-Fighter Shingen",
@@ -99334,19 +99351,228 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 88.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Push Square",
-              "score": 80.0,
-              "url": "https://www.pushsquare.com/reviews/ps5/sea-of-stars",
+              "name": "4P.de",
+              "score": 85,
+              "url": "https://www.4players.de/4players.php/dispbericht/Allgemein/Test/41666/85362/0/Sea_of_Stars.html",
+              "date": "2023-09-08",
               "platform": "PlayStation 5",
-              "via": "Push Square"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Dexerto",
+              "score": 100,
+              "url": "https://www.dexerto.com/reviews/sea-of-stars-review-2267127/ ",
+              "date": "2023-08-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 95,
+              "url": "https://digitalchumps.com/sea-of-stars-reveiw/",
+              "date": "2023-08-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 93,
+              "url": "https://www.dualshockers.com/sea-of-stars-review/",
+              "date": "2023-08-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 70,
+              "url": "",
+              "date": "2023-10-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 90,
+              "url": "https://www.everyeye.it/articoli/recensione-sea-of-stars-splendore-rpg-innova-tradizione-62304.html",
+              "date": "2023-09-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCrate",
+              "score": 80,
+              "url": "https://www.gamecrate.com/review-sea-of-stars-believes-in-the-power-of-friendship-and-super-nintendo",
+              "date": "2023-10-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamers Heroes",
+              "score": 90,
+              "url": "https://www.gamersheroes.com/honest-game-reviews/sea-of-stars-review",
+              "date": "2023-08-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 100,
+              "url": "https://gaming-age.com/2023/08/sea-of-stars-review-for-playstation-5-xbox-series-xs-switch-and-pc/",
+              "date": "2023-08-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 90,
+              "url": "https://www.gamingnexus.com/Article/12907/Sea-of-Stars/",
+              "date": "2023-08-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Guardian",
+              "score": 100,
+              "url": "https://www.theguardian.com/games/2023/aug/31/sea-of-stars-review-like-a-lost-late-classic-of-the-super-nintendo-era",
+              "date": "2023-08-31",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 83,
+              "url": "https://it.ign.com/sea-of-stars/205362/review/sea-of-stars-la-recensione",
+              "date": "2023-09-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 85,
+              "url": "https://www.jeuxvideo.com/test/1794007/sea-of-stars-un-ovni-qui-fera-partie-des-meilleurs-jeux-de-l-annee.htm",
+              "date": "2023-09-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LEVEL (Czech Republic)",
+              "score": 100,
+              "url": "",
+              "date": "2024-01-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 90,
+              "url": "https://www.levelup.com/PlayStation-5/juegos/749363/Sea-of-Stars/review",
+              "date": "2023-09-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 80,
+              "url": "https://metro.co.uk/2023/08/28/sea-of-stars-review-chrono-triggered-19408280/",
+              "date": "2023-08-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MeuPlayStation",
+              "score": 90,
+              "url": "https://meups.com.br/review/sea-of-stars-vale-a-pena/",
+              "date": "2023-08-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY",
+              "score": 80,
+              "url": "",
+              "date": "2023-11-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 90,
+              "url": "https://psxbrasil.com.br/analise/sea-of-stars-review/",
+              "date": "2023-08-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 95,
+              "url": "https://www.psu.com/reviews/sea-of-stars-review-ps5-ps4/",
+              "date": "2023-08-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 100,
+              "url": "https://www.player2.net.au/2023/08/sea-of-stars-review-a-beautiful-boundless-ocean/",
+              "date": "2023-08-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 80,
+              "url": "https://www.pushsquare.com/reviews/ps5/sea-of-stars",
+              "date": "2023-08-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPGamer",
+              "score": 80,
+              "url": "https://rpgamer.com/review/sea-of-stars-review/",
+              "date": "2023-10-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 80,
+              "url": "https://www.thegamesmachine.it/sea-of-stars-ps5-ps4-xboxseriesxs-xboxone-pc-nintendoswitch/sea-of-stars-recensione-the-games-machine/ ",
+              "date": "2023-09-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 80,
+              "url": "https://www.thegamer.com/sea-of-stars-review-star-power/",
+              "date": "2023-08-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 84,
+              "url": "https://videochums.com/review/sea-of-stars",
+              "date": "2023-08-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "WellPlayed",
+              "score": 95,
+              "url": "https://www.well-played.com.au/sea-of-stars-review/",
+              "date": "2023-08-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 27
         },
         "user": {
           "score": 8.1,
@@ -99360,14 +99586,28 @@
               "url": "https://www.pushsquare.com/games/ps5/sea_of_stars",
               "platform": "PlayStation 5",
               "weight": 4.123105625617661,
-              "normalized": 8.1,
-              "checked": "2026-11-02T20:01:20.316886+00:00"
+              "normalized": 8.1
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.1,
+              "scale": 10,
+              "count": 245,
+              "url": "https://www.metacritic.com/game/sea-of-stars/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 15.652475842498529,
+              "normalized": 8.1
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:32:30.017096+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 27,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:52:10.084046+00:00"
       },
       "requirements": {
         "image": true,
@@ -99419,7 +99659,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "BMComOd9qP4",
+        "title": "Sea of Stars - Announcement Trailer | PS5 & PS4 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/sea-of-stars/"
+      },
+      "full_attempted": "2026-11-03T07:52:14.841288+00:00",
+      "full_version": 7
     },
     "Switch:11056": {
       "title": "Sea of Stars",
@@ -99430,18 +99678,170 @@
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/sea-of-stars",
+              "name": "Atomix",
+              "score": 95,
+              "url": "https://atomix.vg/review-sea-of-stars/",
+              "date": "2023-09-06",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 70,
+              "url": "https://www.digitallydownloaded.net/2023/08/review-sea-of-stars-nintendo-switch.html",
+              "date": "2023-08-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMINGbible",
+              "score": 90,
+              "url": "https://www.gamingbible.com/features/coatsink-soulsborne-game-last-hero-of-nostalgaia-preview-20220831",
+              "date": "2023-08-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GLHF on Sports Illustrated",
+              "score": 90,
+              "url": "https://videogames.si.com/reviews/games-you-missed-august-2023#gid=ci02c8203cc0002578&pid=sea-of-stars--gy",
+              "date": "2023-08-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 95,
+              "url": "https://gamecritics.com/alex-prakken/sea-of-stars-review/",
+              "date": "2023-10-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 90,
+              "url": "https://www.gamespot.com/reviews/sea-of-stars-review-playing-with-power/1900-6418113/",
+              "date": "2023-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 94,
+              "url": "https://www.impulsegamer.com/sea-of-stars-switch-review/",
+              "date": "2023-09-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 85,
+              "url": "https://www.jeuxvideo.com/test/1794007/sea-of-stars-un-ovni-qui-fera-partie-des-meilleurs-jeux-de-l-annee.htm",
+              "date": "2023-09-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "KeenGamer",
+              "score": 91,
+              "url": "https://www.keengamer.com/articles/reviews/switch-reviews/sea-of-stars-review-a-loving-tribute-switch/",
+              "date": "2023-09-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 90,
+              "url": "https://multiplayer.it/recensioni/sea-of-stars-recensione.html",
+              "date": "2023-08-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 100.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=sea-of-stars-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 90,
+              "url": "https://www.nintenderos.com/2023/08/analisis-sea-of-stars-para-nintendo-switch/",
+              "date": "2023-08-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/sea-of-stars",
+              "date": "2023-08-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 100,
+              "url": "https://www.nintendoworldreport.com/review/64700/sea-of-stars-switch-review",
+              "date": "2023-08-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Site",
+              "score": 90,
+              "url": "https://www.rpgsite.net/review/14764-sea-of-stars-review",
+              "date": "2023-09-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 90,
+              "url": "http://www.screenrant.com/sea-stars-nintendo-switch-review/",
+              "date": "2023-08-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Siliconera",
+              "score": 100,
+              "url": "https://www.siliconera.com/review-savor-sea-of-stars/",
+              "date": "2023-08-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 80,
+              "url": "https://www.starbit.pt/2024/03/04/sea-of-stars-analise/",
+              "date": "2024-03-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 80,
+              "url": "https://toucharcade.com/2023/09/11/fae-farm-switch-review-30xx-sea-of-stars-eshop-discount-price-list/",
+              "date": "2023-09-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 90,
+              "url": "https://vandal.elespanol.com/analisis/switch/sea-of-stars/111971#p-83",
+              "date": "2023-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 20
         },
         "user": {
-          "score": 8.4,
+          "score": 8.2,
           "scale": 10,
           "sources": [
             {
@@ -99452,14 +99852,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/sea_of_stars",
               "platform": "Nintendo Switch",
               "weight": 12.649110640673518,
-              "normalized": 8.4,
-              "checked": "2026-11-02T18:16:10.190802+00:00"
+              "normalized": 8.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 147,
+              "url": "https://www.metacritic.com/game/sea-of-stars/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 12.12435565298214,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:47:35.587648+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 19,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:52:24.621517+00:00"
       },
       "requirements": {
         "image": true,
@@ -99475,7 +99889,10 @@
       },
       "basics_attempted": "2026-11-02T22:47:35.587648+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/sea-of-stars-switch/",
@@ -99524,7 +99941,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "BMComOd9qP4",
+        "title": "Sea of Stars - Announcement Trailer | PS5 & PS4 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/sea-of-stars/"
+      },
+      "full_attempted": "2026-11-03T07:52:27.004037+00:00",
+      "full_version": 7
     },
     "PS5:13461": {
       "title": "Seeker: My Shadow",
@@ -148812,15 +149237,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 2.42,
-              "count": 31,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 2.42,
               "scale": 5,
-              "source": "PSN",
+              "count": 31,
               "url": "https://store.playstation.com/pt-pt/product/EP3024-PPSA22034_00-SOCTLANDYARPS5EU",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T20:01:26.600782+00:00",
-              "platform": "PSN · PS5",
               "weight": 5.5677643628300215,
               "normalized": 4.84
             }
@@ -148828,7 +149251,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:01:20.316709+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:51:54.752550+00:00"
       },
       "requirements": {
         "image": true,
@@ -148837,7 +149267,11 @@
       },
       "basics_attempted": "2026-11-02T20:01:20.316709+00:00",
       "version": 4,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/EP3024-PPSA22034_00-SOCTLANDYARPS5EU",
         "label": "Abrir na PlayStation Store",
@@ -148886,7 +149320,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:51:55.112170+00:00",
+      "full_version": 7
     },
     "Switch:15759": {
       "title": "Scotland Yard – Hunting Mister X",
@@ -178270,34 +178706,217 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 75.9,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Critical Hits",
+              "score": 60,
+              "url": "https://criticalhits.com.br/reviews/scott-pilgrim-ex-analise-vale-a-pena-review/",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cultured Vultures",
+              "score": 80,
+              "url": "https://culturedvultures.com/scott-pilgrim-ex-ps5-review/",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 88,
+              "url": "https://www.games.ch/scott-pilgrim-ex/test/review-mNig/",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameBlast",
+              "score": 70,
+              "url": "https://www.gameblast.com.br/2026/03/analise-scott-pilgrim-ex-review.html",
+              "date": "2026-03-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2026/03/scott-pilgrim-ex-review-a-must-for-beat-em-up-fans/",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 70,
+              "url": "https://www.gamespot.com/reviews/scott-pilgrim-ex-review-a-short-but-sweet-millennial-nostalgia-romp/1900-6418468/",
+              "date": "2026-03-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameliner",
+              "score": 60,
+              "url": "https://gameliner.nl/reviews/scott-pilgrim-ex-review-extreem-snel-voorbij/7203-29-1-194",
+              "date": "2026-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer Social Club",
+              "score": 80,
+              "url": "https://gamersocialclub.ca/2026/03/03/scott-pilgrim-ex-review/",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingBolt",
+              "score": 70,
+              "url": "https://gamingbolt.com/scott-pilgrim-ex-review-all-our-shows-are-secret-shows",
+              "date": "2026-03-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 80,
+              "url": "https://www.ign.com/articles/scott-pilgrim-ex-review",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 70,
+              "url": "https://es.ign.com/scott-pilgrim-ex/227251/review/analisis-de-scott-pilgrim-ex-el-heroe-que-toronto-necesita",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 75,
+              "url": "https://as.com/meristation/analisis/analisis-de-scott-pilgrim-ex-el-regreso-a-los-origenes-del-beat-em-up-f202603-n/",
+              "date": "2026-07-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/scott-pilgrim-ex-recensione.html",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Omelete",
+              "score": 80,
+              "url": "https://www.omelete.com.br/games/criticas/scott-pilgrim-ex-critica-review",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 85,
+              "url": "https://psxbrasil.com.br/scott-pilgrim-ex-review/",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation LifeStyle",
+              "score": 80,
+              "url": "https://www.playstationlifestyle.net/review/927215-scott-pilgrim-ex-ps5-review-brawler-sequel-delivers-charming-action/",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "https://www.pushsquare.com/reviews/ps5/scott-pilgrim-ex",
+              "date": "2026-03-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 85,
+              "url": "https://www.rpgfan.com/review/scott-pilgrim-ex-review/",
+              "date": "2026-03-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 80,
+              "url": "https://www.thegamer.com/scott-pilgrim-ex-review/",
+              "date": "2026-03-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 70,
+              "url": "https://www.thesixthaxis.com/2026/03/05/scott-pilgrim-ex-review/",
+              "date": "2026-03-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/miscellaneous-console-games-extravaganza-2026#scott-pilgrim-ex",
+              "date": "2026-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 21
         },
         "user": {
-          "score": 9.38,
+          "score": 9.27,
           "scale": 10,
           "sources": [
             {
-              "score": 4.69,
-              "count": 478,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.69,
               "scale": 5,
-              "source": "PSN",
+              "count": 478,
               "url": "https://store.playstation.com/pt-pt/product/EP2114-PPSA28238_00-0142360474135633",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:15:43.710935+00:00",
-              "platform": "PSN · PS5",
               "weight": 21.863211109075447,
               "normalized": 9.38
+            },
+            {
+              "score": 7.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/scott_pilgrim_ex",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 7.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:15:41.499156+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 21,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:52:05.142737+00:00"
       },
       "requirements": {
         "image": true,
@@ -178339,7 +178958,10 @@
       },
       "basics_attempted": "2026-11-02T18:15:41.499156+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -178355,7 +178977,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:52:05.507913+00:00",
+      "full_version": 7
     },
     "Switch:16996": {
       "title": "Scott Pilgrim EX",
@@ -251014,28 +251638,96 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 61.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
+              "name": "Nindie Spotlight",
               "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/sausage_sports_club",
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=sausage-sports-club-switch",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 50,
+              "url": "https://www.nintenderos.com/2018/12/analisis-sausage-sports-club/",
+              "date": "2018-12-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/sausage_sports_club?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-07-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/47774/sausage-sports-club-switch-review",
+              "date": "2018-07-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 45.0,
+              "url": "https://purenintendo.com/review-sausage-sports-club-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 4.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2018/10/12/sausage-sports-club-review/",
+              "date": "2018-10-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
-          "score": null,
+          "score": 5.12,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.8,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/sausage-sports-club/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 6.799999999999999
+            },
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/sausage_sports_club",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:47:35.282956+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:52:04.461500+00:00"
       },
       "requirements": {
         "image": true,
@@ -251051,7 +251743,10 @@
       },
       "basics_attempted": "2026-11-02T22:47:35.282956+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/sausage-sports-club-switch/",
@@ -251100,7 +251795,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:52:07.526382+00:00",
+      "full_version": 7
     },
     "Switch:5211": {
       "title": "Shikhondo Soul Eater",
@@ -314337,6 +315034,7 @@
               "name": "Switch Player",
               "score": 10,
               "url": "http://switchplayer.net/2020/01/07/seaking-hunter-review/",
+              "date": "2020-01-08",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -314345,13 +315043,32 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/seaking_hunter",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:47:35.286629+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Metacritic users: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:52:19.428208+00:00"
       },
       "requirements": {
         "image": true,
@@ -314369,7 +315086,12 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Metacritic users: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -314420,7 +315142,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:52:22.244420+00:00",
+      "full_version": 7
     },
     "Switch:7585": {
       "title": "Sky Rogue",
@@ -350147,22 +350871,150 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 79.4,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/samurai_warriors_5",
+              "name": "Cubed3",
+              "score": 40,
+              "url": "http://www.cubed3.com/review/6658/1/samurai-warriors-5-nintendo-switch.html",
+              "date": "2022-06-20",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 100,
+              "url": "http://www.digitallydownloaded.net/2021/07/review-samurai-warriors-5-nintendo.html",
+              "date": "2021-07-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 80,
+              "url": "https://gamingtrend.com/?p=210720",
+              "date": "2021-07-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 70,
+              "url": "https://www.ign.com/articles/samurai-warriors-5-review",
+              "date": "2021-07-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 70,
+              "url": "https://www.jeuxvideo.com/test/1442874/samurai-warriors-5-un-retour-vraiment-aiguise.htm",
+              "date": "2021-07-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 89.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=samurai-warriors-5-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2021/07/analisis-samurai-warriors-5-para-nintendo-switch/",
+              "date": "2021-07-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/samurai-warriors-5-review/",
+              "date": "2022-01-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/samurai_warriors_5",
+              "date": "2021-07-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "https://www.nintendoworldreport.com/review/57919/samurai-warriors-5-switch-review",
+              "date": "2021-07-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 85,
+              "url": "https://purenintendo.com/review-samurai-warriors-5-nintendo-switch/",
+              "date": "2021-08-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shindig",
+              "score": 90,
+              "url": "https://www.shindig.nz/games/game-review/samurai-warriors-5-switch/",
+              "date": "2021-08-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Siliconera",
+              "score": 90,
+              "url": "https://www.siliconera.com/review-samurai-warriors-5-offers-involved-fights-a-striking-visual-style/",
+              "date": "2021-07-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 80,
+              "url": "https://www.starbit.pt/2021/09/25/samurai-warriors-5-analise/",
+              "date": "2021-09-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "https://switchplayer.net/2021/09/29/samurai-warriors-5-review/",
+              "date": "2021-09-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Mako Reactor",
+              "score": 75,
+              "url": "https://themakoreactor.com/reviews/samurai-warriors-5-switch-review-frame-rate-docked-handheld-graphics-vs-ps4/28063/",
+              "date": "2021-07-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 90,
+              "url": "https://toucharcade.com/2021/08/02/switcharcade-round-up-reviews-featuring-samurai-warriors-5-and-ayo-the-clown-plus-the-latest-releases-and-sales/",
+              "date": "2021-08-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 17
         },
         "user": {
-          "score": 6.7,
+          "score": 6.92,
           "scale": 10,
           "sources": [
             {
@@ -350173,14 +351025,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/samurai_warriors_5",
               "platform": "Nintendo Switch",
               "weight": 9.539392014169456,
-              "normalized": 6.7,
-              "checked": "2026-11-02T18:15:41.497279+00:00"
+              "normalized": 6.7
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.5,
+              "scale": 10,
+              "count": 13,
+              "url": "https://www.metacritic.com/game/samurai-warriors-5/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 7.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:47:35.282653+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 16,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:52:14.758910+00:00"
       },
       "requirements": {
         "image": true,
@@ -350196,7 +351062,10 @@
       },
       "basics_attempted": "2026-11-02T22:47:35.282653+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/samurai-warriors-5-switch/",
@@ -350246,7 +351115,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:52:17.306385+00:00",
+      "full_version": 7
     },
     "Switch:8985": {
       "title": "Sky Force Anniversary",
@@ -361814,11 +362685,20 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-savage-halloween-nintendo-switch/",
+              "date": "2021-05-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 5.6,
@@ -361830,16 +362710,22 @@
               "scale": 10,
               "count": 8,
               "url": "https://www.metacritic.com/game/savage-halloween/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 2.8284271247461903,
-              "normalized": 5.6,
-              "checked": "2026-11-02T18:15:41.498150+00:00"
+              "normalized": 5.6
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:47:35.283226+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:52:29.351886+00:00"
       },
       "requirements": {
         "image": true,
@@ -361856,7 +362742,11 @@
       "basics_attempted": "2026-11-02T22:47:35.283226+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -361906,29 +362796,72 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:52:31.595926+00:00",
+      "full_version": 7
     },
     "Switch:9093": {
       "title": "Scribblenauts Mega Pack",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 75.8,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/scribblenauts_mega_pack",
+              "name": "Nintendo Force Magazine",
+              "score": 75,
+              "url": "",
+              "date": "2019-02-26",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/scribblenauts-mega-pack-review/",
+              "date": "2018-10-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/scribblenauts_mega_pack?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-09-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/48532/scribblenauts-mega-pack-switch-review",
+              "date": "2018-10-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 80,
+              "url": "https://twinfinite.net/2018/09/scribblenauts-mega-pack-review/",
+              "date": "2018-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 75,
+              "url": "https://www.xgn.nl/review/scribblenauts-mega-pack-review",
+              "date": "2018-10-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
-          "score": 7.7,
+          "score": 7.63,
           "scale": 10,
           "sources": [
             {
@@ -361939,14 +362872,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/scribblenauts_mega_pack",
               "platform": "Nintendo Switch",
               "weight": 5.916079783099616,
-              "normalized": 7.7,
-              "checked": "2026-11-02T18:16:10.189682+00:00"
+              "normalized": 7.7
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.5,
+              "scale": 10,
+              "count": 10,
+              "url": "https://www.metacritic.com/game/scribblenauts-mega-pack/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.1622776601683795,
+              "normalized": 7.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:47:35.286220+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:51:59.543040+00:00"
       },
       "requirements": {
         "image": true,
@@ -361962,7 +362909,12 @@
       },
       "basics_attempted": "2026-11-02T22:47:35.286220+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/scribblenauts-mega-pack-switch/",
@@ -362012,7 +362964,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:52:02.156797+00:00",
+      "full_version": 7
     },
     "PS5:9238": {
       "title": "Shing!",
