@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T05:50:31.344324+00:00",
+  "updated": "2026-11-03T05:51:48.145968+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1161,
+    "full_attempted": 1171,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -34998,15 +34998,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.5,
-              "count": 706,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.5,
               "scale": 5,
-              "source": "PSN",
+              "count": 706,
               "url": "https://store.playstation.com/pt-pt/product/EP0958-PPSA06284_00-FIGHTNRAGE0PS5EU",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:08:54.409417+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 26.570660511172846,
               "normalized": 9.0
             }
@@ -35014,7 +35012,16 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:08:53.359645+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:50:45.978919+00:00"
       },
       "requirements": {
         "image": true,
@@ -35056,7 +35063,11 @@
       },
       "basics_attempted": "2026-11-02T17:08:53.359645+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -35072,7 +35083,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:50:46.419591+00:00",
+      "full_version": 7
     },
     "PS5:13324": {
       "title": "Figment 2: Creed Valley",
@@ -35123,15 +35136,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.16,
-              "count": 375,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.16,
               "scale": 5,
-              "source": "PSN",
+              "count": 375,
               "url": "https://store.playstation.com/pt-pt/product/EP0807-PPSA05979_00-0310330672928174",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:08:55.545262+00:00",
-              "platform": "PSN · PS5",
               "weight": 19.364916731037084,
               "normalized": 8.32
             }
@@ -35139,7 +35150,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:08:54.418124+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:50:50.947830+00:00"
       },
       "requirements": {
         "image": true,
@@ -35181,7 +35199,11 @@
       },
       "basics_attempted": "2026-11-02T17:08:54.418124+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -35197,14 +35219,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:50:51.343988+00:00",
+      "full_version": 7
     },
     "Switch:11054": {
       "title": "Figment 2: Creed Valley",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 71.2,
+          "score": 73.4,
           "scale": 100,
           "sources": [
             {
@@ -35214,6 +35238,13 @@
               "date": "2023-04-18",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 82.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=figment-2-creed-valley-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             },
             {
               "name": "Nintenderos",
@@ -35241,10 +35272,10 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 4
+          "source_count": 5
         },
         "user": {
-          "score": 7.0,
+          "score": 7.53,
           "scale": 10,
           "sources": [
             {
@@ -35255,14 +35286,28 @@
               "url": "https://www.metacritic.com/game/figment-2-creed-valley/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 7.0,
-              "checked": "2026-11-02T17:08:55.558059+00:00"
+              "normalized": 7.0
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.8,
+              "scale": 10.0,
+              "count": 24,
+              "url": "https://www.nintendolife.com/games/switch-eshop/figment_2_creed_valley",
+              "platform": "Nintendo Switch",
+              "weight": 4.898979485566356,
+              "normalized": 7.800000000000001
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:24.152945+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:51:04.492782+00:00"
       },
       "requirements": {
         "image": true,
@@ -35278,7 +35323,12 @@
       },
       "basics_attempted": "2026-11-02T22:32:24.152945+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/figment-2-creed-valley-switch/",
@@ -35327,7 +35377,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:51:08.870622+00:00",
+      "full_version": 7
     },
     "PS5:11797": {
       "title": "Final Vendetta",
@@ -35382,7 +35434,7 @@
           "source_count": 5
         },
         "user": {
-          "score": 8.07,
+          "score": 7.9,
           "scale": 10,
           "sources": [
             {
@@ -35396,23 +35448,37 @@
               "normalized": 4.9
             },
             {
-              "score": 4.26,
-              "count": 395,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.26,
               "scale": 5,
-              "source": "PSN",
+              "count": 395,
               "url": "https://store.playstation.com/pt-pt/product/EP5938-PPSA07058_00-FINALVENDETTAPS5",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:09:09.683926+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 19.87460691435179,
               "normalized": 8.52
+            },
+            {
+              "score": 6.2,
+              "scale": 10,
+              "count": 5,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/final_vendetta",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 2.23606797749979,
+              "normalized": 6.2
             }
           ],
-          "source_count": 2,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:09:08.577589+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:50:59.372828+00:00"
       },
       "requirements": {
         "image": true,
@@ -35454,7 +35520,9 @@
       },
       "basics_attempted": "2026-11-02T17:09:08.577589+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -35470,14 +35538,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:50:59.790189+00:00",
+      "full_version": 7
     },
     "Switch:11799": {
       "title": "Final Vendetta",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 73.8,
+          "score": 74.0,
           "scale": 100,
           "sources": [
             {
@@ -35487,6 +35557,13 @@
               "date": "2022-06-17",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=final-vendetta-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             },
             {
               "name": "Nintenderos",
@@ -35514,10 +35591,10 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 4
+          "source_count": 5
         },
         "user": {
-          "score": 3.4,
+          "score": 5.75,
           "scale": 10,
           "sources": [
             {
@@ -35528,14 +35605,28 @@
               "url": "https://www.metacritic.com/game/final-vendetta/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 2.23606797749979,
-              "normalized": 3.3999999999999995,
-              "checked": "2026-11-02T17:09:08.577840+00:00"
+              "normalized": 3.3999999999999995
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.2,
+              "scale": 10.0,
+              "count": 13,
+              "url": "https://www.nintendolife.com/games/switch-eshop/final_vendetta",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 7.199999999999999
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:24.155201+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:51:29.513177+00:00"
       },
       "requirements": {
         "image": true,
@@ -35551,7 +35642,12 @@
       },
       "basics_attempted": "2026-11-02T22:32:24.155201+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/final-vendetta-switch/",
@@ -35600,7 +35696,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:51:31.900860+00:00",
+      "full_version": 7
     },
     "Switch:11422": {
       "title": "Fire Emblem Warriors: Three Hopes",
@@ -145633,7 +145731,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:56:53.555058+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:51:09.266891+00:00"
       },
       "requirements": {
         "image": true,
@@ -145650,7 +145756,12 @@
       "basics_attempted": "2026-11-02T22:56:53.555058+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -145700,7 +145811,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:51:13.789961+00:00",
+      "full_version": 7
     },
     "Switch:16366": {
       "title": "Final Star Force",
@@ -175045,26 +175158,73 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 62.5,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Creative Bloq",
+              "score": 60,
+              "url": "https://www.creativebloq.com/entertainment/gaming/the-fighting-force-collection-sent-me-straight-back-to-the-90s-flaws-and-all",
+              "date": "2026-02-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Final Weapon",
+              "score": 50,
+              "url": "https://finalweapon.net/2026/02/10/fighting-force-collection-review/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameBlast",
+              "score": 75,
+              "url": "https://www.gameblast.com.br/2026/02/analise-fighting-force-collection-review.html",
+              "date": "2026-02-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 70,
+              "url": "https://psxbrasil.com.br/fighting-force-collection-review/",
+              "date": "2026-02-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 60,
+              "url": "https://www.playstationcountry.com/fighting-force-collection-ps5-review/",
+              "date": "2026-02-02",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 60,
+              "url": "https://ztgd.com/reviews/fighting-force-collection-ps5/",
+              "date": "2026-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 6
         },
         "user": {
           "score": 9.46,
           "scale": 10,
           "sources": [
             {
-              "score": 4.73,
-              "count": 351,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.73,
               "scale": 5,
-              "source": "PSN",
+              "count": 351,
               "url": "https://store.playstation.com/pt-pt/product/EP6890-PPSA31177_00-0509013129930531",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:21:37.451523+00:00",
-              "platform": "PSN · PS5",
               "weight": 18.734993995195193,
               "normalized": 9.46
             }
@@ -175072,7 +175232,12 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:21:35.860711+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:51:04.384932+00:00"
       },
       "requirements": {
         "image": true,
@@ -175114,7 +175279,10 @@
       },
       "basics_attempted": "2026-11-02T17:21:35.860711+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -175130,7 +175298,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:51:05.052631+00:00",
+      "full_version": 7
     },
     "Switch:17890": {
       "title": "Fighting Force Collection",
@@ -175144,6 +175314,7 @@
               "name": "Gaming Boulevard",
               "score": 70,
               "url": "https://gamingboulevard.com/2026/01/review-fighting-force-collection/",
+              "date": "2026-01-30",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -175151,6 +175322,7 @@
               "name": "Gaming Nexus",
               "score": 50,
               "url": "https://www.gamingnexus.com/Article/16346/Fighting-Force-Collection/",
+              "date": "2026-02-06",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -175158,6 +175330,7 @@
               "name": "Nintendo News PL",
               "score": 65,
               "url": "https://nintendonews.pl/recenzja-fighting-force-collection-na-nintendo-switch-2",
+              "date": "2026-05-14",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -175165,6 +175338,7 @@
               "name": "Noisy Pixel",
               "score": 55,
               "url": "https://noisypixel.net/fighting-force-collection-review-limited-run/",
+              "date": "2026-02-11",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -175172,6 +175346,7 @@
               "name": "SECTOR.sk",
               "score": 40,
               "url": " https://www.sector.sk/recenzia/40426/fighting-force-collection.htm",
+              "date": "2026-02-09",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -175179,6 +175354,7 @@
               "name": "Starbit",
               "score": 40,
               "url": "https://www.starbit.pt/2026/02/23/fighting-force-collection-analise/",
+              "date": "2026-02-23",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -175186,6 +175362,7 @@
               "name": "The Jimquisition",
               "score": 50,
               "url": "https://www.thejimquisition.com/post/fighting-force-collection-streets-of-mild-frustration-review",
+              "date": "2026-02-01",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -175193,6 +175370,7 @@
               "name": "What's It Like?",
               "score": 58,
               "url": "https://www.whatsitlike.com.au/fighting-force-collection-switch-review/",
+              "date": "2026-08-08",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -175207,7 +175385,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:33:34.002896+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 410: Gone"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:51:19.288952+00:00"
       },
       "requirements": {
         "image": true,
@@ -175225,7 +175411,12 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 410: Gone",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 410: Gone",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -175275,7 +175466,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:51:21.632014+00:00",
+      "full_version": 7
     },
     "Switch:17918": {
       "title": "GRAVIATORS",
@@ -236519,28 +236712,123 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 77.0,
+          "score": 78.4,
           "scale": 100,
           "sources": [
+            {
+              "name": "4P.de",
+              "score": 82,
+              "url": "https://www.4players.de/4players.php/dispbericht/Allgemein/Test/41280/84116/0/FightN_Rage.html",
+              "date": "2019-11-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 80,
+              "url": "https://www.darkstation.com/reviews/fightn-rage-review",
+              "date": "2019-10-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkZero",
+              "score": 80,
+              "url": "http://darkzero.co.uk/game-reviews/fightn-rage-nintendo-switch/",
+              "date": "2019-10-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "https://fnintendo.net/article/13182-fightn-rage",
+              "date": "2019-11-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 77.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=fightn-rage-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 85,
+              "url": "https://www.nintenderos.com/2020/05/analisis-fightn-rage-para-nintendo-switch/",
+              "date": "2020-05-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://api.nintendolife.com/reviews/switch-eshop/fightn_rage1",
+              "date": "2019-10-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 50,
+              "url": "https://purenintendo.com/review-fightn-rage-nintendo-switch/",
+              "date": "2019-10-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2019/10/25/fightn-rage-review/",
+              "date": "2019-10-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 90,
+              "url": "https://vandal.elespanol.com/analisis/switch/fightn-rage/77773#p-83",
+              "date": "2019-10-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 10
         },
         "user": {
-          "score": null,
+          "score": 6.8,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.8,
+              "scale": 10,
+              "count": 33,
+              "url": "https://www.metacritic.com/game/fightn-rage/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 5.744562646538029,
+              "normalized": 6.799999999999999
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T19:19:50.733924+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 410: Gone"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:51:44.261787+00:00"
       },
       "requirements": {
         "image": true,
@@ -236564,7 +236852,11 @@
       "basics_attempted": "2026-11-02T19:19:50.733924+00:00",
       "version": 3,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 410: Gone"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 410: Gone",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 410: Gone",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "aliases": [
         "Fight'N Rage"
@@ -236584,7 +236876,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:51:47.891625+00:00",
+      "full_version": 7
     },
     "Switch:6048": {
       "title": "Freakout: Calamity TV Show",
@@ -246194,22 +246488,119 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 70.4,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/fight_crab",
+              "name": "COGconnected",
+              "score": 68,
+              "url": "https://cogconnected.com/review/fight-crab-review/",
+              "date": "2020-09-14",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cultured Vultures",
+              "score": 75,
+              "url": "https://culturedvultures.com/fight-crab-switch-review/",
+              "date": "2020-09-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 90,
+              "url": "http://digitalchumps.com/fight-crab-review/",
+              "date": "2020-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 90,
+              "url": "http://www.digitallydownloaded.net/2020/09/review-fight-crab-nintendo-switch.html",
+              "date": "2020-09-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 80,
+              "url": "https://www.heypoorplayer.com/2020/09/24/fight-crab-review-switch/",
+              "date": "2020-10-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 50,
+              "url": "https://multiplayer.it/recensioni/fight-crab-recensione.html",
+              "date": "2020-10-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 60,
+              "url": "",
+              "date": "2021-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 50,
+              "url": "https://www.nintendo-insider.com/fight-crab-review/",
+              "date": "2020-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/fight_crab",
+              "date": "2020-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "https://www.nintendoworldreport.com/review/54966/fight-crab-switch-review",
+              "date": "2020-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 75,
+              "url": "https://purenintendo.com/review-fight-crab-nintendo-switch/",
+              "date": "2020-09-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 50,
+              "url": "https://www.starbit.pt/2020/10/12/fight-crab-analise/",
+              "date": "2020-10-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 77,
+              "url": "https://videochums.com/review/fight-crab",
+              "date": "2020-09-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 13
         },
         "user": {
-          "score": 7.2,
+          "score": 7.02,
           "scale": 10,
           "sources": [
             {
@@ -246220,14 +246611,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/fight_crab",
               "platform": "Nintendo Switch",
               "weight": 4.123105625617661,
-              "normalized": 7.199999999999999,
-              "checked": "2026-11-02T17:29:44.516982+00:00"
+              "normalized": 7.199999999999999
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.8,
+              "scale": 10,
+              "count": 11,
+              "url": "https://www.metacritic.com/game/fight-crab/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.3166247903554,
+              "normalized": 6.799999999999999
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:35:55.070596+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 13,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:51:14.493862+00:00"
       },
       "requirements": {
         "image": true,
@@ -246243,7 +246648,11 @@
       },
       "basics_attempted": "2026-11-02T22:35:55.070596+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No exact scored Nintendo Switch review",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/fight-crab-switch/",
@@ -246292,7 +246701,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:51:19.375731+00:00",
+      "full_version": 7
     },
     "Switch:6255": {
       "title": "Fling to the Finish",
