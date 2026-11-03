@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:14:13.054575+00:00",
+  "updated": "2026-11-03T08:15:21.369447+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2161,
+    "full_attempted": 2171,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -117508,7 +117508,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 75.0,
           "scale": 100,
           "sources": [
             {
@@ -117517,19 +117517,54 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-saurio-fly-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 70,
+              "url": "https://www.nintenderos.com/2018/07/analisis-super-saurio-fly/",
+              "date": "2018-07-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 4.97,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.3,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/super-saurio-fly/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 6.3
+            },
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/super_saurio_fly",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:50:40.327393+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:14:55.105858+00:00"
       },
       "requirements": {
         "image": true,
@@ -117545,7 +117580,12 @@
       },
       "basics_attempted": "2026-11-02T22:50:40.327393+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/super-saurio-fly-switch/",
@@ -117594,7 +117634,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:14:57.102705+00:00",
+      "full_version": 7
     },
     "Switch:manual-smash": {
       "title": "Super Smash Bros. Ultimate",
@@ -117610,45 +117652,843 @@
         "id": "WLu7e8RZoYc",
         "title": "Super Smash Bros. Ultimate – Overview Trailer",
         "kind": "gameplay",
-        "source": "https://www.youtube.com/watch?v=WLu7e8RZoYc",
-        "url": "https://www.youtube.com/watch?v=WLu7e8RZoYc",
-        "checked": "2026-11-02T16:01:23.026279+00:00",
-        "attempted": "2026-11-02T16:01:23.026284+00:00",
-        "error": null
+        "source": "https://www.youtube.com/watch?v=WLu7e8RZoYc"
       },
       "ratings": {
         "critic": {
-          "score": 93.0,
+          "score": 92.9,
           "scale": 100,
           "sources": [
             {
-              "name": "Metacritic",
+              "name": "3DJuegos",
+              "score": 95,
+              "url": "https://www.3djuegos.com/juegos/analisis/31614/0/super-smash-bros-ultimate/",
+              "date": "2018-12-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "4P.de",
+              "score": 87,
+              "url": "http://www.4players.de/4players.php/dispbericht/Switch/Test/39800/83485/0/Super_Smash_Bros_Ultimate.html",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 100,
+              "url": "https://areajugones.sport.es/super-smash-bros-for-switch-provisional/analisis/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 95,
+              "url": "https://atomix.vg/review-super-smash-bros-ultimate/",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 70,
+              "url": "https://attackofthefanboy.com/reviews/super-smash-bros-ultimate-review/",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "AusGamers",
+              "score": 98,
+              "url": "https://www.ausgamers.com/games/super-smash-bros-ultimate/review/",
+              "date": "2018-12-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "BaziCenter",
+              "score": 95,
+              "url": "http://www.bazicenter.com/?p=756205",
+              "date": "2019-01-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 95,
+              "url": "",
+              "date": "2019-03-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 90,
+              "url": "https://www.cgmagonline.com/reviews/super-smash-bros-ultimate-(switch)-review/ ",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 90,
+              "url": "https://cogconnected.com/review/super-smash-bros-ultimate-review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cheat Code Central",
+              "score": 100,
+              "url": "http://cheatcc.com/switch/rev/supersmashbrosultimatereview.html",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 90,
+              "url": "https://www.criticalhit.net/review/super-smash-bros-ultimate/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/5241/1/super-smash-bros-ultimate-nintendo-switch.html",
+              "date": "2018-12-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 95,
+              "url": "https://www.destructoid.com/review-super-smash-bros-ultimate-532682.phtml",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Trends",
+              "score": 90,
+              "url": "https://www.digitaltrends.com/game-reviews/super-smash-bros-ultimate-review/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 90,
+              "url": "http://www.digitallydownloaded.net/2018/12/review-super-smash-bros-ultimate.html",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 90,
+              "url": "https://www.dualshockers.com/super-smash-bros-ultimate-review-nintendo-switch/",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "EGM",
+              "score": 95,
+              "url": "http://www.egmnow.com/articles/reviews/super-smash-bros-ultimate-review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Easy Allies",
+              "score": 90,
+              "url": "https://easyallies.com/#!/review/super-smash-bros-ultimate",
+              "date": "2018-12-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 90,
+              "url": "",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 100,
+              "url": "https://www.eurogamer.it/articles/2018-12-06-super-smash-bros-ultimate-recensione",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
               "score": 93,
-              "url": "https://www.metacritic.com/game/super-smash-bros-ultimate/critic-reviews/?platform=nintendo-switch",
-              "platform": "Switch"
+              "url": "https://www.everyeye.it/articoli/recensione-super-smash-bros-ultimate-per-switch-del-picchiaduro-nintendo-41852.html",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FANDOM",
+              "score": 100,
+              "url": "http://fandom.wikia.com/articles/super-smash-bros-ultimate-review",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 90,
+              "url": "https://fnintendo.net/article/11833-super-smash-bros-ultimate",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 95,
+              "url": "https://www.gameinformer.com/review/super-smash-bros-ultimate/a-raucous-clash-reunion",
+              "date": "2018-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 90,
+              "url": "https://gamerant.com/super-smash-bros-ultimate-review/",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Revolution",
+              "score": 90,
+              "url": "https://www.gamerevolution.com/review/471527-super-smash-bros-ultimate-review-simply-smashing",
+              "date": "2018-12-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game World Navigator Magazine",
+              "score": 93,
+              "url": "",
+              "date": "2019-02-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCrate",
+              "score": 90,
+              "url": "https://www.gamecrate.com/reviews/review-super-smash-bros-ultimate-three-games-one/21602",
+              "date": "2018-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 100,
+              "url": "https://gameover.gr/reviews/38601-super-smash-bros-ultimate-review",
+              "date": "2018-12-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 92,
+              "url": "https://www.gamepro.de/artikel/super-smash-bros-ultimate-test,3337969.html",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 90,
+              "url": "https://www.gamespew.com/2018/12/super-smash-bros-ultimate-review/",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 90,
+              "url": "https://www.gamespot.com/reviews/super-smash-bros-ultimate-review-me-and-you-and-ev/1900-6417051/",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 90,
+              "url": "http://www.gameblog.fr/tests/3247-super-smash-bros-ultimate-switch",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameplanet",
+              "score": 90,
+              "url": "https://www.gameplanet.com.au/nintendo-switch/reviews/g5c0995b9272b3/Super-Smash-Bros.-Ultimate-Review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 90,
+              "url": "https://gamer.nl/artikelen/review/super-smash-bros-ultimate-is-uitgebreid-en-chaotisch/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamersky",
+              "score": 95,
+              "url": "https://www.gamersky.com/review/201812/1133248.shtml",
+              "date": "2018-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 100,
+              "url": "https://games.tiscali.cz/recenze/super-smash-bros-ultimate-recenze-323325",
+              "date": "2019-01-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesBeat",
+              "score": 90,
+              "url": "https://venturebeat.com/2018/12/06/super-smash-bros-ultimate-review/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 90,
+              "url": "https://www.gamesradar.com/super-smash-bros-ultimate-review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 95,
+              "url": "http://gamingtrend.com/feature/reviews/another-smashing-success-from-sakurai-super-smash-bros-ultimate-review/",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 100,
+              "url": "http://www.godisageek.com/reviews/super-smash-bros-ultimate-review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Guardian",
+              "score": 100,
+              "url": "https://www.theguardian.com/games/2018/dec/12/super-smash-bros-ultimate-review-nintendo-switch",
+              "date": "2018-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 90,
+              "url": "https://www.hardcoregamer.com/2018/12/10/review-super-smash-bros-ultimate/320002/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 95,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-super-smash-bros-ultimate-nintendo-switch-336011",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 94,
+              "url": "https://www.ign.com/articles/2018/12/06/super-smash-bros-ultimate-review",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 90,
+              "url": "https://it.ign.com/super-smash-bros-ultimate-switch/148367/review/super-smash-bros-ultimate-la-recensione-prima-parte",
+              "date": "2018-12-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 95,
+              "url": "https://es.ign.com/super-smash-bros-ultimate-nintendo-switch/142814/review/analisis-de-super-smash-bros-ultimate-para-nintendo-switch",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 100,
+              "url": "http://www.impulsegamer.com/super-smash-bros-ultimate-review/",
+              "date": "2018-12-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "InsideGamer.nl",
+              "score": 95,
+              "url": "https://www.insidegamer.nl/artikel/super-smash-bros-ultimate-review-de-meest-ultieme-smash-ooit/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 80,
+              "url": " https://www.jeuxactu.com/test-super-smash-bros-ultimate-veritable-suite-ou-gros-portage-116375.htm",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 95,
+              "url": "http://www.jeuxvideo.com/test/969075/super-smash-bros-ultimate-le-meilleur-episode-de-la-serie.htm",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 97,
+              "url": "https://www.levelup.com/Nintendo-Switch/juegos/467266/Super-Smash-Bros-Ultimate/review",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "M3",
+              "score": 90,
+              "url": "https://m3.idg.se/2.1022/1.703995/super-smash-bros-ultimate",
+              "date": "2019-01-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 90,
+              "url": "https://as.com/meristation/2018/12/05/analisis/1544050771_380235.html",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Merlin'in Kazanı (Turkey)",
+              "score": 89,
+              "url": "http://www.merlininkazani.com/Super_Smash_Bros_Ultimate-oyun_inceleme-104961p1.html",
+              "date": "2018-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 90,
+              "url": "https://metro.co.uk/2018/12/06/super-smash-bros-ultimate-review-nintendo-vs-the-world-8215803/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 94,
+              "url": "https://multiplayer.it/recensioni/super-smash-bros-ultimate-recensione.html",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "My Nintendo News",
+              "score": 90,
+              "url": "https://mynintendonews.com/2018/12/13/review-super-smash-bros-ultimate-for-nintendo-switch/",
+              "date": "2018-12-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New Game Network",
+              "score": 88,
+              "url": "https://www.newgamenetwork.com/article/2055/super-smash-bros-ultimate-review/",
+              "date": "2018-12-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New York Daily News",
+              "score": 100,
+              "url": "https://www.nydailynews.com/entertainment/ny-nintendo-switch-super-smash-bros-20181224-story.html",
+              "date": "2018-12-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 93,
+              "url": "https://www.nintenderos.com/2018/12/analisis-super-smash-bros-ultimate/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 95,
+              "url": "https://www.nintendoenthusiast.com/2018/12/10/super-smash-bros-ultimate-review/",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 100,
+              "url": "",
+              "date": "2019-02-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 100,
+              "url": "https://www.nintendo-insider.com/super-smash-bros-ultimate-review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 100,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/super_smash_bros_ultimate",
+              "date": "2018-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/49135/super-smash-bros-ultimate-switch-review",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 91,
+              "url": "http://www.nintendojo.com/reviews/review-super-smash-bros-ultimate-switch",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 95,
+              "url": "http://play.co.rs/2019/02/review-super-smash-bros-ultimate/",
+              "date": "2019-03-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayGround.ru",
+              "score": 90,
+              "url": "http://www.playground.ru/articles/vse_super_obzor_super_smash_bros_ultimate-60123/",
+              "date": "2019-02-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Power Unlimited",
+              "score": 100,
+              "url": "https://pu.nl/artikelen/review/super-smash-bros-ultimate-review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 100,
+              "url": " https://press-start.com.au/reviews/nintendo-switch/2018/12/06/super-smash-bros-ultimate-review-a-wonderful-celebration",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 90,
+              "url": "https://screenrant.com/super-smash-bros-ultimate-review/",
+              "date": "2018-12-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 90,
+              "url": "https://www.shacknews.com/article/108970/super-smash-bros-ultimate-review-ultimate-warriors",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Slant Magazine",
+              "score": 90,
+              "url": "https://www.slantmagazine.com/games/review/super-smash-bros-ultimate",
+              "date": "2018-12-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 97,
+              "url": "https://www.spaziogames.it/super-smash-bros-ultimate-recensione/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 95,
+              "url": "https://stevivor.com/reviews/super-smash-bros-ultimate-review-super-smashed/",
+              "date": "2018-12-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Telegraph",
+              "score": 80,
+              "url": "https://www.telegraph.co.uk/gaming/reviews/super-smash-bros-ultimate-review-riotous-fighter-gloriously/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Daily Dot",
+              "score": 90,
+              "url": "https://www.dailydot.com/parsec/super-smash-bros-ultimate-review/",
+              "date": "2018-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 100,
+              "url": "https://www.thedigitalfix.com/gaming/content/12055/super-smash-bros-ultimate/",
+              "date": "2018-12-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Escapist",
+              "score": 100,
+              "url": "https://www.escapistmagazine.com/v2/2018/12/12/review-super-smash-bros-ultimate/",
+              "date": "2018-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 93,
+              "url": "https://www.thegamesmachine.it/super-smash-bros-ultimate/super-smash-bros-ultimate-recensione-switch/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Sydney Morning Herald",
+              "score": 95,
+              "url": "https://www.smh.com.au/technology/super-smash-bros-ultimate-review-the-crossover-to-end-all-crossovers-20181206-p50kig.html",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 100,
+              "url": "https://www.thesixthaxis.com/?p=326335&preview=true",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TrueGaming",
+              "score": 90,
+              "url": "https://www.true-gaming.net/home/385222/",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 80,
+              "url": "https://www.trustedreviews.com/reviews/super-smash-bros-ultimate",
+              "date": "2018-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 100,
+              "url": "http://twinfinite.net/2018/12/super-smash-bros-ultimate-review",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "USgamer",
+              "score": 90,
+              "url": "https://www.usgamer.net/articles/super-smash-bros-ultimate-review-12072018",
+              "date": "2018-12-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 100,
+              "url": "https://vandal.elespanol.com/analisis/switch/super-smash-bros-ultimate/58489/",
+              "date": "2018-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Variety",
+              "score": 90,
+              "url": "https://variety.com/2018/gaming/reviews/super-smash-bros-ultimate-review-1203086552/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vgames",
+              "score": 95,
+              "url": "https://www.vgames.co.il/article/26282.html",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 89,
+              "url": "https://videochums.com/review/super-smash-bros-ultimate",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VideoGamer",
+              "score": 90,
+              "url": "https://www.videogamer.com/reviews/super-smash-bros-ultimate-review",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 100,
+              "url": "https://www.vooks.net/super-smash-bros-ultimate/",
+              "date": "2018-12-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 94,
+              "url": "https://wccftech.com/review/super-smash-bros-ultimate-best-ever/",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 80,
+              "url": "https://wegotthiscovered.com/gaming/super-smash-bros-ultimate-review/",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 95,
+              "url": "https://worthplaying.com/article/2018/12/14/reviews/112215/",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 97,
+              "url": "https://www.xgn.nl/review/super-smash-bros-ultimate-review",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 95,
+              "url": "http://www.ztgd.com/reviews/super-smash-bros-ultimate-switch/",
+              "date": "2019-01-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 99
         },
         "user": {
-          "score": 8.7,
+          "score": 8.85,
           "scale": 10,
-          "source_count": 1,
-          "method": "single-source",
           "sources": [
             {
+              "name": "Metacritic users",
               "score": 8.7,
               "scale": 10,
-              "source": "Metacritic",
+              "count": 5585,
               "url": "https://www.metacritic.com/game/super-smash-bros-ultimate/user-reviews/?platform=nintendo-switch",
-              "checked": "2026-11-02T13:12:35.145888+00:00",
-              "name": "Metacritic",
-              "platform": "Switch"
+              "platform": "Nintendo Switch",
+              "weight": 31.622776601683793,
+              "normalized": 8.7
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 9.0,
+              "scale": 10.0,
+              "count": 1985,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/super_smash_bros_ultimate",
+              "platform": "Nintendo Switch",
+              "weight": 31.622776601683793,
+              "normalized": 9.0
             }
-          ]
+          ],
+          "source_count": 2,
+          "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:50:40.330345+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 110,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:15:07.569886+00:00"
       },
       "requirements": {
         "image": true,
@@ -117657,7 +118497,11 @@
       },
       "basics_attempted": "2026-11-02T22:50:40.330345+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "Different game or console in review heading"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/super-smash-bros-ultimate-switch/",
@@ -117706,35 +118550,88 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:15:10.874159+00:00",
+      "full_version": 7
     },
     "Switch:10035": {
       "title": "Super Soccer Blast",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 76.5,
           "scale": 100,
           "sources": [
+            {
+              "name": "Gaming Age",
+              "score": 91,
+              "url": "https://gaming-age.com/2020/08/super-soccer-blast-review-for-nintendo-switch/",
+              "date": "2020-08-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 70.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-soccer-blast-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/54110/super-soccer-blast-switch-review",
+              "date": "2020-06-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 70,
+              "url": "https://www.starbit.pt/2020/07/25/super-soccer-blast-analise/",
+              "date": "2020-07-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 4
         },
         "user": {
-          "score": null,
+          "score": 5.56,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/super-soccer-blast/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 7.0
+            },
+            {
+              "score": 2.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/super_soccer_blast",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 2.5
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:50:40.333372+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:14:35.080522+00:00"
       },
       "requirements": {
         "image": true,
@@ -117750,7 +118647,11 @@
       },
       "basics_attempted": "2026-11-02T22:50:40.333372+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/super-soccer-blast-switch/",
@@ -117799,35 +118700,71 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:14:37.391307+00:00",
+      "full_version": 7
     },
     "Switch:10032": {
       "title": "Super Soccer Blast: America vs Europe",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 40.0,
+          "score": 58.3,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 40.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/super_soccer_blast_america_vs_europe",
+              "name": "Gaming Age",
+              "score": 75,
+              "url": "https://gaming-age.com/2021/09/super-soccer-blast-america-vs-europe-review-for-nintendo-switch-ps4-xbox-one/",
+              "date": "2021-09-30",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 40,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/super_soccer_blast_america_vs_europe",
+              "date": "2021-06-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Starbit",
+              "score": 60,
+              "url": "https://www.starbit.pt/2021/06/24/a-corrigir-super-soccer-blast-america-vs-europe-analise/",
+              "date": "2021-06-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 5.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 5.0,
+              "scale": 10,
+              "count": 4,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/super_soccer_blast_america_vs_europe",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.0,
+              "normalized": 5.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:50:40.333678+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:14:40.052711+00:00"
       },
       "requirements": {
         "image": true,
@@ -117843,7 +118780,13 @@
       },
       "basics_attempted": "2026-11-02T22:50:40.333678+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/super-soccer-blast-america-vs-europe-switch/",
@@ -117893,35 +118836,112 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:14:42.383364+00:00",
+      "full_version": 7
     },
     "Switch:10037": {
       "title": "Super Tennis Blast",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 76.9,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 60,
+              "url": "http://www.cubed3.com/review/5546/1/super-tennis-blast-nintendo-switch.html",
+              "date": "2019-07-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 83,
+              "url": "http://www.gaming-age.com/2019/07/super-tennis-blast-review-for-switch-pc-xbox-one-ps4/",
+              "date": "2019-07-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 80.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-tennis-blast-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 75,
+              "url": "https://www.nintenderos.com/2020/04/analisis-super-tennis-blast-para-nintendo-switch/",
+              "date": "2020-04-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 80,
+              "url": "https://www.nintendoenthusiast.com/2019/06/28/super-tennis-blast-review-for-nintendo-switch/",
+              "date": "2019-07-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/50612/super-tennis-blast-switch-review",
+              "date": "2019-05-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2019/07/22/super-tennis-blast-review/",
+              "date": "2019-07-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
-          "score": null,
+          "score": 5.67,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/super-tennis-blast/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.0,
+              "normalized": 8.0
+            },
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/super_tennis_blast",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:50:40.334740+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:14:45.086802+00:00"
       },
       "requirements": {
         "image": true,
@@ -117937,7 +118957,11 @@
       },
       "basics_attempted": "2026-11-02T22:50:40.334740+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/super-tennis-blast-switch/",
@@ -117986,7 +119010,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:14:47.423583+00:00",
+      "full_version": 7
     },
     "PS5:14168": {
       "title": "Sven - Completely Screwed",
@@ -183231,15 +184257,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.35,
-              "count": 72,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.35,
               "scale": 5,
-              "source": "PSN",
+              "count": 72,
               "url": "https://store.playstation.com/pt-pt/product/JP0036-PPSA26818_00-TECHWORLD0000PS5",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:28:13.350058+00:00",
-              "platform": "PSN · PS5",
               "weight": 8.48528137423857,
               "normalized": 8.7
             }
@@ -183247,7 +184271,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:28:12.344419+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:14:35.521085+00:00"
       },
       "requirements": {
         "image": true,
@@ -183289,7 +184321,11 @@
       },
       "basics_attempted": "2026-11-02T18:28:12.344419+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -183305,7 +184341,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:14:35.841970+00:00",
+      "full_version": 7
     },
     "Switch:16555": {
       "title": "Super Technos World: River City & Technos Arcade Classics",
@@ -282856,22 +283894,807 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 100.0,
+          "score": 92.9,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 100.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/super_smash_bros_ultimate",
+              "name": "3DJuegos",
+              "score": 95,
+              "url": "https://www.3djuegos.com/juegos/analisis/31614/0/super-smash-bros-ultimate/",
+              "date": "2018-12-13",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "4P.de",
+              "score": 87,
+              "url": "http://www.4players.de/4players.php/dispbericht/Switch/Test/39800/83485/0/Super_Smash_Bros_Ultimate.html",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 100,
+              "url": "https://areajugones.sport.es/super-smash-bros-for-switch-provisional/analisis/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Atomix",
+              "score": 95,
+              "url": "https://atomix.vg/review-super-smash-bros-ultimate/",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 70,
+              "url": "https://attackofthefanboy.com/reviews/super-smash-bros-ultimate-review/",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "AusGamers",
+              "score": 98,
+              "url": "https://www.ausgamers.com/games/super-smash-bros-ultimate/review/",
+              "date": "2018-12-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "BaziCenter",
+              "score": 95,
+              "url": "http://www.bazicenter.com/?p=756205",
+              "date": "2019-01-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CD-Action",
+              "score": 95,
+              "url": "",
+              "date": "2019-03-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 90,
+              "url": "https://www.cgmagonline.com/reviews/super-smash-bros-ultimate-(switch)-review/ ",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 90,
+              "url": "https://cogconnected.com/review/super-smash-bros-ultimate-review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cheat Code Central",
+              "score": 100,
+              "url": "http://cheatcc.com/switch/rev/supersmashbrosultimatereview.html",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hit",
+              "score": 90,
+              "url": "https://www.criticalhit.net/review/super-smash-bros-ultimate/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/5241/1/super-smash-bros-ultimate-nintendo-switch.html",
+              "date": "2018-12-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 95,
+              "url": "https://www.destructoid.com/review-super-smash-bros-ultimate-532682.phtml",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Trends",
+              "score": 90,
+              "url": "https://www.digitaltrends.com/game-reviews/super-smash-bros-ultimate-review/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 90,
+              "url": "http://www.digitallydownloaded.net/2018/12/review-super-smash-bros-ultimate.html",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 90,
+              "url": "https://www.dualshockers.com/super-smash-bros-ultimate-review-nintendo-switch/",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "EGM",
+              "score": 95,
+              "url": "http://www.egmnow.com/articles/reviews/super-smash-bros-ultimate-review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Easy Allies",
+              "score": 90,
+              "url": "https://easyallies.com/#!/review/super-smash-bros-ultimate",
+              "date": "2018-12-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 90,
+              "url": "",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 100,
+              "url": "https://www.eurogamer.it/articles/2018-12-06-super-smash-bros-ultimate-recensione",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 93,
+              "url": "https://www.everyeye.it/articoli/recensione-super-smash-bros-ultimate-per-switch-del-picchiaduro-nintendo-41852.html",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FANDOM",
+              "score": 100,
+              "url": "http://fandom.wikia.com/articles/super-smash-bros-ultimate-review",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 90,
+              "url": "https://fnintendo.net/article/11833-super-smash-bros-ultimate",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 95,
+              "url": "https://www.gameinformer.com/review/super-smash-bros-ultimate/a-raucous-clash-reunion",
+              "date": "2018-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 90,
+              "url": "https://gamerant.com/super-smash-bros-ultimate-review/",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Revolution",
+              "score": 90,
+              "url": "https://www.gamerevolution.com/review/471527-super-smash-bros-ultimate-review-simply-smashing",
+              "date": "2018-12-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game World Navigator Magazine",
+              "score": 93,
+              "url": "",
+              "date": "2019-02-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCrate",
+              "score": 90,
+              "url": "https://www.gamecrate.com/reviews/review-super-smash-bros-ultimate-three-games-one/21602",
+              "date": "2018-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 100,
+              "url": "https://gameover.gr/reviews/38601-super-smash-bros-ultimate-review",
+              "date": "2018-12-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 92,
+              "url": "https://www.gamepro.de/artikel/super-smash-bros-ultimate-test,3337969.html",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 90,
+              "url": "https://www.gamespew.com/2018/12/super-smash-bros-ultimate-review/",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 90,
+              "url": "https://www.gamespot.com/reviews/super-smash-bros-ultimate-review-me-and-you-and-ev/1900-6417051/",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 90,
+              "url": "http://www.gameblog.fr/tests/3247-super-smash-bros-ultimate-switch",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameplanet",
+              "score": 90,
+              "url": "https://www.gameplanet.com.au/nintendo-switch/reviews/g5c0995b9272b3/Super-Smash-Bros.-Ultimate-Review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer.nl",
+              "score": 90,
+              "url": "https://gamer.nl/artikelen/review/super-smash-bros-ultimate-is-uitgebreid-en-chaotisch/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamersky",
+              "score": 95,
+              "url": "https://www.gamersky.com/review/201812/1133248.shtml",
+              "date": "2018-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Games.cz",
+              "score": 100,
+              "url": "https://games.tiscali.cz/recenze/super-smash-bros-ultimate-recenze-323325",
+              "date": "2019-01-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesBeat",
+              "score": 90,
+              "url": "https://venturebeat.com/2018/12/06/super-smash-bros-ultimate-review/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 90,
+              "url": "https://www.gamesradar.com/super-smash-bros-ultimate-review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 95,
+              "url": "http://gamingtrend.com/feature/reviews/another-smashing-success-from-sakurai-super-smash-bros-ultimate-review/",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 100,
+              "url": "http://www.godisageek.com/reviews/super-smash-bros-ultimate-review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Guardian",
+              "score": 100,
+              "url": "https://www.theguardian.com/games/2018/dec/12/super-smash-bros-ultimate-review-nintendo-switch",
+              "date": "2018-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 90,
+              "url": "https://www.hardcoregamer.com/2018/12/10/review-super-smash-bros-ultimate/320002/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 95,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-super-smash-bros-ultimate-nintendo-switch-336011",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 94,
+              "url": "https://www.ign.com/articles/2018/12/06/super-smash-bros-ultimate-review",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 90,
+              "url": "https://it.ign.com/super-smash-bros-ultimate-switch/148367/review/super-smash-bros-ultimate-la-recensione-prima-parte",
+              "date": "2018-12-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 95,
+              "url": "https://es.ign.com/super-smash-bros-ultimate-nintendo-switch/142814/review/analisis-de-super-smash-bros-ultimate-para-nintendo-switch",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 100,
+              "url": "http://www.impulsegamer.com/super-smash-bros-ultimate-review/",
+              "date": "2018-12-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "InsideGamer.nl",
+              "score": 95,
+              "url": "https://www.insidegamer.nl/artikel/super-smash-bros-ultimate-review-de-meest-ultieme-smash-ooit/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 80,
+              "url": " https://www.jeuxactu.com/test-super-smash-bros-ultimate-veritable-suite-ou-gros-portage-116375.htm",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 95,
+              "url": "http://www.jeuxvideo.com/test/969075/super-smash-bros-ultimate-le-meilleur-episode-de-la-serie.htm",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LevelUp",
+              "score": 97,
+              "url": "https://www.levelup.com/Nintendo-Switch/juegos/467266/Super-Smash-Bros-Ultimate/review",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "M3",
+              "score": 90,
+              "url": "https://m3.idg.se/2.1022/1.703995/super-smash-bros-ultimate",
+              "date": "2019-01-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 90,
+              "url": "https://as.com/meristation/2018/12/05/analisis/1544050771_380235.html",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Merlin'in Kazanı (Turkey)",
+              "score": 89,
+              "url": "http://www.merlininkazani.com/Super_Smash_Bros_Ultimate-oyun_inceleme-104961p1.html",
+              "date": "2018-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 90,
+              "url": "https://metro.co.uk/2018/12/06/super-smash-bros-ultimate-review-nintendo-vs-the-world-8215803/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 94,
+              "url": "https://multiplayer.it/recensioni/super-smash-bros-ultimate-recensione.html",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "My Nintendo News",
+              "score": 90,
+              "url": "https://mynintendonews.com/2018/12/13/review-super-smash-bros-ultimate-for-nintendo-switch/",
+              "date": "2018-12-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New Game Network",
+              "score": 88,
+              "url": "https://www.newgamenetwork.com/article/2055/super-smash-bros-ultimate-review/",
+              "date": "2018-12-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "New York Daily News",
+              "score": 100,
+              "url": "https://www.nydailynews.com/entertainment/ny-nintendo-switch-super-smash-bros-20181224-story.html",
+              "date": "2018-12-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 93,
+              "url": "https://www.nintenderos.com/2018/12/analisis-super-smash-bros-ultimate/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 95,
+              "url": "https://www.nintendoenthusiast.com/2018/12/10/super-smash-bros-ultimate-review/",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 100,
+              "url": "",
+              "date": "2019-02-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 100,
+              "url": "https://www.nintendo-insider.com/super-smash-bros-ultimate-review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 100,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/super_smash_bros_ultimate",
+              "date": "2018-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/49135/super-smash-bros-ultimate-switch-review",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 91,
+              "url": "http://www.nintendojo.com/reviews/review-super-smash-bros-ultimate-switch",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 95,
+              "url": "http://play.co.rs/2019/02/review-super-smash-bros-ultimate/",
+              "date": "2019-03-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayGround.ru",
+              "score": 90,
+              "url": "http://www.playground.ru/articles/vse_super_obzor_super_smash_bros_ultimate-60123/",
+              "date": "2019-02-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Power Unlimited",
+              "score": 100,
+              "url": "https://pu.nl/artikelen/review/super-smash-bros-ultimate-review/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 100,
+              "url": " https://press-start.com.au/reviews/nintendo-switch/2018/12/06/super-smash-bros-ultimate-review-a-wonderful-celebration",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 90,
+              "url": "https://screenrant.com/super-smash-bros-ultimate-review/",
+              "date": "2018-12-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 90,
+              "url": "https://www.shacknews.com/article/108970/super-smash-bros-ultimate-review-ultimate-warriors",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Slant Magazine",
+              "score": 90,
+              "url": "https://www.slantmagazine.com/games/review/super-smash-bros-ultimate",
+              "date": "2018-12-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 97,
+              "url": "https://www.spaziogames.it/super-smash-bros-ultimate-recensione/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 95,
+              "url": "https://stevivor.com/reviews/super-smash-bros-ultimate-review-super-smashed/",
+              "date": "2018-12-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Telegraph",
+              "score": 80,
+              "url": "https://www.telegraph.co.uk/gaming/reviews/super-smash-bros-ultimate-review-riotous-fighter-gloriously/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Daily Dot",
+              "score": 90,
+              "url": "https://www.dailydot.com/parsec/super-smash-bros-ultimate-review/",
+              "date": "2018-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 100,
+              "url": "https://www.thedigitalfix.com/gaming/content/12055/super-smash-bros-ultimate/",
+              "date": "2018-12-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Escapist",
+              "score": 100,
+              "url": "https://www.escapistmagazine.com/v2/2018/12/12/review-super-smash-bros-ultimate/",
+              "date": "2018-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 93,
+              "url": "https://www.thegamesmachine.it/super-smash-bros-ultimate/super-smash-bros-ultimate-recensione-switch/",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Sydney Morning Herald",
+              "score": 95,
+              "url": "https://www.smh.com.au/technology/super-smash-bros-ultimate-review-the-crossover-to-end-all-crossovers-20181206-p50kig.html",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 100,
+              "url": "https://www.thesixthaxis.com/?p=326335&preview=true",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TrueGaming",
+              "score": 90,
+              "url": "https://www.true-gaming.net/home/385222/",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 80,
+              "url": "https://www.trustedreviews.com/reviews/super-smash-bros-ultimate",
+              "date": "2018-12-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 100,
+              "url": "http://twinfinite.net/2018/12/super-smash-bros-ultimate-review",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "USgamer",
+              "score": 90,
+              "url": "https://www.usgamer.net/articles/super-smash-bros-ultimate-review-12072018",
+              "date": "2018-12-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 100,
+              "url": "https://vandal.elespanol.com/analisis/switch/super-smash-bros-ultimate/58489/",
+              "date": "2018-12-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Variety",
+              "score": 90,
+              "url": "https://variety.com/2018/gaming/reviews/super-smash-bros-ultimate-review-1203086552/",
+              "date": "2018-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vgames",
+              "score": 95,
+              "url": "https://www.vgames.co.il/article/26282.html",
+              "date": "2018-12-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 89,
+              "url": "https://videochums.com/review/super-smash-bros-ultimate",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "VideoGamer",
+              "score": 90,
+              "url": "https://www.videogamer.com/reviews/super-smash-bros-ultimate-review",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 100,
+              "url": "https://www.vooks.net/super-smash-bros-ultimate/",
+              "date": "2018-12-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 94,
+              "url": "https://wccftech.com/review/super-smash-bros-ultimate-best-ever/",
+              "date": "2018-12-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 80,
+              "url": "https://wegotthiscovered.com/gaming/super-smash-bros-ultimate-review/",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 95,
+              "url": "https://worthplaying.com/article/2018/12/14/reviews/112215/",
+              "date": "2018-12-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 97,
+              "url": "https://www.xgn.nl/review/super-smash-bros-ultimate-review",
+              "date": "2018-12-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ZTGD",
+              "score": 95,
+              "url": "http://www.ztgd.com/reviews/super-smash-bros-ultimate-switch/",
+              "date": "2019-01-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 99
         },
         "user": {
-          "score": 9.0,
+          "score": 8.85,
           "scale": 10,
           "sources": [
             {
@@ -282882,14 +284705,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/super_smash_bros_ultimate",
               "platform": "Nintendo Switch",
               "weight": 31.622776601683793,
-              "normalized": 9.0,
-              "checked": "2026-11-02T18:27:48.001412+00:00"
+              "normalized": 9.0
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.7,
+              "scale": 10,
+              "count": 5585,
+              "url": "https://www.metacritic.com/game/super-smash-bros-ultimate/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 31.622776601683793,
+              "normalized": 8.7
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:50:40.329555+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 110,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:15:12.389353+00:00"
       },
       "requirements": {
         "image": true,
@@ -282905,7 +284742,12 @@
       },
       "basics_attempted": "2026-11-02T22:50:40.329555+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "Different game or console in review heading",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/super-smash-bros-ultimate-switch/",
@@ -282955,14 +284797,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:15:21.142767+00:00",
+      "full_version": 7
     },
     "Switch:5257": {
       "title": "Super Volley Blast",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 69.0,
           "scale": 100,
           "sources": [
             {
@@ -282971,19 +284815,78 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-volley-blast-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 70,
+              "url": "https://www.nintenderos.com/2018/08/analisis-super-volley-blast/",
+              "date": "2018-08-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 70,
+              "url": "https://nintendoenthusiast.com/blog/2018/07/13/super-volley-blast-review-switch/",
+              "date": "2018-07-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/47742/super-volley-blast-switch-review",
+              "date": "2018-07-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2018/08/21/super-volley-blast-review/",
+              "date": "2018-08-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": null,
+          "score": 5.16,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.7,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/super-volley-blast/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 6.7
+            },
+            {
+              "score": 2.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/super_volley_blast",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 2.5
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:50:40.597750+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:14:50.000319+00:00"
       },
       "requirements": {
         "image": true,
@@ -282999,7 +284902,11 @@
       },
       "basics_attempted": "2026-11-02T22:50:40.597750+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "Different game or console in review heading",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/super-volley-blast-switch/",
@@ -283048,7 +284955,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:14:52.340431+00:00",
+      "full_version": 7
     },
     "Switch:5578": {
       "title": "Swimsanity!",
@@ -334156,22 +336065,70 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 74.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/super_punch_patrol",
+              "name": "ComicBook",
+              "score": 60,
+              "url": "https://comicbook.com/gaming/news/super-punch-patrol-review-nintendo-switch/",
+              "date": "2020-09-24",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 70,
+              "url": "https://www.destructoid.com/stories/review-super-punch-patrol-603882.phtml",
+              "date": "2020-09-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 68.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-punch-patrol-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/super_punch_patrol",
+              "date": "2020-09-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "https://www.nintendoworldreport.com/review/54946/super-punch-patrol-switch-review",
+              "date": "2020-09-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-super-punch-patrol-nintendo-switch/",
+              "date": "2020-09-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 90,
+              "url": "https://www.vooks.net/super-punch-patrol-switch-review/",
+              "date": "2020-10-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
-          "score": 7.6,
+          "score": 7.06,
           "scale": 10,
           "sources": [
             {
@@ -334182,14 +336139,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/super_punch_patrol",
               "platform": "Nintendo Switch",
               "weight": 5.291502622129181,
-              "normalized": 7.6,
-              "checked": "2026-11-02T18:27:48.000664+00:00"
+              "normalized": 7.6
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.1,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/super-punch-patrol/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.0,
+              "normalized": 6.1
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:50:40.326998+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:14:30.299721+00:00"
       },
       "requirements": {
         "image": true,
@@ -334205,7 +336176,10 @@
       },
       "basics_attempted": "2026-11-02T22:50:40.326998+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/super-punch-patrol-switch/",
@@ -334254,7 +336228,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:14:32.617439+00:00",
+      "full_version": 7
     },
     "Switch:7520": {
       "title": "Sword of the Necromancer",
@@ -371703,22 +373679,102 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 80.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/super_one_more_jump",
+              "name": "DarkStation",
+              "score": 80,
+              "url": "http://www.darkstation.com/reviews/super-one-more-jump-review",
+              "date": "2018-02-26",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 80,
+              "url": "https://www.gamegrin.com/reviews/super-one-more-jump-review/",
+              "date": "2018-02-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 90,
+              "url": "https://www.gamingnexus.com/Article/5629/Super-One-More-Jump/",
+              "date": "2018-03-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 80,
+              "url": "http://gamingtrend.com/feature/reviews/super-run-super-fun-super-one-more-jump-review/",
+              "date": "2018-02-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=super-one-more-jump-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 75,
+              "url": "https://www.nintenderos.com/2018/08/analisis-super-one-more-jump/",
+              "date": "2018-08-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/super_one_more_jump",
+              "date": "2018-01-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/46310/super-one-more-jump-switch-eshop-review",
+              "date": "2018-01-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2018/03/19/super-one-more-jump-review/",
+              "date": "2018-03-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 90,
+              "url": "https://www.thedigitalfix.com/gaming/content/7770/super-one-more-jump/",
+              "date": "2018-02-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 80,
+              "url": "https://www.vooks.net/super-one-jump-switch-eshop-review/",
+              "date": "2018-01-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 11
         },
         "user": {
-          "score": 7.4,
+          "score": 7.88,
           "scale": 10,
           "sources": [
             {
@@ -371729,14 +373785,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/super_one_more_jump",
               "platform": "Nintendo Switch",
               "weight": 5.385164807134504,
-              "normalized": 7.4,
-              "checked": "2026-11-02T18:27:48.000313+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.3,
+              "scale": 10,
+              "count": 38,
+              "url": "https://www.metacritic.com/game/super-one-more-jump/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 6.164414002968976,
+              "normalized": 8.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:50:40.326739+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:15:00.147336+00:00"
       },
       "requirements": {
         "image": true,
@@ -371752,7 +373822,11 @@
       },
       "basics_attempted": "2026-11-02T22:50:40.326739+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/super-one-more-jump-switch/",
@@ -371801,7 +373875,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:15:02.100166+00:00",
+      "full_version": 7
     },
     "Switch:9011": {
       "title": "Sword of the Guardian",
