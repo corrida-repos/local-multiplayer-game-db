@@ -285,10 +285,29 @@ def slush_review(game):
         except Exception as exc:error=exc
     raise ValueError(str(error)[:150] if candidates else 'No scored Switch review indexed')
 
+def metacritic_search(game,expected):
+    """Slugs from Metacritic's own search whose title matches this game and which list the exact console."""
+    slugs=[]
+    for name in known_names(game)[:2]:
+        query=urllib.parse.quote(re.sub(r'[/?#%]',' ',name).strip())
+        _,page=get(f'https://backend.metacritic.com/finder/metacritic/search/{query}/web?offset=0&limit=20&mcoTypeId=13&componentName=search-tabs&componentDisplayName=Search+Page+Tab+Filters&componentType=FilterConfig')
+        for item in json.loads(page).get('data',{}).get('items',[]):
+            slug=item.get('slug','')
+            if re.fullmatch(r'[a-z0-9-]+',slug) and expected in [p.get('name') for p in item.get('platforms') or []] and matches_name(game,item.get('title','')):slugs.append(slug)
+        if slugs:break
+    return list(dict.fromkeys(slugs))
+
+def metacritic_slugs(game,guessed,expected,errors):
+    # Guessed slugs first; Metacritic search only when none of them produced a score.
+    yield from guessed
+    try:found=metacritic_search(game,expected)
+    except Exception as exc:errors['metacritic_search']=str(exc)[:160];return
+    yield from [slug for slug in found if slug not in guessed][:3]
+
 def minimal_metacritic(game):
     platform='playstation-5' if game['platform']=='PS5' else 'nintendo-switch';expected='PlayStation 5' if game['platform']=='PS5' else 'Nintendo Switch';errors={}
     names=list(dict.fromkeys([ratings.MC_ALIASES.get(game['title'],ratings.slug(game['title']))]+[ratings.slug(name) for name in known_names(game) if name]))[:4]
-    for name in names:
+    for name in metacritic_slugs(game,names,expected,errors):
         critics=[];users=[]
         try:
             url=f'https://backend.metacritic.com/reviews/metacritic/user/games/{name}/platform/{platform}/stats/web';final,page=get(url);u=json.loads(page)['data']['item']
