@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:52:12.525251+00:00",
+  "updated": "2026-11-03T06:53:16.041883+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1671,
+    "full_attempted": 1681,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -81198,7 +81198,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 67.0,
+          "score": 73.5,
           "scale": 100,
           "sources": [
             {
@@ -81207,10 +81207,18 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=onsen-master-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pocket Tactics",
+              "score": 80,
+              "url": "https://www.pockettactics.com/onsen-master/review",
+              "date": "2022-09-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -81219,7 +81227,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:43:30.841626+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:53:13.822155+00:00"
       },
       "requirements": {
         "image": true,
@@ -81236,7 +81251,12 @@
       "basics_attempted": "2026-11-02T22:43:30.841626+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -81286,7 +81306,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:53:15.784593+00:00",
+      "full_version": 7
     },
     "PS5:13674": {
       "title": "Operation Wolf Returns: First Mission",
@@ -162008,34 +162030,107 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 77.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "But Why Tho?",
+              "score": 75,
+              "url": "https://butwhytho.net/2025/11/pirate-warriors-4-legendary-edition-review/",
+              "date": "2025-11-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 67,
+              "url": "https://cogconnected.com/review/one-piece-pirate-warriors-4-ps5-review/",
+              "date": "2025-11-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Final Weapon",
+              "score": 80,
+              "url": "https://finalweapon.net/2025/12/08/one-piece-pirate-warriors-4-ps5-review/",
+              "date": "2025-12-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameBlast",
+              "score": 80,
+              "url": "https://www.gameblast.com.br/2025/12/analise-one-piece-pirate-warriors-4-review.html",
+              "date": "2025-12-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamersRD",
+              "score": 75,
+              "url": "https://gamersrd.com/one-piece-pirate-warriors-4-review-2/",
+              "date": "2025-12-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 85,
+              "url": "https://worthplaying.com/article/2025/12/5/reviews/148411-ps5-review-one-piece-pirate-warriors-4/",
+              "date": "2025-12-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 6
         },
         "user": {
-          "score": 9.3,
+          "score": 9.15,
           "scale": 10,
           "sources": [
             {
-              "score": 4.65,
-              "count": 14491,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.65,
               "scale": 5,
-              "source": "PSN",
+              "count": 14491,
               "url": "https://store.playstation.com/pt-pt/product/EP0700-PPSA27502_00-OPPW4EUHDDGAME00",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:00:34.204765+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 9.3
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.6,
+              "scale": 10,
+              "count": 5,
+              "url": "https://www.metacritic.com/game/one-piece-pirate-warriors-4/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.23606797749979,
+              "normalized": 7.6
+            },
+            {
+              "score": 8.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/one_piece_pirate_warriors_4",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:00:32.972244+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:52:35.558837+00:00"
       },
       "requirements": {
         "image": true,
@@ -162077,7 +162172,10 @@
       },
       "basics_attempted": "2026-11-02T18:00:32.972244+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -162093,7 +162191,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:52:35.702663+00:00",
+      "full_version": 7
     },
     "Switch:16565": {
       "title": "PICROSS S Doraemon & F Characters edition",
@@ -237657,28 +237757,86 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 82.0,
+          "score": 68.4,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/4367/1/octodad-dadliest-catch-nintendo-switch.html",
+              "date": "2017-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 82.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=octodad-dadliest-catch-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/octodad_dadliest_catch?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2017-11-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 70,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/Octodad%3A+Dadliest+Catch/review.asp?c=75890",
+              "date": "2017-11-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2017/11/13/octodad-dadliest-catch-review/",
+              "date": "2017-11-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 5
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.1,
+              "scale": 10,
+              "count": 19,
+              "url": "https://www.metacritic.com/game/octodad-dadliest-catch/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.358898943540674,
+              "normalized": 7.1
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 6.9,
+              "scale": 10.0,
+              "count": 23,
+              "url": "https://www.nintendolife.com/games/switch-eshop/octodad_dadliest_catch",
+              "platform": "Nintendo Switch",
+              "weight": 4.795831523312719,
+              "normalized": 6.9
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:43:16.271725+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:52:29.053843+00:00"
       },
       "requirements": {
         "image": true,
@@ -237695,7 +237853,11 @@
       "basics_attempted": "2026-11-02T22:43:16.271725+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -237745,7 +237907,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:52:30.707614+00:00",
+      "full_version": 7
     },
     "Switch:4823": {
       "title": "PICROSS S",
@@ -251560,28 +251724,126 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 72.5,
           "scale": 100,
           "sources": [
+            {
+              "name": "DarkStation",
+              "score": 60,
+              "url": "https://www.darkstation.com/reviews/overwhelm-review",
+              "date": "2019-04-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 80,
+              "url": "https://gamecritics.com/brad-gallaway/overwhelm-review/",
+              "date": "2019-04-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 70,
+              "url": "https://gamingtrend.com/feature/reviews/the-art-of-darkness-overwhelm-review/",
+              "date": "2019-04-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 60.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=overwhelm-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 70,
+              "url": "https://www.nintendoenthusiast.com/2019/04/04/overwhelm-review-for-nintendo-switch/",
+              "date": "2019-04-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 75,
+              "url": "",
+              "date": "2020-02-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/50193/overwhelm-switch-review",
+              "date": "2019-04-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-overwhelm-nintendo-switch/",
+              "date": "2019-04-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 70,
+              "url": "https://screenrant.com/overwhelm-review/",
+              "date": "2019-04-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 90,
+              "url": "https://www.vooks.net/overwhelm-switch-eshop-review/",
+              "date": "2019-04-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 10
         },
         "user": {
-          "score": null,
+          "score": 6.1,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 5.7,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/overwhelm/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 5.700000000000001
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 6.5,
+              "scale": 10.0,
+              "count": 6,
+              "url": "https://www.nintendolife.com/games/switch-eshop/overwhelm",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 6.5
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:43:16.270516+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:52:34.029407+00:00"
       },
       "requirements": {
         "image": true,
@@ -251598,7 +251860,9 @@
       "basics_attempted": "2026-11-02T22:43:16.270516+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -251648,7 +251912,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:52:36.867726+00:00",
+      "full_version": 7
     },
     "Switch:5552": {
       "title": "Quest for the Golden Duck",
@@ -274802,28 +275068,126 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 65.0,
+          "score": 78.5,
           "scale": 100,
           "sources": [
+            {
+              "name": "Gamers' Temple",
+              "score": 80,
+              "url": "https://www.gamerstemple.com/game-reviews/switch/13512/okinawa-rush-review",
+              "date": "2022-01-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "https://www.godisageek.com/reviews/okinawa-rush-review/",
+              "date": "2021-11-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "JeuxActu",
+              "score": 75,
+              "url": "https://www.jeuxactu.com/test-okinawa-rush-du-pixel-art-qui-tache-et-qui-fait-mal-126868.htm",
+              "date": "2022-03-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 80,
+              "url": "https://www.jeuxvideo.com/test/1489625/okinawa-rush-le-meilleur-de-street-fighter-et-double-dragon.htm",
+              "date": "2021-11-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 65.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=okinawa-rush-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2021/12/analisis-okinawa-rush-para-nintendo-switch/",
+              "date": "2022-01-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/59284/okinawa-rush-switch-review",
+              "date": "2022-01-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 75,
+              "url": "https://purenintendo.com/review-okinawa-rush-nintendo-switch/",
+              "date": "2021-11-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "https://switchplayer.net/2022/02/01/okinawa-rush-review/",
+              "date": "2022-02-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Universo Nintendo",
+              "score": 80,
+              "url": "https://switch-brasil.com/analise-okinawa-rush/",
+              "date": "2022-02-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 10
         },
         "user": {
-          "score": null,
+          "score": 7.52,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.3,
+              "scale": 10,
+              "count": 11,
+              "url": "https://www.metacritic.com/game/okinawa-rush/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.3166247903554,
+              "normalized": 7.3
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 15,
+              "url": "https://www.nintendolife.com/games/switch-eshop/okinawa_rush",
+              "platform": "Nintendo Switch",
+              "weight": 3.872983346207417,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:43:17.664188+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:52:39.104632+00:00"
       },
       "requirements": {
         "image": true,
@@ -274840,7 +275204,9 @@
       "basics_attempted": "2026-11-02T22:43:17.664188+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -274890,21 +275256,161 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:52:41.178684+00:00",
+      "full_version": 7
     },
     "Switch:6131": {
       "title": "Old School Musical",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 76.9,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Cubed3",
+              "score": 90,
+              "url": "http://www.cubed3.com/review/5765/1/old-school-musical-nintendo-switch.html",
+              "date": "2020-01-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 70,
+              "url": "http://www.darkstation.com/reviews/old-school-musical-review",
+              "date": "2018-10-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "https://fnintendo.net/article/11599-old-school-musical",
+              "date": "2018-10-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 80,
+              "url": "https://gamecritics.com/brian-theisen/old-school-musical-review/",
+              "date": "2018-10-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2018/09/old-school-musical-review/",
+              "date": "2018-09-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 70,
+              "url": "http://www.gameblog.fr/tests/3147-old-school-musical-pc-switch",
+              "date": "2018-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 70,
+              "url": "http://gamingtrend.com/feature/reviews/reflect-on-what-youve-done-senran-kagura-reflexions-review/",
+              "date": "2018-09-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "https://www.godisageek.com/reviews/old-school-musical-review/",
+              "date": "2018-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 77,
+              "url": "https://www.nintenderos.com/2019/01/analisis-old-school-musical/",
+              "date": "2019-01-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 70,
+              "url": "https://www.nintendoenthusiast.com/2018/09/13/old-school-musical-review-for-nintendo-switch/",
+              "date": "2018-09-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/48311/old-school-musical-switch-review",
+              "date": "2018-09-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 91,
+              "url": "http://www.nintendojo.com/reviews/review-old-school-musical-switch",
+              "date": "2018-09-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80.0,
+              "url": "https://purenintendo.com/review-old-school-musical-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 8.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2018/09/28/old-school-musical-review/",
+              "date": "2018-09-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/switch-retro-indie-games#old-school-musical",
+              "date": "2018-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 70,
+              "url": "https://www.vooks.net/old-school-musical-switch-eshop-review/",
+              "date": "2018-09-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 70,
+              "url": "https://wccftech.com/review/old-school-musical-nintendo-switch-review-nostalgia-trip/",
+              "date": "2018-09-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 17
         },
         "user": {
-          "score": 7.5,
+          "score": 7.61,
           "scale": 10,
           "sources": [
             {
@@ -274913,16 +275419,30 @@
               "scale": 10,
               "count": 12,
               "url": "https://www.metacritic.com/game/old-school-musical/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 3.4641016151377544,
-              "normalized": 7.5,
-              "checked": "2026-11-02T18:00:22.124427+00:00"
+              "normalized": 7.5
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 21,
+              "url": "https://www.nintendolife.com/games/switch-eshop/old_school_musical",
+              "platform": "Nintendo Switch",
+              "weight": 4.58257569495584,
+              "normalized": 7.7
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:43:30.841173+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 16,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:52:48.992807+00:00"
       },
       "requirements": {
         "image": true,
@@ -274940,7 +275460,9 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -274990,21 +275512,152 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:52:51.134058+00:00",
+      "full_version": 7
     },
     "Switch:6502": {
       "title": "One Piece: Pirate Warriors 3",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 74.9,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Digitally Downloaded",
+              "score": 90,
+              "url": "http://www.digitallydownloaded.net/2018/05/review-one-piece-pirate-warriors-3.html",
+              "date": "2018-05-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 60,
+              "url": "https://www.eurogamer.it/articles/2018-05-30-one-piece-pirate-warriors-3-deluxe-edition-recensione",
+              "date": "2018-05-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 70,
+              "url": "http://fnintendo.net/article/11134-one-piece-pirate-warriors-3-deluxe-edition",
+              "date": "2018-07-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 77,
+              "url": "https://www.gamepro.de/artikel/one-piece-pirate-warriors-3-knallbuntes-piratenmassaker,3329991.html",
+              "date": "2018-05-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 86,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-one-piece-pirate-warriors-3-deluxe-edition-nintendo-switch-253334",
+              "date": "2018-05-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 70,
+              "url": "https://multiplayer.it/recensioni/199141-one-piece-pirate-warriors-3-deluxe-edition-one-piece-pirate-warriors-3-deluxe-edition-la-recensione.html",
+              "date": "2018-05-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/one-piece-pirate-warriors-3-deluxe-edition-review/",
+              "date": "2018-05-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/one_piece_pirate_warriors_3_deluxe_edition?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-06-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/47310/one-piece-pirate-warriors-3-deluxe-edition-switch-review",
+              "date": "2018-05-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 80,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/One+Piece+Pirate+Warriors+3+Deluxe+Edition/review.asp?c=77499",
+              "date": "2018-05-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 70,
+              "url": "https://www.spaziogames.it/recensioni_videogiochi/console_nintendo_switch/22442/one-piece-pirate-warriors-3-la-recensione-della-versione-switch.aspx",
+              "date": "2018-07-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2018/06/01/one-piece-pirate-warriors-3-deluxe-edition-review/",
+              "date": "2018-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 70,
+              "url": "https://www.thegamesmachine.it/one-piece-pirate-warriors-3-deluxe-edition-recensione-switch/",
+              "date": "2018-05-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 70,
+              "url": "http://www.trustedreviews.com/reviews/one-piece-pirate-warriors-3-deluxe-edition",
+              "date": "2018-05-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 70,
+              "url": "https://www.vooks.net/one-piece-pirate-warriors-3-deluxe-edition-switch-review/",
+              "date": "2018-06-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 65,
+              "url": "https://www.xgn.nl/review/one-piece-pirate-warriors-3-switch-review",
+              "date": "2018-06-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 16
         },
         "user": {
-          "score": 8.1,
+          "score": 7.43,
           "scale": 10,
           "sources": [
             {
@@ -275013,16 +275666,30 @@
               "scale": 10,
               "count": 48,
               "url": "https://www.metacritic.com/game/one-piece-pirate-warriors-3/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 6.928203230275509,
-              "normalized": 8.1,
-              "checked": "2026-11-02T20:24:32.430504+00:00"
+              "normalized": 8.1
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.0,
+              "scale": 10.0,
+              "count": 121,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/one_piece_pirate_warriors_3_deluxe_edition",
+              "platform": "Nintendo Switch",
+              "weight": 11.0,
+              "normalized": 7.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:52:06.048757+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 16,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:52:54.017521+00:00"
       },
       "requirements": {
         "image": true,
@@ -275033,7 +275700,10 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "\nhttps://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_OnePiecePirateWarriors3DeluxeEdition_image1280w.jpg",
@@ -275091,7 +275761,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:52:55.981504+00:00",
+      "full_version": 7
     },
     "Switch:6529": {
       "title": "One Piece: Unlimited World R",
@@ -275287,28 +275959,110 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 73.8,
           "scale": 100,
           "sources": [
+            {
+              "name": "CGMagazine",
+              "score": 80,
+              "url": "https://www.cgmagonline.com/reviews/one-step-from-eden-review/",
+              "date": "2020-04-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 80,
+              "url": "https://hardcoregamer.com/2020/04/08/review-one-step-from-eden/375385/",
+              "date": "2020-04-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 70.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=one-step-from-eden-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2020/05/analisis-one-step-from-eden-para-nintendo-switch/",
+              "date": "2020-05-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 70,
+              "url": "https://www.nintendoenthusiast.com/one-step-from-eden-review-for-nintendo-switch/",
+              "date": "2020-03-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/one_step_from_eden",
+              "date": "2020-03-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/53290/one-step-from-eden-switch-review",
+              "date": "2020-03-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2020/05/28/one-step-from-eden-review/",
+              "date": "2020-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 8
         },
         "user": {
-          "score": null,
+          "score": 6.33,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 5.3,
+              "scale": 10,
+              "count": 18,
+              "url": "https://www.metacritic.com/game/one-step-from-eden/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.242640687119285,
+              "normalized": 5.300000000000001
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 17,
+              "url": "https://www.nintendolife.com/games/switch-eshop/one_step_from_eden",
+              "platform": "Nintendo Switch",
+              "weight": 4.123105625617661,
+              "normalized": 7.4
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:43:30.841394+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:53:03.930368+00:00"
       },
       "requirements": {
         "image": true,
@@ -275325,7 +276079,10 @@
       "basics_attempted": "2026-11-02T22:43:30.841394+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -275375,7 +276132,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:53:05.922920+00:00",
+      "full_version": 7
     },
     "Switch:6667": {
       "title": "Out of Space: Couch Edition",
@@ -330954,28 +331713,118 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 73.3,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 40,
+              "url": "http://www.cubed3.com/review/4623/1/old-mans-journey-nintendo-switch.html",
+              "date": "2018-02-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "http://fnintendo.net/article/10697-old-mans-journey",
+              "date": "2018-04-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "http://www.godisageek.com/reviews/switch-report-6-mans-journey-deemo-layers-fear/",
+              "date": "2018-02-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 80.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=old-mans-journey-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 75,
+              "url": "http://www.nintenderos.com/2018/02/analisis-old-mans-journey/",
+              "date": "2018-02-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 80,
+              "url": "",
+              "date": "2018-04-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/old_mans_journey",
+              "date": "2018-02-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "http://www.nintendoworldreport.com/review/46479/old-mans-journey-switch-review",
+              "date": "2018-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2018/03/26/old-mans-journey-review/",
+              "date": "2018-03-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 6.3,
+              "scale": 10,
+              "count": 47,
+              "url": "https://www.metacritic.com/game/old-mans-journey/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 6.855654600401044,
+              "normalized": 6.3
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 48,
+              "url": "https://www.nintendolife.com/games/switch-eshop/old_mans_journey",
+              "platform": "Nintendo Switch",
+              "weight": 6.928203230275509,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:43:30.840883+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:52:44.008758+00:00"
       },
       "requirements": {
         "image": true,
@@ -330992,7 +331841,10 @@
       "basics_attempted": "2026-11-02T22:43:30.840883+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -331042,7 +331894,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:52:45.898645+00:00",
+      "full_version": 7
     },
     "Switch:9037": {
       "title": "Overdriven Reloaded: Special Edition",
@@ -341962,28 +342816,85 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 65.0,
           "scale": 100,
           "sources": [
+            {
+              "name": "DarkStation",
+              "score": 90,
+              "url": "http://www.darkstation.com/reviews/oh-my-godheads-party-edition-review",
+              "date": "2018-10-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 60,
+              "url": "https://fnintendo.net/article/12443-oh-my-godheads-party-edition",
+              "date": "2019-05-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 60.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=oh-my-godheads-party-edition-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 60,
+              "url": "https://www.nintendoenthusiast.com/2018/10/01/oh-my-godheads-review-switch/",
+              "date": "2018-10-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 60,
+              "url": "http://www.nintendoworldreport.com/review/48678/oh-my-godheads-party-edition-switch-review",
+              "date": "2018-10-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 60,
+              "url": "http://switchplayer.net/2018/12/18/oh-my-godheads-party-edition-review/",
+              "date": "2018-12-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
-          "score": null,
+          "score": 3.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 3.5,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/oh_my_godheads_party_edition",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 3.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:43:16.528980+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:53:09.035042+00:00"
       },
       "requirements": {
         "image": true,
@@ -342000,7 +342911,10 @@
       "basics_attempted": "2026-11-02T22:43:16.528980+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+        "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -342050,7 +342964,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:53:11.141834+00:00",
+      "full_version": 7
     },
     "Switch:9158": {
       "title": "Osyaberi! Puzzle Chigatan ～Spot the Differences with Everyone～",
