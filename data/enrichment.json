@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:43:01.086316+00:00",
+  "updated": "2026-11-03T06:43:47.446431+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1581,
+    "full_attempted": 1591,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -74416,15 +74416,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.27,
-              "count": 60,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.27,
               "scale": 5,
-              "source": "PSN",
+              "count": 60,
               "url": "https://store.playstation.com/pt-pt/product/EP2005-PPSA03290_00-MINAANDMICHI0000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:55:33.532986+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 7.745966692414834,
               "normalized": 8.54
             }
@@ -74432,7 +74430,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:55:31.313073+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:43:16.481627+00:00"
       },
       "requirements": {
         "image": true,
@@ -74474,7 +74479,11 @@
       },
       "basics_attempted": "2026-11-02T17:55:31.313073+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -74490,7 +74499,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:43:16.880089+00:00",
+      "full_version": 7
     },
     "Switch:10073": {
       "title": "Mina & Michi",
@@ -74504,6 +74515,7 @@
               "name": "Hey Poor Player",
               "score": 40,
               "url": "https://www.heypoorplayer.com/2021/07/25/mina-michi-review-switch/",
+              "date": "2021-07-26",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -74512,13 +74524,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 4.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 4.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/mina_and_michi",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 4.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:42:05.668574+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:43:25.555985+00:00"
       },
       "requirements": {
         "image": true,
@@ -74535,7 +74564,11 @@
       "basics_attempted": "2026-11-02T22:42:05.668574+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -74585,26 +74618,93 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:43:27.960789+00:00",
+      "full_version": 7
     },
     "Switch:5737": {
       "title": "Minecraft Dungeons",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 71.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 60.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/minecraft_dungeons",
+              "name": "Everyeye.it",
+              "score": 70,
+              "url": "https://www.everyeye.it/articoli/recensione-minecraft-dungeons-eroi-nintendo-switch-50110.html",
+              "date": "2020-09-21",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 70,
+              "url": "http://www.jeuxvideo.com/test/1230241/minecraft-dungeons-mojang-livre-un-hack-n-slash-tres-carre.htm",
+              "date": "2020-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 70,
+              "url": "https://multiplayer.it/recensioni/minecraft-dungeons-recensione-nintendo-switch.html",
+              "date": "2020-09-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 70,
+              "url": "https://www.nintenderos.com/2020/05/analisis-minecraft-dungeons-para-nintendo-switch/",
+              "date": "2020-05-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 80,
+              "url": "https://www.nintendoenthusiast.com/minecraft-dungeons-review-for-switch-diablo-simplified-to-great-effect/",
+              "date": "2020-05-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 60,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/minecraft_dungeons",
+              "date": "2020-06-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "http://www.nintendoworldreport.com/review/53831/minecraft-dungeons-switch-review",
+              "date": "2020-05-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 75,
+              "url": "http://www.rpgfan.com/reviews/Minecraft_Dungeons/",
+              "date": "2020-07-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2020/07/28/minecraft-dungeons-review/",
+              "date": "2020-07-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
           "score": 7.1,
@@ -74618,14 +74718,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/minecraft_dungeons",
               "platform": "Nintendo Switch",
               "weight": 9.643650760992955,
-              "normalized": 7.1,
-              "checked": "2026-11-02T17:55:37.615225+00:00"
+              "normalized": 7.1
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.1,
+              "scale": 10,
+              "count": 104,
+              "url": "https://www.metacritic.com/game/minecraft-dungeons/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 10.198039027185569,
+              "normalized": 7.1
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:42:06.135973+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 9,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:43:35.417386+00:00"
       },
       "requirements": {
         "image": true,
@@ -74641,7 +74755,11 @@
       },
       "basics_attempted": "2026-11-02T22:42:06.135973+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/minecraft-dungeons-switch/",
@@ -74690,41 +74808,113 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "TDsJTfGepOA",
+        "title": "Minecraft: Dungeons - E3 2019 Gameplay Reveal Trailer | PS4",
+        "kind": "gameplay",
+        "source": "https://www.playstation.com/en-us/games/minecraft-dungeons/"
+      },
+      "full_attempted": "2026-11-03T06:43:38.394923+00:00",
+      "full_version": 7
     },
     "PS5:18102": {
       "title": "Minecraft Dungeons II",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 74.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2026/10/minecraft-dungeons-ii-review/",
+              "date": "2026-10-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN France",
+              "score": 70,
+              "url": "https://fr.ign.com/minecraft-dungeons-ii/93183/test-minecraft-dungeons-ii-une-suite-plus-genereuse-taillee-pour-le-jeu-en-groupe",
+              "date": "2026-10-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 60,
+              "url": "https://metro.co.uk/2026/09/29/minecraft-dungeons-2-ps5-review-family-friendly-diablo-29661892/",
+              "date": "2026-09-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 75,
+              "url": "https://www.psu.com/reviews/minecraft-dungeons-2-review-ps5/",
+              "date": "2026-09-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 83,
+              "url": "https://www.rpgfan.com/review/minecraft-dungeons-ii/",
+              "date": "2026-10-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Tech-Gaming",
+              "score": 76,
+              "url": "https://www.tech-gaming.com/minecraft-dungeons-ii/",
+              "date": "2026-10-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 6
         },
         "user": {
-          "score": 8.66,
+          "score": 8.51,
           "scale": 10,
           "sources": [
             {
-              "score": 4.33,
-              "count": 2633,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.33,
               "scale": 5,
-              "source": "PSN",
+              "count": 2633,
               "url": "https://store.playstation.com/pt-pt/product/EP4433-PPSA16064_00-SWPS500000000000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:55:38.920857+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 8.66
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.9,
+              "scale": 10,
+              "count": 9,
+              "url": "https://www.metacritic.com/game/minecraft-dungeons-ii/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 3.0,
+              "normalized": 6.9
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:55:37.619733+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:43:36.445253+00:00"
       },
       "requirements": {
         "image": true,
@@ -74766,7 +74956,9 @@
       },
       "basics_attempted": "2026-11-02T17:55:37.619733+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "composites": "Community: HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -74782,7 +74974,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "UYsx8dy_Zmk",
+        "title": "Minecraft Dungeons II - Reveal Trailer | PS5 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/minecraft-dungeons-ii/"
+      },
+      "full_attempted": "2026-11-03T06:43:36.725203+00:00",
+      "full_version": 7
     },
     "Switch:18101": {
       "title": "Minecraft Dungeons II",
@@ -137280,27 +137480,51 @@
           "source_count": 0
         },
         "user": {
-          "score": 8.58,
+          "score": 8.56,
           "scale": 10,
           "sources": [
             {
-              "score": 4.29,
-              "count": 2007675,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.29,
               "scale": 5,
-              "source": "PSN",
+              "count": 2007675,
               "url": "https://store.playstation.com/pt-pt/product/UP4433-PPSA17221_00-MINECRAFTPS50000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:55:35.102287+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 8.58
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.2,
+              "scale": 10,
+              "count": 42,
+              "url": "https://www.metacritic.com/game/minecraft/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 6.48074069840786,
+              "normalized": 8.2
+            },
+            {
+              "score": 9.4,
+              "scale": 10,
+              "count": 5,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/minecraft",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 2.23606797749979,
+              "normalized": 9.4
             }
           ],
-          "source_count": 1,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:55:33.536914+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:43:26.583445+00:00"
       },
       "requirements": {
         "image": true,
@@ -137342,7 +137566,9 @@
       },
       "basics_attempted": "2026-11-02T17:55:33.536914+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -137358,7 +137584,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "ztNoBI0m_P0",
+        "title": "Minecraft Bedrock Version - Launch Trailer | PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/minecraft/"
+      },
+      "full_attempted": "2026-11-03T06:43:26.973337+00:00",
+      "full_version": 7
     },
     "PS5:15609": {
       "title": "Nick Jr. Party Adventure",
@@ -190897,15 +191131,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.54,
-              "count": 13,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.54,
               "scale": 5,
-              "source": "PSN",
+              "count": 13,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA33080_00-MILOSDREAMRATGAM",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:55:17.549679+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 3.605551275463989,
               "normalized": 9.08
             }
@@ -190913,7 +191145,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:55:16.359721+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:43:21.465953+00:00"
       },
       "requirements": {
         "image": true,
@@ -190955,7 +191194,11 @@
       },
       "basics_attempted": "2026-11-02T17:55:16.359721+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -190971,7 +191214,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:43:22.219403+00:00",
+      "full_version": 7
     },
     "Switch:17847": {
       "title": "Milo's Dream",
@@ -190983,10 +191228,11 @@
           "sources": [
             {
               "name": "Nindie Spotlight",
-              "score": 67.0,
+              "score": 67,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=milos-dream-switch",
+              "date": "2026-04-02",
               "platform": "Nintendo Switch",
-              "via": "Direct console-specific review"
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
@@ -190999,7 +191245,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:42:05.666895+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:43:45.370894+00:00"
       },
       "requirements": {
         "image": true,
@@ -191015,7 +191268,13 @@
       },
       "basics_attempted": "2026-11-02T22:42:05.666895+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/milos-dream-switch/",
@@ -191064,7 +191323,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:43:47.195729+00:00",
+      "full_version": 7
     },
     "Switch:17642": {
       "title": "Monster Prom 4: Monster Con XXL",
@@ -218809,22 +219070,207 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 86.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/minecraft",
+              "name": "App Trigger",
+              "score": 70,
+              "url": "http://apptrigger.com/2017/05/14/minecraft-switch-edition-review-building-platform/",
+              "date": "2017-05-14",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 80,
+              "url": "http://attackofthefanboy.com/reviews/minecraft-nintendo-switch-edition-review/",
+              "date": "2017-05-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 90,
+              "url": "http://www.cubed3.com/review/3886/1/minecraft-nintendo-switch-edition-nintendo-switch.html",
+              "date": "2017-05-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 80,
+              "url": "http://www.darkstation.com/reviews/minecraft-switch-edition-review",
+              "date": "2017-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Chumps",
+              "score": 85,
+              "url": "http://digitalchumps.com/minecraft-switch-edition/",
+              "date": "2017-05-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 90,
+              "url": "http://www.dualshockers.com/minecraft-nintendo-switch-review/",
+              "date": "2017-05-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 90,
+              "url": "http://gamingtrend.com/reviews/building-on-solid-foundations-minecraft-nintendo-switch-edition-review/",
+              "date": "2017-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "http://www.godisageek.com/reviews/minecraft-nintendo-switch-edition-review/",
+              "date": "2017-05-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 80,
+              "url": "http://www.hobbyconsolas.com/reviews/analisis-minecraft-nintendo-switch-99254",
+              "date": "2017-05-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 95,
+              "url": "http://www.ign.com/articles/2017/06/07/minecraft-switch-edition-review",
+              "date": "2017-06-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 90,
+              "url": "http://www.impulsegamer.com/minecraft-nintendo-switch-edition-review/",
+              "date": "2017-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 80,
+              "url": "http://www.meristation.com/nintendo-switch/minecraft/analisis-juego/2198912",
+              "date": "2017-05-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 80,
+              "url": "http://metro.co.uk/2017/05/15/minecraft-nintendo-switch-edition-review-worth-digging-up-again-6637395/",
+              "date": "2017-05-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 85,
+              "url": "http://multiplayer.it/recensioni/183218-minecraft-minecraft-ovunque-voi-siate.html",
+              "date": "2017-05-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 80,
+              "url": "",
+              "date": "2017-06-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/minecraft_nintendo_switch_edition",
+              "date": "2017-05-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/44601/minecraft-nintendo-switch-edition-review",
+              "date": "2017-05-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 90,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/Minecraft%3A+Nintendo+Switch+Edition/review.asp?c=74112",
+              "date": "2017-05-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2017/05/29/minecraft-nintendo-switch-edition-review/",
+              "date": "2017-05-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Time",
+              "score": 100,
+              "url": "http://time.com/4775563/minecraft-nintendo-switch-review/",
+              "date": "2017-05-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 80,
+              "url": "http://www.trustedreviews.com/minecraft-nintendo-switch-edition-review",
+              "date": "2017-05-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "USgamer",
+              "score": 90,
+              "url": "http://www.usgamer.net/articles/minecraft-switch-edition-is-the-best-damn-portable-version-yet",
+              "date": "2017-05-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 100,
+              "url": "http://www.vooks.net/minecraft-nintendo-switch-edition-review/",
+              "date": "2017-05-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "games(TM)",
+              "score": 80,
+              "url": "",
+              "date": "2017-07-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 24
         },
         "user": {
-          "score": 8.0,
+          "score": 7.74,
           "scale": 10,
           "sources": [
             {
@@ -218835,14 +219281,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/minecraft",
               "platform": "Nintendo Switch",
               "weight": 20.396078054371138,
-              "normalized": 8.0,
-              "checked": "2026-11-02T17:55:35.115223+00:00"
+              "normalized": 8.0
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.5,
+              "scale": 10,
+              "count": 465,
+              "url": "https://www.metacritic.com/game/minecraft/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 21.563858652847824,
+              "normalized": 7.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:42:05.668946+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 24,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:43:40.456582+00:00"
       },
       "requirements": {
         "image": true,
@@ -218858,7 +219318,11 @@
       },
       "basics_attempted": "2026-11-02T22:42:05.668946+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/minecraft-switch/",
@@ -218907,7 +219371,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "ztNoBI0m_P0",
+        "title": "Minecraft Bedrock Version - Launch Trailer | PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/minecraft/"
+      },
+      "full_attempted": "2026-11-03T06:43:42.398513+00:00",
+      "full_version": 7
     },
     "PS5:18976": {
       "title": "Muchi Muchi Pork! & PinkSweets Boosted",
@@ -232966,28 +233438,144 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 60.0,
+          "score": 50.5,
           "scale": 100,
           "sources": [
+            {
+              "name": "COGconnected",
+              "score": 60,
+              "url": "http://cogconnected.com/review/milanoir-switch-review/",
+              "date": "2018-05-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 60,
+              "url": "http://www.darkstation.com/reviews/milanoir-review",
+              "date": "2018-05-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 40,
+              "url": "https://www.destructoid.com/review-milanoir-504421.phtml",
+              "date": "2018-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 70,
+              "url": "http://www.digitallydownloaded.net/2018/06/review-milanoir-nintendo-switch.html",
+              "date": "2018-06-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 50,
+              "url": "https://www.gamegrin.com/reviews/milanoir-review/",
+              "date": "2018-06-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 60.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=milanoir-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 50,
+              "url": "http://www.nintendoworldreport.com/review/47297/milanoir-switch-review",
+              "date": "2018-05-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 67,
+              "url": "http://www.nintendojo.com/reviews/review-milanoir-switch",
+              "date": "2018-08-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 40.0,
+              "url": "https://purenintendo.com/review-milanoir-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 4.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 50,
+              "url": "http://switchplayer.net/2018/07/03/milanoir-review/",
+              "date": "2018-07-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 29,
+              "url": "https://videochums.com/review/milanoir",
+              "date": "2018-06-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 30,
+              "url": "http://wegotthiscovered.com/gaming/milanoir-review/",
+              "date": "2018-06-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 12
         },
         "user": {
-          "score": null,
+          "score": 4.55,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 5.2,
+              "scale": 10,
+              "count": 6,
+              "url": "https://www.metacritic.com/game/milanoir/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.449489742783178,
+              "normalized": 5.2
+            },
+            {
+              "score": 3.75,
+              "scale": 10,
+              "count": 4,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/milanoir",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.0,
+              "normalized": 3.75
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:42:05.665317+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:43:15.538230+00:00"
       },
       "requirements": {
         "image": true,
@@ -233003,7 +233591,10 @@
       },
       "basics_attempted": "2026-11-02T22:42:05.665317+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/milanoir-switch/",
@@ -233052,7 +233643,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:43:18.040814+00:00",
+      "full_version": 7
     },
     "Switch:4840": {
       "title": "Mutation Nation",
@@ -258273,22 +258866,70 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 81.1,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/mighty_switch_force_collection",
+              "name": "FNintendo",
+              "score": 80,
+              "url": "https://fnintendo.net/article/12909-mighty-switch-force-collection",
+              "date": "2019-09-06",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 83,
+              "url": "http://www.gaming-age.com/2019/07/mighty-switch-force-collection-review-for-nintendo-switch-ps4-xbox-one-steam/",
+              "date": "2019-07-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 70.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=mighty-switch-force-collection-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 85,
+              "url": "",
+              "date": "2020-04-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/mighty_switch_force_collection",
+              "date": "2019-07-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/51133/mighty-switch-force-collection-switch-review",
+              "date": "2019-07-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-mighty-switch-force-collection-nintendo-switch/",
+              "date": "2019-08-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
-          "score": 7.7,
+          "score": 7.35,
           "scale": 10,
           "sources": [
             {
@@ -258299,14 +258940,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/mighty_switch_force_collection",
               "platform": "Nintendo Switch",
               "weight": 5.656854249492381,
-              "normalized": 7.7,
-              "checked": "2026-11-02T17:55:11.314838+00:00"
+              "normalized": 7.7
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.8,
+              "scale": 10,
+              "count": 13,
+              "url": "https://www.metacritic.com/game/mighty-switch-force-collection/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.605551275463989,
+              "normalized": 6.799999999999999
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:42:05.664543+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T06:43:20.553779+00:00"
       },
       "requirements": {
         "image": true,
@@ -258322,7 +258977,10 @@
       },
       "basics_attempted": "2026-11-02T22:42:05.664543+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/mighty-switch-force-collection-switch/",
@@ -258371,7 +259029,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T06:43:23.442300+00:00",
+      "full_version": 7
     },
     "Switch:5894": {
       "title": "Outbuddies DX",
