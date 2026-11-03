@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T00:35:15.097044+00:00",
+  "updated": "2026-11-03T00:37:22.368376+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
     "attempted": 2542,
     "ready": 1960,
     "missing_image": 109,
-    "missing_store": 299,
+    "missing_store": 293,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -143688,7 +143688,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:57:25.989082+00:00"
+        "attempted": "2026-11-03T00:35:19.336275+00:00"
       },
       "requirements": {
         "image": true,
@@ -143707,20 +143707,91 @@
         "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-BERMUDA-TRIANGLE-2981235.html",
         "checked": "2026-11-02T21:57:29.570026+00:00"
       },
-      "basics_attempted": "2026-11-02T21:57:25.989082+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:35:19.336275+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
         "metacritic_users": "HTTP Error 404: Not Found",
         "metacritic_reviews": "HTTP Error 404: Not Found",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "metacritic": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "aliases": [
         "Arcade Archives BERMUDA TRIANGLE"
       ],
       "full_attempted": "2026-11-02T19:52:45.280810+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:49.567614+00:00",
+              "next_attempt": "2026-11-04T00:36:49.567614+00:00",
+              "revision": "f590441d01c46930:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/bermuda_triangle",
+                "https://www.nintendolife.com/games/switch-eshop/bermuda_triangle",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_bermuda_triangle"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_bermuda_triangle"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:54.530985+00:00",
+              "next_attempt": "2026-11-04T00:36:54.530985+00:00",
+              "revision": "f590441d01c46930:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bermuda-triangle-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bermuda-triangle-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:37:01.973893+00:00",
+              "next_attempt": "2026-11-04T00:37:01.973893+00:00",
+              "revision": "f590441d01c46930:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-bermuda-triangle/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/bermuda-triangle-1987/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-bermuda-triangle/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-bermuda-triangle/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:37:03.333273+00:00",
+              "next_attempt": "2026-11-04T00:37:03.333273+00:00",
+              "revision": "f590441d01c46930:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bermuda+Triangle&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bermuda+Triangle&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:37:03.333410+00:00",
+              "next_attempt": "2026-11-03T01:37:03.333410+00:00",
+              "revision": "f590441d01c46930:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:37:03.333441+00:00",
+              "next_attempt": "2026-11-03T01:37:03.333441+00:00",
+              "revision": "f590441d01c46930:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:17526": {
       "title": "Biped 2",
@@ -143740,11 +143811,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:57:25.990747+00:00"
+        "attempted": "2026-11-03T00:35:19.336857+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -143752,11 +143823,13 @@
         "source": "https://www.nintendo.com/us/store/products/biped-2-switch/",
         "checked": "2026-11-02T21:57:29.014283+00:00"
       },
-      "basics_attempted": "2026-11-02T21:57:25.990747+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:35:19.336857+00:00",
+      "version": 7,
       "errors": {
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:53:13.700003+00:00",
       "store_evidence": [
@@ -143766,7 +143839,100 @@
           "checked": "2026-11-02T21:57:29.013948+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Biped-2-2950357.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:35:19.702231+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Biped 2"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:35:19.702423+00:00",
+              "next_attempt": "2026-11-04T00:35:19.702423+00:00",
+              "revision": "ea5364bbac1e5298:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:35:19.702423+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Biped-2-2950357.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Biped-2-2950357.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:09.558238+00:00",
+              "next_attempt": "2026-11-04T00:36:09.558238+00:00",
+              "revision": "ea5364bbac1e5298:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/biped_2",
+                "https://www.nintendolife.com/games/nintendo-switch/biped_2"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/biped_2"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:10.004442+00:00",
+              "next_attempt": "2026-11-04T00:36:10.004442+00:00",
+              "revision": "ea5364bbac1e5298:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=biped-2-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=biped-2-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:17.116959+00:00",
+              "next_attempt": "2026-11-04T00:36:17.116959+00:00",
+              "revision": "ea5364bbac1e5298:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/biped-2/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/biped-2/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/biped-2/"
+              ],
+              "url": "https://www.metacritic.com/game/biped-2/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:18.650911+00:00",
+              "next_attempt": "2026-11-04T00:36:18.650911+00:00",
+              "revision": "ea5364bbac1e5298:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Biped+2&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Biped+2&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:36:18.651009+00:00",
+              "next_attempt": "2026-11-03T01:36:18.651009+00:00",
+              "revision": "ea5364bbac1e5298:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:36:18.651036+00:00",
+              "next_attempt": "2026-11-03T01:36:18.651036+00:00",
+              "revision": "ea5364bbac1e5298:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:17861": {
       "title": "Biplanes",
@@ -144330,11 +144496,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:57:30.168732+00:00"
+        "attempted": "2026-11-03T00:35:19.338335+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -144342,12 +144508,14 @@
         "source": "https://www.nintendo.com/us/store/products/blitz-smash-ultimate-switch/",
         "checked": "2026-11-02T21:57:34.805994+00:00"
       },
-      "basics_attempted": "2026-11-02T21:57:30.168732+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:35:19.338335+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:55:00.333425+00:00",
       "store_evidence": [
@@ -144357,7 +144525,100 @@
           "checked": "2026-11-02T21:57:34.805693+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Blitz-Smash-Ultimate-2977197.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:35:23.984833+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Blitz Smash Ultimate"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:35:23.985014+00:00",
+              "next_attempt": "2026-11-04T00:35:23.985014+00:00",
+              "revision": "474db99c253cd698:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:35:23.985014+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Blitz-Smash-Ultimate-2977197.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Blitz-Smash-Ultimate-2977197.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:34.628462+00:00",
+              "next_attempt": "2026-11-04T00:36:34.628462+00:00",
+              "revision": "474db99c253cd698:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/blitz_smash_ultimate",
+                "https://www.nintendolife.com/games/nintendo-switch/blitz_smash_ultimate"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/blitz_smash_ultimate"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:37.369832+00:00",
+              "next_attempt": "2026-11-04T00:36:37.369832+00:00",
+              "revision": "474db99c253cd698:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=blitz-smash-ultimate-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=blitz-smash-ultimate-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:42.516463+00:00",
+              "next_attempt": "2026-11-04T00:36:42.516463+00:00",
+              "revision": "474db99c253cd698:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/blitz-smash-ultimate/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/blitz-smash-ultimate/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/blitz-smash-ultimate/"
+              ],
+              "url": "https://www.metacritic.com/game/blitz-smash-ultimate/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:43.958631+00:00",
+              "next_attempt": "2026-11-04T00:36:43.958631+00:00",
+              "revision": "474db99c253cd698:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Blitz+Smash+Ultimate&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Blitz+Smash+Ultimate&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:36:43.958766+00:00",
+              "next_attempt": "2026-11-03T01:36:43.958766+00:00",
+              "revision": "474db99c253cd698:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:36:43.958807+00:00",
+              "next_attempt": "2026-11-03T01:36:43.958807+00:00",
+              "revision": "474db99c253cd698:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:17545": {
       "title": "Blood: Refreshed Supply",
@@ -144915,7 +145176,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:59:28.876339+00:00"
+        "attempted": "2026-11-03T00:35:19.339616+00:00"
       },
       "requirements": {
         "image": true,
@@ -144934,18 +145195,88 @@
         "source": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Arcade-Archives-BOMB-JACK-TWIN-3004641.html",
         "checked": "2026-11-02T21:59:30.224017+00:00"
       },
-      "basics_attempted": "2026-11-02T21:59:28.876339+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:35:19.339616+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "aliases": [
         "Arcade Archives BOMB JACK TWIN"
       ],
       "full_attempted": "2026-11-02T19:56:08.703697+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:59.670740+00:00",
+              "next_attempt": "2026-11-04T00:36:59.670740+00:00",
+              "revision": "f58397bed26df921:7",
+              "reason": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/bomb_jack_twin",
+                "https://www.nintendolife.com/games/switch-eshop/bomb_jack_twin",
+                "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_bomb_jack_twin"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/arcade_archives_bomb_jack_twin"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:37:00.564230+00:00",
+              "next_attempt": "2026-11-04T00:37:00.564230+00:00",
+              "revision": "f58397bed26df921:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bomb-jack-twin-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bomb-jack-twin-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:37:11.822395+00:00",
+              "next_attempt": "2026-11-04T00:37:11.822395+00:00",
+              "revision": "f58397bed26df921:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/arcade-archives-bomb-jack-twin/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/arcade-archives-bomb-jack-twin/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/arcade-archives-bomb-jack-twin/"
+              ],
+              "url": "https://www.metacritic.com/game/arcade-archives-bomb-jack-twin/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:37:13.300101+00:00",
+              "next_attempt": "2026-11-04T00:37:13.300101+00:00",
+              "revision": "f58397bed26df921:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bomb+Jack+Twin&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bomb+Jack+Twin&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:37:13.300235+00:00",
+              "next_attempt": "2026-11-03T01:37:13.300235+00:00",
+              "revision": "f58397bed26df921:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:37:13.300265+00:00",
+              "next_attempt": "2026-11-03T01:37:13.300265+00:00",
+              "revision": "f58397bed26df921:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:18000": {
       "title": "Brave Rounds",
@@ -145300,7 +145631,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:59:28.876523+00:00"
+        "attempted": "2026-11-03T00:36:18.651163+00:00"
       },
       "requirements": {
         "image": true,
@@ -145312,14 +145643,32 @@
         "source": "https://www.nintendolife.com/games/nintendo-switch/bubble_bobble_sugar_dungeons",
         "checked": "2026-11-02T17:18:36.205731+00:00"
       },
-      "basics_attempted": "2026-11-02T21:59:28.876523+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:36:18.651163+00:00",
+      "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nindie": "No review profile indexed for this game"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified"
       },
       "full_attempted": "2026-11-02T19:58:58.364133+00:00",
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:19.251450+00:00",
+              "next_attempt": "2026-11-04T00:36:19.251450+00:00",
+              "revision": "df2a9ec6e3fd119c:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Bubble+Bobble+Sugar+Dungeons%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Bubble+Bobble+Sugar+Dungeons%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        }
+      }
     },
     "Switch:17689": {
       "title": "Bubble Symphony",
@@ -145339,7 +145688,7 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:59:28.876752+00:00"
+        "attempted": "2026-11-03T00:36:19.251835+00:00"
       },
       "requirements": {
         "image": true,
@@ -145351,12 +145700,15 @@
         "source": "https://www.nintendo.com/us/store/products/bubble-symphony-switch/",
         "checked": "2026-11-02T21:59:32.079637+00:00"
       },
-      "basics_attempted": "2026-11-02T21:59:28.876752+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:36:19.251835+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:59:01.943801+00:00",
       "store_evidence": [
@@ -145366,7 +145718,89 @@
           "checked": "2026-11-02T21:59:32.079328+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:20.223805+00:00",
+              "next_attempt": "2026-11-04T00:36:20.223805+00:00",
+              "revision": "59b7c5b86728ace5:7",
+              "reason": "No exact Portuguese Switch listing verified",
+              "attempted_urls": [
+                "https://searching.nintendo-europe.com/pt/select?q=%22Bubble+Symphony%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+              ],
+              "url": "https://searching.nintendo-europe.com/pt/select?q=%22Bubble+Symphony%22&fq=type%3AGAME+AND+system_type%3Anintendoswitch%2A&rows=100&wt=json"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:37:04.564432+00:00",
+              "next_attempt": "2026-11-04T00:37:04.564432+00:00",
+              "revision": "59b7c5b86728ace5:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/bubble_symphony",
+                "https://www.nintendolife.com/games/nintendo-switch/bubble_symphony"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/bubble_symphony"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:37:04.984706+00:00",
+              "next_attempt": "2026-11-04T00:37:04.984706+00:00",
+              "revision": "59b7c5b86728ace5:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bubble-symphony-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bubble-symphony-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:37:20.897626+00:00",
+              "next_attempt": "2026-11-04T00:37:20.897626+00:00",
+              "revision": "59b7c5b86728ace5:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/bubble-symphony/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/bubble-symphony/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/bubble-symphony/"
+              ],
+              "url": "https://www.metacritic.com/game/bubble-symphony/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:37:22.192539+00:00",
+              "next_attempt": "2026-11-04T00:37:22.192539+00:00",
+              "revision": "59b7c5b86728ace5:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bubble+Symphony&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bubble+Symphony&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:37:22.192653+00:00",
+              "next_attempt": "2026-11-03T01:37:22.192653+00:00",
+              "revision": "59b7c5b86728ace5:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:37:22.192678+00:00",
+              "next_attempt": "2026-11-03T01:37:22.192678+00:00",
+              "revision": "59b7c5b86728ace5:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:17566": {
       "title": "Buildest",
@@ -156251,11 +156685,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:57:25.988432+00:00"
+        "attempted": "2026-11-03T00:35:19.336112+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -156263,12 +156697,14 @@
         "source": "https://www.nintendo.com/us/store/products/beat-the-champions-switch/",
         "checked": "2026-11-02T21:57:31.503013+00:00"
       },
-      "basics_attempted": "2026-11-02T21:57:25.988432+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:35:19.336112+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:52:21.661941+00:00",
       "store_evidence": [
@@ -156278,7 +156714,100 @@
           "checked": "2026-11-02T21:57:31.502699+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Beat-The-Champions-3102996.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:35:20.704312+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Beat The Champions"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:35:20.704503+00:00",
+              "next_attempt": "2026-11-04T00:35:20.704503+00:00",
+              "revision": "e969f3250478fa55:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:35:20.704503+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Beat-The-Champions-3102996.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Beat-The-Champions-3102996.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:19.659036+00:00",
+              "next_attempt": "2026-11-04T00:36:19.659036+00:00",
+              "revision": "e969f3250478fa55:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/beat_the_champions",
+                "https://www.nintendolife.com/games/nintendo-switch/beat_the_champions"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/beat_the_champions"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:20.328866+00:00",
+              "next_attempt": "2026-11-04T00:36:20.328866+00:00",
+              "revision": "e969f3250478fa55:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=beat-the-champions-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=beat-the-champions-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:23.649745+00:00",
+              "next_attempt": "2026-11-04T00:36:23.649745+00:00",
+              "revision": "e969f3250478fa55:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/beat-the-champions/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/beat-the-champions/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/beat-the-champions/"
+              ],
+              "url": "https://www.metacritic.com/game/beat-the-champions/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:25.103869+00:00",
+              "next_attempt": "2026-11-04T00:36:25.103869+00:00",
+              "revision": "e969f3250478fa55:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Beat+The+Champions&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Beat+The+Champions&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:36:25.103960+00:00",
+              "next_attempt": "2026-11-03T01:36:25.103960+00:00",
+              "revision": "e969f3250478fa55:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:36:25.103989+00:00",
+              "next_attempt": "2026-11-03T01:36:25.103989+00:00",
+              "revision": "e969f3250478fa55:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18355": {
       "title": "Bestial Reception",
@@ -156380,11 +156909,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:57:25.989746+00:00"
+        "attempted": "2026-11-03T00:35:19.336677+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -156392,12 +156921,14 @@
         "source": "https://www.nintendo.com/us/store/products/bestial-reception-switch/",
         "checked": "2026-11-02T21:57:29.703124+00:00"
       },
-      "basics_attempted": "2026-11-02T21:57:25.989746+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:35:19.336677+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:52:50.272549+00:00",
       "store_evidence": [
@@ -156407,7 +156938,100 @@
           "checked": "2026-11-02T21:57:29.702812+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bestial-Reception-3109874.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:35:22.882753+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Bestial Reception"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:35:22.882938+00:00",
+              "next_attempt": "2026-11-04T00:35:22.882938+00:00",
+              "revision": "80355f540c356d08:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:35:22.882938+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bestial-Reception-3109874.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Bestial-Reception-3109874.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:29.642331+00:00",
+              "next_attempt": "2026-11-04T00:36:29.642331+00:00",
+              "revision": "80355f540c356d08:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/bestial_reception",
+                "https://www.nintendolife.com/games/nintendo-switch/bestial_reception"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/bestial_reception"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:34.029779+00:00",
+              "next_attempt": "2026-11-04T00:36:34.029779+00:00",
+              "revision": "80355f540c356d08:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=bestial-reception-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=bestial-reception-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:38.044671+00:00",
+              "next_attempt": "2026-11-04T00:36:38.044671+00:00",
+              "revision": "80355f540c356d08:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/bestial-reception/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/bestial-reception/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/bestial-reception/"
+              ],
+              "url": "https://www.metacritic.com/game/bestial-reception/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:40.200761+00:00",
+              "next_attempt": "2026-11-04T00:36:40.200761+00:00",
+              "revision": "80355f540c356d08:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bestial+Reception&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bestial+Reception&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:36:40.200885+00:00",
+              "next_attempt": "2026-11-03T01:36:40.200885+00:00",
+              "revision": "80355f540c356d08:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:36:40.200914+00:00",
+              "next_attempt": "2026-11-03T01:36:40.200914+00:00",
+              "revision": "80355f540c356d08:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "Switch:18220": {
       "title": "Blast Linkers",
@@ -156427,11 +157051,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:57:25.994138+00:00"
+        "attempted": "2026-11-03T00:35:19.337252+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -156439,12 +157063,14 @@
         "source": "https://www.nintendo.com/us/store/products/blast-linkers-switch/",
         "checked": "2026-11-02T21:57:33.731964+00:00"
       },
-      "basics_attempted": "2026-11-02T21:57:25.994138+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:35:19.337252+00:00",
+      "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:54:17.222545+00:00",
       "store_evidence": [
@@ -156454,7 +157080,100 @@
           "checked": "2026-11-02T21:57:33.731654+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Blast-Linkers-3075006.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:35:21.775113+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Blast Linkers"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:35:21.775295+00:00",
+              "next_attempt": "2026-11-04T00:35:21.775295+00:00",
+              "revision": "901395c10f466f66:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:35:21.775295+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Blast-Linkers-3075006.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Blast-Linkers-3075006.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:24.658191+00:00",
+              "next_attempt": "2026-11-04T00:36:24.658191+00:00",
+              "revision": "901395c10f466f66:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/blast_linkers",
+                "https://www.nintendolife.com/games/nintendo-switch/blast_linkers"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/blast_linkers"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:25.318369+00:00",
+              "next_attempt": "2026-11-04T00:36:25.318369+00:00",
+              "revision": "901395c10f466f66:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=blast-linkers-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=blast-linkers-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:37.769942+00:00",
+              "next_attempt": "2026-11-04T00:36:37.769942+00:00",
+              "revision": "901395c10f466f66:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/blast-linkers/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/blast-linkers/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/blast-linkers/"
+              ],
+              "url": "https://www.metacritic.com/game/blast-linkers/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:39.298005+00:00",
+              "next_attempt": "2026-11-04T00:36:39.298005+00:00",
+              "revision": "901395c10f466f66:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Blast+Linkers&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Blast+Linkers&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:36:39.298164+00:00",
+              "next_attempt": "2026-11-03T01:36:39.298164+00:00",
+              "revision": "901395c10f466f66:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:36:39.298201+00:00",
+              "next_attempt": "2026-11-03T01:36:39.298201+00:00",
+              "revision": "901395c10f466f66:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18130": {
       "title": "Bluey's Happy Snaps",
@@ -156589,11 +157308,11 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T21:57:43.024026+00:00"
+        "attempted": "2026-11-03T00:35:19.339302+00:00"
       },
       "requirements": {
         "image": true,
-        "store": false,
+        "store": true,
         "rating": false
       },
       "image": {
@@ -156601,11 +157320,13 @@
         "source": "https://www.nintendo.com/us/store/products/blueys-happy-snaps-switch/",
         "checked": "2026-11-02T21:57:44.549667+00:00"
       },
-      "basics_attempted": "2026-11-02T21:57:43.024026+00:00",
-      "version": 6,
+      "basics_attempted": "2026-11-03T00:35:19.339302+00:00",
+      "version": 7,
       "errors": {
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
       "full_attempted": "2026-11-02T19:55:59.764452+00:00",
       "store_evidence": [
@@ -156615,7 +157336,100 @@
           "checked": "2026-11-02T21:57:44.549320+00:00"
         }
       ],
-      "coverage_policy": "portugal-minimum-v1"
+      "coverage_policy": "portugal-minimum-v1",
+      "store": {
+        "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Bluey-s-Happy-Snaps-3147278.html",
+        "label": "Abrir na Nintendo eShop",
+        "checked": "2026-11-03T00:35:25.093037+00:00",
+        "region": "PT",
+        "verified": true
+      },
+      "aliases": [
+        "Bluey's Happy Snaps"
+      ],
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:35:25.093280+00:00",
+              "next_attempt": "2026-11-04T00:35:25.093280+00:00",
+              "revision": "4ee52f31f9d49ab3:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:35:25.093280+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Bluey-s-Happy-Snaps-3147278.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Bluey-s-Happy-Snaps-3147278.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:44.892528+00:00",
+              "next_attempt": "2026-11-04T00:36:44.892528+00:00",
+              "revision": "4ee52f31f9d49ab3:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/nintendo-switch/blueys_happy_snaps",
+                "https://www.nintendolife.com/games/switch-eshop/blueys_happy_snaps"
+              ],
+              "url": "https://www.nintendolife.com/games/switch-eshop/blueys_happy_snaps"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:45.544394+00:00",
+              "next_attempt": "2026-11-04T00:36:45.544394+00:00",
+              "revision": "4ee52f31f9d49ab3:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=blueys-happy-snaps-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=blueys-happy-snaps-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:51.316149+00:00",
+              "next_attempt": "2026-11-04T00:36:51.316149+00:00",
+              "revision": "4ee52f31f9d49ab3:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/blueys-happy-snaps/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/blueys-happy-snaps/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/blueys-happy-snaps/"
+              ],
+              "url": "https://www.metacritic.com/game/blueys-happy-snaps/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:36:52.811965+00:00",
+              "next_attempt": "2026-11-04T00:36:52.811965+00:00",
+              "revision": "4ee52f31f9d49ab3:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Bluey%27s+Happy+Snaps&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Bluey%27s+Happy+Snaps&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:36:52.812125+00:00",
+              "next_attempt": "2026-11-03T01:36:52.812125+00:00",
+              "revision": "4ee52f31f9d49ab3:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:36:52.812158+00:00",
+              "next_attempt": "2026-11-03T01:36:52.812158+00:00",
+              "revision": "4ee52f31f9d49ab3:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      }
     },
     "PS5:18241": {
       "title": "CTHULOOT",
