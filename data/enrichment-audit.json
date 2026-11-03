@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-03T00:17:02.166214+00:00",
+  "updated": "2026-11-03T00:18:26.793829+00:00",
   "coverage": {
     "total": 2542,
     "attempted": 2542,
-    "ready": 1947,
+    "ready": 1951,
     "missing_image": 109,
-    "missing_store": 373,
+    "missing_store": 363,
     "missing_rating": 441,
     "full_attempted": 1042,
     "image_health_pending": 2433
@@ -42690,18 +42690,6 @@
       "next_retry": "2026-11-03T01:16:50.499533+00:00"
     },
     {
-      "key": "Switch:7292",
-      "title": "Welcome to Primrose Lake",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:38:57.543194+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:7676",
       "title": "What The Fork",
       "platform": "Switch",
@@ -43123,45 +43111,104 @@
       "next_retry": "2026-11-03T00:39:24.904455+00:00"
     },
     {
-      "key": "Switch:7188",
-      "title": "WinKings",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:38:57.544263+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:12372",
       "title": "Wind of Shuriken",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:38:57.546476+00:00",
+      "attempted": "2026-11-03T00:17:06.564169+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
-      "key": "Switch:7283",
-      "title": "Witch & Hero",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:38:57.547057+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:17:09.052035+00:00",
+              "next_attempt": "2026-11-04T00:17:09.052035+00:00",
+              "revision": "ea9761b86cd6a1cb:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:17:09.052035+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Wind-of-Shuriken-2254145.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Wind-of-Shuriken-2254145.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:14.369050+00:00",
+              "next_attempt": "2026-11-04T00:17:14.369050+00:00",
+              "revision": "ea9761b86cd6a1cb:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/wind_of_shuriken",
+                "https://www.nintendolife.com/games/nintendo-switch/wind_of_shuriken"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/wind_of_shuriken"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:17.130708+00:00",
+              "next_attempt": "2026-11-04T00:17:17.130708+00:00",
+              "revision": "ea9761b86cd6a1cb:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=wind-of-shuriken-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=wind-of-shuriken-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:47.412531+00:00",
+              "next_attempt": "2026-11-04T00:17:47.412531+00:00",
+              "revision": "ea9761b86cd6a1cb:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/wind-of-shuriken/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/wind-of-shuriken/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/wind-of-shuriken/"
+              ],
+              "url": "https://www.metacritic.com/game/wind-of-shuriken/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:49.176673+00:00",
+              "next_attempt": "2026-11-04T00:17:49.176673+00:00",
+              "revision": "ea9761b86cd6a1cb:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Wind+of+Shuriken&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Wind+of+Shuriken&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:17:49.176832+00:00",
+              "next_attempt": "2026-11-03T01:17:49.176832+00:00",
+              "revision": "ea9761b86cd6a1cb:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:17:49.176865+00:00",
+              "next_attempt": "2026-11-03T01:17:49.176865+00:00",
+              "revision": "ea9761b86cd6a1cb:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:17:49.176832+00:00"
     },
     {
       "key": "Switch:5203",
@@ -43286,18 +43333,6 @@
       "next_retry": "2026-11-03T23:39:10.786897+00:00"
     },
     {
-      "key": "Switch:16032",
-      "title": "WolfFang 空牙2001 SkullFang 空牙外伝 Saturn Tribute Boosted",
-      "platform": "Switch",
-      "missing": [
-        "store"
-      ],
-      "attempted": "2026-11-02T21:38:57.547328+00:00",
-      "reasons": {},
-      "field_status": {},
-      "next_retry": ""
-    },
-    {
       "key": "Switch:9004",
       "title": "Wondershot",
       "platform": "Switch",
@@ -43334,68 +43369,400 @@
       "title": "Work from Home",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:39:05.787988+00:00",
+      "attempted": "2026-11-03T00:17:06.565442+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:17:11.260828+00:00",
+              "next_attempt": "2026-11-04T00:17:11.260828+00:00",
+              "revision": "a6183935f4e60882:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:17:11.260828+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Work-from-Home-2303281.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Work-from-Home-2303281.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:44.398704+00:00",
+              "next_attempt": "2026-11-04T00:17:44.398704+00:00",
+              "revision": "a6183935f4e60882:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/work_from_home",
+                "https://www.nintendolife.com/games/nintendo-switch/work_from_home"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/work_from_home"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:47.184952+00:00",
+              "next_attempt": "2026-11-04T00:17:47.184952+00:00",
+              "revision": "a6183935f4e60882:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=work-from-home-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=work-from-home-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:51.910844+00:00",
+              "next_attempt": "2026-11-04T00:17:51.910844+00:00",
+              "revision": "a6183935f4e60882:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/work-from-home/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/work-from-home/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/work-from-home/"
+              ],
+              "url": "https://www.metacritic.com/game/work-from-home/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:53.563467+00:00",
+              "next_attempt": "2026-11-04T00:17:53.563467+00:00",
+              "revision": "a6183935f4e60882:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Work+from+Home&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Work+from+Home&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:17:53.563557+00:00",
+              "next_attempt": "2026-11-03T01:17:53.563557+00:00",
+              "revision": "a6183935f4e60882:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:17:53.563585+00:00",
+              "next_attempt": "2026-11-03T01:17:53.563585+00:00",
+              "revision": "a6183935f4e60882:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:17:53.563557+00:00"
     },
     {
       "key": "Switch:11698",
       "title": "World Soccer Kid",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:39:09.206413+00:00",
+      "attempted": "2026-11-03T00:17:06.566195+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:17:12.354289+00:00",
+              "next_attempt": "2026-11-04T00:17:12.354289+00:00",
+              "revision": "90d2ec62e1a65cb7:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:17:12.354289+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/World-Soccer-Kid-2187322.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/World-Soccer-Kid-2187322.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:49.247721+00:00",
+              "next_attempt": "2026-11-04T00:17:49.247721+00:00",
+              "revision": "90d2ec62e1a65cb7:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/world_soccer_kid",
+                "https://www.nintendolife.com/games/nintendo-switch/world_soccer_kid"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/world_soccer_kid"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:51.284712+00:00",
+              "next_attempt": "2026-11-04T00:17:51.284712+00:00",
+              "revision": "90d2ec62e1a65cb7:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=world-soccer-kid-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=world-soccer-kid-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:57.679141+00:00",
+              "next_attempt": "2026-11-04T00:17:57.679141+00:00",
+              "revision": "90d2ec62e1a65cb7:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/world-soccer-kid/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/world-soccer-kid/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/world-soccer-kid/"
+              ],
+              "url": "https://www.metacritic.com/game/world-soccer-kid/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:59.688824+00:00",
+              "next_attempt": "2026-11-04T00:17:59.688824+00:00",
+              "revision": "90d2ec62e1a65cb7:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=World+Soccer+Kid&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=World+Soccer+Kid&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:17:59.688985+00:00",
+              "next_attempt": "2026-11-03T01:17:59.688985+00:00",
+              "revision": "90d2ec62e1a65cb7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:17:59.689036+00:00",
+              "next_attempt": "2026-11-03T01:17:59.689036+00:00",
+              "revision": "90d2ec62e1a65cb7:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:17:59.688985+00:00"
     },
     {
       "key": "Switch:10357",
       "title": "World Soccer Strikers '91",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:40:07.588419+00:00",
+      "attempted": "2026-11-03T00:17:06.566908+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:17:13.445648+00:00",
+              "next_attempt": "2026-11-04T00:17:13.445648+00:00",
+              "revision": "b40687b39296bac2:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:17:13.445648+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/World-Soccer-Strikers-91-2024271.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/World-Soccer-Strikers-91-2024271.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:54.348289+00:00",
+              "next_attempt": "2026-11-04T00:17:54.348289+00:00",
+              "revision": "b40687b39296bac2:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/world_soccer_strikers_91",
+                "https://www.nintendolife.com/games/nintendo-switch/world_soccer_strikers_91"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/world_soccer_strikers_91"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:55.027593+00:00",
+              "next_attempt": "2026-11-04T00:17:55.027593+00:00",
+              "revision": "b40687b39296bac2:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=world-soccer-strikers-91-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=world-soccer-strikers-91-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:57.312362+00:00",
+              "next_attempt": "2026-11-04T00:17:57.312362+00:00",
+              "revision": "b40687b39296bac2:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/world-soccer-strikers-91/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/world-soccer-strikers-91/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/world-soccer-strikers-91/"
+              ],
+              "url": "https://www.metacritic.com/game/world-soccer-strikers-91/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:58.867470+00:00",
+              "next_attempt": "2026-11-04T00:17:58.867470+00:00",
+              "revision": "b40687b39296bac2:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=World+Soccer+Strikers+%2791&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=World+Soccer+Strikers+%2791&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:17:58.867626+00:00",
+              "next_attempt": "2026-11-03T01:17:58.867626+00:00",
+              "revision": "b40687b39296bac2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:17:58.867661+00:00",
+              "next_attempt": "2026-11-03T01:17:58.867661+00:00",
+              "revision": "b40687b39296bac2:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:17:58.867626+00:00"
     },
     {
       "key": "Switch:10426",
       "title": "Wrestledunk Sports",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:40:07.588608+00:00",
+      "attempted": "2026-11-03T00:17:06.921876+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:17:15.642855+00:00",
+              "next_attempt": "2026-11-04T00:17:15.642855+00:00",
+              "revision": "8555f43af9ff65bb:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:17:15.642855+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Wrestledunk-Sports-2024186.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Wrestledunk-Sports-2024186.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:17:59.372392+00:00",
+              "next_attempt": "2026-11-04T00:17:59.372392+00:00",
+              "revision": "8555f43af9ff65bb:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/wrestledunk_sports",
+                "https://www.nintendolife.com/games/nintendo-switch/wrestledunk_sports"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/wrestledunk_sports"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:18:02.010525+00:00",
+              "next_attempt": "2026-11-04T00:18:02.010525+00:00",
+              "revision": "8555f43af9ff65bb:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=wrestledunk-sports-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=wrestledunk-sports-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:18:24.817889+00:00",
+              "next_attempt": "2026-11-04T00:18:24.817889+00:00",
+              "revision": "8555f43af9ff65bb:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/wrestledunk-sports/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/wrestledunk-sports/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/wrestledunk-sports/"
+              ],
+              "url": "https://www.metacritic.com/game/wrestledunk-sports/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:18:26.420683+00:00",
+              "next_attempt": "2026-11-04T00:18:26.420683+00:00",
+              "revision": "8555f43af9ff65bb:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Wrestledunk+Sports&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Wrestledunk+Sports&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:18:26.420819+00:00",
+              "next_attempt": "2026-11-03T01:18:26.420819+00:00",
+              "revision": "8555f43af9ff65bb:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:18:26.420849+00:00",
+              "next_attempt": "2026-11-03T01:18:26.420849+00:00",
+              "revision": "8555f43af9ff65bb:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:18:26.420819+00:00"
     },
     {
       "key": "Switch:16395",
@@ -43488,17 +43855,100 @@
       "title": "Yeah Yeah Beebiss II",
       "platform": "Switch",
       "missing": [
-        "store",
         "rating"
       ],
-      "attempted": "2026-11-02T21:40:07.588792+00:00",
+      "attempted": "2026-11-03T00:17:07.981901+00:00",
       "reasons": {
         "community": "HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "slush": "No scored Switch review indexed"
+        "slush": "No scored Switch review indexed",
+        "nwr": "Review archive discovery still queued; exact profile not indexed yet",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
       },
-      "field_status": {},
-      "next_retry": ""
+      "field_status": {
+        "store": {
+          "sources": {
+            "nintendo": {
+              "status": "verified",
+              "last_attempt": "2026-11-03T00:17:16.770735+00:00",
+              "next_attempt": "2026-11-04T00:17:16.770735+00:00",
+              "revision": "3a6ef3970559b9bd:7",
+              "reason": "",
+              "last_success": "2026-11-03T00:17:16.770735+00:00",
+              "attempted_urls": [
+                "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Yeah-Yeah-Beebiss-II-2161982.html"
+              ],
+              "url": "https://www.nintendo.com/pt-pt/Jogos/Aplicacoes-de-download-da-Nintendo-Switch/Yeah-Yeah-Beebiss-II-2161982.html"
+            }
+          }
+        },
+        "rating": {
+          "sources": {
+            "community": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:18:04.274273+00:00",
+              "next_attempt": "2026-11-04T00:18:04.274273+00:00",
+              "revision": "3a6ef3970559b9bd:7",
+              "reason": "HTTP Error 404: Not Found",
+              "attempted_urls": [
+                "https://www.nintendolife.com/games/switch-eshop/yeah_yeah_beebiss_ii",
+                "https://www.nintendolife.com/games/nintendo-switch/yeah_yeah_beebiss_ii"
+              ],
+              "url": "https://www.nintendolife.com/games/nintendo-switch/yeah_yeah_beebiss_ii"
+            },
+            "nindie": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:18:06.487515+00:00",
+              "next_attempt": "2026-11-04T00:18:06.487515+00:00",
+              "revision": "3a6ef3970559b9bd:7",
+              "reason": "No review profile indexed for this game",
+              "attempted_urls": [
+                "https://www.nindiespotlight.com/game_profile.cfm?game=yeah-yeah-beebiss-ii-switch"
+              ],
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=yeah-yeah-beebiss-ii-switch"
+            },
+            "metacritic": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:18:08.976181+00:00",
+              "next_attempt": "2026-11-04T00:18:08.976181+00:00",
+              "revision": "3a6ef3970559b9bd:7",
+              "reason": "No qualifying rating found on this source",
+              "attempted_urls": [
+                "https://backend.metacritic.com/reviews/metacritic/user/games/yeah-yeah-beebiss-ii/platform/nintendo-switch/stats/web",
+                "https://backend.metacritic.com/reviews/metacritic/critic/games/yeah-yeah-beebiss-ii/platform/nintendo-switch/web?offset=0&limit=10&filterBySentiment=all&sort=score",
+                "https://www.metacritic.com/game/yeah-yeah-beebiss-ii/"
+              ],
+              "url": "https://www.metacritic.com/game/yeah-yeah-beebiss-ii/"
+            },
+            "slush": {
+              "status": "not_found",
+              "last_attempt": "2026-11-03T00:18:10.404470+00:00",
+              "next_attempt": "2026-11-04T00:18:10.404470+00:00",
+              "revision": "3a6ef3970559b9bd:7",
+              "reason": "No scored Switch review indexed",
+              "attempted_urls": [
+                "https://gameslushpile.com/wp-json/wp/v2/search?search=Yeah+Yeah+Beebiss+II&per_page=5"
+              ],
+              "url": "https://gameslushpile.com/wp-json/wp/v2/search?search=Yeah+Yeah+Beebiss+II&per_page=5"
+            },
+            "nwr": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:18:10.404571+00:00",
+              "next_attempt": "2026-11-03T01:18:10.404571+00:00",
+              "revision": "3a6ef3970559b9bd:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            },
+            "pure": {
+              "status": "retryable_error",
+              "last_attempt": "2026-11-03T00:18:10.404602+00:00",
+              "next_attempt": "2026-11-03T01:18:10.404602+00:00",
+              "revision": "3a6ef3970559b9bd:7",
+              "reason": "Review archive discovery still queued; exact profile not indexed yet"
+            }
+          }
+        }
+      },
+      "next_retry": "2026-11-03T01:18:10.404571+00:00"
     },
     {
       "key": "PS5:12687",
