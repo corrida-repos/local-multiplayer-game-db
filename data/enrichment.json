@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T05:52:55.263108+00:00",
+  "updated": "2026-11-03T05:53:58.652497+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1181,
+    "full_attempted": 1191,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -37643,7 +37643,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 67.5,
+          "score": 69.0,
           "scale": 100,
           "sources": [
             {
@@ -37663,6 +37663,13 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=fort-triumph-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "Pure Nintendo",
               "score": 70,
               "url": "https://purenintendo.com/review-fort-triumph-nintendo-switch/",
@@ -37680,10 +37687,10 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 4
+          "source_count": 5
         },
         "user": {
-          "score": 7.5,
+          "score": 7.32,
           "scale": 10,
           "sources": [
             {
@@ -37694,14 +37701,29 @@
               "url": "https://www.metacritic.com/game/fort-triumph/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 7.5,
-              "checked": "2026-11-02T17:10:18.075631+00:00"
+              "normalized": 7.5
+            },
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/fort_triumph",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 7.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:37.565151+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 4,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:53:41.198853+00:00"
       },
       "requirements": {
         "image": true,
@@ -37717,7 +37739,11 @@
       },
       "basics_attempted": "2026-11-02T22:32:37.565151+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/fort-triumph-switch/",
@@ -37766,7 +37792,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:53:43.508938+00:00",
+      "full_version": 7
     },
     "PS5:11528": {
       "title": "Funtasia",
@@ -136163,27 +136191,41 @@
           "source_count": 0
         },
         "user": {
-          "score": 6.94,
+          "score": 6.97,
           "scale": 10,
           "sources": [
             {
-              "score": 3.47,
-              "count": 2712,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.47,
               "scale": 5,
-              "source": "PSN",
+              "count": 2712,
               "url": "https://store.playstation.com/pt-pt/product/EP4395-PPSA23123_00-FORTHEKING200000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:10:18.060435+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 6.94
+            },
+            {
+              "score": 8.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/for_the_king_ii",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:10:16.930139+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:53:20.434874+00:00"
       },
       "requirements": {
         "image": true,
@@ -136225,7 +136267,9 @@
       },
       "basics_attempted": "2026-11-02T17:10:16.930139+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -136241,7 +136285,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "n1yiqX82r7Y",
+        "title": "For The King II - Launch Trailer | PS5 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/for-the-king-ii/"
+      },
+      "full_attempted": "2026-11-03T05:53:21.240722+00:00",
+      "full_version": 7
     },
     "PS5:16119": {
       "title": "G.I. Joe: Wrath of Cobra",
@@ -146620,7 +146672,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:57:08.168495+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:53:55.984016+00:00"
       },
       "requirements": {
         "image": true,
@@ -146636,7 +146695,13 @@
       },
       "basics_attempted": "2026-11-02T22:57:08.168495+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/folk-hero-switch/",
@@ -146685,7 +146750,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:53:58.417576+00:00",
+      "full_version": 7
     },
     "PS5:16652": {
       "title": "GRADIUS ORIGINS",
@@ -163215,26 +163282,33 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/2-2d-3-3d-indie-games-for-playstation-5#fling-to-the-finish",
+              "date": "2025-09-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 8.28,
           "scale": 10,
           "sources": [
             {
-              "score": 4.14,
-              "count": 36,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.14,
               "scale": 5,
-              "source": "PSN",
+              "count": 36,
               "url": "https://store.playstation.com/pt-pt/product/EP8923-PPSA15090_00-0376224073935995",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:12:09.172098+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 6.0,
               "normalized": 8.28
             }
@@ -163242,7 +163316,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:12:07.320143+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:53:10.148064+00:00"
       },
       "requirements": {
         "image": true,
@@ -163284,7 +163365,11 @@
       },
       "basics_attempted": "2026-11-02T17:12:07.320143+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -163300,14 +163385,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:53:10.739657+00:00",
+      "full_version": 7
     },
     "Switch:17094": {
       "title": "Flora & Fang: Guardians of the vampire garden",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 82.0,
+          "score": 72.3,
           "scale": 100,
           "sources": [
             {
@@ -163316,19 +163403,52 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=flora-and-fang-guardians-of-the-vampire-garden-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 75,
+              "url": "https://purenintendo.com/review-flora-fang-guardians-of-the-vampire-garden-nintendo-switch/",
+              "date": "2025-07-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/pick-up-and-play-switch-games-part-4#flora-and-fang",
+              "date": "2025-07-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/flora_and_fang_guardians_of_the_vampire_garden",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:01:52.161951+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:53:21.085335+00:00"
       },
       "requirements": {
         "image": true,
@@ -163337,7 +163457,11 @@
       },
       "basics_attempted": "2026-11-02T23:01:52.161951+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000095656/3034b728659293c111366037c58b55aebf34f6697b46ca04d742fe2c282e3ce4",
         "source": "https://www.nintendo.com/us/store/products/flora-and-fang-guardians-of-the-vampire-garden-switch/",
@@ -163393,7 +163517,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:53:23.767427+00:00",
+      "full_version": 7
     },
     "PS5:17364": {
       "title": "Henry Halfhead",
@@ -196634,15 +196760,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4,
-              "count": 10,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4,
               "scale": 5,
-              "source": "PSN",
+              "count": 10,
               "url": "https://store.playstation.com/pt-pt/product/EP4287-PPSA35736_00-0698690230044042",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:21:40.657306+00:00",
-              "platform": "PSN · PS5",
               "weight": 3.1622776601683795,
               "normalized": 8.0
             }
@@ -196650,7 +196774,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:21:38.987600+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:53:15.232113+00:00"
       },
       "requirements": {
         "image": true,
@@ -196692,7 +196823,11 @@
       },
       "basics_attempted": "2026-11-02T17:21:38.987600+00:00",
       "version": 2,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -196708,7 +196843,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:53:16.164643+00:00",
+      "full_version": 7
     },
     "Switch:18776": {
       "title": "Hack 'n' Stack",
@@ -204618,10 +204755,11 @@
           "sources": [
             {
               "name": "Nindie Spotlight",
-              "score": 75.0,
-              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=flowstone-saga-switch",
+              "score": 75,
+              "url": "https://nindiespotlight.com/game_profile.cfm?game=flowstone-saga-switch",
+              "date": "2026-10-14",
               "platform": "Nintendo Switch",
-              "via": "Direct console-specific review"
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
@@ -204634,7 +204772,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:33:34.003197+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:53:50.886166+00:00"
       },
       "requirements": {
         "image": true,
@@ -204650,7 +204795,13 @@
       },
       "basics_attempted": "2026-11-02T22:33:34.003197+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/flowstone-saga-switch/",
@@ -204699,7 +204850,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:53:53.507914+00:00",
+      "full_version": 7
     },
     "Switch:4547": {
       "title": "Huntdown",
@@ -248071,7 +248224,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:35:55.070889+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:53:15.873643+00:00"
       },
       "requirements": {
         "image": true,
@@ -248087,7 +248247,13 @@
       },
       "basics_attempted": "2026-11-02T22:35:55.070889+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/fling-to-the-finish-switch/",
@@ -248136,7 +248302,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:53:18.113952+00:00",
+      "full_version": 7
     },
     "Switch:6124": {
       "title": "Genetic Disaster",
@@ -277996,22 +278164,79 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 75.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/for_the_king",
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/5632/1/for-the-king-nintendo-switch.html",
+              "date": "2019-10-14",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 75,
+              "url": "https://www.jeuxvideo.com/test/1394477/for-the-king-quand-la-cooperation-est-reine.htm",
+              "date": "2021-04-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 80,
+              "url": "https://metro.co.uk/2019/05/09/for-the-king-switch-review-electronic-board-games-9458905/",
+              "date": "2019-05-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/for_the_king?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2019-05-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/50463/for-the-king-switch-review",
+              "date": "2019-05-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 75,
+              "url": "http://www.nintendojo.com/reviews/review-for-the-king-switch",
+              "date": "2019-08-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-for-the-king-nintendo-switch/",
+              "date": "2019-07-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 80,
+              "url": "https://www.thesixthaxis.com/2019/05/20/for-the-king-review/",
+              "date": "2019-05-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 8
         },
         "user": {
-          "score": 7.7,
+          "score": 7.16,
           "scale": 10,
           "sources": [
             {
@@ -278022,14 +278247,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/for_the_king",
               "platform": "Nintendo Switch",
               "weight": 5.916079783099616,
-              "normalized": 7.7,
-              "checked": "2026-11-02T17:35:11.101894+00:00"
+              "normalized": 7.7
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.6,
+              "scale": 10,
+              "count": 32,
+              "url": "https://www.metacritic.com/game/for-the-king/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 5.656854249492381,
+              "normalized": 6.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:37:07.001149+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:53:36.095136+00:00"
       },
       "requirements": {
         "image": true,
@@ -278045,7 +278284,10 @@
       },
       "basics_attempted": "2026-11-02T22:37:07.001149+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/for-the-king-switch/",
@@ -278094,7 +278336,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "B2qF39qKrXo",
+        "title": "For The King - Launch Trailer | PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/for-the-king/"
+      },
+      "full_attempted": "2026-11-03T05:53:41.228739+00:00",
+      "full_version": 7
     },
     "Switch:7808": {
       "title": "GONNER2",
@@ -309120,28 +309370,119 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 76.0,
+          "score": 79.7,
           "scale": 100,
           "sources": [
+            {
+              "name": "GameGrin",
+              "score": 70,
+              "url": "https://www.gamegrin.com/reviews/fly-together-review/",
+              "date": "2021-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameOver.gr",
+              "score": 70,
+              "url": "https://www.gameover.gr/2021/05/26/fly-together-review/",
+              "date": "2021-05-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 91,
+              "url": "https://gaming-age.com/2021/06/fly-together-review-for-nintendo-switch/",
+              "date": "2021-06-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/fly-together-recensione-nintendo-switch.html",
+              "date": "2021-05-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 76.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=fly-together-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "https://www.nintendoworldreport.com/review/57022/fly-together-switch-review",
+              "date": "2021-04-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-fly-together-nintendo-switch/",
+              "date": "2021-06-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 80,
+              "url": "https://toucharcade.com/2021/05/10/switcharcade-round-up-reviews-featuring-new-pokemon-snap-and-fly-together-plus-todays-new-releases-and-sales/",
+              "date": "2021-05-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/funny-indie-games#fly-together",
+              "date": "2021-04-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
-          "score": null,
+          "score": 6.08,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 5,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/fly-together/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.0,
+              "normalized": 5.0
+            },
+            {
+              "score": 7.33,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/fly_together",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 7.33
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:38:47.530716+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:53:31.183274+00:00"
       },
       "requirements": {
         "image": true,
@@ -309157,7 +309498,10 @@
       },
       "basics_attempted": "2026-11-02T22:38:47.530716+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/fly-together-switch/",
@@ -309206,7 +309550,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:53:33.142164+00:00",
+      "full_version": 7
     },
     "Switch:9305": {
       "title": "From Shadows",
