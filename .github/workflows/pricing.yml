@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       sources:
-        description: Optional comma-separated source ids (default: all active sources)
+        description: 'Optional comma-separated source ids; empty means all active sources'
         required: false
         default: ''
         type: string
