@@ -35,7 +35,7 @@ def report(before,after):
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--before',required=True);args=ap.parse_args()
-    before=json.loads(Path(args.before).read_text());after=json.loads(Path('data/enrichment.json').read_text());summary,regressions=report(before,after)
+    before=json.loads(Path(args.before).read_text(encoding='utf-8'));after=json.loads(Path('data/enrichment.json').read_text(encoding='utf-8'));summary,regressions=report(before,after)
     if os.environ.get('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as out:out.write(summary)
     print(summary)

@@ -31,8 +31,8 @@ def choose_video(curated,discovered):
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--limit',type=int,default=60);args=parser.parse_args()
-    games=json.loads((ROOT/'data/catalog.json').read_text())['games'];curated=json.loads((ROOT/'data/trailers-curated.json').read_text())
-    path=ROOT/'data/trailers.json';data=json.loads(path.read_text()) if path.exists() else {'games':{}};entries=data['games']
+    games=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))['games'];curated=json.loads((ROOT/'data/trailers-curated.json').read_text(encoding='utf-8'))
+    path=ROOT/'data/trailers.json';data=json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'games':{}};entries=data['games']
     queue=sorted(games,key=lambda g:entries.get(g['platform']+':'+g['id'],{}).get('attempted',''))
     db=sqlite3.connect(ROOT/'data/games.sqlite');db.execute('CREATE TABLE IF NOT EXISTS trailers(game_key TEXT PRIMARY KEY,payload TEXT NOT NULL)');cache={}
     for game in queue[:args.limit]:
@@ -51,7 +51,7 @@ def main():
         if video:entry={**video,'url':'https://www.youtube.com/watch?v='+video['id'],'checked':dt.datetime.now(dt.timezone.utc).isoformat()}
         entry['attempted']=dt.datetime.now(dt.timezone.utc).isoformat();entry['error']=None if entry.get('id') else error or 'No official game trailer identified'
         entries[key]=entry;db.execute('INSERT OR REPLACE INTO trailers VALUES(?,?)',(key,json.dumps(entry,ensure_ascii=False)));db.commit()
-        path.write_text(json.dumps({'updated':entry['attempted'],'games':entries},ensure_ascii=False,indent=2)+'\n')
+        path.write_text(json.dumps({'updated':entry['attempted'],'games':entries},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         print(title,entry.get('kind'),entry.get('id'),flush=True)
     db.close()
 if __name__=='__main__':main()

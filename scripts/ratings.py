@@ -111,13 +111,13 @@ def enrich(game,previous):
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--limit',type=int,default=60);args=ap.parse_args()
-    data=json.loads((ROOT/'data/catalog.json').read_text());path=ROOT/'data/ratings.json'
-    existing=json.loads(path.read_text()) if path.exists() else {'games':{}};games=existing['games']
+    data=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'));path=ROOT/'data/ratings.json'
+    existing=json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'games':{}};games=existing['games']
     queue=sorted(data['games'],key=lambda g:games.get(g['platform']+':'+g['id'],{}).get('attempted',''))
     db=sqlite3.connect(ROOT/'data/games.sqlite');db.execute('CREATE TABLE IF NOT EXISTS ratings(game_key TEXT PRIMARY KEY,payload TEXT NOT NULL)')
     for g in queue[:args.limit]:
         key=g['platform']+':'+g['id'];games[key]=enrich(g,games.get(key));db.execute('INSERT OR REPLACE INTO ratings VALUES(?,?)',(key,json.dumps(games[key],ensure_ascii=False)));db.commit()
         print(g['title'],g['platform'], 'critic',games[key].get('critic',{}).get('score'),'user',games[key].get('user',{}).get('score'),flush=True)
-        path.write_text(json.dumps({'updated':dt.datetime.now(dt.timezone.utc).isoformat(),'games':games},ensure_ascii=False,indent=2)+'\n')
+        path.write_text(json.dumps({'updated':dt.datetime.now(dt.timezone.utc).isoformat(),'games':games},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     db.close()
 if __name__=='__main__':main()

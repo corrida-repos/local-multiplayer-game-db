@@ -1,6 +1,6 @@
 """Durable per-field source attempts; unresolved fields never leave recovery."""
 import datetime as dt,hashlib,json,urllib.error
-VERSION=1
+VERSION=2  # 2: tiered platform-suffix, qualifier and unique-edition title matching
 POLICY='portugal-minimum-v1'
 FIELDS=('image','store','rating')
 def utc():return dt.datetime.now(dt.timezone.utc)
@@ -25,7 +25,8 @@ def classify(exc):
     if isinstance(exc,(urllib.error.URLError,TimeoutError,ConnectionError,OSError)):return 'retryable_error'
     text=str(exc).lower()
     if any(x in text for x in ['identity','different game','wrong console','not a switch','ambiguous','does not match']):return 'identity_rejected'
-    if any(x in text for x in ['403','429','forbidden']):return 'blocked'
+    # A self-redirect loop is a bot-protection challenge, not a missing page; never bypassed, retried later.
+    if any(x in text for x in ['403','429','forbidden','infinite loop']):return 'blocked'
     if any(x in text for x in ['timed out','timeout','503','502','504']):return 'retryable_error'
     return 'not_found'
 

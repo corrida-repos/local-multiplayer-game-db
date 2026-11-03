@@ -39,8 +39,8 @@ def parse_catalog(page,url,now=None):
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--limit',type=int,default=60);args=parser.parse_args()
-    games=[g for g in json.loads((ROOT/'data/catalog.json').read_text())['games'] if g['platform']=='PS5'];stores=json.loads((ROOT/'data/stores.json').read_text())['games']
-    path=ROOT/'data/psplus.json';data=json.loads(path.read_text()) if path.exists() else {'region':'PT','games':{}};entries=data['games'];db=sqlite3.connect(ROOT/'data/games.sqlite');db.execute('CREATE TABLE IF NOT EXISTS psplus(game_key TEXT PRIMARY KEY,payload TEXT NOT NULL)')
+    games=[g for g in json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))['games'] if g['platform']=='PS5'];stores=json.loads((ROOT/'data/stores.json').read_text(encoding='utf-8'))['games']
+    path=ROOT/'data/psplus.json';data=json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'region':'PT','games':{}};entries=data['games'];db=sqlite3.connect(ROOT/'data/games.sqlite');db.execute('CREATE TABLE IF NOT EXISTS psplus(game_key TEXT PRIMARY KEY,payload TEXT NOT NULL)')
     queue=sorted(games,key=lambda g:entries.get('PS5:'+g['id'],{}).get('attempted',''))
     for game in queue[:args.limit]:
         key='PS5:'+game['id'];entry=dict(entries.get(key,{}));url=stores.get(key,{}).get('url','')
@@ -52,6 +52,6 @@ def main():
             entry={**parse_catalog(page,final_url),'source':final_url,'region':'PT','checked':dt.datetime.now(dt.timezone.utc).isoformat(),'error':None}
         except Exception as e:entry['error']=str(e)[:160]
         entry['attempted']=dt.datetime.now(dt.timezone.utc).isoformat();entries[key]=entry;db.execute('INSERT OR REPLACE INTO psplus VALUES(?,?)',(key,json.dumps(entry,ensure_ascii=False)));db.commit()
-        path.write_text(json.dumps({'region':'PT','updated':entry['attempted'],'games':entries},ensure_ascii=False,indent=2)+'\n');print(game['title'],entry.get('in_catalog'),entry.get('tier'),entry.get('error'),flush=True)
+        path.write_text(json.dumps({'region':'PT','updated':entry['attempted'],'games':entries},ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(game['title'],entry.get('in_catalog'),entry.get('tier'),entry.get('error'),flush=True)
     db.close()
 if __name__=='__main__':main()

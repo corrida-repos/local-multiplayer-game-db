@@ -132,14 +132,14 @@ def collect(game,legacy):
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--limit',type=int,default=60);ap.add_argument('--ids');ap.add_argument('--checkpoint-push',action='store_true');ap.add_argument('--minutes',type=int,default=170);args=ap.parse_args();started=time.monotonic()
-    path=ROOT/'data/composites.json';output=json.loads(path.read_text()) if path.exists() else {'games':{}};entries=output['games'];games=json.loads((ROOT/'data/catalog.json').read_text())['games'];legacy=json.loads((ROOT/'data/ratings.json').read_text())['games']
+    path=ROOT/'data/composites.json';output=json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'games':{}};entries=output['games'];games=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))['games'];legacy=json.loads((ROOT/'data/ratings.json').read_text(encoding='utf-8'))['games']
     queue=sorted(games,key=lambda g:entries.get(g['platform']+':'+g['id'],{}).get('attempted',''))
     if args.ids:queue=[g for g in queue if g['platform']+':'+g['id'] in args.ids.split(',')]
     db=sqlite3.connect(ROOT/'data/composites.sqlite');db.execute('CREATE TABLE IF NOT EXISTS scores(game_key TEXT PRIMARY KEY,payload TEXT NOT NULL)')
     for index,g in enumerate(queue[:args.limit]):
         if time.monotonic()-started>args.minutes*60:break
         key=g['platform']+':'+g['id'];entries[key]=collect(g,legacy.get(key,{}));db.execute('INSERT OR REPLACE INTO scores VALUES(?,?)',(key,json.dumps(entries[key],ensure_ascii=False)));db.commit()
-        output={'updated':dt.datetime.now(dt.timezone.utc).isoformat(),'algorithm_version':VERSION,'games':entries};path.write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n');print(g['title'],g['platform'],entries[key]['critic']['score'],entries[key]['critic']['source_count'],entries[key]['user']['score'],entries[key]['user']['source_count'],flush=True)
+        output={'updated':dt.datetime.now(dt.timezone.utc).isoformat(),'algorithm_version':VERSION,'games':entries};path.write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(g['title'],g['platform'],entries[key]['critic']['score'],entries[key]['critic']['source_count'],entries[key]['user']['score'],entries[key]['user']['source_count'],flush=True)
         if args.checkpoint_push and ((index+1)%10==0 or index+1==len(queue[:args.limit])):
             import subprocess
             db.close();subprocess.run(['bash','scripts/checkpoint-composites.sh'],cwd=ROOT,check=True);db=sqlite3.connect(ROOT/'data/composites.sqlite')

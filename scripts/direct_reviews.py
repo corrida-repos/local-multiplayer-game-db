@@ -60,7 +60,7 @@ def data(page,url,game,source):
 @functools.lru_cache(maxsize=1)
 def load():
     path=ROOT/'data/direct-review-index.json'
-    return json.loads(path.read_text()) if path.exists() else {'sources':{}}
+    return json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'sources':{}}
 def xml_entries(page):
     root=ET.fromstring(page);entries=[]
     for item in root:
@@ -96,7 +96,7 @@ def refresh(get,max_pages=12):
                 state['pending'].pop(0);state['fetched'][url]=state.get('versions',{}).get(url,state['updated']);budget-=1
             state['complete']=not state['pending'];state.pop('error',None)
         except Exception as exc:state['error']=str(exc)[:250];state['complete']=False
-    (ROOT/'data/direct-review-index.json').write_text(json.dumps(cache,ensure_ascii=False,separators=(',',':'))+'\n');load.cache_clear()
+    (ROOT/'data/direct-review-index.json').write_text(json.dumps(cache,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8');load.cache_clear()
 
 def collect(game,source,get):
     state=load().get('sources',{}).get(source,{});urls=[]

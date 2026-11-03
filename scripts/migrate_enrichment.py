@@ -12,6 +12,6 @@ def migrate():
     db=sqlite3.connect(e.ROOT/'data/enrichment.sqlite');db.execute('CREATE TABLE IF NOT EXISTS enrichment(game_key TEXT PRIMARY KEY,payload TEXT NOT NULL)');e.export(entries,db);db.close()
     current=e.read('enrichment.json')['coverage']
     baseline={'policy':recovery_state.POLICY,'created':e.now(),'previous_definition':'Official stores in any region','previous_coverage':previous,'definition':'Verified official Portuguese product listing, usable game image, and at least one console-specific rating','coverage':current}
-    (e.ROOT/'data/coverage-baseline.json').write_text(json.dumps(baseline,ensure_ascii=False,indent=2)+'\n')
+    (e.ROOT/'data/coverage-baseline.json').write_text(json.dumps(baseline,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('PORTUGAL BASELINE',json.dumps(current),flush=True);return True
 if __name__=='__main__':migrate()

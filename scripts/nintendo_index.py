@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 @functools.lru_cache(maxsize=1)
 def load():
     path=ROOT/'data/nintendo-index.json'
-    return json.loads(path.read_text()) if path.exists() else {'products':{}}
+    return json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'products':{}}
 def native(doc):return any(re.match(r'^nintendoswitch(?:_|$)',system) for system in doc.get('system_type',[]))
 def fetch_language(get,language):
     docs=[];start=0;total=None
@@ -36,7 +36,7 @@ def refresh(get):
     if load().get('updated','')>=cutoff:return
     try:
         products=combine(fetch_language(get,'pt'),fetch_language(get,'en'))
-        path=ROOT/'data/nintendo-index.json';path.write_text(json.dumps({'updated':dt.datetime.now(dt.timezone.utc).isoformat(),'products':products},ensure_ascii=False,separators=(',',':'))+'\n');load.cache_clear();titles.cache_clear()
+        path=ROOT/'data/nintendo-index.json';path.write_text(json.dumps({'updated':dt.datetime.now(dt.timezone.utc).isoformat(),'products':products},ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8');load.cache_clear();titles.cache_clear();variants.cache_clear();editions.cache_clear()
         print('Nintendo native Switch products',len(products),flush=True)
     except Exception as exc:print('Nintendo index refresh retained previous cache:',str(exc)[:160],flush=True)
 
@@ -48,8 +48,36 @@ def titles():
         for name in product['names']:index.setdefault(identity(name),set()).add(pid)
     return index
 
+@functools.lru_cache(maxsize=1)
+def variants():
+    from scripts.stores import name_keys
+    index={}
+    for pid,product in load().get('products',{}).items():
+        for name in product['names']:
+            for key in name_keys(name):index.setdefault(key,set()).add(pid)
+    return index
+
+@functools.lru_cache(maxsize=1)
+def editions():
+    from scripts.stores import edition_key
+    index={}
+    for pid,product in load().get('products',{}).items():
+        for name in product['names']:
+            key=edition_key(name)
+            if key:index.setdefault(key,set()).add(pid)
+    return index
+
+def matching_ids(names):
+    """Exact titles first, then platform-port/qualifier variants, then one unique standard edition."""
+    from scripts.stores import identity,name_keys,edition_key
+    ids=set().union(*[titles().get(identity(name),set()) for name in names])
+    if ids:return ids
+    ids=set().union(*[variants().get(key,set()) for name in names for key in name_keys(name)])
+    if ids:return ids
+    ids=set().union(*[editions().get(edition_key(name),set()) for name in names if edition_key(name)])
+    return ids if len(ids)==1 else set()
+
 def candidates(game,names,store_evidence):
-    from scripts.stores import identity,portugal_url
-    products=load().get('products',{});ids=set()
-    for name in names:ids.update(titles().get(identity(name),set()))
-    return [{**products[pid],'id':pid} for pid in sorted(ids) if portugal_url('Switch',products[pid].get('pt_url',''))]
+    from scripts.stores import portugal_url
+    products=load().get('products',{})
+    return [{**products[pid],'id':pid} for pid in sorted(matching_ids(names)) if portugal_url('Switch',products[pid].get('pt_url',''))]

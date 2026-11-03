@@ -70,15 +70,15 @@ def select_candidates(rows,urls,pending_only=False):
 def export_catalog(db,urls,errors):
     # Explicit primary-source corrections survive conflicting secondary-source data.
     supplement=ROOT/'data/verified-local.json'
-    for game in json.loads(supplement.read_text()) if supplement.exists() else []:
+    for game in json.loads(supplement.read_text(encoding='utf-8')) if supplement.exists() else []:
         keys=list(game);db.execute(f"INSERT OR REPLACE INTO games({','.join(keys)}) VALUES({','.join('?' for _ in keys)})",list(game.values()))
     db.commit()
     games=[dict(row) for row in db.execute('SELECT * FROM games ORDER BY title,platform')]
     inventory=set(urls);active=[row for row in db.execute('SELECT url,checked FROM pages') if row['url'] in inventory]
     checked=sum(row['checked'] is not None for row in active);pending=len(active)-checked
     report={'updated':dt.datetime.now(dt.timezone.utc).isoformat(),'discovered':len(set(urls)), 'checked':checked,'pending':pending,'coverage_complete':pending==0,'errors':len(errors),'games':games}
-    (ROOT/'data/catalog.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-    (ROOT/'data/last-run.json').write_text(json.dumps({'checked':checked,'pending':pending,'errors':errors},indent=2)+'\n')
+    (ROOT/'data/catalog.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (ROOT/'data/last-run.json').write_text(json.dumps({'checked':checked,'pending':pending,'errors':errors},indent=2)+'\n',encoding='utf-8')
     return report
 
 def push_checkpoint(db):
@@ -122,7 +122,7 @@ def main():
             if args.checkpoint_push:
                 db=push_checkpoint(db)
     if success==0 and candidates: raise RuntimeError('No pages successfully checked; preserving published JSON')
-    curated=json.loads((ROOT/'data/competitive.json').read_text())
+    curated=json.loads((ROOT/'data/competitive.json').read_text(encoding='utf-8'))
     for game in curated:
         keys=list(game); db.execute(f"INSERT OR REPLACE INTO games({','.join(keys)}) VALUES({','.join('?' for _ in keys)})", list(game.values()))
     db.commit()

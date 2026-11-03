@@ -52,13 +52,19 @@ def get(url,headers=None,_redirects=0):
 
 def read(name,default=None):
     path=ROOT/'data'/name
-    return json.loads(path.read_text()) if path.exists() else (default if default is not None else {'games':{}})
+    return json.loads(path.read_text(encoding='utf-8')) if path.exists() else (default if default is not None else {'games':{}})
 identity=stores.identity
 def source_match(game):
     return read('source-aliases.json',{}).get(game.get('platform','')+':'+game.get('title',''),{})
 def known_names(game):return list(dict.fromkeys(name for name in [game['title'],ratings.MC_ALIASES.get(game['title'],'')]+source_match(game).get('names',[])+game.get('aliases',[]) if name))
-def matches_name(game,name):
-    return bool(identity(name)) and identity(name) in {identity(value) for value in known_names(game)}
+def name_tier(game,name):
+    """0: exact identity; 1: same name without a platform-port label or descriptive qualifier."""
+    if not identity(name):return None
+    known=known_names(game)
+    if identity(name) in {identity(value) for value in known}:return 0
+    if set(stores.name_keys(name)).intersection(key for value in known for key in stores.name_keys(value)):return 1
+    return None
+def matches_name(game,name):return name_tier(game,name) is not None
 def image_from_media(media):
     for role in ['MASTER','GAMEHUB_COVER_ART','PORTRAIT_BANNER','FOUR_BY_THREE_BANNER','SCREENSHOT']:
         for item in media or []:
@@ -105,8 +111,8 @@ def resolve_psn(game,legacy,known_store):
             try:results=psn_search(title,country,language)
             except Exception as exc:
                 errors.append(str(exc)[:120]);continue
-            for item in results:
-                if not matches_name(game,item.get('name','')):continue
+            ranked=[(tier,i,item) for i,item in enumerate(results) for tier in [name_tier(game,item.get('name',''))] if tier is not None]
+            for _,_,item in sorted(ranked,key=lambda value:value[:2]):
                 if item.get('__typename')=='Product':
                     if 'PS5' not in (item.get('platforms') or []):
                         if 'PS4' in (item.get('platforms') or []):ps4_only=True
@@ -139,21 +145,26 @@ def nintendo_index_match(game,doc):
     systems=doc.get('system_type',[])
     if not any(re.match(r'^nintendoswitch(?:_|$)',system) for system in systems):return False
     canonical=lambda value:identity(re.sub(r'^(?:Arcade Archives|ACA NEOGEO|SEGA AGES)\s+','',value,flags=re.I))
-    return canonical(doc.get('title','')) in {canonical(value) for value in known_names(game)+stores.NINTENDO_NAMES.get(game['title'],[])}
+    names=known_names(game)+stores.NINTENDO_NAMES.get(game['title'],[])
+    if canonical(doc.get('title','')) in {canonical(value) for value in names}:return True
+    return bool(set(stores.name_keys(doc.get('title',''))).intersection(key for value in names for key in stores.name_keys(value)))
 
 def resolve_nintendo(game,known_store):
     names=known_names(game)+stores.NINTENDO_NAMES.get(game['title'],[]);errors=[];tried=set()
     products=nintendo_index.candidates(game,names,known_store)
     candidates=[]
     for url in [known_store.get('url'),source_match(game).get('store_url')]:
-        if url and stores.portugal_url('Switch',url):candidates.append((url,names))
-    candidates.extend((doc['pt_url'],names+doc['names']) for doc in products)
-    for url,aliases in candidates:
+        if url and stores.portugal_url('Switch',url):candidates.append((url,names,''))
+    candidates.extend((doc['pt_url'],names+doc['names'],doc['id']) for doc in products)
+    for url,aliases,product_id in candidates:
         if url in tried:continue
         tried.add(url)
         try:
             final,page=get(url)
-            if not stores.portugal_url('Switch',final) or not stores.nintendo_match(page,game['title'],aliases):raise ValueError('Exact Portuguese Nintendo Switch product identity not verified')
+            # A name-matched index product is also verified by its official product ID surviving to the final URL,
+            # since localized page titles can add regional subtitles (e.g. "com Êxitos Internacionais").
+            same_product=bool(product_id) and urllib.parse.urlparse(final).path.endswith('-'+product_id+'.html')
+            if not stores.portugal_url('Switch',final) or not (stores.nintendo_match(page,game['title'],aliases) or same_product):raise ValueError('Exact Portuguese Nintendo Switch product identity not verified')
             checked=now();store={'url':final,'label':'Abrir na Nintendo eShop','checked':checked,'region':'PT','verified':True}
             if game['title'] in stores.NSO:store.update(label='Ver no Nintendo Switch Online',note='Incluído na aplicação Super Nintendo do Nintendo Switch Online.')
             return {'store':store,'image':{'url':meta_image(page),'source':final,'checked':checked},'aliases':list(dict.fromkeys(aliases))}
@@ -223,7 +234,7 @@ def refresh_review_index():
         for value in re.findall(r'<loc>(.*?)</loc>',page):
             url=html.unescape(value);slug=urllib.parse.parse_qs(urllib.parse.urlparse(url).query).get('game',[''])[0]
             if slug.endswith('-switch'):index.setdefault(identity(slug[:-7]),[]).append(url)
-        if index:(ROOT/'data/nindie-index.json').write_text(json.dumps({'updated':now(),'source':'https://www.nindiespotlight.com/sitemap.xml','games':index},ensure_ascii=False,indent=2)+'\n')
+        if index:(ROOT/'data/nindie-index.json').write_text(json.dumps({'updated':now(),'source':'https://www.nindiespotlight.com/sitemap.xml','games':index},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     except Exception as exc:print('Review index refresh:',str(exc)[:100],flush=True)
 
 def nindie(game):
@@ -515,10 +526,10 @@ def export(entries,db):
         key=game['platform']+':'+game['id'];entry=entries.get(key,{});required=requirements(entry);missing=[k for k,v in required.items() if not v]
         if missing:audit.append({'key':key,'title':game['title'],'platform':game['platform'],'missing':missing,'attempted':entry.get('basics_attempted'),'reasons':entry.get('errors',{}),'field_status':entry.get('field_status',{}),'next_retry':recovery_state.next_due(entry,missing)})
     report={'total':len(games),'attempted':sum(bool(entries.get(g['platform']+':'+g['id'],{}).get('basics_attempted')) for g in games),'ready':len(games)-len(audit),'missing_image':sum('image' in e['missing'] for e in audit),'missing_store':sum('store' in e['missing'] for e in audit),'missing_rating':sum('rating' in e['missing'] for e in audit),'full_attempted':sum(bool(entries.get(g['platform']+':'+g['id'],{}).get('full_attempted')) for g in games),'image_health_pending':sum(image_health_due(entries.get(g['platform']+':'+g['id'],{})) for g in games)}
-    (ROOT/'data/enrichment.json').write_text(json.dumps({'updated':now(),'version':VERSION,'coverage':report,'coverage_policy':recovery_state.POLICY,'games':entries},ensure_ascii=False,indent=2)+'\n')
+    (ROOT/'data/enrichment.json').write_text(json.dumps({'updated':now(),'version':VERSION,'coverage':report,'coverage_policy':recovery_state.POLICY,'games':entries},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     public={key:{field:value for field,value in entry.items() if field in ['title','platform','image','store','ratings','psplus','trailer','aliases']} for key,entry in entries.items()}
-    (ROOT/'data/enrichment-public.json').write_text(json.dumps({'updated':now(),'coverage_policy':recovery_state.POLICY,'coverage':report,'games':public},ensure_ascii=False,separators=(',',':'))+'\n')
-    (ROOT/'data/enrichment-audit.json').write_text(json.dumps({'updated':now(),'coverage':report,'coverage_policy':recovery_state.POLICY,'entries':audit},ensure_ascii=False,indent=2)+'\n')
+    (ROOT/'data/enrichment-public.json').write_text(json.dumps({'updated':now(),'coverage_policy':recovery_state.POLICY,'coverage':report,'games':public},ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+    (ROOT/'data/enrichment-audit.json').write_text(json.dumps({'updated':now(),'coverage':report,'coverage_policy':recovery_state.POLICY,'entries':audit},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('COVERAGE',json.dumps(report),flush=True)
 
 def image_health_due(entry):

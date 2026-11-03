@@ -23,7 +23,7 @@ def parse_sitemap(page,platform):
 @functools.lru_cache(maxsize=1)
 def load():
     path=ROOT/'data/community-index.json'
-    return json.loads(path.read_text()) if path.exists() else {'platforms':{}}
+    return json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'platforms':{}}
 
 def refresh(get):
     cached=load();cutoff=(dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=1)).isoformat();changed=False
@@ -36,7 +36,7 @@ def refresh(get):
             cached['platforms'][platform]={'updated':dt.datetime.now(dt.timezone.utc).isoformat(),'source':url,'games':games};changed=True
         except Exception as exc:print('Community index',platform,str(exc)[:120],flush=True)
     if changed:
-        (ROOT/'data/community-index.json').write_text(json.dumps(cached,ensure_ascii=False,indent=2)+'\n');load.cache_clear()
+        (ROOT/'data/community-index.json').write_text(json.dumps(cached,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');load.cache_clear()
 
 def candidates(game):
     platform=game['platform'];host,folders=SOURCES[platform];index=load().get('platforms',{}).get(platform,{}).get('games',{})

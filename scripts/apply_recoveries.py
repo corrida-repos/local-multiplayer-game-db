@@ -54,9 +54,9 @@ def apply_pending():
     path=ROOT/'data/verified-recoveries.json'
     if not path.exists():return
     digest=hashlib.sha256(path.read_bytes()).hexdigest();state_path=ROOT/'data/recovery-state.json'
-    state=json.loads(state_path.read_text()) if state_path.exists() else {'applied':[]}
+    state=json.loads(state_path.read_text(encoding='utf-8')) if state_path.exists() else {'applied':[]}
     if digest in state['applied']:return
-    entries=e.read('enrichment.json')['games'];before={k:e.requirements(v) for k,v in entries.items()};batch=json.loads(path.read_text());keys=set(entries)
+    entries=e.read('enrichment.json')['games'];before={k:e.requirements(v) for k,v in entries.items()};batch=json.loads(path.read_text(encoding='utf-8'));keys=set(entries)
     for group in batch.get('entry_passes',[]):
         for key,value in group.items():
             if key in entries:entries[key]=merge_entry(entries[key],value)
@@ -71,7 +71,7 @@ def apply_pending():
     assert set(entries)==keys,'Recovery must not delete or add catalog entries'
     after={k:e.requirements(v) for k,v in entries.items()};delta={field:sum(not before[k][field] and after[k][field] for k in entries) for field in ['image','store','rating']};delta['newly_complete']=sum(not all(before[k].values()) and all(after[k].values()) for k in entries)
     db=sqlite3.connect(ROOT/'data/enrichment.sqlite');db.execute('CREATE TABLE IF NOT EXISTS enrichment(game_key TEXT PRIMARY KEY,payload TEXT NOT NULL)');e.export(entries,db);db.close()
-    state['applied'].append(digest);state.setdefault('batches',[]).append({'id':batch['id'],'applied':e.now(),'improvement':delta});state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n');print('RECOVERY APPLIED',json.dumps(delta),flush=True)
+    state['applied'].append(digest);state.setdefault('batches',[]).append({'id':batch['id'],'applied':e.now(),'improvement':delta});state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print('RECOVERY APPLIED',json.dumps(delta),flush=True)
     return delta
 
 if __name__=='__main__':apply_pending()

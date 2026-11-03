@@ -15,7 +15,8 @@ def normal(value):
     return re.sub('[^a-z0-9]','',unicodedata.normalize('NFKD',value).encode('ascii','ignore').decode().lower())
 
 def identity(value):
-    value=(value or '').replace('™','').replace('®','').replace('©','')
+    # NFKC first so single-character numerals (Ⅱ, Ⅲ) and full-width text reach the Roman-numeral rule.
+    value=unicodedata.normalize('NFKC',value or '').replace('™','').replace('®','').replace('©','')
     value=re.sub(r'\s*[-:|–—]?\s*(?:Standard Edition|Cross[- ]Gen Bundle)\s*$','',value,flags=re.I)
     value=re.sub(r"^(?:arcade[ -]+archives(?:[ -]+2)?|console[ -]+archives|aca[ -]+neogeo|sega[ -]+ages|johnny[ -]+turbo['’]?s[ -]+arcade)[ :\-]+",'',value,flags=re.I)
     value=value.replace('&',' and ')
@@ -24,6 +25,25 @@ def identity(value):
     value=re.sub(r'\s*[-:|–—]?\s*(?:Standard Edition|Cross[- ]Gen Bundle)\s*$','',value,flags=re.I)
     value=re.sub(r'\b(iii|ii|iv)\b',lambda m:{'ii':'2','iii':'3','iv':'4'}[m[1].lower()],value,flags=re.I)
     return normal(value)
+# Platform-port labels ("for Nintendo Switch", "para a PS5™", "Nintendo Switch™ Version") name the
+# same product on the requested console; they never distinguish a different game.
+PLATFORM_SUFFIX=re.compile(r"\s*[-–—:|]?\s*(?:(?:for|para)(?:\s+(?:a|o|the))?\s+)?(?:Nintendo\s*Switch|PlayStation\s*5|PS4\s*[™®]*\s*(?:&|and|e|/|,)\s*PS5|PS5)\s*[™®]*(?:\s+(?:Version|Edition|Edição|Versão))?\s*[™®]*\s*$",re.I)
+# Trailing descriptive qualifiers such as "(QUByte Classics)", "(Classic)" or "(Enhanced)". Qualifiers
+# containing digits (years, volumes, packs) can separate different games and are never dropped.
+QUALIFIER=re.compile(r"\s*[\(\[][^()\[\]\d]{2,40}[\)\]]\s*$")
+# Standard edition names of one base game. Only used where a unique official product is required.
+EDITION=re.compile(r"\s*[-–—:|]?\s*(?:(?:the\s+)?(?:definitive|ultimate|deluxe|complete|anniversary|game of the year|goty)\s+edition|reloaded(?:\s+edition)?|remastered|deluxe|hd)\s*[™®]*\s*$",re.I)
+def name_keys(value):
+    """Identity keys from strictest to loosest; the first key is always identity(value)."""
+    keys=[identity(value)]
+    stripped=PLATFORM_SUFFIX.sub('',value or '')
+    for variant in [stripped,PLATFORM_SUFFIX.sub('',QUALIFIER.sub('',stripped))]:
+        key=identity(variant)
+        if len(key)>=3 and key not in keys:keys.append(key)
+    return [key for key in keys if key]
+def edition_key(value):
+    key=identity(EDITION.sub('',PLATFORM_SUFFIX.sub('',QUALIFIER.sub('',PLATFORM_SUFFIX.sub('',value or '')))))
+    return key if len(key)>=3 else ''
 def slug(value):
     value=value.replace('&',' and ').replace('+',' plus ')
     value=unicodedata.normalize('NFKD',value).encode('ascii','ignore').decode().lower().replace("'",'')
@@ -59,7 +79,9 @@ def nintendo_match(page,title,aliases=None):
     page_names=[re.split(r' for (?:the )?Nintendo| [–-] Nintendo Official Site| \| (?:Nintendo|Jogos|Aplicações|Games)| [–-] Official Site',name,flags=re.I)[0] for name in [meta.title,meta.head_title] if name]
     names=[title]+NINTENDO_NAMES.get(title,[])+(aliases or [])
     canonical=lambda value:normal(re.sub(r"^(?:Arcade Archives(?: 2)?|Console Archives|ACA NEOGEO|SEGA AGES|Johnny Turbo['’]?s Arcade)[ :]+",'',value,flags=re.I))
-    return any(canonical(name) in {canonical(value) for value in names} for name in page_names)
+    if any(canonical(name) in {canonical(value) for value in names} for name in page_names):return True
+    expected={key for value in names for key in name_keys(value)}
+    return any(expected.intersection(name_keys(name)) for name in page_names)
 
 def fetch(url):
     global last
@@ -74,8 +96,8 @@ def resolve(game,ratings):
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--limit',type=int,default=60);args=parser.parse_args()
-    catalog=json.loads((ROOT/'data/catalog.json').read_text());ratings=json.loads((ROOT/'data/ratings.json').read_text()).get('games',{})
-    path=ROOT/'data/stores.json';previous=json.loads(path.read_text()) if path.exists() else {'games':{}};stores=previous['games']
+    catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'));ratings=json.loads((ROOT/'data/ratings.json').read_text(encoding='utf-8')).get('games',{})
+    path=ROOT/'data/stores.json';previous=json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'games':{}};stores=previous['games']
     queue=sorted(catalog['games'],key=lambda g:stores.get(g['platform']+':'+g['id'],{}).get('attempted',''))
     db=sqlite3.connect(ROOT/'data/games.sqlite');db.execute('CREATE TABLE IF NOT EXISTS stores(game_key TEXT PRIMARY KEY,payload TEXT NOT NULL)')
     for game in queue[:args.limit]:
@@ -87,7 +109,7 @@ def main():
         except Exception as e:entry['error']=str(e)[:160]
         entry['attempted']=dt.datetime.now(dt.timezone.utc).isoformat();stores[key]=entry
         db.execute('INSERT OR REPLACE INTO stores VALUES(?,?)',(key,json.dumps(entry,ensure_ascii=False)));db.commit()
-        path.write_text(json.dumps({'updated':entry['attempted'],'games':stores},ensure_ascii=False,indent=2)+'\n')
+        path.write_text(json.dumps({'updated':entry['attempted'],'games':stores},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         print(game['title'],game['platform'],entry.get('url') or entry.get('error'),flush=True)
     db.close()
 if __name__=='__main__':main()
