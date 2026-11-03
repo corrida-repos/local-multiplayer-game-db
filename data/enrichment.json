@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:23:45.042114+00:00",
+  "updated": "2026-11-03T08:25:04.149308+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2251,
+    "full_attempted": 2261,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -126335,15 +126335,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 2.75,
-              "count": 123,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 2.75,
               "scale": 5,
-              "source": "PSN",
+              "count": 123,
               "url": "https://store.playstation.com/pt-pt/product/EP8062-PPSA05373_00-9775821432955732",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:32:47.107421+00:00",
-              "platform": "PSN · PS5",
               "weight": 11.090536506409418,
               "normalized": 5.5
             }
@@ -126351,7 +126349,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:32:46.183102+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:24:06.763969+00:00"
       },
       "requirements": {
         "image": true,
@@ -126393,7 +126398,11 @@
       },
       "basics_attempted": "2026-11-02T18:32:46.183102+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -126409,41 +126418,147 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:24:07.062092+00:00",
+      "full_version": 7
     },
     "PS5:11539": {
       "title": "The Ascent",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 77.3,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "COGconnected",
+              "score": 85,
+              "url": "https://cogconnected.com/review/the-ascent-review-ps5/",
+              "date": "2022-04-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 60,
+              "url": "https://www.digitallydownloaded.net/2022/03/review-the-ascent-sony-playstation-5.html",
+              "date": "2022-03-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Finger Guns",
+              "score": 80,
+              "url": "https://fingerguns.net/games/2022/03/24/the-ascent-review-ps5-ascend-the-tiers-of-dystopia/",
+              "date": "2022-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 75,
+              "url": "https://www.godisageek.com/reviews/the-ascent-ps5-review/",
+              "date": "2022-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY",
+              "score": 70,
+              "url": "",
+              "date": "2022-04-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 85,
+              "url": "https://psxbrasil.com.br/analise/the-ascent-review/",
+              "date": "2022-05-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 90,
+              "url": "https://www.playstationcountry.com/the-ascent-ps5-review/",
+              "date": "2022-03-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 85,
+              "url": "https://www.psu.com/reviews/the-ascent-review-ps5/",
+              "date": "2022-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "http://www.pushsquare.com/reviews/ps5/the-ascent",
+              "date": "2022-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Softpedia",
+              "score": 70,
+              "url": "https://www.softpedia.com/reviews/games/playstation-5/the-ascent-review-535111.shtml",
+              "date": "2022-03-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 80,
+              "url": "https://www.xgn.nl/review/the-ascent-review",
+              "date": "2022-04-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 11
         },
         "user": {
-          "score": 7.9,
+          "score": 7.67,
           "scale": 10,
           "sources": [
             {
-              "score": 3.95,
-              "count": 5877,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.95,
               "scale": 5,
-              "source": "PSN",
+              "count": 5877,
               "url": "https://store.playstation.com/pt-pt/product/EP4395-PPSA02592_00-THEASCENT00000EU",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:32:48.984661+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 7.9
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.6,
+              "scale": 10,
+              "count": 46,
+              "url": "https://www.metacritic.com/game/the-ascent/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 6.782329983125268,
+              "normalized": 6.6
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:32:46.183569+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 11,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:24:28.102198+00:00"
       },
       "requirements": {
         "image": true,
@@ -126485,7 +126600,9 @@
       },
       "basics_attempted": "2026-11-02T18:32:46.183569+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "composites": "Community: HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -126501,7 +126618,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "OzRREaPGhCU",
+        "title": "The Ascent - Launch Trailer | PS5, PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/the-ascent/"
+      },
+      "full_attempted": "2026-11-03T08:24:28.548934+00:00",
+      "full_version": 7
     },
     "Switch:10657": {
       "title": "The Bear And The Admiral",
@@ -126515,6 +126640,7 @@
               "name": "Digital Chumps",
               "score": 80,
               "url": "http://digitalchumps.com/the-bear-the-admiral-nintendo-switch/",
+              "date": "2021-10-21",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -126529,7 +126655,18 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:54.205440+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:25:01.444003+00:00"
       },
       "requirements": {
         "image": true,
@@ -126547,7 +126684,12 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -126598,7 +126740,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:25:03.890718+00:00",
+      "full_version": 7
     },
     "PS5:14329": {
       "title": "The Crackpet Show: Happy Tree Friends Edition",
@@ -165933,6 +166077,7 @@
               "name": "Digitally Downloaded",
               "score": 80,
               "url": "https://www.digitallydownloaded.net/2024/07/review-the-battle-cats-unite-nintendo-switch.html",
+              "date": "2024-07-03",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -165940,6 +166085,7 @@
               "name": "Gamezebo",
               "score": 80,
               "url": "https://www.gamezebo.com/reviews/the-battle-cats-unite-switch-review-a-purrfect-port/",
+              "date": "2024-08-07",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -165947,6 +166093,7 @@
               "name": "Siliconera",
               "score": 90,
               "url": "https://www.siliconera.com/review-the-battle-cats-unite-entertains-when-you-have-energy/",
+              "date": "2024-07-21",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -165961,7 +166108,15 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:52.928949+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:24:06.336159+00:00"
       },
       "requirements": {
         "image": true,
@@ -165979,7 +166134,12 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -166029,7 +166189,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:24:09.302338+00:00",
+      "full_version": 7
     },
     "Switch:15684": {
       "title": "The Garden Path",
@@ -189055,22 +189217,103 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 83.6,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/tetris-forever",
+              "name": "COGconnected",
+              "score": 85,
+              "url": "https://cogconnected.com/review/tetris-forever-review/",
+              "date": "2024-11-11",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Checkpoint Gaming",
+              "score": 75,
+              "url": "https://checkpointgaming.net/reviews/2024/11/tetris-forever-review-step-through-history/",
+              "date": "2024-11-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 70,
+              "url": "https://www.digitallydownloaded.net/2024/11/review-tetris-forever-nintendo-switch.html",
+              "date": "2024-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMINGbible",
+              "score": 80,
+              "url": "https://www.gamingbible.com/reviews/lorelai-and-the-laser-eyes-review-974602-20240515",
+              "date": "2024-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 90,
+              "url": "https://gamecritics.com/c-j-salcedo/tetris-forever-review/",
+              "date": "2025-01-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamer Escape",
+              "score": 90,
+              "url": "https://gamerescape.com/2024/11/12/review-tetris-forever/",
+              "date": "2024-11-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/tetris-forever?utm_source=nintendolife.com&utm_medium=email&utm_campaign=review-notification",
+              "date": "2024-11-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 95,
+              "url": "https://www.nintendoworldreport.com/review/69044/tetris-forever-switch-review",
+              "date": "2024-11-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 85,
+              "url": "https://purenintendo.com/review-tetris-forever-nintendo-switch/",
+              "date": "2024-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 90,
+              "url": "https://www.shacknews.com/article/142177/tetris-forever-review-score",
+              "date": "2024-11-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 80,
+              "url": "https://www.vooks.net/tetris-forever-switch-review/",
+              "date": "2024-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 11
         },
         "user": {
-          "score": 7.4,
+          "score": 7.15,
           "scale": 10,
           "sources": [
             {
@@ -189081,14 +189324,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/tetris_forever",
               "platform": "Nintendo Switch",
               "weight": 8.18535277187245,
-              "normalized": 7.4,
-              "checked": "2026-11-02T18:32:20.766501+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.7,
+              "scale": 10,
+              "count": 22,
+              "url": "https://www.metacritic.com/game/tetris-forever/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.69041575982343,
+              "normalized": 6.7
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:52.656434+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 12,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:24:11.645803+00:00"
       },
       "requirements": {
         "image": true,
@@ -189104,7 +189361,10 @@
       },
       "basics_attempted": "2026-11-02T22:51:52.656434+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/tetris-forever-switch/",
@@ -189154,7 +189414,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "Jyl6027s8i4",
+        "title": "Tetris Forever - Announce Trailer | PS5 & PS4 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/tetris-forever/"
+      },
+      "full_attempted": "2026-11-03T08:24:14.628546+00:00",
+      "full_version": 7
     },
     "Switch:16386": {
       "title": "Thunder Fox",
@@ -207897,34 +208165,450 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.4,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Adrenaline",
+              "score": 80,
+              "url": "https://www.adrenaline.com.br/analise/games/review-the-adventures-of-elliot-the-millenium-tales/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Areajugones",
+              "score": 80,
+              "url": "https://areajugones.sport.es/videojuegos/analisis-de-the-adventures-of-elliot-the-millennium-tales-grandes-noticias-para-los-fans-de-zelda-aunque-con-un-pequeno-matiz/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 80,
+              "url": "https://www.cgmagonline.com/review/game/the-adventures-of-elliot-the-millennium-tales/",
+              "date": "2026-06-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 70,
+              "url": "https://cogconnected.com/review/the-adventures-of-elliot-the-millennium-tales-review/",
+              "date": "2026-06-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ComicBook",
+              "score": 90,
+              "url": "https://comicbook.com/gaming/review/the-adventures-of-elliot-review/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Console Creatures",
+              "score": 70,
+              "url": "https://www.consolecreatures.com/the-adventures-of-elliot-review/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Critical Hits",
+              "score": 85,
+              "url": "https://criticalhits.com.br/reviews/the-adventures-of-elliot-the-millennium-tales-analise-vale-a-pena-review/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cultura Geek",
+              "score": 90,
+              "url": "https://culturageek.com.ar/review-the-adventures-of-elliot-the-millennium-tales-ps5-un-nuevo-heroe-del-hd-2d-llega-al-pueblo/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 90,
+              "url": "https://www.dualshockers.com/the-adventures-of-elliot-the-millennium-tales-review/",
+              "date": "2026-06-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Edge Magazine",
+              "score": 50,
+              "url": "",
+              "date": "2026-07-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ElDesmarque",
+              "score": 85,
+              "url": "https://www.eldesmarque.com/videojuegos/analisis/20260617/the-adventures-elliot-millennium-square_18_019467721.html",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 80,
+              "url": "https://www.everyeye.it/articoli/recensione-the-adventures-of-elliot-the-millennium-tales-zelda-hd-2d-square-enix-sognava-anni-67288.html",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameBlast",
+              "score": 80,
+              "url": "https://www.gameblast.com.br/2026/06/analise-the-adventures-of-elliot-the-millennium-tales.html",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 90,
+              "url": "https://www.gamespew.com/2026/06/the-adventures-of-elliot-the-millennium-tales-review/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameliner",
+              "score": 80,
+              "url": "https://gameliner.nl/reviews/the-adventures-of-elliot-the-millennium-tales-review-tijdloos-avontuur/7282-29-1-1043",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamersRD",
+              "score": 85,
+              "url": "https://gamersrd.com/the-adventures-of-elliot-the-millenium-tales-review/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamersky",
+              "score": 80,
+              "url": "https://www.gamersky.com/news/202606/2156331.shtml",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamesurf",
+              "score": 85,
+              "url": "https://www.gamesurf.it/recensioni/gioco/the-adventures-of-elliot-the-millennium-tales-recensione",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 70,
+              "url": "https://gamingtrend.com/reviews/the-adventures-of-elliot-the-millennium-tales-review/",
+              "date": "2026-06-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Guardian",
+              "score": 80,
+              "url": "https://www.theguardian.com/games/2026/jun/18/the-adventures-of-elliot-the-millennium-tales-review",
+              "date": "2026-06-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Adria",
+              "score": 80,
+              "url": "https://adria.ign.com/the-adventures-of-elliot-the-millennium-tales/52935/the-adventures-of-elliot-the-millennium-tales-recenzija",
+              "date": "2026-07-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Benelux",
+              "score": 85,
+              "url": "https://nl.ign.com/the-adventures-of-elliot-the-millennium-tales/165210/the-adventures-of-elliot-the-millennium-tales-review",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Brasil",
+              "score": 70,
+              "url": "https://br.ign.com/the-adventures-of-elliot-the-millennium-tales/153939/the-advent[…]um-tales-remete-bem-a-zelda-e-chrono-trigger-mas-nao-replica-ma",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 75,
+              "url": "https://it.ign.com/the-adventures-of-elliot-the-millennium-tales/226236/the-adventures-of-elliot-the-millennium-tales-la-recensione",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 70,
+              "url": "https://es.ign.com/the-adventures-of-elliot-the-millennium-tales/230635/analisis-de-the-adventures-of-elliot-the-millenium-tales-una-historia-a-traves-del-tiempo",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Indigo GEEK",
+              "score": 80,
+              "url": "https://geek.reporteindigo.com/resena/the-adventures-of-elliot-the-millennium-tales-review--el-hd-2d-da-el-salto-a-la-accion-con-exito-20260614-0005.html",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 80,
+              "url": "https://www.jeuxvideo.com/test/2089324/the-adventures-of-elliot-est-la-belle-surprise-que-j-attendais-il-m-a-emu-aux-larmes-mais-j-ai-un-vrai-probleme-avec-cet-aspect-du-jeu.htm",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 78,
+              "url": "https://as.com/meristation/analisis/analisis-de-the-adventures-of-elliot-the-millennium-tales-un-juego-tipo-zelda-pero-mas-ligero-f202606-n/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 60,
+              "url": "https://metro.co.uk/2026/06/22/adventures-elliot-millennium-tales-review-snes-greatest-hits-28880820/",
+              "date": "2026-06-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MeuPlayStation",
+              "score": 83,
+              "url": "https://meups.com.br/review/the-adventures-of-elliot-vale-a-pena/",
+              "date": "2026-06-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MonsterVine",
+              "score": 90,
+              "url": "https://monstervine.com/2026/06/the-adventures-of-elliot-review/",
+              "date": "2026-06-25",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 100,
+              "url": "https://noisypixel.net/adventures-of-elliot-millennium-tales-review-masterpiece/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 85,
+              "url": "https://play.co.rs/linkov-zanimljiviji-brat-i-zeldina-neverovatno-dosadna-drugarica-the-adventures-of-elliot-the-millennium-tales-recenzija/",
+              "date": "2026-07-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 90,
+              "url": "https://psxbrasil.com.br/the-adventures-of-elliot-the-millennium-tales-review/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 75,
+              "url": "https://www.psu.com/reviews/the-adventures-of-elliot-the-millennium-tales-ps5-review/",
+              "date": "2026-07-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 83,
+              "url": "https://www.player2.net.au/2026/06/the-adventures-of-elliot-the-millennium-tales-review-history-repeats/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPG Fan",
+              "score": 88,
+              "url": "https://www.rpgfan.com/review/the-adventures-of-elliot-the-millennium-tales/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPGamer",
+              "score": 80,
+              "url": "https://rpgamer.com/review/the-adventures-of-elliot-the-millennium-tales-review/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Saudi Gamer",
+              "score": 80,
+              "url": "https://www.saudigamer.com/review/تقييم-the-adventures-of-elliot-a-millennium-tale/",
+              "date": "2026-06-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Slant Magazine",
+              "score": 60,
+              "url": "https://www.slantmagazine.com/games/the-adventures-of-elliot-the-millennium-tales-review/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 85,
+              "url": "https://www.spaziogames.it/articoli/recensione-the-adventures-of-elliot-avventura-daltri-tempi",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TechRadar Gaming",
+              "score": 70,
+              "url": "https://www.techradar.com/gaming/the-adventures-of-elliot-the-millennium-tales-review",
+              "date": "2026-07-28",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Games Machine",
+              "score": 80,
+              "url": "https://www.thegamesmachine.it/the-adventures-of-elliot-the-millennium-tales-pc-ps5-xbox-series-switch-2/the-adventures-of-elliot-the-millennium-tales-recensione/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Outerhaven",
+              "score": 80,
+              "url": "https://www.theouterhaven.net/the-adventures-of-elliot-the-millennium-tales-review/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 90,
+              "url": "https://www.thesixthaxis.com/2026/06/17/the-adventures-of-elliot-the-millennium-tales-review/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "This Is Game",
+              "score": 84,
+              "url": "https://www.thisisgame.com/articles/426273?newsId=282",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Uagna.it",
+              "score": 80,
+              "url": "https://www.uagna.it/videogiochi/the-adventures-of-elliot-the-millennium-tales-recensione-214695",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vice",
+              "score": 90,
+              "url": "https://www.vice.com/en/article/the-adventures-of-elliot-the-millennium-tales-review/",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 81,
+              "url": "https://videochums.com/review/the-adventures-of-elliot-the-millennium-tales",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Voxel",
+              "score": 90,
+              "url": "https://www.tecmundo.com.br/voxel/504612-the-adventures-of-elliot-the-millennium-tales-mostra-que-a-square-enix-tambem-tem-zelda-em-casa.htm ",
+              "date": "2026-06-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 50
         },
         "user": {
-          "score": 9.06,
+          "score": 8.77,
           "scale": 10,
           "sources": [
             {
-              "score": 4.53,
-              "count": 3262,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.53,
               "scale": 5,
-              "source": "PSN",
+              "count": 3262,
               "url": "https://store.playstation.com/pt-pt/product/EP0082-PPSA32309_00-MILLENNIUMTALEEP",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:32:24.420823+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 9.06
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8.1,
+              "scale": 10,
+              "count": 183,
+              "url": "https://www.metacritic.com/game/the-adventures-of-elliot-the-millennium-tales/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 13.527749258468683,
+              "normalized": 8.1
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:32:22.826954+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 51,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:24:23.102722+00:00"
       },
       "requirements": {
         "image": true,
@@ -207966,7 +208650,9 @@
       },
       "basics_attempted": "2026-11-02T18:32:22.826954+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "composites": "Community: HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -207982,7 +208668,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "DgXTW5ItEbc",
+        "title": "The Adventures of Elliot: The Millennium Tales - New Demo Announcement + Gameplay | PS5 Games",
+        "kind": "gameplay",
+        "source": "https://www.playstation.com/en-us/games/the-adventures-of-elliot-the-millennium-tales/"
+      },
+      "full_attempted": "2026-11-03T08:24:23.513413+00:00",
+      "full_version": 7
     },
     "PS5:17133": {
       "title": "The Last Camp",
@@ -275701,28 +276395,144 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 85.0,
+          "score": 77.8,
           "scale": 100,
           "sources": [
+            {
+              "name": "CGMagazine",
+              "score": 60,
+              "url": "https://www.cgmagonline.com/reviews/the-adventure-pals-switch-review/",
+              "date": "2018-04-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 60,
+              "url": "https://gamecritics.com/brian-theisen/the-adventure-pals-review/",
+              "date": "2018-04-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingTrend",
+              "score": 80,
+              "url": "http://gamingtrend.com/feature/reviews/with-a-little-help-from-my-friends-the-adventure-pals-review/",
+              "date": "2018-04-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 85.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-adventure-pals-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "http://www.nintenderos.com/2018/04/analisis-the-adventure-pals/",
+              "date": "2018-04-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 70,
+              "url": "https://www.nintendo-insider.com/the-adventure-pals-review/",
+              "date": "2018-09-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/the_adventure_pals?utm_source=nintendolife&utm_medium=email&utm_campaign=review-notification",
+              "date": "2018-04-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/46890/the-adventure-pals-switch-review",
+              "date": "2018-04-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 91,
+              "url": "http://www.nintendojo.com/reviews/review-the-adventure-pals",
+              "date": "2018-04-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 80,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/The+Adventure+Pals/review.asp?c=77189",
+              "date": "2018-04-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 85.0,
+              "url": "https://purenintendo.com/review-the-adventure-pals-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 8.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2018/04/24/the-adventure-pals-review/",
+              "date": "2018-04-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Sydney Morning Herald",
+              "score": 75,
+              "url": "https://www.smh.com.au/technology/the-adventure-pals-review-hot-dogs-and-hilarity-in-post-modern-platformer-20180510-p4zehq.html",
+              "date": "2018-05-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 13
         },
         "user": {
-          "score": null,
+          "score": 7.7,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.7,
+              "scale": 10,
+              "count": 36,
+              "url": "https://www.metacritic.com/game/the-adventure-pals/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 6.0,
+              "normalized": 7.7
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:51:52.657231+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 11,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:24:31.437323+00:00"
       },
       "requirements": {
         "image": true,
@@ -275739,7 +276549,9 @@
       "basics_attempted": "2026-11-02T22:51:52.657231+00:00",
       "version": 7,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -275789,7 +276601,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:24:35.221933+00:00",
+      "full_version": 7
     },
     "Switch:4893": {
       "title": "Titan Quest: Anniversary Edition",
@@ -303159,28 +303973,175 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 94.0,
+          "score": 85.4,
           "scale": 100,
           "sources": [
+            {
+              "name": "3DJuegos",
+              "score": 85,
+              "url": "http://www.3djuegos.com/juegos/analisis/28274/0/the-binding-of-isaac-afterbirth/",
+              "date": "2017-09-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "CGMagazine",
+              "score": 90,
+              "url": "http://www.cgmagonline.com/reviews/binding-isaac-afterbirth-switch-review/",
+              "date": "2017-04-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/3726/1/the-binding-of-isaac-afterbirthplus-nintendo-switch.html",
+              "date": "2017-03-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "http://www.godisageek.com/reviews/the-binding-of-isaac-afterbirth-review/",
+              "date": "2017-09-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 90,
+              "url": "http://www.ign.com/articles/2017/03/17/the-binding-of-isaac-afterbirth-review",
+              "date": "2017-03-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 80,
+              "url": "http://it.ign.com/the-bindig-of-isaac-afterbirth-nintendo-switch/123436/review/the-binding-of-isaac-afterbirth-la-recensione",
+              "date": "2017-03-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 90,
+              "url": "http://es.ign.com/the-binding-of-isaac-afterbirth-nintendo-switch/123380/review/the-binding-of-isaac-afterbirth-analisis-para-switch",
+              "date": "2017-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 78,
+              "url": "http://meristation.as.com/nintendo-switch/the-binding-of-isaac-afterbirth-/analisis-juego/2189318",
+              "date": "2017-10-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 94.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=the-binding-of-isaac-afterbirth-plus-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 80,
+              "url": "http://nintendoenthusiast.com/review/the-binding-of-isaac-afterbirth-review-for-nintendo-switch/",
+              "date": "2017-04-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 90,
+              "url": "",
+              "date": "2017-04-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/the_binding_of_isaac_afterbirthplus",
+              "date": "2017-03-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 85,
+              "url": "http://www.nintendoworldreport.com/review/44360/the-binding-of-isaac-afterbirth-switch-review",
+              "date": "2017-03-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket Gamer UK",
+              "score": 90,
+              "url": "http://www.pocketgamer.co.uk/r/Switch/The+Binding+of+Isaac%3A+Afterbirth%2B/review.asp?c=75404",
+              "date": "2017-10-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 90,
+              "url": "http://switchplayer.net/2017/05/10/the-binding-of-isaac-afterbirth-review/",
+              "date": "2017-05-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Trusted Reviews",
+              "score": 80,
+              "url": "http://www.trustedreviews.com/reviews/binding-isaac-afterbirth",
+              "date": "2017-09-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 80,
+              "url": "https://www.vooks.net/the-binding-of-isaac-afterbirth-switch-review/",
+              "date": "2018-01-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 17
         },
         "user": {
-          "score": null,
+          "score": 8.5,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 8.5,
+              "scale": 10,
+              "count": 429,
+              "url": "https://www.metacritic.com/game/the-binding-of-isaac-afterbirth-plus/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 20.71231517720798,
+              "normalized": 8.5
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:03:27.400686+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 16,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:24:46.304413+00:00"
       },
       "requirements": {
         "image": true,
@@ -303207,7 +304168,11 @@
       "basics_attempted": "2026-11-02T20:03:27.400686+00:00",
       "version": 4,
       "errors": {
-        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+        "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -303224,7 +304189,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:24:48.941106+00:00",
+      "full_version": 7
     },
     "Switch:5881": {
       "title": "The Ninja Saviors - Return of the Warriors",
@@ -380826,34 +381793,58 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 90.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "PlayStation Universe",
+              "score": 90,
+              "url": "https://www.psu.com/reviews/the-binding-of-isaac-repentance-ps5-review/",
+              "date": "2021-11-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
-          "score": 9.56,
+          "score": 9.36,
           "scale": 10,
           "sources": [
             {
-              "score": 4.78,
-              "count": 3018,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.78,
               "scale": 5,
-              "source": "PSN",
+              "count": 3018,
               "url": "https://store.playstation.com/pt-pt/product/EP2103-PPSA05619_00-BOIREPENTANCEPS5",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:32:49.601489+00:00",
-              "platform": "PSN · PS5",
               "weight": 31.622776601683793,
               "normalized": 9.56
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7,
+              "scale": 10,
+              "count": 7,
+              "url": "https://www.metacritic.com/game/the-binding-of-isaac-repentance/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.6457513110645907,
+              "normalized": 7.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:32:46.185129+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:24:18.100195+00:00"
       },
       "requirements": {
         "image": true,
@@ -380895,7 +381886,10 @@
       },
       "basics_attempted": "2026-11-02T18:32:46.185129+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -380911,18 +381905,37 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:24:18.460854+00:00",
+      "full_version": 7
     },
     "Switch:9043": {
       "title": "The Binding of Isaac: Repentance",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 85.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Hey Poor Player",
+              "score": 90,
+              "url": "https://www.heypoorplayer.com/2021/11/09/the-binding-of-isaac-repentance-review-switch/",
+              "date": "2021-11-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/the-binding-of-isaac-repentance",
+              "date": "2021-12-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
           "score": 7.5,
@@ -380934,16 +381947,23 @@
               "scale": 10,
               "count": 20,
               "url": "https://www.metacritic.com/game/the-binding-of-isaac-repentance/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 4.47213595499958,
-              "normalized": 7.5,
-              "checked": "2026-11-02T20:03:27.401004+00:00"
+              "normalized": 7.5
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:34:53.195520+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:24:51.286540+00:00"
       },
       "requirements": {
         "image": true,
@@ -380955,8 +381975,13 @@
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "Not a Switch 1 review",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nindie": "No review profile indexed for this game",
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://image.api.playstation.com/vulcan/ap/rnd/202109/2718/Eyd39JI06dtAxZReqdhJHXN5.png",
@@ -380998,7 +382023,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:24:55.471838+00:00",
+      "full_version": 7
     },
     "Switch:9007": {
       "title": "The Bug Butcher",
