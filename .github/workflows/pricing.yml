@@ -1,0 +1,57 @@
+name: Atualizar melhores preços (Portugal)
+on:
+  schedule:
+    - cron: '30 4 * * *'
+  workflow_dispatch:
+    inputs:
+      sources:
+        description: Optional comma-separated source ids (default: all active sources)
+        required: false
+        default: ''
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: pricing-update
+  cancel-in-progress: false
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - name: Load the latest catalog and enrichment
+        run: git pull --ff-only origin main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest tests.test_pricing
+      - run: node tests/test_price_view.cjs
+      - name: Collect sources in parallel and publish through one writer
+        id: collect
+        continue-on-error: true
+        env:
+          PRICING_POSTCODE: ${{ secrets.PRICING_POSTCODE }}
+          PRICING_SOURCES: ${{ inputs.sources || '' }}
+        run: python -u -m scripts.pricing.collect --sources "$PRICING_SOURCES"
+      - name: Save pricing feed, offers and coverage audit
+        if: always() && !cancelled()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          bash scripts/push-checkpoint.sh 'Update verified Portugal prices' data/pricing-public.json data/pricing-offers.json data/pricing-audit.json
+      - name: Coverage summary
+        if: always() && !cancelled()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          audit = json.load(open('data/pricing-audit.json', encoding='utf-8'))
+          print('## Melhor preço verificado\n')
+          print('Coverage:', json.dumps(audit['coverage']), '\n')
+          print('| Source | Status | Checks | Offers | Eligible | Errors / blocker |\n|---|---|---|---|---|---|')
+          for s in audit['sources']:
+              print(f"| {s['name']} | {s.get('status')} | {s.get('checked', '')} | {s.get('offers', '')} | {s.get('eligible_offers', '')} | {s.get('errors', s.get('blocker', ''))} |")
+          PY
+      - name: Flag failed sources
+        if: steps.collect.outcome == 'failure'
+        run: exit 1

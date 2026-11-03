@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "verified_on": "2026-11-03",
+  "sources": {
+    "psn_pt": {"name": "PlayStation Store", "domains": ["store.playstation.com"], "adapter": "psn", "status": "active", "format": "digital", "sellers": {"sony": {"name": "PlayStation Store", "kind": "direct", "verified": true}}, "discovery": ["Verified Portuguese product pages from data/enrichment-public.json"], "note": "Public prices and PS Plus discounts (Premium active). Catalog access, trials and EA Play are excluded."},
+    "nintendo_pt": {"name": "Nintendo eShop", "domains": ["www.nintendo.com"], "adapter": "nintendo", "status": "active", "format": "digital", "sellers": {"nintendo": {"name": "Nintendo eShop", "kind": "direct", "verified": true}}, "discovery": ["https://api.ec.nintendo.com/v1/price?country=PT"], "note": "Official Portuguese eShop price API, joined through verified product IDs."},
+    "darty": {"name": "Darty Portugal", "domains": ["darty.pt", "www.darty.pt"], "adapter": "shopify", "status": "active", "format": "physical", "new_only": true, "sellers": {"darty": {"name": "Darty Portugal", "kind": "direct", "verified": true}}, "collections": {"PS5": "jogos-ps5", "Switch": "nintendo-switch-jogos"}, "shipping": {"verified": true, "regions": ["mainland"], "cents": 270, "free_over_cents": 4900, "free_inclusive": false, "promotions": [{"from": "2026-10-29T00:00:00+00:00", "to": "2026-12-02T00:00:00+00:00", "free_from_cents": 4900, "inclusive": true}], "policy_url": "https://darty.pt/pages/entrega-numa-morada", "evidence": "Jogos: custo base 2,70 € + 0 € no 1.º artigo; grátis acima de 49 € (Black Friday: a partir de 49 €, 29 out–1 dez 2026); envios para Portugal continental."}},
+    "mynintendo_pt": {"name": "My Nintendo Store", "domains": ["store.nintendo.com"], "adapter": null, "status": "candidate", "sellers": {}, "blocker": "Public storefront access and offer-specific delivery not yet verified"},
+    "worten": {"name": "Worten", "domains": ["www.worten.pt"], "adapter": null, "status": "candidate", "sellers": {}, "blocker": "Marketplace: seller identity, new condition and delivery fee must be bound per offer"},
+    "fnac": {"name": "Fnac Portugal", "domains": ["www.fnac.pt"], "adapter": null, "status": "candidate", "sellers": {}, "blocker": "Public access returned HTTP 403 to the declared crawler; no bypass"},
+    "gamingreplay": {"name": "Gaming Replay", "domains": ["www.gamingreplay.com"], "adapter": null, "status": "candidate", "sellers": {}, "blocker": "Dispatchable stock vs. backorder and home-delivery fee not yet verified"},
+    "radiopopular": {"name": "Rádio Popular", "domains": ["www.radiopopular.pt"], "adapter": null, "status": "candidate", "sellers": {}, "blocker": "Offer-level stock and delivery quote not yet verified"},
+    "pcdiga": {"name": "PCDIGA", "domains": ["www.pcdiga.com"], "adapter": null, "status": "candidate", "sellers": {}, "blocker": "Public access returned HTTP 403 to the declared crawler; no bypass"},
+    "globaldata": {"name": "Globaldata", "domains": ["www.globaldata.pt"], "adapter": null, "status": "candidate", "sellers": {}, "blocker": "Weight-based delivery fee and new-condition evidence required"},
+    "shop4nerds": {"name": "Shop4Nerds", "domains": ["www.shop4nerds.pt"], "adapter": null, "status": "candidate", "sellers": {}, "blocker": "Public access returned HTTP 403; no bypass"},
+    "auchan": {"name": "Auchan Portugal", "domains": ["www.auchan.pt"], "adapter": null, "status": "candidate", "sellers": {}, "blocker": "Product identity, stock and delivery quote not yet verified"},
+    "elcorteingles": {"name": "El Corte Inglés Portugal", "domains": ["www.elcorteingles.pt"], "adapter": null, "status": "candidate", "sellers": {}, "blocker": "Public access returned HTTP 403 to the declared crawler; no bypass"},
+    "amazon_es": {"name": "Amazon Espanha", "domains": ["www.amazon.es"], "adapter": null, "status": "candidate", "sellers": {}, "blocker": "Seller identity, new condition and Portugal-delivered EUR total must be verified per offer"}
+  }
+}
