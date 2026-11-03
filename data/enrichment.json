@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:44:11.967922+00:00",
+  "updated": "2026-11-03T08:45:00.164319+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2441,
+    "full_attempted": 2451,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -136456,7 +136456,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:31.977452+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:44:32.974430+00:00"
       },
       "requirements": {
         "image": true,
@@ -136472,7 +136479,13 @@
       },
       "basics_attempted": "2026-11-02T22:54:31.977452+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/volley-pals-switch/",
@@ -136521,41 +136534,106 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:44:34.932084+00:00",
+      "full_version": 7
     },
     "PS5:12375": {
       "title": "Voyage",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 69.2,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Eurogamer Italy",
+              "score": 70,
+              "url": "https://www.eurogamer.it/voyage-recensione",
+              "date": "2022-08-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Finger Guns",
+              "score": 70,
+              "url": "https://fingerguns.net/reviews/2022/08/18/voyage-ps5-a-surprisingly-emotional-journey/",
+              "date": "2022-08-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 75,
+              "url": "https://gaming-age.com/2022/09/voyage-review-for-playstation-switch-xbox-pc/",
+              "date": "2022-09-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 70,
+              "url": "https://www.playstationcountry.com/voyage-ps5-review/",
+              "date": "2022-08-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 70,
+              "url": "https://www.psu.com/reviews/voyage-review-ps5/",
+              "date": "2022-08-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 60,
+              "url": "https://www.pushsquare.com/reviews/ps5/voyage",
+              "date": "2022-08-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 6
         },
         "user": {
-          "score": 7.8,
+          "score": 7.6,
           "scale": 10,
           "sources": [
             {
-              "score": 3.9,
-              "count": 63,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.9,
               "scale": 5,
-              "source": "PSN",
+              "count": 63,
               "url": "https://store.playstation.com/pt-pt/product/EP0896-PPSA08781_00-RATALAIKAGVOYAGE",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:45:36.885466+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 7.937253933193772,
               "normalized": 7.800000000000001
+            },
+            {
+              "score": 6.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/voyage",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 6.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:45:34.917229+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:44:40.315068+00:00"
       },
       "requirements": {
         "image": true,
@@ -136597,7 +136675,9 @@
       },
       "basics_attempted": "2026-11-02T18:45:34.917229+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -136613,14 +136693,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:44:41.487397+00:00",
+      "full_version": 7
     },
     "Switch:12334": {
       "title": "Voyage",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 68.0,
+          "score": 69.0,
           "scale": 100,
           "sources": [
             {
@@ -136629,10 +136711,18 @@
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=voyage-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "TouchArcade",
+              "score": 70,
+              "url": "https://toucharcade.com/2022/08/16/shin-chan-switch-game-review-english-nintendo-eshop-price-deals-list/",
+              "date": "2022-08-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 2
         },
         "user": {
           "score": null,
@@ -136641,7 +136731,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:31.981313+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:44:57.843462+00:00"
       },
       "requirements": {
         "image": true,
@@ -136657,7 +136754,13 @@
       },
       "basics_attempted": "2026-11-02T22:54:31.981313+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/voyage-switch/",
@@ -136706,29 +136809,112 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:44:59.898055+00:00",
+      "full_version": 7
     },
     "Switch:10094": {
       "title": "WWE 2K BATTLEGROUNDS",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 40.0,
+          "score": 56.2,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 40.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/wwe_2k_battlegrounds",
+              "name": "Cheat Code Central",
+              "score": 70,
+              "url": "https://cheatcc.com/ps4/rev/wwe2kbattlegroundsreview.html",
+              "date": "2020-09-22",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 50,
+              "url": "http://www.cubed3.com/review/6155/1/wwe-2k-battlegrounds-nintendo-switch.html",
+              "date": "2020-11-02",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 50,
+              "url": "https://www.gamespew.com/2020/09/wwe-2k-battlegrounds-review/",
+              "date": "2020-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 58,
+              "url": "https://gaming-age.com/2020/09/wwe-2k-battlegrounds-review-for-nintendo-switch-ps4-xbox-one/",
+              "date": "2020-09-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 50,
+              "url": "https://www.godisageek.com/reviews/wwe-2k-battlegrounds-switch-review/",
+              "date": "2020-09-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2020/09/analisis-wwe-2k-battlegrounds-para-nintendo-switch/",
+              "date": "2020-09-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 40,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/wwe_2k_battlegrounds",
+              "date": "2020-09-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 50,
+              "url": "https://www.nintendoworldreport.com/review/55056/wwe-2k-battlegrounds-switch-review",
+              "date": "2020-09-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 55,
+              "url": "https://press-start.com.au/reviews/nintendo-switch/2020/09/30/wwe-2k-battlegrounds-review-budget-rumble/",
+              "date": "2020-09-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 55,
+              "url": "https://purenintendo.com/review-wwe-2k-battlegrounds-nintendo-switch/",
+              "date": "2020-10-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 60,
+              "url": "https://www.vooks.net/wwe-2k-battlegrounds-switch-review/",
+              "date": "2020-09-29",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 11
         },
         "user": {
-          "score": 5.2,
+          "score": 4.73,
           "scale": 10,
           "sources": [
             {
@@ -136739,14 +136925,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/wwe_2k_battlegrounds",
               "platform": "Nintendo Switch",
               "weight": 5.385164807134504,
-              "normalized": 5.2,
-              "checked": "2026-11-02T18:46:07.436667+00:00"
+              "normalized": 5.2
+            },
+            {
+              "name": "Metacritic users",
+              "score": 4.3,
+              "scale": 10,
+              "count": 34,
+              "url": "https://www.metacritic.com/game/wwe-2k-battlegrounds/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 5.830951894845301,
+              "normalized": 4.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T00:16:02.607174+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 11,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:44:53.189154+00:00"
       },
       "requirements": {
         "image": true,
@@ -136765,7 +136965,8 @@
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
         "nindie": "No review profile indexed for this game",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -136797,7 +136998,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "ujOqTFgFnKQ",
+        "title": "WWE 2K Battlegrounds - Official Trailer | PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/wwe-2k-battlegrounds/"
+      },
+      "full_attempted": "2026-11-03T08:44:56.488579+00:00",
+      "full_version": 7
     },
     "Switch:12158": {
       "title": "Wally and the FANTASTIC PREDATORS",
@@ -148571,22 +148780,503 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 76.4,
           "scale": 100,
           "sources": [
             {
-              "name": "Push Square",
-              "score": 70.0,
-              "url": "https://www.pushsquare.com/reviews/ps5/wwe-2k22",
+              "name": "4P.de",
+              "score": 75,
+              "url": "https://www.4players.de/4players.php/dispbericht/Allgemein/Test/43072/85056/0/WWE_2K22.html",
+              "date": "2022-03-20",
               "platform": "PlayStation 5",
-              "via": "Push Square"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "App Trigger",
+              "score": 65,
+              "url": "https://apptrigger.com/2022/03/14/wwe-2k22-review-improving-series-almost-every-way/",
+              "date": "2022-03-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Attack of the Fanboy",
+              "score": 80,
+              "url": "https://attackofthefanboy.com/reviews/wwe-2k22-review/",
+              "date": "2022-03-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "BaziCenter",
+              "score": 70,
+              "url": "https://www.bazicenter.com/review/game/wwe-2k22/",
+              "date": "2022-03-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 79,
+              "url": "https://cogconnected.com/review/wwe-2k22-review/",
+              "date": "2022-03-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "ComicBook",
+              "score": 80,
+              "url": "https://comicbook.com/wwe/news/wwe-2k22-review-return-worth-celebrating-my-gm-creations-gameplay-online/",
+              "date": "2022-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Dexerto",
+              "score": 75,
+              "url": "https://www.dexerto.com/gaming/wwe-2k22-review-1778662/",
+              "date": "2022-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 70,
+              "url": "https://www.dualshockers.com/wwe-2k22-review-a-revolution-spoiled-by-disappointing-modes/",
+              "date": "2022-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Eurogamer Italy",
+              "score": 80,
+              "url": "https://www.eurogamer.it/articles/wwe-2k22-recensione",
+              "date": "2022-03-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 80,
+              "url": "https://www.everyeye.it/articoli/recensione-wwe-2k22-wrestling-56706.html",
+              "date": "2022-03-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Forbes",
+              "score": 75,
+              "url": "https://www.forbes.com/sites/games/2022/03/12/wwe-2k22-review-the-good-the-bad-and-the-bottom-line/?sh=19b3c8726093",
+              "date": "2022-03-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 82,
+              "url": "https://www.games.ch/wwe-2k22/test/review-kFic/",
+              "date": "2022-03-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 80,
+              "url": "https://www.gameinformer.com/review/wwe-2k22/a-big-step-in-the-right-direction",
+              "date": "2022-03-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Over Online",
+              "score": 90,
+              "url": "http://www.game-over.com/content/2022/03/wwe-2k22/#sthash.9DPkQ7OF.dpbs",
+              "date": "2022-03-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 80,
+              "url": "https://www.gamegrin.com/reviews/wwe-2k22-review/",
+              "date": "2022-03-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 84,
+              "url": "https://www.gamepro.de/artikel/wwe2k22-test,3378640.html",
+              "date": "2022-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2022/03/wwe-2k22-review/",
+              "date": "2022-03-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 70,
+              "url": "https://www.gamespot.com/reviews/wwe-2k22-review-bad-times-dont-last/1900-6417846/",
+              "date": "2022-03-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamepressure",
+              "score": 75,
+              "url": "https://www.gamepressure.com/editorials/reviews/wwe-2k22-review-comeback-show/z1539",
+              "date": "2022-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamersRD",
+              "score": 85,
+              "url": "https://gamersrd.com/wwe-2k22-review/",
+              "date": "2022-03-31",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamersky",
+              "score": 75,
+              "url": "https://www.gamersky.com/review/202203/1466763.shtml",
+              "date": "2022-03-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesHub",
+              "score": 80,
+              "url": "https://www.gameshub.com/news/reviews/wwe-2k22-review-14320/",
+              "date": "2022-03-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 70,
+              "url": "https://www.gamesradar.com/wwe-2k22-review/",
+              "date": "2022-03-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 75,
+              "url": "https://gaming-age.com/2022/03/wwe-2k22-review-for-ps5-4-xbox-series-x-one/",
+              "date": "2022-03-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 85,
+              "url": "https://www.gamingnexus.com/Article/7549/WWE-2K22/",
+              "date": "2022-03-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingBolt",
+              "score": 80,
+              "url": "https://gamingbolt.com/wwe-2k22-review-hitting-different",
+              "date": "2022-03-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gfinity",
+              "score": 70,
+              "url": "https://www.gfinityesports.com/reviews/wwe-2k22-review/",
+              "date": "2022-03-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "https://www.godisageek.com/reviews/wwe-2k22-review/",
+              "date": "2022-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 80,
+              "url": "https://hardcoregamer.com/reviews/review-wwe-2k22/420234/",
+              "date": "2022-03-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 80,
+              "url": "https://www.ign.com/articles/wwe-2k22-review",
+              "date": "2022-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Adria",
+              "score": 70,
+              "url": "https://adria.ign.com/wwe-2k22/36115/review/wwe-2k22-recenzija",
+              "date": "2022-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Italia",
+              "score": 78,
+              "url": "https://it.ign.com/wwe-2k22/191389/review/wwe-2k22-la-recensione ",
+              "date": "2022-03-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 84,
+              "url": "https://www.impulsegamer.com/wwe-2k22-ps5-review/",
+              "date": "2022-03-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Inverse",
+              "score": 60,
+              "url": "https://www.inverse.com/gaming/wwe-2k22-review",
+              "date": "2022-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Jeuxvideo.com",
+              "score": 75,
+              "url": "https://www.jeuxvideo.com/test/1543433/wwe-2k22-enfin-la-simulation-de-catch-que-l-on-attendait.htm",
+              "date": "2022-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "LEVEL (Czech Republic)",
+              "score": 60,
+              "url": "",
+              "date": "2024-01-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 80,
+              "url": "https://as.com/meristation/2022/03/16/analisis/1647436698_742225.html",
+              "date": "2022-03-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NME",
+              "score": 60,
+              "url": "https://www.nme.com/reviews/game-reviews/wwe-2k22-review-3185575",
+              "date": "2022-03-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 65,
+              "url": "https://noisypixel.net/wwe-2k22-review/",
+              "date": "2022-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Oyungezer",
+              "score": 80,
+              "url": "//oyungezer.com.tr/inceleme/wwe-2k22-inceleme",
+              "date": "2022-06-26",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PC Games",
+              "score": 70,
+              "url": "https://www.pcgames.de/WWE-2K22-Spiel-73191/Tests/WWE-2K22-Kein-Champion-aber-ein-grosser-Schritt-in-die-richtige-Richtung-1390944/",
+              "date": "2022-03-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY",
+              "score": 80,
+              "url": "",
+              "date": "2022-04-01",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY! Zine",
+              "score": 80,
+              "url": "https://play.co.rs/2022/04/05/povratak-wwe-med-gejming-scenu-na-velika-vrata-wwe-2k22-recenzija/",
+              "date": "2022-04-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 80,
+              "url": "https://psxbrasil.com.br/analise/wwe-2k22-review/",
+              "date": "2022-05-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlaySense",
+              "score": 80,
+              "url": "https://playsense.nl/487550/review-wwe-2k22/",
+              "date": "2022-03-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 70,
+              "url": "https://www.playstationcountry.com/wwe-2k22-ps5-review/",
+              "date": "2022-03-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 85,
+              "url": "https://www.psu.com/reviews/wwe-2k22-review-ps5/",
+              "date": "2022-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Player 2",
+              "score": 75,
+              "url": "https://www.player2.net.au/2022/03/wwe-2k22-a-fight-worth-coming-back-for/",
+              "date": "2022-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Press Start Australia",
+              "score": 80,
+              "url": "https://press-start.com.au/reviews/ps5-reviews/2022/03/15/wwe-2k22-review-head-of-the-table/",
+              "date": "2022-03-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 70,
+              "url": "http://www.pushsquare.com/reviews/ps5/wwe-2k22",
+              "date": "2022-03-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 90,
+              "url": "https://screenrant.com/wwe-2k22-game-review/",
+              "date": "2022-03-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shindig",
+              "score": 90,
+              "url": "https://www.shindig.nz/games/game-review/wwe-2k22-ps5/",
+              "date": "2022-04-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Slant Magazine",
+              "score": 60,
+              "url": "https://www.slantmagazine.com/games/wwe-2k22-review/",
+              "date": "2022-03-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 80,
+              "url": "https://www.spaziogames.it/wwe-2k22-recensione/",
+              "date": "2022-03-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TierraGamer",
+              "score": 83,
+              "url": "https://tierragamer.com/resena-wwe-2k22-ps5/",
+              "date": "2022-04-09",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 72,
+              "url": "https://vandal.elespanol.com/analisis/ps5/wwe-2k22/98841#p-89",
+              "date": "2022-03-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vgames",
+              "score": 75,
+              "url": "https://www.vgames.co.il/article/28744.html",
+              "date": "2022-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 65,
+              "url": "https://wccftech.com/review/wwe-2k22/",
+              "date": "2022-03-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 80,
+              "url": "https://wegotthiscovered.com/gaming/wwe-2k22-review/",
+              "date": "2022-03-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "WellPlayed",
+              "score": 80,
+              "url": "https://www.well-played.com.au/wwe-2k22-review/",
+              "date": "2022-04-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "XGN",
+              "score": 75,
+              "url": "https://www.xgn.nl/review/wwe-2k22-review",
+              "date": "2022-03-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 61
         },
         "user": {
-          "score": 6.8,
+          "score": 7.25,
           "scale": 10,
           "sources": [
             {
@@ -148597,14 +149287,28 @@
               "url": "https://www.pushsquare.com/games/ps5/wwe_2k22",
               "platform": "PlayStation 5",
               "weight": 5.744562646538029,
-              "normalized": 6.799999999999999,
-              "checked": "2026-11-02T20:04:58.470431+00:00"
+              "normalized": 6.799999999999999
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 280,
+              "url": "https://www.metacritic.com/game/wwe-2k22/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 16.73320053068151,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:37:51.775491+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 62,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:44:46.870389+00:00"
       },
       "requirements": {
         "image": true,
@@ -148656,29 +149360,502 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "g8ocpaY0UQ8",
+        "title": "WWE 2K22 - Teaser Trailer | PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/wwe-2k22/"
+      },
+      "full_attempted": "2026-11-03T08:44:47.249953+00:00",
+      "full_version": 7
     },
     "PS5:14920": {
       "title": "WWE 2K23",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 81.7,
           "scale": 100,
           "sources": [
             {
-              "name": "Push Square",
-              "score": 80.0,
-              "url": "https://www.pushsquare.com/reviews/ps5/wwe-2k23",
+              "name": "Attack of the Fanboy",
+              "score": 90,
+              "url": "https://attackofthefanboy.com/reviews/wwe-2k23-review-my-time-is-here-my-time-is-now/",
+              "date": "2023-03-13",
               "platform": "PlayStation 5",
-              "via": "Push Square"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "BaziCenter",
+              "score": 85,
+              "url": "https://www.bazicenter.com/review/game/wwe-2k23/",
+              "date": "2023-03-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "COGconnected",
+              "score": 85,
+              "url": "https://cogconnected.com/review/wwe-2k23-review/",
+              "date": "2023-03-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Checkpoint Gaming",
+              "score": 80,
+              "url": "https://checkpointgaming.net/reviews/2023/03/wwe-2k23-review-this-is-my-brutality/",
+              "date": "2023-03-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Daily Star",
+              "score": 95,
+              "url": "https://www.dailystar.co.uk/news/latest-news/wwe-2k23-review-new-must-29439444",
+              "date": "2023-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Dexerto",
+              "score": 80,
+              "url": "https://www.dexerto.com/gaming/wwe-2k23-review-2084950/",
+              "date": "2023-03-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digital Trends",
+              "score": 70,
+              "url": "https://www.digitaltrends.com/gaming/wwe-2k23-review-ps5/",
+              "date": "2023-03-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 80,
+              "url": "https://www.digitallydownloaded.net/2023/03/review-review-wwe-2k23-sony-playstation-5.html",
+              "date": "2023-03-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DualShockers",
+              "score": 90,
+              "url": "https://www.dualshockers.com/wwe-2k23-review/",
+              "date": "2023-03-16",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 82,
+              "url": "https://www.everyeye.it/articoli/recensione-wwe-2k23-never-give-up-wrestling-mito-cenation-60731.html",
+              "date": "2023-03-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Finger Guns",
+              "score": 80,
+              "url": "https://fingerguns.net/reviews/2023/04/08/wwe-2k23-review-ps5-didnt-give-up/",
+              "date": "2023-04-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMES.CH",
+              "score": 84,
+              "url": "https://www.games.ch/wwe-2k23/test/review-kjjJ/",
+              "date": "2023-03-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GAMINGbible",
+              "score": 90,
+              "url": "https://www.gamingbible.com/reviews/wwe-2k23-review-614304-20230316",
+              "date": "2023-03-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GGRecon",
+              "score": 80,
+              "url": "https://www.ggrecon.com/reviews/wwe-2k23-review/",
+              "date": "2023-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GLHF on Sports Illustrated",
+              "score": 80,
+              "url": "https://videogames.si.com/reviews/wwe-2k23-review",
+              "date": "2023-03-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 80,
+              "url": "https://www.gameinformer.com/review/wwe-2k23/tightening-some-holds",
+              "date": "2023-03-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Rant",
+              "score": 80,
+              "url": "https://gamerant.com/wwe-2k23-review/",
+              "date": "2023-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 85,
+              "url": "https://www.gamegrin.com/reviews/wwe-2k23-review/",
+              "date": "2023-03-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamePro Germany",
+              "score": 87,
+              "url": "https://www.gamepro.de/artikel/wwe2k23-test,3391455.html",
+              "date": "2023-03-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 90,
+              "url": "https://www.gamespew.com/2023/03/wwe-2k23-review/",
+              "date": "2023-03-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpot",
+              "score": 80,
+              "url": "https://www.gamespot.com/reviews/wwe-2k23-review-head-of-the-table/1900-6418048/",
+              "date": "2023-03-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamers Heroes",
+              "score": 85,
+              "url": "https://www.gamersheroes.com/honest-game-reviews/wwe-2k23-review/",
+              "date": "2023-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamersRD",
+              "score": 95,
+              "url": "https://gamersrd.com/wwe-2k23-review/",
+              "date": "2023-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesHub",
+              "score": 80,
+              "url": "https://www.gameshub.com/news/reviews/wwe-2k23-review-gameplay-combat-myrise-myfaction-mygm-2609917/",
+              "date": "2023-03-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamesRadar+",
+              "score": 80,
+              "url": "https://www.gamesradar.com/wwe-2k23-review-the-series-is-finally-back-on-top-form/",
+              "date": "2023-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 91,
+              "url": "https://gaming-age.com/2023/03/wwe-2k23-review-for-playstation-xbox-pc/",
+              "date": "2023-03-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Nexus",
+              "score": 85,
+              "url": "https://www.gamingnexus.com/Article/11814/WWE-2K23/",
+              "date": "2023-03-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamingBolt",
+              "score": 80,
+              "url": "https://gamingbolt.com/wwe-2k23-review-more-than-a-yearly-update",
+              "date": "2023-03-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 90,
+              "url": "https://www.godisageek.com/reviews/wwe-2k23-review/",
+              "date": "2023-03-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 90,
+              "url": "https://hardcoregamer.com/reviews/review-wwe-2k23/438514/",
+              "date": "2023-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hey Poor Player",
+              "score": 90,
+              "url": "https://www.heypoorplayer.com/2023/03/13/wwe-2k23-review-ps5/",
+              "date": "2023-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 80,
+              "url": "https://www.ign.com/articles/wwe-2k23-review",
+              "date": "2023-03-17",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Adria",
+              "score": 70,
+              "url": "https://adria.ign.com/wwe-2k23/39585/review/wwe-2k23-recenzija",
+              "date": "2023-03-30",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 80,
+              "url": "https://es.ign.com/wwe-2k23/189038/review/analisis-de-wwe-2k23-novedades-suficientes-tras-apostar-por-la-misma-base",
+              "date": "2023-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Impulsegamer",
+              "score": 84,
+              "url": "https://www.impulsegamer.com/wwe-2k23-ps5-review-2k-wwegames-wwe2k23-johncena-2k_anz/",
+              "date": "2023-03-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "KeenGamer",
+              "score": 80,
+              "url": "https://www.keengamer.com/articles/reviews/ps5-reviews/wwe-2k23-review-even-stronger-than-before-ps5/",
+              "date": "2023-03-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Meristation",
+              "score": 80,
+              "url": "https://as.com/meristation/analisis/wwe-2k23-analisis-visual-concepts-sigue-progresando-entre-las-cuerdas-n/",
+              "date": "2023-04-18",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Merlin'in Kazanı (Turkey)",
+              "score": 72,
+              "url": "http://www.merlininkazani.com/WWE_2K23-oyun_inceleme-123854p1.html",
+              "date": "2023-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "MeuPlayStation",
+              "score": 70,
+              "url": "https://meups.com.br/review/wwe-2k23-vale-a-pena/",
+              "date": "2023-04-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 80,
+              "url": "https://multiplayer.it/recensioni/wwe-2k23-recensione.html",
+              "date": "2023-03-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NME",
+              "score": 80,
+              "url": "https://www.nme.com/reviews/game-reviews/wwe-2k23-review-3413065",
+              "date": "2023-03-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Oyungezer",
+              "score": 80,
+              "url": "https://oyungezer.com.tr/inceleme/wwe-2k23-inceleme",
+              "date": "2023-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 85,
+              "url": "https://psxbrasil.com.br/analise/wwe-2k23-review/",
+              "date": "2023-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 70,
+              "url": "https://www.playstationcountry.com/wwe-2k23-ps5-review/",
+              "date": "2023-03-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Universe",
+              "score": 90,
+              "url": "https://www.psu.com/reviews/wwe-2k23-ps5-review/",
+              "date": "2023-03-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pocket-lint",
+              "score": 80,
+              "url": "https://www.pocket-lint.com/wwe-2k23-review-ps5-ps4-xbox-pc/",
+              "date": "2023-06-23",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 80,
+              "url": "https://www.pushsquare.com/reviews/ps5/wwe-2k23",
+              "date": "2023-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Shacknews",
+              "score": 80,
+              "url": "https://www.shacknews.com/article/134563/wwe-2k23-review-score",
+              "date": "2023-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Slant Magazine",
+              "score": 80,
+              "url": "https://www.slantmagazine.com/games/wwe-2k23-review/",
+              "date": "2023-03-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 82,
+              "url": "https://www.spaziogames.it/wwe-2k23-recensione/",
+              "date": "2023-03-19",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Stevivor",
+              "score": 75,
+              "url": "https://stevivor.com/reviews/wwe-2k23-review-freshly-raking-the-sands-of-the-island-of-relevancy/",
+              "date": "2023-03-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Loadout",
+              "score": 70,
+              "url": "https://www.theloadout.com/wwe-2k23/review-ps5",
+              "date": "2023-03-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheGamer",
+              "score": 70,
+              "url": "https://www.thegamer.com/wwe-2k23-review/",
+              "date": "2023-03-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TierraGamer",
+              "score": 85,
+              "url": "https://tierragamer.com/resenas/videojuegos/resena-wwe-2k23-un-grato-tributo-para-john-cena-y-la-wwe/",
+              "date": "2023-03-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 80,
+              "url": "https://vandal.elespanol.com/analisis/ps5/wwe-2k23/133524#p-89",
+              "date": "2023-03-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vgames",
+              "score": 80,
+              "url": "https://www.vgames.co.il/article/29661.html",
+              "date": "2023-03-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Wccftech",
+              "score": 75,
+              "url": "https://wccftech.com/review/wwe-2k23-solid-midcard/",
+              "date": "2023-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "We Got This Covered",
+              "score": 80,
+              "url": "https://wegotthiscovered.com/reviews/review-wwe-2k23-gets-the-hot-tag-and-cleans-house-on-its-competition/",
+              "date": "2023-03-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "WellPlayed",
+              "score": 85,
+              "url": "https://www.well-played.com.au/wwe-2k23-review/",
+              "date": "2023-03-22",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 59
         },
         "user": {
-          "score": 8.2,
+          "score": 7.21,
           "scale": 10,
           "sources": [
             {
@@ -148689,14 +149866,28 @@
               "url": "https://www.pushsquare.com/games/ps5/wwe_2k23",
               "platform": "PlayStation 5",
               "weight": 3.4641016151377544,
-              "normalized": 8.2,
-              "checked": "2026-11-02T20:04:58.470657+00:00"
+              "normalized": 8.2
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7,
+              "scale": 10,
+              "count": 252,
+              "url": "https://www.metacritic.com/game/wwe-2k23/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 15.874507866387544,
+              "normalized": 7.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:37:51.775757+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 59,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:44:53.174414+00:00"
       },
       "requirements": {
         "image": true,
@@ -148748,7 +149939,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "0mRiUp36n-8",
+        "title": "WWE 2K23 - OMG Trailer | PS5 & PS4 Games",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/wwe-2k23/"
+      },
+      "full_attempted": "2026-11-03T08:44:53.608953+00:00",
+      "full_version": 7
     },
     "Switch:15082": {
       "title": "War of Aero: Project MEIOU",
@@ -182641,15 +183840,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.53,
-              "count": 17,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.53,
               "scale": 5,
-              "source": "PSN",
+              "count": 17,
               "url": "https://store.playstation.com/pt-pt/product/UP7939-PPSA26765_00-0311045621724580",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:45:09.557694+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 4.123105625617661,
               "normalized": 7.06
             }
@@ -182657,7 +183854,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:45:08.035812+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:44:30.335242+00:00"
       },
       "requirements": {
         "image": true,
@@ -182699,7 +183903,11 @@
       },
       "basics_attempted": "2026-11-02T18:45:08.035812+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -182715,7 +183923,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:44:30.594639+00:00",
+      "full_version": 7
     },
     "PS5:16036": {
       "title": "WolfFang 空牙2001 SkullFang 空牙外伝 Saturn Tribute Boosted",
@@ -263485,26 +264695,33 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Video Chums",
+              "score": 60,
+              "url": "https://videochums.com/article/halloween-video-games-2026#voltaire-the-vegan-vampire",
+              "date": "2026-10-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 6.66,
           "scale": 10,
           "sources": [
             {
-              "score": 3.33,
-              "count": 6,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.33,
               "scale": 5,
-              "source": "PSN",
+              "count": 6,
               "url": "https://store.playstation.com/pt-pt/product/UP3252-PPSA38351_00-JANDUSOFT0000001",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:45:35.867751+00:00",
-              "platform": "PSN · PS5",
               "weight": 2.449489742783178,
               "normalized": 6.66
             }
@@ -263512,7 +264729,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:45:34.915746+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:44:35.329567+00:00"
       },
       "requirements": {
         "image": true,
@@ -263554,7 +264778,11 @@
       },
       "basics_attempted": "2026-11-02T18:45:34.915746+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -263570,7 +264798,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:44:36.018180+00:00",
+      "full_version": 7
     },
     "PS5:18995": {
       "title": "Xevious 3D/G",
@@ -284457,6 +285687,7 @@
               "name": "Switch Player",
               "score": 60,
               "url": "http://switchplayer.net/2018/10/08/whip-whip-review/",
+              "date": "2018-10-08",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             },
@@ -284464,6 +285695,7 @@
               "name": "Video Chums",
               "score": 60,
               "url": "https://videochums.com/article/retro-inspired-indie-games#whip-whip",
+              "date": "2018-08-20",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -284483,7 +285715,6 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/whip_whip",
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
-              "checked": "2026-11-03T00:16:13.306229+00:00",
               "weight": 2.0,
               "normalized": 6.25
             }
@@ -284491,7 +285722,12 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T00:16:02.606673+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:44:48.188294+00:00"
       },
       "requirements": {
         "image": false,
@@ -284505,7 +285741,11 @@
         "nindie": "No review profile indexed for this game",
         "image": "No unique matching video-game article with artwork",
         "nintendo": "No exact Portuguese Switch listing verified",
-        "wikipedia": "No unique matching video-game article with artwork"
+        "wikipedia": "No unique matching video-game article with artwork",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -284572,7 +285812,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:44:50.699178+00:00",
+      "full_version": 7
     },
     "Switch:4783": {
       "title": "Wargroove",
@@ -313458,13 +314700,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/vortex_attack_ex",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:31.977724+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:44:38.038214+00:00"
       },
       "requirements": {
         "image": true,
@@ -313480,7 +314739,12 @@
       },
       "basics_attempted": "2026-11-02T22:54:31.977724+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/vortex-attack-ex-switch/",
@@ -313529,7 +314793,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:44:40.442983+00:00",
+      "full_version": 7
     },
     "Switch:5717": {
       "title": "Warlocks 2: God Slayers",
