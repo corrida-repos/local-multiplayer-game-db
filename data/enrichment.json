@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T05:54:53.109599+00:00",
+  "updated": "2026-11-03T05:55:45.897230+00:00",
   "version": 7,
   "coverage": {
     "total": 2542,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 273,
     "missing_rating": 441,
-    "full_attempted": 1201,
+    "full_attempted": 1211,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -37812,15 +37812,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.79,
-              "count": 52,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.79,
               "scale": 5,
-              "source": "PSN",
+              "count": 52,
               "url": "https://store.playstation.com/pt-pt/product/EP6704-PPSA08429_00-2797030545681902",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T20:09:28.984543+00:00",
-              "platform": "PSN · PS5",
               "weight": 7.211102550927978,
               "normalized": 7.58
             }
@@ -37828,7 +37826,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T20:09:20.350783+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:55:13.737594+00:00"
       },
       "requirements": {
         "image": true,
@@ -37837,7 +37842,11 @@
       },
       "basics_attempted": "2026-11-02T20:09:20.350783+00:00",
       "version": 4,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store": {
         "url": "https://store.playstation.com/pt-pt/product/EP6704-PPSA08429_00-2797030545681902",
         "label": "Abrir na PlayStation Store",
@@ -37886,14 +37895,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:55:14.708448+00:00",
+      "full_version": 7
     },
     "Switch:11525": {
       "title": "Funtasia",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 78.3,
           "scale": 100,
           "sources": [
             {
@@ -37903,19 +37914,53 @@
               "date": "2022-10-09",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 75.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=funtasia-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "The Game Slush Pile",
+              "score": 80.0,
+              "url": "https://gameslushpile.com/2022/09/29/funtasia-review-switch/",
+              "date": "2022-09-29T17:30:18-04:00",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review",
+              "original_score": 4.0,
+              "original_scale": 5.0
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/funtasia",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:37.567118+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:55:18.184816+00:00"
       },
       "requirements": {
         "image": true,
@@ -37931,7 +37976,11 @@
       },
       "basics_attempted": "2026-11-02T22:32:37.567118+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/funtasia-switch/",
@@ -37980,7 +38029,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:55:22.067453+00:00",
+      "full_version": 7
     },
     "Switch:13469": {
       "title": "FurryFury: Smash & Roll",
@@ -37994,6 +38045,7 @@
               "name": "TouchArcade",
               "score": 70,
               "url": "https://toucharcade.com/2023/03/27/dead-cells-return-to-castlevania-dlc-nintendo-switch-review-discount-price-eshop-bayonetta-origins-have-a-nice-death/",
+              "date": "2023-03-28",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -38008,7 +38060,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:02:30.267525+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:55:12.960892+00:00"
       },
       "requirements": {
         "image": true,
@@ -38018,7 +38077,12 @@
       "basics_attempted": "2026-11-02T23:02:30.267525+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000047671/f4f235688d427531bd86dc555bf6443fcaea15bc4d8d51f179ebbfd778e5cda7",
@@ -38075,14 +38139,16 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:55:16.104974+00:00",
+      "full_version": 7
     },
     "Switch:10488": {
       "title": "G-DARIUS HD",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 79.0,
+          "score": 80.4,
           "scale": 100,
           "sources": [
             {
@@ -38092,6 +38158,20 @@
               "date": "2021-10-05",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 78.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=g-darius-hd-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90.0,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/g-darius_hd",
+              "platform": "Nintendo Switch",
+              "via": "Nintendo Life"
             },
             {
               "name": "Pure Nintendo",
@@ -38127,10 +38207,10 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 5
+          "source_count": 7
         },
         "user": {
-          "score": 7.8,
+          "score": 7.52,
           "scale": 10,
           "sources": [
             {
@@ -38141,14 +38221,28 @@
               "url": "https://www.metacritic.com/game/g-darius-hd/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 2.0,
-              "normalized": 7.800000000000001,
-              "checked": "2026-11-02T17:10:38.692914+00:00"
+              "normalized": 7.800000000000001
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 21,
+              "url": "https://www.nintendolife.com/games/switch-eshop/g-darius_hd",
+              "platform": "Nintendo Switch",
+              "weight": 4.58257569495584,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:37.567870+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:55:28.174979+00:00"
       },
       "requirements": {
         "image": true,
@@ -38164,7 +38258,11 @@
       },
       "basics_attempted": "2026-11-02T22:32:37.567870+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/g-darius-hd-switch/",
@@ -38214,7 +38312,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:55:30.842919+00:00",
+      "full_version": 7
     },
     "Switch:14349": {
       "title": "G.I. Joe: Wrath of Cobra",
@@ -136380,15 +136480,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.44,
-              "count": 245,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 3.44,
               "scale": 5,
-              "source": "PSN",
+              "count": 245,
               "url": "https://store.playstation.com/pt-pt/product/HP6701-PPSA23704_00-0691986459296638",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:10:40.510373+00:00",
-              "platform": "PSN · PS5",
               "weight": 15.652475842498529,
               "normalized": 6.879999999999999
             }
@@ -136396,7 +136494,16 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:10:39.276073+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found",
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:55:18.675263+00:00"
       },
       "requirements": {
         "image": true,
@@ -136438,7 +136545,11 @@
       },
       "basics_attempted": "2026-11-02T17:10:39.276073+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found; Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -136454,7 +136565,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:55:19.219764+00:00",
+      "full_version": 7
     },
     "PS5:15957": {
       "title": "Gal Guardians: Servants of the Dark",
@@ -146828,34 +146941,184 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 83.1,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "COGconnected",
+              "score": 85,
+              "url": "https://cogconnected.com/review/gradius-origins-review/",
+              "date": "2025-08-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Endless Mode",
+              "score": 85,
+              "url": "https://www.endlessmode.com/article/gradius-origins-is-an-excellent-introduction-to-a-legendary-shoot-em-up-series",
+              "date": "2025-08-12",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Everyeye.it",
+              "score": 80,
+              "url": "https://www.everyeye.it/articoli/recensione-gradius-origins-nostalgia-canaglia-si-fantastica-65965.html",
+              "date": "2025-08-10",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameBlast",
+              "score": 85,
+              "url": "https://www.gameblast.com.br/2025/08/analise-gradius-origins-review.html",
+              "date": "2025-08-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2025/08/gradius-origins-review/",
+              "date": "2025-08-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamereactor UK",
+              "score": 70,
+              "url": "https://www.gamereactor.eu/gradius-origins-1584263/",
+              "date": "2025-08-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GamersRD",
+              "score": 75,
+              "url": "https://gamersrd.com/gradius-origins-review/",
+              "date": "2025-08-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gaming Age",
+              "score": 100,
+              "url": "https://gaming-age.com/2025/09/gradius-origins-review-for-playstation-5-xbox-series-x-nintendo-switch-and-pc/",
+              "date": "2025-09-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Spain",
+              "score": 80,
+              "url": "https://es.ign.com/gradius-origins/219697/review/analisis-de-gradius-origins-el-regreso-de-muchos-clasicos",
+              "date": "2025-08-06",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Metro GameCentral",
+              "score": 90,
+              "url": "https://metro.co.uk/2025/08/04/gradius-origins-review-shooting-core-salamander-3-23824929/",
+              "date": "2025-08-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 90,
+              "url": "https://psxbrasil.com.br/gradius-origins-review/",
+              "date": "2025-08-24",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Push Square",
+              "score": 80,
+              "url": "https://www.pushsquare.com/reviews/ps5/gradius-origins",
+              "date": "2025-08-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Saudi Gamer",
+              "score": 80,
+              "url": "https://www.saudigamer.com/review/gradius-origins/",
+              "date": "2025-08-08",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "SpazioGames",
+              "score": 75,
+              "url": "https://www.spaziogames.it/articoli/gradius-origins-recensione",
+              "date": "2025-08-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 80,
+              "url": "https://vandal.elespanol.com/analisis/ps5/gradius-origins/198767#p-89",
+              "date": "2025-08-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 88,
+              "url": "https://videochums.com/review/gradius-origins",
+              "date": "2025-08-04",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Voxel",
+              "score": 90,
+              "url": "https://www.tecmundo.com.br/voxel/502121-review-gradius-origins-preserva-o-legado-dos-jogos-de-navinha.htm ",
+              "date": "2025-08-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 17
         },
         "user": {
-          "score": 9.34,
+          "score": 9.01,
           "scale": 10,
           "sources": [
             {
-              "score": 4.67,
-              "count": 331,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.67,
               "scale": 5,
-              "source": "PSN",
+              "count": 331,
               "url": "https://store.playstation.com/pt-pt/product/JP0101-PPSA19724_00-GRADIUSORIGINCOL",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T17:10:41.717495+00:00",
-              "platform": "PSN · PS5",
               "weight": 18.193405398660254,
               "normalized": 9.34
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 14,
+              "url": "https://www.metacritic.com/game/gradius-origins/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 3.7416573867739413,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T17:10:40.519596+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 17,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:55:23.757298+00:00"
       },
       "requirements": {
         "image": true,
@@ -146897,7 +147160,9 @@
       },
       "basics_attempted": "2026-11-02T17:10:40.519596+00:00",
       "version": 1,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -146913,29 +147178,80 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:55:27.890957+00:00",
+      "full_version": 7
     },
     "Switch:16650": {
       "title": "GRADIUS ORIGINS",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 85.0,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/gradius-origins",
+              "name": "Eurogamer Germany",
+              "score": 100,
+              "url": "https://www.eurogamer.de/gradius-origins-konami-m2-und-ihre-neue-liebe-fur-alte-games-liefert-einmal-mehr-das-perfekte-paket-ab",
+              "date": "2025-08-11",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamesurf",
+              "score": 90,
+              "url": "https://www.gamesurf.it/recensioni/gioco/gradius-origins-recensione-switch",
+              "date": "2025-08-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hardcore Gamer",
+              "score": 70,
+              "url": "https://hardcoregamer.com/review-gradius-origins/",
+              "date": "2025-08-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 90,
+              "url": "https://www.nintendo-insider.com/gradius-origins-review/",
+              "date": "2025-09-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "https://www.nintendolife.com/reviews/switch-eshop/gradius-origins",
+              "date": "2025-08-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 70,
+              "url": "https://www.nintendoworldreport.com/review/72537/gradius-origins-switch-review",
+              "date": "2025-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Noisy Pixel",
+              "score": 95,
+              "url": "https://noisypixel.net/gradius-origins-review-m2-shooter-collection/",
+              "date": "2025-08-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 7
         },
         "user": {
-          "score": 7.4,
+          "score": 7.57,
           "scale": 10,
           "sources": [
             {
@@ -146946,14 +147262,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/gradius_origins",
               "platform": "Nintendo Switch",
               "weight": 5.0990195135927845,
-              "normalized": 7.4,
-              "checked": "2026-11-02T17:10:41.323893+00:00"
+              "normalized": 7.4
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/gradius-origins/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.0,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:32:37.568554+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 7,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:55:43.178419+00:00"
       },
       "requirements": {
         "image": true,
@@ -146969,7 +147299,11 @@
       },
       "basics_attempted": "2026-11-02T22:32:37.568554+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/gradius-origins-switch/",
@@ -147018,7 +147352,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:55:45.657909+00:00",
+      "full_version": 7
     },
     "PS5:16537": {
       "title": "Go Fight Fantastic!",
@@ -228371,22 +228707,102 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 77.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/fury_unleashed",
+              "name": "4P.de",
+              "score": 78,
+              "url": "https://www.4players.de/4players.php/dispbericht/Switch/Test/41722/84372/0/Fury_Unleashed.html",
+              "date": "2020-05-08",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/6091/1/fury-unleashed-nintendo-switch.html",
+              "date": "2020-09-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Destructoid",
+              "score": 75,
+              "url": "https://www.destructoid.com/review-fury-unleashed-591174.phtml",
+              "date": "2020-05-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameCritics",
+              "score": 75,
+              "url": "https://gamecritics.com/brian-theisen/fury-unleashed-review/",
+              "date": "2020-06-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameGrin",
+              "score": 85,
+              "url": "https://www.gamegrin.com/reviews/fury-unleashed-review/",
+              "date": "2020-05-12",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gameblog.fr",
+              "score": 60,
+              "url": "http://www.gameblog.fr/tests/3683-fury-unleashed-switch",
+              "date": "2020-06-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "https://www.godisageek.com/reviews/fury-unleashed-review/",
+              "date": "2020-04-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 80.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=fury-unleashed-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/fury_unleashed",
+              "date": "2020-05-07",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "The Digital Fix",
+              "score": 80,
+              "url": "https://www.thedigitalfix.com/gaming/review/fury-unleashed/",
+              "date": "2020-04-13",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 80,
+              "url": "https://vandal.elespanol.com/analisis/switch/fury-unleashed/76237#p-83",
+              "date": "2020-05-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 11
         },
         "user": {
-          "score": 7.7,
+          "score": 7.6,
           "scale": 10,
           "sources": [
             {
@@ -228397,14 +228813,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/fury_unleashed",
               "platform": "Nintendo Switch",
               "weight": 5.656854249492381,
-              "normalized": 7.7,
-              "checked": "2026-11-02T17:27:55.700827+00:00"
+              "normalized": 7.7
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.5,
+              "scale": 10,
+              "count": 32,
+              "url": "https://www.metacritic.com/game/fury-unleashed/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 5.656854249492381,
+              "normalized": 7.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:35:12.928638+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:55:23.146616+00:00"
       },
       "requirements": {
         "image": true,
@@ -228420,7 +228850,11 @@
       },
       "basics_attempted": "2026-11-02T22:35:12.928638+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/fury-unleashed-switch/",
@@ -228469,7 +228903,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "ZjtpcLmsrp4",
+        "title": "Fury Unleashed - Launch Trailer | PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/fury-unleashed/"
+      },
+      "full_attempted": "2026-11-03T05:55:26.767259+00:00",
+      "full_version": 7
     },
     "Switch:5389": {
       "title": "Guacamelee! 2",
@@ -267241,10 +267683,19 @@
               "url": "https://www.nintendolife.com/reviews/nintendo-switch/g_i_joe_operation_blackout",
               "platform": "Nintendo Switch",
               "via": "Nintendo Life"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 60.0,
+              "url": "https://purenintendo.com/review-g-i-joe-operation-blackout-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 6.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 2
+          "source_count": 3
         },
         "user": {
           "score": 5.4,
@@ -267258,14 +267709,21 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/g_i_joe_operation_blackout",
               "platform": "Nintendo Switch",
               "weight": 3.1622776601683795,
-              "normalized": 5.4,
-              "checked": "2026-11-02T19:22:36.246097+00:00"
+              "normalized": 5.4
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:59:47.867287+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:55:33.032782+00:00"
       },
       "requirements": {
         "image": true,
@@ -267283,7 +267741,11 @@
       "version": 7,
       "errors": {
         "store": "Official Nintendo lookup: HTTP Error 404: Not Found",
-        "nintendo": "No exact Portuguese Switch listing verified"
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -267315,7 +267777,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:55:35.596821+00:00",
+      "full_version": 7
     },
     "Switch:7486": {
       "title": "Galaxy Champions TV",
@@ -278614,19 +279078,59 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 74.8,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/gonner2",
+              "name": "Hardcore Gamer",
+              "score": 70,
+              "url": "https://hardcoregamer.com/2020/10/23/review-gonner2/390629/",
+              "date": "2020-10-23",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 79.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=gonner2-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/gonner2",
+              "date": "2020-10-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "https://www.nintendoworldreport.com/review/55756/gonner2-switch-review",
+              "date": "2020-12-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 70,
+              "url": "http://switchplayer.net/2020/10/30/gonner-2-review/",
+              "date": "2020-10-30",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 80,
+              "url": "https://vandal.elespanol.com/analisis/switch/gonner-2/86579#p-83",
+              "date": "2020-10-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 6
         },
         "user": {
           "score": 6.2,
@@ -278640,14 +279144,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/gonner2",
               "platform": "Nintendo Switch",
               "weight": 3.4641016151377544,
-              "normalized": 6.2,
-              "checked": "2026-11-02T17:35:12.214553+00:00"
+              "normalized": 6.2
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:37:07.001593+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 5,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T05:55:38.168629+00:00"
       },
       "requirements": {
         "image": true,
@@ -278663,7 +279171,11 @@
       },
       "basics_attempted": "2026-11-02T22:37:07.001593+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "Review archive discovery still queued; exact profile not indexed yet",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/gonner2-switch/",
@@ -278712,7 +279224,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T05:55:41.330316+00:00",
+      "full_version": 7
     },
     "Switch:8013": {
       "title": "Gain Ground",
