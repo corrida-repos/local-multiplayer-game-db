@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T09:44:49.260481+00:00",
+  "updated": "2026-11-03T09:45:53.994203+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -17169,7 +17169,7 @@
           "source_count": 6
         },
         "user": {
-          "score": 8.0,
+          "score": 7.87,
           "scale": 10,
           "sources": [
             {
@@ -17180,22 +17180,28 @@
               "url": "https://www.metacritic.com/game/cassette-beasts/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 3.605551275463989,
-              "normalized": 8.0,
-              "checked": "2026-11-02T21:04:45.871864+00:00"
+              "normalized": 8.0
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.8,
+              "scale": 10.0,
+              "count": 40,
+              "url": "https://www.nintendolife.com/games/switch-eshop/cassette_beasts",
+              "platform": "Nintendo Switch",
+              "weight": 6.324555320336759,
+              "normalized": 7.800000000000001
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 5,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:31:41.910053+00:00"
+        "attempted": "2026-11-03T09:45:41.335654+00:00"
       },
       "requirements": {
         "image": true,
@@ -17213,9 +17219,11 @@
       "version": 7,
       "errors": {
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T21:04:48.153859+00:00",
+      "full_attempted": "2026-11-03T09:45:43.355758+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/cassette-beasts-switch/",
@@ -17264,7 +17272,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "PS5:13012": {
       "title": "Cassiodora",
@@ -17315,11 +17324,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 2,
         "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T21:04:33.752956+00:00"
+        "attempted": "2026-11-03T09:45:14.953697+00:00"
       },
       "requirements": {
         "image": true,
@@ -17362,9 +17371,11 @@
       "basics_attempted": "2026-11-02T17:01:52.700013+00:00",
       "version": 1,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T21:04:34.720526+00:00",
+      "full_attempted": "2026-11-03T09:45:15.177750+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -17380,7 +17391,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:13010": {
       "title": "Cassiodora",
@@ -17578,21 +17590,31 @@
           "source_count": 2
         },
         "user": {
-          "score": null,
+          "score": 7.2,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Nintendo Life",
+              "score": 7.2,
+              "scale": 10.0,
+              "count": 17,
+              "url": "https://www.nintendolife.com/games/switch-eshop/castle_of_shikigami_2",
+              "platform": "Nintendo Switch",
+              "weight": 4.123105625617661,
+              "normalized": 7.199999999999999
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 2,
         "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+          "Metacritic users: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T23:40:08.117427+00:00"
+        "attempted": "2026-11-03T09:45:26.337649+00:00"
       },
       "requirements": {
         "image": true,
@@ -17602,9 +17624,12 @@
       "basics_attempted": "2026-11-02T23:40:08.117427+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Metacritic users: HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_download_software/1x1_NSwitchDS_CastleOfShikigami2_image500w.jpg",
@@ -17614,7 +17639,7 @@
         "validation": "verified",
         "validated_at": "2026-11-03T02:02:23.136364+00:00"
       },
-      "full_attempted": "2026-11-02T21:04:40.553562+00:00",
+      "full_attempted": "2026-11-03T09:45:28.420712+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Castle-of-Shikigami2-2365061.html",
@@ -17664,7 +17689,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:10886": {
       "title": "Castle on the Coast",
@@ -167165,12 +167191,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 1,
         "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:56:25.969524+00:00"
+        "attempted": "2026-11-03T09:45:11.176342+00:00"
       },
       "requirements": {
         "image": true,
@@ -167189,9 +167214,12 @@
       "errors": {
         "community": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T21:04:05.579094+00:00",
+      "full_attempted": "2026-11-03T09:45:13.292271+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/care-bears-to-the-rescue-switch/",
@@ -167240,7 +167268,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:15728": {
       "title": "Cats on Duty",
@@ -271670,7 +271699,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 81.6,
+          "score": 81.7,
           "scale": 100,
           "sources": [
             {
@@ -272066,6 +272095,15 @@
               "via": "Metacritic review index"
             },
             {
+              "name": "Pure Nintendo",
+              "score": 90.0,
+              "url": "https://purenintendo.com/review-captain-toad-treasure-tracker-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 9.0,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
               "name": "Riot Pixels",
               "score": 80,
               "url": "http://riotpixels.com/captain-toad-treasure-tracker-impressions/",
@@ -272203,10 +272241,10 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 66
+          "source_count": 67
         },
         "user": {
-          "score": 7.9,
+          "score": 7.95,
           "scale": 10,
           "sources": [
             {
@@ -272217,22 +272255,28 @@
               "url": "https://www.metacritic.com/game/captain-toad-treasure-tracker/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 17.88854381999832,
-              "normalized": 7.9,
-              "checked": "2026-11-02T21:04:12.212772+00:00"
+              "normalized": 7.9
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 8.0,
+              "scale": 10.0,
+              "count": 403,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/captain_toad_treasure_tracker",
+              "platform": "Nintendo Switch",
+              "weight": 20.074859899884732,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 73,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:33:48.804660+00:00"
+        "attempted": "2026-11-03T09:45:51.202615+00:00"
       },
       "requirements": {
         "image": true,
@@ -272249,11 +272293,11 @@
       "basics_attempted": "2026-11-02T22:33:48.804660+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
         "trailer": "HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T21:04:15.071818+00:00",
+      "full_attempted": "2026-11-03T09:45:53.713205+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/captain-toad-treasure-tracker-switch/",
@@ -272302,7 +272346,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:4600": {
       "title": "Cave Story Plus",
@@ -297335,7 +297380,7 @@
           "source_count": 24
         },
         "user": {
-          "score": 7.8,
+          "score": 7.54,
           "scale": 10,
           "sources": [
             {
@@ -297346,22 +297391,28 @@
               "url": "https://www.metacritic.com/game/capcom-beat-em-up-bundle/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 5.656854249492381,
-              "normalized": 7.800000000000001,
-              "checked": "2026-11-02T21:04:04.354557+00:00"
+              "normalized": 7.800000000000001
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 106,
+              "url": "https://www.nintendolife.com/games/switch-eshop/capcom_beat_em_up_bundle",
+              "platform": "Nintendo Switch",
+              "weight": 10.295630140987,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 25,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:34:16.815709+00:00"
+        "attempted": "2026-11-03T09:45:31.315409+00:00"
       },
       "requirements": {
         "image": true,
@@ -297378,11 +297429,12 @@
       "basics_attempted": "2026-11-02T22:34:16.815709+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T21:04:07.667212+00:00",
+      "full_attempted": "2026-11-03T09:45:35.185191+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/capcom-beat-em-up-bundle-switch/",
@@ -297432,7 +297484,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:5576": {
       "title": "Castle Crashers Remastered",
@@ -297487,7 +297540,7 @@
           "source_count": 5
         },
         "user": {
-          "score": 8.2,
+          "score": 7.87,
           "scale": 10,
           "sources": [
             {
@@ -297498,22 +297551,28 @@
               "url": "https://www.metacritic.com/game/castle-crashers-remastered/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 4.58257569495584,
-              "normalized": 8.2,
-              "checked": "2026-11-02T21:04:40.321352+00:00"
+              "normalized": 8.2
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 76,
+              "url": "https://www.nintendolife.com/games/switch-eshop/castle_crashers_remastered",
+              "platform": "Nintendo Switch",
+              "weight": 8.717797887081348,
+              "normalized": 7.7
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 5,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:34:16.816072+00:00"
+        "attempted": "2026-11-03T09:45:21.417438+00:00"
       },
       "requirements": {
         "image": true,
@@ -297530,11 +297589,12 @@
       "basics_attempted": "2026-11-02T22:34:16.816072+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T21:04:43.108482+00:00",
+      "full_attempted": "2026-11-03T09:45:23.451104+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/castle-crashers-remastered-switch/",
@@ -297583,7 +297643,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:5378": {
       "title": "Catastronauts",
@@ -327920,8 +327981,7 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/castlestorm_ii",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 3.7,
-              "checked": "2026-11-02T21:04:42.514206+00:00"
+              "normalized": 3.7
             }
           ],
           "source_count": 1,
@@ -327929,13 +327989,10 @@
         },
         "critic_index_complete": true,
         "critic_index_review_count": 2,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:35:41.352615+00:00"
+        "attempted": "2026-11-03T09:45:36.368804+00:00"
       },
       "requirements": {
         "image": true,
@@ -327953,9 +328010,11 @@
       "version": 7,
       "errors": {
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T21:04:45.191961+00:00",
+      "full_attempted": "2026-11-03T09:45:38.047826+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/castlestorm-ii-switch/",
@@ -328004,7 +328063,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:6287": {
       "title": "Catherine: Full Body",
@@ -380304,7 +380364,7 @@
           "source_count": 3
         },
         "user": {
-          "score": 3.9,
+          "score": 4.2,
           "scale": 10,
           "sources": [
             {
@@ -380315,22 +380375,28 @@
               "url": "https://www.metacritic.com/game/cartoon-network-battle-crashers/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 3.7416573867739413,
-              "normalized": 3.9000000000000004,
-              "checked": "2026-11-02T21:04:35.918046+00:00"
+              "normalized": 3.9000000000000004
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 4.5,
+              "scale": 10.0,
+              "count": 14,
+              "url": "https://www.nintendolife.com/games/nintendo-switch/cartoon_network_battle_crashers",
+              "platform": "Nintendo Switch",
+              "weight": 3.7416573867739413,
+              "normalized": 4.5
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 3,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:37:23.494367+00:00"
+        "attempted": "2026-11-03T09:45:16.276669+00:00"
       },
       "requirements": {
         "image": true,
@@ -380347,10 +380413,11 @@
       "basics_attempted": "2026-11-02T22:37:23.494367+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
-        "slush": "No scored Switch review indexed"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T21:04:38.458410+00:00",
+      "full_attempted": "2026-11-03T09:45:21.562865+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/cartoon-network-battle-crashers-switch/",
@@ -380399,7 +380466,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:8444": {
       "title": "Clu Clu Land",
@@ -420444,7 +420512,7 @@
           "source_count": 32
         },
         "user": {
-          "score": 7.0,
+          "score": 7.26,
           "scale": 10,
           "sources": [
             {
@@ -420455,22 +420523,28 @@
               "url": "https://www.metacritic.com/game/capcom-arcade-stadium/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 5.291502622129181,
-              "normalized": 7.0,
-              "checked": "2026-11-02T21:04:17.639551+00:00"
+              "normalized": 7.0
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.4,
+              "scale": 10.0,
+              "count": 91,
+              "url": "https://www.nintendolife.com/games/switch-eshop/capcom_arcade_stadium",
+              "platform": "Nintendo Switch",
+              "weight": 9.539392014169456,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 34,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:38:32.861049+00:00"
+        "attempted": "2026-11-03T09:45:46.416534+00:00"
       },
       "requirements": {
         "image": true,
@@ -420487,11 +420561,13 @@
       "basics_attempted": "2026-11-02T22:38:32.861049+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
+        "nindie": "No review profile indexed for this game",
         "slush": "No scored Switch review indexed",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T21:04:20.516660+00:00",
+      "full_attempted": "2026-11-03T09:45:48.386407+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/capcom-arcade-stadium-switch/",
@@ -420540,7 +420616,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:9720": {
       "title": "Capcom Arcade Stadium Pack 1: Dawn of the Arcade (’84 – ’88)",
