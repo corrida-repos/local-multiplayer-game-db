@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T09:05:14.167109+00:00",
+  "updated": "2026-11-03T09:06:03.019266+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -4154,8 +4154,7 @@
               "url": "https://www.metacritic.com/game/astebros/user-reviews/?platform=nintendo-switch",
               "platform": "Nintendo Switch",
               "weight": 2.23606797749979,
-              "normalized": 7.6,
-              "checked": "2026-11-02T19:47:40.096406+00:00"
+              "normalized": 7.6
             }
           ],
           "source_count": 1,
@@ -4164,12 +4163,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 1,
         "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:30:59.379230+00:00"
+        "attempted": "2026-11-03T09:05:55.501626+00:00"
       },
       "requirements": {
         "image": true,
@@ -4186,10 +4184,14 @@
       "basics_attempted": "2026-11-02T22:30:59.379230+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:47:41.625014+00:00",
+      "full_attempted": "2026-11-03T09:05:57.663669+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/astebros-switch/",
@@ -4238,7 +4240,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "PS5:14056": {
       "title": "Asterix & Obelix Slap Them All! 2",
@@ -4315,11 +4318,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 4,
         "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:47:40.543266+00:00"
+        "attempted": "2026-11-03T09:05:44.820981+00:00"
       },
       "requirements": {
         "image": true,
@@ -4362,9 +4365,11 @@
       "basics_attempted": "2026-11-02T16:58:22.406834+00:00",
       "version": 1,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:47:42.764953+00:00",
+      "full_attempted": "2026-11-03T09:05:45.174569+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -4380,7 +4385,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:14054": {
       "title": "Asterix & Obelix Slap Them All! 2",
@@ -4594,11 +4600,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 5,
         "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:47:42.144736+00:00"
+        "attempted": "2026-11-03T09:05:49.834137+00:00"
       },
       "requirements": {
         "image": true,
@@ -4641,9 +4647,11 @@
       "basics_attempted": "2026-11-02T16:58:36.076321+00:00",
       "version": 1,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:47:44.208515+00:00",
+      "full_attempted": "2026-11-03T09:05:50.076226+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -4659,7 +4667,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:12658": {
       "title": "Asterix & Obelix XXXL: The Ram From Hibernia",
@@ -144506,7 +144515,7 @@
           "source_count": 10
         },
         "user": {
-          "score": 8.54,
+          "score": 8.53,
           "scale": 10,
           "sources": [
             {
@@ -144528,19 +144537,28 @@
               "platform": "PlayStation 5",
               "weight": 31.622776601683793,
               "normalized": 8.64
+            },
+            {
+              "score": 8.33,
+              "scale": 10,
+              "count": 3,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/as_dusk_falls",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 8.33
             }
           ],
-          "source_count": 2,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 10,
-        "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:47:15.690182+00:00"
+        "attempted": "2026-11-03T09:05:35.168269+00:00"
       },
       "requirements": {
         "image": true,
@@ -144589,7 +144607,7 @@
         "kind": "trailer",
         "source": "https://www.playstation.com/en-us/games/as-dusk-falls/"
       },
-      "full_attempted": "2026-11-02T19:47:16.191587+00:00",
+      "full_attempted": "2026-11-03T09:05:35.839451+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -144605,7 +144623,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:14998": {
       "title": "Astro Duel 2",
@@ -208521,11 +208540,11 @@
         "critic_index_complete": true,
         "critic_index_review_count": 0,
         "errors": [
-          "www.pushsquare.com/ps5: HTTP Error 403: Forbidden"
+          "Community: HTTP Error 404: Not Found"
         ],
         "platform": "PlayStation 5",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T19:47:39.446869+00:00"
+        "attempted": "2026-11-03T09:05:39.837540+00:00"
       },
       "requirements": {
         "image": true,
@@ -208568,9 +208587,11 @@
       "basics_attempted": "2026-11-02T17:11:25.535690+00:00",
       "version": 1,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found"
       },
-      "full_attempted": "2026-11-02T19:47:40.701319+00:00",
+      "full_attempted": "2026-11-03T09:05:40.092732+00:00",
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -208586,7 +208607,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:17421": {
       "title": "Asterix & Obelix - Mission Babylon",
@@ -292923,7 +292945,7 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 84.9,
+          "score": 85.8,
           "scale": 100,
           "sources": [
             {
@@ -292957,6 +292979,13 @@
               "date": "2019-03-07",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 95.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=assault-android-cactus-plus-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
             },
             {
               "name": "Nintendo Enthusiast",
@@ -293016,10 +293045,10 @@
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 11
+          "source_count": 12
         },
         "user": {
-          "score": 8.1,
+          "score": 7.93,
           "scale": 10,
           "sources": [
             {
@@ -293028,24 +293057,30 @@
               "scale": 10,
               "count": 43,
               "url": "https://www.metacritic.com/game/assault-android-cactus-plus/user-reviews/?platform=nintendo-switch",
-              "platform": "Switch",
+              "platform": "Nintendo Switch",
               "weight": 6.557438524302,
-              "normalized": 8.1,
-              "checked": "2026-11-02T19:47:21.668595+00:00"
+              "normalized": 8.1
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 7.7,
+              "scale": 10.0,
+              "count": 26,
+              "url": "https://www.nintendolife.com/games/switch-eshop/assault_android_cactusplus",
+              "platform": "Nintendo Switch",
+              "weight": 5.0990195135927845,
+              "normalized": 7.7
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 11,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:59:47.870892+00:00"
+        "attempted": "2026-11-03T09:05:50.869640+00:00"
       },
       "requirements": {
         "image": true,
@@ -293056,10 +293091,11 @@
       "version": 7,
       "errors": {
         "community": "HTTP Error 404: Not Found; HTTP Error 404: Not Found",
-        "nindie": "No exact scored Nintendo Switch review",
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:47:22.089887+00:00",
+      "full_attempted": "2026-11-03T09:05:52.921342+00:00",
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000010913/46d8aa5b12fe39b3108d17f6ca6d84ddd95b13d77d81d3fd47939426d05db5c9",
         "source": "https://www.nintendo.com/us/store/products/assault-android-cactus-plus-switch/",
@@ -293116,7 +293152,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:5242": {
       "title": "Asterix and Obelix XXL 3 - The Crystal Menhir",
@@ -364063,8 +364100,7 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.0,
-              "normalized": 1.0,
-              "checked": "2026-11-02T21:05:08.703682+00:00"
+              "normalized": 1.0
             }
           ],
           "source_count": 1,
@@ -364072,13 +364108,10 @@
         },
         "critic_index_complete": true,
         "critic_index_review_count": 0,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T23:00:22.813568+00:00"
+        "attempted": "2026-11-03T09:05:30.769579+00:00"
       },
       "requirements": {
         "image": true,
@@ -364095,10 +364128,13 @@
       "basics_attempted": "2026-11-02T23:00:22.813568+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:47:19.259549+00:00",
+      "full_attempted": "2026-11-03T09:05:33.185258+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/artifact-adventure-gaiden-dx-switch/",
@@ -364148,7 +364184,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:7769": {
       "title": "Assault ChaingunS KM",
@@ -364174,8 +364211,7 @@
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
               "weight": 1.7320508075688772,
-              "normalized": 6.0,
-              "checked": "2026-11-02T21:05:13.808448+00:00"
+              "normalized": 6.0
             }
           ],
           "source_count": 1,
@@ -364183,13 +364219,10 @@
         },
         "critic_index_complete": true,
         "critic_index_review_count": 0,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T23:00:22.814377+00:00"
+        "attempted": "2026-11-03T09:05:35.824646+00:00"
       },
       "requirements": {
         "image": true,
@@ -364206,10 +364239,13 @@
       "basics_attempted": "2026-11-02T23:00:22.814377+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:47:36.229149+00:00",
+      "full_attempted": "2026-11-03T09:05:38.538494+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/assault-chainguns-km-switch/",
@@ -364258,7 +364294,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:8024": {
       "title": "Assault On Metaltron",
@@ -364280,21 +364317,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/assault_on_metaltron",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
         "critic_index_complete": true,
         "critic_index_review_count": 0,
-        "errors": [
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:36:52.665596+00:00"
+        "attempted": "2026-11-03T09:05:45.699441+00:00"
       },
       "requirements": {
         "image": true,
@@ -364311,9 +364357,12 @@
       "basics_attempted": "2026-11-02T22:36:52.665596+00:00",
       "version": 7,
       "errors": {
-        "trailer": "HTTP Error 404: Not Found"
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:47:39.359563+00:00",
+      "full_attempted": "2026-11-03T09:05:47.769199+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/assault-on-metaltron-switch/",
@@ -364362,7 +364411,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:8006": {
       "title": "BFF or Die",
@@ -375541,14 +375591,31 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 80.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "Cubed3",
+              "score": 80,
+              "url": "http://www.cubed3.com/review/5290/1/art-of-balance-nintendo-switch.html",
+              "date": "2019-01-18",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2018/10/26/art-of-balance-review/",
+              "date": "2018-10-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
-          "score": 6.9,
+          "score": 7.1,
           "scale": 10,
           "sources": [
             {
@@ -375559,24 +375626,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/art_of_balance",
               "platform": "Nintendo Switch",
               "weight": 3.7416573867739413,
-              "normalized": 6.9,
-              "checked": "2026-11-02T19:47:19.460459+00:00"
+              "normalized": 6.9
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.3,
+              "scale": 10,
+              "count": 14,
+              "url": "https://www.metacritic.com/game/art-of-balance-touch/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.7416573867739413,
+              "normalized": 7.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "critic_index_complete": false,
-        "critic_index_review_count": null,
-        "errors": [
-          "Metacritic critics: HTTP Error 301: Moved Permanently",
-          "Metacritic users: HTTP Error 301: Moved Permanently",
-          "www.nintendolife.com/nintendo-switch: HTTP Error 403: Forbidden",
-          "www.nintendolife.com/switch-eshop: HTTP Error 403: Forbidden"
-        ],
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
         "platform": "Nintendo Switch",
         "algorithm_version": 1,
-        "attempted": "2026-11-02T22:37:21.631039+00:00"
+        "attempted": "2026-11-03T09:06:00.609450+00:00"
       },
       "requirements": {
         "image": true,
@@ -375593,10 +375664,13 @@
       "basics_attempted": "2026-11-02T22:37:21.631039+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review",
-        "trailer": "HTTP Error 404: Not Found"
+        "nindie": "No review profile indexed for this game",
+        "trailer": "HTTP Error 404: Not Found",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed"
       },
-      "full_attempted": "2026-11-02T19:47:20.186903+00:00",
+      "full_attempted": "2026-11-03T09:06:02.748654+00:00",
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/art-of-balance-switch/",
@@ -375645,7 +375719,8 @@
             }
           }
         }
-      }
+      },
+      "full_version": 7
     },
     "Switch:8405": {
       "title": "Astro Duel Deluxe",
