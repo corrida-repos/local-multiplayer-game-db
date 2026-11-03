@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:43:16.202311+00:00",
+  "updated": "2026-11-03T08:44:11.967922+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 2431,
+    "full_attempted": 2441,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -136338,6 +136338,7 @@
               "name": "KeenGamer",
               "score": 80,
               "url": "https://www.keengamer.com/articles/reviews/ps5-reviews/very-very-valet-review-chaotic-co-op-fun-ps5/",
+              "date": "2022-06-14",
               "platform": "PlayStation 5",
               "via": "Metacritic review index"
             },
@@ -136345,6 +136346,7 @@
               "name": "PlayStation Country",
               "score": 80,
               "url": "https://www.playstationcountry.com/very-very-valet-ps5-review/",
+              "date": "2022-06-14",
               "platform": "PlayStation 5",
               "via": "Metacritic review index"
             }
@@ -136359,7 +136361,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T23:37:51.775247+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:43:36.864630+00:00"
       },
       "requirements": {
         "image": true,
@@ -136371,7 +136380,10 @@
       "errors": {
         "store": "No exact Portugal PS5 product verified",
         "community": "HTTP Error 404: Not Found",
-        "psn": "No exact Portugal PS5 product verified"
+        "psn": "No exact Portugal PS5 product verified",
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "image": {
         "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000036326/67a8c6cfaf100b512b2b4bdcbb930335a9469d0b10677780aa890cb10a077bfd",
@@ -136414,7 +136426,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:43:38.147228+00:00",
+      "full_version": 7
     },
     "Switch:12805": {
       "title": "Volley Pals",
@@ -160826,15 +160840,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 4.48,
-              "count": 102,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.48,
               "scale": 5,
-              "source": "PSN",
+              "count": 102,
               "url": "https://store.playstation.com/pt-pt/product/EB0688-PPSA19939_00-0824396840965694",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:44:23.643991+00:00",
-              "platform": "PSN · PS5",
               "weight": 10.099504938362077,
               "normalized": 8.96
             }
@@ -160842,7 +160854,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:44:21.382390+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:43:31.726640+00:00"
       },
       "requirements": {
         "image": true,
@@ -160884,7 +160903,11 @@
       },
       "basics_attempted": "2026-11-02T18:44:21.382390+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -160900,7 +160923,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:43:32.215987+00:00",
+      "full_version": 7
     },
     "Switch:15588": {
       "title": "Vengeance Hunters",
@@ -160912,23 +160937,41 @@
           "sources": [
             {
               "name": "Nintendo Life",
-              "score": 70.0,
+              "score": 70,
               "url": "https://www.nintendolife.com/reviews/switch-eshop/vengeance-hunters",
+              "date": "2024-11-09",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 5.33,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 5.33,
+              "scale": 10,
+              "count": 3,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/vengeance_hunters",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.7320508075688772,
+              "normalized": 5.33
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:17.608844+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:43:34.180196+00:00"
       },
       "requirements": {
         "image": true,
@@ -160944,7 +160987,13 @@
       },
       "basics_attempted": "2026-11-02T22:54:17.608844+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/vengeance-hunters-switch/",
@@ -160993,7 +161042,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:43:36.942966+00:00",
+      "full_version": 7
     },
     "PS5:15469": {
       "title": "Willy's Wonderland - The Game",
@@ -182490,6 +182541,7 @@
               "name": "Video Chums",
               "score": 80,
               "url": "https://videochums.com/article/retro-gaming-fun-times#arcade-archives-viper-phase-1",
+              "date": "2024-12-30",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -182498,13 +182550,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 7.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 2,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/arcade_archives_viper_phase_1",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.4142135623730951,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:45:03.521546+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:44:04.203828+00:00"
       },
       "requirements": {
         "image": true,
@@ -182531,7 +182600,11 @@
       "basics_attempted": "2026-11-02T18:45:03.521546+00:00",
       "version": 3,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
@@ -182548,7 +182621,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:44:07.082685+00:00",
+      "full_version": 7
     },
     "PS5:16199": {
       "title": "Volley Pals",
@@ -194013,6 +194088,7 @@
               "name": "Pure Nintendo",
               "score": 80,
               "url": "https://purenintendo.com/review-vinebound-tangled-together-nintendo-switch/",
+              "date": "2025-05-15",
               "platform": "Nintendo Switch",
               "via": "Metacritic review index"
             }
@@ -194027,7 +194103,14 @@
           "source_count": 0,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:31.976378+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:44:08.855932+00:00"
       },
       "requirements": {
         "image": true,
@@ -194044,7 +194127,11 @@
       "basics_attempted": "2026-11-02T22:54:31.976378+00:00",
       "version": 7,
       "errors": {
-        "nindie": "Not a Switch 1 review"
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
       },
       "store_evidence": [
         {
@@ -194094,7 +194181,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:44:11.703903+00:00",
+      "full_version": 7
     },
     "Switch:16301": {
       "title": "Warrior Blade: Rastan Saga Episode III",
@@ -203276,26 +203365,49 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 75.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameGrin",
+              "score": 85,
+              "url": "https://www.gamegrin.com/reviews/vinebound-tangled-together-review/",
+              "date": "2025-04-03",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PlayStation Country",
+              "score": 60,
+              "url": "https://www.playstationcountry.com/vinebound-tangled-together-ps5-review/",
+              "date": "2025-05-05",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "TheSixthAxis",
+              "score": 80,
+              "url": "https://www.thesixthaxis.com/2025/08/07/vinebound-tangled-together-review-cute-colourful-co-op/",
+              "date": "2025-08-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 3
         },
         "user": {
           "score": 8.76,
           "scale": 10,
           "sources": [
             {
-              "score": 4.38,
-              "count": 29,
-              "scope": "PSN · PS5",
               "name": "PSN",
+              "score": 4.38,
               "scale": 5,
-              "source": "PSN",
+              "count": 29,
               "url": "https://store.playstation.com/pt-pt/product/EP6985-PPSA27224_00-0454678499823191",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:45:05.693770+00:00",
-              "platform": "PSN · PS5",
               "weight": 5.385164807134504,
               "normalized": 8.76
             }
@@ -203303,7 +203415,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:45:03.521004+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 3,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:43:41.811279+00:00"
       },
       "requirements": {
         "image": true,
@@ -203345,7 +203464,11 @@
       },
       "basics_attempted": "2026-11-02T18:45:03.521004+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -203361,7 +203484,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:43:42.690653+00:00",
+      "full_version": 7
     },
     "Switch:16837": {
       "title": "Welcome to Empyreum",
@@ -284079,22 +284204,143 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 79.8,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 80.0,
-              "url": "https://www.nintendolife.com/reviews/nintendo-switch/victor_vran_overkill_edition",
+              "name": "4P.de",
+              "score": 83,
+              "url": "http://www.4players.de/4players.php/dispbericht/Switch/Test/35073/83364/0/Victor_Vran.html",
+              "date": "2018-08-30",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Cubed3",
+              "score": 50,
+              "url": "http://www.cubed3.com/review/5111/1/victor-vran-overkill-edition-nintendo-switch.html",
+              "date": "2018-10-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "DarkStation",
+              "score": 90,
+              "url": "http://www.darkstation.com/reviews/victor-vran-overkill-edition-review",
+              "date": "2018-09-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Digitally Downloaded",
+              "score": 70,
+              "url": "http://www.digitallydownloaded.net/2018/09/review-victor-vran-overkill-edition.html",
+              "date": "2018-09-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpace",
+              "score": 87,
+              "url": "https://www.gamespace.com/reviews/victor-vran-overkill-edition-review-2/",
+              "date": "2018-08-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 80,
+              "url": "https://www.godisageek.com/reviews/switch-report-review-28-freedom-planet-god-wars-victor-vran-2064-read-memories/",
+              "date": "2018-09-05",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 85.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=victor-vran-overkill-edition-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 91,
+              "url": "https://www.nintenderos.com/2018/09/analisis-victor-vran-overkill-edition/",
+              "date": "2018-09-09",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Insider",
+              "score": 80,
+              "url": "https://www.nintendo-insider.com/victor-vran-overkill-edition-review/",
+              "date": "2018-09-10",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 80,
+              "url": "http://www.nintendolife.com/reviews/nintendo-switch/victor_vran_overkill_edition",
+              "date": "2018-09-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/48175/victor-vran-overkill-edition-switch-review",
+              "date": "2018-08-31",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendojo",
+              "score": 75,
+              "url": "http://www.nintendojo.com/reviews/review-victor-vran-overkill-edition-switch",
+              "date": "2018-09-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 75.0,
+              "url": "https://purenintendo.com/review-victor-vran-overkill-edition-nintendo-switch/",
+              "platform": "Nintendo Switch",
+              "original_score": 7.5,
+              "original_scale": 10.0,
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Quarter to Three",
+              "score": 80,
+              "url": "https://www.quartertothree.com/fp/2018/08/31/cue-moondance-for-victor-vran-on-the-switch-no-seriously-cue-moondance/",
+              "date": "2018-09-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 80,
+              "url": "http://switchplayer.net/2018/09/23/victor-vran-overkill-edition-review/",
+              "date": "2018-09-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 80,
+              "url": "https://worthplaying.com/article/2018/10/15/reviews/111267/",
+              "date": "2018-10-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 16
         },
         "user": {
-          "score": 7.8,
+          "score": 7.89,
           "scale": 10,
           "sources": [
             {
@@ -284105,14 +284351,28 @@
               "url": "https://www.nintendolife.com/games/nintendo-switch/victor_vran_overkill_edition",
               "platform": "Nintendo Switch",
               "weight": 5.291502622129181,
-              "normalized": 7.800000000000001,
-              "checked": "2026-11-02T18:45:03.520333+00:00"
+              "normalized": 7.800000000000001
+            },
+            {
+              "name": "Metacritic users",
+              "score": 8,
+              "scale": 10,
+              "count": 20,
+              "url": "https://www.metacritic.com/game/victor-vran-overkill-edition/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 4.47213595499958,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:31.976157+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 15,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:43:54.050005+00:00"
       },
       "requirements": {
         "image": true,
@@ -284128,7 +284388,10 @@
       },
       "basics_attempted": "2026-11-02T22:54:31.976157+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/victor-vran-overkill-edition-switch/",
@@ -284178,7 +284441,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:43:56.821030+00:00",
+      "full_version": 7
     },
     "Switch:5205": {
       "title": "WHIP! WHIP!",
@@ -300650,13 +300915,30 @@
           "source_count": 1
         },
         "user": {
-          "score": null,
+          "score": 1.0,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "score": 1.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/vertical_drop_heroes_hd",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 1.0
+            }
+          ],
+          "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:17.888385+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:43:39.046152+00:00"
       },
       "requirements": {
         "image": true,
@@ -300672,7 +300954,12 @@
       },
       "basics_attempted": "2026-11-02T22:54:17.888385+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/vertical-drop-heroes-hd-switch/",
@@ -300721,7 +301008,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:43:41.498595+00:00",
+      "full_version": 7
     },
     "Switch:5225": {
       "title": "Wizard of Legend",
@@ -339402,22 +339691,102 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 79.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 70.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/vitamin_connection",
+              "name": "ComicBook",
+              "score": 80,
+              "url": "https://comicbook.com/gaming/2020/03/19/review-vitamin-connection-nintendo-switch/",
+              "date": "2020-04-04",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 60,
+              "url": "https://fnintendo.net/article/13533-vitamin-connection",
+              "date": "2020-02-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSkinny",
+              "score": 90,
+              "url": "https://www.gameskinny.com/rb827/vitamin-connection-review-take-your-medicine",
+              "date": "2020-04-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Hobby Consolas",
+              "score": 84,
+              "url": "https://www.hobbyconsolas.com/reviews/analisis-vitamin-connection-nintendo-switch-pequenos-juegos-hacen-grandes-cosas-585787",
+              "date": "2020-02-21",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 80.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=vitamin-connection-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 85,
+              "url": "",
+              "date": "2020-05-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 70,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/vitamin_connection",
+              "date": "2020-02-22",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 90,
+              "url": "http://www.nintendoworldreport.com/review/52923/vitamin-connection-switch-review",
+              "date": "2020-02-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 70,
+              "url": "https://purenintendo.com/review-vitamin-connection-nintendo-switch/",
+              "date": "2020-03-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/2d-switch-games#vitamin-connection",
+              "date": "2020-02-27",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 85,
+              "url": "https://worthplaying.com/article/2020/4/23/reviews/119147/",
+              "date": "2020-04-23",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 11
         },
         "user": {
-          "score": 6.5,
+          "score": 7.05,
           "scale": 10,
           "sources": [
             {
@@ -339428,14 +339797,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/vitamin_connection",
               "platform": "Nintendo Switch",
               "weight": 2.449489742783178,
-              "normalized": 6.5,
-              "checked": "2026-11-02T18:45:03.521933+00:00"
+              "normalized": 6.5
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 15,
+              "url": "https://www.metacritic.com/game/vitamin-connection/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 3.872983346207417,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:31.976608+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:43:59.021536+00:00"
       },
       "requirements": {
         "image": true,
@@ -339451,7 +339834,10 @@
       },
       "basics_attempted": "2026-11-02T22:54:31.976608+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/vitamin-connection-switch/",
@@ -339500,7 +339886,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:44:01.224485+00:00",
+      "full_version": 7
     },
     "Switch:7250": {
       "title": "Voxel Pirates",
@@ -378400,28 +378788,119 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 80.0,
+          "score": 74.9,
           "scale": 100,
           "sources": [
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2021/05/very-very-valet-review/",
+              "date": "2021-05-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Gamezebo",
+              "score": 80,
+              "url": "https://www.gamezebo.com/2021/06/02/very-very-valet-switch-review-cab-tastrophe/",
+              "date": "2021-06-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 70,
+              "url": "https://www.godisageek.com/reviews/very-very-valet-nintendo-switch-review/",
+              "date": "2021-06-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 72,
+              "url": "https://multiplayer.it/recensioni/very-very-valet-recensione.html",
+              "date": "2021-05-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 80.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=very-very-valet-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 75,
+              "url": "https://www.nintendoworldreport.com/review/57095/very-very-valet-switch-review",
+              "date": "2021-05-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Twinfinite",
+              "score": 60,
+              "url": "https://twinfinite.net/2021/05/very-very-valet-review/",
+              "date": "2021-05-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vandal",
+              "score": 77,
+              "url": "https://vandal.elespanol.com/analisis/switch/very-very-valet/98830#p-83",
+              "date": "2021-05-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 80,
+              "url": "https://videochums.com/article/pick-up-and-play-indie-games-part-3#very-very-valet",
+              "date": "2021-05-25",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 9
         },
         "user": {
-          "score": null,
+          "score": 7.51,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.7,
+              "scale": 10,
+              "count": 7,
+              "url": "https://www.metacritic.com/game/very-very-valet/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.6457513110645907,
+              "normalized": 7.7
+            },
+            {
+              "score": 7.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/very_very_valet",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 7.0
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:54:19.112019+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 8,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T08:43:44.222235+00:00"
       },
       "requirements": {
         "image": true,
@@ -378437,7 +378916,11 @@
       },
       "basics_attempted": "2026-11-02T22:54:19.112019+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/very-very-valet-switch/",
@@ -378486,7 +378969,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T08:43:46.978427+00:00",
+      "full_version": 7
     },
     "Switch:8287": {
       "title": "Wild Guns",
