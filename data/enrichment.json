@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T07:44:30.955527+00:00",
+  "updated": "2026-11-03T07:45:09.688869+00:00",
   "version": 7,
   "coverage": {
     "total": 2544,
@@ -8,7 +8,7 @@
     "missing_image": 109,
     "missing_store": 274,
     "missing_rating": 441,
-    "full_attempted": 1881,
+    "full_attempted": 1891,
     "image_health_pending": 0
   },
   "coverage_policy": "portugal-minimum-v1",
@@ -95478,26 +95478,33 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 70.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "PlayStation Country",
+              "score": 70,
+              "url": "https://www.playstationcountry.com/riddled-corpses-ex-ps5-review/",
+              "date": "2022-07-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 8.84,
           "scale": 10,
           "sources": [
             {
-              "score": 4.42,
-              "count": 566,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.42,
               "scale": 5,
-              "source": "PSN",
+              "count": 566,
               "url": "https://store.playstation.com/pt-pt/product/EP1762-PPSA06875_00-RIDDLEDPS5000000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:11:40.977132+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 23.790754506740637,
               "normalized": 8.84
             }
@@ -95505,7 +95512,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:11:37.310682+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:44:47.903026+00:00"
       },
       "requirements": {
         "image": true,
@@ -95547,7 +95561,11 @@
       },
       "basics_attempted": "2026-11-02T18:11:37.310682+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -95563,18 +95581,29 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:44:48.305385+00:00",
+      "full_version": 7
     },
     "Switch:13099": {
       "title": "Risk of Rain Returns",
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 100.0,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "TouchArcade",
+              "score": 100,
+              "url": "https://toucharcade.com/2023/11/13/mgs-master-collection-switch-review-risk-of-rain-returns-online-star-ocean-second-story-vs-ps5/",
+              "date": "2023-11-14",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 1
         },
         "user": {
           "score": 7.8,
@@ -95588,14 +95617,18 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/risk_of_rain_returns",
               "platform": "Nintendo Switch",
               "weight": 4.358898943540674,
-              "normalized": 7.800000000000001,
-              "checked": "2026-11-02T18:11:56.470214+00:00"
+              "normalized": 7.800000000000001
             }
           ],
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:46:37.630179+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 1,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:44:55.926097+00:00"
       },
       "requirements": {
         "image": true,
@@ -95611,7 +95644,13 @@
       },
       "basics_attempted": "2026-11-02T22:46:37.630179+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/risk-of-rain-returns-switch/",
@@ -95660,7 +95699,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:44:59.564248+00:00",
+      "full_version": 7
     },
     "PS5:11457": {
       "title": "River City Girls Zero",
@@ -137898,15 +137939,13 @@
           "scale": 10,
           "sources": [
             {
-              "score": 3.41,
-              "count": 309,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 3.41,
               "scale": 5,
-              "source": "PSN",
+              "count": 309,
               "url": "https://store.playstation.com/pt-pt/product/EP2005-PPSA16960_00-RICHMANELEVEN000",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:11:39.549372+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 17.578395831246947,
               "normalized": 6.82
             }
@@ -137914,7 +137953,14 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:11:37.310370+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [
+          "Community: HTTP Error 404: Not Found"
+        ],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:44:52.905434+00:00"
       },
       "requirements": {
         "image": true,
@@ -137956,7 +138002,11 @@
       },
       "basics_attempted": "2026-11-02T18:11:37.310370+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "composites": "Community: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -137972,7 +138022,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:44:54.385015+00:00",
+      "full_version": 7
     },
     "PS5:15451": {
       "title": "Rugrats: Adventures in Gameland",
@@ -147151,27 +147203,51 @@
           "source_count": 0
         },
         "user": {
-          "score": 9.04,
+          "score": 9.01,
           "scale": 10,
           "sources": [
             {
-              "score": 4.52,
-              "count": 12528,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.52,
               "scale": 5,
-              "source": "PSN",
+              "count": 12528,
               "url": "https://store.playstation.com/pt-pt/product/EP0290-PPSA06517_00-RISKOFRAIN2SIEE0",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:11:42.113914+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 9.04
+            },
+            {
+              "name": "Metacritic users",
+              "score": 9,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/risk-of-rain-2/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.0,
+              "normalized": 9.0
+            },
+            {
+              "score": 8.0,
+              "scale": 10,
+              "count": 1,
+              "name": "Push Square",
+              "url": "https://www.pushsquare.com/games/ps5/risk_of_rain_2",
+              "platform": "PlayStation 5",
+              "via": "Published game-profile rating panel",
+              "weight": 1.0,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:11:39.486486+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 0,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:44:58.160310+00:00"
       },
       "requirements": {
         "image": true,
@@ -147213,7 +147289,9 @@
       },
       "basics_attempted": "2026-11-02T18:11:39.486486+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -147229,7 +147307,15 @@
             }
           }
         }
-      }
+      },
+      "trailer": {
+        "id": "pJ-aR--gScM",
+        "title": "Risk of Rain 2 - Console Launch Cinematic Trailer | PS4",
+        "kind": "trailer",
+        "source": "https://www.playstation.com/en-us/games/risk-of-rain-2/"
+      },
+      "full_attempted": "2026-11-03T07:44:58.571878+00:00",
+      "full_version": 7
     },
     "Switch:15714": {
       "title": "River City Saga: Three Kingdoms Next",
@@ -261876,28 +261962,71 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 70.0,
+          "score": 73.3,
           "scale": 100,
           "sources": [
+            {
+              "name": "Cubed3",
+              "score": 70,
+              "url": "http://www.cubed3.com/review/5387/1/riddled-corpses-ex-nintendo-switch.html",
+              "date": "2019-03-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
             {
               "name": "Nindie Spotlight",
               "score": 70.0,
               "url": "https://www.nindiespotlight.com/game_profile.cfm?game=riddled-corpses-ex-switch",
               "platform": "Nintendo Switch",
               "via": "Direct console-specific review"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/riddled-corpses-ex-nintendo-switch/",
+              "date": "2019-03-24",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 3
         },
         "user": {
-          "score": null,
+          "score": 6.92,
           "scale": 10,
-          "sources": [],
-          "source_count": 0,
+          "sources": [
+            {
+              "name": "Metacritic users",
+              "score": 7.8,
+              "scale": 10,
+              "count": 8,
+              "url": "https://www.metacritic.com/game/riddled-corpses-ex/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 2.8284271247461903,
+              "normalized": 7.800000000000001
+            },
+            {
+              "score": 5.8,
+              "scale": 10,
+              "count": 5,
+              "name": "Nintendo Life",
+              "url": "https://www.nintendolife.com/games/switch-eshop/riddled_corpses_ex",
+              "platform": "Nintendo Switch",
+              "via": "Published game-profile rating panel",
+              "weight": 2.23606797749979,
+              "normalized": 5.8
+            }
+          ],
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:46:37.629881+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:45:00.992812+00:00"
       },
       "requirements": {
         "image": true,
@@ -261913,7 +262042,11 @@
       },
       "basics_attempted": "2026-11-02T22:46:37.629881+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/riddled-corpses-ex-switch/",
@@ -261962,7 +262095,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:45:03.090335+00:00",
+      "full_version": 7
     },
     "Switch:5397": {
       "title": "Shift Happens",
@@ -273542,22 +273677,118 @@
       "platform": "Switch",
       "ratings": {
         "critic": {
-          "score": 90.0,
+          "score": 81.5,
           "scale": 100,
           "sources": [
             {
-              "name": "Nintendo Life",
-              "score": 90.0,
-              "url": "https://www.nintendolife.com/reviews/switch-eshop/river_city_girls",
+              "name": "Atomix",
+              "score": 90,
+              "url": "https://atomix.vg/review-river-city-girls/",
+              "date": "2019-09-12",
               "platform": "Nintendo Switch",
-              "via": "Nintendo Life"
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "FNintendo",
+              "score": 80,
+              "url": "https://fnintendo.net/article/12946-river-city-girls",
+              "date": "2019-09-16",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Game Informer",
+              "score": 70,
+              "url": "https://www.gameinformer.com/review/river-city-girls/river-city-girls-review-trading-punches",
+              "date": "2019-09-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN Japan",
+              "score": 80,
+              "url": "https://jp.ign.com/river-city-girls/38406/review/river-city-girls",
+              "date": "2019-10-08",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 90.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=river-city-girls-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 80,
+              "url": "https://www.nintenderos.com/2019/09/analisis-river-city-girls-para-nintendo-switch/",
+              "date": "2019-09-15",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Enthusiast",
+              "score": 75,
+              "url": "https://www.nintendoenthusiast.com/2019/09/10/river-city-girls-review-for-nintendo-switch-rebels-with-a-cause/",
+              "date": "2019-09-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Force Magazine",
+              "score": 95,
+              "url": "",
+              "date": "2020-04-28",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nintendo Life",
+              "score": 90,
+              "url": "http://www.nintendolife.com/reviews/switch-eshop/river_city_girls",
+              "date": "2019-09-04",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 80,
+              "url": "http://www.nintendoworldreport.com/review/51634/river-city-girls-switch-review",
+              "date": "2019-09-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 80,
+              "url": "https://purenintendo.com/review-river-city-girls-nintendo-switch/",
+              "date": "2019-09-11",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "USgamer",
+              "score": 70,
+              "url": "https://www.usgamer.net/articles/river-city-girls-review",
+              "date": "2019-09-06",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Vooks",
+              "score": 80,
+              "url": "https://www.vooks.net/river-city-girls-switch-review/",
+              "date": "2019-09-17",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
             }
           ],
           "method": "equal-weight-unique-publications",
-          "source_count": 1
+          "source_count": 13
         },
         "user": {
-          "score": 7.7,
+          "score": 7.56,
           "scale": 10,
           "sources": [
             {
@@ -273568,14 +273799,28 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/river_city_girls",
               "platform": "Nintendo Switch",
               "weight": 10.246950765959598,
-              "normalized": 7.7,
-              "checked": "2026-11-02T18:11:56.470859+00:00"
+              "normalized": 7.7
+            },
+            {
+              "name": "Metacritic users",
+              "score": 7.4,
+              "scale": 10,
+              "count": 78,
+              "url": "https://www.metacritic.com/game/river-city-girls/user-reviews/?platform=nintendo-switch",
+              "platform": "Nintendo Switch",
+              "weight": 8.831760866327848,
+              "normalized": 7.4
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T22:46:37.631424+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 12,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:45:06.047516+00:00"
       },
       "requirements": {
         "image": true,
@@ -273591,7 +273836,10 @@
       },
       "basics_attempted": "2026-11-02T22:46:37.631424+00:00",
       "version": 7,
-      "errors": {},
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "store_evidence": [
         {
           "url": "https://www.nintendo.com/us/store/products/river-city-girls-switch/",
@@ -273640,7 +273888,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:45:08.220727+00:00",
+      "full_version": 7
     },
     "Switch:5914": {
       "title": "Riverbond",
@@ -364146,34 +364396,64 @@
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 82.5,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "COGconnected",
+              "score": 85,
+              "url": "https://cogconnected.com/review/river-city-girls-review-high-school-saviors/",
+              "date": "2022-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2022/01/river-city-girls-ps5-review/",
+              "date": "2022-01-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 2
         },
         "user": {
-          "score": 9.14,
+          "score": 8.97,
           "scale": 10,
           "sources": [
             {
-              "score": 4.57,
-              "count": 1842,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.57,
               "scale": 5,
-              "source": "PSN",
+              "count": 1842,
               "url": "https://store.playstation.com/pt-pt/product/EP8916-PPSA04076_00-RIVERCITYGIRLSEU",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:11:57.474719+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 31.622776601683793,
               "normalized": 9.14
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.3,
+              "scale": 10,
+              "count": 4,
+              "url": "https://www.metacritic.com/game/river-city-girls/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.0,
+              "normalized": 6.3
             }
           ],
-          "source_count": 1,
+          "source_count": 2,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:11:56.470422+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 2,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:45:03.783049+00:00"
       },
       "requirements": {
         "image": true,
@@ -364215,7 +364495,10 @@
       },
       "basics_attempted": "2026-11-02T18:11:56.470422+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -364231,41 +364514,147 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:45:04.306882+00:00",
+      "full_version": 7
     },
     "PS5:9984": {
       "title": "River City Girls 2",
       "platform": "PS5",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 74.3,
           "scale": 100,
-          "sources": [],
+          "sources": [
+            {
+              "name": "GameMAG",
+              "score": 60,
+              "url": "https://gamemag.ru/reviews/river-city-girls-2ps5-review",
+              "date": "2023-01-27",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "GameSpew",
+              "score": 80,
+              "url": "https://www.gamespew.com/2022/12/river-city-girls-2-review/",
+              "date": "2022-12-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "God is a Geek",
+              "score": 85,
+              "url": "https://www.godisageek.com/reviews/river-city-girls-2-review/",
+              "date": "2022-12-21",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "IGN",
+              "score": 80,
+              "url": "https://www.ign.com/articles/river-city-girls-2-review",
+              "date": "2022-12-14",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Multiplayer.it",
+              "score": 75,
+              "url": "https://multiplayer.it/recensioni/river-city-girls-2-recensione.html",
+              "date": "2022-12-29",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PLAY",
+              "score": 70,
+              "url": "",
+              "date": "2023-02-11",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "PSX Brasil",
+              "score": 60,
+              "url": "https://psxbrasil.com.br/analise/river-city-girls-2-review/",
+              "date": "2022-12-20",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "RPGamer",
+              "score": 70,
+              "url": "https://rpgamer.com/review/river-city-girls-2-review/",
+              "date": "2025-01-07",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Video Chums",
+              "score": 83,
+              "url": "https://videochums.com/review/river-city-girls-ii",
+              "date": "2022-12-15",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Worth Playing",
+              "score": 80,
+              "url": "https://worthplaying.com/article/2022/12/13/reviews/135110-ps5-review-river-city-girls-2/",
+              "date": "2022-12-13",
+              "platform": "PlayStation 5",
+              "via": "Metacritic review index"
+            }
+          ],
           "method": "equal-weight-unique-publications",
-          "source_count": 0
+          "source_count": 10
         },
         "user": {
-          "score": 9.3,
+          "score": 8.98,
           "scale": 10,
           "sources": [
             {
-              "score": 4.65,
-              "count": 913,
-              "scope": "PSN · PS4/PS5",
               "name": "PSN (PS4/PS5 shared product)",
+              "score": 4.65,
               "scale": 5,
-              "source": "PSN",
+              "count": 913,
               "url": "https://store.playstation.com/pt-pt/product/EP8916-PPSA07250_00-RCG20000PS5000EU",
+              "platform": "PlayStation 5",
               "checked": "2026-11-02T18:11:58.536492+00:00",
-              "platform": "PSN · PS4/PS5",
               "weight": 30.215889859476256,
               "normalized": 9.3
+            },
+            {
+              "name": "Metacritic users",
+              "score": 6.4,
+              "scale": 10,
+              "count": 8,
+              "url": "https://www.metacritic.com/game/river-city-girls-2/user-reviews/?platform=playstation-5",
+              "platform": "PlayStation 5",
+              "weight": 2.8284271247461903,
+              "normalized": 6.4
+            },
+            {
+              "name": "Push Square",
+              "score": 8.0,
+              "scale": 10.0,
+              "count": 6,
+              "url": "https://www.pushsquare.com/games/ps5/river_city_girls_2",
+              "platform": "PlayStation 5",
+              "weight": 2.449489742783178,
+              "normalized": 8.0
             }
           ],
-          "source_count": 1,
+          "source_count": 3,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-02T18:11:56.471195+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 10,
+        "errors": [],
+        "platform": "PlayStation 5",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:45:08.156609+00:00"
       },
       "requirements": {
         "image": true,
@@ -364307,7 +364696,10 @@
       },
       "basics_attempted": "2026-11-02T18:11:56.471195+00:00",
       "version": 3,
-      "errors": {},
+      "errors": {
+        "psu": "No exact console review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
       "coverage_policy": "portugal-minimum-v1",
       "field_status": {
         "image": {
@@ -364323,7 +364715,9 @@
             }
           }
         }
-      }
+      },
+      "full_attempted": "2026-11-03T07:45:09.471693+00:00",
+      "full_version": 7
     },
     "Switch:9982": {
       "title": "River City Girls 2",
@@ -365762,10 +366156,67 @@
       "coverage_policy": "portugal-minimum-v1",
       "ratings": {
         "critic": {
-          "score": null,
+          "score": 60.7,
           "scale": 100,
-          "source_count": 0,
-          "sources": []
+          "sources": [
+            {
+              "name": "God is a Geek",
+              "score": 70,
+              "url": "https://www.godisageek.com/reviews/cannibal-cuisine-nintendo-switch-review/",
+              "date": "2020-05-19",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Nindie Spotlight",
+              "score": 68.0,
+              "url": "https://www.nindiespotlight.com/game_profile.cfm?game=cannibal-cuisine-switch",
+              "platform": "Nintendo Switch",
+              "via": "Direct console-specific review"
+            },
+            {
+              "name": "Nintenderos",
+              "score": 62,
+              "url": "https://www.nintenderos.com/2020/06/analisis-cannibal-cuisine-para-nintendo-switch/",
+              "date": "2020-06-26",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "NintendoWorldReport",
+              "score": 60,
+              "url": "http://www.nintendoworldreport.com/review/53888/cannibal-cuisine-switch-review",
+              "date": "2020-06-01",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Pure Nintendo",
+              "score": 65,
+              "url": "https://purenintendo.com/review-cannibal-cuisine-nintendo-switch/",
+              "date": "2020-05-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Screen Rant",
+              "score": 50,
+              "url": "https://screenrant.com/cannibal-cuisine-game-review/",
+              "date": "2020-07-03",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            },
+            {
+              "name": "Switch Player",
+              "score": 50,
+              "url": "http://switchplayer.net/2020/05/19/cannibal-cuisine-review/",
+              "date": "2020-05-20",
+              "platform": "Nintendo Switch",
+              "via": "Metacritic review index"
+            }
+          ],
+          "method": "equal-weight-unique-publications",
+          "source_count": 7
         },
         "user": {
           "score": 1.0,
@@ -365779,7 +366230,6 @@
               "url": "https://www.nintendolife.com/games/switch-eshop/cannibal_cuisine",
               "platform": "Nintendo Switch",
               "via": "Published game-profile rating panel",
-              "checked": "2026-11-03T07:44:20.145810+00:00",
               "weight": 1.0,
               "normalized": 1.0
             }
@@ -365787,7 +366237,12 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T07:44:18.914240+00:00"
+        "critic_index_complete": true,
+        "critic_index_review_count": 6,
+        "errors": [],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:44:45.851057+00:00"
       },
       "requirements": {
         "image": true,
@@ -365863,7 +366318,12 @@
       },
       "basics_attempted": "2026-11-03T07:44:18.914240+00:00",
       "version": 7,
-      "errors": {}
+      "errors": {
+        "slush": "No scored Switch review indexed",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-03T07:44:49.441418+00:00",
+      "full_version": 7
     },
     "Switch:6818": {
       "title": "Life Force",
@@ -365887,7 +366347,6 @@
               "count": 6,
               "url": "https://www.nintendolife.com/games/switch-eshop/arcade_archives_life_force",
               "platform": "Nintendo Switch",
-              "checked": "2026-11-03T07:44:25.180169+00:00",
               "weight": 2.449489742783178,
               "normalized": 5.300000000000001
             }
@@ -365895,7 +366354,15 @@
           "source_count": 1,
           "method": "sqrt-votes-capped-at-1000-per-community"
         },
-        "attempted": "2026-11-03T07:44:18.914382+00:00"
+        "critic_index_complete": false,
+        "critic_index_review_count": null,
+        "errors": [
+          "Metacritic critics: HTTP Error 404: Not Found",
+          "Metacritic users: HTTP Error 404: Not Found"
+        ],
+        "platform": "Nintendo Switch",
+        "algorithm_version": 1,
+        "attempted": "2026-11-03T07:44:50.707031+00:00"
       },
       "requirements": {
         "image": true,
@@ -365981,8 +366448,16 @@
       "basics_attempted": "2026-11-03T07:44:18.914382+00:00",
       "version": 7,
       "errors": {
-        "nintendo": "No exact Portuguese Switch listing verified"
-      }
+        "nintendo": "No exact Portuguese Switch listing verified",
+        "nindie": "No review profile indexed for this game",
+        "slush": "No scored Switch review indexed",
+        "nwr": "No exact console review indexed",
+        "pure": "No exact console review indexed",
+        "composites": "Metacritic critics: HTTP Error 404: Not Found; Metacritic users: HTTP Error 404: Not Found",
+        "trailer": "HTTP Error 404: Not Found"
+      },
+      "full_attempted": "2026-11-03T07:44:53.216925+00:00",
+      "full_version": 7
     }
   }
 }
