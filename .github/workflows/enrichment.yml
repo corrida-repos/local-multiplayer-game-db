@@ -1,7 +1,7 @@
 name: Catch up all game enrichment
 on:
   schedule:
-    - cron: '17 * * * *'
+    - cron: '17 10 * * *'  # daily safety net ~4h after the 06:23 scrape; workflow_run covers the scrape itself
   workflow_dispatch:
     inputs:
       game_ids:
