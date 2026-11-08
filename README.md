@@ -30,6 +30,7 @@ Os workflows agendados correm no ramo predefinido. `contents: write` permite atu
 - Utilizadores Switch: Metacritic, **0–10**, com pelo menos quatro avaliações nessa plataforma (o mínimo para apresentar uma média).
 - Utilizadores PS5: PlayStation Store Portugal (PSN), **0–5**. Certos produtos partilham a classificação PS4/PS5; o detalhe está no título da ligação.
 - Cada nota tem fonte e data de consulta próprias. Falhas temporárias mantêm a última nota obtida. Ausência de avaliações ou falta de correspondência segura aparece como **Sem nota**.
+- **Exclusão por nota baixa:** jogos com user score ≤ 4/10 (≤ 2/5 na escala PSN), resolvido como no site (composta mais recente, senão nota de fonte única), são apagados da tabela `games` e de `catalog.json` em cada exportação (`scripts/score_filter.py`). `catalog.json` indica quantos em `excluded_low_user_score`. Jogos sem user score mantêm-se. O site aplica a mesma regra para esconder de imediato jogos que recebam uma nota baixa entre exportações. Os dados de enriquecimento ficam guardados para a exclusão se manter; como deixam de estar no catálogo, as notas desses jogos já não são atualizadas.
 - URLs Metacritic são descobertas a partir do nome, com exceções explícitas para edições; conceitos PSN são obtidos nas páginas oficiais ou mapeados para URLs oficiais confirmadas. Jogos sem correspondência ficam sem nota até haver uma fonte válida.
 
 ## Frontend

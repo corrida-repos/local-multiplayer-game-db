@@ -1,6 +1,8 @@
 """Incremental, rate-limited local co-op catalogue. Python standard library only."""
 import argparse, datetime as dt, html, json, re, sqlite3, time, urllib.request, urllib.robotparser
 from pathlib import Path
+try: from scripts import score_filter
+except ImportError: import score_filter
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://www.co-optimus.com'
 AGENT = 'SofaDuoCatalog/1.0 (+https://github.com/corrida-repos/local-multiplayer-game-db)'
@@ -74,9 +76,14 @@ def export_catalog(db,urls,errors):
         keys=list(game);db.execute(f"INSERT OR REPLACE INTO games({','.join(keys)}) VALUES({','.join('?' for _ in keys)})",list(game.values()))
     db.commit()
     games=[dict(row) for row in db.execute('SELECT * FROM games ORDER BY title,platform')]
+    # Games whose user score is <= 4/10 (<= 2/5) are removed from the database and the public catalogue.
+    low=score_filter.low_rated_keys(games,score_filter.load_sources(ROOT))
+    if low:
+        db.executemany('DELETE FROM games WHERE platform=? AND id=?',[tuple(key.split(':',1)) for key in sorted(low)]);db.commit()
+        games=[game for game in games if f"{game['platform']}:{game['id']}" not in low]
     inventory=set(urls);active=[row for row in db.execute('SELECT url,checked FROM pages') if row['url'] in inventory]
     checked=sum(row['checked'] is not None for row in active);pending=len(active)-checked
-    report={'updated':dt.datetime.now(dt.timezone.utc).isoformat(),'discovered':len(set(urls)), 'checked':checked,'pending':pending,'coverage_complete':pending==0,'errors':len(errors),'games':games}
+    report={'updated':dt.datetime.now(dt.timezone.utc).isoformat(),'discovered':len(set(urls)), 'checked':checked,'pending':pending,'coverage_complete':pending==0,'errors':len(errors),'excluded_low_user_score':len(low),'games':games}
     (ROOT/'data/catalog.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (ROOT/'data/last-run.json').write_text(json.dumps({'checked':checked,'pending':pending,'errors':errors},indent=2)+'\n',encoding='utf-8')
     return report
