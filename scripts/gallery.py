@@ -10,7 +10,7 @@ MAX_SHOTS=8
 STEAM_HOSTS=('shared.akamai.steamstatic.com','cdn.akamai.steamstatic.com','shared.fastly.steamstatic.com','cdn.cloudflare.steamstatic.com')
 YOUTUBE_SEARCH='https://www.youtube.com/results?search_query='
 YOUTUBE_HEADERS={'Accept-Language':'en-GB,en;q=0.8','Cookie':'CONSENT=YES+cb; SOCS=CAI'}
-REJECT=re.compile(r'\b(review|reaction|reacts?|walkthrough|let.?s play|playthrough|longplay|part \d|episode|ep\.? ?\d|mods?|fan.?made|fanmade|concept|comparison|vs\.?|versus|speedrun|tier list|tips|guide|tutorial|ending|boss|livestream|stream|unboxing|music|soundtrack|ost|theme song|dlc|expansion|season pass|costume|pack|interview|developer diary|behind the scenes|ranking|top \d+|meme|parody|shorts?|cutscenes?|movie|film|first \d+ minutes|minutes of|hours?)\b',re.I)
+REJECT=re.compile(r'\b(review|reaction|reacts?|walkthrough|let.?s play|playthrough|longplay|part \d|episode|ep\.? ?\d|mods?|fan.?made|fanmade|concept|comparison|vs\.?|versus|speedrun|tier list|tips|guide|tutorial|ending|boss|livestream|stream|unboxing|music|soundtrack|ost|theme song|dlc|expansion|season pass|costume|pack|interview|developer diary|behind the scenes|ranking|top \d+|meme|parody|shorts?|cutscenes?|movie|film|do not buy|don.?t buy|worst|first \d+ minutes|minutes of|hours?)\b',re.I)
 WANT=re.compile(r'trailer|gameplay|announce|reveal|launch|overview|teaser',re.I)
 
 def _dedupe(urls,key=lambda u:u):

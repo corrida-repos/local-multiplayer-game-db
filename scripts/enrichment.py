@@ -767,7 +767,8 @@ def main():
         seed(games,entries,legacy,known_stores,old_composites,old_trailers,artwork,read('psplus.json')['games'])
         phase,queue=select_work(games,entries,seen)
         if not queue:break
-        batch=queue[:max(10,args.workers)]
+        # Light page checks amortise the checkpoint push over a bigger batch.
+        batch=queue[:{'psplus':60,'media':40}.get(phase,max(10,args.workers))]
         with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
             futures={}
             for game in batch:
