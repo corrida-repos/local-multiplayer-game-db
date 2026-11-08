@@ -37,6 +37,11 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           bash scripts/checkpoint-catalog.sh
+      - name: Classificar pixel art (jogos novos)
+        continue-on-error: true
+        run: |
+          python scripts/art_style.py --limit 150
+          bash scripts/push-checkpoint.sh 'Update pixel-art classification' data/art-style.json data/art-style-cache.json
       - name: Assinalar falhas da fonte
         if: steps.scrape.outcome == 'failure'
         run: exit 1
