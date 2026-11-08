@@ -3,9 +3,12 @@ Each result owns its provenance and missing-field reasons. No synthetic ratings.
 """
 import argparse, copy, concurrent.futures, datetime as dt, html, json, re, sqlite3, subprocess, threading, time, socket, email.utils, urllib.parse, urllib.request, urllib.error
 from pathlib import Path
-from scripts import composites, ratings, stores, trailers, psplus, community_index, nintendo_index, recovery_state, direct_reviews
+from scripts import composites, ratings, stores, trailers, psplus, gallery, community_index, nintendo_index, recovery_state, direct_reviews
 ROOT=Path(__file__).resolve().parents[1]
 VERSION=7
+MEDIA_VERSION=1
+MEDIA_DAYS=30
+PSPLUS_HOURS=20
 SEARCH_HASH='4df6284f982e57bec70f23c77e2c219dc792eb19af7fb3d3a81767aa3f1958aa'
 locks={};last={};guard=threading.Lock();request_trace=threading.local()
 def now():return dt.datetime.now(dt.timezone.utc).isoformat()
@@ -607,14 +610,67 @@ def complete(game,previous,legacy,curated):
         if composite.get('errors'):errors['composites']='; '.join(composite['errors'])[:500]
     except Exception as exc:errors['composites']=str(exc)[:160]
     chosen=curated.get(game['title']) or result.get('trailer')
+    # A YouTube search result is only a stand-in until an official video is found.
+    searched=None if official_trailer(chosen) else chosen
+    if searched:chosen=None
     if not chosen or chosen.get('kind')!='gameplay':
         url='https://www.playstation.com/en-us/games/'+ratings.PS_ALIASES.get(game['title'],ratings.slug(game['title']))+'/'
         try:
             _,page=get(url);chosen=trailers.choose_video(chosen,trailers.videos_from_official_page(page,game['title'],url))
         except Exception as exc:errors['trailer']=str(exc)[:160]
+    chosen=chosen or searched
     if chosen:result['trailer']=chosen
     result.update(full_attempted=now(),full_version=VERSION,errors=errors);result['requirements']=requirements(result)
     return result
+
+def psplus_due(game,entry):
+    if game['platform']!='PS5' or not stores.verified_portugal(entry.get('store',{}),'PS5'):return False
+    cutoff=(dt.datetime.now(dt.timezone.utc)-dt.timedelta(hours=PSPLUS_HOURS)).isoformat()
+    return max(entry.get('psplus',{}).get('checked',''),entry.get('psplus_attempted',''))<cutoff
+
+def refresh_psplus(game,previous):
+    """Daily PS Plus catalogue check on the game's verified Portugal store page."""
+    result=copy.deepcopy(previous);errors=dict(result.get('errors',{}))
+    try:
+        url,page=get(result['store']['url'])
+        result['psplus']={**psplus.parse_catalog(page,url),'region':'PT','source':url,'checked':now()};errors.pop('psplus',None)
+    except Exception as exc:errors['psplus']=str(exc)[:200]
+    result.update(psplus_attempted=now(),errors=errors);return result
+
+def media_due(entry):
+    cutoff=(dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=MEDIA_DAYS)).isoformat()
+    return entry.get('media_version',0)<MEDIA_VERSION or entry.get('media_attempted','')<cutoff
+
+def official_trailer(video):return bool(video and video.get('id') and video.get('source')!='YouTube search')
+
+def collect_media(game,previous,curated):
+    """Screenshots from the store page (Steam as fallback) and a trailer for every game."""
+    result=copy.deepcopy(previous);errors=dict(result.get('errors',{}))
+    names=list(dict.fromkeys([game['title']]+result.get('aliases',[])+source_match(game).get('names',[])))
+    shots=[];page_video=None;store=result.get('store',{})
+    if stores.verified_portugal(store,game['platform']):
+        try:
+            url,page=get(store['url'])
+            if game['platform']=='PS5':
+                shots=gallery.psn_screenshots(page,url)
+                try:result['psplus']={**psplus.parse_catalog(page,url),'region':'PT','source':url,'checked':now()};result['psplus_attempted']=now()
+                except Exception:pass
+            else:
+                shots=gallery.nintendo_screenshots(page);page_video=gallery.nintendo_video(page,game['title'],url)
+            errors.pop('screenshots',None)
+        except Exception as exc:errors['screenshots']=str(exc)[:200]
+    if not shots:
+        try:shots=gallery.steam_screenshots(game,names,get)
+        except Exception as exc:errors['screenshots_steam']=str(exc)[:200]
+    if shots:result['screenshots']={'items':shots,'checked':now()};errors.pop('screenshots_steam',None)
+    elif not result.get('screenshots',{}).get('items'):errors.setdefault('screenshots','No screenshots found on the store page or Steam')
+    video=curated.get(game['title']) or result.get('trailer')
+    if not official_trailer(video) and page_video:video=page_video
+    if not official_trailer(video):
+        try:video=gallery.youtube_trailer(game,names,get);errors.pop('trailer_search',None)
+        except Exception as exc:errors['trailer_search']=str(exc)[:200]
+    if video and video.get('id'):result['trailer']={**video,'checked':video.get('checked') or now()}
+    result.update(media_attempted=now(),media_version=MEDIA_VERSION,errors=errors);return result
 
 def export(entries,db):
     games=read('catalog.json')['games'];audit=[]
@@ -626,6 +682,10 @@ def export(entries,db):
     (ROOT/'data/enrichment.json').write_text(json.dumps({'updated':now(),'version':VERSION,'coverage':report,'coverage_policy':recovery_state.POLICY,'games':entries},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     public={key:{field:value for field,value in entry.items() if field in ['title','platform','image','store','ratings','psplus','trailer','aliases']} for key,entry in entries.items()}
     (ROOT/'data/enrichment-public.json').write_text(json.dumps({'updated':now(),'coverage_policy':recovery_state.POLICY,'coverage':report,'games':public},ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+    media={key:{'screenshots':[shot['url'] for shot in entry.get('screenshots',{}).get('items',[])]} for key,entry in entries.items() if entry.get('screenshots',{}).get('items')}
+    media_report={'games':len(games),'with_screenshots':sum(bool(media.get(g['platform']+':'+g['id'])) for g in games),'with_trailer':sum(bool(entries.get(g['platform']+':'+g['id'],{}).get('trailer',{}).get('id')) for g in games),'media_attempted':sum(bool(entries.get(g['platform']+':'+g['id'],{}).get('media_attempted')) for g in games)}
+    (ROOT/'data/media-public.json').write_text(json.dumps({'updated':now(),'coverage':media_report,'games':media},ensure_ascii=False,separators=(',',':'))+chr(10),encoding='utf-8')
+    print('MEDIA',json.dumps(media_report),flush=True)
     (ROOT/'data/enrichment-audit.json').write_text(json.dumps({'updated':now(),'coverage':report,'coverage_policy':recovery_state.POLICY,'entries':audit},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('COVERAGE',json.dumps(report),flush=True)
 
@@ -673,10 +733,14 @@ def select_work(games,entries,seen):
     def unseen(g,phase):return (g['platform']+':'+g['id'],phase) not in seen
     new=[g for g in games if unseen(g,'basics') and not entry(g).get('basics_attempted')]
     if new:return 'basics',new
+    plus=[g for g in games if unseen(g,'psplus') and psplus_due(g,entry(g))]
+    if plus:return 'psplus',sorted(plus,key=lambda g:entry(g).get('psplus',{}).get('checked',''))
     retry=[g for g in games if unseen(g,'basics') and basic_due(g,entry(g))]
     if retry:return 'basics',sorted(retry,key=lambda g:(recovery_state.next_due(entry(g),[f for f,v in requirements(entry(g)).items() if not v]),entry(g).get('basics_attempted',''),g['title']))
     health=[g for g in games if unseen(g,'health') and image_health_due(entry(g))]
     if health:return 'health',sorted(health,key=lambda g:entry(g).get('image',{}).get('validated_at',''))
+    media=[g for g in games if unseen(g,'media') and media_due(entry(g))]
+    if media:return 'media',sorted(media,key=lambda g:(bool(entry(g).get('trailer',{}).get('id')),bool(entry(g).get('screenshots')),entry(g).get('media_attempted',''),g['title']))
     cutoff=(dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=7)).isoformat()
     full=[g for g in games if unseen(g,'full') and (entry(g).get('full_version',0)<VERSION or entry(g).get('full_attempted','')<cutoff)]
     if full:return 'full',sorted(full,key=lambda g:(requirements(entry(g))['rating'],entry(g).get('full_attempted',''),g['title']))
@@ -708,7 +772,7 @@ def main():
             futures={}
             for game in batch:
                 key=game['platform']+':'+game['id'];seen.add((key,phase))
-                task=pool.submit(basics,game,entries.get(key,{}),legacy.get(key,{}),known_stores.get(key,{}),old_composites.get(key,{}),old_trailers.get(key,{}),artwork.get(game['title'],{})) if phase=='basics' else pool.submit(verify_image,game,entries.get(key,{})) if phase=='health' else pool.submit(complete,game,entries.get(key,{}),legacy.get(key,{}),curated)
+                task=pool.submit(basics,game,entries.get(key,{}),legacy.get(key,{}),known_stores.get(key,{}),old_composites.get(key,{}),old_trailers.get(key,{}),artwork.get(game['title'],{})) if phase=='basics' else pool.submit(verify_image,game,entries.get(key,{})) if phase=='health' else pool.submit(refresh_psplus,game,entries.get(key,{})) if phase=='psplus' else pool.submit(collect_media,game,entries.get(key,{}),curated) if phase=='media' else pool.submit(complete,game,entries.get(key,{}),legacy.get(key,{}),curated)
                 futures[task]=(key,game)
             for task in concurrent.futures.as_completed(futures):
                 key,game=futures[task]

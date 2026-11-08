@@ -33,7 +33,7 @@ class CheckpointRecovery(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder);(root/'data').mkdir();game={'id':'1','title':'Game','platform':'PS5'}
             (root/'data/catalog.json').write_text(json.dumps({'games':[game]}))
-            entry={'title':'Game','platform':'PS5','image':{'url':'https://images.test/game.png'},'store':{'url':'https://store.playstation.com/pt-pt/product/GAME','region':'PT','verified':True},'ratings':{'user':e.composites.user_composite([{'name':'PSN','score':4,'scale':5,'count':10}])},'version':e.VERSION,'basics_attempted':e.now(),'full_attempted':e.now(),'full_version':e.VERSION,'field_status':{'image':{'sources':{'image_health':{'url':'https://images.test/game.png','revision':'health-v1','next_attempt':'9999-01-01T00:00:00+00:00'}}}}}
+            entry={'title':'Game','platform':'PS5','image':{'url':'https://images.test/game.png'},'store':{'url':'https://store.playstation.com/pt-pt/product/GAME','region':'PT','verified':True},'ratings':{'user':e.composites.user_composite([{'name':'PSN','score':4,'scale':5,'count':10}])},'version':e.VERSION,'basics_attempted':e.now(),'full_attempted':e.now(),'full_version':e.VERSION,'media_version':e.MEDIA_VERSION,'media_attempted':e.now(),'psplus':{'checked':e.now()},'field_status':{'image':{'sources':{'image_health':{'url':'https://images.test/game.png','revision':'health-v1','next_attempt':'9999-01-01T00:00:00+00:00'}}}}}
             calls=[]
             def checkpoint(*args,**kwargs):
                 calls.append(args)

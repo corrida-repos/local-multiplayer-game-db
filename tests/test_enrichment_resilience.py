@@ -72,7 +72,7 @@ class Refresh(unittest.TestCase):
         phase,queue=e.select_work([GAME],{'Switch:1':entry},set());self.assertEqual(phase,'basics');self.assertEqual(queue,[GAME])
     def test_full_queue_resumes_oldest_attempt_instead_of_starting_at_a_each_run(self):
         a={**GAME,'id':'2','title':'A'};z={**GAME,'title':'Z'}
-        def entry(stamp):return {'platform':'Switch','version':e.VERSION,'basics_attempted':e.now(),'full_attempted':stamp,'image':{'url':'https://images.test/game.png'},'store':{'url':'https://www.nintendo.com/pt-pt/Jogos/Example.html','region':'PT','verified':True},'ratings':{'user':{'score':8,'scale':10}},'field_status':{'image':{'sources':{'image_health':{'revision':'health-v1','url':'https://images.test/game.png','next_attempt':'9999-01-01T00:00:00+00:00'}}}}}
+        def entry(stamp):return {'platform':'Switch','version':e.VERSION,'media_version':e.MEDIA_VERSION,'media_attempted':e.now(),'basics_attempted':e.now(),'full_attempted':stamp,'image':{'url':'https://images.test/game.png'},'store':{'url':'https://www.nintendo.com/pt-pt/Jogos/Example.html','region':'PT','verified':True},'ratings':{'user':{'score':8,'scale':10}},'field_status':{'image':{'sources':{'image_health':{'revision':'health-v1','url':'https://images.test/game.png','next_attempt':'9999-01-01T00:00:00+00:00'}}}}}
         phase,queue=e.select_work([a,z],{'Switch:1':entry('2026-01-01'),'Switch:2':entry('2026-02-01')},set())
         self.assertEqual(phase,'full');self.assertEqual(queue[0],z)
 
