@@ -160,3 +160,7 @@ Further bridges for unresolved entries:
 - **Files**: `data/pricing-public.json` is the compact app feed (up to four eligible candidates per format per game, so the app can drop an expired promotion and show the next verified minimum between runs). `data/pricing-offers.json` keeps every normalized observation with its eligibility reason; `data/pricing-audit.json` has per-source coverage, blockers and run history.
 
 The detail view shows **Melhor preço verificado**: the delivered total, item/delivery breakdown, format, edition, retailer/seller, discount condition, saving versus the reference and a purchase link. Any price with an end date (sales, PS Plus discounts) prominently shows "Preço válido até …" with weekday, date, year and time in Lisbon time. When physical and digital totals tie, both options appear side by side. Without a fresh verified offer it shows **Preço atual indisponível**. This is the lowest verified total among monitored sources, not a guaranteed market minimum. The existing official-store button is unchanged.
+
+## Roadmap
+
+- Mostrar o(s) logótipo(s) da(s) consola(s) no topo da página, de acordo com as consolas ativas no filtro.
