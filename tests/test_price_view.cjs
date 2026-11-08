@@ -35,4 +35,10 @@ html=context.priceMarkup(g);assert.match(html,/Darty/);assert.match(html,/portes
 set([{...physical,checked_at:iso(-37*3600e3)},{...digital,url:'http://store.playstation.com/x'}]);
 assert.match(context.priceMarkup(g),/Preço atual indisponível/);
 set([]);assert.match(context.priceMarkup(g),/Preço atual indisponível/);
+// Cards flag games whose shown best price is under the MSRP/regular price.
+assert.ok(src.includes('${imageMarkup(g)}${saleBadge(g)}'),'cards must render the sale badge');
+set([physical,digital]);html=context.saleBadge(g);assert.match(html,/€↓/);assert.match(html,/Abaixo do PVP: −37,8%/);
+set([{...physical,saving:undefined},digital]);assert.equal(context.saleBadge(g),'');
+set([physical,{...digital,total_cents:3499,item_cents:3499}]);assert.equal(context.saleBadge(g),'');
+set([]);assert.equal(context.saleBadge(g),'');
 console.log('price view ok');
